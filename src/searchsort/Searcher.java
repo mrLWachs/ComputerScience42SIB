@@ -73,12 +73,34 @@ public class Searcher <T extends Comparable<T>>
         int low = 0;
         while (low <= high) {
             int mid = (high + low) / 2;
-            if (array[mid].compareTo(item) == 0) return mid;
-            else if (array[mid].compareTo(item) > 0) high = mid - 1;
-            else if (array[mid].compareTo(item) < 0) low  = mid + 1;
+            if      (array[mid].compareTo(item) == 0) return mid;
+            else if (array[mid].compareTo(item)  > 0) high = mid - 1;
+            else if (array[mid].compareTo(item)  < 0) low  = mid + 1;
         }
         return NOT_FOUND;
     }
+    
+    
+    public int binary(T item, LinkedList<T> list) {
+        if (item == null || list == null) return NOT_FOUND;
+        return recursiveBinary(item,list,0,list.size());
+    }
+
+    private int recursiveBinary(T item, LinkedList<T> list, 
+                                int low, int high) {
+        if (low <= high) {
+            int mid = low + (high - low) / 2;
+            if (list.get(mid) == null) return NOT_FOUND;
+            if (list.get(mid).compareTo(item) >  0)
+                return recursiveBinary(item,list,low,mid-1);
+            else if (list.get(mid).compareTo(item) <  0)
+                return recursiveBinary(item,list,mid+1,high);
+            else 
+                return mid;
+        }
+        return NOT_FOUND;
+    }
+    
     
     
     

@@ -22,36 +22,20 @@ public class Tester
     /** 
      * Default constructor for the class 
      */
-    public Tester() {        
+    public Tester() {    
+        
         new SearchingAndSortingTest();   
-//        simpleVisualTest();
-//        allVisualTests(); 
-//        interfaceTest();
-    }
-
-    
-    private void interfaceTest() {
-        new TestingClassTest();
-    }
-    
-    private void allVisualTests() {
-        Output.init();
-        Output.header("All testing",true,true);
-        new ComputerScience30STest();
-        new ComputerScience40STest();
-        new ComputerScience42SIBTest();
-        Output.header("All testing",false,true);        
-        Output.flush();
-    }
-
-    private void simpleVisualTest() {
-        Output.init();
-        Output.header("All testing",true,true);
+        
+//        new TestingClassTest();
+        
+//        Output.init();
+//        Output.header("All testing",true,true);
 //        new ComputerScience30STest();
 //        new ComputerScience40STest();
-        new ComputerScience42SIBTest();
-        Output.header("All testing",false,true);        
-        Output.flush();
+//        new ComputerScience42SIBTest();
+//        Output.header("All testing",false,true);        
+//        Output.flush();
+
     }
     
 }
