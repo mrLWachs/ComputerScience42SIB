@@ -5,6 +5,7 @@ import collections.LinkedList;
 import io.Output;
 import numbers.Random;
 import searchsort.Searcher;
+import searchsort.Sorter;
 import testing.testclass.TestClass;
 
 public class SearchingAndSortingTest 
@@ -18,14 +19,17 @@ public class SearchingAndSortingTest
     private void simple() {
         System.out.println("Search test started...");
         
-        final int SIZE = 10;
+        final int SIZE = 10000;
+        final int MIN = 0; //-SIZE;
+        final int MAX = SIZE;
+        
         LinkedList<Integer> list = new LinkedList<>();
         for (int i = 0; i < SIZE; i++) {
-            list.add(Random.generate(100, 999));
+            list.add(Random.generate(MIN, MAX));
         }
         System.out.println(list);
         
-        Integer item = Random.generate(100, 999);
+        Integer item = Random.generate(MIN, MAX);
         
         Searcher search = new Searcher();
         
@@ -50,16 +54,30 @@ public class SearchingAndSortingTest
                 " at location " + location);
         
         Integer[] array = new Integer[SIZE];
-        for (int i = 0; i < array.length; i++) {
-            array[i] = i + 100;
-        }
+        array = list.toArray(array);
+        
+        Sorter sort = new Sorter();
+        sort.bubble(array);
+        
         output(array);
         
-        item = 102; //Random.generate(100, 999);
+        item = Random.generate(MIN, MAX);
         location = search.binary(item, array);
         System.out.println("Item " + item + 
                 " at location " + location);
-                
+              
+        list = new LinkedList<>(array);
+        System.out.println(list);
+        location = search.binary(item, list);
+        System.out.println("Item " + item + 
+                " at location " + location);
+        
+        
+        
+        
+        
+        
+        
     }
         
     private<T> void output(T[] array) {

@@ -116,8 +116,8 @@
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">answer 5 = 125.0</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">answer 6 = 3.0</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// The Math library and random numbers: ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">random = 1.9385669868241948</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">die = 1</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">random = 4.031514775045432</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">die = 4</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// CONDITIONAL STATEMENTS: ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Equal</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">not less than</span></body></html>
@@ -441,7 +441,7 @@
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Reusable method with inputs (parameters), and output (return) ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Reusable method with inputs (parameters), and output (return) ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Reusable method with inputs (parameters), and output (return) ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">number = 60</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">number = 3</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Simple method with an input (parameter), and an output (return) ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Simulated input dialog</span></body></html>
 <html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Simulated message dialog</span></body></html>
@@ -584,7 +584,7 @@
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Reusable method with inputs (parameters), and output (return) ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Reusable method with inputs (parameters), and output (return) ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Reusable method with inputs (parameters), and output (return) ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">64, -3, 71, 68, 55, 47, 17, 26, 57, 15, 26, 31, 59, 16, 72, 77, 53, 0, 32, 55, 9, 23, -3, 17, 51, 54, -3, 55, 29, 63, 39, 4, 44, 60, 69, 19, 48, 9, 62, -2, 2, 71, 24, 41, 68, 33, 19, 16, 3, 36, -2, 1, 65, 55, 80, 51, 58, 22, 36, 65, 1, 0, 29, 27, 65, 43, 67, 78, 64, 58, 49, 46, -1, 2, 79, 7, 49, 13, 63, 8, 42, 34, 38, 3, 0, 3, 41, 75, 45, 72, 57, 19, 46, 68, 56, 66, 10, 70, 27, 13, </span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">64, 2, 37, 66, 72, 38, 34, -1, 62, 1, 5, 73, 52, 20, 52, 46, 58, 0, 49, 47, 42, 21, 52, 41, 33, 23, 63, 0, 45, 28, 48, 36, 45, 47, 62, 80, 13, 35, 76, 62, 9, 42, 63, 33, 28, 60, 16, 46, 23, 38, 76, 34, 47, 71, 76, 46, 73, 39, 41, 43, 60, 73, -3, 18, 55, 27, 9, 1, 47, 20, 29, 69, 40, 4, 17, 51, 11, 15, 50, 47, 26, 23, -1, 43, 52, 77, 8, 58, 16, 13, 76, 34, 15, 78, -1, 25, 60, 10, 0, 68, </span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// can create multiple arrays on 1 line: ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// boolean[] x,y,z; ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// enter the matrix.... ...</span></body></html>
@@ -4088,56 +4088,56 @@
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Reusable method with inputs (parameters), and output (return) ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Reusable method with inputs (parameters), and output (return) ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Reusable method with inputs (parameters), and output (return) ...</span></body></html>
-I U > 6 F E o Q N Q 2 { F - w | ( 3 I ? A p g ' L & z W ~ ^ + f , r , w F A 5 B L v : - 2 c & < C . C & / F R D b z = m E + ( . b B W B | k 
-[ s " d ; e " B t \ W . U 8 X * O g b I 7 C m ^ B a 1 ! $ t 7 C D * ' ; Z ~ , ? = J ] J M ( : I ? X P N ? B e 4 s ? ~ * T s > E S N A ] i 5 
-a @ % 5 / I l 5 l j " q 0 u < : X ` U z T N # 5 < s ) b v @ U r { 0 % t z ( h P t ^ / ~ J 6 E , # c ^ w r . Z 0 X u B h { O Q t V V i J $ U 
-X p g & L - g # r } = a ? n _ | ? A F * ^ > u 4 \ E - D & m ^ 5 = H g 5 V X > = v b ( ~ R N V h w ) P S 3 7 ^ ) 8 K ' u " % _ ^ a ) B S ' R 
-[ 9 \ r ? P + 8 X T & z = d ; N 2 0 B : b Q > _ 1 3 W ' 4 h n w ) 8 I ) T ? 0 P u ) ] Q & | c + @ v u O W W X A G Q F o U E L i ~ } S M 8 n 
-Z H j b O M I y G _ t ^ X n * Q 9 i l S p @ z H 6 S ` $ r > ^ r % | y 6 5 r ; K F c n , n v = 6 I j G Z y B % 9 y t y P & - ^ < u 6 v E A a 
-^ R x c y @ m J { d . j K y ? ; p w E V f ( m r " c e q q 7 b [ ( h v ' Z \ . P | y s F < 1 ` u % H g e - - M F q L p s V # % 1 ( m T L q ) 
-B 4 s z 8 > L E U b b T P 7 J = m : D v / b a 1 } r | < < J \ ' ~ Q e : ! K % 0 D 3 + e C Q _ / / _ h v < B 0 V $ u p g } 8 K ( d D 1 R 5 D 
-@ * ^ ] ! 7 ] E 6 0 ] ] K T w ' ( , + n t & ; s ) s m ) k < m t a A S { t _ i C n y q \ V 2 F | W Q $ c s w = I c j q v b 9 : z Y [ V w h T 
-% $ ] a X 1 ] a V 0 - 7 T C z e W ` 0 = ] u @ Y Y q . = _ Q y D f l n w | s X w v x $ w @ w ` X 2 v Q | I $ Y T V T Q o F a 9 e B r ( K f b 
-s O q = . j M W : ` 0 } s J B Y 2 B 1 > | J P 4 L f . @ ` Y o D $ k H l q M % h - f 4 b K m , g - A H _ t | ] u n g y l V ` 7 4 @ 4 # M E * 
-$ : ` | S = n : } G a @ 3 N 0 * F # + = 1 x s ` " " j Z ^ + 6 O J } 9 & + F U q u B E 7 Z E n a S y ] = 1 Q T 8 \ E < 1 , p w e _ Q U K " ~ 
-z _ ! Y G y F H w O P ( j I b X 9 { T / 1 > i o ! { 1 B ~ " + m . ( = } , K ` u W $ 7 & P s c { _ d % . o y 7 @ ? E A . Z f ! s C K X & | 6 
-v U J k * / C 7 K q f P ; - h ~ \ x L W Z 3 ~ t . C T u b 0 R s / | 7 U 4 z Y g f v T A X - b 1 n ( R ! r A \ 9 = ` ) I t n n z Q 2 b / s 9 
-U a I B * U ) m - { ( s + j ( x D i 1 f x 8 Y > } - u W Y : I = ? & = N X 0 P = ~ n x % V g 0 . ; ; C [ q F A W ! W { $ 5 d 2 , [ V & @ j ^ 
-5 + ] h 7 7 L f . V V \ M A & V y ; s V B @ s d c ; ~ j X _ e y W H & $ T P C * R { w | X z u 3 y 5 x B 3 k r ` B f 1 W T 0 _ Y Q Q : 2 g + 
-k L w < ! ? t r % o A t D > n , R ! { ( e n . r 6 < @ X / 9 o T Q m y * ; D X J c d Q D 2 < c Z [ > z u | ? . u p T h ^ > @ * h | h @ | } Y 
-+ l 5 [ F K 1 ; h P ~ l O M - ! 5 H K _ ? m ? 9 H a ( # B B F P O x o { } y = 7 g _ D | ) d b B I m F } s h 5 \ t & 2 = H ^ F 5 # } l - z > 
-? 7 & F T I 9 > + + % / ^ B K N . + ` @ A 5 y L 7 ? 4 s ^ ' a W T r ] a a / ] 2 b 3 W u 3 l < : B q * ' i ^ T 0 S t t + h 0 F C } m = N ~ n 
-1 * c v ' r g W 5 y L > " @ Z ; E a X l b r 0 > \ > ^ g ( K V R \ ` n E ^ H _ = 0 @ m 1 F V y > l W r @ b = W 7 x [ 4 P ( k P [ D L i 6 < w 
-- N " " : c 1 R } V 2 > l y < / g 0 k ~ b C D E = x F M 4 Q t J W 5 a ? - 1 D X [ d 0 k m @ I W ~ V r ` f i : 7 G / Q g q w Q e F 1 H R E [ 
-L 7 . q v 4 V m z 3 } @ E s k . h $ 1 L z A | 5 | C n k B D . t u u 4 ; p $ R i ? J o ) t > j # : - v P $ O x w Z < / h H n @ n ' p - M O B 
-c V Q / E i - , u M ] Z ; L 7 " , 9 > K 2 h ; { c o ? X @ K W F c X 2 E j R @ { h ^ A e x R J ~ / > p i o D i @ # X A < - 8 O A z Q & O 6 d 
-W B \ g y R > S H e 5 R A A . F G A R % k Y a c r D = x \ K , E Q > - & p f r t Z p d > . y H 5 6 ' [ c ( [ 9 U J z e * ) J < e @ 1 ! G = x 
-@ ^ - k 6 ' j \ ^ W r 2 t + U 5 e [ 9 E F & H a W # x h 2 e V s D ' $ J W > ? l 7 T q 4 : U j P > G " \ w y u S ^ b D b 5 | I 7 Q * m ( < . 
-v @ t g 5 ! P 0 3 [ U r a ? u N ` i & ^ Z " g 4 y F 0 I . Q 6 w M & k j ; S u ( z i X G G ) ` v j 4 P u B & L $ A _ # V x V M 6 s M ( ! e k 
-6 } | J [ 7 _ ' D x 5 O J D B U & 0 C Z e 8 T b Q ! . ` M L } ' ! p C { _ o Y g 1 + F 7 q $ m ! ` @ _ f a - > v Z % } W 8 , a K t z " 8 T f 
-_ ! m E m < B 6 & 7 K G Q F 4 b ? } I ` ^ E E @ X S H ) F n . [ V C G x z A G 7 R B A h t r p A F s ! ^ w 8 # V Z G " . c * s S ? Z H / L i 
-| 2 x i 7 x U l ( w A B n E G : + A / w + f 5 s L L ` P } ( U a 8 * g Y : H a n , 6 Q } : E ) ^ E R ] * a ? s * t ' e v D p b ; j 7 p : H w 
-L N $ & P 7 8 v - 5 O b H | x F / v ` j p & p Y O F c e P C A Z 0 ? 0 < 3 | * y s & N z e P 8 ~ / t A " h ( [ L q E D D U j N n = > a < " & 
-e D 2 Q I p + l J L y U 5 i y o / x K - ( i t ! B v 1 P P X H A # H x E F Y y a / H 1 2 ? C < x _ C @ J 4 \ % n 3 B Q s C m a j Q @ n B [ W 
-7 @ ^ ( | i c L | $ z t s W K H = ) h 1 T Q 8 j v u 7 ? J f x $ h ? b _ z @ w G T J A C w + H / f u E R 0 ~ y z 7 I v g O D G # ? r o 5 \ G 
-e c F n % i 3 ! I O j y H W I " x ' I : ? X F w B b B 9 l X & n + o ? > Y d " u V / o & c _ ; < S * T [ ! ( ( 2 M ` f ] ; a V e U 7 J n e = 
-. h } H 9 2 M \ R b 8 @ # K ( _ z z : s q } o { } o O a > Q ; / } _ L $ V F H O ( _ C p v + M 6 8 s d G z > , 1 w y % c ? ` V e ~ r 3 < p < 
-$ 9 F o r + B > : M W _ ; n ^ 4 B F F e % K @ f t x B 1 s B N Z 4 , 9 u P x E ; E _ ` X | V n R $ 9 a e < a U V 6 p s N " t ) ' " i e m 4 Y 
-x 1 J P M / r d ] E u K G \ } ' ` " E r 2 ] I s e O u ' @ , ^ = $ f x E A $ i x u G + L v i P d 8 f 2 | ( N + d > 2 u w [ ^ 2 i I ; ] l f B 
-- b U 6 i Z q x I z @ 5 ! @ : 5 8 X A Q > A n D v 1 4 k 9 ! p # 4 k ] 0 X 9 % > f A C & V & 9 z V $ o j Q x s U & ? x E < " e U U { 5 9 o C 
-Y n > " > U z @ N V p k Q @ ! H [ - Y " m } 6 f Y | ] z j Q [ / 4 [ a / " O t ` j h f u ; w m U ; F - g 9 7 u J ? | o c k A : 4 m p & i t 1 
-9 Q " E p $ s = $ < 5 p ! X \ ` 1 J 7 L R l S ? * ] H [ N i f d s # ~ % } . r - b ' r @ \ C 6 / o $ 0 4 Z 5 - 2 A ` 5 C I 8 w [ S 1 ^ u k 6 
-k # k R ! L 1 # W Q d ` i k . ; x % G = x > L y g U 6 $ N j M O ` | c > 3 6 D A v Q / J ~ n : u " t 9 D G 4 : , * H f A , K w ] \ v d 8 U y 
-b k { ~ U a z J I ~ ' ? 5 l P F w Q < Y D ? D ; { R w V u d ` < ^ e y = D $ u u g : I Q q & . ' > b 8 V ! h ; ~ y y % \ / 6 v n M i m ~ 4 O 
-S _ g / G N 9 x a g y Q q _ > ; Z i T g : ' W C k R y M l ` 5 z W P ; # r S J T U - w z X , A z M Z n 4 9 f & q o f R 9 - < l r S ! _ a % ' 
-) Z ' ~ 0 , L E > ' 8 s O W ( 9 ) ~ J = e P ) I J - c 8 1 ' Z L S u S V x U & _ R 7 i + T | A - q 5 . x f # 2 * t E S l b 5 ~ E w ~ Y | R h 
-~ c i ` b 0 ~ J b ' X " . s : b k W V ? + q ] Q | : b ? u ' C y R r i i 8 M z < P \ . ( y m ` A i \ 3 N { h / - L # @ F p B + * I G { v % a 
-y e h ( o Y F z C x X s c , + ] Q g \ $ ; = j D ; : . $ V T > K J b A N R | v M B | Q T G K A K r V 1 F - I ; + s ) . a m O = P c v I ( { ] 
-w . 1 / - @ @ " k ( * M u F 2 S n n N R W Y N N x % m < 2 t D 4 Z 5 ~ 9 - W { M ] q # P V 8 ' z V % K } 2 [ a " d 7 z N e W = o w V { B < g 
-% H : ; r ^ z * d ' R q D Q @ b t E z * # g = V ] r g + o - g " m ` M u u f 0 5 \ . p E v F T g 1 # & U E & i D ( b I D s \ O : A _ " Y A ` 
-3 S ; 7 N V a t ~ _ j % @ j | E 8 8 W t M M x + . 7 7 . J | \ y k A r R ~ 5 X < M Y r % o g S D ) # ; W R 5 k 5 y v M * ( + j : M < 6 f a 6 
-9 4 Q V T 6 P * ; - ( 6 U ' Z M r F $ 6 X { C N ( ` u [ + } w , m ' e 3 . Z ^ 5 V @ s I E e \ q ~ R y $ * % E 0 # Y F ] Y ` j m r y Q i f c 
-W P ( Y c t s * # X Y p D 1 ) 6 \ @ Q L m P m n q \ f S r X y 8 N % # # = B 0 < n ^ $ , 1 | 2 t ' w 9 ; W + w S E U { Q U I u > ^ C j * , 7 
+- 2 3 ; , L . O } N Q D D ~ 5 ; x : ( | - [ ` K 6 w d E i = b 3 C 3 O b : r 8 ! n * l 8 t W k 6 . e 6 S ? N o j d } E L = C c { V D 7 ( U ] 
+/ i 2 1 k C ] e p : z \ + X * V e k k ) z F x C q & / . X V ? f - U K 4 Z + 0 v , c K 0 \ 9 k O p _ > t A > o & . m C s F W A _ 5 7 a = h m 
+U m 5 i " * o s _ ` ) O k # H K i Q * U 7 i . 5 v X V x \ W , ^ Q ' | A C p s M " ^ > Q S g q 8 6 x @ K j | { s x j - G | p $ s _ 6 6 w x Z 
+6 R R U # c ~ _ P [ m e C Y H u ~ / P 4 O i r Q g 5 # w ` m A z * } t y F R J l u S | t ^ H e v ~ u Z K | A _ l ! X u C + ^ > K 7 O [ d O y 
+m v " p n R t 2 @ ( - _ ) q " m x + # % o " m ( b h i w 1 M j e t | = @ F a Z u - H + > r u k ` f f V x w U 5 e k k T ( ? ~ s ~ ] & | # $ N 
+y E f - P r I p ) s + j G @ D * x L y 6 P f d ~ R ~ r B P i " E ` ] 0 < < ^ V [ I a q ? x m = Z j m ? 5 F s j 1 o ) ) J H # O m Z H j _ i c 
+B ! F u Q o & : d ^ D b & J n 4 h K k * b o ? { c y % ' R p X @ @ x > 9 \ q E 1 u @ a I O 8 ? u . N ! n < p 0 e > n \ ] = Y + $ & 7 & # > w 
+Z " n L % u k 5 { T 5 L ` h E T i $ + a G 9 f O } [ g M 5 ~ u h , | ' & < ' g r z Q v * p 7 3 , Z ! y R , \ ( f } X B ( I U & ^ { n k % 3 _ 
+t \ ^ A y w x Z r H m 1 n v g ! H < + g a i $ 2 } 2 z 4 ! 3 1 1 e ) j V . f F p l c L p J * B 1 . 9 w ( } 1 w $ z ) & | 2 ? 2 & G O r ` % M 
+l ; > g , \ e @ + p X J * t V g [ s $ M + { | g x 2 P J | B k - $ _ O * Y < o L X ; % 8 > / r s d 9 . 8 ^ s = # ; ] $ x ] & / ( k H C ` y j 
+9 c E ( v k < 3 ] ; L t 9 f ) M Z p y W t R , ` { W > 6 ; M i T ; m n = . 9 0 P I b Z > | a + & K < H S = v n V _ S F e O f i , ^ < + l } M 
+& s < c V m 5 C @ * 5 : 1 q e T % o 3 P _ ] + . K y K * V q r m v n n v g Y ; " 3 6 6 4 % I t g u k ( ~ } } 3 I 4 B = F 5 { ] = W / = @ 3 - 
+) T ) D ! ! y ^ , o U d h y 9 Z - , U ! g ] Z y # z 0 u 8 % J s a G m : m : l \ w _ b u 7 P K % ? ` c B { x p @ 8 F Z C + % \ / ! n 0 ' I g 
+d a j C 7 m v ( g K } _ ; P [ W r w & h R Y 7 I v < r / p ? 6 ! F & 7 = 9 a ] U - z C G E 8 ) x ( Z u c < y - h ! ) 9 [ _ 1 H J q q 8 @ 9 4 
+2 n % . & g p I o K ) T A t B x v c + F n 2 s i ] J ? > b : V V c W M u c ) h J ( & k H m N t K # | # ) ] h s | b o J 6 7 ] * ^ b = + B m a 
+9 ( e b a & N * T ( ; F M 2 4 Y $ ; ] ] ` c F _ > [ % R t : x 5 U Z U 1 E ? R r Y a } A k 9 c ! x $ $ | # ) q L F W F D d L # W 1 % V 6 M - 
+S l < E Q E d , S 4 b q P : x 8 # W g ] h @ O b ) u P i b q U s 5 G C X } 0 W c $ W a = S g K { v d ` / A 5 < Z ( t X < f w Q { B T x J 7 Q 
+Z 4 R % B p O * b e + a D 0 c Q v ( ~ A * ? K x , ` | V V E ) u Z T S e I % y J T _ 4 ` . 8 $ m Y b ; | _ , ' 0 m : o \ \ ) j $ h z B w ? } 
+. R S f < e l L n ^ % Y M H C # r | i ? ( > t T f h l z e 5 e z t 6 $ < m L M V ] O [ L ' W R : . D 3 @ 5 R ; L Q 4 D K y y W H Q 0 d a [ ' 
+N Z ? | s k ` 0 b ( A u r U < V ' r $ 1 \ 2 ! r . / 4 e 3 ? ? U Z X ; M ; L C I } w Q W } ' B Q / ! ( l * E 6 % O g P ; ! o n 4 R Q ) n 4 Q 
+A ? S , x I 2 1 - l _ K } E o ] y ) ' 6 0 T d V 1 B P ] B D 5 / m c C b $ s s | } - k P _ [ e ) N R ] % + G J > [ @ I z o 7 N & + w = > Z a 
+i 0 - T r j m w 4 n S K L 8 l j J 8 w c y x i j Z t ) Y > f . ! ` 5 $ j e . C ( # T S T Y v d q - 3 y m x U O K U ) h c " = T a [ ^ 0 v 9 g 
+7 / I K S / ` n 1 T 2 % M I : U : f x x / o N f ' r ' a t 1 ; O B ^ P I + g a J D 4 # P : l e v I K K h P h 3 ; I p U ! c - X \ i p k J a X 
+3 ) _ U N & J p 7 V ` ; d U U 6 G x 7 ) I z ` { A Z 8 O 2 0 % _ f B ) u b 5 v ` = R f P 1 c < ! X $ a Y z k + + X 5 y ^ " z $ q K n 4 X C x 
+C = f | 1 # E " c 2 9 - J O X C R / 0 } B u I v ] A | z ) d + B 6 ] ] u S ^ O % & d { { m n S t r v d h \ ^ ! F 3 ? X B ] ' 3 k % e Y i ] Z 
+} X / 6 W n 2 ` Y & v i + [ { t ] Z v r ^ / - @ H z ~ 6 + U 8 = a O % ' r * ] L 1 I z @ z ! B x ^ S \ . 6 d { V C B h . C ! q > } \ s W . * 
+x R V | o 9 M ' Y b - & q n | W f s h - Y o 0 ' q c B < $ ` J . X } Z w $ G X > P " Y H z i = Z U C 1 w [ 3 * g o Q ' X T \ ` l F h E t 4 - 
+7 K B @ p r f v i P S D } , F 7 , % 5 Q 4 ? ` + 5 Q ! { ? 3 l z } V _ R % P 0 O h H W y Q E j c , 4 ) 9 u ! o Q ^ H q I P N ( F q M - * . S 
+F I @ { N H O < z 0 ! 8 ? ? m * d K n C D X 7 Q 6 ) F > s X N Z ~ ! G > . S e A i 1 n a w n u Z ` Y ( 9 C P k @ v 0 % N w . [ P O l 1 e 2 S 
+! 0 ? k ; U Y 1 E n @ h o [ a 5 S T q k b c w K R " - s b 4 _ ` @ " h > I ] ` / % @ T ( = D , @ 4 { t . U M + w r - o / p F 0 s > M A : \ " 
+. + [ B G b T | [ q K H ' E 4 Y Y ~ ` J R . J o ( c p E m [ l f & O ^ : h K g ] _ 8 ` r 1 1 { / h o 5 h Y l ^ B . Z ( 0 w < k s ( _ F A g } 
+d | w h # f E , K U # 5 ( ) ` j ^ i 5 > T 0 8 r 3 m E q - m g $ c i 3 # l R 6 j J z p _ X f ^ k O q ? U \ M < X 9 \ g L Y 0 L } E % X u u ] 
+g _ y r u o C d v < = K } & 7 o l Z ( } u W k [ ? Y 0 D s N c N # ` T $ Y 0 6 K o I \ " ` ` e v ? M + # ) c u ~ / 1 ] L 7 R ) m k ^ | X j i 
+A [ [ 3 - 5 c v ) a # m p _ " o Z _ } h P z * z h @ G = } D f W Q C 6 q J v 3 W B < j D k ) p b S q 9 f G L @ d i R ) 6 E Z F c r _ ] X C ? 
+F j ? r N 9 ` R [ 5 # 7 0 [ B y d q E i > C I h l - b $ I N 7 Q 6 * L o [ D u 3 p E * [ = ( 3 4 P r ( ^ R T C \ s W V C J \ W " $ ' * D ) 3 
+9 [ B 2 d % T 8 C i G 6 r Z ) D : l B \ d . q [ " m b n n + : e w ' B w ; % 3 > z s i 9 q d O @ 2 4 ' 0 ^ p H / F Q p . 4 + B i Y C s ` B 2 
+A 6 x p v 5 ' o h / F # B y ! V ~ | 8 k I W e + u E ' o < - b m Q p g \ s V L w 2 F % m o U ` z 8 * B ( U x v x _ \ m W 2 W J 0 T 0 $ [ < ] 
+9 \ ; D ~ q C S 2 A d / b M I ~ n : b T $ ~ P , ^ V f u _ c V F R 0 y 2 o o ; f > 3 ' , Y ~ e I c \ Y G q P p = $ ! 6 8 " Y : S u D t , = _ 
+r # z g T 6 - z , $ v S 1 2 i U + g x v Z ! O G p m g ) I ; q \ ) + 3 s o * g ` # 3 ( " 1 ; C s > < U 2 o i > G L ] F d ? E J j U c i > y 8 
+1 I a T \ ? J U : } d 0 S N A X R / 8 t b + " y a R i { Z # U ^ Y [ J { A u / P F v 2 U W g K ^ < h ` | t Z + X . T W & e r S j # 7 = f C Z 
+L j D 7 h C S | { L E O 2 3 U J " ` x u y + A P \ a { P _ ( B 2 ; w 9 @ Q 5 X : ( ~ ! V 2 @ $ ; u / U C q > 8 T Q L < s J h x { D > Q q c d 
+l - S C h 2 / G w , w b } / ] ? I ! & v I 0 < + A p ] N 5 M ' ! j z y U } u % p o @ _ # " a B y w q l L e $ 0 5 G S f Q P x I M j o M P 4 . 
+# g V & k S n j V x y ' g D - ^ - A a | r p @ 5 Y o o Y e C ! & ? O ? g % 0 p $ @ 6 8 _ D + & ^ D a u + p 2 C 0 H @ @ ( o ) x T F V : & I O 
+l G E < j 0 p % U ; Q = ] m J m 7 ) / > b _ u 2 s Y F ] G v [ , + + ` j N 9 V B d u + < > / z % " u ) x J & V n S p j t T p d 8 H j " F L ` 
+y 7 > Z Q = 6 l " z u 9 A 8 B > | ( 6 B 9 W _ \ 0 U J h . ' @ C @ < ` 8 p 1 . n ] B 0 / % G % - n O r h z t J * v > ) o s ? q x F 7 t S = { 
+s W [ & G X [ 7 ] F m w < O j " ( 5 w h h " ^ y k 5 Q i / Q e ( : " # B ~ ] H x l x 5 M f D 1 M @ O p ^ z d 5 n # ; Z l M : B j @ % $ d h _ 
+U . } U p y _ N | ` q N z 2 * , X 0 w Q . o O o u q e C & p ~ l & 4 s A + 6 e , V k b c ? + ] l B o z ( ? ` d F k Y D B ~ o ] j . ^ 4 1 J 8 
++ 5 ? j 0 f @ " D Z % } X R b ? q f h ~ M @ o e g q t # a R v u } n : h r O = # % h | ! E f p . Q u Z 2 X ! N 1 4 ' $ m = M , F ? { ! W } u 
+O [ 1 : , Y @ ' H @ ' 1 9 0 2 2 o N a k . l h ! @ k z c o [ q ` 8 g , T H 6 S g F U k 5 $ f 2 j & p q I s S 7 Q q o g J 5 v l M M 1 P 7 4 e 
+$ V W p @ T 1 e $ # 7 j q K a + H [ ` y 6 N H I , 1 @ + _ I { 3 y f B p : 4 b I h u * w ! Z V 0 a 4 B R < q I c M V 4 * [ | ; / k ) e / ) d 
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Optional Graphics stuff.... ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// a special graphics item to display the text in a "fancy" way ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// some colors to use in the text area ...</span></body></html>
@@ -4147,56 +4147,56 @@ W P ( Y c t s * # X Y p D 1 ) 6 \ @ Q L m P m n q \ f S r X y 8 N % # # = B 0 < 
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// a picture icon for the dialog ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// now put the items in the dialog ...</span></body></html>
 ~~~SIMULATED DIALOG: 
-I U > 6 F E o Q N Q 2 { F - w | ( 3 I ? A p g ' L & z W ~ ^ + f , r , w F A 5 B L v : - 2 c & < C . C & / F R D b z = m E + ( . b B W B | k 
-[ s " d ; e " B t \ W . U 8 X * O g b I 7 C m ^ B a 1 ! $ t 7 C D * ' ; Z ~ , ? = J ] J M ( : I ? X P N ? B e 4 s ? ~ * T s > E S N A ] i 5 
-a @ % 5 / I l 5 l j " q 0 u < : X ` U z T N # 5 < s ) b v @ U r { 0 % t z ( h P t ^ / ~ J 6 E , # c ^ w r . Z 0 X u B h { O Q t V V i J $ U 
-X p g & L - g # r } = a ? n _ | ? A F * ^ > u 4 \ E - D & m ^ 5 = H g 5 V X > = v b ( ~ R N V h w ) P S 3 7 ^ ) 8 K ' u " % _ ^ a ) B S ' R 
-[ 9 \ r ? P + 8 X T & z = d ; N 2 0 B : b Q > _ 1 3 W ' 4 h n w ) 8 I ) T ? 0 P u ) ] Q & | c + @ v u O W W X A G Q F o U E L i ~ } S M 8 n 
-Z H j b O M I y G _ t ^ X n * Q 9 i l S p @ z H 6 S ` $ r > ^ r % | y 6 5 r ; K F c n , n v = 6 I j G Z y B % 9 y t y P & - ^ < u 6 v E A a 
-^ R x c y @ m J { d . j K y ? ; p w E V f ( m r " c e q q 7 b [ ( h v ' Z \ . P | y s F < 1 ` u % H g e - - M F q L p s V # % 1 ( m T L q ) 
-B 4 s z 8 > L E U b b T P 7 J = m : D v / b a 1 } r | < < J \ ' ~ Q e : ! K % 0 D 3 + e C Q _ / / _ h v < B 0 V $ u p g } 8 K ( d D 1 R 5 D 
-@ * ^ ] ! 7 ] E 6 0 ] ] K T w ' ( , + n t & ; s ) s m ) k < m t a A S { t _ i C n y q \ V 2 F | W Q $ c s w = I c j q v b 9 : z Y [ V w h T 
-% $ ] a X 1 ] a V 0 - 7 T C z e W ` 0 = ] u @ Y Y q . = _ Q y D f l n w | s X w v x $ w @ w ` X 2 v Q | I $ Y T V T Q o F a 9 e B r ( K f b 
-s O q = . j M W : ` 0 } s J B Y 2 B 1 > | J P 4 L f . @ ` Y o D $ k H l q M % h - f 4 b K m , g - A H _ t | ] u n g y l V ` 7 4 @ 4 # M E * 
-$ : ` | S = n : } G a @ 3 N 0 * F # + = 1 x s ` " " j Z ^ + 6 O J } 9 & + F U q u B E 7 Z E n a S y ] = 1 Q T 8 \ E < 1 , p w e _ Q U K " ~ 
-z _ ! Y G y F H w O P ( j I b X 9 { T / 1 > i o ! { 1 B ~ " + m . ( = } , K ` u W $ 7 & P s c { _ d % . o y 7 @ ? E A . Z f ! s C K X & | 6 
-v U J k * / C 7 K q f P ; - h ~ \ x L W Z 3 ~ t . C T u b 0 R s / | 7 U 4 z Y g f v T A X - b 1 n ( R ! r A \ 9 = ` ) I t n n z Q 2 b / s 9 
-U a I B * U ) m - { ( s + j ( x D i 1 f x 8 Y > } - u W Y : I = ? & = N X 0 P = ~ n x % V g 0 . ; ; C [ q F A W ! W { $ 5 d 2 , [ V & @ j ^ 
-5 + ] h 7 7 L f . V V \ M A & V y ; s V B @ s d c ; ~ j X _ e y W H & $ T P C * R { w | X z u 3 y 5 x B 3 k r ` B f 1 W T 0 _ Y Q Q : 2 g + 
-k L w < ! ? t r % o A t D > n , R ! { ( e n . r 6 < @ X / 9 o T Q m y * ; D X J c d Q D 2 < c Z [ > z u | ? . u p T h ^ > @ * h | h @ | } Y 
-+ l 5 [ F K 1 ; h P ~ l O M - ! 5 H K _ ? m ? 9 H a ( # B B F P O x o { } y = 7 g _ D | ) d b B I m F } s h 5 \ t & 2 = H ^ F 5 # } l - z > 
-? 7 & F T I 9 > + + % / ^ B K N . + ` @ A 5 y L 7 ? 4 s ^ ' a W T r ] a a / ] 2 b 3 W u 3 l < : B q * ' i ^ T 0 S t t + h 0 F C } m = N ~ n 
-1 * c v ' r g W 5 y L > " @ Z ; E a X l b r 0 > \ > ^ g ( K V R \ ` n E ^ H _ = 0 @ m 1 F V y > l W r @ b = W 7 x [ 4 P ( k P [ D L i 6 < w 
-- N " " : c 1 R } V 2 > l y < / g 0 k ~ b C D E = x F M 4 Q t J W 5 a ? - 1 D X [ d 0 k m @ I W ~ V r ` f i : 7 G / Q g q w Q e F 1 H R E [ 
-L 7 . q v 4 V m z 3 } @ E s k . h $ 1 L z A | 5 | C n k B D . t u u 4 ; p $ R i ? J o ) t > j # : - v P $ O x w Z < / h H n @ n ' p - M O B 
-c V Q / E i - , u M ] Z ; L 7 " , 9 > K 2 h ; { c o ? X @ K W F c X 2 E j R @ { h ^ A e x R J ~ / > p i o D i @ # X A < - 8 O A z Q & O 6 d 
-W B \ g y R > S H e 5 R A A . F G A R % k Y a c r D = x \ K , E Q > - & p f r t Z p d > . y H 5 6 ' [ c ( [ 9 U J z e * ) J < e @ 1 ! G = x 
-@ ^ - k 6 ' j \ ^ W r 2 t + U 5 e [ 9 E F & H a W # x h 2 e V s D ' $ J W > ? l 7 T q 4 : U j P > G " \ w y u S ^ b D b 5 | I 7 Q * m ( < . 
-v @ t g 5 ! P 0 3 [ U r a ? u N ` i & ^ Z " g 4 y F 0 I . Q 6 w M & k j ; S u ( z i X G G ) ` v j 4 P u B & L $ A _ # V x V M 6 s M ( ! e k 
-6 } | J [ 7 _ ' D x 5 O J D B U & 0 C Z e 8 T b Q ! . ` M L } ' ! p C { _ o Y g 1 + F 7 q $ m ! ` @ _ f a - > v Z % } W 8 , a K t z " 8 T f 
-_ ! m E m < B 6 & 7 K G Q F 4 b ? } I ` ^ E E @ X S H ) F n . [ V C G x z A G 7 R B A h t r p A F s ! ^ w 8 # V Z G " . c * s S ? Z H / L i 
-| 2 x i 7 x U l ( w A B n E G : + A / w + f 5 s L L ` P } ( U a 8 * g Y : H a n , 6 Q } : E ) ^ E R ] * a ? s * t ' e v D p b ; j 7 p : H w 
-L N $ & P 7 8 v - 5 O b H | x F / v ` j p & p Y O F c e P C A Z 0 ? 0 < 3 | * y s & N z e P 8 ~ / t A " h ( [ L q E D D U j N n = > a < " & 
-e D 2 Q I p + l J L y U 5 i y o / x K - ( i t ! B v 1 P P X H A # H x E F Y y a / H 1 2 ? C < x _ C @ J 4 \ % n 3 B Q s C m a j Q @ n B [ W 
-7 @ ^ ( | i c L | $ z t s W K H = ) h 1 T Q 8 j v u 7 ? J f x $ h ? b _ z @ w G T J A C w + H / f u E R 0 ~ y z 7 I v g O D G # ? r o 5 \ G 
-e c F n % i 3 ! I O j y H W I " x ' I : ? X F w B b B 9 l X & n + o ? > Y d " u V / o & c _ ; < S * T [ ! ( ( 2 M ` f ] ; a V e U 7 J n e = 
-. h } H 9 2 M \ R b 8 @ # K ( _ z z : s q } o { } o O a > Q ; / } _ L $ V F H O ( _ C p v + M 6 8 s d G z > , 1 w y % c ? ` V e ~ r 3 < p < 
-$ 9 F o r + B > : M W _ ; n ^ 4 B F F e % K @ f t x B 1 s B N Z 4 , 9 u P x E ; E _ ` X | V n R $ 9 a e < a U V 6 p s N " t ) ' " i e m 4 Y 
-x 1 J P M / r d ] E u K G \ } ' ` " E r 2 ] I s e O u ' @ , ^ = $ f x E A $ i x u G + L v i P d 8 f 2 | ( N + d > 2 u w [ ^ 2 i I ; ] l f B 
-- b U 6 i Z q x I z @ 5 ! @ : 5 8 X A Q > A n D v 1 4 k 9 ! p # 4 k ] 0 X 9 % > f A C & V & 9 z V $ o j Q x s U & ? x E < " e U U { 5 9 o C 
-Y n > " > U z @ N V p k Q @ ! H [ - Y " m } 6 f Y | ] z j Q [ / 4 [ a / " O t ` j h f u ; w m U ; F - g 9 7 u J ? | o c k A : 4 m p & i t 1 
-9 Q " E p $ s = $ < 5 p ! X \ ` 1 J 7 L R l S ? * ] H [ N i f d s # ~ % } . r - b ' r @ \ C 6 / o $ 0 4 Z 5 - 2 A ` 5 C I 8 w [ S 1 ^ u k 6 
-k # k R ! L 1 # W Q d ` i k . ; x % G = x > L y g U 6 $ N j M O ` | c > 3 6 D A v Q / J ~ n : u " t 9 D G 4 : , * H f A , K w ] \ v d 8 U y 
-b k { ~ U a z J I ~ ' ? 5 l P F w Q < Y D ? D ; { R w V u d ` < ^ e y = D $ u u g : I Q q & . ' > b 8 V ! h ; ~ y y % \ / 6 v n M i m ~ 4 O 
-S _ g / G N 9 x a g y Q q _ > ; Z i T g : ' W C k R y M l ` 5 z W P ; # r S J T U - w z X , A z M Z n 4 9 f & q o f R 9 - < l r S ! _ a % ' 
-) Z ' ~ 0 , L E > ' 8 s O W ( 9 ) ~ J = e P ) I J - c 8 1 ' Z L S u S V x U & _ R 7 i + T | A - q 5 . x f # 2 * t E S l b 5 ~ E w ~ Y | R h 
-~ c i ` b 0 ~ J b ' X " . s : b k W V ? + q ] Q | : b ? u ' C y R r i i 8 M z < P \ . ( y m ` A i \ 3 N { h / - L # @ F p B + * I G { v % a 
-y e h ( o Y F z C x X s c , + ] Q g \ $ ; = j D ; : . $ V T > K J b A N R | v M B | Q T G K A K r V 1 F - I ; + s ) . a m O = P c v I ( { ] 
-w . 1 / - @ @ " k ( * M u F 2 S n n N R W Y N N x % m < 2 t D 4 Z 5 ~ 9 - W { M ] q # P V 8 ' z V % K } 2 [ a " d 7 z N e W = o w V { B < g 
-% H : ; r ^ z * d ' R q D Q @ b t E z * # g = V ] r g + o - g " m ` M u u f 0 5 \ . p E v F T g 1 # & U E & i D ( b I D s \ O : A _ " Y A ` 
-3 S ; 7 N V a t ~ _ j % @ j | E 8 8 W t M M x + . 7 7 . J | \ y k A r R ~ 5 X < M Y r % o g S D ) # ; W R 5 k 5 y v M * ( + j : M < 6 f a 6 
-9 4 Q V T 6 P * ; - ( 6 U ' Z M r F $ 6 X { C N ( ` u [ + } w , m ' e 3 . Z ^ 5 V @ s I E e \ q ~ R y $ * % E 0 # Y F ] Y ` j m r y Q i f c 
-W P ( Y c t s * # X Y p D 1 ) 6 \ @ Q L m P m n q \ f S r X y 8 N % # # = B 0 < n ^ $ , 1 | 2 t ' w 9 ; W + w S E U { Q U I u > ^ C j * , 7 
+- 2 3 ; , L . O } N Q D D ~ 5 ; x : ( | - [ ` K 6 w d E i = b 3 C 3 O b : r 8 ! n * l 8 t W k 6 . e 6 S ? N o j d } E L = C c { V D 7 ( U ] 
+/ i 2 1 k C ] e p : z \ + X * V e k k ) z F x C q & / . X V ? f - U K 4 Z + 0 v , c K 0 \ 9 k O p _ > t A > o & . m C s F W A _ 5 7 a = h m 
+U m 5 i " * o s _ ` ) O k # H K i Q * U 7 i . 5 v X V x \ W , ^ Q ' | A C p s M " ^ > Q S g q 8 6 x @ K j | { s x j - G | p $ s _ 6 6 w x Z 
+6 R R U # c ~ _ P [ m e C Y H u ~ / P 4 O i r Q g 5 # w ` m A z * } t y F R J l u S | t ^ H e v ~ u Z K | A _ l ! X u C + ^ > K 7 O [ d O y 
+m v " p n R t 2 @ ( - _ ) q " m x + # % o " m ( b h i w 1 M j e t | = @ F a Z u - H + > r u k ` f f V x w U 5 e k k T ( ? ~ s ~ ] & | # $ N 
+y E f - P r I p ) s + j G @ D * x L y 6 P f d ~ R ~ r B P i " E ` ] 0 < < ^ V [ I a q ? x m = Z j m ? 5 F s j 1 o ) ) J H # O m Z H j _ i c 
+B ! F u Q o & : d ^ D b & J n 4 h K k * b o ? { c y % ' R p X @ @ x > 9 \ q E 1 u @ a I O 8 ? u . N ! n < p 0 e > n \ ] = Y + $ & 7 & # > w 
+Z " n L % u k 5 { T 5 L ` h E T i $ + a G 9 f O } [ g M 5 ~ u h , | ' & < ' g r z Q v * p 7 3 , Z ! y R , \ ( f } X B ( I U & ^ { n k % 3 _ 
+t \ ^ A y w x Z r H m 1 n v g ! H < + g a i $ 2 } 2 z 4 ! 3 1 1 e ) j V . f F p l c L p J * B 1 . 9 w ( } 1 w $ z ) & | 2 ? 2 & G O r ` % M 
+l ; > g , \ e @ + p X J * t V g [ s $ M + { | g x 2 P J | B k - $ _ O * Y < o L X ; % 8 > / r s d 9 . 8 ^ s = # ; ] $ x ] & / ( k H C ` y j 
+9 c E ( v k < 3 ] ; L t 9 f ) M Z p y W t R , ` { W > 6 ; M i T ; m n = . 9 0 P I b Z > | a + & K < H S = v n V _ S F e O f i , ^ < + l } M 
+& s < c V m 5 C @ * 5 : 1 q e T % o 3 P _ ] + . K y K * V q r m v n n v g Y ; " 3 6 6 4 % I t g u k ( ~ } } 3 I 4 B = F 5 { ] = W / = @ 3 - 
+) T ) D ! ! y ^ , o U d h y 9 Z - , U ! g ] Z y # z 0 u 8 % J s a G m : m : l \ w _ b u 7 P K % ? ` c B { x p @ 8 F Z C + % \ / ! n 0 ' I g 
+d a j C 7 m v ( g K } _ ; P [ W r w & h R Y 7 I v < r / p ? 6 ! F & 7 = 9 a ] U - z C G E 8 ) x ( Z u c < y - h ! ) 9 [ _ 1 H J q q 8 @ 9 4 
+2 n % . & g p I o K ) T A t B x v c + F n 2 s i ] J ? > b : V V c W M u c ) h J ( & k H m N t K # | # ) ] h s | b o J 6 7 ] * ^ b = + B m a 
+9 ( e b a & N * T ( ; F M 2 4 Y $ ; ] ] ` c F _ > [ % R t : x 5 U Z U 1 E ? R r Y a } A k 9 c ! x $ $ | # ) q L F W F D d L # W 1 % V 6 M - 
+S l < E Q E d , S 4 b q P : x 8 # W g ] h @ O b ) u P i b q U s 5 G C X } 0 W c $ W a = S g K { v d ` / A 5 < Z ( t X < f w Q { B T x J 7 Q 
+Z 4 R % B p O * b e + a D 0 c Q v ( ~ A * ? K x , ` | V V E ) u Z T S e I % y J T _ 4 ` . 8 $ m Y b ; | _ , ' 0 m : o \ \ ) j $ h z B w ? } 
+. R S f < e l L n ^ % Y M H C # r | i ? ( > t T f h l z e 5 e z t 6 $ < m L M V ] O [ L ' W R : . D 3 @ 5 R ; L Q 4 D K y y W H Q 0 d a [ ' 
+N Z ? | s k ` 0 b ( A u r U < V ' r $ 1 \ 2 ! r . / 4 e 3 ? ? U Z X ; M ; L C I } w Q W } ' B Q / ! ( l * E 6 % O g P ; ! o n 4 R Q ) n 4 Q 
+A ? S , x I 2 1 - l _ K } E o ] y ) ' 6 0 T d V 1 B P ] B D 5 / m c C b $ s s | } - k P _ [ e ) N R ] % + G J > [ @ I z o 7 N & + w = > Z a 
+i 0 - T r j m w 4 n S K L 8 l j J 8 w c y x i j Z t ) Y > f . ! ` 5 $ j e . C ( # T S T Y v d q - 3 y m x U O K U ) h c " = T a [ ^ 0 v 9 g 
+7 / I K S / ` n 1 T 2 % M I : U : f x x / o N f ' r ' a t 1 ; O B ^ P I + g a J D 4 # P : l e v I K K h P h 3 ; I p U ! c - X \ i p k J a X 
+3 ) _ U N & J p 7 V ` ; d U U 6 G x 7 ) I z ` { A Z 8 O 2 0 % _ f B ) u b 5 v ` = R f P 1 c < ! X $ a Y z k + + X 5 y ^ " z $ q K n 4 X C x 
+C = f | 1 # E " c 2 9 - J O X C R / 0 } B u I v ] A | z ) d + B 6 ] ] u S ^ O % & d { { m n S t r v d h \ ^ ! F 3 ? X B ] ' 3 k % e Y i ] Z 
+} X / 6 W n 2 ` Y & v i + [ { t ] Z v r ^ / - @ H z ~ 6 + U 8 = a O % ' r * ] L 1 I z @ z ! B x ^ S \ . 6 d { V C B h . C ! q > } \ s W . * 
+x R V | o 9 M ' Y b - & q n | W f s h - Y o 0 ' q c B < $ ` J . X } Z w $ G X > P " Y H z i = Z U C 1 w [ 3 * g o Q ' X T \ ` l F h E t 4 - 
+7 K B @ p r f v i P S D } , F 7 , % 5 Q 4 ? ` + 5 Q ! { ? 3 l z } V _ R % P 0 O h H W y Q E j c , 4 ) 9 u ! o Q ^ H q I P N ( F q M - * . S 
+F I @ { N H O < z 0 ! 8 ? ? m * d K n C D X 7 Q 6 ) F > s X N Z ~ ! G > . S e A i 1 n a w n u Z ` Y ( 9 C P k @ v 0 % N w . [ P O l 1 e 2 S 
+! 0 ? k ; U Y 1 E n @ h o [ a 5 S T q k b c w K R " - s b 4 _ ` @ " h > I ] ` / % @ T ( = D , @ 4 { t . U M + w r - o / p F 0 s > M A : \ " 
+. + [ B G b T | [ q K H ' E 4 Y Y ~ ` J R . J o ( c p E m [ l f & O ^ : h K g ] _ 8 ` r 1 1 { / h o 5 h Y l ^ B . Z ( 0 w < k s ( _ F A g } 
+d | w h # f E , K U # 5 ( ) ` j ^ i 5 > T 0 8 r 3 m E q - m g $ c i 3 # l R 6 j J z p _ X f ^ k O q ? U \ M < X 9 \ g L Y 0 L } E % X u u ] 
+g _ y r u o C d v < = K } & 7 o l Z ( } u W k [ ? Y 0 D s N c N # ` T $ Y 0 6 K o I \ " ` ` e v ? M + # ) c u ~ / 1 ] L 7 R ) m k ^ | X j i 
+A [ [ 3 - 5 c v ) a # m p _ " o Z _ } h P z * z h @ G = } D f W Q C 6 q J v 3 W B < j D k ) p b S q 9 f G L @ d i R ) 6 E Z F c r _ ] X C ? 
+F j ? r N 9 ` R [ 5 # 7 0 [ B y d q E i > C I h l - b $ I N 7 Q 6 * L o [ D u 3 p E * [ = ( 3 4 P r ( ^ R T C \ s W V C J \ W " $ ' * D ) 3 
+9 [ B 2 d % T 8 C i G 6 r Z ) D : l B \ d . q [ " m b n n + : e w ' B w ; % 3 > z s i 9 q d O @ 2 4 ' 0 ^ p H / F Q p . 4 + B i Y C s ` B 2 
+A 6 x p v 5 ' o h / F # B y ! V ~ | 8 k I W e + u E ' o < - b m Q p g \ s V L w 2 F % m o U ` z 8 * B ( U x v x _ \ m W 2 W J 0 T 0 $ [ < ] 
+9 \ ; D ~ q C S 2 A d / b M I ~ n : b T $ ~ P , ^ V f u _ c V F R 0 y 2 o o ; f > 3 ' , Y ~ e I c \ Y G q P p = $ ! 6 8 " Y : S u D t , = _ 
+r # z g T 6 - z , $ v S 1 2 i U + g x v Z ! O G p m g ) I ; q \ ) + 3 s o * g ` # 3 ( " 1 ; C s > < U 2 o i > G L ] F d ? E J j U c i > y 8 
+1 I a T \ ? J U : } d 0 S N A X R / 8 t b + " y a R i { Z # U ^ Y [ J { A u / P F v 2 U W g K ^ < h ` | t Z + X . T W & e r S j # 7 = f C Z 
+L j D 7 h C S | { L E O 2 3 U J " ` x u y + A P \ a { P _ ( B 2 ; w 9 @ Q 5 X : ( ~ ! V 2 @ $ ; u / U C q > 8 T Q L < s J h x { D > Q q c d 
+l - S C h 2 / G w , w b } / ] ? I ! & v I 0 < + A p ] N 5 M ' ! j z y U } u % p o @ _ # " a B y w q l L e $ 0 5 G S f Q P x I M j o M P 4 . 
+# g V & k S n j V x y ' g D - ^ - A a | r p @ 5 Y o o Y e C ! & ? O ? g % 0 p $ @ 6 8 _ D + & ^ D a u + p 2 C 0 H @ @ ( o ) x T F V : & I O 
+l G E < j 0 p % U ; Q = ] m J m 7 ) / > b _ u 2 s Y F ] G v [ , + + ` j N 9 V B d u + < > / z % " u ) x J & V n S p j t T p d 8 H j " F L ` 
+y 7 > Z Q = 6 l " z u 9 A 8 B > | ( 6 B 9 W _ \ 0 U J h . ' @ C @ < ` 8 p 1 . n ] B 0 / % G % - n O r h z t J * v > ) o s ? q x F 7 t S = { 
+s W [ & G X [ 7 ] F m w < O j " ( 5 w h h " ^ y k 5 Q i / Q e ( : " # B ~ ] H x l x 5 M f D 1 M @ O p ^ z d 5 n # ; Z l M : B j @ % $ d h _ 
+U . } U p y _ N | ` q N z 2 * , X 0 w Q . o O o u q e C & p ~ l & 4 s A + 6 e , V k b c ? + ] l B o z ( ? ` d F k Y D B ~ o ] j . ^ 4 1 J 8 
++ 5 ? j 0 f @ " D Z % } X R b ? q f h ~ M @ o e g q t # a R v u } n : h r O = # % h | ! E f p . Q u Z 2 X ! N 1 4 ' $ m = M , F ? { ! W } u 
+O [ 1 : , Y @ ' H @ ' 1 9 0 2 2 o N a k . l h ! @ k z c o [ q ` 8 g , T H 6 S g F U k 5 $ f 2 j & p q I s S 7 Q q o g J 5 v l M M 1 P 7 4 e 
+$ V W p @ T 1 e $ # 7 j q K a + H [ ` y 6 N H I , 1 @ + _ I { 3 y f B p : 4 b I h u * w ! Z V 0 a 4 B R < q I c M V 4 * [ | ; / k ) e / ) d 
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Arrays unit complete..............</span></body></html>
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Classes unit started...............</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// create a new person object ...</span></body></html>
@@ -5018,9 +5018,9 @@ Wachs: Computer Science Teacher: Teacher: Person: Mr. Wachs is 48 and gender is 
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Turn the list into an array, and show array ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array = {Batman,Spiderman,Thing,Vibe,Flash}</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Now build a new character list with 50 random chars in it, and show ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">[M,P,V,F,G,A,Q,X,Q,C,K,O,L,T,B,L,H,U,P,U,B,Z,N,K,O,P,W,O,Q,T,T,Y,M,J,B,D,N,V,Z,M,T,B,R,V,T,K,Z,Z,Z,I]</span></body></html>
-<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Now find all the indices of J ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array = {33}</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">[J,I,M,X,E,Y,T,N,G,E,Q,Q,D,P,G,J,D,Q,J,C,V,B,B,C,C,X,F,L,O,B,H,G,A,Y,B,Y,C,W,X,G,N,Y,W,K,J,L,E,W,S,O]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Now find all the indices of Y ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array = {5,33,35,41}</span></body></html>
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Collections unit test complete..............</span></body></html>
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Permanent Storage unit test started...............</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// simple string save and open ...</span></body></html>
@@ -5859,32 +5859,32 @@ Calvin
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if empty, and size ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Empty = true and size = 0</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Push 10 items onto the stack, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3961,3964,4004,3963,3934,3917,3929,4022,4074,3907]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3951,4012,3905,3996,3957,3949,4014,3998,3951,3989]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if empty, and size ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Empty = false and size = 10</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create clone stack, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3961,3964,4004,3963,3934,3917,3929,4022,4074,3907]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3951,4012,3905,3996,3957,3949,4014,3998,3951,3989]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if the 2 stacks are equal ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">stacks are equal</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Pop half the original stack values, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3917,3929,4022,4074,3907]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3949,4014,3998,3951,3989]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Display clone again ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3961,3964,4004,3963,3934,3917,3929,4022,4074,3907]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3951,4012,3905,3996,3957,3949,4014,3998,3951,3989]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if the 2 stacks are equal again ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">stacks are not equal</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Wipe out (finalize) the clone, and display ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Empty stack</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check the top of both stacks, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">3917</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">3949</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">null</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create array from stack, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">array = [3917,3929,4022,4074,3907]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">array = [3949,4014,3998,3951,3989]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create LinkedList from stack, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">LinkedList = [3917,3929,4022,4074,3907]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">LinkedList = [3949,4014,3998,3951,3989]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create new Stack from array, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3917,3929,4022,4074,3907]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3949,4014,3998,3951,3989]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create new Stack from LinkedList, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3917,3929,4022,4074,3907]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3949,4014,3998,3951,3989]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Stack Testing complete..............</span></body></html>
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Queue Testing started...............</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create queue and display ...</span></body></html>
@@ -5892,35 +5892,51 @@ Calvin
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if empty, and size ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Empty = true and size = 0</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Enqueue 10 items onto the queue, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3921,3939,3976,3985,3910,3926,3972,3911,4011,3940]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [4021,3987,3957,3857,3948,3949,4018,3928,3928,3920]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if empty, and size ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Empty = false and size = 10</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create clone queue, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3921,3939,3976,3985,3910,3926,3972,3911,4011,3940]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [4021,3987,3957,3857,3948,3949,4018,3928,3928,3920]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if the 2 queue are equal ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">queues are equal</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Dequeue half the original queue values, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3926,3972,3911,4011,3940]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3949,4018,3928,3928,3920]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Display clone again ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3921,3939,3976,3985,3910,3926,3972,3911,4011,3940]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [4021,3987,3957,3857,3948,3949,4018,3928,3928,3920]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if the 2 queue are equal again ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">queues are not equal</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Wipe out (finalize) the clone, and display ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Empty Queue</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check the front and back of both queues, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">3926</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">3949</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">null</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">3940</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">3920</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">null</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create array from queue, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">array = [3926,3972,3911,4011,3940]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">array = [3949,4018,3928,3928,3920]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create LinkedList from queue, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">LinkedList = [3926,3972,3911,4011,3940]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">LinkedList = [3949,4018,3928,3928,3920]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create new queue from array, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3926,3972,3911,4011,3940]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3949,4018,3928,3928,3920]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create new queue from LinkedList, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3926,3972,3911,4011,3940]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3949,4018,3928,3928,3920]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Queue Testing complete..............</span></body></html>
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Stacks and Queues unit test complete..............</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Search Testing started...............</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing LinkedList with random non-duplicates, and display: ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">[3928,3995,3921,3881,3922,3997,3969,4013,3976,3940]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Linear search with LinkedList, testing edges ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Linear Search for item 3928 IN LinkedList (first item) at location 0</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Linear Search for item 3940 IN LinkedList (last item) at location 9</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Linear Search for item 3881 IN LinkedList (randomly) at location 3</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Linear Search for item 198 NOT IN LinkedList at location -1</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing array with random non-duplicates, and display: ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">[4018,3983,3930,3956,3901,3977,3950,3948,4000,3980]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Linear search with array, testing edges ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Linear Search for item 4018 IN array (first item) at location 0</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Linear Search for item 3980 IN array (last item) at location 9</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Linear Search for item 3901 IN array (randomly) at location 4</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Linear Search for item 198 NOT IN array at location -1</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Search Testing complete..............</span></body></html>
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Computer Science 42SIB course test complete..............</span></body></html>
 <html><head></head><body><span style="color: rgb(255,0,0);font-family: Trebuchet MS;">All testing complete..............</span></body></html>
