@@ -17,67 +17,52 @@ public class SearchingAndSortingTest
     }
 
     private void simple() {
-        System.out.println("Search test started...");
+        System.out.println("\nSearch test started...\n");
         
         final int SIZE = 10;
         final int MIN = 0; //-SIZE;
         final int MAX = SIZE;
         
-        LinkedList<Integer> list = new LinkedList<>();
+        LinkedList<Integer> list   = new LinkedList<>();
+        Integer[]           array  = new Integer[SIZE];
+        Integer             item   = Random.generate(MIN, MAX);
+        Searcher            search = new Searcher();
+        Sorter              sort   = new Sorter();
+        
         for (int i = 0; i < SIZE; i++) {
             list.add(Random.generate(MIN, MAX));
         }
         System.out.println(list);
         
-        Integer item = Random.generate(MIN, MAX);
-        
-        Searcher search = new Searcher();
-        
-        int location = search.linear(item,list);
-        
-        System.out.println("Item " + item + 
-                " at location " + location);
+        int location = search.linear(item,list);        
+        System.out.println("Item " + item + " location " + location);
                 
         item = list.front();
         location = search.linear(item,list);
-        System.out.println("Item " + item + 
-                " at location " + location);
+        System.out.println("Item " + item + " location " + location);
         
         item = list.back();
         location = search.linear(item,list);
-        System.out.println("Item " + item + 
-                " at location " + location);
+        System.out.println("Item " + item + " location " + location);
         
         item = list.get(Random.generate(1, SIZE-2));
         location = search.linear(item,list);
-        System.out.println("Item " + item + 
-                " at location " + location);
-        
-        Integer[] array = new Integer[SIZE];
+        System.out.println("Item " + item + " location " + location);
+                
         array = list.toArray(array);
-        
-        Sorter sort = new Sorter();
-        sort.bubble(array);
-        
+        sort.bubble(array);        
         output(array);
         
         item = Random.generate(MIN, MAX);
         location = search.binary(item, array);
-        System.out.println("Item " + item + 
-                " at location " + location);
+        System.out.println("Item " + item + " location " + location);
               
         list = new LinkedList<>(array);
         System.out.println(list);
         location = search.binary(item, list);
-        System.out.println("Item " + item + 
-                " at location " + location);
+        System.out.println("Item " + item + " location " + location);
         
-        
-        
-        
-        
-        
-        
+        System.out.println("\nSearch test complete...\n");
     }
         
     private<T> void output(T[] array) {
@@ -85,8 +70,7 @@ public class SearchingAndSortingTest
         for (int i = 0; i < array.length - 1; i++) {
             text += array[i].toString() + ",";
         }
-        System.out.println(text + 
-                array[array.length-1] + "]");
+        System.out.println(text + array[array.length-1] + "]");
     }
 
     private void visual() {
