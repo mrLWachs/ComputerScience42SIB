@@ -19,7 +19,7 @@ public class Searcher <T extends Comparable<T>>
     
     /** Indicates the item being searched for is not found */
     public final int NOT_FOUND = -1;
-    
+
     /**
      * An implementation of a linear search (sequential search)
      * algorithm. It will find the first occurance of an item
@@ -27,12 +27,13 @@ public class Searcher <T extends Comparable<T>>
      * -1 if not found
      * 
      * @param item the generic data type to search for in the list
-     * @param list a LinkedList of generic items to search through
+     * @param array an array of generic items to search through
      * @return the first index found at, or a -1 if not found
      */
-    public int linear(T item, LinkedList<T> list) {
-        for (int i = 0; i < list.size(); i++) {
-            if (item.equals(list.get(i))) {
+    public int linear(T item, T[] array) {
+        if (item == null || array == null) return NOT_FOUND;
+        for (int i = 0; i < array.length; i++) {
+            if (item.equals(array[i])) {
                 return i;
             }
         }
@@ -46,16 +47,28 @@ public class Searcher <T extends Comparable<T>>
      * -1 if not found
      * 
      * @param item the generic data type to search for in the list
-     * @param array an array of generic items to search through
+     * @param list the LinkedList to search through
      * @return the first index found at, or a -1 if not found
      */
-    public int linear(T item, T[] array) {
-        for (int i = 0; i < array.length; i++) {
-            if (item.equals(array[i])) {
-                return i;
-            }
-        }
-        return NOT_FOUND;
+    public int linear(T item, LinkedList list) {
+        if (item == null || list == null) return NOT_FOUND;
+        return recursiveLinear(item, list, 0);
+    }
+    
+    /**
+     * Recursive method to find the first occurance of an item
+     * in the LinkedList and return the index where it found it, or a 
+     * -1 if not found
+     * 
+     * @param item the generic data type to search for in the list
+     * @param list the LinkedList to search through
+     * @param i the current index location
+     * @return the first index found at, or a -1 if not found
+     */
+    private int recursiveLinear(T item, LinkedList<T> list, int i) {
+        if      (i == list.size())                 return NOT_FOUND;
+        else if (item.compareTo(list.get(i)) == 0) return i;
+        else return recursiveLinear(item,list,i+1);
     }
     
     /**
@@ -69,6 +82,7 @@ public class Searcher <T extends Comparable<T>>
      * @return the first index found at, or a -1 if not found 
      */
     public int binary(T item, T[] array) {
+        if (item == null || array == null) return NOT_FOUND;
         int high = array.length - 1;
         int low = 0;
         while (low <= high) {
@@ -80,12 +94,31 @@ public class Searcher <T extends Comparable<T>>
         return NOT_FOUND;
     }
     
-    
+    /**
+     * An implementation of a binary search (sequential search)
+     * algorithm. It will find the first occurance of an item
+     * in the LinkedList and return the index where it found it, or a 
+     * -1 if not found
+     * 
+     * @param item the generic data type to search for in the list
+     * @param list the LinkedList to search through
+     * @return the first index found at, or a -1 if not found 
+     */
     public int binary(T item, LinkedList<T> list) {
         if (item == null || list == null) return NOT_FOUND;
         return recursiveBinary(item,list,0,list.size());
     }
 
+    /**
+     * Recursive method used to find the item in the list and 
+     * return the index of it's location or a -1 if not found
+     * 
+     * @param item the generic data type to search for in the list
+     * @param list the LinkedList to search through
+     * @param low the lowest index to start from
+     * @param high the highest index to go to
+     * @return the first index found at, or a -1 if not found 
+     */
     private int recursiveBinary(T item, LinkedList<T> list, 
                                 int low, int high) {
         if (low <= high) {
@@ -100,9 +133,5 @@ public class Searcher <T extends Comparable<T>>
         }
         return NOT_FOUND;
     }
-    
-    
-    
-    
 
 }
