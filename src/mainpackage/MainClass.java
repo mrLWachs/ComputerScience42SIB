@@ -5,9 +5,12 @@ package mainpackage;
 import testing.Tester;
 
 /**
- * MainClass.java - description here...
+ * MainClass.java - the large in class example we continue to work 
+ * on in each unit adding example code on the new concepts of each unit 
+ * along with any in class requests for code examples that might come up 
+ * over the course
  *
- * @author lawrence.wachs 
+ * @author Mr. Wachs 
  * @since Feb 15, 2018 
  * @instructor Mr. Wachs
  */
