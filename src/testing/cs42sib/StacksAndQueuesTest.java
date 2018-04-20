@@ -2,6 +2,7 @@
 /** required package class namespace */
 package testing.cs42sib;
 
+/** required imports */
 import collections.LinkedList;
 import collections.Queue;
 import collections.Stack;
@@ -9,9 +10,9 @@ import io.Output;
 import testing.testclass.TestClass;
 
 /**
- * StacksAndQueuesTest.java - description here...
+ * StacksAndQueuesTest.java - tests the concepts learned in this unit
  *
- * @author Mr. Wachs (login: lawrence.wachs)
+ * @author Mr. Wachs 
  * @since Feb 15, 2018 
  * @instructor Mr. Wachs
  */

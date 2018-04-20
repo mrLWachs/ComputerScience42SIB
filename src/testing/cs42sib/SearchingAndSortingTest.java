@@ -1,6 +1,8 @@
 
+/** required package class namespace */
 package testing.cs42sib;
 
+/** required imports */
 import collections.LinkedList;
 import io.Output;
 import numbers.Random;
@@ -8,6 +10,13 @@ import searchsort.Searcher;
 import searchsort.Sorter;
 import testing.testclass.TestClass;
 
+/**
+ * SearchingAndSortingTest.java - tests the concepts learned in this unit
+ *
+ * @author Mr. Wachs 
+ * @since Feb 15, 2018 
+ * @instructor Mr. Wachs
+ */
 public class SearchingAndSortingTest 
 {
 

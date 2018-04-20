@@ -185,9 +185,7 @@ public class Dialogs
         area.setText(text);
         Object object = JOptionPane.showInputDialog(parent, area,
                 dialogTitle, type, icon, choices, choices[0]);
-        if (object == null) {
-            return null;
-        }
+        if (object == null) return null;
         return object.toString();
     }
 
@@ -200,9 +198,8 @@ public class Dialogs
      */
     public boolean question(String text) {
         area.setText(text);
-        return JOptionPane.showConfirmDialog(parent,
-                area, dialogTitle, optionType,
-                type, icon) == JOptionPane.YES_OPTION;
+        return JOptionPane.showConfirmDialog(parent,area,dialogTitle,
+                optionType,type, icon) == JOptionPane.YES_OPTION;
     }
 
     /**
@@ -273,15 +270,15 @@ public class Dialogs
      * Sets class properties to default values
      */
     private void defaults() {
-        this.font = DEFAULT_FONT;
+        this.font            = DEFAULT_FONT;
         this.backgroundColor = DEFAULT_BACKGROUND_COLOR;
         this.foregroundColor = DEFAULT_FOREGROUND_COLOR;
-        this.dialogTitle = DEFAULT_TITLE;
-        this.parent = DEFAULT_COMPONENT;
-        this.type = DEFAULT_TYPE;
-        this.optionType = DEFAULT_OPTION_TYPE;
-        this.icon = DEFAULT_ICON;
-        this.area = new JTextArea();
+        this.dialogTitle     = DEFAULT_TITLE;
+        this.parent          = DEFAULT_COMPONENT;
+        this.type            = DEFAULT_TYPE;
+        this.optionType      = DEFAULT_OPTION_TYPE;
+        this.icon            = DEFAULT_ICON;
+        this.area            = new JTextArea();
     }
 
     /**

@@ -6,9 +6,12 @@ package testing.cs42sib;
 import io.Output;
 
 /**
- * ComputerScience42SIBTest.java - description here...
+ * ComputerScience42SIBTest.java - the large in class example we continue to 
+ * work on in each unit adding example code on the new concepts of each unit 
+ * along with any in class requests for code examples that might come up 
+ * over the course
  *
- * @author Mr. Wachs (login: lawrence.wachs)
+ * @author Mr. Wachs 
  * @since Mar 2, 2018 
  * @instructor Mr. Wachs
  */
