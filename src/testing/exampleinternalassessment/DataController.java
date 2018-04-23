@@ -5,7 +5,7 @@ package testing.exampleinternalassessment;
 /** required imports */
 import collections.LinkedList;
 import io.FileHandler;
-import WORKAHEAD.Sorter;
+import searchsort.Sorter;
 
 /**
  * DataController.java - controls the logic engine for the database data
@@ -90,7 +90,7 @@ public class DataController
     /** sorts the database data into ascending order */
     public void sortEntries() {
         if (uiController.isValidList()) {
-            sorter.quickSort(entries);
+            sorter.quick(entries);
             uiController.updateUI(entries);
         }
     }

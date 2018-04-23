@@ -8,6 +8,7 @@ import collections.LinkedList;
 
 /**
  * Sorter.java - useful methods for sorting arrays and LinkedLists
+ * of generic data into ascending order
  * 
  * @author Mr. Wachs
  * @param <T> the generic object used in this class
@@ -105,5 +106,190 @@ public class Sorter <T extends Comparable<T>>
             }
         }
     }
+        
+    /**
+     * An implementation of a insertion sort algorithm
+     * it will sort the array into ascending order
+     * 
+     * @param array the array of generic items to sort
+     */
+    public void insertion(T[] array) {
+        for (int i = 1; i < array.length; i++) {
+            int j = i;
+            T temp = array[i];
+            while ((j > 0) && 
+                   (array[j-1].compareTo(temp) > 0)) {
+                array[j] = array[j-1];
+                j--;
+            }
+            array[j] = temp;
+        }        
+    }
+    
+    /**
+     * An implementation of a insertion sort algorithm
+     * it will sort the list into ascending order
+     * 
+     * @param list the LinkedList to sort
+     */
+    public void insertion(LinkedList<T> list) {
+        for (int i = 1; i < list.size(); i++) {
+            int j = i;
+            T temp = list.get(i);
+            while ((j > 0) &&
+                   (list.get(j-1).compareTo(temp) > 0)) {
+                list.set(j, list.get(j-1));                
+                j--;
+            }
+            list.set(j, temp); 
+        }      
+    }
+    
+    /**
+     * An implementation of a shell sort algorithm
+     * it will sort the array into ascending order
+     * 
+     * @param array the array of generic items to sort
+     */
+    public void shell(T[] array) {
+        int j = 0;
+        for (int gap = array.length / 2; gap > 0; gap /= 2) {
+            for (int i = gap; i < array.length; i++) {
+                T temp = array[i];
+                for (j = i; 
+                     (j >= gap) && (temp.compareTo(array[j-gap]) < 0); 
+                     j -= gap) {
+                    array[j] = array[j-gap];
+                }
+                array[j] = temp;
+            }
+        }        
+    }
+    
+    /**
+     * An implementation of a shell sort algorithm
+     * it will sort the list into ascending order
+     * 
+     * @param list the LinkedList to sort
+     */
+    public void shell(LinkedList<T> list) {
+        int j = 0;
+        for (int gap = list.size() / 2; gap > 0; gap /= 2) {
+            for (int i = gap; i < list.size(); i++) {
+                T temp = list.get(i);
+                for (j = i; 
+                     (j >= gap) && (temp.compareTo(list.get(j-gap)) < 0); 
+                     j -= gap) {
+                    list.set(j, list.get(j-gap));
+                }
+                list.set(j,temp);
+            }
+        }        
+    }
+    
+    /**
+     * An implementation of a quick sort algorithm 
+     * it will sort the array into ascending order
+     * 
+     * @param array the array of generic items to sort 
+     */    
+    public void quick(T[] array) {
+        recursiveQuick(array,0,array.length-1);
+    }
+
+    /**
+     * An implementation of a quick sort algorithm 
+     * it will sort the list into ascending order
+     * 
+     * @param list the LinkedList to sort
+     */    
+    public void quick(LinkedList<T> list) {
+        recursiveQuick(list,0,list.size()-1);
+    }
+    
+    /**
+     * Recursive implementation of a quick sort algorithm 
+     * 
+     * @param array the array of generic items to sort
+     * @param front the marker for the front partition
+     * @param back the marker for the back partition 
+     */
+    private void recursiveQuick(T[] array, int front, int back) {
+        if (back <= front) return;
+        else {
+            int pivot = partition(array,front,back);
+            recursiveQuick(array,front,pivot-1);
+            recursiveQuick(array,pivot+1,back);
+        }
+    }
+    
+    /**
+     * Recursive implementation of a quick sort algorithm 
+     * 
+     * @param list the LinkedList to sort
+     * @param front the marker for the front partition
+     * @param back the marker for the back partition 
+     */
+    private void recursiveQuick(LinkedList<T> list, int front, int back) {
+        if (back <= front) return;
+        else {
+            int pivot = partition(list,front,back);
+            recursiveQuick(list,front,pivot-1);
+            recursiveQuick(list,pivot+1,back);
+        }
+    }
+
+    /**
+     * Partitions the array into S1 and S2 and separates
+     * 
+     * @param array the array of generic items to partition
+     * @param front the marker for the front partition
+     * @param back the marker for the back partition 
+     * @return the position of the partition in the array
+     */
+    private int partition(T[] array, int front, int back) {
+        T pivot = array[front];
+        while (back > front) {
+            while (back > front && array[back].compareTo(pivot) > 0)
+                back--;
+            if (back == front) break;
+            array[front] = array[back];
+            front++;
+            while (back > front && array[front].compareTo(pivot) < 0)
+                front++;
+            if (back == front) break;
+            array[back] = array[front];
+            back--;
+        }
+        array[front] = pivot; 
+        return front;
+    }    
+    
+    /**
+     * Partitions the list into S1 and S2 and separates
+     * 
+     * @param list the LinkedList to partition
+     * @param front the marker for the front partition
+     * @param back the marker for the back partition 
+     * @return the position of the partition in the list
+     */
+    private int partition(LinkedList<T> list, int front, int back) {
+        T pivot = list.get(front);
+        while (back > front) {
+            while (back > front && list.get(back).compareTo(pivot) > 0)
+                back--;
+            if (back == front) break;
+            list.set(front,list.get(back));
+            front++;
+            
+            while (back > front && list.get(front).compareTo(pivot) < 0)
+                front++;
+            if (back == front) break;
+            list.set(back,list.get(front));
+            back--;
+        }
+        list.set(front,pivot);
+        return front;
+    } 
     
 }
