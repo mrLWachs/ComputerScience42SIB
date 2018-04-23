@@ -59,6 +59,8 @@ public class SearchingAndSortingTest
         System.out.println("Item " + item + " location " + location);
                 
         array = list.toArray(array);
+        list = new LinkedList<>(array);
+        
         sort.bubble(array);        
         output(array);
         
@@ -66,10 +68,32 @@ public class SearchingAndSortingTest
         location = search.binary(item, array);
         System.out.println("Item " + item + " location " + location);
               
-        list = new LinkedList<>(array);
+        
+        sort.bubble(list);
         System.out.println(list);
         location = search.binary(item, list);
         System.out.println("Item " + item + " location " + location);
+                
+        for (int i = 0; i < SIZE; i++) {
+            array[i] = Random.generate(MIN, MAX);
+            list.set(i, Random.generate(MIN, MAX));
+        }
+        output(array);
+        System.out.println(list);
+        
+        sort.selection(array);
+        output(array);
+        sort.selection(list);
+        System.out.println(list);
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         System.out.println("\nSearch test complete...\n");
     }
