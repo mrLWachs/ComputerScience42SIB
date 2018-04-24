@@ -280,8 +280,7 @@ public class Sorter <T extends Comparable<T>>
                 back--;
             if (back == front) break;
             list.set(front,list.get(back));
-            front++;
-            
+            front++;            
             while (back > front && list.get(front).compareTo(pivot) < 0)
                 front++;
             if (back == front) break;

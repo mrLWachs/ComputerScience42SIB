@@ -29,67 +29,199 @@ public class SearchingAndSortingTest
         System.out.println("\nSearch test started...\n");
         
         final int SIZE = 10;
-        final int MIN = 0; //-SIZE;
-        final int MAX = SIZE;
+        final int MIN  = 0; 
+        final int MAX  = SIZE;
         
-        LinkedList<Integer> list   = new LinkedList<>();
-        Integer[]           array  = new Integer[SIZE];
-        Integer             item   = Random.generate(MIN, MAX);
-        Searcher            search = new Searcher();
-        Sorter              sort   = new Sorter();
+        LinkedList<Integer> list    = new LinkedList<>();
+        Integer[]           array   = new Integer[SIZE];
+        Integer             item    = Random.generate(MIN, MAX);
+        Integer             unfound = MIN-1;
+
+        Searcher            search  = new Searcher();
+        Sorter              sort    = new Sorter();
         
-        for (int i = 0; i < SIZE; i++) {
-            list.add(Random.generate(MIN, MAX));
-        }
-        System.out.println(list);
+        // create random array and list
+        System.out.println("Creating unsorted array and LinkedList "
+                + "of random values");
+        array = Random.generateIntegers(SIZE,MIN,MAX);
+        list  = Random.generateIntegersList(SIZE,MIN,MAX);
+        output(array);
+        System.out.println("List \t " + list);
         
-        int location = search.linear(item,list);        
-        System.out.println("Item " + item + " location " + location);
+        
+        System.out.println("\nTest linear search\n");
+        
+        System.out.println("Testing linear search in array");
+        int location = search.linear(item,array);        
+        System.out.println("Random Item in array\t" + item + 
+                "\t location \t" + location);
+                
+        item = array[0];
+        location = search.linear(item,array);
+        System.out.println("Front Item in array\t" + item + 
+                "\t location \t" + location);
+        
+        item = array[array.length-1];
+        location = search.linear(item,array);
+        System.out.println("Back Item in array\t" + item + 
+                "\t location \t" + location);
+        
+        location = search.linear(unfound,array);
+        System.out.println("Unfound Item in array\t" + unfound + 
+                "\t location \t" + location);
+        
+        
+        
+        System.out.println("Testing linear search in list");
+        location = search.linear(item,list);        
+        System.out.println("Random Item in list\t" + item + 
+                "\t location \t" + location);
                 
         item = list.front();
         location = search.linear(item,list);
-        System.out.println("Item " + item + " location " + location);
+        System.out.println("Front Item in list\t" + item + 
+                "\t location \t" + location);
         
         item = list.back();
         location = search.linear(item,list);
-        System.out.println("Item " + item + " location " + location);
+        System.out.println("Back Item in list\t" + item + 
+                "\t location \t" + location);
         
-        item = list.get(Random.generate(1, SIZE-2));
-        location = search.linear(item,list);
-        System.out.println("Item " + item + " location " + location);
+        location = search.linear(unfound,list);
+        System.out.println("Unfound Item in list\t" + unfound + 
+                "\t location \t" + location);
                 
-        array = list.toArray(array);
-        list = new LinkedList<>(array);
         
+        System.out.println("\nTest binary search\n");
+        array = Random.generateSortedIntegers(SIZE,MIN,MAX);
+        list  = Random.generateSortedIntegersList(SIZE,MIN,MAX);
+        System.out.println("Creating sorted array and LinkedList "
+                + "of random values");
+        output(array);
+        System.out.println("List \t " + list);
+        
+        System.out.println("Testing binary search in array");
+        location = search.binary(item,array);        
+        System.out.println("Random Item in array\t" + item + 
+                "\t location \t" + location);
+                
+        item = array[0];
+        location = search.binary(item,array);
+        System.out.println("Front Item in array\t" + item + 
+                "\t location \t" + location);
+        
+        item = array[array.length-1];
+        location = search.binary(item,array);
+        System.out.println("Back Item in array\t" + item + 
+                "\t location \t" + location);
+        
+        location = search.linear(unfound,array);
+        System.out.println("Unfound Item in array\t" + unfound + 
+                "\t location \t" + location);
+        
+        
+        
+        System.out.println("Testing binary search in list");
+        location = search.binary(item,list);        
+        System.out.println("Random Item in list\t" + item + 
+                "\t location \t" + location);
+                
+        item = list.front();
+        location = search.binary(item,list);
+        System.out.println("Front Item in list\t" + item + 
+                "\t location \t" + location);
+        
+        item = list.back();
+        location = search.binary(item,list);
+        System.out.println("Back Item in list\t" + item + 
+                "\t location \t" + location);
+        
+        location = search.binary(unfound,list);
+        System.out.println("Unfound Item in list\t" + unfound + 
+                "\t location \t" + location);
+        
+        
+        
+        System.out.println("\nTest sorts\n");
+        
+        
+        
+        
+        System.out.println("Test bubble sort");
+        System.out.println("unsorted..."); 
+        output(array);
+        System.out.println("List \t " + list);
         sort.bubble(array);        
-        output(array);
-        
-        item = Random.generate(MIN, MAX);
-        location = search.binary(item, array);
-        System.out.println("Item " + item + " location " + location);
-              
-        
         sort.bubble(list);
-        System.out.println(list);
-        location = search.binary(item, list);
-        System.out.println("Item " + item + " location " + location);
-                
-        for (int i = 0; i < SIZE; i++) {
-            array[i] = Random.generate(MIN, MAX);
-            list.set(i, Random.generate(MIN, MAX));
-        }
+        System.out.println("sorted...");
         output(array);
-        System.out.println(list);
+        System.out.println("List \t " + list);
+                       
         
+        // randomize array and list  
+        System.out.println("Test Selection sort");
+        array = Random.generateIntegers(SIZE,MIN,MAX);
+        list  = Random.generateIntegersList(SIZE,MIN,MAX);
+        System.out.println("unsorted...");
+        output(array);
+        System.out.println("List \t " + list);
+        
+        // selection sort
+        System.out.println("sorted...");
         sort.selection(array);
         output(array);
         sort.selection(list);
-        System.out.println(list);
+        System.out.println("List \t " + list);
         
         
         
+        // randomize array and list  
+        System.out.println("Test insertion sort");
+        array = Random.generateIntegers(SIZE,MIN,MAX);
+        list  = Random.generateIntegersList(SIZE,MIN,MAX);
+        System.out.println("unsorted...");
+        output(array);
+        System.out.println("List \t " + list);
+        
+        // insertion sort
+        System.out.println("sorted...");
+        sort.insertion(array);
+        output(array);
+        sort.insertion(list);
+        System.out.println("List \t " + list);
         
         
+        
+        // randomize array and list  
+        System.out.println("Test shell sort");
+        array = Random.generateIntegers(SIZE,MIN,MAX);
+        list  = Random.generateIntegersList(SIZE,MIN,MAX);
+        System.out.println("unsorted...");
+        output(array);
+        System.out.println("List \t " + list);
+        
+        // shell sort
+        System.out.println("sorted...");
+        sort.shell(array);
+        output(array);
+        sort.shell(list);
+        System.out.println("List \t " + list);
+        
+        
+        // randomize array and list  
+        System.out.println("Test quick sort");
+        array = Random.generateIntegers(SIZE,MIN,MAX);
+        list  = Random.generateIntegersList(SIZE,MIN,MAX);
+        System.out.println("unsorted...");
+        output(array);
+        System.out.println("List \t " + list);
+        
+        // quick sort
+        System.out.println("sorted...");
+        sort.quick(array);
+        output(array);
+        sort.quick(list);
+        System.out.println("List \t " + list);
         
         
         
@@ -99,7 +231,7 @@ public class SearchingAndSortingTest
     }
         
     private<T> void output(T[] array) {
-        String text = "[";
+        String text = "Array \t [";
         for (int i = 0; i < array.length - 1; i++) {
             text += array[i].toString() + ",";
         }

@@ -2,6 +2,9 @@
 /** required package class namespace */
 package numbers;
 
+import collections.LinkedList;
+import searchsort.Sorter;
+
 /**
  * Random.java - useful tools for generating random items
  * @author Mr. Wachs 
@@ -222,7 +225,7 @@ public class Random
         }
         return a;
     }
-    
+        
     /**
      * Generates a random array of doubles between 0 and the array length
      * 
@@ -266,5 +269,345 @@ public class Random
         }
         return a;
     }  
+
+    /**
+     * Generates a random array of integers inside a range
+     * 
+     * @param size the size of the array to generate
+     * @param low the lowest possible random number
+     * @param high the highest possible random number
+     * @return a random array of integers inside a range
+     */
+    public static Integer[] generateIntegers(int size, int low, int high) {
+        Integer[] array = new Integer[size];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = generate(low, high);
+        }
+        return array;
+    }
+    
+    /**
+     * Generates a random array of Doubles inside a range
+     * 
+     * @param size the size of the array to generate
+     * @param low the lowest possible random number
+     * @param high the highest possible random number
+     * @return a random array of Doubles inside a range
+     */
+    public static Double[] generateDoubles(int size, double low, double high) {
+        Double[] array = new Double[size];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = generate(low, high);
+        }
+        return array;
+    }
+
+    /**
+     * Generates a random array of Characters inside a range
+     * 
+     * @param size the size of the array to generate
+     * @param low the lowest possible random character
+     * @param high the highest possible random character
+     * @return a random array of Characters inside a range
+     */
+    public static Character[] generateCharacters(int size, char low, char high) {
+        Character[] array = new Character[size];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = generate(low, high);
+        }
+        return array;
+    }
+
+    /**
+     * Generates a random array of Strings inside a range
+     * 
+     * @param arrayLength the size of the array to generate
+     * @param wordLength the length of each string to generate    * 
+     * @param low the lowest possible random character
+     * @param high the highest possible random character
+     * @return a random array of Strings inside a range
+     */
+    public static String[] generateStrings(int arrayLength, 
+                                           int wordLength, 
+                                           char low, 
+                                           char high) {
+        String[] array = new String[arrayLength];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = generate(wordLength, low, high);
+        }
+        return array;
+    }
+        
+    /**
+     * Generates a random LinkedList of Booleans
+     * 
+     * @param size the size of the list to generate
+     * @return a random LinkedList of Booleans
+     */
+    public static LinkedList<Boolean> generateBooleansList(int size) {
+        LinkedList<Boolean> list = new LinkedList<>();
+        for (int i = 0; i < size; i++) {
+            list.add(generate());
+        }
+        return list;
+    }
+        
+    /**
+     * Generates a random LinkedList of integers inside a range
+     * 
+     * @param size the size of the list to generate
+     * @param low the lowest possible random number
+     * @param high the highest possible random number
+     * @return a random LinkedList of integers inside a range
+     */
+    public static LinkedList<Integer> generateIntegersList(int size, 
+                                                           int low, 
+                                                           int high) {
+        LinkedList<Integer> list = new LinkedList<>();
+        for (int i = 0; i < size; i++) {
+            list.add(generate(low, high));
+        }
+        return list;
+    }
+        
+    /**
+     * Generates a random LinkedList of Doubles inside a range
+     * 
+     * @param size the size of the list to generate
+     * @param low the lowest possible random number
+     * @param high the highest possible random number
+     * @return a random LinkedList of Doubles inside a range
+     */
+    public static LinkedList<Double> generateDoublesList(int size, 
+                                                           double low, 
+                                                           double high) {
+        LinkedList<Double> list = new LinkedList<>();
+        for (int i = 0; i < size; i++) {
+            list.add(generate(low, high));
+        }
+        return list;
+    }
+    
+    /**
+     * Generates a random LinkedList of Characters inside a range
+     * 
+     * @param size the size of the list to generate
+     * @param low the lowest possible random character
+     * @param high the highest possible random character
+     * @return a random LinkedList of Characters inside a range
+     */
+    public static LinkedList<Character> generateCharactersList(int size, 
+                                                           char low, 
+                                                           char high) {
+        LinkedList<Character> list = new LinkedList<>();
+        for (int i = 0; i < size; i++) {
+            list.add(generate(low, high));
+        }
+        return list;
+    }
+        
+    /**
+     * Generates a random LinkedList of Strings inside a range
+     * 
+     * @param listLength the size of the array to generate
+     * @param wordLength the length of each string to generate    * 
+     * @param low the lowest possible random character
+     * @param high the highest possible random character
+     * @return a random LinkedList of Strings inside a range
+     */
+    public static LinkedList<String> generateStringsList(int listLength, 
+                                           int wordLength, 
+                                           char low, 
+                                           char high) {
+        LinkedList<String> list = new LinkedList<>();
+        for (int i = 0; i < listLength; i++) {
+            list.add(generate(wordLength, low, high));
+        }
+        return list;
+    }
+    
+    /**
+     * Generates a sorted random array of Booleans inside a range
+     * 
+     * @param size the size of the array to generate
+     * @return a random array of Booleans inside a range
+     */
+    public static Boolean[] generateSortedBooleans(int size) {
+        Boolean[] array = new Boolean[size];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = generate();
+        }
+        new Sorter().quick(array);
+        return array;
+    }
+    
+    /**
+     * Generates a sorted random array of integers inside a range
+     * 
+     * @param size the size of the array to generate
+     * @param low the lowest possible random number
+     * @param high the highest possible random number
+     * @return a random array of integers inside a range
+     */
+    public static Integer[] generateSortedIntegers(int size, 
+                                                   int low, 
+                                                   int high) {
+        Integer[] array = new Integer[size];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = generate(low, high);
+        }
+        new Sorter().quick(array);
+        return array;
+    }
+        
+    /**
+     * Generates a sorted random array of Doubles inside a range
+     * 
+     * @param size the size of the array to generate
+     * @param low the lowest possible random number
+     * @param high the highest possible random number
+     * @return a random array of Doubles inside a range
+     */
+    public static Double[] generateSortedDoubles(int size, 
+                                                   double low, 
+                                                   double high) {
+        Double[] array = new Double[size];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = generate(low, high);
+        }
+        new Sorter().quick(array);
+        return array;
+    }
+            
+    /**
+     * Generates a sorted random array of Characters inside a range
+     * 
+     * @param size the size of the array to generate
+     * @param low the lowest possible random character
+     * @param high the highest possible random character
+     * @return a random array of Characters inside a range
+     */
+    public static Character[] generateSortedCharacters(int size, 
+                                                   char low, 
+                                                   char high) {
+        Character[] array = new Character[size];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = generate(low, high);
+        }
+        new Sorter().quick(array);
+        return array;
+    }
+        
+    /**
+     * Generates a sorted random array of Strings inside a range
+     * 
+     * @param listLength the size of the array to generate
+     * @param wordLength the length of each string to generate    * 
+     * @param low the lowest possible random character
+     * @param high the highest possible random character
+     * @return a random array of Strings inside a range
+     */
+    public static String[] generateSortedStrings(int listLength, 
+                                           int wordLength, 
+                                           char low, 
+                                           char high) {
+        String[] array = generateStrings(listLength, 
+                wordLength, low, high);
+        new Sorter().quick(array);
+        return array;
+    }
+        
+    /**
+     * Generates a sorted random LinkedList of Booleans inside a range
+     * 
+     * @param size the size of the list to generate
+     * @return a random LinkedList of Booleans inside a range
+     */
+    public static LinkedList<Boolean> generateSortedBooleansList(int size) {
+        LinkedList<Boolean> list = new LinkedList<>();
+        for (int i = 0; i < size; i++) {
+            list.add(generate());
+        }
+        new Sorter().quick(list);
+        return list;
+    }
+    
+    /**
+     * Generates a sorted random LinkedList of integers inside a range
+     * 
+     * @param size the size of the list to generate
+     * @param low the lowest possible random number
+     * @param high the highest possible random number
+     * @return a random LinkedList of integers inside a range
+     */
+    public static LinkedList<Integer> generateSortedIntegersList(int size, 
+                                                           int low, 
+                                                           int high) {
+        LinkedList<Integer> list = new LinkedList<>();
+        for (int i = 0; i < size; i++) {
+            list.add(generate(low, high));
+        }
+        new Sorter().quick(list);
+        return list;
+    }
+        
+    /**
+     * Generates a sorted random LinkedList of Doubles inside a range
+     * 
+     * @param size the size of the list to generate
+     * @param low the lowest possible random number
+     * @param high the highest possible random number
+     * @return a random LinkedList of Doubles inside a range
+     */
+    public static LinkedList<Double> generateSortedDoublesList(int size, 
+                                                           double low, 
+                                                           double high) {
+        LinkedList<Double> list = new LinkedList<>();
+        for (int i = 0; i < size; i++) {
+            list.add(generate(low, high));
+        }
+        new Sorter().quick(list);
+        return list;
+    }
+       
+    /**
+     * Generates a sorted random LinkedList of Characters inside a range
+     * 
+     * @param size the size of the list to generate
+     * @param low the lowest possible random character
+     * @param high the highest possible random character
+     * @return a random LinkedList of Characters inside a range
+     */
+    public static LinkedList<Character> generateSortedCharactersList(int size, 
+                                                           char low, 
+                                                           char high) {
+        LinkedList<Character> list = new LinkedList<>();
+        for (int i = 0; i < size; i++) {
+            list.add(generate(low, high));
+        }
+        new Sorter().quick(list);
+        return list;
+    }
+   
+    /**
+     * Generates a sorted random LinkedList of Strings inside a range
+     * 
+     * @param listLength the size of the array to generate
+     * @param wordLength the length of each string to generate    * 
+     * @param low the lowest possible random character
+     * @param high the highest possible random character
+     * @return a random LinkedList of Strings inside a range
+     */
+    public static LinkedList<String> generateSortedStringsList(int listLength, 
+                                           int wordLength, 
+                                           char low, 
+                                           char high) {
+        LinkedList<String> list = new LinkedList<>();
+        for (int i = 0; i < listLength; i++) {
+            list.add(generate(wordLength, low, high));
+        }
+        new Sorter().quick(list);
+        return list;
+    }
     
 }
