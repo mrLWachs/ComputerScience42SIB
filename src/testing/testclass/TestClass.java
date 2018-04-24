@@ -6,6 +6,7 @@ package testing.testclass;
 import collections.LinkedList;
 import java.io.Serializable;
 import numbers.Random;
+import searchsort.Sorter;
 
 /**
  * ChildTestClass.java - a test class for randomly generated data types
@@ -188,9 +189,42 @@ public class TestClass extends BaseTestClass implements Serializable, Comparable
             return -1;
         }        
     }
-        
+      
+    /**
+     * Generates and returns a LinkedList of random objects
+     * 
+     * @param size the size of the list to generate
+     * @return a LinkedList of random objects
+     */
+    public static LinkedList generateList(int size) {
+        LinkedList linkedList = new LinkedList();
+        for (int i = 0; i < size; i++) {       
+            linkedList.add(new TestClass());            
+        }
+        return linkedList;
+    }
     
-    public static LinkedList createLinkedListNoDuplicates(int size) {
+    /**
+     * Generates and returns an array of random objects
+     * 
+     * @param size the size of the array to generate
+     * @return an array of random objects
+     */
+    public static TestClass[] generateArray(int size) {
+        TestClass[] array = new TestClass[size];
+        for (int i = 0; i < size; i++) {       
+            array[i] = new TestClass();            
+        }
+        return array;
+    }
+    
+    /**
+     * Generates and returns a LinkedList of non duplicate random objects
+     * 
+     * @param size the size of the list to generate
+     * @return a LinkedList of unique random objects
+     */
+    public static LinkedList generateUniqueList(int size) {
         LinkedList linkedList = new LinkedList();
         for (int i = 0; i < size; i++) {
             TestClass test;
@@ -210,11 +244,78 @@ public class TestClass extends BaseTestClass implements Serializable, Comparable
         return linkedList;
     }
     
-    public static LinkedList createLinkedList(int size) {
-        LinkedList linkedList = new LinkedList();
-        for (int i = 0; i < size; i++) {       
-            linkedList.add(new TestClass());            
+    /**
+     * Generates and returns a array of non duplicate random objects
+     * 
+     * @param size the size of the array to generate
+     * @return a array of unique random objects
+     */
+    public static TestClass[] generateUniqueArray(int size) {
+        TestClass[] array = new TestClass[size];
+        for (int i = 0; i < size; i++) {
+            TestClass test;
+            boolean valid;
+            do {      
+                valid = true;
+                test = new TestClass();
+                for (int j = 0; j < i; j++) {
+                    if (array[j].equals(test)) {
+                        valid = false;
+                        j = i;
+                    }
+                }
+            } while (!valid);  
+            array[i] = test;          
         }
+        return array;
+    }
+    
+    /**
+     * Generates and returns a array of sorted random objects
+     * 
+     * @param size the size of the array to generate
+     * @return a array of sorted random objects
+     */
+    public static TestClass[] generateSortedArray(int size) {
+        TestClass[] array = generateArray(size);
+        new Sorter().quick(array);
+        return array;
+    }
+    
+    /**
+     * Generates and returns a LinkedList of sorted random objects
+     * 
+     * @param size the size of the list to generate
+     * @return a LinkedList of sorted random objects
+     */
+    public static LinkedList generateSortedList(int size) {
+        LinkedList linkedList = generateList(size);
+        new Sorter().quick(linkedList);
+        return linkedList;
+    }
+    
+    /**
+     * Generates and returns a array of sorted non duplicate random objects
+     * 
+     * @param size the size of the array to generate
+     * @return a array of sorted unique random objects
+     */
+    public static TestClass[] generateUniqueSortedArray(int size) {
+        TestClass[] array = generateUniqueArray(size);
+        new Sorter().quick(array);
+        return array;
+    }
+    
+    /**
+     * Generates and returns a LinkedList of sorted non duplicate random 
+     * objects
+     * 
+     * @param size the size of the list to generate
+     * @return a LinkedList of sorted unique random objects
+     */
+    public static LinkedList generateUniqueSortedList(int size) {
+        LinkedList linkedList = generateUniqueList(size);
+        new Sorter().quick(linkedList);
         return linkedList;
     }
 

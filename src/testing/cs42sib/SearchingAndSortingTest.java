@@ -251,7 +251,7 @@ public class SearchingAndSortingTest
         int location = 0;       
                     
         Output.comment("Testing LinkedList with random non-duplicates, and display:");
-        LinkedList list = TestClass.createLinkedListNoDuplicates(SIZE);
+        LinkedList list = TestClass.generateUniqueList(SIZE);
         Output.show(list.toString());
              
         Output.comment("Linear search with LinkedList, testing edges"); 
@@ -280,7 +280,7 @@ public class SearchingAndSortingTest
 
         Output.comment("Testing array with random non-duplicates, and display:");
         TestClass[] array = new TestClass[SIZE];
-        array = (TestClass[])TestClass.createLinkedList(SIZE).toArray(array);
+        array = (TestClass[])TestClass.generateList(SIZE).toArray(array);
         Output.show(Output.arrayToString(array));
         
         Output.comment("Linear search with array, testing edges"); 
