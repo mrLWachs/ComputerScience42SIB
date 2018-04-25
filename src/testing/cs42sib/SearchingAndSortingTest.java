@@ -34,7 +34,7 @@ public class SearchingAndSortingTest
      */
     public SearchingAndSortingTest() {
         Output.header("Searching and Sorting unit testing",true,false);
-        SIZE      = 10;                           // initialize data structures
+        SIZE      = 10;                           
         search    = new Searcher();
         sort      = new Sorter();        
         list      = new LinkedList<>();

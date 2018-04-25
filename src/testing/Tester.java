@@ -23,8 +23,8 @@ public class Tester
     public Tester() {    
         Output.init();
         Output.header("All unit testing",true,true);
-//        new ComputerScience30STest();
-//        new ComputerScience40STest();        
+        new ComputerScience30STest();
+        new ComputerScience40STest();        
         new ComputerScience42SIBTest();
         Output.header("All unit testing",false,true);        
         Output.flush();
