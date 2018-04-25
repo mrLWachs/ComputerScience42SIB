@@ -23,10 +23,10 @@ public class StacksAndQueuesTest
      * Default constructor for the class 
      */
     public StacksAndQueuesTest() {
-        Output.header("Stacks and Queues unit test",true,false);
+        Output.header("Stacks and Queues unit testing",true,false);
         stacksTest();
         queuesTest();
-        Output.header("Stacks and Queues unit test",false,false);
+        Output.header("Stacks and Queues unit testing",false,false);
     }
 
     /**

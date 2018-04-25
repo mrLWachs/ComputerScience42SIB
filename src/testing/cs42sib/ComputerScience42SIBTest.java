@@ -22,13 +22,10 @@ public class ComputerScience42SIBTest
      * Default constructor for the class 
      */
     public ComputerScience42SIBTest() {
-        
+        Output.header("Computer Science 42SIB course unit testing",true,false);
+        new StacksAndQueuesTest();
         new SearchingAndSortingTest();
-        
-//        Output.header("Computer Science 42SIB course test",true,false);
-//        new StacksAndQueuesTest();
-//        new SearchingAndSortingTest();
-//        Output.header("Computer Science 42SIB course test",false,false);
+        Output.header("Computer Science 42SIB course unit testing",false,false);
     }
     
 }

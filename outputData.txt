@@ -1,66 +1,137 @@
-<html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Search Testing started...............</span></body></html>
-<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Creating unsorted array and LinkedList of random values ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array 	[4001,3982,3998,3932,3918,3955,3969,3904,3967,4080]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List 	  [3986,4015,3965,3941,4010,3931,3964,3943,3950,3985]</span></body></html>
-<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Test linear search ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,0);font-family: Trebuchet MS;">All unit testing started...............</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Computer Science 42SIB course unit testing started...............</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Stacks and Queues unit test started...............</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Stack Testing started...............</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create stack and display ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Empty stack</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if empty, and size ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Empty = true and size = 0</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Push 10 items onto the stack, and display ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3918,3892,3975,3977,3993,4008,4002,4008,3889,4018]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if empty, and size ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Empty = false and size = 10</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create clone stack, and display ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3918,3892,3975,3977,3993,4008,4002,4008,3889,4018]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if the 2 stacks are equal ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">stacks are equal</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Pop half the original stack values, and display ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [4008,4002,4008,3889,4018]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Display clone again ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3918,3892,3975,3977,3993,4008,4002,4008,3889,4018]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if the 2 stacks are equal again ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">stacks are not equal</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Wipe out (finalize) the clone, and display ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Empty stack</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check the top of both stacks, and display ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">4008</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">null</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create array from stack, and display ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">array = [4008,4002,4008,3889,4018]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create LinkedList from stack, and display ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">LinkedList = [4008,4002,4008,3889,4018]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create new Stack from array, and display ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [4008,4002,4008,3889,4018]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create new Stack from LinkedList, and display ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [4008,4002,4008,3889,4018]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Stack Testing complete..............</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Queue Testing started...............</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create queue and display ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Empty Queue</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if empty, and size ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Empty = true and size = 0</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Enqueue 10 items onto the queue, and display ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3930,3955,3922,3921,3924,3971,3975,3968,3887,3910]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if empty, and size ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Empty = false and size = 10</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create clone queue, and display ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3930,3955,3922,3921,3924,3971,3975,3968,3887,3910]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if the 2 queue are equal ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">queues are equal</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Dequeue half the original queue values, and display ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3971,3975,3968,3887,3910]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Display clone again ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3930,3955,3922,3921,3924,3971,3975,3968,3887,3910]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if the 2 queue are equal again ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">queues are not equal</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Wipe out (finalize) the clone, and display ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Empty Queue</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check the front and back of both queues, and display ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">3971</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">null</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">3910</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">null</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create array from queue, and display ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">array = [3971,3975,3968,3887,3910]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create LinkedList from queue, and display ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">LinkedList = [3971,3975,3968,3887,3910]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create new queue from array, and display ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3971,3975,3968,3887,3910]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create new queue from LinkedList, and display ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3971,3975,3968,3887,3910]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Queue Testing complete..............</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Stacks and Queues unit test complete..............</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Searching and Sorting unit testing started...............</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Creating random unsorted array and LinkedList ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3976,3954,4023,4009,3881,3892,3940,4060,3976,4003]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [4000,3978,3941,3980,3917,3985,3947,3992,3957,3943]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing linear search in array ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Middle Item in array	3955	 location 	5</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Front Item in array	4001	 location 	0</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Back Item in array	4080	 location 	9</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Unfound Item in array	588	 location 	-1</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Middle Item: 3892 in array at location: 5</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Front Item: 3976 in array at location: 0</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Back Item: 4003 in array at location: 9</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Unfound Item: 4003 in array at location: -1</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing linear search in list ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Middle Item in list	4080	 location 	-1</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Front Item in list	3986	 location 	0</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Back Item in list	3985	 location 	9</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Unfound Item in list	588	 location 	-1</span></body></html>
-<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Test binary search ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Creating sorted array and LinkedList of random values</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array 	[3969,3928,3889,3971,3992,3963,3883,3918,3910,3979]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List 	  [3934,3974,3998,3851,3940,3940,3960,3997,3873,4011]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Middle Item: 3985 in array at location: 5</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Front Item: 4000 in array at location: 0</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Back Item: 3943 in array at location: 9</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Unfound Item: 3943 in array at location: -1</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Creating random sorted array and LinkedList</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3919,3934,3936,3966,3970,3970,3979,3991,3992,4016]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3901,3926,3945,3946,3961,3973,3994,3995,3996,4039]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing binary search in array ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Middle Item in array	3963	 location 	-1</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Front Item in array	3969	 location 	-1</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Back Item in array	3979	 location 	-1</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Unfound Item in array	588	 location 	-1</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Middle Item: 3970 in array at location: 4</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Front Item: 3919 in array at location: 0</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Back Item: 4016 in array at location: 9</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Unfound Item: 4016 in array at location: -1</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing binary search in list ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Middle Item in list	3979	 location 	-1</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Front Item in list	3934	 location 	0</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Back Item in list	4011	 location 	9</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Unfound Item in list	588	 location 	-1</span></body></html>
-<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Test sorts ...</span></body></html>
-<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Test bubble sort ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Middle Item: 3973 in array at location: 5</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Front Item: 3901 in array at location: 0</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Back Item: 4039 in array at location: 9</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Unfound Item: 4039 in array at location: -1</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing bubble sort ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// unsorted... ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array 	[3969,3928,3889,3971,3992,3963,3883,3918,3910,3979]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List 	  [3934,3974,3998,3851,3940,3940,3960,3997,3873,4011]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3975,3913,3954,4000,3926,3918,3912,3940,4089,3909]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3980,4016,4043,4017,3982,3992,3906,3991,3999,3933]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// sorted... ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array 	[3883,3889,3910,3918,3928,3963,3969,3971,3979,3992]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List 	  [3851,3873,3934,3940,3940,3960,3974,3997,3998,4011]</span></body></html>
-<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Test Selection sort ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3909,3912,3913,3918,3926,3940,3954,3975,4000,4089]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3906,3933,3980,3982,3991,3992,3999,4016,4017,4043]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing selection sort ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// unsorted... ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array 	[4041,3927,3978,3952,3906,4018,3999,3960,3987,4002]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List 	  [3991,3926,3979,3946,3926,3967,3928,3916,3923,3897]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3979,3928,3882,3889,3984,3955,3969,3925,4075,4013]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3985,3972,3927,3982,4012,3914,3929,3944,3967,3884]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// sorted... ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array 	[3906,3927,3952,3960,3978,3987,3999,4002,4018,4041]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List 	  [3897,3916,3923,3926,3926,3928,3946,3967,3979,3991]</span></body></html>
-<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Test insertion sort ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3882,3889,3925,3928,3955,3969,3979,3984,4013,4075]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3884,3914,3927,3929,3944,3967,3972,3982,3985,4012]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing insertion sort ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// unsorted... ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array 	[3940,4052,3929,3956,4022,3885,3888,3994,3988,3934]</span></body></html>
-<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// List 	  [4000,3892,4034,3955,3956,3981,3978,3965,3991,3916] ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [4029,3997,3989,4025,3999,3874,3886,4003,4002,4032]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3985,3960,3884,3957,3980,3985,4015,3923,3996,3861]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// sorted... ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array 	[3885,3888,3929,3934,3940,3956,3988,3994,4022,4052]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List 	  [3892,3916,3955,3956,3965,3978,3981,3991,4000,4034]</span></body></html>
-<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Test shell sort ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3874,3886,3989,3997,3999,4002,4003,4025,4029,4032]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3861,3884,3923,3957,3960,3980,3985,3985,3996,4015]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing shell sort ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// unsorted... ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array 	[3878,3905,3983,3896,3987,4036,3953,3945,4004,3993]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List 	  [3930,4003,3921,3931,3966,3956,3865,3928,3991,4011]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3931,3924,4047,3824,4029,3977,3846,4058,3886,3959]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3979,3984,4009,4057,3959,3993,3952,3979,4005,3894]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// sorted... ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array 	[3878,3896,3905,3945,3953,3983,3987,3993,4004,4036]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List 	  [3865,3921,3928,3930,3931,3956,3966,3991,4003,4011]</span></body></html>
-<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Test quick sort ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3824,3846,3886,3924,3931,3959,3977,4029,4047,4058]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3894,3952,3959,3979,3979,3984,3993,4005,4009,4057]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing quick sort ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// unsorted... ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array 	[3905,4069,4001,3902,3997,3894,3895,3939,3922,4022]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List 	  [3928,3949,3985,3967,3999,3976,3946,3968,3974,4045]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [4009,3929,3828,3917,3964,3916,3987,3924,3952,3961]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [4015,3941,3919,3981,4023,3976,4041,3883,3996,4016]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// sorted... ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array 	[3894,3895,3902,3905,3922,3939,3997,4001,4022,4069]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List 	  [3928,3946,3949,3967,3968,3974,3976,3985,3999,4045]</span></body></html>
-<html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Search Testing complete..............</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3828,3916,3917,3924,3929,3952,3961,3964,3987,4009]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3883,3919,3941,3976,3981,3996,4015,4016,4023,4041]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Searching and Sorting unit testing complete..............</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Computer Science 42SIB course unit testing complete..............</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,0);font-family: Trebuchet MS;">All unit testing complete..............</span></body></html>
