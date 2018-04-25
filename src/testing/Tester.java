@@ -23,10 +23,9 @@ public class Tester
      * Default constructor for the class 
      */
     public Tester() {    
+
+        new ComputerScience42SIBTest();
         
-        new SearchingAndSortingTest();   
-        
-//        new TestingClassTest();
         
 //        Output.init();
 //        Output.header("All testing",true,true);
