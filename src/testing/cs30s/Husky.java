@@ -2,7 +2,7 @@
 /** required package class namespace */
 package testing.cs30s;
 
-import io.Output;
+import testing.Output;
 
 /**
  * Husky.java - description here...

@@ -3,7 +3,7 @@
 package testing.cs40s.advancedclasses;
 
 /** required imports */
-import io.Output;
+import testing.Output;
 import testing.cs40s.advancedclasses.ComputerScienceStudent;
 import testing.cs40s.advancedclasses.ComputerScienceTeacher;
 import testing.cs40s.advancedclasses.Doctor;

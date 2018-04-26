@@ -6,7 +6,7 @@ package testing.cs42sib;
 import collections.LinkedList;
 import collections.Queue;
 import collections.Stack;
-import io.Output;
+import testing.Output;
 import testing.testclass.TestClass;
 
 /**

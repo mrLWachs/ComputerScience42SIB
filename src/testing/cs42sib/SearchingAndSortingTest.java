@@ -4,7 +4,7 @@ package testing.cs42sib;
 
 /** required imports */
 import collections.LinkedList;
-import io.Output;
+import testing.Output;
 import searchsort.Searcher;
 import searchsort.Sorter;
 import testing.testclass.TestClass;
@@ -42,11 +42,20 @@ public class SearchingAndSortingTest
         arrayItem = new TestClass();
         listItem  = new TestClass();
         unfound   = new TestClass(true,0,0d,'a',"");
-        Output.comment("Creating random unsorted array and LinkedList");          
+        searchTest();
+        sortTest();
+        Output.header("Searching and Sorting unit testing",false,false);
+    }
+    
+    /**
+     * Test searching code
+     */
+    private void searchTest() {
+        Output.comment("Creating random unsorted array and LinkedList");
         scramble();
         output();
         Output.comment("Testing linear search in array");
-        int location = search.linear(arrayItem,array);     
+        int location = search.linear(arrayItem,array);
         results("Middle", location,arrayItem);
         arrayItem = array[0];
         location = search.linear(arrayItem,array);
@@ -57,7 +66,7 @@ public class SearchingAndSortingTest
         location = search.linear(unfound,array);
         results("Unfound", location,arrayItem);
         Output.comment("Testing linear search in list");
-        location = search.linear(listItem,list);        
+        location = search.linear(listItem,list);
         results("Middle", location,listItem);
         listItem = (TestClass)list.front();
         location = search.linear(listItem,list);
@@ -69,70 +78,75 @@ public class SearchingAndSortingTest
         results("Unfound", location,listItem);
         presorted();
         Output.show("Creating random sorted array and LinkedList");
-        output();        
+        output();
         Output.comment("Testing binary search in array");
-        location = search.binary(arrayItem,array);        
-        results("Middle", location,arrayItem);                
+        location = search.binary(arrayItem,array);
+        results("Middle", location,arrayItem);
         arrayItem = array[0];
         location = search.binary(arrayItem,array);
-        results("Front", location,arrayItem);        
+        results("Front", location,arrayItem);
         arrayItem = array[array.length-1];
         location = search.binary(arrayItem,array);
-        results("Back", location,arrayItem);        
+        results("Back", location,arrayItem);
         location = search.linear(unfound,array);
         results("Unfound", location,arrayItem);
         Output.comment("Testing binary search in list");
-        location = search.binary(listItem,list);        
-        results("Middle", location,listItem);                 
+        location = search.binary(listItem,list);
+        results("Middle", location,listItem);
         listItem = (TestClass)list.front();
         location = search.binary(listItem,list);
-        results("Front", location,listItem); 
+        results("Front", location,listItem);
         listItem = (TestClass)list.back();
         location = search.binary(listItem,list);
-        results("Back", location,listItem); 
+        results("Back", location,listItem);
         location = search.binary(unfound,list);
         results("Unfound", location,listItem);
+    }
+
+    /**
+     * Test sorting code
+     */
+    private void sortTest() {
         Output.comment("Testing bubble sort");
         scramble();
-        Output.comment("unsorted..."); 
-        output();   
+        Output.comment("unsorted...");
+        output();
         sort.bubble(array);        
         sort.bubble(list);
         Output.comment("sorted...");
         output();   
         Output.comment("Testing selection sort");
         scramble();
-        Output.comment("unsorted..."); 
-        output();   
+        Output.comment("unsorted...");
+        output();
         sort.selection(array);        
         sort.selection(list);
         Output.comment("sorted...");
         output();
         Output.comment("Testing insertion sort");
         scramble();
-        Output.comment("unsorted..."); 
-        output();   
+        Output.comment("unsorted...");
+        output();
         sort.insertion(array);        
         sort.insertion(list);
         Output.comment("sorted...");
         output();
         Output.comment("Testing shell sort");
         scramble();
-        Output.comment("unsorted..."); 
-        output();   
+        Output.comment("unsorted...");
+        output();
         sort.shell(array);        
         sort.shell(list);
         Output.comment("sorted...");
         output();
         Output.comment("Testing quick sort");
         scramble();
-        Output.comment("unsorted..."); 
-        output();   
+        Output.comment("unsorted...");
+        output();
         sort.quick(array);        
         sort.quick(list);
         Output.comment("sorted...");
-        output();  
-        Output.header("Searching and Sorting unit testing",false,false);
+        output();
     }
 
     /** 

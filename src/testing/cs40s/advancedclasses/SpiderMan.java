@@ -2,13 +2,13 @@
 /** required package class namespace */
 package testing.cs40s.advancedclasses;
 
-import io.Output;
+import testing.Output;
 import java.io.Serializable;
 
 /**
- * SpiderMan.java - description here...
+ * SpiderMan.java - represents the super hero spider-man
  *
- * @author lawrence.wachs 
+ * @author Mr. Wachs 
  * @since Oct 25, 2017 
  * @instructor Mr. Wachs
  */
@@ -19,9 +19,12 @@ public class SpiderMan extends HighSchoolStudent
     private String secretID;
     private String costume;
     
-    
+    /**
+     * 
+     * @param age 
+     */
     public SpiderMan(int age) {
-        super("Peter Parker", true, age, 88888888);
+        super("Peter Parker", true, age, 100);
     }
 
     @Override

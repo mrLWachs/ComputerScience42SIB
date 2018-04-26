@@ -3,7 +3,7 @@
  */
 package testing.cs30s;
 
-import io.Output;
+import testing.Output;
 
 /**
  * Person.java - defines a person

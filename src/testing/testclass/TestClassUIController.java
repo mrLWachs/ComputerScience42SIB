@@ -32,25 +32,25 @@ import javax.swing.border.TitledBorder;
 public class TestClassUIController 
 {
     
-    private JPanel                             panel;
-    private JLabel[]                           textLabels;
-    private JTextField[]                       textboxes; 
-    private JComboBox[]                        comboboxes;
-    private JButton[]                          buttons;
-    private JList                              listbox;    
-    private DefaultListModel<String>           listModel;
-    private DefaultComboBoxModel[]             comboModels;;  
-    private TestClassUI                        ui;    
+    private JPanel                   panel;
+    private JLabel[]                 textLabels;
+    private JTextField[]             textboxes; 
+    private JComboBox[]              comboboxes;
+    private JButton[]                buttons;
+    private JList                    listbox;    
+    private DefaultListModel<String> listModel;
+    private DefaultComboBoxModel[]   comboModels;;  
+    private TestClassUI              ui;    
     
-    private TestClass                          testClass;
+    private TestClass               testClass;
     private FileHandler<LinkedList> fileHandler;   
-    private Dialogs                            dialog;
-    private String                             filename;
-    private String                             dataObject;    
+    private Dialogs                 dialog;
+    private String                  filename;
+    private String                  dataObject;    
     private LinkedList              linkedList;
     private Stack                   stack;
     private Queue                   queue;
-//    private Tree<TestClass>                    tree;
+//    private Tree<TestClass>         tree;
             
     private final String[] DATA_OBJECTS     = {"LinkedList","Stack","Queue","Tree"};
     private final String   FRAME_TITLE      = "Testing...";
@@ -217,7 +217,8 @@ public class TestClassUIController
     private void initDataStructures() {
         fileHandler = new FileHandler<>();        
         filename    = System.getProperty("user.dir") + "\\data.txt";      
-        dialog      = new Dialogs(FRAME_FONT,FRAME_BACKGROUND,FRAME_FOREGROUND,FRAME_TITLE);
+        dialog      = new Dialogs(FRAME_FONT,FRAME_BACKGROUND,
+                                  FRAME_FOREGROUND,FRAME_TITLE);
         linkedList  = new LinkedList();
         stack       = new Stack();
         queue       = new Queue();     

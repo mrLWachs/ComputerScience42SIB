@@ -6,7 +6,7 @@ package testing.cs40s;
 import collections.LinkedList;
 import io.Dialogs;
 import io.FileHandler;
-import io.Output;
+import testing.Output;
 import java.io.File;
 import testing.cs40s.advancedclasses.FireFighter;
 import testing.cs40s.advancedclasses.SpiderMan;

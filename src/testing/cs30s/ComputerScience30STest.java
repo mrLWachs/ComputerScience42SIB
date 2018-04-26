@@ -2,7 +2,7 @@
 /** required package class namespace */
 package testing.cs30s;
 
-import io.Output;
+import testing.Output;
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.Icon;

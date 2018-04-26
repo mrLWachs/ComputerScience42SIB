@@ -1,17 +1,16 @@
 
 /** required package class namespace */
-package io;
+package testing;
 
 import java.awt.Color;
-import java.awt.Font;
 import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
 import javax.swing.DefaultListModel;
 
 /**
- * UI.java - description here...
+ * UI.java - the user interface for testing outputs
  *
- * @author lawrence.wachs 
+ * @author Mr. Wachs 
  * @since Nov 14, 2017 
  * @instructor Mr. Wachs
  */
@@ -21,7 +20,9 @@ public class UI extends javax.swing.JFrame
     private DefaultListModel<String> model;
     
     
-    /**  Default constructor for the class, creates new form UI */
+    /**  
+     * Default constructor for the class, creates new form UI 
+     */
     public UI() {
         initComponents();
         model = new DefaultListModel<>();
@@ -141,6 +142,11 @@ public class UI extends javax.swing.JFrame
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
     
+    /**
+     * Adds the passed text to the list box
+     * 
+     * @param text the text to add
+     */
     public void add(String text) {
         model.addElement(text);
         jList1.ensureIndexIsVisible(model.getSize()-1);

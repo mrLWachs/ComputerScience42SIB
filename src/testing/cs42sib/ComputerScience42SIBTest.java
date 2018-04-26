@@ -3,7 +3,7 @@
 package testing.cs42sib;
 
 
-import io.Output;
+import testing.Output;
 
 /**
  * ComputerScience42SIBTest.java - the large in class example we continue to 

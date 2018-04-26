@@ -2,7 +2,7 @@
 /** required package class namespace */
 package testing.cs40s;
 
-import io.Output;
+import testing.Output;
 import testing.cs40s.advancedclasses.AdvancedClassesTest;
 
 /**

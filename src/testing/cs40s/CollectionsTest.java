@@ -5,7 +5,7 @@ package testing.cs40s;
 import numbers.Random;
 import collections.LinkedList;
 import collections.Node;
-import io.Output;
+import testing.Output;
 
 /**
  * CollectionsTest.java - description here...
