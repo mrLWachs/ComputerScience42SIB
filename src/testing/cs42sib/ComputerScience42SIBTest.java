@@ -25,6 +25,7 @@ public class ComputerScience42SIBTest
         Output.header("Computer Science 42SIB course unit testing",true,false);
         new StacksAndQueuesTest();
         new SearchingAndSortingTest();
+        new TreeTest();
         Output.header("Computer Science 42SIB course unit testing",false,false);
     }
     

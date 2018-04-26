@@ -3,6 +3,7 @@
 package mainpackage;
 
 import testing.Tester;
+import testing.cs42sib.TreeTest;
 
 /**
  * MainClass.java - the large in class example we continue to work 
@@ -23,7 +24,8 @@ public class MainClass
      * @param args the command line arguments
      */
     public static void main(String[] args) {  
-        new Tester();
+        new TreeTest();
+//        new Tester();
     }
 
 }
