@@ -1,4 +1,8 @@
-<html><head></head><body><span style="color: rgb(255,0,0);font-family: Trebuchet MS;">All unit testing started...............</span></body></html>
-<html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Computer Science 42SIB course unit testing started...............</span></body></html>
-<html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Computer Science 42SIB course unit testing complete..............</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,0);font-family: Trebuchet MS;">All unit testing complete..............</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Trees unit testing started...............</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create TreeNode objects to test, and output ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Root node:  50</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Left node:  20</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Right node: 70</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create Tree object ...</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Search for object in tree ...</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Trees unit testing complete..............</span></body></html>

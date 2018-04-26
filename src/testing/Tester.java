@@ -5,6 +5,7 @@ package testing;
 import testing.cs30s.ComputerScience30STest;
 import testing.cs40s.ComputerScience40STest;
 import testing.cs42sib.ComputerScience42SIBTest;
+import testing.exampleinternalassessment.MainUI;
 
 /**
  * Tester.java - description here...
@@ -25,6 +26,7 @@ public class Tester
         new ComputerScience30STest();
         new ComputerScience40STest();        
         new ComputerScience42SIBTest();
+        new MainUI();
         Output.header("All unit testing",false,true);        
         Output.flush();
     }
