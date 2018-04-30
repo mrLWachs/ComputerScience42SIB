@@ -32,6 +32,34 @@ public class TreeTest
         
         tree.search(50);
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         System.out.println("Tree unit test complete!");
     }
     
