@@ -43,7 +43,20 @@ public class Tree <T extends Comparable<T>> implements Serializable
             this.insert((T)linkedList.get(i));
         }
     }
-    
+            
+    /**
+     * Inserts data recursively into the tree in order
+     * 
+     * @param data the data type to insert
+     */
+    public boolean insert(T data) {
+        if (data == null) return false;
+        order.add(data);
+        if (root == null) root = new TreeNode<>(data);
+        else              root.insert(data);
+        return true;
+    }
+
     /**
      * Searches the tree to see if the data exists in the tree
      * 
@@ -103,7 +116,6 @@ public class Tree <T extends Comparable<T>> implements Serializable
         list = recursiveInOrder(root);      // build list with traversal
         return list;
     }
-        
     
     /**
      * String representation of this object
@@ -188,19 +200,6 @@ public class Tree <T extends Comparable<T>> implements Serializable
             recursiveInOrder(current.right);    // visit right sub-tree       
         }
         return list;                            // base case, past leaf node
-    }
-    
-    /**
-     * Inserts data recursively into the tree in order
-     * 
-     * @param data the data type to insert
-     */
-    public boolean insert(T data) {
-        if (data == null) return false;
-        order.add(data);
-        if (root == null) root = new TreeNode<>(data);
-        else              root.insert(data);
-        return true;
     }
 
 }
