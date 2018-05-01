@@ -4,6 +4,7 @@ package collections;
 
 /** required imports */
 import java.io.Serializable;
+import testing.Output;
 
 
 /**
@@ -81,8 +82,13 @@ public class TreeNode <T extends Comparable<T>> implements Serializable
      */
     @Override
     public boolean equals(Object object) {
-        TreeNode treeNode = (TreeNode)object;
-        return data.equals(treeNode.data);
+        try {        
+            return equals((TreeNode)object);
+        }
+        catch (ClassCastException error) {
+            Output.error("TreeNode Casting error: " + error.toString());
+            return false;
+        }
     }
 
     /**
@@ -92,7 +98,13 @@ public class TreeNode <T extends Comparable<T>> implements Serializable
      * @return the TreeNodes have equal data (true) or not (false)
      */
     public boolean equals(TreeNode treeNode) {
-        return data.equals(treeNode.data);
+        try {        
+            return equals(treeNode.data);
+        }
+        catch (NullPointerException error) {
+            Output.error("TreeNode Null error: " + error.toString());
+            return false;
+        }
     }
 
     /**
@@ -111,8 +123,26 @@ public class TreeNode <T extends Comparable<T>> implements Serializable
      * @return a "clone" of the object using new memory
      */
     public TreeNode clone() {
-        TreeNode treeNode = new TreeNode(this.data);
-        return treeNode;
+        return new TreeNode<>(this.data);
     }
 
+    /**
+     * Insets data (recursively) into the binary tree at its correct position
+     * 
+     * @param data the generic data to insert into the tree
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean insert(T data) {        
+        if (data == null) return false;
+        if (data.compareTo(this.data) < 0) {
+            if (this.left == null) this.left = new TreeNode<>(data);
+            else                   this.left.insert(data);
+        }
+        else if (data.compareTo(this.data) >= 0) {
+            if (this.right == null) this.right = new TreeNode<>(data);
+            else                    this.right.insert(data);
+        }
+        return true;
+    }
+    
 }

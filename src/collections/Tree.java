@@ -31,6 +31,20 @@ public class Tree <T extends Comparable<T>> implements Serializable
     }
 
     /**
+     * Constructor builds from a linked list object
+     * 
+     * @param linkedList the linked list object to use
+     */
+    public Tree(LinkedList linkedList) {
+        root  = null;
+        list  = new LinkedList<>();
+        order = new LinkedList<>();
+        for (int i = 0; i < linkedList.size(); i++) {
+            this.insert((T)linkedList.get(i));
+        }
+    }
+    
+    /**
      * Searches the tree to see if the data exists in the tree
      * 
      * @param data the data to search for
@@ -116,7 +130,9 @@ public class Tree <T extends Comparable<T>> implements Serializable
      */
     @Override
     public boolean equals(Object object) {
-        return super.equals(object);
+        LinkedList<T> inOrder1 = this.inOrder();
+        LinkedList<T> inOrder2 = ((Tree)object).inOrder();
+        return inOrder1.equals(inOrder2);
     }
 
     /**
@@ -125,7 +141,11 @@ public class Tree <T extends Comparable<T>> implements Serializable
      * @return a "clone" of the object using new memory
      */
     public Tree clone() {
-        return this;
+        Tree<T> tree = new Tree<>();
+        for (int i = 0; i < order.size(); i++) {
+            tree.insert((T)order.get(i));
+        }
+        return tree;
     }
 
     /**
@@ -168,6 +188,19 @@ public class Tree <T extends Comparable<T>> implements Serializable
             recursiveInOrder(current.right);    // visit right sub-tree       
         }
         return list;                            // base case, past leaf node
+    }
+    
+    /**
+     * Inserts data recursively into the tree in order
+     * 
+     * @param data the data type to insert
+     */
+    public boolean insert(T data) {
+        if (data == null) return false;
+        order.add(data);
+        if (root == null) root = new TreeNode<>(data);
+        else              root.insert(data);
+        return true;
     }
 
 }
