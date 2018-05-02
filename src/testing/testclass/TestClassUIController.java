@@ -6,6 +6,7 @@ package testing.testclass;
 import collections.LinkedList;
 import collections.Queue;
 import collections.Stack;
+import collections.Tree;
 import io.Dialogs;
 import io.FileHandler;
 import java.awt.Color;
@@ -50,7 +51,7 @@ public class TestClassUIController
     private LinkedList              linkedList;
     private Stack                   stack;
     private Queue                   queue;
-//    private Tree<TestClass>         tree;
+    private Tree                    tree;
             
     private final String[] DATA_OBJECTS     = {"LinkedList","Stack","Queue","Tree"};
     private final String   FRAME_TITLE      = "Testing...";
@@ -132,7 +133,8 @@ public class TestClassUIController
     public void addRandomObjectToTree() {
         if (textboxes[0].getText().equals("")) return;
         dataObject = DATA_OBJECTS[3];
-        dialog.show(dataObject + " not yet implemented!");
+        tree.insert(testClass);
+        fillList("Added Object to ");
     }
         
     /**
@@ -149,7 +151,6 @@ public class TestClassUIController
                 addRandomObjectToQueue();
             else if (dataObject.equals(DATA_OBJECTS[3])) {
                 addRandomObjectToTree();  
-                return;
             }
         }
         fillList("Added " + ITEMS_TO_ADD + " Objects to ");
@@ -182,7 +183,7 @@ public class TestClassUIController
         else if (dataObject.equals(DATA_OBJECTS[2])) 
             queue = new Queue(list);
         else if (dataObject.equals(DATA_OBJECTS[3])) 
-            dialog.show(dataObject + " not yet implemented!");  //tree = new Tree<>(list); 
+            tree = new Tree(list);
         fillList("Opening from file, data object ");        
     }
     
@@ -221,7 +222,8 @@ public class TestClassUIController
                                   FRAME_FOREGROUND,FRAME_TITLE);
         linkedList  = new LinkedList();
         stack       = new Stack();
-        queue       = new Queue();     
+        queue       = new Queue();   
+        tree        = new Tree();
         dataObject  = DATA_OBJECTS[0];
     }
 
@@ -344,7 +346,7 @@ public class TestClassUIController
         else if (dataObject.equals(DATA_OBJECTS[2])) 
             return queue.toLinkedList();
         else if (dataObject.equals(DATA_OBJECTS[3])) 
-            dialog.show(dataObject + " not yet implemented!");  //list = tree.toLinkedList();
+            return tree.inOrder();
         return null;
     }
 
