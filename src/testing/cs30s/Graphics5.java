@@ -424,8 +424,7 @@ public class Graphics5 extends javax.swing.JFrame
         timer.stop();
         size = (Integer)model.getNumber();
     }//GEN-LAST:event_brushSizeStateChanged
-
-
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JRadioButton arc;
     private javax.swing.JButton backgroundColor;
