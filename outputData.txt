@@ -116,8 +116,8 @@
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">answer 5 = 125.0</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">answer 6 = 3.0</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// The Math library and random numbers: ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">random = 6.597587974485856</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">die = 6</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">random = 5.458593366353673</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">die = 5</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// CONDITIONAL STATEMENTS: ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Equal</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">not less than</span></body></html>
@@ -441,7 +441,7 @@
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Reusable method with inputs (parameters), and output (return) ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Reusable method with inputs (parameters), and output (return) ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Reusable method with inputs (parameters), and output (return) ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">number = 18</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">number = 54</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Simple method with an input (parameter), and an output (return) ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Simulated input dialog</span></body></html>
 <html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Simulated message dialog</span></body></html>
@@ -584,7 +584,7 @@
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Reusable method with inputs (parameters), and output (return) ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Reusable method with inputs (parameters), and output (return) ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Reusable method with inputs (parameters), and output (return) ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">80, 62, 1, -1, 29, 71, 9, 57, 6, 69, 10, 18, 4, 46, 53, 16, 0, 24, 27, 21, 24, 56, 2, -4, 52, 77, 32, 74, 56, 61, 4, 78, 29, 60, 48, 44, 49, 67, 28, 75, 45, 17, 64, 25, 58, 34, 34, 80, 69, 24, 10, 71, 55, 19, 5, 53, 74, 1, 80, 59, 55, 64, 67, 50, 77, 43, 61, 22, 22, 31, 52, 57, 47, 59, 48, 11, 36, 61, 45, 66, 11, 58, 69, 50, 46, 9, 27, 8, 46, 72, 3, 62, 12, 28, 38, 34, 5, 0, 10, 16, </span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">0, 58, 23, 8, 12, 34, 5, 66, 69, 10, -1, 57, 15, 25, 2, 12, 34, 27, 27, 18, 34, 1, 34, 27, 32, -3, 49, 46, 65, 42, 29, 68, -1, 60, 69, 73, 39, 37, 54, 31, 55, 34, 51, 31, 10, 10, 74, 3, 38, 66, 36, 38, 35, 8, 34, 32, 15, 63, 36, 38, 7, -3, 12, 8, 22, 12, 5, 13, -2, 18, 49, 39, 3, 35, 0, 42, 17, 74, 62, 61, 5, 61, 3, 80, 66, 31, 72, 59, 28, 37, 6, 58, 20, 78, -4, 15, 53, 12, 29, 56, </span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// can create multiple arrays on 1 line: ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// boolean[] x,y,z; ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// enter the matrix.... ...</span></body></html>
@@ -4088,56 +4088,56 @@
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Reusable method with inputs (parameters), and output (return) ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Reusable method with inputs (parameters), and output (return) ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Reusable method with inputs (parameters), and output (return) ...</span></body></html>
-c G J M ! ; ~ Z # \ Z d Y B y % & Y a > N a @ a [ ] % M Z ? D e & X ` l a L A S Y R T Z : G y o A P a o % # : # J ? # E X ' c < _ & $ o J | 
-V a W l d k 8 w S i ) n 6 Y C = + 4 r : P y / % O L & p L W u , r Z 6 8 e D ' A r d X @ } 5 4 M U O e 3 6 U { w T # L ` m d m c h v f ! p ) 
-Q S ( | K P < v I | ~ J ] ` * 9 6 8 q H U ( y R U / ? h P ` M ; f t 3 i F f 9 U Y " o O H K g m p q P F G a n ' p n d Y a e } 4 T f 5 . D m 
-1 & q $ 2 t e s U ) u : x " b o / f j [ | 2 w , l V y % B x x U # w ' E f a ~ f j j < Z A e 2 B ~ r ) t | k K 2 \ 7 { ? f + g m M ) 1 F u 7 
-V 5 } 9 e U H w M ^ n g W L i e A j $ B i g + A R ^ q " o Q 4 g * / a d s ` > O t % d s | $ # % " \ 8 T u ^ % l ( j [ $ ; n z / 8 X @ Y k z 
-k s k = t > o j s Y & " 5 M r , . 2 ` 7 u x O l ' 8 S O J 5 _ U d . " P B N p 3 p 6 8 Z s X ~ y d & Z F E g P 5 9 # U j " ` a y k M T ( ! + 
-@ 0 3 8 n \ e 2 H j U E ) ) J y ) K L B ? X 7 # < ( I o T 0 i J | D F 8 # 6 Z ] M T $ D ; + J [ X t E j ! g E \ W ~ # v U + - ^ o u u $ s - 
-i ~ 2 + J M c t H 9 * c M a f U ~ o ~ [ F : | E q ^ X ~ 2 w 3 N / ] / 4 P d j G s H k o $ \ r o ; u : j L l d Y ~ { & = | - y # w I T V @ = 
-e L y t S 0 [ " = ) p & Z O 4 H ; l ) { y * j _ _ N ? u M D E > Z % d " o $ _ u 4 - U # / P x y u + ` D i } c 4 @ . ^ n P w q q a ) q = s ! 
-D . r e f W \ + Z @ $ P # x : a E C C k [ y R N 6 B % E M 5 ~ f v h u c Z M @ . c ( * u + C h / = 7 v n r & h S . & H k 7 = 3 @ d W Z . x W 
-8 @ % w F I q Z x z < ' C ^ g 9 + 1 H u 9 ^ b P , e 4 & ` w x ? U i $ e E + [ ; s p > > 0 = I I c d J O , U y i , J ^ H & I O ; ? g 0 f - V 
-y B ? [ M o m > , ( e a b S 8 5 I r _ W ; $ / _ Y - C k \ x ~ / N / + 8 9 F 3 u b @ M v Z 7 F b - M w & f % 1 D x i P x D f ^ 9 ? U ~ 2 * L 
-& ; H 3 ] " ^ 7 { q o R a # ` 2 p a q b ~ 9 6 ! < u G K V ~ ) + m C % * z # ^ Z < & n k N _ ] z > g X d 2 e D + ( P ; K [ 4 & @ Y Z * a t > 
-B . ; ) _ f y , ; { 7 q Y k P / ) G r " * s R F i P P . H k o e : | 9 D E U F i ^ S = X < 5 Y T _ | 5 3 o x ) V O - 1 2 { h ? & i < % G l X 
-o \ w Y j I y ! k ] Z J T 5 i 0 M f h p P ] p x ^ _ C O < N , m y 1 4 n N K o T i ^ + 9 ] L ; 7 P l B _ h ! ] L ^ H B I * W m i R 8 k w w B 
-d P U D g ' E X e o , Z Y I k Q z = k n X | r ] e W . < I ? a e N z ] H J H b s h r 3 A t [ [ M 0 R K O X m A x J @ y t & $ . T % l J i \ ` 
-i l l | K + F = 0 z S j S h q T # l t ^ m E ^ g > w V G ! Y j 6 S m g 5 j l 2 D @ ] M , 5 [ N z d Y 3 R h | D 3 $ . o S z : % s D L } % d 3 
-D ) 8 | ' # ' t w S E t k F S p | n B v | I \ _ 7 V - _ X N 3 ; g g m R y \ B Z , G ; r m Q O e G W 7 o > ; X ` ! < : @ s ] S u I h P _ 6 ? 
-V h o 5 4 ) ] P g S h ( G 7 ^ o 6 % A 7 D / & C d X | l C F y L : * 3 W 3 E o 3 Q J C } V + W < k C 7 ; r ` < : q ` X F > R K E / D T U @ + 
-3 h h ! 3 Y f F 5 Q O F _ ^ ! [ r t } [ a Y _ # @ h B h S O m Q . } & f R e | R + @ # Y g m # M d 0 # ] \ " y a H & ! I G & @ P > t g k l n 
-8 + I 9 1 x ; d d < 1 / % T e # r } $ = % Z \ U ^ T K V ; v l @ Z # @ D l o A 1 % h v " k q T < ^ 5 ] / ? Y a N M u M 9 p d } @ Y Z d O $ \ 
-A U 2 U 2 / E . G Q V w R . o > 1 A N # s c ; - 4 D s 5 ) P a { / h c r B j E [ - F _ I { 6 E p , a f > > e . / S \ 0 x h ( { Z Z ? ' 8 Z S 
-{ % ) u r p E Q > K W H ; " L # , j L 5 E Z 8 U D X 2 u = c u O N i K f 5 + ( B Y _ J B v I - B a > 4 t ) . { ) z @ z w $ | 7 C 5 ) c , G I 
-o T 2 h R % A E _ i u e K m ) y / # ` B m V _ * 0 } > u I g X q + v P E u l T s M : X Q 2 j B c # X . w w s o < K z + O < & D 7 8 % ? O N $ 
-< ( { X c W o N 5 K 5 h U 2 C 8 2 | / a Z c @ b / > ) A m M o i & O Z B | O a 6 f d K I r H 5 & < * j W 4 7 O < V ( c = l [ 8 O ' H ? B f ~ 
-P c E . K l 4 W Z ] u f k L d 8 B H D M Q } J h , 2 a \ ) - ) ^ J 3 w 0 * " ] ) = K D s D ? [ : / t F 4 Q q u 1 M [ ~ C j s : y / s U ' x + 
-$ u < N J O F = U 5 ) / r z s i T i m y Y J ; K : B 7 M I 7 c ) : d r } 0 w \ n * o j 1 x _ d ; / O 3 L m l u h d ~ n + . ] F F a [ c ? - A 
-9 0 d 6 ) ; I ; 2 * T } V b t - u > ~ 5 N K j [ E Q k n G : { a [ ' % g , S x T b { C P A c c p F + ] \ E # } t k t . ` 0 > ~ _ 0 h H * J , 
-$ 3 R U 0 + 7 \ W 9 P _ y B ` u G h 6 % W ! d H : ' b . V _ _ 1 r ; Y t ` # @ O @ ' Z E n L + P D d b ' ^ ^ V z h G t ; \ , 3 d v r S e J D 
-G : b " ' / | d | h h + h . ? 5 I l n ] } ( K @ 5 x | s z I V $ S 0 q p $ - 7 U 3 L 0 6 } S r / y u x B l 8 " E ~ [ R 7 ! z l o t 3 < P R v 
-5 ? f v = N T c ) " W n ^ | y T 9 { C ~ 7 9 1 + s y o " y W s i / d ; c b ~ 9 e j # y i n H > 6 " } T ] b < B - % X 9 w L " 8 A % U % { T ; 
-^ v B r * d ) s q e ? H ) h O T ) F s u 0 0 s # V F ( f ~ Z v ? K c p ` F r U v N _ r D 3 a P > 2 N E , J V D ? Y x / L 4 % ) j 5 v # F A > 
-l e F # j R 4 V F ; K L : # # 9 O S > S r d N | @ T < | w = q ~ * n P ] [ Z F L I 3 l C Q U / g @ z O { U ! > U ` K | c J g ` q o e 0 t [ D 
-} O N f Q ! 4 i " 9 ; E Y { e ? x i . > u 3 B 8 * : > , 6 _ 4 [ @ C @ a k ~ X { Q 9 h M t B ] C j ~ / 2 i t M g x f ] 1 2 W c X Y , 3 7 S ~ 
-D , E : E " g H 7 & * y / q 8 & $ 4 _ m ~ $ f I G S B - O d L ; = W Q w : h @ H 3 5 r a V Z - F O > } = ( h L w j Z e @ v E = M | w S : ] = 
-H N E W r . v 9 i | B W F ] q < o [ | x W f ] ^ K X t / Z A a < P ^ H ! 1 Y 3 C h @ J Z : \ P q N / U z & , | C a ? i . V z Z u 1 : Y z f Z 
-\ j p w < ` | A [ L [ b U ( C ) ! U 8 S . 5 3 c % K e Q ~ 5 9 , Q E ( e p J B ? f i m ^ a Q k < f 6 . ' , / o G X K ! 9 l w E o B * = 3 G ' 
-I { ! 0 { ] o ? w t > R ` e O ? 1 Q a f Q 2 & c ' n ? 0 h @ o K D 8 0 % T e o q 5 ? V / : Z # % G " a x n & F 6 4 H r Z $ 2 y m b ` j J ) l 
-L ; f > o x O X # C M I 5 - * D < v T ; ` ' 9 F 5 K a E b h u G a M 4 * w g A ( - r a / k t $ 1 A r n m i c L 1 h k - _ i z ' Y 0 - 5 w J a 
-q , K s U ! Z @ y , y 2 , k ~ W @ H L ` ; T o h b 5 ~ ( k f > B n V i u s ! ` d ( p . B X / U % ( , J x $ o x > E A d x - < X W v a 5 8 " O 
-0 # < Q m & 9 5 % Z Z ~ g ) F 2 e { z } X t \ = H 9 u t ! } S B } } u f x ' 4 | U q } H < R 4 \ @ A I & $ s 1 z E P : k Q ' # \ Z 4 e S ? R 
-| f $ h ' S " ] % 1 / ` @ W J u Z ^ # $ ~ I \ i , ? 7 ` T m K I 0 # $ 2 J b C P M l 6 C ( / . X S # Z k X r ; C w G ' I \ l V ? D \ T [ Y ' 
-{ V M Y W n i b _ / ? 1 0 m C t 8 " O 2 y O ^ % + = ? & 4 5 B W S e 2 4 & O 0 A 7 E C , g H ' & 9 y f n / ) j B < 5 6 ( ^ # S $ * ] k P 3 8 
-w b U ' [ Z # T V # : p L / U * " 8 " 0 J Z 8 R s R K 6 k T O t & < g V A % " D ~ ~ # W c e w e q L z 8 F t w C 3 & j P H d v ! f > ^ ` . j 
-* ; ! Q x % ? - S M ) o } N ` g B D p Q _ T A 2 O $ 2 P = c 3 X D t < T " D m T ~ = z B g ( M A H o C d 6 t _ X J Z ~ M b t p H , O L a B A 
-D S D + P V Y v 0 u i } F w W | & y 9 ) T & k v 8 C [ b ! b U " = + Q I 0 ( _ 5 9 y k h s B S | : n < E l ) g o S y / < ^ < Y a M # ] B ] H 
-7 \ O X i n K 5 R n l n C ' 8 B H - y R A E s 2 u % 8 D 5 g % 2 L @ < 4 9 n - l j V s 4 n ^ 0 l / * G 1 Z j e > [ T Q A ~ ` 1 ; ) Z = 9 i t 
-9 p j j ] q c 3 ' | d H @ U " [ q H 7 / % ; J + 3 X g R F J ^ E \ 7 z N [ H 9 ) N j Z $ V 7 9 : n g C 0 $ # 6 v P h 2 v f # = { y u Y ) H m 
-X / x F S 6 b + } J \ 0 j J { K 2 y k ? ~ X 5 Q N h N v ' h ] n d { , S 2 ~ V 5 ; X U C j n ` 9 < Y H ! J t & L & z ! { 7 v 3 ( d E N n 1 _ 
-! b R U 1 F d g a % * L & > W ? e ] t N z y / } Z 5 8 J s \ B ` v # > F \ O p 4 i Z > 7 R G a X ) E y * q t ! T r ? 8 @ Z w < k L T q Y 8 # 
+3 E b s U ; X ! N & x f Z + D z $ X L [ p : [ J * A : t \ : A s 2 j 3 E A l ! s j ? W _ ^ B m k q F S \ 9 u 4 J . W A @ < l R k T - w O p ? 
+\ K 4 ; E y > 5 % ( ' 2 A 4 M H _ 8 ' ? + i N k B @ ( ` ; j A @ r ? G . 0 = = J o m U n - B F $ x H 6 A o 5 / j ; O # 5 j w u V p t E o u o 
+J x B w T q l c ' < o ( N m 8 \ | , ' & M A a o V 8 G { H ? x 2 K * ` { , m b k x P 9 f @ ^ { 4 4 I U F ! } s % n a > h ; 3 R ~ y L X 2 ( z 
+W T F F L C 5 < # | p ? N ^ X . , B : ~ _ & g L P ^ ] O V d t " $ , d $ X \ 1 Y n ^ ! G [ ' k u J g S 5 ^ Y = \ > 5 y d & % " O z r } } X T 
+Y ' 0 d R P 5 X + a i Q P U M o ( % 6 _ Y * ! o J v = \ M e 7 5 J : ^ f p ( Y m b l w c f z W l + J p > i Z X q J P : ; 4 > N v K V < } - & 
+' " 4 / f b 0 l & > l j j W 8 & 9 6 Y ) M N f ? " B o $ B 7 b d % T ! 8 Q 0 " + G G \ = e u } ; # } 0 6 S b ; { + > ) ^ M u U | O P T Q ` 5 
+" a M $ , q [ { k E y b N T v O y R e D ( l # > @ o O O % f ` g m d [ x ' N 1 1 F J q W p J t % @ & i " G s e B H , 2 r E s 5 / c W 5 s " 5 
+V @ ` ; N a O w u x F 8 e t | > P < < L v ~ 8 " ] 2 R n @ ' z 1 O ` - \ \ D x g , + H [ Q H r f X m 1 P W y U a Y + q R b m ? r ? | a J e + 
+G o 1 : E w L V G J s I v G > = + A ! - L k u P 3 h ] ) \ P W H g q 9 : S l h u T # X $ ) U D @ P + . ! ~ U o e h , } _ x < F - A / I ~ / g 
+{ t G I % f H T 9 @ : m 2 { w Z F f % ' j $ a ( ) u O o * = ^ 3 m P 1 & p y @ H , 6 > 5 k p a x P . w v [ R v < c v r 5 t D w ! E | / 7 4 c 
+t + D N S W $ P 4 . 2 l 6 a f n O ( ; v ? H ^ 0 k ( A p - y U > v 6 _ 0 i @ \ M O H . % A % f i P 4 l H y 5 k 8 | > V ? ! f I , ? | u D v 2 
+= q ` I F ( r 7 Y 8 ^ / O 7 < : j i ~ f | j T y T \ m G g m A ; M J ' ^ 9 ` T Q s M % I A 3 ! E } k ] x U Y V ( 2 p ` w 4 _ Z m 2 / f y R ( 
+X ^ 6 C 5 4 p - O ; ` i F c k 7 7 ] k o z x S g : a = ` + = y 7 # i * B @ 2 % / # A C ? C " + M b w p W o u B n , W s C x v u 2 R J i ; e ^ 
+i * ! q C > 7 * q " o ? z ) 8 V ) : T 5 s C L I F i = { S [ ^ s 1 @ M @ Q & b w 8 < P e 6 ` f E W u 5 n ) & u T 8 Q B ~ 5 y 7 b Q ` y 1 > s 
+u n k Q f 4 t Z [ ; { , } x 9 ` * g R s { < v \ n A , c E R 0 u B L k | K # - t A X r = ~ B V 3 N D 8 Z @ r x r B Z c 5 R L v " y y 7 W 3 f 
+7 E ( B d A 3 O : R 5 v D P ` 6 ) j 5 . s z F > c 6 8 7 r c @ f u / ` g L Y u k ^ s a O ~ ; ? $ . ~ 6 ' r ] ( ? } - - s L 4 > r s ! a m H | 
+c Q . I 0 h h h 8 o W 8 o o Z 6 h T l a P q M i ? G r F p J G ; f j j 3 h p Z A l 4 T J ^ @ z = $ | D ; K h m H ) > S J [ Y 3 u w i w 5 X ` 
+c ^ [ # + h 7 7 2 z F s r y O 7 } @ ! T } = - n ( V h > % y 6 Q a L x ' h 7 % [ p _ % Q J x 2 ] ? x J t 8 i 6 w l Y 0 T ) p D j & u x p + E 
+b j b Z v | X M t x a 0 F n ; ) x { c 0 ^ ! c G r " v r W Z v 3 N A | - y < Y j s o 3 & : g z % ! O ) z e q ' 1 g : x b Q i 9 ? - a | O Z q 
+M B ] ? @ P ! I K = q ' t $ V E d 5 l T R . ? C , Y i G g q h & q O J 2 @ D I ` y ~ ` r T } u i g g 6 ` @ P { { $ a 3 ? 0 R V . F & ) ~ ^ i 
+n > @ V g l 0 5 2 - : $ R < u ' Q c + & G L . L r C > Q + < u X m C N p 2 ^ t _ } b " V f / [ m / Y 8 7 < N 4 " ] C , 3 x { q D F O N G c V 
+S W b G @ F s a " ? > - ] 7 a 6 4 t r j g o T u n < B c > , j m R c B [ < s X h ( { 7 ( Q 9 Y Z F I N 3 k ? 9 y 5 P m = ` " ( g | Z s , / L 
+, e ( ? _ V ) a b e \ * d 2 * i m % C d ) ' - B ~ ! + ? J H % z Q f H t h E q 8 ) / x 4 X k S e \ a Y w j c K ! W $ y 3 , 4 o n ! 7 z | F X 
+" U > Z 7 x e ' % h I N X S - V 3 { _ j * # m . C t f k ? v X < 5 g Y j F Q C $ y 2 $ 4 x ` [ U ] 8 7 a ~ G H s n 7 c , h L 6 h Y M ? H P n 
+[ i M , H p z ` j C m z % v 6 D 3 < K B y D | Q # c { * n d A $ ' n Y h " ) m z ? s v X O m 5 : K } K O y a F # i u ; 4 C r 0 _ O m ' r = | 
+l $ M x s c h _ * m L ( / E B { Z / i w J 7 D | h h y A ^ X Y j } q V 1 : a 0 ] q T X 4 M * z v % g X ? 4 T ! + _ M z . l K . 5 x > s @ F o 
+p ' a F e g S 2 h A ~ ~ " s N O k a a f 0 G > ^ G o u , g ^ \ g T p e U w D [ + U c f A 9 3 l $ h % d < $ K O V [ a ( k t T % s n 6 r Z ? m 
+A s R t $ d K O ! @ W @ ` v w [ D U ] 7 6 } " X = B D i t u = k ( x 3 7 o v A f < i - X q t @ F ? y } T N & ` a a , b W x , s D Z = \ r 6 = 
+; v J / 7 ( B m K k k ? - ^ H t ? R U 4 w g & 8 C I ' $ v 0 \ h J X 8 0 ] y x T { { F ' . ; G s b = t D } . 1 W = E , k e ^ 8 n : j @ ) < ! 
+z K # + 1 . E d 3 > G Z / v | B 1 0 W 9 B l H z l . 6 ~ ) g o u a u [ ] 4 ' ` ! b u h b K g h t B F r w ~ | + * K 0 h T t h A H m " # P ? 5 
+V ? , T s p q j u d ~ s 8 U k < / , " ' P / [ y B * 6 ^ [ n 7 C t c 8 M # . ~ J a x < R 1 O 3 O o g H u g g H ' ( , | ` z q i L W u ( K 5 D 
+{ X ] j Q ~ V - l | : U G ' 2 P Z m y A Z F x " L X j V Y G % 7 G R $ q B 7 : < $ t ] / O } q 8 } } = d ] D K @ > A ( b t 7 l j r E m X X F 
+^ ] ! W ^ l . ! C z 8 x M o B D . * r 9 / 6 J l l , I d d ~ ~ v W O h 9 + - ; X E X m > | p h Z D _ P ^ P % f < | B U 9 ^ X I u S o _ p ! ; 
+x k @ 3 e % ! N z : X a ~ Y X & , h f k 3 - @ a ; k $ T & 0 X ' 5 r C 4 x O 6 P R 4 k E : 9 ) a l v $ D / ) , p + . : v 6 = r \ T 8 Z ~ h z 
+i 3 I } A ? O @ P K 7 3 i E c . 3 Y N m # G U < 9 1 ( e W f ] B K > w ( ! 0 B w y } b * < E K E t H 0 < r c w # W ! F p { K + 7 : , r G 5 q 
+Z L 2 ) * _ A I H ) @ | O A N u G A 2 m Q \ U > $ x 5 k 8 & Z $ t & # 9 ( A ) O J $ B W $ q G % 4 N I 9 $ M N : , & 7 } w 8 o [ g ! l 9 ? & 
+L 1 g ) W w M | t v l e @ c Z B ` n Y 4 K ` ^ \ Q e x R 6 ( - J m ] p ' i ( b L % } B 9 V ? _ 7 U ) 8 y c = D g \ j | o J ) < K b n [ l S b 
+< ? = e L E Y = B k * 3 ^ x ? , a h { w | E B N , 1 ~ r ` M . O * ^ " * { r - L e 9 z e Z R & g ] O x Y Y J 0 s j q 7 o { 6 _ } . i G > 6 Y 
+n } 6 d x a { D E ( j [ W Q N g 3 = u 5 8 [ ` } B K g [ b m N P 4 Q C H j L N H ! A A 4 v d ^ a } > E ! w 4 < P : 1 } = S V U a r F b V + 2 
+4 + U O o H E | J L T I N n C % } k 0 y 7 $ \ W i p v 7 " 1 Z > q t ^ l i R c I K \ | m , / 8 j 3 \ W a / 6 b Z ) t Y c k 9 T I V o . _ c / 
+q P s z 6 . Q _ A 4 T I 8 V g o U 8 W p C T v = L @ y b T j O h D | ) < 5 l z m J L t > e / o ! Z * * % z t W u , A 4 ( t K j F w H D ~ , < 
+t W E J c M 6 t \ x J @ / N n j Y d k u g s ^ 3 n b } l $ E v x ; W K T e c l n ] ~ f K - N x ! f ] ` ? o % # Y L ) " F ] Q 4 a 1 B y X g @ 
+a Z r ) O : a W X & P 7 Z { X Q J J F C Y t Z 3 ? I P v ~ " i 5 v e + : ? 1 K b a P ' H * L 6 G : " d ? ) h ~ = Y < 6 S g > D * 4 y ` [ 5 a 
+v R + L K C L C V P s g ` p @ z R : v C W r Z h < 7 . % 6 C E - [ 4 O L " e B u g ~ q $ ] ) b e w s U V b 1 t @ < 5 J o } 7 K e Y / $ F 0 & 
+K ) 3 C O D N ! D m I : 9 t M x \ w < # ` A " * n l ! < n v 8 K L $ u ` X c z ) y h Z 5 S e U [ g g c D ( > ~ l D > ) F 0 o p R = T r } D ! 
+T A % [ I ` 3 X i k = , ' C f t ! = B Y @ k B ( - W W t q ) r + P S U k N T 5 ~ [ @ , ? s 5 v ` d ' T H r 3 U Y _ " B t E K 8 u $ b i 0 \ _ 
+h a 0 ) c m d J b s j ] ] . 1 u " d < $ # ; { J c V r r { P d , R z ) Z 4 c [ - s q L S y @ " 1 P ^ @ V \ 8 S j H ; $ ( 1 , _ j : D " 7 t L 
+` V & i R D 6 O T w ~ @ , K ; 7 < ; k } p Z 7 _ h $ _ e * F ] k t ' & ^ G 4 | " l Q Z D Y o s % W f x U 1 K ' C 4 n ? + q 1 q w : " Q T V 0 
+_ P C $ l N B w ' . 2 9 L + } ( 2 @ v z / D 6 ( R { 7 ; g $ . ? T 9 6 \ l q k o Q 8 k Y M \ ' L P 8 S V s o w / W _ 3 e y | r m L & % / ; ) 
+U n > - g { l m + 8 B 4 k y s ) ! 7 M A H , K I / 4 & + O ' A . @ c h a " w O 0 u = l s " R 6 = b T % ( , 0 N y U ) 0 C ~ Z ] ` a U : ; I ] 
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Optional Graphics stuff.... ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// a special graphics item to display the text in a "fancy" way ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// some colors to use in the text area ...</span></body></html>
@@ -4147,56 +4147,56 @@ X / x F S 6 b + } J \ 0 j J { K 2 y k ? ~ X 5 Q N h N v ' h ] n d { , S 2 ~ V 5 
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// a picture icon for the dialog ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// now put the items in the dialog ...</span></body></html>
 ~~~SIMULATED DIALOG: 
-c G J M ! ; ~ Z # \ Z d Y B y % & Y a > N a @ a [ ] % M Z ? D e & X ` l a L A S Y R T Z : G y o A P a o % # : # J ? # E X ' c < _ & $ o J | 
-V a W l d k 8 w S i ) n 6 Y C = + 4 r : P y / % O L & p L W u , r Z 6 8 e D ' A r d X @ } 5 4 M U O e 3 6 U { w T # L ` m d m c h v f ! p ) 
-Q S ( | K P < v I | ~ J ] ` * 9 6 8 q H U ( y R U / ? h P ` M ; f t 3 i F f 9 U Y " o O H K g m p q P F G a n ' p n d Y a e } 4 T f 5 . D m 
-1 & q $ 2 t e s U ) u : x " b o / f j [ | 2 w , l V y % B x x U # w ' E f a ~ f j j < Z A e 2 B ~ r ) t | k K 2 \ 7 { ? f + g m M ) 1 F u 7 
-V 5 } 9 e U H w M ^ n g W L i e A j $ B i g + A R ^ q " o Q 4 g * / a d s ` > O t % d s | $ # % " \ 8 T u ^ % l ( j [ $ ; n z / 8 X @ Y k z 
-k s k = t > o j s Y & " 5 M r , . 2 ` 7 u x O l ' 8 S O J 5 _ U d . " P B N p 3 p 6 8 Z s X ~ y d & Z F E g P 5 9 # U j " ` a y k M T ( ! + 
-@ 0 3 8 n \ e 2 H j U E ) ) J y ) K L B ? X 7 # < ( I o T 0 i J | D F 8 # 6 Z ] M T $ D ; + J [ X t E j ! g E \ W ~ # v U + - ^ o u u $ s - 
-i ~ 2 + J M c t H 9 * c M a f U ~ o ~ [ F : | E q ^ X ~ 2 w 3 N / ] / 4 P d j G s H k o $ \ r o ; u : j L l d Y ~ { & = | - y # w I T V @ = 
-e L y t S 0 [ " = ) p & Z O 4 H ; l ) { y * j _ _ N ? u M D E > Z % d " o $ _ u 4 - U # / P x y u + ` D i } c 4 @ . ^ n P w q q a ) q = s ! 
-D . r e f W \ + Z @ $ P # x : a E C C k [ y R N 6 B % E M 5 ~ f v h u c Z M @ . c ( * u + C h / = 7 v n r & h S . & H k 7 = 3 @ d W Z . x W 
-8 @ % w F I q Z x z < ' C ^ g 9 + 1 H u 9 ^ b P , e 4 & ` w x ? U i $ e E + [ ; s p > > 0 = I I c d J O , U y i , J ^ H & I O ; ? g 0 f - V 
-y B ? [ M o m > , ( e a b S 8 5 I r _ W ; $ / _ Y - C k \ x ~ / N / + 8 9 F 3 u b @ M v Z 7 F b - M w & f % 1 D x i P x D f ^ 9 ? U ~ 2 * L 
-& ; H 3 ] " ^ 7 { q o R a # ` 2 p a q b ~ 9 6 ! < u G K V ~ ) + m C % * z # ^ Z < & n k N _ ] z > g X d 2 e D + ( P ; K [ 4 & @ Y Z * a t > 
-B . ; ) _ f y , ; { 7 q Y k P / ) G r " * s R F i P P . H k o e : | 9 D E U F i ^ S = X < 5 Y T _ | 5 3 o x ) V O - 1 2 { h ? & i < % G l X 
-o \ w Y j I y ! k ] Z J T 5 i 0 M f h p P ] p x ^ _ C O < N , m y 1 4 n N K o T i ^ + 9 ] L ; 7 P l B _ h ! ] L ^ H B I * W m i R 8 k w w B 
-d P U D g ' E X e o , Z Y I k Q z = k n X | r ] e W . < I ? a e N z ] H J H b s h r 3 A t [ [ M 0 R K O X m A x J @ y t & $ . T % l J i \ ` 
-i l l | K + F = 0 z S j S h q T # l t ^ m E ^ g > w V G ! Y j 6 S m g 5 j l 2 D @ ] M , 5 [ N z d Y 3 R h | D 3 $ . o S z : % s D L } % d 3 
-D ) 8 | ' # ' t w S E t k F S p | n B v | I \ _ 7 V - _ X N 3 ; g g m R y \ B Z , G ; r m Q O e G W 7 o > ; X ` ! < : @ s ] S u I h P _ 6 ? 
-V h o 5 4 ) ] P g S h ( G 7 ^ o 6 % A 7 D / & C d X | l C F y L : * 3 W 3 E o 3 Q J C } V + W < k C 7 ; r ` < : q ` X F > R K E / D T U @ + 
-3 h h ! 3 Y f F 5 Q O F _ ^ ! [ r t } [ a Y _ # @ h B h S O m Q . } & f R e | R + @ # Y g m # M d 0 # ] \ " y a H & ! I G & @ P > t g k l n 
-8 + I 9 1 x ; d d < 1 / % T e # r } $ = % Z \ U ^ T K V ; v l @ Z # @ D l o A 1 % h v " k q T < ^ 5 ] / ? Y a N M u M 9 p d } @ Y Z d O $ \ 
-A U 2 U 2 / E . G Q V w R . o > 1 A N # s c ; - 4 D s 5 ) P a { / h c r B j E [ - F _ I { 6 E p , a f > > e . / S \ 0 x h ( { Z Z ? ' 8 Z S 
-{ % ) u r p E Q > K W H ; " L # , j L 5 E Z 8 U D X 2 u = c u O N i K f 5 + ( B Y _ J B v I - B a > 4 t ) . { ) z @ z w $ | 7 C 5 ) c , G I 
-o T 2 h R % A E _ i u e K m ) y / # ` B m V _ * 0 } > u I g X q + v P E u l T s M : X Q 2 j B c # X . w w s o < K z + O < & D 7 8 % ? O N $ 
-< ( { X c W o N 5 K 5 h U 2 C 8 2 | / a Z c @ b / > ) A m M o i & O Z B | O a 6 f d K I r H 5 & < * j W 4 7 O < V ( c = l [ 8 O ' H ? B f ~ 
-P c E . K l 4 W Z ] u f k L d 8 B H D M Q } J h , 2 a \ ) - ) ^ J 3 w 0 * " ] ) = K D s D ? [ : / t F 4 Q q u 1 M [ ~ C j s : y / s U ' x + 
-$ u < N J O F = U 5 ) / r z s i T i m y Y J ; K : B 7 M I 7 c ) : d r } 0 w \ n * o j 1 x _ d ; / O 3 L m l u h d ~ n + . ] F F a [ c ? - A 
-9 0 d 6 ) ; I ; 2 * T } V b t - u > ~ 5 N K j [ E Q k n G : { a [ ' % g , S x T b { C P A c c p F + ] \ E # } t k t . ` 0 > ~ _ 0 h H * J , 
-$ 3 R U 0 + 7 \ W 9 P _ y B ` u G h 6 % W ! d H : ' b . V _ _ 1 r ; Y t ` # @ O @ ' Z E n L + P D d b ' ^ ^ V z h G t ; \ , 3 d v r S e J D 
-G : b " ' / | d | h h + h . ? 5 I l n ] } ( K @ 5 x | s z I V $ S 0 q p $ - 7 U 3 L 0 6 } S r / y u x B l 8 " E ~ [ R 7 ! z l o t 3 < P R v 
-5 ? f v = N T c ) " W n ^ | y T 9 { C ~ 7 9 1 + s y o " y W s i / d ; c b ~ 9 e j # y i n H > 6 " } T ] b < B - % X 9 w L " 8 A % U % { T ; 
-^ v B r * d ) s q e ? H ) h O T ) F s u 0 0 s # V F ( f ~ Z v ? K c p ` F r U v N _ r D 3 a P > 2 N E , J V D ? Y x / L 4 % ) j 5 v # F A > 
-l e F # j R 4 V F ; K L : # # 9 O S > S r d N | @ T < | w = q ~ * n P ] [ Z F L I 3 l C Q U / g @ z O { U ! > U ` K | c J g ` q o e 0 t [ D 
-} O N f Q ! 4 i " 9 ; E Y { e ? x i . > u 3 B 8 * : > , 6 _ 4 [ @ C @ a k ~ X { Q 9 h M t B ] C j ~ / 2 i t M g x f ] 1 2 W c X Y , 3 7 S ~ 
-D , E : E " g H 7 & * y / q 8 & $ 4 _ m ~ $ f I G S B - O d L ; = W Q w : h @ H 3 5 r a V Z - F O > } = ( h L w j Z e @ v E = M | w S : ] = 
-H N E W r . v 9 i | B W F ] q < o [ | x W f ] ^ K X t / Z A a < P ^ H ! 1 Y 3 C h @ J Z : \ P q N / U z & , | C a ? i . V z Z u 1 : Y z f Z 
-\ j p w < ` | A [ L [ b U ( C ) ! U 8 S . 5 3 c % K e Q ~ 5 9 , Q E ( e p J B ? f i m ^ a Q k < f 6 . ' , / o G X K ! 9 l w E o B * = 3 G ' 
-I { ! 0 { ] o ? w t > R ` e O ? 1 Q a f Q 2 & c ' n ? 0 h @ o K D 8 0 % T e o q 5 ? V / : Z # % G " a x n & F 6 4 H r Z $ 2 y m b ` j J ) l 
-L ; f > o x O X # C M I 5 - * D < v T ; ` ' 9 F 5 K a E b h u G a M 4 * w g A ( - r a / k t $ 1 A r n m i c L 1 h k - _ i z ' Y 0 - 5 w J a 
-q , K s U ! Z @ y , y 2 , k ~ W @ H L ` ; T o h b 5 ~ ( k f > B n V i u s ! ` d ( p . B X / U % ( , J x $ o x > E A d x - < X W v a 5 8 " O 
-0 # < Q m & 9 5 % Z Z ~ g ) F 2 e { z } X t \ = H 9 u t ! } S B } } u f x ' 4 | U q } H < R 4 \ @ A I & $ s 1 z E P : k Q ' # \ Z 4 e S ? R 
-| f $ h ' S " ] % 1 / ` @ W J u Z ^ # $ ~ I \ i , ? 7 ` T m K I 0 # $ 2 J b C P M l 6 C ( / . X S # Z k X r ; C w G ' I \ l V ? D \ T [ Y ' 
-{ V M Y W n i b _ / ? 1 0 m C t 8 " O 2 y O ^ % + = ? & 4 5 B W S e 2 4 & O 0 A 7 E C , g H ' & 9 y f n / ) j B < 5 6 ( ^ # S $ * ] k P 3 8 
-w b U ' [ Z # T V # : p L / U * " 8 " 0 J Z 8 R s R K 6 k T O t & < g V A % " D ~ ~ # W c e w e q L z 8 F t w C 3 & j P H d v ! f > ^ ` . j 
-* ; ! Q x % ? - S M ) o } N ` g B D p Q _ T A 2 O $ 2 P = c 3 X D t < T " D m T ~ = z B g ( M A H o C d 6 t _ X J Z ~ M b t p H , O L a B A 
-D S D + P V Y v 0 u i } F w W | & y 9 ) T & k v 8 C [ b ! b U " = + Q I 0 ( _ 5 9 y k h s B S | : n < E l ) g o S y / < ^ < Y a M # ] B ] H 
-7 \ O X i n K 5 R n l n C ' 8 B H - y R A E s 2 u % 8 D 5 g % 2 L @ < 4 9 n - l j V s 4 n ^ 0 l / * G 1 Z j e > [ T Q A ~ ` 1 ; ) Z = 9 i t 
-9 p j j ] q c 3 ' | d H @ U " [ q H 7 / % ; J + 3 X g R F J ^ E \ 7 z N [ H 9 ) N j Z $ V 7 9 : n g C 0 $ # 6 v P h 2 v f # = { y u Y ) H m 
-X / x F S 6 b + } J \ 0 j J { K 2 y k ? ~ X 5 Q N h N v ' h ] n d { , S 2 ~ V 5 ; X U C j n ` 9 < Y H ! J t & L & z ! { 7 v 3 ( d E N n 1 _ 
-! b R U 1 F d g a % * L & > W ? e ] t N z y / } Z 5 8 J s \ B ` v # > F \ O p 4 i Z > 7 R G a X ) E y * q t ! T r ? 8 @ Z w < k L T q Y 8 # 
+3 E b s U ; X ! N & x f Z + D z $ X L [ p : [ J * A : t \ : A s 2 j 3 E A l ! s j ? W _ ^ B m k q F S \ 9 u 4 J . W A @ < l R k T - w O p ? 
+\ K 4 ; E y > 5 % ( ' 2 A 4 M H _ 8 ' ? + i N k B @ ( ` ; j A @ r ? G . 0 = = J o m U n - B F $ x H 6 A o 5 / j ; O # 5 j w u V p t E o u o 
+J x B w T q l c ' < o ( N m 8 \ | , ' & M A a o V 8 G { H ? x 2 K * ` { , m b k x P 9 f @ ^ { 4 4 I U F ! } s % n a > h ; 3 R ~ y L X 2 ( z 
+W T F F L C 5 < # | p ? N ^ X . , B : ~ _ & g L P ^ ] O V d t " $ , d $ X \ 1 Y n ^ ! G [ ' k u J g S 5 ^ Y = \ > 5 y d & % " O z r } } X T 
+Y ' 0 d R P 5 X + a i Q P U M o ( % 6 _ Y * ! o J v = \ M e 7 5 J : ^ f p ( Y m b l w c f z W l + J p > i Z X q J P : ; 4 > N v K V < } - & 
+' " 4 / f b 0 l & > l j j W 8 & 9 6 Y ) M N f ? " B o $ B 7 b d % T ! 8 Q 0 " + G G \ = e u } ; # } 0 6 S b ; { + > ) ^ M u U | O P T Q ` 5 
+" a M $ , q [ { k E y b N T v O y R e D ( l # > @ o O O % f ` g m d [ x ' N 1 1 F J q W p J t % @ & i " G s e B H , 2 r E s 5 / c W 5 s " 5 
+V @ ` ; N a O w u x F 8 e t | > P < < L v ~ 8 " ] 2 R n @ ' z 1 O ` - \ \ D x g , + H [ Q H r f X m 1 P W y U a Y + q R b m ? r ? | a J e + 
+G o 1 : E w L V G J s I v G > = + A ! - L k u P 3 h ] ) \ P W H g q 9 : S l h u T # X $ ) U D @ P + . ! ~ U o e h , } _ x < F - A / I ~ / g 
+{ t G I % f H T 9 @ : m 2 { w Z F f % ' j $ a ( ) u O o * = ^ 3 m P 1 & p y @ H , 6 > 5 k p a x P . w v [ R v < c v r 5 t D w ! E | / 7 4 c 
+t + D N S W $ P 4 . 2 l 6 a f n O ( ; v ? H ^ 0 k ( A p - y U > v 6 _ 0 i @ \ M O H . % A % f i P 4 l H y 5 k 8 | > V ? ! f I , ? | u D v 2 
+= q ` I F ( r 7 Y 8 ^ / O 7 < : j i ~ f | j T y T \ m G g m A ; M J ' ^ 9 ` T Q s M % I A 3 ! E } k ] x U Y V ( 2 p ` w 4 _ Z m 2 / f y R ( 
+X ^ 6 C 5 4 p - O ; ` i F c k 7 7 ] k o z x S g : a = ` + = y 7 # i * B @ 2 % / # A C ? C " + M b w p W o u B n , W s C x v u 2 R J i ; e ^ 
+i * ! q C > 7 * q " o ? z ) 8 V ) : T 5 s C L I F i = { S [ ^ s 1 @ M @ Q & b w 8 < P e 6 ` f E W u 5 n ) & u T 8 Q B ~ 5 y 7 b Q ` y 1 > s 
+u n k Q f 4 t Z [ ; { , } x 9 ` * g R s { < v \ n A , c E R 0 u B L k | K # - t A X r = ~ B V 3 N D 8 Z @ r x r B Z c 5 R L v " y y 7 W 3 f 
+7 E ( B d A 3 O : R 5 v D P ` 6 ) j 5 . s z F > c 6 8 7 r c @ f u / ` g L Y u k ^ s a O ~ ; ? $ . ~ 6 ' r ] ( ? } - - s L 4 > r s ! a m H | 
+c Q . I 0 h h h 8 o W 8 o o Z 6 h T l a P q M i ? G r F p J G ; f j j 3 h p Z A l 4 T J ^ @ z = $ | D ; K h m H ) > S J [ Y 3 u w i w 5 X ` 
+c ^ [ # + h 7 7 2 z F s r y O 7 } @ ! T } = - n ( V h > % y 6 Q a L x ' h 7 % [ p _ % Q J x 2 ] ? x J t 8 i 6 w l Y 0 T ) p D j & u x p + E 
+b j b Z v | X M t x a 0 F n ; ) x { c 0 ^ ! c G r " v r W Z v 3 N A | - y < Y j s o 3 & : g z % ! O ) z e q ' 1 g : x b Q i 9 ? - a | O Z q 
+M B ] ? @ P ! I K = q ' t $ V E d 5 l T R . ? C , Y i G g q h & q O J 2 @ D I ` y ~ ` r T } u i g g 6 ` @ P { { $ a 3 ? 0 R V . F & ) ~ ^ i 
+n > @ V g l 0 5 2 - : $ R < u ' Q c + & G L . L r C > Q + < u X m C N p 2 ^ t _ } b " V f / [ m / Y 8 7 < N 4 " ] C , 3 x { q D F O N G c V 
+S W b G @ F s a " ? > - ] 7 a 6 4 t r j g o T u n < B c > , j m R c B [ < s X h ( { 7 ( Q 9 Y Z F I N 3 k ? 9 y 5 P m = ` " ( g | Z s , / L 
+, e ( ? _ V ) a b e \ * d 2 * i m % C d ) ' - B ~ ! + ? J H % z Q f H t h E q 8 ) / x 4 X k S e \ a Y w j c K ! W $ y 3 , 4 o n ! 7 z | F X 
+" U > Z 7 x e ' % h I N X S - V 3 { _ j * # m . C t f k ? v X < 5 g Y j F Q C $ y 2 $ 4 x ` [ U ] 8 7 a ~ G H s n 7 c , h L 6 h Y M ? H P n 
+[ i M , H p z ` j C m z % v 6 D 3 < K B y D | Q # c { * n d A $ ' n Y h " ) m z ? s v X O m 5 : K } K O y a F # i u ; 4 C r 0 _ O m ' r = | 
+l $ M x s c h _ * m L ( / E B { Z / i w J 7 D | h h y A ^ X Y j } q V 1 : a 0 ] q T X 4 M * z v % g X ? 4 T ! + _ M z . l K . 5 x > s @ F o 
+p ' a F e g S 2 h A ~ ~ " s N O k a a f 0 G > ^ G o u , g ^ \ g T p e U w D [ + U c f A 9 3 l $ h % d < $ K O V [ a ( k t T % s n 6 r Z ? m 
+A s R t $ d K O ! @ W @ ` v w [ D U ] 7 6 } " X = B D i t u = k ( x 3 7 o v A f < i - X q t @ F ? y } T N & ` a a , b W x , s D Z = \ r 6 = 
+; v J / 7 ( B m K k k ? - ^ H t ? R U 4 w g & 8 C I ' $ v 0 \ h J X 8 0 ] y x T { { F ' . ; G s b = t D } . 1 W = E , k e ^ 8 n : j @ ) < ! 
+z K # + 1 . E d 3 > G Z / v | B 1 0 W 9 B l H z l . 6 ~ ) g o u a u [ ] 4 ' ` ! b u h b K g h t B F r w ~ | + * K 0 h T t h A H m " # P ? 5 
+V ? , T s p q j u d ~ s 8 U k < / , " ' P / [ y B * 6 ^ [ n 7 C t c 8 M # . ~ J a x < R 1 O 3 O o g H u g g H ' ( , | ` z q i L W u ( K 5 D 
+{ X ] j Q ~ V - l | : U G ' 2 P Z m y A Z F x " L X j V Y G % 7 G R $ q B 7 : < $ t ] / O } q 8 } } = d ] D K @ > A ( b t 7 l j r E m X X F 
+^ ] ! W ^ l . ! C z 8 x M o B D . * r 9 / 6 J l l , I d d ~ ~ v W O h 9 + - ; X E X m > | p h Z D _ P ^ P % f < | B U 9 ^ X I u S o _ p ! ; 
+x k @ 3 e % ! N z : X a ~ Y X & , h f k 3 - @ a ; k $ T & 0 X ' 5 r C 4 x O 6 P R 4 k E : 9 ) a l v $ D / ) , p + . : v 6 = r \ T 8 Z ~ h z 
+i 3 I } A ? O @ P K 7 3 i E c . 3 Y N m # G U < 9 1 ( e W f ] B K > w ( ! 0 B w y } b * < E K E t H 0 < r c w # W ! F p { K + 7 : , r G 5 q 
+Z L 2 ) * _ A I H ) @ | O A N u G A 2 m Q \ U > $ x 5 k 8 & Z $ t & # 9 ( A ) O J $ B W $ q G % 4 N I 9 $ M N : , & 7 } w 8 o [ g ! l 9 ? & 
+L 1 g ) W w M | t v l e @ c Z B ` n Y 4 K ` ^ \ Q e x R 6 ( - J m ] p ' i ( b L % } B 9 V ? _ 7 U ) 8 y c = D g \ j | o J ) < K b n [ l S b 
+< ? = e L E Y = B k * 3 ^ x ? , a h { w | E B N , 1 ~ r ` M . O * ^ " * { r - L e 9 z e Z R & g ] O x Y Y J 0 s j q 7 o { 6 _ } . i G > 6 Y 
+n } 6 d x a { D E ( j [ W Q N g 3 = u 5 8 [ ` } B K g [ b m N P 4 Q C H j L N H ! A A 4 v d ^ a } > E ! w 4 < P : 1 } = S V U a r F b V + 2 
+4 + U O o H E | J L T I N n C % } k 0 y 7 $ \ W i p v 7 " 1 Z > q t ^ l i R c I K \ | m , / 8 j 3 \ W a / 6 b Z ) t Y c k 9 T I V o . _ c / 
+q P s z 6 . Q _ A 4 T I 8 V g o U 8 W p C T v = L @ y b T j O h D | ) < 5 l z m J L t > e / o ! Z * * % z t W u , A 4 ( t K j F w H D ~ , < 
+t W E J c M 6 t \ x J @ / N n j Y d k u g s ^ 3 n b } l $ E v x ; W K T e c l n ] ~ f K - N x ! f ] ` ? o % # Y L ) " F ] Q 4 a 1 B y X g @ 
+a Z r ) O : a W X & P 7 Z { X Q J J F C Y t Z 3 ? I P v ~ " i 5 v e + : ? 1 K b a P ' H * L 6 G : " d ? ) h ~ = Y < 6 S g > D * 4 y ` [ 5 a 
+v R + L K C L C V P s g ` p @ z R : v C W r Z h < 7 . % 6 C E - [ 4 O L " e B u g ~ q $ ] ) b e w s U V b 1 t @ < 5 J o } 7 K e Y / $ F 0 & 
+K ) 3 C O D N ! D m I : 9 t M x \ w < # ` A " * n l ! < n v 8 K L $ u ` X c z ) y h Z 5 S e U [ g g c D ( > ~ l D > ) F 0 o p R = T r } D ! 
+T A % [ I ` 3 X i k = , ' C f t ! = B Y @ k B ( - W W t q ) r + P S U k N T 5 ~ [ @ , ? s 5 v ` d ' T H r 3 U Y _ " B t E K 8 u $ b i 0 \ _ 
+h a 0 ) c m d J b s j ] ] . 1 u " d < $ # ; { J c V r r { P d , R z ) Z 4 c [ - s q L S y @ " 1 P ^ @ V \ 8 S j H ; $ ( 1 , _ j : D " 7 t L 
+` V & i R D 6 O T w ~ @ , K ; 7 < ; k } p Z 7 _ h $ _ e * F ] k t ' & ^ G 4 | " l Q Z D Y o s % W f x U 1 K ' C 4 n ? + q 1 q w : " Q T V 0 
+_ P C $ l N B w ' . 2 9 L + } ( 2 @ v z / D 6 ( R { 7 ; g $ . ? T 9 6 \ l q k o Q 8 k Y M \ ' L P 8 S V s o w / W _ 3 e y | r m L & % / ; ) 
+U n > - g { l m + 8 B 4 k y s ) ! 7 M A H , K I / 4 & + O ' A . @ c h a " w O 0 u = l s " R 6 = b T % ( , 0 N y U ) 0 C ~ Z ] ` a U : ; I ] 
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Arrays unit complete..............</span></body></html>
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Classes unit started...............</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// create a new person object ...</span></body></html>
@@ -4749,7 +4749,7 @@ Student: Person: John Smith is 0 and gender is true
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Boom!!!!!</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Boom!!!!!</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Fire Fighter: Person: John Smith is 0 and gender is false</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">java.lang.Object@51521cc1</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">java.lang.Object@5387f9e0</span></body></html>
 Teacher: Person: Mr. Macwilliam is 54 and gender is true
 	 - Teaches 6 students
 	Student: Person: Christian is 17 and gender is true
@@ -5018,9 +5018,9 @@ Wachs: Computer Science Teacher: Teacher: Person: Mr. Wachs is 48 and gender is 
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Turn the list into an array, and show array ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array = {Batman,Spiderman,Thing,Vibe,Flash}</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Now build a new character list with 50 random chars in it, and show ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">[I,X,V,M,P,Z,W,E,U,U,U,F,T,P,A,C,H,N,G,Q,X,V,P,N,A,J,Q,E,L,K,H,V,P,P,V,V,R,O,V,M,R,Y,V,Q,B,I,K,P,H,U]</span></body></html>
-<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Now find all the indices of Q ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array = {19,26,43}</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">[Q,J,W,L,C,W,Y,F,B,N,M,L,Q,D,W,W,Y,Z,J,A,L,A,P,F,X,O,I,P,Q,H,E,J,F,W,Y,K,O,J,S,U,C,J,L,P,I,T,D,B,N,R]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Now find all the indices of N ...</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array = {9,48}</span></body></html>
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Collections unit test complete..............</span></body></html>
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Permanent Storage unit test started...............</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// simple string save and open ...</span></body></html>
@@ -5859,32 +5859,32 @@ Calvin
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if empty, and size ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Empty = true and size = 0</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Push 10 items onto the stack, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3899,4022,3868,3981,3980,3899,4014,3941,3987,3996]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [4002,4025,3900,4012,3998,4034,3928,3988,3981,3944]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if empty, and size ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Empty = false and size = 10</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create clone stack, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3899,4022,3868,3981,3980,3899,4014,3941,3987,3996]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [4002,4025,3900,4012,3998,4034,3928,3988,3981,3944]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if the 2 stacks are equal ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">stacks are equal</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Pop half the original stack values, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3899,4014,3941,3987,3996]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [4034,3928,3988,3981,3944]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Display clone again ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3899,4022,3868,3981,3980,3899,4014,3941,3987,3996]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [4002,4025,3900,4012,3998,4034,3928,3988,3981,3944]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if the 2 stacks are equal again ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">stacks are not equal</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Wipe out (finalize) the clone, and display ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Empty stack</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check the top of both stacks, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">3899</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">4034</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">null</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create array from stack, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">array = [3899,4014,3941,3987,3996]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">array = [4034,3928,3988,3981,3944]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create LinkedList from stack, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">LinkedList = [3899,4014,3941,3987,3996]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">LinkedList = [4034,3928,3988,3981,3944]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create new Stack from array, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3899,4014,3941,3987,3996]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [4034,3928,3988,3981,3944]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create new Stack from LinkedList, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [3899,4014,3941,3987,3996]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Stack = [4034,3928,3988,3981,3944]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Stack Testing complete..............</span></body></html>
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Queue Testing started...............</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create queue and display ...</span></body></html>
@@ -5892,116 +5892,116 @@ Calvin
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if empty, and size ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Empty = true and size = 0</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Enqueue 10 items onto the queue, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3938,3927,3906,4086,3875,4021,3959,3900,4012,4008]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3923,3987,3997,3975,3852,3913,3877,3989,3983,3924]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if empty, and size ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Empty = false and size = 10</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create clone queue, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3938,3927,3906,4086,3875,4021,3959,3900,4012,4008]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3923,3987,3997,3975,3852,3913,3877,3989,3983,3924]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if the 2 queue are equal ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">queues are equal</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Dequeue half the original queue values, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [4021,3959,3900,4012,4008]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3913,3877,3989,3983,3924]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Display clone again ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3938,3927,3906,4086,3875,4021,3959,3900,4012,4008]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3923,3987,3997,3975,3852,3913,3877,3989,3983,3924]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check if the 2 queue are equal again ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">queues are not equal</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Wipe out (finalize) the clone, and display ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Empty Queue</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Check the front and back of both queues, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">4021</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">3913</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">null</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">4008</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">3924</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">null</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create array from queue, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">array = [4021,3959,3900,4012,4008]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">array = [3913,3877,3989,3983,3924]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create LinkedList from queue, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">LinkedList = [4021,3959,3900,4012,4008]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">LinkedList = [3913,3877,3989,3983,3924]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create new queue from array, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [4021,3959,3900,4012,4008]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3913,3877,3989,3983,3924]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create new queue from LinkedList, and display ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [4021,3959,3900,4012,4008]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Queue = [3913,3877,3989,3983,3924]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Queue Testing complete..............</span></body></html>
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Stacks and Queues unit testing complete..............</span></body></html>
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Searching and Sorting unit testing started...............</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Creating random unsorted array and LinkedList ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3893,3974,3907,3947,3951,3925,3988,3995,3980,3973]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3978,3947,3922,3956,3913,3976,3938,3932,3958,4008]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3940,3950,4042,3986,3980,3944,3974,4001,3997,3935]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3992,3943,3945,3976,3940,3952,3957,3930,4009,3910]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing linear search in array ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Middle Item: 3925 in array at location: 5</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Front Item: 3893 in array at location: 0</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Back Item: 3973 in array at location: 9</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Unfound Item: 3973 in array at location: -1</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Middle Item: 3944 in array at location: 5</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Front Item: 3940 in array at location: 0</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Back Item: 3935 in array at location: 9</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Unfound Item: 3935 in array at location: -1</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing linear search in list ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Middle Item: 3976 in array at location: 5</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Front Item: 3978 in array at location: 0</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Back Item: 4008 in array at location: 9</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Unfound Item: 4008 in array at location: -1</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Middle Item: 3952 in array at location: 5</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Front Item: 3992 in array at location: 0</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Back Item: 3910 in array at location: 9</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Unfound Item: 3910 in array at location: -1</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Creating random sorted array and LinkedList</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3858,3900,3912,3918,3932,3938,3957,3963,4012,4013]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3874,3877,3914,3923,3951,3957,3962,3991,4009,4075]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3902,3947,3947,3961,3964,3968,3983,3991,4001,4004]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3895,3931,3943,3945,3959,3961,3989,4003,4011,4021]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing binary search in array ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Middle Item: 3938 in array at location: 5</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Front Item: 3858 in array at location: 0</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Back Item: 4013 in array at location: 9</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Unfound Item: 4013 in array at location: -1</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Middle Item: 3968 in array at location: 5</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Front Item: 3902 in array at location: 0</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Back Item: 4004 in array at location: 9</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Unfound Item: 4004 in array at location: -1</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing binary search in list ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Middle Item: 3957 in array at location: 5</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Front Item: 3874 in array at location: 0</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Back Item: 4075 in array at location: 9</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Unfound Item: 4075 in array at location: -1</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Middle Item: 3961 in array at location: 5</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Front Item: 3895 in array at location: 0</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Back Item: 4021 in array at location: 9</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Unfound Item: 4021 in array at location: -1</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing bubble sort ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// unsorted... ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3980,3972,3997,4005,3920,3919,4012,4051,4022,4015]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3997,3941,3973,3999,3969,4024,3994,3928,4029,4013]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3865,4027,3945,3913,3892,3991,3892,3919,3942,3932]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3912,4050,3975,4038,3977,3934,3922,3958,3933,4044]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// sorted... ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3919,3920,3972,3980,3997,4005,4012,4015,4022,4051]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3928,3941,3969,3973,3994,3997,3999,4013,4024,4029]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3865,3892,3892,3913,3919,3932,3942,3945,3991,4027]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3912,3922,3933,3934,3958,3975,3977,4038,4044,4050]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing selection sort ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// unsorted... ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3995,3979,4005,3866,3905,4001,3941,4018,3990,4011]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3968,3942,3949,3980,3956,3891,3939,3945,4038,3884]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3884,3972,3924,3976,3986,3920,3935,3869,3955,3979]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3939,3966,3975,4017,3955,3998,3966,3905,4005,3915]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// sorted... ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3866,3905,3941,3979,3990,3995,4001,4005,4011,4018]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3884,3891,3939,3942,3945,3949,3956,3968,3980,4038]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3869,3884,3920,3924,3935,3955,3972,3976,3979,3986]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3905,3915,3939,3955,3966,3966,3975,3998,4005,4017]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing insertion sort ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// unsorted... ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3968,3972,3891,3915,4008,3994,4110,4048,3941,3949]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3948,4002,4034,3932,3993,3891,3959,3902,3878,3884]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [4034,4000,3946,3913,3978,3999,4020,3942,3982,3972]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [4039,3969,3994,3940,3962,4045,3962,3997,3976,4013]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// sorted... ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3891,3915,3941,3949,3968,3972,3994,4008,4048,4110]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3878,3884,3891,3902,3932,3948,3959,3993,4002,4034]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3913,3942,3946,3972,3978,3982,3999,4000,4020,4034]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3940,3962,3962,3969,3976,3994,3997,4013,4039,4045]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing shell sort ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// unsorted... ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3969,4022,4007,3958,3922,3959,3891,3956,3983,4020]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3952,3958,3993,3972,3977,4020,3947,3989,3929,3950]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [4071,3968,3979,3911,4014,3983,3970,3893,3950,3928]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3840,3978,3967,3982,3998,3959,3933,3966,3945,3956]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// sorted... ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3891,3922,3956,3958,3959,3969,3983,4007,4020,4022]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3929,3947,3950,3952,3958,3972,3977,3989,3993,4020]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3893,3911,3928,3950,3968,3970,3979,3983,4014,4071]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3840,3933,3945,3956,3959,3966,3967,3978,3982,3998]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing quick sort ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// unsorted... ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3918,3878,3905,3978,4058,4067,3984,3952,3912,3994]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3967,4001,3955,3944,3932,3986,3905,3978,3965,3965]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3971,3991,3938,3931,3943,4042,4006,3947,3957,4010]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3991,3925,3986,3905,3864,3983,3949,3870,4007,3924]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// sorted... ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3878,3905,3912,3918,3952,3978,3984,3994,4058,4067]</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3905,3932,3944,3955,3965,3965,3967,3978,3986,4001]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Array: [3931,3938,3943,3947,3957,3971,3991,4006,4010,4042]</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">List:  [3864,3870,3905,3924,3925,3949,3983,3986,3991,4007]</span></body></html>
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Searching and Sorting unit testing complete..............</span></body></html>
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Tree unit testing started...............</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create 3 TreeNode objects, connect, and output ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Root  node:  3915</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Left  node:  3928</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Right node:  3991</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Root  node:  3983</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Left  node:  3983</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Right node:  4008</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Create Tree empty ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Insert 10 random objects into tree ...</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Ouptut tree ...</span></body></html>
 Tree traversals:
-	Pre-Order:  [3933,3927,3894,3923,3953,3933,3947,3996,3963,4022]
-	Post-Order: [3923,3894,3927,3947,3933,3963,4022,3996,3953,3933]
-	In-Order:   [3894,3923,3927,3933,3933,3947,3953,3963,3996,4022]
+	Pre-Order:  [3927,3916,3958,3955,3938,3955,4035,4024,3988,3967]
+	Post-Order: [3916,3938,3955,3955,3967,3988,4024,4035,3958,3927]
+	In-Order:   [3916,3927,3938,3955,3955,3958,3967,3988,4024,4035]
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Cloning tree and ouptut ...</span></body></html>
 Tree traversals:
-	Pre-Order:  [3933,3927,3894,3923,3953,3933,3947,3996,3963,4022]
-	Post-Order: [3923,3894,3927,3947,3933,3963,4022,3996,3953,3933]
-	In-Order:   [3894,3923,3927,3933,3933,3947,3953,3963,3996,4022]
+	Pre-Order:  [3927,3916,3958,3955,3938,3955,4035,4024,3988,3967]
+	Post-Order: [3916,3938,3955,3955,3967,3988,4024,4035,3958,3927]
+	In-Order:   [3916,3927,3938,3955,3955,3958,3967,3988,4024,4035]
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing equals ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Equal Trees</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Changing clone tree and checking equals again ...</span></body></html>
@@ -6009,12 +6009,12 @@ Tree traversals:
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing search (item not in tree) ...</span></body></html>
 <html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Item: 588 in Tree is false</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Testing search (item in tree) ...</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Item: 3927 in Tree is true</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Item: 3967 in Tree is true</span></body></html>
 <html><head></head><body><span style="color: rgb(0,255,0);font-family: Consolas;">// Creating tree from LinkedList and output ...</span></body></html>
 Tree traversals:
-	Pre-Order:  [3922,3895,3900,3947,3922,3943,3950,4028,3974,3969]
-	Post-Order: [3900,3895,3943,3922,3969,3974,4028,3950,3947,3922]
-	In-Order:   [3895,3900,3922,3922,3943,3947,3950,3969,3974,4028]
+	Pre-Order:  [3915,3831,3939,3989,3949,3964,3961,4003,4018,4038]
+	Post-Order: [3831,3961,3964,3949,4038,4018,4003,3989,3939,3915]
+	In-Order:   [3831,3915,3939,3949,3961,3964,3989,4003,4018,4038]
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Tree unit testing complete..............</span></body></html>
 <html><head></head><body><span style="color: rgb(0,0,255);font-family: Tahoma;">Computer Science 42SIB course unit testing complete..............</span></body></html>
 <html><head></head><body><span style="color: rgb(255,0,0);font-family: Trebuchet MS;">All unit testing complete..............</span></body></html>

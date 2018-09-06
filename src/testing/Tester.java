@@ -23,8 +23,8 @@ public class Tester
      */
     public Tester() {   
 //        new MainUI();
-        new TestClassUI(null,false);
-//        inClassContent();
+//        new TestClassUI(null,false);
+        inClassContent();
     }
     
     private void inClassContent() {

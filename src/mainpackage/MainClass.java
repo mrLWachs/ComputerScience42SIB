@@ -3,7 +3,6 @@
 package mainpackage;
 
 import testing.Tester;
-import testing.cs42sib.TreeTest;
 
 /**
  * MainClass.java - the large in class example we continue to work 
