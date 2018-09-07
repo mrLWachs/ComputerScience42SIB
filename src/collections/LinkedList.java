@@ -575,7 +575,7 @@ public class LinkedList <T extends Comparable<T>> implements Serializable
    
     /**
      * Appends all the items from the passed list into the current list 
-     * after the passed index
+     * after the passed index in the list
      * 
      * @param list the Linked list to append on
      * @param index the index location to append from
