@@ -3,6 +3,7 @@ package testing;
 
 import testing.advancedclasses.AdvancedClassesTest;
 import testing.collections.CollectionsTest;
+import testing.searchsort.SearchSortTest;
 
 
 /**
@@ -21,7 +22,8 @@ public class Tester
         System.out.println("\nTesting begins.....\n");        
 //        RecursionTest       unit1 = new RecursionTest();
 //        AdvancedClassesTest unit2 = new AdvancedClassesTest();
-        CollectionsTest     unit3 = new CollectionsTest();
+//        CollectionsTest     unit3 = new CollectionsTest();
+        SearchSortTest      unit4 = new SearchSortTest();
         System.out.println("\nTesting complete!\n");
     }
     
