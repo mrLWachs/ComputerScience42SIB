@@ -5,7 +5,7 @@ package testing.collections;
 /** required imports */
 import collections.LinkedList;
 import collections.Node;
-import numbers.Calculator;
+import tools.Calculator;
 import testing.advancedclasses.Athlete;
 
 
