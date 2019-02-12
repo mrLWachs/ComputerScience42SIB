@@ -18,8 +18,16 @@ public class Sorter <T>
         return array;
     }   
 
-    public LinkedList bubbleSort(LinkedList array) {
-        return array;
+    public LinkedList bubbleSort(LinkedList list) {
+        return list;
     }   
+
+    public Object[] selectionSort(Object[] array) {
+        return array;
+    }
+    
+    public LinkedList selectionSort(LinkedList list) {
+        return list;
+    }
     
 }

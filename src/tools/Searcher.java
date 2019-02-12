@@ -14,13 +14,39 @@ import collections.LinkedList;
 public class Searcher <T>
 {
 
-    public int linearSearch(T[] array, T item) {
-        return 0;
+    public static int NOT_FOUND = -1;
+        
+    public int linearSearch(T[] array, T item) {        
+        for (int i = 0; i < array.length; i++) {            
+            if (item.equals(array[i])) {
+                return i;
+            }            
+        }
+        return NOT_FOUND;
     }
+    
+    
 
     public int linearSearch(LinkedList list, T item) {
-        return 0;
+        for (int i = 0; i < list.size(); i++) {            
+            if (item.equals(list.get(i))) {
+                return i;
+            }            
+        }
+        return NOT_FOUND;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     public int binarySearch(T[] array, T item) {
         return 0;

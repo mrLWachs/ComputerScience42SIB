@@ -23,11 +23,11 @@ public class SearchSortTest
      * Default constructor for the class, sets class properties
      */
     public SearchSortTest() {
-        // create seearching and sorting class objects
+        // create searching and sorting class objects
         Searcher searcher = new Searcher();
         Sorter   sorter   = new Sorter();
         // create list/array size
-        final int SIZE = 6;
+        final int SIZE = 5;
         // store seraching locations
         int location = -1;
         // create all arrays
@@ -99,6 +99,20 @@ public class SearchSortTest
         
         // linear search arrays/lists
         scramble(allArrays, allLists, allItems, SIZE);
+        // selection sort arrays/lists
+        for (int i = 0; i < allArrays.length; i++) {
+            allArrays[i] = sorter.selectionSort(allArrays[i]);
+            results("Selection Sort",allArrays[i]);
+        }        
+        for (int i = 0; i < allLists.size(); i++) {
+            allLists.set(i, sorter.selectionSort(allLists.get(i)));
+            results("Selection Sort",allLists.get(i));          
+        }
+        
+        
+        
+        
+        
         
     }
     
