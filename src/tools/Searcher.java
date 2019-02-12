@@ -25,19 +25,28 @@ public class Searcher <T>
         return NOT_FOUND;
     }
     
-    
 
     public int linearSearch(LinkedList list, T item) {
-        for (int i = 0; i < list.size(); i++) {            
-            if (item.equals(list.get(i))) {
-                return i;
-            }            
-        }
-        return NOT_FOUND;
+        // start at the beginning of the list
+        // compare the list item with the item searching for
+        // if it is, return that location
+        // move to the next item in the list
+        // if I go through the whole list
+        // return flag value
+        return linearRecursive(list, item, 0);
     }
     
-    
-    
+    /**
+     * Wrapper method
+     * @return 
+     */
+    private int linearRecursive(LinkedList list, T item, int index) {
+        // base case (stops recusrision)
+        if (list.get(index).equals(item)) return index;
+        if (index >= list.size()) return NOT_FOUND;
+        // recusive case (like a loop)
+        return linearRecursive(list, item, index + 1);
+    }
     
     
     
