@@ -10,7 +10,8 @@ package testing.advancedclasses;
  * @author Mr. Wachs 
  * @since 5-Nov-2018 
  */
-public class Athlete extends Husky implements Soccer, War, PermissionForm
+public class Athlete extends Husky implements Soccer, War, PermissionForm,
+        Comparable<Athlete>
 {
     
     private String homeName;
@@ -168,6 +169,23 @@ public class Athlete extends Husky implements Soccer, War, PermissionForm
     @Override
     public boolean hasBeenSigned() {
         return havePermission;
+    }
+
+    /**
+     * Compares two objects lexicographically
+     *
+     * @param that the other object to be compared to
+     * @return the value 0 if the argument that is equal to
+     *         this object; a value less than 0 if this object
+     *         is lexicographically less than that argument; and a
+     *         value greater than 0 if this object is
+     *         lexicographically greater than that argument
+     */
+    @Override
+    public int compareTo(Athlete that) {
+        if (this.age >  that.age) return 1;
+        if (this.age <  that.age) return -1;
+        return 0;
     }
 
 }

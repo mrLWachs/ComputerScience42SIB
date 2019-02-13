@@ -11,7 +11,7 @@ package collections;
  * @param <T> The generic data type used in the class
  * @since 16-Nov-2018 
  */
-public class Node <T>
+public class Node <T> implements Comparable<Node>
 {
 
     /**
@@ -112,6 +112,22 @@ public class Node <T>
     public void finalize() {
         data = null;
         next = previous = null;
+    }
+
+    /**
+     * Compares two objects lexicographically
+     *
+     * @param object the other object to be compared to
+     * @return the value 0 if the argument that is equal to
+     *         this object; a value less than 0 if this object
+     *         is lexicographically less than that argument; and a
+     *         value greater than 0 if this object is
+     *         lexicographically greater than that argument
+     */
+    @Override
+    public int compareTo(Node object) {
+        // TO DO !!!!
+        return 0;
     }
 
 }
