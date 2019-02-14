@@ -53,15 +53,41 @@ public class Sorter <T extends Comparable <T>>
      * 
      * @param list the LinkedList to sort
      */
-    public void bubbleSort(LinkedList<T> list) {
-        // TO DO !!!!
+    public void bubbleSort(LinkedList<T> list) {         
+        for (int i = list.size()-1; i >= 0; i--) {
+            boolean sorted = true;            
+            for (int j = 0; j < i; j++) {                
+                T item1 = list.get(j);
+                T item2 = list.get(j+1);
+                if (item1.compareTo(item2) > 0) {
+                    list.set(j, item2);
+                    list.set(j+1, item1);  
+                    sorted = false;
+                }                
+            } 
+            if (sorted) return;
+        }
     }  
     
-
+    /**
+     * An implementation of the selection sort algorithm
+     * it will sort the values into ascending order
+     * 
+     * @param array the array of generic values to sort
+     */
     public void selectionSort(T[] array) {
-        // TO DO !!!!
+        
+        
+        
+        
     }
     
+    /**
+     * An implementation of the selection sort algorithm
+     * it will sort the values into ascending order
+     * 
+     * @param array the array of generic values to sort
+     */
     public void selectionSort(LinkedList<T> list) {
         // TO DO !!!!
     }        
