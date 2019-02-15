@@ -76,20 +76,54 @@ public class Sorter <T extends Comparable <T>>
      * @param array the array of generic values to sort
      */
     public void selectionSort(T[] array) {
-        
-        
-        
-        
+        // traverse to the second last array location
+        for (int i = 0; i < array.length - 1; i++) {
+            // remember the lowest spot, 
+            // assume it's current spot
+            int lowest = i;
+            // traverse from spot beside current spot
+            // to the end of the array
+            for (int j = i + 1; j < array.length; j++) {
+                // compare spot j and the lowest spot
+                if (array[j].compareTo(array[lowest]) < 0) {
+                    // found a new lowest spot
+                    lowest = j;
+                }
+            }
+            // make sure lowest ins not the current spot
+            if (lowest != i) {
+                // swap spot i with the contents of the 
+                // lowest spot
+                T temp        = array[i];
+                array[i]      = array[lowest];
+                array[lowest] = temp;
+            }            
+        }        
     }
-    
+        
     /**
      * An implementation of the selection sort algorithm
      * it will sort the values into ascending order
      * 
-     * @param array the array of generic values to sort
+     * @param list the list of generic values to sort
      */
     public void selectionSort(LinkedList<T> list) {
-        // TO DO !!!!
+        for (int i = 0; i < list.size() - 1; i++) {
+            int lowest = i;
+            for (int j = i + 1; j < list.size(); j++) {
+                T item1 = list.get(j);
+                T item2 = list.get(lowest);
+                if (item1.compareTo(item2) < 0) {
+                    lowest = j;
+                }
+            }
+            if (lowest != i) {
+                T item1 = list.get(i);
+                T item2 = list.get(lowest);
+                list.set(i, item2);
+                list.set(lowest, item1);
+            }            
+        } 
     }        
 
 }
