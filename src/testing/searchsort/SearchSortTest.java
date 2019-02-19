@@ -4,6 +4,7 @@ package testing.searchsort;
 
 /** required imports */
 import collections.LinkedList;
+import io.Output;
 import testing.advancedclasses.Athlete;
 import tools.Randomizer;
 import tools.Searcher;
@@ -16,7 +17,7 @@ import tools.Sorter;
  * @author Mr. Wachs 
  * @since 6-Feb-2019 
  */
-public class SearchSortTest <T>
+public class SearchSortTest <T extends Comparable <T>>
 {
 
     /**
@@ -24,12 +25,14 @@ public class SearchSortTest <T>
      */
     public SearchSortTest() {
         
+        Output.header("Searching and Sorting unit testing",true,false);
+        
         // create searching and sorting class objects
         Searcher searcher = new Searcher();
         Sorter   sorter   = new Sorter();
         
         // create list/array size
-        final int SIZE = 5;
+        final int SIZE = 10;
         
         // store searching locations
         int location = -1;
@@ -86,39 +89,39 @@ public class SearchSortTest <T>
         for (int i = 0; i < allArrays.size(); i++) {
             T[] array = (T[]) allArrays.get(i);
             T   item  = (T) allItems[i];
-            location  = searcher.linearSearch(array,item);
+            location  = searcher.linear(array, item); 
             results("Linear Search",array,item,location);
         }
         for (int i = 0; i < allLists.size(); i++) {
             LinkedList<T> list = allLists.get(i);
             T             item = (T) allItems[i];
-            location        = searcher.linearSearch(list,item);
+            location        = searcher.linear(list,item);
             results("Linear Search",list,item,location);            
         }
         
         // bubble sort arrays/lists
         for (int i = 0; i < allArrays.size(); i++) {
             T[] array  = (T[]) allArrays.get(i);
-            sorter.bubbleSort((Comparable[]) array);
+            sorter.bubble((Comparable[]) array);
             results("Bubble Sort",array);
         }        
         for (int i = 0; i < allLists.size(); i++) {
             LinkedList list   = allLists.get(i);
-            sorter.bubbleSort((LinkedList<Comparable>) list);
+            sorter.bubble((LinkedList<Comparable>) list);
             results("Bubble Sort",list);          
         } 
         
         // binary search arrays/lists
         for (int i = 0; i < allArrays.size(); i++) {
-            Object[] array = allArrays.get(i);
-            Object   item  = allItems[i];
-            location       = searcher.binarySearch(array,item);
+            T[] array = (T[]) allArrays.get(i);
+            T   item  = (T) allItems[i];
+            location       = searcher.binary(array,item);
             results("Binary Search",array,item,location);
         }        
         for (int i = 0; i < allLists.size(); i++) {
-            LinkedList list = allLists.get(i);
-            Object     item = allItems[i];
-            location        = searcher.binarySearch(list,item);
+            LinkedList<T> list = allLists.get(i);
+            T             item = (T) allItems[i];;
+            location        = searcher.binary(list,item);
             results("Binary Search",list,item,location);          
         }
         
@@ -128,17 +131,61 @@ public class SearchSortTest <T>
         // Selection sort arrays/lists
         for (int i = 0; i < allArrays.size(); i++) {
             T[] array  = (T[]) allArrays.get(i);
-            sorter.selectionSort((Comparable[]) array);
+            sorter.selection((Comparable[]) array);
             results("Selection Sort",array);
         }        
         for (int i = 0; i < allLists.size(); i++) {
             LinkedList list   = allLists.get(i);
-            sorter.selectionSort((LinkedList<Comparable>) list);
+            sorter.selection((LinkedList<Comparable>) list);
             results("Selection Sort",list);          
         } 
          
+        // scramble arrays, lists, and search items
+        scramble(allArrays, allLists, allItems, SIZE);
+                
+        // Selection sort arrays/lists
+        for (int i = 0; i < allArrays.size(); i++) {
+            T[] array  = (T[]) allArrays.get(i);
+            sorter.insertion((Comparable[]) array);
+            results("Insertion Sort",array);
+        }        
+        for (int i = 0; i < allLists.size(); i++) {
+            LinkedList list   = allLists.get(i);
+            sorter.insertion((LinkedList<Comparable>) list);
+            results("Insertion Sort",list);          
+        } 
+         
+        // scramble arrays, lists, and search items
+        scramble(allArrays, allLists, allItems, SIZE);
+                
+        // Selection sort arrays/lists
+        for (int i = 0; i < allArrays.size(); i++) {
+            T[] array  = (T[]) allArrays.get(i);
+            sorter.shell((Comparable[]) array);
+            results("Shell Sort",array);
+        }        
+        for (int i = 0; i < allLists.size(); i++) {
+            LinkedList list   = allLists.get(i);
+            sorter.shell((LinkedList<Comparable>) list);
+            results("Shell Sort",list);          
+        } 
+         
+        // scramble arrays, lists, and search items
+        scramble(allArrays, allLists, allItems, SIZE);
+                
+        // Selection sort arrays/lists
+        for (int i = 0; i < allArrays.size(); i++) {
+            T[] array  = (T[]) allArrays.get(i);
+            sorter.quick((Comparable[]) array);
+            results("Quick Sort",array);
+        }        
+        for (int i = 0; i < allLists.size(); i++) {
+            LinkedList list   = allLists.get(i);
+            sorter.quick((LinkedList<Comparable>) list);
+            results("Quick Sort",list);          
+        } 
         
-        
+        Output.header("Searching and Sorting unit testing",false,false);
     }
     
     /**
@@ -176,10 +223,10 @@ public class SearchSortTest <T>
         allItems[5] = Randomizer.generateAthlete();   
         // display the arrays and lists
         for (int i = 0; i < allArrays.size(); i++) {
-            results("Created",allArrays.get(i));          
+            results("Created\t",allArrays.get(i));          
         }
         for (int i = 0; i < allLists.size(); i++) {
-            results("Created",allLists.get(i));          
+            results("Created\t",allLists.get(i));          
         }        
     }
 
@@ -196,7 +243,7 @@ public class SearchSortTest <T>
         String text = start(type, "Array", array[0]);
         text += "Item: " + item + " location = " + location + " -> ";        
         text += contents(array);
-        System.out.println(text);
+        Output.show(text);
     }
 
     /**
@@ -213,7 +260,7 @@ public class SearchSortTest <T>
         String text = start(type, "List", list.get(0));        
         text += "Item: " + item + " location = " + location + " -> ";          
         text += contents(list);
-        System.out.println(text);
+        Output.show(text);
     }
     
     /**
@@ -226,7 +273,7 @@ public class SearchSortTest <T>
     private<T> void results(String type, T[] array) {
         String text = start(type, "Array", array[0]);
         text += contents(array);
-        System.out.println(text);
+        Output.show(text);
     }
     
     /**
@@ -239,7 +286,7 @@ public class SearchSortTest <T>
     private void results(String type, LinkedList list) {
         String text = start(type, "List", list.get(0));
         text += contents(list);
-        System.out.println(text);
+        Output.show(text);
     }
 
     /**

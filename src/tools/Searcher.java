@@ -12,7 +12,7 @@ import collections.LinkedList;
  * @author Mr. Wachs 
  * @since 7-Feb-2019 
  */
-public class Searcher <T>
+public class Searcher <T extends Comparable <T>>
 {
 
     /** Indicates the item being searched for is not found */
@@ -33,7 +33,7 @@ public class Searcher <T>
      * @param item the generic data type to search for in the list
      * @return the first index found at, or a -1 if not found
      */
-    public int linearSearch(T[] array, T item) {        
+    public int linear(T[] array, T item) {        
         if (item == null || array == null) return NOT_FOUND;
         for (int i = 0; i < array.length; i++) {    // traverse entire list
             if (item.equals(array[i])) {            // found first occurance
@@ -53,7 +53,7 @@ public class Searcher <T>
      * @param list the LinkedList to search through
      * @return the first index found at, or a -1 if not found
      */
-    public int linearSearch(LinkedList<T> list, T item) {
+    public int linear(LinkedList<T> list, T item) {
         if (item == null || list == null) return NOT_FOUND; // invalids
         return linearRecursive(list, item, 0);              // recursive call
     }
@@ -76,15 +76,64 @@ public class Searcher <T>
         return linearRecursive(list, item, index + 1);
     }
     
-        
-    public int binarySearch(T[] array, T item) {
-        // TO DO !!!
-        return 0;
+    /**
+     * An implementation of a binary search algorithm. It will find the 
+     * first occurance of an item in the LinkedList and return the index 
+     * where it found it, or a -1 if not found
+     * 
+     * @param array an array of generic items to search through
+     * @param item the generic data type to search for in the list
+     * @return the first index found at, or a -1 if not found 
+     */    
+    public int binary(T[] array, T item) {
+        if (item == null || array == null) return NOT_FOUND;        
+        int high = array.length - 1;    // a "marker" for the high end        
+        int low  = 0;                   // a marker for the low end        
+        while (low <= high) {           // continue til markers collapse             
+            int mid = (high + low) / 2; // calculate middle based on markers
+            if      (array[mid].compareTo(item) == 0) return mid;
+            else if (array[mid].compareTo(item) >  0) high = mid - 1;
+            else if (array[mid].compareTo(item) <  0) low  = mid + 1;
+        }        
+        return NOT_FOUND;               // number wasn't found
     }
 
-    public int binarySearch(LinkedList list, T item) {
-        // TO DO !!!
-        return 0;
+    /**
+     * An implementation of a binary search algorithm. It will find the 
+     * first occurance of an item in the LinkedList and return the index 
+     * where it found it, or a -1 if not found
+     * 
+     * @param list the LinkedList to search through
+     * @param item the generic data type to search for in the list
+     * @return the first index found at, or a -1 if not found 
+     */
+    public int binary(LinkedList<T> list, T item) {
+        if (item == null || list == null) return NOT_FOUND;   
+        return recursiveBinary(list,item,0,list.size());
+    }
+
+    /**
+     * Recursive binary search algorithm used to find the item in the list and 
+     * return the index of it's location or a -1 if not found
+     * 
+     * @param list the LinkedList to search through
+     * @param item the generic data type to search for in the list
+     * @param low the lowest index to start from
+     * @param high the highest index to go to
+     * @return the first index found at, or a -1 if not found 
+     */
+    private int recursiveBinary(LinkedList<T> list, T item, int low, int high) { 
+        if (low <= high) {                      // while markers not collapsed
+            int mid = low + (high - low) / 2;   // calculate middle point 
+            if (list.get(mid) == null) return NOT_FOUND;
+            if (list.get(mid).compareTo(item) >  0)
+                return recursiveBinary(list,item,low,mid-1);
+            else if (list.get(mid).compareTo(item) <  0)
+                return recursiveBinary(list,item,mid+1,high);
+            else 
+                return mid;
+        }
+        return NOT_FOUND;                       // not found
     }
     
 }
