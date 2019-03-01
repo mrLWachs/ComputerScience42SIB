@@ -2,6 +2,8 @@
 /** required package class namespace */
 package testing.advancedclasses;
 
+import java.io.Serializable;
+
 
 /**
  * ComputerScienceStudent.java - represents a computer science high school 
@@ -10,7 +12,7 @@ package testing.advancedclasses;
  * @author Mr. Wachs 
  * @since 31-Oct-2018 
  */
-public class ComputerScienceStudent extends HighSchoolStudent
+public class ComputerScienceStudent extends HighSchoolStudent implements Serializable
 {
 
     /**

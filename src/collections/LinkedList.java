@@ -3,6 +3,7 @@
 package collections;
 
 /** required imports */
+import java.io.Serializable;
 import java.lang.reflect.Array;
 
 
@@ -15,7 +16,7 @@ import java.lang.reflect.Array;
  * @since 16-Nov-2018 
  * @instructor Mr. Wachs
  */
-public class LinkedList <T> implements Comparable<LinkedList>
+public class LinkedList <T> implements Comparable<LinkedList>, Serializable
 {
 
     /** 

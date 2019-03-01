@@ -2,6 +2,8 @@
 /** required package class namespace */
 package testing.advancedclasses;
 
+import java.io.Serializable;
+
 
 /**
  * HighSchoolStudent.java - represents a high school student
@@ -9,7 +11,7 @@ package testing.advancedclasses;
  * @author Mr. Wachs 
  * @since 31-Oct-2018 
  */
-public class HighSchoolStudent extends Student
+public class HighSchoolStudent extends Student implements Serializable
 {
 
     /**

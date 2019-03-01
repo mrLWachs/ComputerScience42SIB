@@ -2,6 +2,8 @@
 /** required package class namespace */
 package testing.advancedclasses;
 
+import java.io.Serializable;
+
 
 /**
  * Athlete.java - represents an athlete husky computer science high school 
@@ -11,7 +13,7 @@ package testing.advancedclasses;
  * @since 5-Nov-2018 
  */
 public class Athlete extends Husky implements Soccer, War, PermissionForm,
-        Comparable<Athlete>
+        Comparable<Athlete>, Serializable
 {
     
     private String homeName;

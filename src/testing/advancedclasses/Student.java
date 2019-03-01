@@ -1,6 +1,8 @@
 /** required package class namespace */
 package testing.advancedclasses;
 
+import java.io.Serializable;
+
 
 /**
  * Student.java - represents a student
@@ -8,7 +10,7 @@ package testing.advancedclasses;
  * @author Mr. Wachs 
  * @since 5-Oct-2018 
  */
-public class Student extends Person
+public class Student extends Person implements Serializable
 {
 
     private int studentNumber;

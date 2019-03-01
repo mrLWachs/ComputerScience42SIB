@@ -2,6 +2,8 @@
 /** required package class namespace */
 package testing.advancedclasses;
 
+import java.io.Serializable;
+
 
 /**
  * Husky.java - represents a husky computer science high school 
@@ -10,7 +12,7 @@ package testing.advancedclasses;
  * @author Mr. Wachs 
  * @since 31-Oct-2018 
  */
-public class Husky extends ComputerScienceStudent
+public class Husky extends ComputerScienceStudent implements Serializable
 {
 
     /**

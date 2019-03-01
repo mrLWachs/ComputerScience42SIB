@@ -4,6 +4,7 @@ package testing;
 import io.Output;
 import testing.advancedclasses.AdvancedClassesTest;
 import testing.collections.CollectionsTest;
+import testing.permanentstorage.PermanentStorageTest;
 import testing.searchsort.SearchSortTest;
 
 
@@ -26,7 +27,10 @@ public class Tester
 //        RecursionTest       unit1 = new RecursionTest();
 //        AdvancedClassesTest unit2 = new AdvancedClassesTest();
 //        CollectionsTest     unit3 = new CollectionsTest();
-        SearchSortTest      unit4 = new SearchSortTest();
+//        SearchSortTest      unit4 = new SearchSortTest();        
+//        PermanentStorageTest unit5 = new PermanentStorageTest();
+        
+        
         
         Output.header("All unit testing",false,true);        
         Output.flush();

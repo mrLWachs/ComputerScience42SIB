@@ -1,6 +1,8 @@
 /** required package class namespace */
 package testing.advancedclasses;
 
+import java.io.Serializable;
+
 
 /**
  * Person.java - represents a person
@@ -8,7 +10,7 @@ package testing.advancedclasses;
  * @author Mr. Wachs 
  * @since 4-Oct-2018 
  */
-public class Person 
+public class Person implements Serializable
 {
     
     private   String  name;             // encapsulated property

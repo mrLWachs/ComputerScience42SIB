@@ -2,6 +2,8 @@
 /** required package class namespace */
 package collections;
 
+import java.io.Serializable;
+
 
 /**
  * Node.java - a representation of a generic node for use with
@@ -11,7 +13,7 @@ package collections;
  * @param <T> The generic data type used in the class
  * @since 16-Nov-2018 
  */
-public class Node <T> implements Comparable<Node>
+public class Node <T> implements Comparable<Node>, Serializable
 {
 
     /**
