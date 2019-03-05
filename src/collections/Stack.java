@@ -20,23 +20,39 @@ import java.io.Serializable;
 public class Stack <T> implements Serializable, Comparable<Stack>
 {
 
+    private Node top;
+    private int length;
+    
     /**
      * Default constructor for the class, sets class properties
      */
     public Stack() {
-        
+        top = null;
+        length = 0;
     }
 
     public Stack(LinkedList list) {
-        
+        top = null;
+        length = 0;
+        for (int i = 0; i < list.size(); i++) {
+            push((T)list.get(i));
+        }
     }
     
     public Stack(T[] array) {
-        
+        top = null;
+        length = 0;
+        for (int i = 0; i < array.length; i++) {
+            push(array[i]);
+        }
     }
     
     public Stack(Queue queue) {
-        
+        top = null;
+        length = 0;
+        for (int i = 0; i < queue.size(); i++) {
+            push((T)queue.dequeue());
+        }
     }
     
     public boolean push(T data) {

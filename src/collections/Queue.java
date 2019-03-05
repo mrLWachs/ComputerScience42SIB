@@ -17,26 +17,43 @@ import java.io.Serializable;
  * @author Mr. Wachs 
  * @since 1-Mar-2019 
  */
-public class Queue <T> implements Serializable, Comparable<Queue>
+public class Queue <T> implements Serializable, Comparable<Object>
 {
 
+    private Node front;
+    private Node back;
+    private int length;    
+    
     /**
      * Default constructor for the class, sets class properties
      */
     public Queue() {
-        
+        front = back = null;
+        length = 0;
     }
 
     public Queue(LinkedList list) {
-        
+        front = back = null;
+        length = 0;
+        for (int i = 0; i < list.size(); i++) {
+            enqueue((T)list.get(i));
+        }
     }
 
     public Queue(T[] array) {
-        
+        front = back = null;
+        length = 0;
+        for (int i = 0; i < array.length; i++) {
+            enqueue(array[i]);
+        }
     }
 
     public Queue(Stack stack) {
-        
+        front = back = null;
+        length = 0;
+        for (int i = 0; i < stack.size(); i++) {
+            enqueue((T)stack.pop());
+        }
     }
         
     public boolean enqueue(T data) {
@@ -90,8 +107,13 @@ public class Queue <T> implements Serializable, Comparable<Queue>
         return this;
     }
 
+    /**
+     *
+     * @param object
+     * @return
+     */
     @Override
-    public int compareTo(Queue o) {
+    public int compareTo(Object object) {
         return 0;
     }
 
