@@ -4,7 +4,7 @@ package tools;
 
 /** required imports */
 import collections.LinkedList;
-import testing.advancedclasses.Athlete;
+import testing.cs40s.advancedclasses.Athlete;
 
 /**
  * Random.java - useful tools for generating random items

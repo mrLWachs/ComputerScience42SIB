@@ -1,12 +1,7 @@
 /** required package class namespace */
 package testing;
 
-import io.Output;
-import testing.advancedclasses.AdvancedClassesTest;
-import testing.collections.CollectionsTest;
-import testing.permanentstorage.PermanentStorageTest;
-import testing.searchsort.SearchSortTest;
-import testing.stacksqueues.StacksQueuesTest;
+import testing.cs42sib.CS42SIBTest;
 
 
 /**
@@ -25,13 +20,10 @@ public class Tester
 //        Output.init();
 //        Output.header("All unit testing",true,true);  
         
-//        RecursionTest       unit1 = new RecursionTest();
-//        AdvancedClassesTest unit2 = new AdvancedClassesTest();
-//        CollectionsTest     unit3 = new CollectionsTest();
-//        SearchSortTest      unit4 = new SearchSortTest();        
-//        PermanentStorageTest unit5 = new PermanentStorageTest();
+//        new CS30STest();
+//        new CS40STest();
         
-        StacksQueuesTest unit6 = new StacksQueuesTest();
+        new CS42SIBTest();
         
 //        Output.header("All unit testing",false,true);        
 //        Output.flush();
