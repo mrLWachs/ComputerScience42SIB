@@ -69,11 +69,11 @@ public class Queue <T> implements Serializable, Comparable<Object>
     }
     
     public int size() {
-        return 0;
+        return length;
     }
     
     public boolean isEmpty() {
-        return false;
+        return length == 0;
     }
     
     /**
@@ -83,7 +83,16 @@ public class Queue <T> implements Serializable, Comparable<Object>
      */
     @Override
     public String toString() {
-        return "Queue " + super.toString();
+        if (isEmpty()) return "Empty Queue";
+        else {
+            String text = "Queue ["; 
+            Node current = front;
+            while (current != null) {
+                text += current.toString() + ",";
+                current = current.previous;
+            }             
+            return text + "]";
+        }
     }
         
     /**

@@ -68,11 +68,11 @@ public class Stack <T> implements Serializable, Comparable<Stack>
     }
     
     public int size() {
-        return 0;
+        return length;
     }
     
     public boolean isEmpty() {
-        return false;
+        return length == 0;
     }
     
     /**
@@ -82,7 +82,16 @@ public class Stack <T> implements Serializable, Comparable<Stack>
      */
     @Override
     public String toString() {
-        return "Stack " + super.toString();
+        if (isEmpty()) return "Empty Stack";
+        else {
+            String text = "Stack ["; 
+            Node current = top;
+            while (current != null) {
+                text += current.toString() + ",";
+                current = current.next;
+            }            
+            return text + "]";
+        }
     }
         
     /**

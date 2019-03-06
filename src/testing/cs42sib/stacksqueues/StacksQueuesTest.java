@@ -202,7 +202,7 @@ public class StacksQueuesTest
             System.out.println(allQueues[i].toString());
         }
         if (showCopies) {
-            System.out.println("\nAll Stack copies...\n");
+            System.out.println("\nAll Queue copies...\n");
             for (int i = 6; i < allQueues.length; i++) {            
                 System.out.println(allQueues[i].toString());
             }
