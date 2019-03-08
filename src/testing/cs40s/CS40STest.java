@@ -27,6 +27,7 @@ public class CS40STest
      * Default constructor for the class, sets class properties
      */
     public CS40STest() {
+        
         RecursionTest        unit1 = new RecursionTest();
         AdvancedClassesTest  unit2 = new AdvancedClassesTest();
         CollectionsTest      unit3 = new CollectionsTest();

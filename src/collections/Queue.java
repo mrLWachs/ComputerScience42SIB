@@ -199,17 +199,17 @@ public class Queue <T> implements Serializable, Comparable<Object>
      */
     @Override
     public boolean equals(Object object) {
-        if (!(object instanceof Queue)) return false;   // check object type
-        try {                                           // error trap
-            Queue<T> q1 = this.clone();                 // clone this queue
-            Queue<T> q2 = ((Queue<T>)object).clone();   // clone/cast parameter
-            if (q1.size() != q2.size()) return false;   // queues not same size          
-            while (!q1.isEmpty()) {                     // traverse queues
-                T data1 = (T)q1.dequeue();              // retrieve data
-                T data2 = (T)q2.dequeue();
-                if (!data1.equals(data2)) return false; // compare data              
+        if (!(object instanceof Queue)) return false;           // check type
+        try {                                                   // error trap
+            Queue<T> queue1 = this.clone();                     // clone queue
+            Queue<T> queue2 = ((Queue<T>)object).clone();       // clone/cast 
+            if (queue1.size() != queue2.size()) return false;   // not same size          
+            while (!queue1.isEmpty()) {                         // traverse
+                T data1 = (T)queue1.dequeue();                  // retrieve data
+                T data2 = (T)queue2.dequeue();
+                if (!data1.equals(data2)) return false;         // compare data              
             }
-            return true;                                // all tests passed
+            return true;                                        // all passed
         }
         catch (ClassCastException | NullPointerException e) { 
             return false;                               // cannot cast, or null
