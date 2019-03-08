@@ -95,6 +95,14 @@ public class StacksQueuesTest
             System.out.println(allQueues[i].peek());            
         }
         
+        System.out.println("\nCloning all stacks and queues...\n");
+        for (int i = 0; i < 6; i++) {
+            allStacks[i + 6] = allStacks[i].clone();
+            allQueues[i + 6] = allQueues[i].clone();
+        }
+        
+        output(allStacks, allQueues, true);
+        
         System.out.println("\nStacks pop...\n");
         for (int i = 0; i < 6; i++) {
             System.out.println("\nStack " + i + ":");
