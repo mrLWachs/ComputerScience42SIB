@@ -7,6 +7,8 @@
 /** required package class namespace */
 package testing.cs30s;
 
+import javax.swing.JOptionPane;
+
 
 
 /**
@@ -22,7 +24,7 @@ public class CS30STest
      * Default constructor for the class, sets class properties
      */
     public CS30STest() {
-        
+        JOptionPane.showMessageDialog(null, "");
     }
 
 }
