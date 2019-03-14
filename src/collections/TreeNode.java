@@ -91,5 +91,32 @@ public class TreeNode <T extends Comparable<T>> implements Serializable
     public TreeNode clone() {
         return new TreeNode<>(this.data);
     }
+    
+    /**
+     * Inserts data (recursively) into the binary tree at its correct position
+     *  
+     * @param data the generic data to insert in the tree
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean insert(T data) {
+        if (data == null) return false;
+        if (data.compareTo(this.data) < 0) {       // parameter < current data
+            if (this.left == null) {               // open spot (leaf node)
+                this.left = new TreeNode(data);
+            }
+            else {                            // recursive left sub-tree insert
+                this.left.insert(data);
+            }
+        } 
+        else if (data.compareTo(this.data) >= 0) { // parameter >= current data
+            if (this.right == null) {              // open spot (leaf node)
+                this.right = new TreeNode(data);
+            }
+            else {                           // recursive right sub-tree insert
+                this.right.insert(data);
+            }
+        }
+        return true;
+    }
 
 }
