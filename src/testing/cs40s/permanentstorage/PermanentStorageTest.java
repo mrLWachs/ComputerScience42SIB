@@ -4,14 +4,13 @@ package testing.cs40s.permanentstorage;
 
 import collections.LinkedList;
 import io.FileHandler;
-import io.Output;
 import java.io.File;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import testing.cs40s.advancedclasses.Athlete;
 import tools.Randomizer;
 
-
+import io.System;
 
 /**
  * PermanentStorageTest.java - 
@@ -28,7 +27,7 @@ public class PermanentStorageTest
     public PermanentStorageTest() {
         
         
-        Output.show("\nFiles starting...\n");
+        System.out.println("\nFiles starting...\n");
         
         
         String firstName  = "C:\\Users\\lawrence.wachs\\Desktop\\";
@@ -51,10 +50,10 @@ public class PermanentStorageTest
         fileHandler.save(data,filename1);        
         String newData = fileHandler.open(filename1);
         
-        Output.show(data);
-        Output.show(newData);
+        System.out.println(data);
+        System.out.println(newData);
         
-        Output.show("...");
+        System.out.println("...");
         
         String lines[] = {
             "The cat sat",
@@ -67,7 +66,7 @@ public class PermanentStorageTest
         String newLines[] = fileHandler.openArray(filename2);
         
         for (String newLine : newLines) {
-            Output.show(newLine);
+            System.out.println(newLine);
         }
         
         LinkedList<String> list = new LinkedList<>();
@@ -80,7 +79,7 @@ public class PermanentStorageTest
         LinkedList<String> newList = fileHandler.openList(filename3);
         
         for (int i = 0; i < newList.size(); i++) {
-            Output.show(newList.get(i));
+            System.out.println(newList.get(i));
         }
         
         String information = JOptionPane.showInputDialog("Enter data");        
@@ -91,11 +90,11 @@ public class PermanentStorageTest
         chooser.showOpenDialog(null);
         File newFile = chooser.getSelectedFile();        
         String newInformation = fileHandler.open(newFile);
-        Output.show(information);
-        Output.show(newInformation);
+        System.out.println(information);
+        System.out.println(newInformation);
         
         
-        Output.show("Trying to save an object...\n\n");
+        System.out.println("Trying to save an object...\n\n");
 
         LinkedList<Athlete> athletes = new LinkedList<>();
         for (int i = 0; i < 500; i++) {
@@ -111,12 +110,12 @@ public class PermanentStorageTest
         
         LinkedList<Athlete> newAthletes = (LinkedList<Athlete>)fileHandler.openObject(filename4);
         
-        Output.show(athletes);
-        Output.show(newAthletes);
+        System.out.println(athletes);
+        System.out.println(newAthletes);
         
         
         
-        Output.show("\nFiles complete!\n");
+        System.out.println("\nFiles complete!\n");
     }
 
 }

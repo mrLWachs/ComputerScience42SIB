@@ -4,6 +4,7 @@ package testing.cs40s.advancedclasses;
 
 import java.io.Serializable;
 
+import io.System;
 
 /**
  * ComputerScienceStudent.java - represents a computer science high school 

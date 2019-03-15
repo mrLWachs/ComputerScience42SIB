@@ -115,24 +115,24 @@ public class UI extends javax.swing.JFrame
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        System.exit(0);
+        java.lang.System.exit(0);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            System.exit(0);
+            java.lang.System.exit(0);
         }
     }//GEN-LAST:event_formKeyPressed
 
     private void jButton1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyPressed
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            System.exit(0);
+            java.lang.System.exit(0);
         }
     }//GEN-LAST:event_jButton1KeyPressed
 
     private void jList1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jList1KeyPressed
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            System.exit(0);
+            java.lang.System.exit(0);
         }
     }//GEN-LAST:event_jList1KeyPressed
 

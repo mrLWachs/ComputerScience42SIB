@@ -4,6 +4,7 @@ package testing.cs40s.advancedclasses;
 
 import java.io.Serializable;
 
+import io.System;
 
 /**
  * Athlete.java - represents an athlete husky computer science high school 

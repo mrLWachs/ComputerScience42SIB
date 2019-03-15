@@ -2,6 +2,7 @@
 /** required package class namespace */
 package testing.cs40s.advancedclasses;
 
+import io.System;
 
 /**
  * Meeting.java - represents a meeting of people

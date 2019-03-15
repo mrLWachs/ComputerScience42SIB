@@ -1,6 +1,7 @@
 /** required package class namespace */
 package testing.cs40s.advancedclasses;
 
+import io.System;
 
 /**
  * AdvancedClassesTest.java - tests the concepts learned in this unit 
@@ -15,7 +16,7 @@ public class AdvancedClassesTest
      * Default constructor for the class 
      */
     public AdvancedClassesTest() {
-        System.out.println("\nAdvanced Classes testing started...\n");
+        System.out.header("Advanced Classes testing started...");
         
         // instantiating (creating an instances of) Person objects
         Person person1 = new Person();                  // create person object        
@@ -165,7 +166,7 @@ public class AdvancedClassesTest
         House<MrWachs,Object> house = new House<>(mrWachs, contents);
         house.visit();
         
-        System.out.println("\nAdvanced Classes testing complete!\n");            
+        System.out.header("Advanced Classes testing complete!");            
     }
     
     /**

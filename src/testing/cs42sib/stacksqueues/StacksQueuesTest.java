@@ -7,7 +7,7 @@ import collections.Stack;
 import testing.cs40s.advancedclasses.Athlete;
 import tools.Randomizer;
 
-
+import io.System;
 
 /**
  * StacksQueuesTest.java - 
@@ -22,7 +22,7 @@ public class StacksQueuesTest
      * Default constructor for the class, sets class properties
      */
     public StacksQueuesTest() {
-        System.out.println("\nStacks and Queues test started...\n");
+        System.out.header("Stacks and Queues test started...");
         
         final int MAX = 10;
         
@@ -151,7 +151,7 @@ public class StacksQueuesTest
         
         output(allStacks, allQueues, true);
         
-        System.out.println("\nStacks and Queues test Complete!\n");
+        System.out.header("Stacks and Queues test Complete!");
     }
 
     /**

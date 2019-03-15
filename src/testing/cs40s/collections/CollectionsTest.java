@@ -8,6 +8,7 @@ import collections.Node;
 import tools.Calculator;
 import testing.cs40s.advancedclasses.Athlete;
 
+import io.System;
 
 /**
  * CollectionsTest.java - the unit test to test the concept of collections
@@ -22,7 +23,7 @@ public class CollectionsTest
      * Default constructor for the class, sets class properties
      */
     public CollectionsTest() {
-        System.out.println("\nStarting Collections Test...\n");
+        System.out.header("Starting Collections Test...");
         
         // create node objects
         Node<Character> n1 = new Node<>();              // create node object
@@ -137,7 +138,7 @@ public class CollectionsTest
         
         advancedTesting();
         
-        System.out.println("\nCompleted Collections Test!\n");
+        System.out.header("Completed Collections Test!");
     }
 
     /**

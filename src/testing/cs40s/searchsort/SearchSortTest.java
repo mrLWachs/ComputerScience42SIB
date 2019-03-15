@@ -4,12 +4,12 @@ package testing.cs40s.searchsort;
 
 /** required imports */
 import collections.LinkedList;
-import io.Output;
 import testing.cs40s.advancedclasses.Athlete;
 import tools.Randomizer;
 import tools.Searcher;
 import tools.Sorter;
 
+import io.System;
 
 /**
  * SearchSortTest.java - tests the concepts learned in this unit
@@ -25,7 +25,7 @@ public class SearchSortTest <T extends Comparable <T>>
      */
     public SearchSortTest() {
         
-        Output.header("Searching and Sorting unit testing",true,false);
+        System.out.header("Searching and Sorting unit testing starting...");
         
         // create searching and sorting class objects
         Searcher searcher = new Searcher();
@@ -185,7 +185,7 @@ public class SearchSortTest <T extends Comparable <T>>
             results("Quick Sort",list);          
         } 
         
-        Output.header("Searching and Sorting unit testing",false,false);
+        System.out.header("Searching and Sorting unit testing complete!");
     }
     
     /**
@@ -243,7 +243,7 @@ public class SearchSortTest <T extends Comparable <T>>
         String text = start(type, "Array", array[0]);
         text += "Item: " + item + " location = " + location + " -> ";        
         text += contents(array);
-        Output.show(text);
+        System.out.println(text);
     }
 
     /**
@@ -260,7 +260,7 @@ public class SearchSortTest <T extends Comparable <T>>
         String text = start(type, "List", list.get(0));        
         text += "Item: " + item + " location = " + location + " -> ";          
         text += contents(list);
-        Output.show(text);
+        System.out.println(text);
     }
     
     /**
@@ -273,7 +273,7 @@ public class SearchSortTest <T extends Comparable <T>>
     private<T> void results(String type, T[] array) {
         String text = start(type, "Array", array[0]);
         text += contents(array);
-        Output.show(text);
+        System.out.println(text);
     }
     
     /**
@@ -286,7 +286,7 @@ public class SearchSortTest <T extends Comparable <T>>
     private void results(String type, LinkedList list) {
         String text = start(type, "List", list.get(0));
         text += contents(list);
-        Output.show(text);
+        System.out.println(text);
     }
 
     /**

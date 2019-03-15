@@ -12,7 +12,7 @@ import testing.cs40s.advancedclasses.AdvancedClassesTest;
 import testing.cs40s.permanentstorage.PermanentStorageTest;
 import testing.cs40s.searchsort.SearchSortTest;
 
-
+import io.System;
 
 /**
  * CS40STest.java - 
@@ -27,12 +27,13 @@ public class CS40STest
      * Default constructor for the class, sets class properties
      */
     public CS40STest() {
-        
+        System.out.header("Computer Science 40S course started...");
         RecursionTest        unit1 = new RecursionTest();
         AdvancedClassesTest  unit2 = new AdvancedClassesTest();
         CollectionsTest      unit3 = new CollectionsTest();
         SearchSortTest       unit4 = new SearchSortTest();        
-        PermanentStorageTest unit5 = new PermanentStorageTest();
+//        PermanentStorageTest unit5 = new PermanentStorageTest();
+        System.out.header("Computer Science 40S course completed!");
     }
     
 }

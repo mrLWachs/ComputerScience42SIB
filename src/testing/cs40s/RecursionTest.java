@@ -2,6 +2,7 @@
 package testing.cs40s;
 
 import tools.Calculator;
+import io.System;
 
 /**
  * RecursionTest.java - the unit test to test the concept of recursion
@@ -15,7 +16,7 @@ public class RecursionTest {
      * Default class constructor, runs on instantiation
      */
     public RecursionTest() {
-        System.out.println("\nRecursion testing started...\n");
+        System.out.header("Recursion testing started...");
 
         int maximum = 65;
         int minimum = 0;
@@ -40,7 +41,7 @@ public class RecursionTest {
             }
         }
         
-        System.out.println("\nRecusion testing complete!\n");
+        System.out.header("Recusion testing complete!");
     }
 
 }
