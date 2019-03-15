@@ -226,7 +226,7 @@ public class System
      */
     public static void init() {
         java.lang.System.out.println("Initializing output stream...\n\n\n");
-        createDataFile();
+//        createDataFile();
 //        createUserInterface();
     }
 
@@ -273,9 +273,10 @@ public class System
     }
     
     private static void saveDataToFile() {
-        if (fileHandler == null) return;
-        if (outputLinesUI == null) return;
-        if (tempFile == null) return;  
+        if (fileHandler     == null) return;
+        if (outputLinesUI   == null) return;
+        if (outputLinesFile == null) return;
+        if (tempFile        == null) return;  
         outputLinesFile.add("</ol></body></html>");
         fileHandler.save(outputLinesFile, tempFile);
     }
@@ -289,19 +290,16 @@ public class System
      * @param color the color of the text to use
      */
     private static void add(String text, String fontFamily, Color color) {   
+        if (outputLinesUI   == null) return;
+        if (outputLinesFile == null) return;
         String fileFormattedText = "";
-        String uiFormattedText = "";
-        
+        String uiFormattedText = "";        
         if (text == null) {
-//            formattedText = htmlFormat(text,fontFamily,color);
             outputLinesUI.add("null");
         }     
         else if (text.contains("\n")) {            
             String[] lines = text.split("[\n]");
             for (String line : lines) {
-//                text = htmlFormat(text,fontFamily,color);
-//                outputLinesUI.add(line);
-//                
                 uiFormattedText = htmlFormat(text,fontFamily,color);
                 outputLinesUI.add(uiFormattedText);
                 fileFormattedText = htmlLine(text,fontFamily,color);
