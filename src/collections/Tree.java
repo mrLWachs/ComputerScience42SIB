@@ -36,6 +36,33 @@ public class Tree <T extends Comparable<T>> implements Serializable
         order = new LinkedList<>();
     }
 
+    
+    public boolean search(T data) {
+        return recursiveSearch(data,root);
+    }
+    
+    
+    public LinkedList preOrder() {
+        list = new LinkedList<>();
+        preOrderRecursive(root);
+        return list;
+    }
+    
+    public LinkedList postOrder() {
+        list = new LinkedList<>();
+        postOrderRecursive(root);
+        return list;
+    }
+    
+    public LinkedList inOrder() {
+        list = new LinkedList<>();
+        inOrderRecursive(root);
+        return list;
+    }
+    
+    
+    
+    
     /**
      * String representation of this object
      *
@@ -65,6 +92,41 @@ public class Tree <T extends Comparable<T>> implements Serializable
     @Override
     public Tree clone() {
         return this;
+    }
+
+    private boolean recursiveSearch(T data, TreeNode current) {
+        if (current == null) return false; // go past a leaf (base case)
+        else if (data.compareTo((T)current.data) < 0) {
+            // data paramter is less than current's data
+            return recursiveSearch(data, current.left);
+        }
+        else if (data.compareTo((T)current.data) > 0) {
+            return recursiveSearch(data, current.right);
+        }
+        else {             // base case
+            return true;
+        }
+    }
+
+    private void preOrderRecursive(TreeNode current) {
+        if (current == null) return;        // base case
+        list.add((T)current.data);          // visit current (before)
+        preOrderRecursive(current.left);    // go left
+        preOrderRecursive(current.right);   // go right        
+    }
+
+    private void postOrderRecursive(TreeNode current) {
+        if (current == null) return;        // base case        
+        preOrderRecursive(current.left);    // go left
+        preOrderRecursive(current.right);   // go right 
+        list.add((T)current.data);          // visit current (after)
+    }
+
+    private void inOrderRecursive(TreeNode current) {
+        if (current == null) return;        // base case        
+        preOrderRecursive(current.left);    // go left
+        list.add((T)current.data);          // visit current (in-betwee)
+        preOrderRecursive(current.right);   // go right 
     }
 
 }
