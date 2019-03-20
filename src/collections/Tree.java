@@ -60,6 +60,18 @@ public class Tree <T extends Comparable<T>> implements Serializable
         return list;
     }
     
+    public boolean insert(T data) {
+        if (data == null) return false;
+        if (root == null) root = new TreeNode(data);
+        else              root.insert(data);
+        order.add(data);
+        size++;
+        return true;
+    }
+    
+    
+    
+    
     
     
     
