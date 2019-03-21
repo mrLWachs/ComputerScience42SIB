@@ -2,6 +2,7 @@
 /** required package class namespace */
 package io;
 
+/** required imports */
 import java.awt.Component;
 import javax.swing.Icon;
 
@@ -26,10 +27,6 @@ public class JOptionPane
     public static final int         YES_NO_CANCEL_OPTION = 1;
     /** Type used for <code>showConfirmDialog</code>. */
     public static final int         OK_CANCEL_OPTION = 2;
-
-    //
-    // Return values.
-    //
     /** Return value from class method if YES is chosen. */
     public static final int         YES_OPTION = 0;
     /** Return value from class method if NO is chosen. */
@@ -38,15 +35,12 @@ public class JOptionPane
     public static final int         CANCEL_OPTION = 2;
     /** Return value form class method if OK is chosen. */
     public static final int         OK_OPTION = 0;
-    /** Return value from class method if user closes window without selecting
+    /** 
+     * Return value from class method if user closes window without selecting
      * anything, more than likely this should be treated as either a
-     * <code>CANCEL_OPTION</code> or <code>NO_OPTION</code>. */
+     * <code>CANCEL_OPTION</code> or <code>NO_OPTION</code>. 
+     */
     public static final int         CLOSED_OPTION = -1;
-
-    //
-    // Message types. Used by the UI to determine what icon to display,
-    // and possibly what behavior to give based on the type.
-    //
     /** Used for error messages. */
     public static final int  ERROR_MESSAGE = 0;
     /** Used for information messages. */
@@ -137,4 +131,12 @@ public class JOptionPane
         return showInputDialog(message);
     }
 
+    public static void simulateJFrame(Object message) {
+        System.out.ui(message);
+    }
+    
+    public static void simulateJFileChoser(Object message) {
+        System.out.dialog(message);
+    }
+    
 }

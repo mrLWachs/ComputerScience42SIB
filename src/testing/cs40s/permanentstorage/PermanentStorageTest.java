@@ -2,18 +2,17 @@
 /** required package class namespace */
 package testing.cs40s.permanentstorage;
 
+/** required imports */
 import collections.LinkedList;
 import io.FileHandler;
-import java.io.File;
-import javax.swing.JFileChooser;
-import javax.swing.JOptionPane;
 import testing.cs40s.advancedclasses.Athlete;
-import tools.Randomizer;
-
 import io.System;
+import io.JOptionPane;
+import tools.Calculator;
 
 /**
- * PermanentStorageTest.java - 
+ * PermanentStorageTest.java - the unit test to test the concept of permanent 
+ * storage
  *
  * @author Mr. Wachs 
  * @since 22-Feb-2019 
@@ -25,11 +24,9 @@ public class PermanentStorageTest
      * Default constructor for the class, sets class properties
      */
     public PermanentStorageTest() {
-        
-        
-        System.out.println("\nFiles starting...\n");
-        
-        
+                
+        System.out.header("Permanent storage starting...");
+                
         String firstName  = "C:\\Users\\lawrence.wachs\\Desktop\\";
         String middleName1 = "data1";
         String middleName2 = "data2";
@@ -82,40 +79,40 @@ public class PermanentStorageTest
             System.out.println(newList.get(i));
         }
         
-        String information = JOptionPane.showInputDialog("Enter data");        
-        JFileChooser chooser = new JFileChooser();
-        chooser.showSaveDialog(null);
-        File file = chooser.getSelectedFile();
-        fileHandler.save(information, file);        
-        chooser.showOpenDialog(null);
-        File newFile = chooser.getSelectedFile();        
-        String newInformation = fileHandler.open(newFile);
-        System.out.println(information);
-        System.out.println(newInformation);
-        
+        JOptionPane.simulateJFileChoser("Simulating saving and opening "
+                + "with a file chooser");
+//        String information = JOptionPane.showInputDialog("Enter data");    
+//        JFileChooser chooser = new JFileChooser();
+//        chooser.showSaveDialog(null);
+//        File file = chooser.getSelectedFile();
+//        fileHandler.save(information, file);        
+//        chooser.showOpenDialog(null);
+//        File newFile = chooser.getSelectedFile();        
+//        String newInformation = fileHandler.open(newFile);
+//        System.out.println(information);
+//        System.out.println(newInformation);        
         
         System.out.println("Trying to save an object...\n\n");
 
         LinkedList<Athlete> athletes = new LinkedList<>();
         for (int i = 0; i < 500; i++) {
-            String  name   = Randomizer.generate(5);
-            int     age    = Randomizer.generate(18, 29);
-            boolean gender = Randomizer.generate();
-            int     number = Randomizer.generate(100,999);
+            String  name   = Calculator.random(5);
+            int     age    = Calculator.random(18, 29);
+            boolean gender = Calculator.random();
+            int     number = Calculator.random(100,999);
             Athlete athlete = new Athlete(name,age,gender,number);
             athletes.add(athlete);
         }
         
         fileHandler.saveObject(athletes, filename4);
         
-        LinkedList<Athlete> newAthletes = (LinkedList<Athlete>)fileHandler.openObject(filename4);
+        LinkedList<Athlete> newAthletes = 
+                (LinkedList<Athlete>)fileHandler.openObject(filename4);
         
         System.out.println(athletes);
         System.out.println(newAthletes);
         
-        
-        
-        System.out.println("\nFiles complete!\n");
+        System.out.header("Permanent storage complete!");
     }
 
 }

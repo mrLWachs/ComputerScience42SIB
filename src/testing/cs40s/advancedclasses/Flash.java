@@ -2,8 +2,6 @@
 /** required package class namespace */
 package testing.cs40s.advancedclasses;
 
-import io.System;
-
 /**
  * Flash.java - represents a Flash super-hero
  *

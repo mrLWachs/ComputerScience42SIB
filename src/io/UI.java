@@ -2,6 +2,7 @@
 /** required package class namespace */
 package io;
 
+/** required imports */
 import java.awt.Color;
 import java.awt.Toolkit;
 import java.awt.event.KeyEvent;

@@ -5,11 +5,10 @@ package testing.cs40s.searchsort;
 /** required imports */
 import collections.LinkedList;
 import testing.cs40s.advancedclasses.Athlete;
-import tools.Randomizer;
 import tools.Searcher;
 import tools.Sorter;
-
 import io.System;
+import tools.Calculator;
 
 /**
  * SearchSortTest.java - tests the concepts learned in this unit
@@ -202,25 +201,25 @@ public class SearchSortTest <T extends Comparable <T>>
             Object[] allItems, 
             final int SIZE) {
         // randomize the arrays
-        allArrays.set(0, Randomizer.generateBooleans(SIZE));
-        allArrays.set(1, Randomizer.generateIntegers(SIZE));
-        allArrays.set(2, Randomizer.generateDoubles(SIZE));
-        allArrays.set(3, Randomizer.generateCharacters(SIZE));
-        allArrays.set(4, Randomizer.generateStrings(SIZE));
-        allArrays.set(5, Randomizer.generateAthletes(SIZE)); 
+        allArrays.set(0, Calculator.randomBooleans(SIZE));
+        allArrays.set(1, Calculator.randomIntegers(SIZE));
+        allArrays.set(2, Calculator.randomDoubles(SIZE));
+        allArrays.set(3, Calculator.randomCharacters(SIZE));
+        allArrays.set(4, Calculator.randomStrings(SIZE));
+        allArrays.set(5, Calculator.randomAthletes(SIZE)); 
         // randomize the lists
-        allLists.set(0, Randomizer.generateBooleansList(SIZE));
-        allLists.set(1, Randomizer.generateIntegersList(SIZE));
-        allLists.set(2, Randomizer.generateDoublesList(SIZE));
-        allLists.set(3, Randomizer.generateCharactersList(SIZE));
-        allLists.set(4, Randomizer.generateStringsList(SIZE));
-        allLists.set(5, Randomizer.generateAthleteList(SIZE));        
-        allItems[0] = Randomizer.generate();
-        allItems[1] = Randomizer.generate(-SIZE, SIZE);
-        allItems[2] = Randomizer.generate((double)-SIZE, (double)SIZE);
-        allItems[3] = Randomizer.generate('a','z');
-        allItems[4] = Randomizer.generate(5);
-        allItems[5] = Randomizer.generateAthlete();   
+        allLists.set(0, Calculator.randomBooleansList(SIZE));
+        allLists.set(1, Calculator.randomIntegersList(SIZE));
+        allLists.set(2, Calculator.randomDoublesList(SIZE));
+        allLists.set(3, Calculator.randomCharactersList(SIZE));
+        allLists.set(4, Calculator.randomStringsList(SIZE));
+        allLists.set(5, Calculator.randomAthleteList(SIZE));        
+        allItems[0] = Calculator.random();
+        allItems[1] = Calculator.random(-SIZE, SIZE);
+        allItems[2] = Calculator.random((double)-SIZE, (double)SIZE);
+        allItems[3] = Calculator.random('a','z');
+        allItems[4] = Calculator.random(5);
+        allItems[5] = Calculator.randomAthlete();   
         // display the arrays and lists
         for (int i = 0; i < allArrays.size(); i++) {
             results("Created\t",allArrays.get(i));          

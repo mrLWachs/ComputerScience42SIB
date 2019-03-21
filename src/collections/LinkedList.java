@@ -74,10 +74,10 @@ public class LinkedList <T> implements Comparable<LinkedList>, Serializable
     public String toString() {        
         if (isEmpty()) return "Empty list";             // no nodes to display
         else {
-            String text = "[";                          // starting character
+            String text = "List  = [";                          // starting character
             Node current = head;                        // start at head node
             while (current.next != null) {              // traverse list
-                text += current.toString() + ",";       // append data
+                text += current.toString() + ", ";       // append data
                 current = current.next;                 // move to next node
             }            
             return text + current.toString() + "]";     // append end character

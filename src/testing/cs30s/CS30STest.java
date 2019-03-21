@@ -9,9 +9,7 @@ import java.awt.Color;
 import java.awt.Font;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
-//import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
-
 import io.System;
 import io.JOptionPane;
 
@@ -889,16 +887,13 @@ public class CS30STest
      * Goes over the content of this unit
      */
     private static void learnGraphics() {
-        System.out.header("Graphics and GUIs unit started...");
-        
+        System.out.header("Graphics and GUIs unit started...");        
 //        Graphics1 g1 = new Graphics1(); // 1st graphics object all coded    
 //        Graphics2 g2 = new Graphics2(); // 2nd graphics object using designer  
 //        Graphics3 g3 = new Graphics3(); // 3rd graphics object code / designer  
-        
-        System.out.ui("Graphics1");
-        System.out.ui("Graphics2");
-        System.out.ui("Graphics3");
-                
+        JOptionPane.simulateJFrame("Graphics 1");
+        JOptionPane.simulateJFrame("Graphics 2");
+        JOptionPane.simulateJFrame("Graphics 3");                        
         System.out.header("Graphics and GUIs unit complete!");        
     }
        

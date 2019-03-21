@@ -1,21 +1,19 @@
-/*
- *  Mr. Wachs' classes - Java Computer Science learning file CS40STest.java
- *  for project ComputerScience42SIB on 5-Mar-2019 at 2:07:21 PM by lawrence.wachs
- */
-
 
 /** required package class namespace */
 package testing.cs40s;
 
+/** required imports */
 import testing.cs40s.collections.CollectionsTest;
 import testing.cs40s.advancedclasses.AdvancedClassesTest;
 import testing.cs40s.permanentstorage.PermanentStorageTest;
 import testing.cs40s.searchsort.SearchSortTest;
-
 import io.System;
 
 /**
- * CS40STest.java - 
+ * CS40STest.java - the large in class example we continue to work 
+ * on in each unit adding example code on the new concepts of each unit 
+ * along with any in class requests for code examples that might come up 
+ * over the course
  *
  * @author Mr. Wachs 
  * @since 5-Mar-2019 
@@ -28,11 +26,11 @@ public class CS40STest
      */
     public CS40STest() {
         System.out.header("Computer Science 40S course started...");
-        RecursionTest        unit1 = new RecursionTest();
-        AdvancedClassesTest  unit2 = new AdvancedClassesTest();
-        CollectionsTest      unit3 = new CollectionsTest();
-        SearchSortTest       unit4 = new SearchSortTest();        
-//        PermanentStorageTest unit5 = new PermanentStorageTest();
+        RecursionTest        learnRecursion        = new RecursionTest();
+        AdvancedClassesTest  learnAdvancedClasses  = new AdvancedClassesTest();
+        CollectionsTest      learnCollections      = new CollectionsTest();
+        SearchSortTest       learnSearchingSorting = new SearchSortTest();        
+        PermanentStorageTest learnPermanentstorage = new PermanentStorageTest();
         System.out.header("Computer Science 40S course completed!");
     }
     

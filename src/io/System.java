@@ -3,10 +3,10 @@
 /** required package class namespace */
 package io;
 
+/** required imports */
 import collections.LinkedList;
 import java.awt.Color;
 import java.io.File;
-
 
 
 /**

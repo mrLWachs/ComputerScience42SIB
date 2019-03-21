@@ -67,11 +67,10 @@ public class Queue <T> implements Serializable, Comparable<Object>
      * @param stack the stack to set the queue to 
      */
     public Queue(Stack stack) {
-        front = back = null;                            // references to null
-        length = 0;                                     // set to 0
-        for (int i = 0; i < stack.size(); i++) {        // traverse stack
-            T data = (T)stack.pop();                    // retrieve data
-            enqueue(data);                              // enqueue into queue
+        this();                                         // reinstantiate object
+        LinkedList<T> list = stack.toLinkedList();      // convert to list
+        for (int i = 0; i < list.size(); i++) {         // traverse list
+            enqueue((T)list.get(i));                    // enqueue into queue
         }
     }
         
@@ -108,8 +107,7 @@ public class Queue <T> implements Serializable, Comparable<Object>
      */
     public T dequeue() {
         if (isEmpty()) return null;                 // no nodes in queue
-        else {                                      // queue has some nodes
-            length--;                               // reduce length
+        else {                                      // queue has some nodes            
             T data = peek();                        // get top data
             if (front == back) {                    // single node queue
                 front = back = null;                // wipe all data
@@ -119,7 +117,8 @@ public class Queue <T> implements Serializable, Comparable<Object>
                 front.previous = null;
                 temp.next = null;                        
                 front = temp;
-            }            
+            }           
+            length--;                               // reduce length
             System.gc();                            // call garbage collection
             return data;                            // data returned
         }
@@ -184,7 +183,7 @@ public class Queue <T> implements Serializable, Comparable<Object>
             String text = "Queue = [";                  // starting character
             Node current = front;                       // start at front node
             while (current.previous != null) {          // traverse queue
-                text += current.toString() + ",";       // append data
+                text += current.toString() + ", ";       // append data
                 current = current.previous;             // move to next node
             }            
             return text + current.toString() + "]";     // append end character

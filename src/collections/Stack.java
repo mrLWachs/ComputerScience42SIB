@@ -99,12 +99,12 @@ public class Stack <T> implements Serializable, Comparable<Object>
      */
     public T pop() {
         if (isEmpty()) return null;             // no nodes in stack
-        else {                                  // stack has some nodes
-            length--;                           // reduce length
+        else {                                  // stack has some nodes            
             T    data = peek();                 // get top data
             Node temp = top;                    // reference to current top
             top       = top.next;               // adjust to new top
             temp.next = null;                   // sever old top's connection
+            length--;                           // reduce length
             System.gc();                        // call garbage collection
             return data;                        // data returned
         }
@@ -150,7 +150,7 @@ public class Stack <T> implements Serializable, Comparable<Object>
             String text = "Stack = [";                  // starting character
             Node current = top;                         // start at top node
             while (current.next != null) {              // traverse stack
-                text += current.toString() + ",";       // append data
+                text += current.toString() + ", ";       // append data
                 current = current.next;                 // move to next node
             }            
             return text + current.toString() + "]";     // append end character

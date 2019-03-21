@@ -1,6 +1,7 @@
 /** required package class namespace */
 package testing.cs40s;
 
+/** required imports */
 import tools.Calculator;
 import io.System;
 
@@ -17,21 +18,17 @@ public class RecursionTest {
      */
     public RecursionTest() {
         System.out.header("Recursion testing started...");
-
         int maximum = 65;
-        int minimum = 0;
-        
+        int minimum = 0;        
         System.out.println("Factorials...");
         for (int number = minimum; number <= maximum; number++) {
             double answer = Calculator.factorial(number);
             System.out.println("Number \t" + number +
                                " is factorial \t" + answer);
-        }
-        
+        }        
         System.out.println("Powers...");
         maximum = 143;
-        minimum = -maximum;
-        
+        minimum = -maximum;        
         for (int base = minimum; base <= maximum; base++) {
             for (int exponent = minimum; exponent <= maximum; exponent++) {
                 double answer = Calculator.power(base, exponent);
@@ -39,8 +36,7 @@ public class RecursionTest {
                                    " to the exponent \t" + exponent + 
                                    " = \t" + answer);
             }
-        }
-        
+        }        
         System.out.header("Recusion testing complete!");
     }
 

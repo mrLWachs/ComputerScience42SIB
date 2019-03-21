@@ -2,8 +2,8 @@
 /** required package class namespace */
 package testing.cs40s.advancedclasses;
 
+/** required imports */
 import java.io.Serializable;
-
 import io.System;
 
 /**

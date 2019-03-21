@@ -7,7 +7,6 @@ import collections.LinkedList;
 import collections.Node;
 import tools.Calculator;
 import testing.cs40s.advancedclasses.Athlete;
-
 import io.System;
 
 /**

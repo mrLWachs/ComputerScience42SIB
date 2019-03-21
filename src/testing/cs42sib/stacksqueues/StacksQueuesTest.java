@@ -2,15 +2,16 @@
 /** required package class namespace */
 package testing.cs42sib.stacksqueues;
 
+/** required imports */
 import collections.Queue;
 import collections.Stack;
 import testing.cs40s.advancedclasses.Athlete;
-import tools.Randomizer;
-
 import io.System;
+import tools.Calculator;
 
 /**
- * StacksQueuesTest.java - 
+ * StacksQueuesTest.java - the unit test to test the concept of stacks 
+ * and queues
  *
  * @author Mr. Wachs 
  * @since 1-Mar-2019 
@@ -164,24 +165,24 @@ public class StacksQueuesTest
     private void random(int number, Stack[] allStacks, Queue[] allQueues) {
         System.out.println("\nRandomizing all stacks and queues...\n");
         for (int i = 0; i < number; i++) {
-            allStacks[0].push(Randomizer.generate());
-            allStacks[1].push(Randomizer.generate(
+            allStacks[0].push(Calculator.random());
+            allStacks[1].push(Calculator.random(
                     Integer.MIN_VALUE, Integer.MAX_VALUE));
-            allStacks[2].push(Randomizer.generate(
+            allStacks[2].push(Calculator.random(
                     Double.MIN_VALUE, Double.MAX_VALUE));
-            allStacks[3].push(Randomizer.generate('a', 'z'));
-            allStacks[4].push(Randomizer.generate(5, 'a', 'z'));
-            allStacks[5].push(Randomizer.generateAthlete());
+            allStacks[3].push(Calculator.random('a', 'z'));
+            allStacks[4].push(Calculator.random(5, 'a', 'z'));
+            allStacks[5].push(Calculator.randomAthlete());
         }        
         for (int i = 0; i < number; i++) {
-            allQueues[0].enqueue(Randomizer.generate());
-            allQueues[1].enqueue(Randomizer.generate(
+            allQueues[0].enqueue(Calculator.random());
+            allQueues[1].enqueue(Calculator.random(
                     Integer.MIN_VALUE, Integer.MAX_VALUE));
-            allQueues[2].enqueue(Randomizer.generate(
+            allQueues[2].enqueue(Calculator.random(
                     Double.MIN_VALUE, Double.MAX_VALUE));
-            allQueues[3].enqueue(Randomizer.generate('a', 'z'));
-            allQueues[4].enqueue(Randomizer.generate(5, 'a', 'z'));
-            allQueues[5].enqueue(Randomizer.generateAthlete());
+            allQueues[3].enqueue(Calculator.random('a', 'z'));
+            allQueues[4].enqueue(Calculator.random(5, 'a', 'z'));
+            allQueues[5].enqueue(Calculator.randomAthlete());
         }    
     }
 
