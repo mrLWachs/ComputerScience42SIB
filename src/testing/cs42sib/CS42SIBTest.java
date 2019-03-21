@@ -5,6 +5,7 @@ package testing.cs42sib;
 /** required imports */
 import testing.cs42sib.stacksqueues.StacksQueuesTest;
 import io.System;
+import testing.cs42sib.iasimple.InternalAssessmentCSIB;
 import testing.cs42sib.trees.TreeTest;
 
 /**
@@ -24,8 +25,9 @@ public class CS42SIBTest
      */
     public CS42SIBTest() {
         System.out.header("Computer Science 42SIB course started...");
-        StacksQueuesTest learnStacksQueues = new StacksQueuesTest();
-        TreeTest         learnBinaryTrees  = new TreeTest();
+        StacksQueuesTest       learnStacksQueues = new StacksQueuesTest();
+        TreeTest               learnBinaryTrees  = new TreeTest();
+        InternalAssessmentCSIB simpleIAExample   = new InternalAssessmentCSIB();
         System.out.header("Computer Science 42SIB course completed!");
     }
    

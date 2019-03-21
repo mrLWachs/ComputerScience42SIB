@@ -10,6 +10,7 @@ import collections.LinkedList;
  * of generic data for a specific item
  * 
  * @author Mr. Wachs 
+ * @param <T> the generic data type used
  * @since 7-Feb-2019 
  */
 public class Searcher <T extends Comparable <T>>

@@ -11,6 +11,7 @@ import collections.LinkedList;
  * of generic data into ascending order
  *
  * @author Mr. Wachs 
+ * @param <T> the generic data type used
  * @since 7-Feb-2019 
  */
 public class Sorter <T extends Comparable <T>>
