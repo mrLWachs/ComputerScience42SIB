@@ -27,7 +27,7 @@ public class RecursionTest {
                                " is factorial \t" + answer);
         }        
         System.out.println("Powers...");
-        maximum = 143;
+        maximum = 50;
         minimum = -maximum;        
         for (int base = minimum; base <= maximum; base++) {
             for (int exponent = minimum; exponent <= maximum; exponent++) {
