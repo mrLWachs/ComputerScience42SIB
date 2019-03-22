@@ -26,7 +26,7 @@ public class CS42SIBTest
     public CS42SIBTest() {
         System.out.header("Computer Science 42SIB course started...");
         StacksQueuesTest       learnStacksQueues = new StacksQueuesTest();
-        TreeTest               learnBinaryTrees  = new TreeTest();
+        TreeTest               learnBinaryTrees  = new TreeTest();        
         InternalAssessmentCSIB simpleIAExample   = new InternalAssessmentCSIB();
         System.out.header("Computer Science 42SIB course completed!");
     }

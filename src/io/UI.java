@@ -2,11 +2,6 @@
 /** required package class namespace */
 package io;
 
-/** required imports */
-import java.awt.Color;
-import java.awt.Toolkit;
-import java.awt.event.KeyEvent;
-import javax.swing.DefaultListModel;
 
 /**
  * UI.java - the user interface for testing outputs
@@ -18,26 +13,11 @@ import javax.swing.DefaultListModel;
 public class UI extends javax.swing.JFrame 
 {
 
-    private DefaultListModel<String> model;
-    
-    
     /**  
      * Default constructor for the class, creates new form UI 
      */
     public UI() {
         initComponents();
-        model = new DefaultListModel<>();
-        jList1.setModel(model);
-        model.removeAllElements();
-        this.setResizable(false);
-        int w = (int)Toolkit.getDefaultToolkit().getScreenSize().getWidth();
-        int h = (int)Toolkit.getDefaultToolkit().getScreenSize().getHeight();        
-        this.setSize(w, h); 
-        this.getContentPane().setBackground(Color.black);
-        this.setBackground(Color.black);
-        jList1.setBorder(null);
-        jScrollPane1.setBorder(null);
-        this.setLocationRelativeTo(null);
     }
 
     /** 
@@ -116,41 +96,25 @@ public class UI extends javax.swing.JFrame
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        java.lang.System.exit(0);
+        System.exit(null);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            java.lang.System.exit(0);
-        }
+        System.exit(evt);
     }//GEN-LAST:event_formKeyPressed
 
     private void jButton1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            java.lang.System.exit(0);
-        }
+        System.exit(evt);
     }//GEN-LAST:event_jButton1KeyPressed
 
     private void jList1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jList1KeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            java.lang.System.exit(0);
-        }
+        System.exit(evt);
     }//GEN-LAST:event_jList1KeyPressed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JList<String> jList1;
-    private javax.swing.JScrollPane jScrollPane1;
+    public javax.swing.JList<String> jList1;
+    public javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
-    
-    /**
-     * Adds the passed text to the list box
-     * 
-     * @param text the text to add
-     */
-    public void add(String text) {
-        model.addElement(text);
-        jList1.ensureIndexIsVisible(model.getSize()-1);
-    }
-    
+
 }

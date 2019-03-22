@@ -8,7 +8,8 @@ import javax.swing.Icon;
 
 
 /**
- * JOptionPane.java - 
+ * JOptionPane.java - this class simulates the java.swing class that does the 
+ * dialogs and user interfaces and redirects the outputs to a custom output
  *
  * @author Mr. Wachs 
  * @since 15-Mar-2019 
@@ -53,39 +54,99 @@ public class JOptionPane
     public static final int   PLAIN_MESSAGE = -1;
     
     
+    /**
+     * Re-directs the dialog to custom output
+     *
+     * @param parentComponent will not apply!
+     * @param message the <code>Object</code> to display
+     */
     public static void showMessageDialog(Component parentComponent, 
             Object message) {
         System.out.dialog(message);
     }
 
+    /**
+     * Re-directs the dialog to custom output
+     *
+     * @param parentComponent will not apply!
+     * @param message the <code>Object</code> to display
+     * @param title will not apply!
+     * @param messageType will not apply!
+     */
     public static void showMessageDialog(Component parentComponent,
         Object message, String title, int messageType) {
         System.out.dialog(message);
     }
     
+    /**
+     * Re-directs the dialog to custom output
+     *
+     * @param parentComponent will not apply!
+     * @param message the <code>Object</code> to display
+     * @param title will not apply!
+     * @param messageType will not apply!
+     * @param icon will not apply!
+     */
     public static void showMessageDialog(Component parentComponent,
         Object message, String title, int messageType, Icon icon) {
         System.out.dialog(message);
     }
     
+    /**
+     * Re-directs the dialog to custom output
+     *
+     * @param parentComponent will not apply!
+     * @param message the <code>Object</code> to display
+     * @return will not apply!
+     */
     public static int showConfirmDialog(Component parentComponent,
         Object message) {
         System.out.dialog(message);
         return -1;
     }
 
+    /**
+     * Re-directs the dialog to custom output
+     *
+     * @param parentComponent will not apply!
+     * @param message the <code>Object</code> to display
+     * @param title will not apply!
+     * @param optionType will not apply!
+     * @return will not apply!
+     */
     public static int showConfirmDialog(Component parentComponent,
         Object message, String title, int optionType) {
         System.out.dialog(message);
         return -1;
     }
 
+    /**
+     * Re-directs the dialog to custom output
+     *
+     * @param parentComponent will not apply!
+     * @param message the <code>Object</code> to display
+     * @param title will not apply!
+     * @param optionType will not apply!
+     * @param messageType will not apply!
+     * @return will not apply!
+     */
     public static int showConfirmDialog(Component parentComponent,
         Object message, String title, int optionType, int messageType) {
         System.out.dialog(message);
         return -1;
     }
 
+    /**
+     * Re-directs the dialog to custom output
+     *
+     * @param parentComponent will not apply!
+     * @param message the <code>Object</code> to display
+     * @param title will not apply!
+     * @param optionType will not apply!
+     * @param messageType will not apply!
+     * @param icon will not apply!
+     * @return will not apply!
+     */
     public static int showConfirmDialog(Component parentComponent,
         Object message, String title, int optionType,
         int messageType, Icon icon) { 
@@ -93,6 +154,19 @@ public class JOptionPane
         return -1;
     }
 
+    /**
+     * Re-directs the dialog to custom output
+     *
+     * @param parentComponent will not apply!
+     * @param message the <code>Object</code> to display
+     * @param title will not apply!
+     * @param optionType will not apply!
+     * @param messageType will not apply!
+     * @param icon will not apply!
+     * @param options will not apply!
+     * @param initialValue will not apply!
+     * @return will not apply!
+     */
     public static int showOptionDialog(Component parentComponent,
         Object message, String title, int optionType, int messageType,
         Icon icon, Object[] options, Object initialValue) {
@@ -100,41 +174,100 @@ public class JOptionPane
         return -1;
     }
     
+    /**
+     * Re-directs the dialog to custom output
+     *
+     * @param message the <code>Object</code> to display
+     * @return will not apply!
+     */
     public static String showInputDialog(Object message) {
         System.out.dialog(message);
         return "-1";
     }
 
+    /**
+     * Re-directs the dialog to custom output
+     *
+     * @param message the <code>Object</code> to display
+     * @param initialSelectionValue will not apply!
+     * @return will not apply!
+     */
     public static String showInputDialog(Object message, 
             Object initialSelectionValue) {
         return showInputDialog(message);
     }
 
+    /**
+     * Re-directs the dialog to custom output
+     *
+     * @param parentComponent will not apply!
+     * @param message the <code>Object</code> to display
+     * @return will not apply!
+     */
     public static String showInputDialog(Component parentComponent,
         Object message) {
         return showInputDialog(message);
     }
     
+    /**
+     * Re-directs the dialog to custom output
+     *
+     * @param parentComponent will not apply!
+     * @param message the <code>Object</code> to display
+     * @param initialSelectionValue will not apply!
+     * @return will not apply!
+     */
     public static String showInputDialog(Component parentComponent, 
             Object message, Object initialSelectionValue) {
         return showInputDialog(message);
     }
 
+    /**
+     * Re-directs the dialog to custom output
+     *
+     * @param parentComponent will not apply!
+     * @param message the <code>Object</code> to display
+     * @param title will not apply!
+     * @param messageType will not apply!
+     * @return will not apply!
+     */
     public static String showInputDialog(Component parentComponent,
         Object message, String title, int messageType) {
         return showInputDialog(message);
     }
 
+    /**
+     * Re-directs the dialog to custom output
+     *
+     * @param parentComponent will not apply!
+     * @param message the <code>Object</code> to display
+     * @param title will not apply!
+     * @param messageType will not apply!
+     * @param icon will not apply!
+     * @param selectionValues will not apply!
+     * @param initialSelectionValue will not apply!
+     * @return will not apply!
+     */
     public static Object showInputDialog(Component parentComponent,
         Object message, String title, int messageType, Icon icon,
         Object[] selectionValues, Object initialSelectionValue) {
         return showInputDialog(message);
     }
 
+    /**
+     * Simulates a JFrame and re-directs the output to a custom output
+     * 
+     * @param message the <code>Object</code> to display
+     */
     public static void simulateJFrame(Object message) {
         System.out.ui(message);
     }
     
+    /**
+     * Simulates the JFileChooser and re-directs the output to a custom output
+     * 
+     * @param message the <code>Object</code> to display 
+     */
     public static void simulateJFileChoser(Object message) {
         System.out.dialog(message);
     }

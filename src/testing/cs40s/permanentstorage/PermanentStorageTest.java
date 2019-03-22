@@ -27,7 +27,7 @@ public class PermanentStorageTest
                 
         System.out.header("Permanent storage starting...");
                 
-        String firstName  = "C:\\Users\\lawrence.wachs\\Desktop\\";
+        String firstName   = java.lang.System.getProperty("user.dir");
         String middleName1 = "data1";
         String middleName2 = "data2";
         String middleName3 = "data3";

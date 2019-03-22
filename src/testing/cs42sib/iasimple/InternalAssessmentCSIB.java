@@ -17,8 +17,9 @@ public class InternalAssessmentCSIB extends javax.swing.JFrame
     
     /** Creates new form UI */
     public InternalAssessmentCSIB() {
-        initComponents();
-        engine = new Engine(this,jTextField1, jTextField2, jTextField3, list1);
+        io.System.out.ui("Simulated Internal Assessment");        
+//        initComponents();
+//        engine = new Engine(this,jTextField1, jTextField2, jTextField3, list1);
     }
 
     /** This method is called from within the constructor to

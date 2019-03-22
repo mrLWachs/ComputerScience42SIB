@@ -5,7 +5,10 @@ package io;
 /** required imports */
 import collections.LinkedList;
 import java.awt.Color;
+import java.awt.Toolkit;
+import java.awt.event.KeyEvent;
 import java.io.File;
+import javax.swing.DefaultListModel;
 
 
 /**
@@ -319,7 +322,7 @@ public class System
      * Initialize the class data structures
      */
     public static void init() {
-        java.lang.System.out.println("Initializing output stream...\n\n\n");
+        out.simpleOutput("\n\n\nInitializing output stream...\n\n\n");
         createDataFile();
         createUserInterface();
     }
@@ -332,7 +335,7 @@ public class System
     public static void flush() {  
         saveDataToFile();
         outputDataToUserInterface();
-        java.lang.System.out.println("\n\n\nFlushing output stream...");
+        out.simpleOutput("\n\n\nFlushing output stream...\n\n\n");
     }    
     
     /**
@@ -370,9 +373,22 @@ public class System
     private static void outputDataToUserInterface() {
         if (ui            == null) return;
         if (outputLinesUI == null) return;
+        int w = (int)Toolkit.getDefaultToolkit().getScreenSize().getWidth();
+        int h = (int)Toolkit.getDefaultToolkit().getScreenSize().getHeight();        
+        ui.setSize(w, h); 
+        ui.getContentPane().setBackground(Color.black);
+        ui.setBackground(Color.black);
+        ui.setResizable(false);
+        ui.setLocationRelativeTo(null);        
+        DefaultListModel<String> model = new DefaultListModel<>();
+        ui.jList1.setModel(model);
+        ui.jList1.setBorder(null);
+        ui.jScrollPane1.setBorder(null);
+        model.removeAllElements();  
         for (int i = 0; i < outputLinesUI.size(); i++) {
-            ui.add(outputLinesUI.get(i));
+            model.addElement(outputLinesUI.get(i));
         }
+        ui.jList1.ensureIndexIsVisible(model.getSize()-1);
         ui.setVisible(true);
     }
     
@@ -440,6 +456,14 @@ public class System
         return text;
     }
     
+    /**
+     * Formats the passed line of text into an appropriate HTML format
+     * 
+     * @param text the line of text to format
+     * @param fontFamily the font to use
+     * @param color the color to use
+     * @return the HTML formatted line of text
+     */
     private static String htmlLine(String text, String fontFamily, 
             Color color) {
         text = "<span style=\""
@@ -455,6 +479,19 @@ public class System
              + text 
              + "</span>";
         return text;
+    }
+    
+    /**
+     * Exits the application
+     * 
+     * @param event the keyboard event to check
+     */
+    public static void exit(KeyEvent event) {
+        if (event == null || 
+            event.getKeyCode() == KeyEvent.VK_ENTER ||
+            event.getKeyCode() == KeyEvent.VK_ESCAPE) {
+            java.lang.System.exit(0);
+        }
     }
     
 }
