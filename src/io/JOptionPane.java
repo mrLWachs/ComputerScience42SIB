@@ -41,7 +41,7 @@ public class JOptionPane
      * anything, more than likely this should be treated as either a
      * <code>CANCEL_OPTION</code> or <code>NO_OPTION</code>. 
      */
-    public static final int         CLOSED_OPTION = -1;
+    public static final int  CLOSED_OPTION = -1;
     /** Used for error messages. */
     public static final int  ERROR_MESSAGE = 0;
     /** Used for information messages. */
