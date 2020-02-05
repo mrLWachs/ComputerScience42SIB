@@ -2,75 +2,73 @@
 /** required package class namespace */
 package collections;
 
-import java.io.Serializable;
-
-
+ 
 /**
  * Node.java - a representation of a generic node for use with
- * a LinkedList object
+ * a LinkedList object, and could be "visualized" as:
+ * 
+ *                      NODE
+ *                +--------------+
+ * previous <---- |              |
+ *                |     data     |
+ *                |   (generic)  |
+ *                |              |----> next
+ *                +--------------+
  *
  * @author Mr. Wachs 
- * @param <T> The generic data type used in the class
- * @since 16-Nov-2018 
+ * @param <T> the generic data type used in the class
+ * @since 6-May-2019 
  */
-public class Node <T> implements Comparable<Node>, Serializable
+public class Node <T>
 {
-
-    /**
-     * The generic data stored in the node
-     */
-    public T data;
     
-    /**
-     * A reference (link) to the next node in the collection
-     */
+     /** the generic data to store */
+    public T data;    
+    /** Self reference (link) to the next node in the "chain" */
     public Node next;
-    
-    /**
-     * A reference (link) to the previous node in the collection
-     */
+    /** Self reference (pointer) to the previous node in the "list" */
     public Node previous;
     
-    
+        
     /**
-     * Default constructor for the class, sets class properties
-     */
-    public Node() {
-        this(null,null,null);               // one constructor calls another
-    }
-    
-    /**
-     * Constructor for the class, sets class properties
+     * Class constructor sets class properties 
      * 
-     * @param data the generic data stored in the node
+     * @param data the node data
+     * @param next reference to the next Node object
+     * @param previous reference to the previous Node object
      */
-    public Node(T data) {
-        this(data,null,null);               // one constructor calls another
+    public Node(T data, Node next, Node previous) {
+        this.data     = data;
+        this.next     = next;
+        this.previous = previous;
     }
-    
+       
     /**
-     * Constructor for the class, sets class properties
+     * Class constructor sets class properties 
      * 
-     * @param data the generic data stored in the node
-     * @param next reference (link) to the next node in the collection
+     * @param data the node data
+     * @param next reference to the next Node object
      */
     public Node(T data, Node next) {
-        this(data,next,null);               // one constructor calls another
+        this(data,next,null);
     }
         
     /**
-     * Constructor for the class, sets class properties
+     * Class constructor sets class properties 
      * 
-     * @param data the generic data stored in the node
-     * @param next reference (link) to the next node in the collection
-     * @param previous reference (link) to the previous node in the collection
+     * @param data the node data
      */
-    public Node(T data, Node next, Node previous) {
-        this.next     = next;               // set parameters to the properties
-        this.previous = previous;
-        this.data     = data;
-    }    
-
+    public Node(T data) {
+        this(data,null,null);
+    }
+    
+    /** 
+     * Default constructor, sets class properties
+     */
+    public Node() {
+        this(null,null,null);
+    }
+        
     /**
      * String representation of this object
      *
@@ -78,58 +76,44 @@ public class Node <T> implements Comparable<Node>, Serializable
      */
     @Override
     public String toString() {
-        if (data == null) return "null";
-        return data.toString();
+        if (data == null) return null;              // invalid data, output null
+        return data.toString();                     // output data in node
     }
-        
+    
     /**
-     * Determines if two objects are "equal" in this context
+     * Deep comparison, determines if two objects are "equal" in this context
      *
      * @param object the object to compare to
      * @return the objects are "equal" (true) or not (false)
      */
     @Override
     public boolean equals(Object object) {
-        Node node = (Node)object;               // cast the object into a node
-        return this.data.equals(node.data);     // compare node data
+        if (this.data == null) return false;
+        if (object    == null) return false;    // error checks
+        Node that = (Node)object;               // cast object into node
+        if (that.data == null || this.data == null) return false;
+        return this.data.equals(that.data);     // compare data in nodes
     }
-    
+        
     /**
-     * Creates a duplicate object using new memory
+     * a Deep clone, creates a duplicate object using new memory
      *
      * @return a "clone" of the object using new memory
      */
     @Override
     public Node clone() {
-        return new Node(
-            this.data,
-            this.next,
-            this.previous);
+        return new Node(data,next,previous);
+        // annonymous object
     }
     
     /**
-     * Wipes out all memory used by this object
+     * Frees up all memory used by this object
      */
     @Override
     public void finalize() {
         data = null;
         next = previous = null;
-    }
-
-    /**
-     * Compares two objects lexicographically
-     *
-     * @param object the other object to be compared to
-     * @return the value 0 if the argument that is equal to
-     *         this object; a value less than 0 if this object
-     *         is lexicographically less than that argument; and a
-     *         value greater than 0 if this object is
-     *         lexicographically greater than that argument
-     */
-    @Override
-    public int compareTo(Node object) {
-        // TO DO !!!!
-        return 0;
+        System.gc();                // runs the garbage collector in Java
     }
 
 }

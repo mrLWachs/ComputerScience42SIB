@@ -1,6 +1,6 @@
 
 /** required package class namespace */
-package testing.cs30s;
+package testing;
 
 /** required imports */
 import java.awt.Color;

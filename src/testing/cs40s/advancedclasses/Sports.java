@@ -4,26 +4,34 @@ package testing.cs40s.advancedclasses;
 
 
 /**
- * Sports - interface enforcing the rules of sports
+ * Sports.java - the interface for "sports" an interface is a "category" of 
+ * abstract concepts. Even more abstract than a abstract class, it can be 
+ * thought of as "a set of rules"
  *
- * @author Mr. Wachs 
- * @since 2-Nov-2018 
+ * @author Mr. Wachs
+ * @since Oct. 30, 2019, 10:40:49 a.m.
  */
 public interface Sports 
 {
-        
-    /**
-     * Mutator setting the name of the player
-     * 
-     * @param name the name of this player
-     */
-    public void setHome(String name);
-            
+    
     /**
      * Mutator setting the name of the opponent
      * 
      * @param name the name of this opponent
      */
-    public void setVisiting(String name);
+    void setOpponent(String name);
+    
+    /**
+     * Mutator setting the name of the player
+     * @param name the name of this player
+     */
+    void setName(String name);
+
+    /**
+     * Determines if the sports game is over (with a winner)
+     * 
+     * @return there was a winner (true) or not (false)
+     */
+    boolean didIWin();
     
 }

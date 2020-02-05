@@ -2,24 +2,21 @@
 /** required package class namespace */
 package testing.cs40s.advancedclasses;
 
+ 
 /**
- * ComputerScienceTeacher.java - represents a computer science teacher
+ * ComputerScienceTeacher.java - represents a CS teacher person
  *
- * @author Mr. Wachs 
- * @since 31-Oct-2018 
+ * @author Mr. Wachs
+ * @since Oct. 21, 2019, 10:44:16 a.m.
  */
 public class ComputerScienceTeacher extends Teacher
 {
 
     /**
-     * Constructor for the class, sets class properties
-     * 
-     * @param name the name for this object
-     * @param age the age for this object
-     * @param isMale the gender for this object
+     * Default constructor, set class properties
      */
-    public ComputerScienceTeacher(String name, int age, boolean isMale) {
-        super(name, age, isMale);
+    public ComputerScienceTeacher() {
+        
     }
 
     /**
@@ -29,11 +26,11 @@ public class ComputerScienceTeacher extends Teacher
      */
     @Override
     public String toString() {
-        return "ComputerScienceTeacher " + super.toString();
+        return "ComputerScienceTeacher: " + super.toString();
     }
-        
+    
     /**
-     * Determines if two objects are "equal" in this context
+     * Deep comparison, determines if two objects are "equal" in this context
      *
      * @param object the object to compare to
      * @return the objects are "equal" (true) or not (false)
@@ -42,9 +39,9 @@ public class ComputerScienceTeacher extends Teacher
     public boolean equals(Object object) {
         return super.equals(object);
     }
-    
+        
     /**
-     * Creates a duplicate object using new memory
+     * a Deep clone, creates a duplicate object using new memory
      *
      * @return a "clone" of the object using new memory
      */

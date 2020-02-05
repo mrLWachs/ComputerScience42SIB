@@ -5,6 +5,7 @@ package testing.cs30s;
 /** required imports */
 import io.System;
 
+
 /**
  * Teacher.java - represents a Teacher. This class uses inheritance to inherit
  * the properties and methods from the Person class. This class also 
@@ -12,23 +13,28 @@ import io.System;
  * the class. This is sometimes simplified as a "has a" relationship.
  *
  * @author Mr. Wachs 
- * @since May 1, 2018 
- * @instructor Mr. Wachs
+ * @since 14-May-2019 
  */
 public class Teacher extends Person
 {
-  
-    public Student[] students;                  // an array of class objects
+    
+    public  Student[] students;                 // an array of class objects
+                                                // of an associate class
+    private String    course;                   // encapsulated property
+    
+    private final int MAXIMUM = 100;            // constant maximum students
+    
     
     /**
      * Constructor for the class sets class properties
      * 
      * @param name the name for this Teacher
+     * @param course the course this teacher teaches
      */
-    public Teacher(String name) {
+    public Teacher(String name, String course) {
         super(name);                            // call to super constructor
-        super.birthday(30);                     // set super private property
-        students  = new Student[100];           // build up array
+        this.course = course;                   // set super private property
+        students = new Student[MAXIMUM];        // build up array
     }
     
     /**
@@ -36,7 +42,7 @@ public class Teacher extends Person
      * them study
      */
     public void teach() {
-        for (int i = 0; i < students.length; i++) { // traverse array
+        for (int i = 0; i < MAXIMUM; i++) {         // traverse array
             if (students[i] != null) {              // array spot not a null
                 students[i].study();                // make this spot study
             }
@@ -50,7 +56,12 @@ public class Teacher extends Person
     @Override
     public void talk() {
         super.talk();                       // call to the super talk method
-        System.out.println("\t - I teach " + students.length + " students:");
+        System.out.println("\t I teach " + course);
+        for (int i = 0; i < MAXIMUM; i++) {
+            if (students[i] != null) {
+                students[i].talk();
+            }
+        }
     }
     
 }

@@ -2,10 +2,10 @@
 package testing;
 
 /** required imports */
-import testing.cs30s.CS30STest;
-import testing.cs40s.CS40STest;
-import testing.cs42sib.CS42SIBTest;
-import io.System;
+import io.Simulator;
+import testing.cs30s.ComputerScience30S;
+import testing.cs40s.ComputerScience40S;
+import testing.cs42sib.ComputerScience42SIB;
 
 
 /**
@@ -21,13 +21,11 @@ public class Tester
      * Default class constructor, runs on instantiation
      */
     public Tester() {
-        System.init();    
-        System.out.header("All testing started...");
-        new CS30STest();
-        new CS40STest();
-        new CS42SIBTest();
-        System.out.header("All testing complete!");
-        System.flush();
+        Simulator.header("Mr. Wachs Computer Science testing started...");
+        new ComputerScience30S();
+        new ComputerScience40S();
+        new ComputerScience42SIB();
+        Simulator.header("Mr. Wachs Computer Science testing complete!");
     }
     
 }

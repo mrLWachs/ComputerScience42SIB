@@ -12,13 +12,13 @@ import io.System;
  * inherits from both (a double inheritance).
  *
  * @author Mr. Wachs 
- * @since May 1, 2018 
- * @instructor Mr. Wachs
+ * @since 14-May-2019 
  */
 public class Husky extends Student
 {
 
     private boolean pride;                          // encapsulated property
+    
     
     /**
      * Constructor for the class sets class properties
@@ -26,29 +26,26 @@ public class Husky extends Student
      * @param name the name for this Husky
      * @param age the age for this Husky
      * @param isMale the gender for this Husky
-     * @param grade the grade for this Husky 
-     * @param studentNumber the student number for this student
      */
-    public Husky(String name, int age, boolean isMale, int grade,
-                 int studentNumber) {
-        super(name, age, isMale, grade, studentNumber);     // super constructor
-        pride = true;                              // set internal properties
+    public Husky(String name, int age, boolean isMale) {
+        super(name, age, isMale);               // super constructor
+        pride = true;                           // set internal properties
     }
     
     /**
-     * Lowers Husky pride
+     * Removes Husky pride
      */
-    public void meetStaff() {
+    public void homework() {
         pride = false;
     }
-    
+
     /**
-     * Raises Husky pride
+     * Restores Husky pride
      */
-    public void eatCafeteriaFood() {
+    public void atLeastImNotAtJohnTaylor() {
         pride = true;
     }
-    
+
     /**
      * Talking overrides the same talk method of the parent class
      * and outputs additional information to the screen
@@ -56,7 +53,7 @@ public class Husky extends Student
     @Override
     public void talk() {
         super.talk();       // call to super talk(), it calls super talk() also
-        System.out.println("\t - Do I have pride? The answer is " + pride);
+        System.out.println("\t Pride is " + pride);
     }
     
 }

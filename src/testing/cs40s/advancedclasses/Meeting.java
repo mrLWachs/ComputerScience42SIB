@@ -2,58 +2,55 @@
 /** required package class namespace */
 package testing.cs40s.advancedclasses;
 
-/** required imports */
-import io.System;
-
+ 
 /**
  * Meeting.java - represents a meeting of people
  *
- * @author Mr. Wachs 
- * @since 31-Oct-2018 
+ * @author Mr. Wachs
+ * @since Oct. 22, 2019, 11:42:49 a.m.
  */
 public class Meeting 
 {
-
-    private       Person[] members;
-    private       int      count;
-    private final int      MAX;
     
+    private final int MAX;              // maximum number of students
+    private int       count;            // keeps count of current student
+    private Person[]  members;          // associated object array
+
     /**
-     * Default constructor for the class, sets class properties
+     * Default constructor, set class properties
      */
     public Meeting() {
-        MAX     = 500;
+        MAX     = 100;
         count   = 0;
         members = new Person[MAX];
+        for (Person member : members) { // enhanced for loop 
+        // read as "for every member in members"
+            member = new Person();
+        }
     }
     
     /**
      * Have a person attend the meeting
      * 
-     * @param person the person to attend
+     * @param person the person object to attend
      */
     public void attend(Person person) {
-        members[count] = person;
-        count++;
-        if (count >= MAX) count = 0;
+        members[count] = person;            // add to array slot
+        count++;                            // advanced counter to next slot
+        if (count > MAX) count = 0;         // reset back to slot 0
     }
     
     /**
-     * Hold the meeting and have everyone talk
+     * Hold the meeting and have all members talk through an output
      */
     public void hold() {
-        System.out.println("Meeting begins, but watch your language, because "
-                + Student.totalStudents + " students are here!");        
-        for (Person member : members) {
-        // enhanced for loop "for each member in members"
-            if (member != null) {           // spots that have a person in them
-                member.talk();
-                if (member instanceof MrWachs) {
-                    System.out.println("Shhhh!, Wachs is talking");
-                }
+        System.out.println("Caution, there  are " + Student.totalStudents
+                         + " students at this meeting, watch your language!");
+        for(Person member: members) {       // traverse all members
+            if (member != null) {           // ignore empty array spots
+                member.talk();              // have them talk
             }
-        }        
-        System.out.println("Meeting adjourned!");
+        }
     }
-    
+
 }

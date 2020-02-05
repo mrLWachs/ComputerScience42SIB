@@ -4,34 +4,34 @@ package testing.cs40s.advancedclasses;
 
 
 /**
- * PermissionForm - interface enforcing the rules of a school permission form
+ * PermissionForm.java - interface enforcing the rules of a permission form
  *
- * @author Mr. Wachs 
- * @since 5-Nov-2018 
+ * @author Mr. Wachs
+ * @since Oct. 31, 2019, 11:40:32 a.m.
  */
 public interface PermissionForm 
 {
-
+    
     /**
-     * The form has been signed
+     * Represents a signed permission form
      */
     static final boolean SIGNED = true;
     
     /**
-     * The form is still unsigned
+     * Represents an unsigned permission form
      */
-    static final boolean NOT_SIGNED = false;
-        
+    static final boolean NOT_SIGNED = false; 
+    
     /**
      * Signing the permission form
      */
     void sign();
     
     /**
-     * Determines if the form is signed or not
+     * Determines if the form has been signed or not
      * 
-     * @return for is signed or not
+     * @return has been signed (true), or not (false)
      */
-    boolean hasBeenSigned();
-    
+    boolean haveYouGotItSigned();
+
 }

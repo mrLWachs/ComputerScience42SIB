@@ -12,23 +12,22 @@ import io.System;
  * Person class to be added to the array.
  *
  * @author Mr. Wachs 
- * @since May 1, 2018 
- * @instructor Mr. Wachs
+ * @since 14-May-2019 
  */
 public class Meeting 
 {
 
-    private       Person[] members;     // associate array of Person objects
-    private       int      index;       // index counter to track with array
-    private final int      MAX;         // constant for maximum array size
+    private Person[]  members;          // associate array of Person objects
+    private int       index;            // index counter to track with array
+    private final int MAX = 10000;      // constant maximum members
+    
     
     /**
      * Default constructor sets class properties
      */
     public Meeting() {
-        MAX     = 500;                              // set constant
-        members = new Person[MAX];                  // initialize array
-        index   = 0;                                // initialize counter
+        members = new Person[MAX];      // initialize array
+        index = 0;                      // initialize counter
     }
     
     /**
@@ -39,7 +38,7 @@ public class Meeting
     public void attend(Person person) {
         members[index] = person;                    // assign to array
         index++;                                    // advance counter
-        if (index >= MAX) index = 0;                // error check array bound
+        if (index >= MAX) index = 0;                // error check array bound                         
     }
     
     /**
@@ -52,5 +51,5 @@ public class Meeting
         }
         System.out.println("~~~Meeting adjurned!");
     }
-    
+
 }

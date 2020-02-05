@@ -2,146 +2,107 @@
 /** required package class namespace */
 package testing.cs30s;
 
-/** required imports */
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
-
 
 /**
- * Graphics1.java - the beginning of making a container (the frame) and 
- * various controls inside of it. This class uses inheritance to inherit
- * the properties and methods from the JFrame class. This means this
- * class is the child (sub-class) of the parent class (super class, 
- * base class). This is sometimes simplified to a "is a" relationship
+ * Graphics1.java - using the NetBeans visual designer to also make a container 
+ * design. It takes care of a lot of the coding for you.
  *
- * @author Mr. Wachs 
- * @since December 10, 2018 
+ * @author Mr. Wachs
+ * @since Dec. 16, 2019, 10:17:11 a.m.
  */
-public class Graphics1 extends JFrame
+public class Graphics1 extends javax.swing.JFrame 
 {
-    // properties (controls in my container)
-    
-    private JButton button;     // a command button
-    private JLabel text;        // labels can be for text, images, or both
-    private JLabel picture;
-    private JTextField textbox; // a text box area
-        
 
-    /**
-     * Default class constructor, sets class properties
+    /** 
+     * Default constructor, creates new form Graphics1 
      */
     public Graphics1() {
-        
-        // set frame's (form) properties:
-        this.setSize(350, 450);                         // set width and height
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE);   // when I hit the "X"
-        this.setTitle("Graphics One");                  // title at the top
-        this.setResizable(false);                       // cannot resize
-        this.setLocationRelativeTo(null);               // center on screen
-
-        // build (instantiate) my controls:        
-        text = new JLabel("Hello World");           // constructor sets text
-        button = new JButton("Exit");               // constructor sets text
-        textbox = new JTextField(10);               // constructor sets width
-        picture = new JLabel(new ImageIcon(
-                "C:\\Users\\lawrence.wachs\\"
-                + "Desktop\\Stuff\\Projects\\"
-                + "Programming\\Java\\"
-                + "ComputerScience30S\\"
-                + "src\\computerscience30s\\"
-                + "Tesseract.gif"));                // constructor builds image
-        
-        // setup the container
-        this.getContentPane().setLayout(null);      // I will position things
-        
-        // add our controls to the container
-        this.getContentPane().add(text);
-        this.getContentPane().add(button);
-        this.getContentPane().add(textbox);
-        this.getContentPane().add(picture);
-        
-        // position all our controls
-        text.setBounds(20, 5, 200, 25);
-        textbox.setBounds(20, 35, 200, 25);
-        button.setBounds(20, 65, 200, 50);
-        picture.setBounds(20, 120, 300, 300);
-        
-        // add our actions
-        addActions();
-                
-        // reveal my design to the user
-        this.setVisible(true);                          // makes frame visible
-    }  
-
-    /**
-     * Adds the actions to the various controls
-     */
-    private void addActions() {
-        
-        // create a click action listener for the button
-        ActionListener buttonAction = new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                click();
-            }
-        };
-        // connect the action listener to the button
-        button.addActionListener(buttonAction);
-        
-        // create a key press action listener for the textbox
-        KeyListener textboxAction = new KeyListener() {
-            public void keyTyped(KeyEvent e)   { }
-            public void keyPressed(KeyEvent e) {
-                keypress();
-            }
-            public void keyReleased(KeyEvent e) { }
-        };
-        // connect the action listener to the textbox
-        textbox.addKeyListener(textboxAction);
-        
-        // create a mouse over action listener for the picture
-        MouseListener pictureAction = new MouseListener() {
-            public void mouseClicked(MouseEvent e)  { }
-            public void mousePressed(MouseEvent e)  { }
-            public void mouseReleased(MouseEvent e) { }
-            public void mouseEntered(MouseEvent e) {
-                mouseHover();
-            }
-            public void mouseExited(MouseEvent e)   { }
-        };
-        // connect the action listener to the picture
-        picture.addMouseListener(pictureAction);
-        
+        initComponents();
+        this.setVisible(true);
     }
-        
-    /**
-     * The click action for the button
+
+    /** This method is called from within the constructor to
+     * initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is
+     * always regenerated by the Form Editor.
      */
-    private void click() {
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jButton1 = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jButton1.setText("Exit");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(122, 122, 122)
+                .addComponent(jButton1)
+                .addContainerGap(227, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addComponent(jButton1)
+                .addContainerGap(232, Short.MAX_VALUE))
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         System.exit(0);
-    }
-    
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
-     * The key press action for the textbox
+     * @param args the command line arguments
      */
-    private void keypress() {
-        text.setText("Typing in the textbox...");
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Graphics1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Graphics1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Graphics1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Graphics1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Graphics1().setVisible(true);
+            }
+        });
     }
-    
-    /**
-     * The mouse hover over action for the picture
-     */
-    private void mouseHover() {
-        text.setText("Mouse is over the picture...");
-    }
-   
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    // End of variables declaration//GEN-END:variables
+
 }

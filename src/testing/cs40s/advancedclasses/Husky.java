@@ -2,31 +2,27 @@
 /** required package class namespace */
 package testing.cs40s.advancedclasses;
 
-/** required imports */
-import java.io.Serializable;
-
-
 /**
- * Husky.java - represents a husky computer science high school 
- * student person
+ * Husky.java - represents a husky student person
  *
- * @author Mr. Wachs 
- * @since 31-Oct-2018 
+ * @author Mr. Wachs
+ * @since Oct. 21, 2019, 10:44:22 a.m.
  */
-public class Husky extends ComputerScienceStudent implements Serializable
+public class Husky extends Student
 {
 
     /**
-     * Constructor for the class, sets class properties
+     * Default constructor for the class, sets class properties
      * 
-     * @param name the name for this object
-     * @param age the age for this object
-     * @param isMale the gender for this object
-     * @param studentNumber the student number for this object
+     * @param name the name for this student
+     * @param age the age for this student
+     * @param isMale the gender for this student
+     * @param studentNumber the student number for this student
      */
     public Husky(String name, int age, boolean isMale, int studentNumber) {
         super(name, age, isMale, studentNumber);
     }
+
 
     /**
      * String representation of this object
@@ -35,11 +31,11 @@ public class Husky extends ComputerScienceStudent implements Serializable
      */
     @Override
     public String toString() {
-        return "Husky " + super.toString();
+        return "Husky: " + super.toString();
     }
-        
+    
     /**
-     * Determines if two objects are "equal" in this context
+     * Deep comparison, determines if two objects are "equal" in this context
      *
      * @param object the object to compare to
      * @return the objects are "equal" (true) or not (false)
@@ -48,9 +44,9 @@ public class Husky extends ComputerScienceStudent implements Serializable
     public boolean equals(Object object) {
         return super.equals(object);
     }
-    
+        
     /**
-     * Creates a duplicate object using new memory
+     * a Deep clone, creates a duplicate object using new memory
      *
      * @return a "clone" of the object using new memory
      */

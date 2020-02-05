@@ -1,6 +1,6 @@
 
 /** required package class namespace */
-package testing.cs30s;
+package testing;
 
 
 /**
@@ -76,7 +76,7 @@ public class Graphics2 extends javax.swing.JFrame
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(txtTextbox, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(btnExit, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
-                            .addComponent(picImage))
+                            .addComponent(picImage, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );

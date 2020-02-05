@@ -1,9 +1,10 @@
-
+  
 /** required package class namespace */
 package testing.cs30s;
 
 /** required imports */
 import io.System;
+
 
 /**
  * Person.java - represents a person. This is a class with properties (things 
@@ -12,39 +13,36 @@ import io.System;
  * objects (which are instances of that class).
  *
  * @author Mr. Wachs 
- * @since 19-Nov-2018 
+ * @since 03-May-2019 
  */
 public class Person 
 {
     
     // Properties: (things about it, adjectives, descriptors).................
     
-    public String name;
-    private int age;                        // encapsualted properties marked
-    public boolean isMale;                  // as private are "hidden" data
-    private boolean isAlive;                // only available inside the class
+    public  String  name;
+    private int     age;        // encapsulated property
+    public  boolean isMale;
+    private boolean isAlive;    // "hidden" property
     
     // Methods: (things it can do, verbs, actions)............................
-    
+  
     /**
      * Constructor method called (invoked) when the class is used to 
      * build a object, this is called the "default" constructor
      */
     public Person() {
         born();
-        isMale = false;
-        name   = "Jane Doe";
-    }
+    }    
     
     /**
      * Constructor (overloaded) sets class properties
      * 
-     * @param nameForThePerson the name for this person
+     * @param newName the name for this person
      */
-    public Person(String nameForThePerson) {
+    public Person(String newName) {
         born();
-        isMale = false;
-        name   = nameForThePerson;
+        name = newName;
     }
     
     /**
@@ -55,18 +53,21 @@ public class Person
      * @param isMale the gender for this person
      */
     public Person(String name, int age, boolean isMale) {
-        isAlive     = true;
-        this.name   = name;     // keyword this refers to the class property
+        this.name   = name;
         this.age    = age;
         this.isMale = isMale;
+        isAlive     = true;
     }
     
     /**
-     * When a person is born
+     * When a person is born, it sets the properties of this class to the 
+     * starting values
      */
-    public void born() {
+    private void born() {
         isAlive = true;
         age     = 0;
+        isMale  = false;
+        name    = "Jane Doe";
     }
     
     /**
@@ -79,23 +80,23 @@ public class Person
     /**
      * A person talks (by outputting information to the screen)
      */
-    public void talk() {
+    public void talk() {        
         if (isAlive) {
-            System.out.println(name + " is " + age + " and if you are "
-                    + "wondering if I am male, the answer is " + isMale);
+            identify();
+            System.out.println(name + " is " + age);
         }
         else {
-            System.out.println("Booooooo!");
-        }
+            System.out.println("Boooo!");
+        }        
     }
-    
+   
     /**
      * A person has a birthday (their age goes up by one)
      */
     public void birthday() {
         age++;
     }
-    
+
     /**
      * A person has many birthdays
      * 
@@ -106,17 +107,13 @@ public class Person
             birthday();
         }
     }
-        
+    
     /**
-     * A way to change genders
+     * Displays the person's gender
      */
-    public void identify() {
-        if (isMale == true) {
-            isMale = false;
-        }
-        else if (isMale == false) {
-            isMale = true;
-        }
-    }
+    private void identify() {
+        if (isMale) System.out.print("Male ");
+        else        System.out.print("Female ");
+    }    
     
 }

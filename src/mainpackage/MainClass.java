@@ -7,14 +7,10 @@ import testing.Tester;
 
 
 /**
- * MainClass.java - the large in class example we continue to work 
- * on in each unit adding example code on the new concepts of each unit 
- * along with any in class requests for code examples that might come up 
- * over the courses
+ * MainClass.java - the main class for this project
  *
- * @author Mr. Wachs 
- * @since February 7, 2019 
- * @instructor Mr. Wachs
+ * @author Mr. Wachs
+ * @since Dec. 17, 2019, 8:12:18 a.m.
  */
 public class MainClass 
 {
@@ -25,7 +21,7 @@ public class MainClass
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        new Tester();        
+        new Tester();
     }
-    
+
 }
