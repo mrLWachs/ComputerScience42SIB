@@ -15,7 +15,6 @@ import javax.swing.JFileChooser;
 import java.util.Scanner;
 
 
-
 /**
  * PermanentStorageTest.java - tests the concepts learned in this unit
  *
@@ -31,68 +30,64 @@ public class PermanentStorageTest
     public PermanentStorageTest() {
         Simulator.header("Permanent Storage Test started...");
         
-        Simulator.comment("Error trap examples...");
-        
-        try {
-            double number = Math.PI / 0;            
-            int[] a = { 1, 2, 3 };
-            a[5] = 5;  
+        Simulator.comment("Error trap examples, using the try...catch block");        
+        try {                                               // open try block
+            double number = Math.PI / 0;                    // try for error
+            int[] a = { 1, 2, 3 };                          // create array
+            a[5] = 5;                                       // try for error
+        }                                                   // close try block
+        catch (ArithmeticException error) {                 // catch clause
+            System.out.println(error.toString());           // output error
         }
-        catch (ArithmeticException error) {
-            System.out.println(error.toString());
-        }
-        catch (ArrayIndexOutOfBoundsException error) {
-            System.out.println(error.toString());
+        catch (ArrayIndexOutOfBoundsException error) {      // catch clause
+            System.out.println(error.toString());           // output error
         }
         
-        Simulator.comment("File handling...");
-        
+        Simulator.comment("File handling example, by creating data to use");        
         String[] poem = {
           "I should probably sleep",  
           "And you should too",
           "But who needs sleep",
           "When you have nothing to do"
-        };
+        };                                                  // student poem        
+        String word = "Sneezel";                            // student word
         
-        String word = "Sneezel";
-        
-        // set up the error trap
-       
-        try {
-            // creating instances (objects) of class
-            FileWriter  writer  = new FileWriter("data.txt");
+        Simulator.comment("First we try to write data to the file (save)...");
+        try {                                               // open try block
+            // creating instances (objects) of file handling classes
+            FileWriter  writer  = new FileWriter("data.txt");  
             PrintWriter printer = new PrintWriter(writer);
-            printer.println(word);
-            for (String line : poem) {
-                printer.println(line);
+            printer.println(word);                          // write to file
+            for (String line : poem) {                      // traverse array
+                printer.println(line);                      // write to file
             }
-            printer.close();            
-        } catch (IOException e) {
-            System.out.println("File error");
+            printer.close();                        // close connection to file
+        } catch (IOException e) {                           // error clause
+            System.out.println("File writing error");       // output error
         }
         
-        // now read the data from the file (open)
-        
+        Simulator.comment("Now we read the same data from the file (open)...");
         try {
             FileReader     reader = new FileReader("data.txt");
             BufferedReader buffer = new BufferedReader(reader);
-            LinkedList<String> lines = new LinkedList<>();
-            String line = buffer.readLine();
-            while (line != null) {
-                lines.add(line);
-                line = buffer.readLine();
+            LinkedList<String> lines = new LinkedList<>();      // to hold lines
+            String line = buffer.readLine();                    // read a line
+            while (line != null) {                  // read until no more lines
+                lines.add(line);                                // add to list
+                line = buffer.readLine();                    // read next line
             }
-            System.out.println(lines.toString());
-            buffer.close();            
-        } catch (IOException e) {
-            System.out.println("File error");
+            System.out.println(lines.toString());               // output list
+            buffer.close();                        // close connection to file
+        } catch (IOException e) {                               // error clause
+            System.out.println("File read error");              // input error
         }
         
-        // involve the user        
-        Scanner scanner = new Scanner(java.lang.System.in);
-        String  phrase  = scanner.nextLine();
+        Simulator.comment("Now we will involve the user...");
+        Simulator.comment("Using basic standard input (scanner)");        
+        Scanner scanner = new Scanner(java.lang.System.in);   // create scanner
+        String  phrase  = scanner.nextLine();                 // read in a line
         
-        // now we need a file to save it in
+        Simulator.comment("A dialog for choosing the file to save to...");
         JFileChooser chooser = new JFileChooser();
         chooser.showSaveDialog(null);
         
