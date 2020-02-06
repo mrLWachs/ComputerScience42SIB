@@ -20,7 +20,6 @@ import java.io.PrintWriter;
  * @author Mr. Wachs 
  * @param <T> the generic data type to use
  * @since Dec 6, 2017 
- * @instructor Mr. Wachs
  */
 public class FileHandler <T>
 {

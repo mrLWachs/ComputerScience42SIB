@@ -7,14 +7,18 @@ package collections;
  * Node.java - a representation of a generic node for use with
  * a LinkedList object, and could be "visualized" as:
  * 
+ * <pre>
+ * 
  *                      NODE
  *                +--------------+
- * previous <---- |              |
+ * previous {---- |              |
  *                |     data     |
  *                |   (generic)  |
- *                |              |----> next
+ *                |              |----} next
  *                +--------------+
  *
+ * </pre>
+ * 
  * @author Mr. Wachs 
  * @param <T> the generic data type used in the class
  * @since 6-May-2019 

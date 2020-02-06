@@ -23,7 +23,6 @@ import javax.swing.JTextArea;
  *
  * @author Mr. Wachs
  * @since Dec 12, 2017
- * @instructor Mr. Wachs
  */
 public class Dialogs
 {

@@ -22,7 +22,6 @@ import io.JOptionPane;
  *
  * @author Mr. Wachs
  * @since 09-Feb-2019
- * @instructor Mr. Wachs
  */
 public class ComputerScience30S {   // Curly brackets DO NOT remove
 

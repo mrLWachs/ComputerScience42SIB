@@ -224,6 +224,7 @@ public class Text
     /**
      * Formats the array into a string that could be outputted
      * 
+     * @param <T> the generic data type used
      * @param array the array to format
      * @return a string of formatted text
      */
@@ -351,6 +352,7 @@ public class Text
      * Pad the string with trailing spaces to make sure it is the length
      * of the parameter
      * 
+     * @param <T> the generic data type used
      * @param original the string to pad
      * @param length the length to pad it to
      * @return the original string with padding of spaces at the end
@@ -370,6 +372,7 @@ public class Text
      * Pad all the array spots with trailing spaces to make sure it is the 
      * length of the parameter
      * 
+     * @param <T> the generic data type used
      * @param array the array of values to pad
      * @param length the length to pad it to
      * @return the original array with padding of spaces at the ends
@@ -387,6 +390,7 @@ public class Text
      * Pad all the matrix spots with trailing spaces to make sure it is the 
      * length of the parameter
      * 
+     * @param <T> the generic data type used
      * @param matrix the matrix of values to pad
      * @param length the length to pad it to
      * @return the original matrix with padding of spaces at the ends
@@ -406,6 +410,7 @@ public class Text
      * Pad all the LinkedList spots with trailing spaces to make sure it is the 
      * length of the parameter
      * 
+     * @param <T> the generic data type used
      * @param list the LinkedList of values to pad
      * @param length the length to pad it to
      * @return the original LinkedList with padding of spaces at the ends
@@ -423,6 +428,7 @@ public class Text
      * Pad all the array spots with trailing spaces to make sure it is the 
      * length of the parameter
      * 
+     * @param <T> the generic data type used
      * @param array the array of values to pad
      * @return the original array with padding of spaces at the ends
      */
@@ -440,6 +446,7 @@ public class Text
      * Pad all the matrix spots with trailing spaces to make sure it is the 
      * length of the parameter
      * 
+     * @param <T> the generic data type used
      * @param matrix the matrix of values to pad
      * @return the original matrix with padding of spaces at the ends
      */
@@ -459,6 +466,7 @@ public class Text
      * Pad all the LinkedList spots with trailing spaces to make sure it is the 
      * length of the parameter
      * 
+     * @param <T> the generic data type used
      * @param list the LinkedList of values to pad
      * @return the original LinkedList with padding of spaces at the ends
      */

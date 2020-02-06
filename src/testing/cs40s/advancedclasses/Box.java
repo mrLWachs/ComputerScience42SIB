@@ -21,7 +21,7 @@ public class Box <T>
     /**
      * Default constructor for the class, sets class properties
      * 
-     * @param item the thing to put in the box 
+     * @param present the thing to put in the box 
      */
     public Box(T present) {
         this.present = present;

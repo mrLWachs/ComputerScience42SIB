@@ -10,14 +10,17 @@ import java.lang.reflect.Array;
  * LinkedList.java - an implementation of a linked list abstract (advanced)
  * data (dynamic) type (ADT) and useful methods, and could be "visualized" as:
  * 
+ * <pre>
  *             +------+       +------+       +------+       +------+      
- *  null <---- |      | <---- |      | <---- |      | <---- |      |  
+ *  null {---- |      | {---- |      | {---- |      | {---- |      |  
  *             | NODE |       | NODE |       | NODE |       | NODE |       
- *             |      |---->  |      |---->  |      |---->  |      |----> null  
+ *             |      |----}  |      |----}  |      |----}  |      |----} null  
  *             +------+       +------+       +------+       +------+      
  *                 ^                                           ^
  *                 |                                           |
  *                head                                        tail
+ *
+ * </pre>
  * 
  * @author Mr. Wachs 
  * @param <T> the generic data type used in the class

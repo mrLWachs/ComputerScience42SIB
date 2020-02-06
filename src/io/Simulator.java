@@ -204,6 +204,7 @@ public class Simulator
      *
      * @param message The Object type to be 'printed'
      * @param dialogType the style of dialog that was called
+     * @return returns the simulator flag
      */
     public static String dialog(Object message, String dialogType) {
         dialog(null, message, null, 0, 0, null, null, null, dialogType);

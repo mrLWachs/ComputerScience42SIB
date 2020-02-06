@@ -14,7 +14,6 @@ import io.System;
  *
  * @author Mr. Wachs 
  * @since 09-Mar-2019 
- * @instructor Mr. Wachs
  */
 public class Person 
 {
