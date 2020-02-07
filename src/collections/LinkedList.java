@@ -3,6 +3,7 @@
 package collections;
 
 /** required imports */
+import java.io.Serializable;
 import java.lang.reflect.Array;
 
 
@@ -26,7 +27,7 @@ import java.lang.reflect.Array;
  * @param <T> the generic data type used in the class
  * @since 6-May-2019 
  */
-public class LinkedList <T>
+public class LinkedList <T> implements Serializable
 {
     
     /** Flag to indicate a search was not found */

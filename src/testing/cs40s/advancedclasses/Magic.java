@@ -2,6 +2,8 @@
 /** required package class namespace */
 package testing.cs40s.advancedclasses;
 
+import java.io.Serializable;
+
  
 /**
  * Magic.java - represents magic
@@ -9,7 +11,7 @@ package testing.cs40s.advancedclasses;
  * @author Mr. Wachs
  * @since Oct. 21, 2019, 10:41:04 a.m.
  */
-public class Magic 
+public class Magic implements Serializable
 {
 
     /**

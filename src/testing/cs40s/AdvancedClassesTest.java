@@ -98,7 +98,7 @@ public class AdvancedClassesTest
         // create various custom objects...
         Rapunzel               rapunzel   = new Rapunzel();
         Hercules               hercules   = new Hercules();
-        Genie                  genie      = new Genie();
+        Genie                  genie      = new Genie("");
         Fairy                  tinkerbell = new Fairy();
         Animals                flounder   = new Animals();
         ComputerScienceTeacher rogowy     = new ComputerScienceTeacher();

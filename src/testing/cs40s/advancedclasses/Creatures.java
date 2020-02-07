@@ -2,6 +2,8 @@
 /** required package class namespace */
 package testing.cs40s.advancedclasses;
 
+import java.io.Serializable;
+
  
 /**
  * Creatures.java - represents a creature
@@ -9,7 +11,7 @@ package testing.cs40s.advancedclasses;
  * @author Mr. Wachs
  * @since Oct. 21, 2019, 10:41:11 a.m.
  */
-public class Creatures 
+public class Creatures implements Serializable
 {
     
     public Magic magic;             // associated object 

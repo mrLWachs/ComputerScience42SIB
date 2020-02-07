@@ -2,6 +2,8 @@
 /** required package class namespace */
 package testing.cs40s.advancedclasses;
 
+import java.io.Serializable;
+
  
 /**
  * Genie.java - represents a genie creature
@@ -9,14 +11,16 @@ package testing.cs40s.advancedclasses;
  * @author Mr. Wachs
  * @since Oct. 21, 2019, 10:41:18 a.m.
  */
-public class Genie extends Creatures
+public class Genie extends Creatures implements Serializable
 {
 
+    public String name;
+    
     /**
      * Default constructor, set class properties
      */
-    public Genie() {
-        
+    public Genie(String name) {
+        this.name = name;
     }
 
     /**
@@ -26,7 +30,7 @@ public class Genie extends Creatures
      */
     @Override
     public String toString() {
-        return "Genie: " + super.toString();
+        return name;
     }
     
     /**
@@ -37,7 +41,8 @@ public class Genie extends Creatures
      */
     @Override
     public boolean equals(Object object) {
-        return super.equals(object);
+        Genie that = (Genie)object;
+        return this.name.equals(that.name);
     }
         
     /**
