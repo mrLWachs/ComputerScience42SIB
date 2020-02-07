@@ -81,40 +81,40 @@ public class PermanentStorageTest
         } catch (IOException e) {                               // error clause
             System.out.println("File read error");              // input error
         }
-        Simulator.comment("Now we will involve the user...");
-        Simulator.comment("Using basic standard input (scanner)");  
-        Simulator.comment("Please type in phrase below:");  
-        Scanner scanner = new Scanner(java.lang.System.in);   // create scanner
-        String  phrase  = scanner.nextLine();                 // read in a line
-        Simulator.comment("A dialog for choosing the file to save to...");
-        JFileChooser chooser = new JFileChooser();      // graphic dialog object
-        chooser.showSaveDialog(null);                   // show the save dialog
-        File file = chooser.getSelectedFile();          // get the user file 
-        if (file != null || file.exists()) {            // error check
-            try {                                              
-                FileWriter writer = new FileWriter(file);
-                PrintWriter print = new PrintWriter(writer);
-                print.println(phrase);                          // save to file
-                print.close();                                  // close file
-            } 
-            catch (IOException e) {
-                System.out.println("Save error");
-            }
-        }
-        Simulator.comment("Now use another dialog to open the same file...");       
-        chooser.showOpenDialog(null);                   // show the open dialog
-        file = chooser.getSelectedFile();               // get the user file
-        if (file != null && file.exists()) {            // error check
-            try {
-               FileReader     reader = new FileReader(file);
-               BufferedReader buffer = new BufferedReader(reader);
-               phrase = buffer.readLine();                      // read file      
-               buffer.close();                                  // close file
-            } catch (IOException e) {
-                System.out.println("Open error");
-            }            
-        }
-        System.out.println(phrase);                             // output data
+//        Simulator.comment("Now we will involve the user...");
+//        Simulator.comment("Using basic standard input (scanner)");  
+//        Simulator.comment("Please type in phrase below:");  
+//        Scanner scanner = new Scanner(java.lang.System.in);   // create scanner
+//        String  phrase  = scanner.nextLine();                 // read in a line
+//        Simulator.comment("A dialog for choosing the file to save to...");
+//        JFileChooser chooser = new JFileChooser();      // graphic dialog object
+//        chooser.showSaveDialog(null);                   // show the save dialog
+//        File file = chooser.getSelectedFile();          // get the user file 
+//        if (file != null || file.exists()) {            // error check
+//            try {                                              
+//                FileWriter writer = new FileWriter(file);
+//                PrintWriter print = new PrintWriter(writer);
+//                print.println(phrase);                          // save to file
+//                print.close();                                  // close file
+//            } 
+//            catch (IOException e) {
+//                System.out.println("Save error");
+//            }
+//        }
+//        Simulator.comment("Now use another dialog to open the same file...");       
+//        chooser.showOpenDialog(null);                   // show the open dialog
+//        file = chooser.getSelectedFile();               // get the user file
+//        if (file != null && file.exists()) {            // error check
+//            try {
+//               FileReader     reader = new FileReader(file);
+//               BufferedReader buffer = new BufferedReader(reader);
+//               phrase = buffer.readLine();                      // read file      
+//               buffer.close();                                  // close file
+//            } catch (IOException e) {
+//                System.out.println("Open error");
+//            }            
+//        }
+//        System.out.println(phrase);                             // output data
         Simulator.comment("Create some complete objects to save and open...");
         Text text = new Text();                         // for random names
         LinkedList<Genie> genies = new LinkedList<>();  // collection of genies
@@ -129,6 +129,52 @@ public class PermanentStorageTest
         System.out.println(genies.toString());          // output both lists
         System.out.println(jeans.toString());           // to compare
         System.out.println(genies.equals(jeans));
+        
+        String             before      = "word";
+        String             after       = "";
+        String             add         = "more";
+        String             filename    = "file1.txt";
+        File               dataFile    = new File("file2.txt");
+        String[]           beforeArray = { before, before };
+        String[]           afterArray  = null;
+        LinkedList<String> beforeList  = new LinkedList<>(beforeArray);
+        LinkedList<String> afterList   = null;
+        
+        handler.save(before, filename);        
+        after = handler.open(filename);
+        
+        System.out.println("before: " + before);
+        System.out.println("after:  " + after);
+        
+        handler.save(before, dataFile);
+        after = handler.open(dataFile);
+        
+        System.out.println("before: " + before);
+        System.out.println("after:  " + after);
+        
+        handler.save(beforeArray, dataFile);
+        handler.save(beforeList, dataFile);
+        
+        afterArray = handler.openArray(dataFile);
+        afterList  = handler.openList(dataFile);
+        
+        System.out.println("before: " + text.toString(beforeArray));
+        System.out.println("after:  " + text.toString(afterArray));
+        System.out.println("before: " + beforeList.toString());
+        System.out.println("after:  " + afterList.toString());
+                
+        beforeArray = handler.openArray(dataFile);
+        System.out.println("before: " + text.toString(beforeArray));
+        handler.append(add, dataFile);
+        afterArray = handler.openArray(dataFile);
+        System.out.println("after:  " + text.toString(afterArray));
+        
+        LinkedList<Integer> ascii = handler.openASCIICollection(dataFile);
+        System.out.println(ascii.toString());
+        handler.save(before, dataFile);
+        LinkedList<Character> characters = handler.openCharCollection(dataFile);
+        System.out.println(characters.toString());
+                
         Simulator.header("Permanent Storage Test completed!");
     }   
 

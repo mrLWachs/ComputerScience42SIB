@@ -411,7 +411,7 @@ public class FileHandler <T>
      * @return a LinkedList of Character contents or null
      */
     public LinkedList<Character> openCharCollection(File file) {
-        LinkedList<Integer> list = openASCIICollection(file);
+        LinkedList<Integer>   list       = openASCIICollection(file);
         LinkedList<Character> characters = new LinkedList<>();
         for (int i = 0; i < list.size(); i++) {
             int       value1 = list.get(i).intValue();
