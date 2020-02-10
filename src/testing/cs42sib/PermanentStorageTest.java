@@ -128,52 +128,7 @@ public class PermanentStorageTest
                 (LinkedList<Genie>)handler.openObject("genies.abc");    // open
         System.out.println(genies.toString());          // output both lists
         System.out.println(jeans.toString());           // to compare
-        System.out.println(genies.equals(jeans));
         
-        String             before      = "word";
-        String             after       = "";
-        String             add         = "more";
-        String             filename    = "file1.txt";
-        File               dataFile    = new File("file2.txt");
-        String[]           beforeArray = { before, before };
-        String[]           afterArray  = null;
-        LinkedList<String> beforeList  = new LinkedList<>(beforeArray);
-        LinkedList<String> afterList   = null;
-        
-        handler.save(before, filename);        
-        after = handler.open(filename);
-        
-        System.out.println("before: " + before);
-        System.out.println("after:  " + after);
-        
-        handler.save(before, dataFile);
-        after = handler.open(dataFile);
-        
-        System.out.println("before: " + before);
-        System.out.println("after:  " + after);
-        
-        handler.save(beforeArray, dataFile);
-        handler.save(beforeList, dataFile);
-        
-        afterArray = handler.openArray(dataFile);
-        afterList  = handler.openList(dataFile);
-        
-        System.out.println("before: " + text.toString(beforeArray));
-        System.out.println("after:  " + text.toString(afterArray));
-        System.out.println("before: " + beforeList.toString());
-        System.out.println("after:  " + afterList.toString());
-                
-        beforeArray = handler.openArray(dataFile);
-        System.out.println("before: " + text.toString(beforeArray));
-        handler.append(add, dataFile);
-        afterArray = handler.openArray(dataFile);
-        System.out.println("after:  " + text.toString(afterArray));
-        
-        LinkedList<Integer> ascii = handler.openASCIICollection(dataFile);
-        System.out.println(ascii.toString());
-        handler.save(before, dataFile);
-        LinkedList<Character> characters = handler.openCharCollection(dataFile);
-        System.out.println(characters.toString());
                 
         Simulator.header("Permanent Storage Test completed!");
     }   
