@@ -64,8 +64,63 @@ public class SearchSortTest
         sorted = bubbleSort(array);
         results(array,sorted);
         
+        sorted = selectionSort(array);
+        results(array,sorted);
+        
+        for (int i = 0; i < findItems.length; i++) {
+            int item = findItems[i];
+            index = binarySearch(sorted,item);
+            results(sorted,item,found,index);
+        }
+        
+
+
         
         Simulator.header("Searching and Sorting Test completed!");
     }   
+
+    private boolean search(int[] array, int item) {
+        return false;
+    }
+
+    private int linearSearch(int[] array, int item) {
+        return -1;
+    }
+
+    private int[] bubbleSort(int[] array) {
+        return null;
+    }
+    
+    private int[] selectionSort(int[] array) {
+        return null;
+    }
+
+    private int binarySearch(int[] sorted, int item) {
+        return -1;
+    }
+    
+    
+    
+    private void results(int[] array, int item, 
+                         boolean found, int index) {
+        Text display = new Text();
+        String text = "Array " + display.toString(array); 
+        text += " search for " + item;
+        text += " was " + found;
+        text += " at index " + index;
+        System.out.println(text);
+    }
+
+    private void results(int[] array, int[] sorted) {
+        Text display = new Text();
+        String text = "Original Array \t" + display.toString(array); 
+        if (sorted == null) text += "\nnull";
+        else {
+            text += "\nSorted Array \t" + display.toString(sorted);
+        }
+        System.out.println(text);
+    }
+
+    
 
 }
