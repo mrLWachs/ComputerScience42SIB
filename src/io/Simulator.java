@@ -31,7 +31,9 @@ public class Simulator
     private static final String SIMULATED_DIALOG_2       = "} DIALOG: ";
     private static final int    FLAG_INTEGER             = -1;
     private static final String FLAG_STRING              = "-1";
-    private static final File   FLAG_FILE                = new File("");    
+    private static final String FLAG_FILENAME            = "simulatedFile.txt";
+    private static final String FLAG_INPUT               = "simulated input line";
+    private static final File   FLAG_FILE                = new File(FLAG_FILENAME); 
     private static final String NEW_LINE                 = "\n";
     private static final String COMMENT                  = "// ";
     private static final String NULL                     = "null";
@@ -365,14 +367,14 @@ public class Simulator
         colorOutput(text, GREEN, RESET);
         return FLAG_INTEGER;
     }
-    
+
     /**
      * Simulates the "Open File" file chooser dialog
      *
      * @param frame the parent component of the dialog
      * @return the file chosen by user
      */
-    public File showOpenDialog(JDialog frame) {
+    public static File showOpenDialog(JDialog frame) {
         dialog(frame,null,null,0,0,null,null,null,FILE_CHOOSER_DIALOG);
         return FLAG_FILE;
     }
@@ -383,7 +385,7 @@ public class Simulator
      * @param frame the parent component of the dialog
      * @return the file chosen by user
      */
-    public File showSaveDialog(JDialog frame) {
+    public static File showSaveDialog(JDialog frame) {
         dialog(frame,null,null,0,0,null,null,null,FILE_CHOOSER_DIALOG);
         return FLAG_FILE;
     }
@@ -394,7 +396,7 @@ public class Simulator
      * @param frame the parent component of the dialog
      * @return the file chosen by user
      */
-    public File showOpenDialog(JFrame frame) {
+    public static File showOpenDialog(JFrame frame) {
         dialog(frame,null,null,0,0,null,null,null,FILE_CHOOSER_DIALOG);
         return FLAG_FILE;
     }
@@ -405,7 +407,7 @@ public class Simulator
      * @param frame the parent component of the dialog
      * @return the file chosen by user
      */
-    public File showSaveDialog(JFrame frame) {
+    public static File showSaveDialog(JFrame frame) {
         dialog(frame,null,null,0,0,null,null,null,FILE_CHOOSER_DIALOG);
         return FLAG_FILE;
     }
@@ -417,6 +419,22 @@ public class Simulator
      */
     public static void showFrame(JFrame frame) {
         dialog(frame,null,null,0,0,null,null,null,FRAME);
+    }
+    
+    /**
+     * 
+     * @return 
+     */
+    public static String scannerInput() {
+        return FLAG_INPUT;
+    }
+
+    /**
+     * 
+     * @return 
+     */
+    public static File getFile() {
+        return FLAG_FILE;
     }
     
 }

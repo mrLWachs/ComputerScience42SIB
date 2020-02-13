@@ -3,6 +3,8 @@
 package testing.cs42sib;
 
 /** required imports */
+import io.JFileChooser;
+import io.Scanner;
 import collections.LinkedList;
 import io.FileHandler;
 import io.Simulator;
@@ -13,8 +15,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.swing.JFileChooser;
-import java.util.Scanner;
+//import javax.swing.JFileChooser;
+//import java.util.Scanner;
 import testing.cs40s.advancedclasses.Genie;
 import tools.Text;
 
