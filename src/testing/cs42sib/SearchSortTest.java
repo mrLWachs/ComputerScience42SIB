@@ -31,10 +31,38 @@ public class SearchSortTest
         
         Numbers numbers = new Numbers();
         Text    text    = new Text();
-        int[]   array   = numbers.random(-100, 100, 30);
         
+        final int MIN  = 0;
+        final int MAX  = 30;
+        int[]   array  = numbers.random(-100, 100, MAX);
         
-        System.out.println(text.toString(array));
+        int randomItem = numbers.random(-100, 100);
+        int itemInList = array[numbers.random(MIN+1,MAX-2)];
+        int firstItem  = array[0];
+        int lastItem   = array[MAX-1];
+        int notInList  = Integer.MAX_VALUE;
+        
+        int[] findItems = {
+            randomItem,
+            itemInList,
+            firstItem,
+            lastItem,
+            notInList
+        };
+        
+        boolean found  = false;
+        int     index  = -1;
+        int[]   sorted = new int[MAX];
+        
+        for (int i = 0; i < findItems.length; i++) {
+            int item = findItems[i];
+            found = search(array,item);
+            index = linearSearch(array,item);
+            results(array,item,found,index);
+        }
+        
+        sorted = bubbleSort(array);
+        results(array,sorted);
         
         
         Simulator.header("Searching and Sorting Test completed!");
