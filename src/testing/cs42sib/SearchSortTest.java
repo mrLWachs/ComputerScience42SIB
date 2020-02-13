@@ -3,8 +3,11 @@
 package testing.cs42sib;
 
 /** required imports */
+import collections.LinkedList;
 import io.Simulator;
 import tools.Numbers;
+import tools.Search;
+import tools.Sort;
 import tools.Text;
 
 
@@ -86,6 +89,82 @@ public class SearchSortTest
             results(sorted,item,found,index);       // show results
         }
         
+        Simulator.comment("Use classes with search/sort generic methods...");
+        
+        Simulator.comment("Create the objects to use");
+        
+        Text   text   = new Text();
+        Search search = new Search();
+        Sort   sort   = new Sort();
+        
+        Simulator.comment("Create random LinkedList data...");
+        Simulator.comment("Including all edge cases to test for");
+        
+        LinkedList<String> unsortedWords = text.randomList(MAX);
+        LinkedList<String> sortedWords   = new LinkedList<>();
+        
+        String randomWord = text.randomWord();
+        String inListWord = unsortedWords.get(numbers.random(MIN+1,MAX-2));
+        String firstWord  = unsortedWords.front();
+        String lastWord   = unsortedWords.back();
+        String notWord    = "Wachs";
+        
+        LinkedList<String> testCases = new LinkedList<>();
+        testCases.add(randomWord);
+        testCases.add(inListWord);        
+        testCases.add(firstWord);
+        testCases.add(lastWord);
+        testCases.add(notWord);
+        
+        Simulator.comment("Execute all the searches on all test data...");
+        
+        for (int i = 0; i < testCases.size(); i++) {
+            String word = testCases.get(i);
+            index = search.linear(word, unsortedWords);
+            System.out.println("Linear: \t" + unsortedWords.toString() + 
+                    " -> \t" + word + " -> \t" + index);
+            index = search.binary(word, unsortedWords);
+            System.out.println("Binary: \t" + unsortedWords.toString() + 
+                    " -> \t" + word + " -> \t" + index);
+        }
+        
+        Simulator.comment("Execute all the sorts on all test data...");
+        
+        Simulator.comment("Bubble sort LinkedList data...");
+        
+        sortedWords = unsortedWords.clone();
+        sort.bubble(sortedWords);
+        System.out.println("Before: \t" + unsortedWords.toString());
+        System.out.println("After:  \t" + sortedWords.toString());
+        
+        Simulator.comment("Selection sort LinkedList data...");
+        
+        sortedWords = unsortedWords.clone();
+        sort.selection(sortedWords);
+        System.out.println("Before: \t" + unsortedWords.toString());
+        System.out.println("After:  \t" + sortedWords.toString());
+        
+        Simulator.comment("Shell sort LinkedList data...");
+        
+        sortedWords = unsortedWords.clone();
+        sort.shell(sortedWords);
+        System.out.println("Before: \t" + unsortedWords.toString());
+        System.out.println("After:  \t" + sortedWords.toString());
+        
+        Simulator.comment("Insertion sort LinkedList data...");
+        
+        sortedWords = unsortedWords.clone();
+        sort.insertion(sortedWords);
+        System.out.println("Before: \t" + unsortedWords.toString());
+        System.out.println("After:  \t" + sortedWords.toString());
+        
+        Simulator.comment("Quick sort LinkedList data...");
+        
+        sortedWords = unsortedWords.clone();
+        sort.quick(sortedWords);
+        System.out.println("Before: \t" + unsortedWords.toString());
+        System.out.println("After:  \t" + sortedWords.toString());
+                
         Simulator.header("Searching and Sorting Test completed!");
     }   
 
