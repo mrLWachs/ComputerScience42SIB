@@ -66,9 +66,8 @@ public class SearchSortTest
         
         for (int i = 0; i < findItems.length; i++) {    // traverse test cases
             int item = findItems[i];                // test case to search for
-            found = search(array,item);             // simple search
             index = linearSearch(array,item);       // index search
-            results(array,item,found,index);        // show results
+            results(array,item,index);              // show results
         }
         
         Simulator.comment("Now execute the bubble sort...");
@@ -86,9 +85,16 @@ public class SearchSortTest
         for (int i = 0; i < findItems.length; i++) {    // traverse test cases
             int item = findItems[i];                // test case to search for
             index = binarySearch(sorted,item);      // index search
-            results(sorted,item,found,index);       // show results
+            results(sorted,item,index);             // show results
         }
         
+        Simulator.comment("Finally the simpliest search and sort...");
+        Text text = new Text();
+        found = search(array,randomItem);           // simple search
+        sort(array);                                // simple sort
+        System.out.println("Sorted array " + text.toString(array) + 
+                           "\t search for " + randomItem +
+                           "\t is " + found);
         
         Simulator.header("Searching and Sorting Test completed!");
     }   
@@ -102,14 +108,9 @@ public class SearchSortTest
      * @return found (true) or not (false)
      */
     private boolean search(int[] array, int item) {
-        // traverse through the array
         for (int i = 0; i < array.length; i++) {
-            // if I encounter the item, return true
-            if (item == array[i]) {
-                return true;
-            }
+            if (item == array[i]) return true;
         }
-        // make it through the entire list, return false
         return false;
     }
 
@@ -141,10 +142,18 @@ public class SearchSortTest
      * @return the first index found at, or a -1 if not found
      */
     private int linearSearch(int[] array, int item) {
+        // catch a potential error before we begin
         if (array == null) return -1;
+        // traverse through the array
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == item) return i;
+            // if I encounter the item... 
+            if (array[i] == item) {
+                // return the spot I found it at
+                return i;
+            }
         }
+        // made it through the entire list, never found it,
+        // return a "flag" value indicating not found
         return -1;
     }
 
@@ -160,8 +169,8 @@ public class SearchSortTest
         int[] sorted = new int[array.length];
         // make it a copy of the original
         System.arraycopy(array, 0, sorted, 0, array.length);        
-        // we need to traverse the array as many times as
-        // there are items in the array
+        // we need to traverse the array as many times as there are items in
+        // the array
         for (int times = 0; times < sorted.length; times++) {
             // traverse the entire array to the second last spot
             for (int i = 0; i < sorted.length - 1; i++) {
@@ -199,6 +208,10 @@ public class SearchSortTest
     }
 
     
+    
+    
+    
+    
     /**
      * An implementation of a binary search algorithm. It will find the first 
      * occurance of an item in the array and return the index where it found 
@@ -213,21 +226,23 @@ public class SearchSortTest
     }
     
     
+    
+    
+    
+    
+    
     /**
      * Displays the results of a search
      * 
      * @param array the array to search through
      * @param item the item to search for
-     * @param found whether it was found or not
      * @param index which array index it was found at (or -1 if not found)
      */
-    private void results(int[] array, int item, 
-                         boolean found, int index) {
+    private void results(int[] array, int item, int index) {
         Text display = new Text();
         String text = "";
         text += "Array " + display.toString(array); 
         text += "\t search for " + item;
-        text += "\t was "        + found;
         text += "\t at index "   + index;
         System.out.println(text);
     }
