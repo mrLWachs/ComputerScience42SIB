@@ -3,11 +3,8 @@
 package testing.cs42sib;
 
 /** required imports */
-import collections.LinkedList;
 import io.Simulator;
 import tools.Numbers;
-import tools.Search;
-import tools.Sort;
 import tools.Text;
 
 
@@ -66,7 +63,7 @@ public class SearchSortTest
         
         for (int i = 0; i < findItems.length; i++) {    // traverse test cases
             int item = findItems[i];                // test case to search for
-            index = linearSearch(array,item);       // index search
+            index = linearSearch(array,item);       // linear search
             results(array,item,index);              // show results
         }
         
@@ -84,17 +81,16 @@ public class SearchSortTest
         
         for (int i = 0; i < findItems.length; i++) {    // traverse test cases
             int item = findItems[i];                // test case to search for
-            index = binarySearch(sorted,item);      // index search
+            index = binarySearch(sorted,item);      // binary search
             results(sorted,item,index);             // show results
         }
         
         Simulator.comment("Finally the simpliest search and sort...");
-        Text text = new Text();
+        
         found = search(array,randomItem);           // simple search
         sort(array);                                // simple sort
-        System.out.println("Sorted array " + text.toString(array) + 
-                           "\t search for " + randomItem +
-                           "\t is " + found);
+        System.out.println("Sorted array " + new Text().toString(array) + 
+                           " searching for " + randomItem + " is " + found);
         
         Simulator.header("Searching and Sorting Test completed!");
     }   
@@ -109,7 +105,7 @@ public class SearchSortTest
      */
     private boolean search(int[] array, int item) {
         for (int i = 0; i < array.length; i++) {
-            if (item == array[i]) return true;
+            if (array[i] == item) return true;
         }
         return false;
     }
@@ -152,8 +148,8 @@ public class SearchSortTest
                 return i;
             }
         }
-        // made it through the entire list, never found it,
-        // return a "flag" value indicating not found
+        // made it through the entire list, never found it, return a "flag" 
+        // value indicating not found
         return -1;
     }
 
@@ -242,7 +238,7 @@ public class SearchSortTest
         Text display = new Text();
         String text = "";
         text += "Array " + display.toString(array); 
-        text += "\t search for " + item;
+        text += "\t searching for " + item;
         text += "\t at index "   + index;
         System.out.println(text);
     }
