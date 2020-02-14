@@ -102,9 +102,34 @@ public class SearchSortTest
      * @return found (true) or not (false)
      */
     private boolean search(int[] array, int item) {
+        // traverse through the array
+        for (int i = 0; i < array.length; i++) {
+            // if I encounter the item, return true
+            if (item == array[i]) {
+                return true;
+            }
+        }
+        // make it through the entire list, return false
         return false;
     }
 
+    /**
+     * A simple sort, it will sort the array into ascending order
+     * 
+     * @param array the array of items to sort 
+     */
+    public void sort(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length - 1; j++) {
+                if (array[j] > array[j+1]) {
+                    int temp   = array[j];
+                    array[j]   = array[j+1];
+                    array[j+1] = temp;
+                }
+            }
+        }
+    }
+    
     
     /**
      * An implementation of a linear search (sequential search) algorithm. It 
@@ -116,6 +141,10 @@ public class SearchSortTest
      * @return the first index found at, or a -1 if not found
      */
     private int linearSearch(int[] array, int item) {
+        if (array == null) return -1;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == item) return i;
+        }
         return -1;
     }
 
@@ -127,8 +156,36 @@ public class SearchSortTest
      * @param array the array of items to sort
      */
     private int[] bubbleSort(int[] array) {
-        return array;
+        // create a new array, same size as the passed array
+        int[] sorted = new int[array.length];
+        // make it a copy of the original
+        System.arraycopy(array, 0, sorted, 0, array.length);        
+        // we need to traverse the array as many times as
+        // there are items in the array
+        for (int times = 0; times < sorted.length; times++) {
+            // traverse the entire array to the second last spot
+            for (int i = 0; i < sorted.length - 1; i++) {
+                // check each item and the item after it
+                int item1 = sorted[i];
+                int item2 = sorted[i + 1];
+                if (item1 > item2) {
+                    // swap them
+                    sorted[i]     = item2;
+                    sorted[i + 1] = item1;
+                }
+            }
+        }
+        return sorted;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     /**
