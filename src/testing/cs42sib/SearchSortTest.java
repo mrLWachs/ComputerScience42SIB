@@ -79,6 +79,10 @@ public class SearchSortTest
         
         Simulator.comment("Now execute the binary search on all test data...");
         
+        findItems[1] = sorted[numbers.random(MIN+1,MAX-2)];
+        findItems[2] = sorted[0];                      // redo some test data
+        findItems[3] = sorted[MAX-1];
+                
         for (int i = 0; i < findItems.length; i++) {    // traverse test cases
             int item = findItems[i];                // test case to search for
             index = binarySearch(sorted,item);      // binary search
@@ -94,7 +98,6 @@ public class SearchSortTest
         
         Simulator.header("Searching and Sorting Test completed!");
     }   
-
     
     /**
      * A simple search, determines if the item is in the array or not
@@ -126,8 +129,7 @@ public class SearchSortTest
             }
         }
     }
-    
-    
+        
     /**
      * An implementation of a linear search (sequential search) algorithm. It 
      * will find the first occurance of an item in the array and return the
@@ -152,7 +154,6 @@ public class SearchSortTest
         // value indicating not found
         return -1;
     }
-
     
     /**
      * An implementation of a bubble sort algorithm it will sort the array into  
@@ -182,17 +183,7 @@ public class SearchSortTest
         }
         return sorted;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        
     /**
      * An implementation of a selection sort algorithm it will sort the array   
      * into ascending order
@@ -200,14 +191,19 @@ public class SearchSortTest
      * @param array the array of items to sort
      */
     private int[] selectionSort(int[] array) {
-        return array;
+        // create a new array, same size as the passed array
+        int[] sorted = new int[array.length];
+        // make it a copy of the original, then sort this array
+        System.arraycopy(array, 0, sorted, 0, array.length); 
+        
+        
+        // logic here...
+        
+        
+        
+        return sorted;                          // send back the sorted array
     }
 
-    
-    
-    
-    
-    
     /**
      * An implementation of a binary search algorithm. It will find the first 
      * occurance of an item in the array and return the index where it found 
@@ -217,16 +213,10 @@ public class SearchSortTest
      * @param item the item to search for
      * @return the first index found at, or a -1 if not found
      */
-    private int binarySearch(int[] sorted, int item) {
-        return -1;
+    private int binarySearch(int[] array, int item) {
+        return -1;               // not found
     }
-    
-    
-    
-    
-    
-    
-    
+        
     /**
      * Displays the results of a search
      * 
