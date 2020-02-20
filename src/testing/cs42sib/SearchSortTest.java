@@ -197,7 +197,11 @@ public class SearchSortTest
         System.arraycopy(array, 0, sorted, 0, array.length); 
         
         
+        
+        
         // logic here...
+        
+        
         
         
         
@@ -214,6 +218,18 @@ public class SearchSortTest
      * @return the first index found at, or a -1 if not found
      */
     private int binarySearch(int[] array, int item) {
+        
+        
+        
+        
+        
+        // logic here...
+        
+        
+        
+        
+        
+        
         return -1;               // not found
     }
         
