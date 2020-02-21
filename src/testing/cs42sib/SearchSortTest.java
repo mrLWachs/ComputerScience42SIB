@@ -194,17 +194,30 @@ public class SearchSortTest
         // create a new array, same size as the passed array
         int[] sorted = new int[array.length];
         // make it a copy of the original, then sort this array
-        System.arraycopy(array, 0, sorted, 0, array.length); 
-        
-        
-        
-        
-        // logic here...
-        
-        
-        
-        
-        
+        System.arraycopy(array, 0, sorted, 0, array.length);         
+        // traverse the entire array
+        for (int i = 0; i < sorted.length-1; i++) {
+            // track the lowest index, assume it's  the first spot
+            int lowest = i;
+            // inner loop, starts at one over from current position of the 
+            // outer loop used to find the lowest spot
+            for (int j = i+1; j < sorted.length; j++) {
+                int item1 = sorted[j];
+                int item2 = sorted[lowest];
+                // check these spots
+                if (item1 < item2) {
+                    // found a new low...
+                    lowest = j;
+                }
+            }
+            // now that we have the lowest spot, swap the contents of that 
+            // low spot with the contents at spot i
+            if (lowest != i) {
+                int temp       = sorted[i];
+                sorted[i]      = sorted[lowest];
+                sorted[lowest] = temp;
+            }
+        }
         return sorted;                          // send back the sorted array
     }
 
@@ -217,19 +230,21 @@ public class SearchSortTest
      * @param item the item to search for
      * @return the first index found at, or a -1 if not found
      */
-    private int binarySearch(int[] array, int item) {
-        
-        
-        
-        
-        
-        // logic here...
-        
-        
-        
-        
-        
-        
+    private int binarySearch(int[] array, int item) {        
+        // track the low and high indices of the array with "markers"
+        int high = array.length - 1;
+        int low = 0;
+        // loop while the "markers" are not collapsed on themselves
+        while (low <= high) {
+            // find the middle between low and high
+            int mid = (high + low) / 2;
+            // check if found
+            if (array[mid] == item) return mid;
+            // check the spot at, bigger than item
+            else if (array[mid] > item) high = mid - 1;
+            // check for smaller than item
+            else if (array[mid] < item) low = mid + 1;            
+        }
         return -1;               // not found
     }
         
