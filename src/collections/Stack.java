@@ -7,7 +7,17 @@ import java.io.Serializable;
 
  
 /**
- * Stack.java - a Stack ADT using generics
+ * Stack.java - a Stack ADT using generics. The stack class represents a 
+ * last-in-first-out (LIFO) stack of generic objects. The usual push and pop
+ * methods are provided, as well as a method to peek at the top item on the 
+ * stack, a method to test for whether the stack is empty. When a stack is 
+ * first created, it contains no items. It can be visualized as:
+ * 
+ *       top -------> item    (items are removed and added to the top)
+ *                    item
+ *                    item
+ *                    item
+ *       bottom ----> item    (a null at the bottom indicates an empty stack)
  *
  * @author Mr. Wachs
  * @param <T> the generic object used in this class
@@ -26,7 +36,7 @@ public class Stack <T extends Comparable<T>> implements Serializable
      * Default constructor, set class properties
      */
     public Stack() {
-        finalize();
+        finalize();                                     // wipe any current data
     }
     
     /**
@@ -35,9 +45,9 @@ public class Stack <T extends Comparable<T>> implements Serializable
      */
     @Override
     public final void finalize() {
-        length = 0;                                     // length set to zero
-        top    = null;                                  // reference set to null
-        System.gc();                                    // garbage collector called
+        length = 0;                                 // length set to zero
+        top    = null;                              // reference set to null
+        System.gc();                                // garbage collector called
     }
     
     /**
@@ -65,12 +75,12 @@ public class Stack <T extends Comparable<T>> implements Serializable
      * @return operation was successful (true) or not (false)
      */
     public boolean push(T data) {
-        if (data == null) return false;
-        Node node = new Node(data);
-        if (!isEmpty()) node.next = top;
-        top = node;
-        length++;
-        return true;
+        if (data == null) return false;                 // empty stack
+        Node node = new Node(data);                     // create node
+        if (!isEmpty()) node.next = top;                // add first node
+        top = node;                                     // set to top of stack
+        length++;                                       // increase length
+        return true;                                    // operation successful
     }
     
     /**
@@ -80,15 +90,15 @@ public class Stack <T extends Comparable<T>> implements Serializable
      */
     @Override
     public String toString() {
-        if (isEmpty()) return "Empty Stack";
+        if (isEmpty()) return "Empty stack";            // no nodes to display
         else {
-            String text = "Stack [";
-            Node current = top;
-            while (current != null) {
-                text += current.toString() + ",";
-                current = current.next;
-            }
-            return text + "]";
+            String text = "Stack = [";                  // starting character
+            Node current = top;                         // start at top node
+            while (current != null) {                   // traverse stack
+                text += current.toString() + ",";       // append data
+                current = current.next;                 // move to next node
+            }            
+            return text + "]";                          // append end character
         }
     }
     

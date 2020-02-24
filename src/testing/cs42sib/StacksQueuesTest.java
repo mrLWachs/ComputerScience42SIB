@@ -6,7 +6,6 @@ package testing.cs42sib;
 import collections.Stack;
 import io.Simulator;
 import io.System;
-import testing.cs40s.advancedclasses.Box;
 
 
 /**
@@ -24,14 +23,15 @@ public class StacksQueuesTest
     public StacksQueuesTest() {
         Simulator.header("Stacks and Queues Test started...");
         
-        Simulator.comment("Test the Stack....");
-        Simulator.comment("Create a Stack....");
+        Simulator.comment("Test the Stack class....");
         
+        Simulator.comment("Create a new Stack....");        
         Stack stack = new Stack();
         
-        System.out.println(stack.toString());
-        System.out.println("Size  = " + stack.size());
-        System.out.println("Empty = " + stack.isEmpty());
+        Simulator.comment("Test toString(), size(), and isEmpty()");
+        System.out.println("String = " + stack.toString());
+        System.out.println("Size   = " + stack.size());
+        System.out.println("Empty  = " + stack.isEmpty());
                 
         
         
