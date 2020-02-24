@@ -2,11 +2,12 @@
 /** required package class namespace */
 package collections;
 
+/** required imports */
 import java.io.Serializable;
 
  
 /**
- * Stack.java - description
+ * Stack.java - a Stack ADT using generics
  *
  * @author Mr. Wachs
  * @param <T> the generic object used in this class
@@ -19,7 +20,6 @@ public class Stack <T extends Comparable<T>> implements Serializable
     private Node top;
     /** The number of nodes in the stack */
     private int length;
-    
     
     
     /**
@@ -58,11 +58,21 @@ public class Stack <T extends Comparable<T>> implements Serializable
         return length;
     }
     
+    /**
+     * Adds data to the top of the stack
+     * 
+     * @param data the generic data to add
+     * @return operation was successful (true) or not (false)
+     */
+    public boolean push(T data) {
+        if (data == null) return false;
+        Node node = new Node(data);
+        if (!isEmpty()) node.next = top;
+        top = node;
+        length++;
+        return true;
+    }
     
-    
-    
-    
-
     /**
      * String representation of this object
      *
@@ -70,11 +80,16 @@ public class Stack <T extends Comparable<T>> implements Serializable
      */
     @Override
     public String toString() {
-        
-        
-        
-        
-        return "Stack: " + super.toString();
+        if (isEmpty()) return "Empty Stack";
+        else {
+            String text = "Stack [";
+            Node current = top;
+            while (current != null) {
+                text += current.toString() + ",";
+                current = current.next;
+            }
+            return text + "]";
+        }
     }
     
     /**

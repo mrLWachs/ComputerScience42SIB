@@ -200,12 +200,18 @@ public class AdvancedClassesTest
         // using a generic class, when a generic class is instantiated (an 
         // object of the class is created), then you define what type the 
         // generic is       
-        Box<Boolean>      box1 = new Box<>(bool);
-        Box<Integer>      box2 = new Box<>(integer);
-        Box<Double>       box3 = new Box<>(doub);
-        Box<Character>    box4 = new Box<>(character);
-        Box<String>       box5 = new Box<>(string);
-        Box<HuskyAthlete> box6 = new Box<>(athlete);
+//        Box<Boolean>      box1 = new Box<>(bool);
+//        Box<Integer>      box2 = new Box<>(integer);
+//        Box<Double>       box3 = new Box<>(doub);
+//        Box<Character>    box4 = new Box<>(character);
+//        Box<String>       box5 = new Box<>(string);
+//        Box<HuskyAthlete> box6 = new Box<>(athlete);
+        Box<String> box1 = new Box<>(string);
+        Box<String> box2 = new Box<>(string);
+        Box<String> box3 = new Box<>(string);
+        Box<String> box4 = new Box<>(string);
+        Box<String> box5 = new Box<>(string);
+        Box<String> box6 = new Box<>(string);
         
         // peek in the boxes
         box1.peek();
@@ -216,12 +222,18 @@ public class AdvancedClassesTest
         box6.peek();
         
         // open all the boxes
-        Boolean   newBool   = box1.open();
-        Integer   newInt    = box2.open();
-        Double    newDoub   = box3.open();
-        Character newChar   = box4.open();
-        String    newString = box5.open();
-        Person    newPerson = box6.open();
+//        Boolean   newBool   = box1.open();
+//        Integer   newInt    = box2.open();
+//        Double    newDoub   = box3.open();
+//        Character newChar   = box4.open();
+//        String    newString = box5.open();
+//        Person    newPerson = box6.open();
+        String newBool   = box1.open();
+        String newInt    = box2.open();
+        String newDoub   = box3.open();
+        String newChar   = box4.open();
+        String newString = box5.open();
+        String newPerson = box6.open();
         
         // output the new data type variables
         System.out.println(newBool.toString());
