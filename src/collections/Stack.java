@@ -83,6 +83,41 @@ public class Stack <T extends Comparable<T>> implements Serializable
         return true;                                    // operation successful
     }
     
+    
+    
+    /**
+     * Removes the data from the top of the stack,
+     * it mutates (changes) the stack
+     * 
+     * @return the data from the top of the stack
+     */
+    public T pop() {
+        if (isEmpty()) return null;                     // no nodes in stack
+        else {                                          // stack has some nodes
+            length--;                                   // reduce length
+            T data = (T)top.data;                       // store data
+            top = top.next;                             // adjust top reference
+            System.gc();                                // remove garbage memory
+            return data;                                // data returned
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * String representation of this object
      *
@@ -110,7 +145,27 @@ public class Stack <T extends Comparable<T>> implements Serializable
      */
     @Override
     public boolean equals(Object object) {
-        return super.equals(object);
+        if (!(object instanceof Stack)) return false;
+        try {
+            Stack stack1 = ((Stack)object).clone();
+            Stack stack2 = this.clone();
+            if (stack1.size() != stack2.size()) {
+                return false;
+            }
+            else {
+                while(!stack2.isEmpty()) {
+                    T data1 = (T)stack1.pop();
+                    T data2 = (T)stack2.pop();
+                    if (!data1.equals(data2)) {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+        catch (ClassCastException | NullPointerException e) {
+            return false;
+        }
     }
         
     /**
@@ -120,7 +175,21 @@ public class Stack <T extends Comparable<T>> implements Serializable
      */
     @Override
     public Stack clone() {
-        return this;
+        Stack<T> copy = new Stack<>();
+        // traverse "this" stack, and push to the copy
+        Node current = this.top;
+        while (current != null) {
+            T data = (T)current.data;
+            copy.push(data);
+            current = current.next;
+        }
+        // now go through again, to reverse the stack
+        Stack<T> doppelganger = new Stack<>();
+        while(!copy.isEmpty()) {
+            T data = (T)copy.pop();
+            doppelganger.push(data);
+        }
+        return doppelganger;
     }
 
 }
