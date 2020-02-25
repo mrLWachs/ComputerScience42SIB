@@ -28,8 +28,9 @@ public class StacksQueuesTest
         
         Simulator.comment("Test the Stack constructor....");
         
-        final int MAX = 10;
-        
+        final int MAX       = 10;
+        final int WORD_SIZE = 5;
+                
         Stack stack = new Stack();
         Text  text  = new Text();
         
@@ -38,7 +39,7 @@ public class StacksQueuesTest
                            "\tSize = " + stack.size() + 
                            "\t"        + stack.toString());        
         for (int i = 0; i < MAX; i++) {
-            Box<String> box = new Box<>(text.randomWord(5));
+            Box<String> box = new Box<>(text.randomWord(WORD_SIZE));
             stack.push(box);
             System.out.println("Empty = "  + stack.isEmpty() +
                                "\tSize = " + stack.size() + 
@@ -77,7 +78,7 @@ public class StacksQueuesTest
         System.out.println(boxList.toString());
         Box[] boxArray = new Box[0];
         boxArray = (Box[])stack.toArray(boxArray);
-        System.out.println("Array " + text.toString(boxArray));
+        System.out.println("Array \t" + text.toString(boxArray));
         copy = new Stack(boxList);
         System.out.println(copy.toString());
         copy = new Stack(boxArray);
