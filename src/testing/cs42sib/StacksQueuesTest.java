@@ -3,6 +3,7 @@
 package testing.cs42sib;
 
 /** required imports */
+import collections.LinkedList;
 import collections.Stack;
 import io.Simulator;
 import io.System;
@@ -25,51 +26,62 @@ public class StacksQueuesTest
     public StacksQueuesTest() {
         Simulator.header("Stacks and Queues Test started...");
         
-        Simulator.comment("Test the Stack class....");
-        
-        Simulator.comment("Create a new Stack....");    
+        Simulator.comment("Test the Stack constructor....");
         
         final int MAX = 10;
         
         Stack stack = new Stack();
         Text  text  = new Text();
         
-        Simulator.comment("Test toString,size,isEmpty, and push...");
-        
+        Simulator.comment("Test toString, size, isEmpty, and push...");        
         System.out.println("Empty = "  + stack.isEmpty() +
                            "\tSize = " + stack.size() + 
-                           "\t"        + stack.toString());
-        
+                           "\t"        + stack.toString());        
         for (int i = 0; i < MAX; i++) {
-            Box<String> box = new Box<>(text.randomWord());
+            Box<String> box = new Box<>(text.randomWord(5));
             stack.push(box);
             System.out.println("Empty = "  + stack.isEmpty() +
                                "\tSize = " + stack.size() + 
                                "\t"        + stack.toString());
         }
         
-        Simulator.comment("Test copy......");
+        Simulator.comment("Test clone......");
         Stack copy = stack.clone();
         System.out.println("Empty = "  + copy.isEmpty() +
                            "\tSize = " + copy.size() + 
                            "\t"        + copy.toString());
         
         Simulator.comment("Test equals......");
-        if (stack.equals(copy)) System.out.println("==");
-        else                    System.out.println("!=");
+        if (stack.equals(copy)) System.out.println("stack == copy");
+        else                    System.out.println("stack != copy");
         
         Simulator.comment("Test pop......");
         for (int i = 0; i < MAX; i++) {
             Box box = (Box)copy.pop();
-            System.out.println(box.toString());
+            System.out.print(box.toString() + "\t->\t");
             System.out.println("Empty = "  + copy.isEmpty() +
                                "\tSize = " + copy.size() + 
                                "\t"        + copy.toString());
         }
         
-        Simulator.comment("Test equals......");
-        if (stack.equals(copy)) System.out.println("==");
-        else                    System.out.println("!=");
+        Simulator.comment("Test equals (again)......");
+        if (stack.equals(copy)) System.out.println("stack == copy");
+        else                    System.out.println("stack != copy");
+        
+        Simulator.comment("Test peek (or top)......");
+        System.out.println(stack.peek() + "\t -> \t" + stack.toString());
+        System.out.println(copy.peek()  + "\t -> \t" + copy.toString());
+        
+        Simulator.comment("Test toLinkedList, toArray, and constructors...");        
+        LinkedList<Box> boxList = stack.toLinkedList();
+        System.out.println(boxList.toString());
+        Box[] boxArray = new Box[0];
+        boxArray = (Box[])stack.toArray(boxArray);
+        System.out.println("Array " + text.toString(boxArray));
+        copy = new Stack(boxList);
+        System.out.println(copy.toString());
+        copy = new Stack(boxArray);
+        System.out.println(copy.toString());        
         
         Simulator.header("Stacks and Queues Test completed!");
     }   

@@ -78,7 +78,7 @@ public class System
          * @param object The Object type to be 'printed'
          */
         public static void print(Object object) {
-            Simulator.output(object,true);
+            Simulator.output(object,false);
         }
         
         /**

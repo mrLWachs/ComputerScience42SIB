@@ -179,24 +179,7 @@ public class Stack <T extends Comparable<T>> implements Serializable
     public T top() {
         return peek();
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        
     /**
      * String representation of this object
      *
