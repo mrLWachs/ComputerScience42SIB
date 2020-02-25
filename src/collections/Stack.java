@@ -90,15 +90,15 @@ public class Stack <T extends Comparable<T>> implements Serializable
      */
     @Override
     public String toString() {
-        if (isEmpty()) return "Empty stack";            // no nodes to display
+        if (isEmpty()) return "Stack = empty";          // no nodes to display
         else {
             String text = "Stack = [";                  // starting character
             Node current = top;                         // start at top node
-            while (current != null) {                   // traverse stack
+            while (current.next != null) {              // traverse stack
                 text += current.toString() + ",";       // append data
                 current = current.next;                 // move to next node
             }            
-            return text + "]";                          // append end character
+            return text + current.toString() + "]";     // append end character
         }
     }
     

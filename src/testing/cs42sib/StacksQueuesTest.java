@@ -27,17 +27,15 @@ public class StacksQueuesTest
         
         Simulator.comment("Test the Stack class....");
         
-        Simulator.comment("Create a new Stack....");        
+        Simulator.comment("Create a new Stack....");                
+        final int MAX = 10;
         Stack stack = new Stack();
+        Text  text  = new Text();
         
-        Simulator.comment("Test toString(), size(), and isEmpty()");
+        Simulator.comment("Test toString,size,isEmpty, and push...");
         System.out.println("Empty = "  + stack.isEmpty() +
                            "\tSize = " + stack.size() + 
-                           "\t"        + stack.toString());
-                
-        Text text = new Text();
-        final int MAX = 10;
-        
+                           "\t"        + stack.toString());                
         for (int i = 0; i < MAX; i++) {
             Box<String> box = new Box<>(text.randomWord());
             stack.push(box);
@@ -45,6 +43,8 @@ public class StacksQueuesTest
                                "\tSize = " + stack.size() + 
                                "\t"        + stack.toString());
         }
+        
+        
         
         
         Simulator.header("Stacks and Queues Test completed!");

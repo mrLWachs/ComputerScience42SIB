@@ -55,14 +55,14 @@ public class Box <T extends String> implements Comparable, Serializable
      */
     @Override
     public int compareTo(Object object) {
-        if (object instanceof Box) {
-            Box that = (Box)object;
-            String item1 = this.present;
-            String item2 = that.present;
-            return item1.compareTo(item2);
+        if (object instanceof Box) {            // ensure parameter is type box
+            Box that = (Box)object;             // cast into a box
+            String item1 = (String)this.present;    // get present item
+            String item2 = (String)that.present;    // get present item
+            return item1.compareTo(item2);      // return compare result
         }
-        else {
-            return 0;
+        else {                                  // not of type box
+            return 0;                           // return flag
         }
     }
     
