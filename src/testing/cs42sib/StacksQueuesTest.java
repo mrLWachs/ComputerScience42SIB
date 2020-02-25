@@ -6,6 +6,8 @@ package testing.cs42sib;
 import collections.Stack;
 import io.Simulator;
 import io.System;
+import testing.cs40s.advancedclasses.Box;
+import tools.Text;
 
 
 /**
@@ -29,11 +31,20 @@ public class StacksQueuesTest
         Stack stack = new Stack();
         
         Simulator.comment("Test toString(), size(), and isEmpty()");
-        System.out.println("String = " + stack.toString());
-        System.out.println("Size   = " + stack.size());
-        System.out.println("Empty  = " + stack.isEmpty());
+        System.out.println("Empty = "  + stack.isEmpty() +
+                           "\tSize = " + stack.size() + 
+                           "\t"        + stack.toString());
                 
+        Text text = new Text();
+        final int MAX = 10;
         
+        for (int i = 0; i < MAX; i++) {
+            Box<String> box = new Box<>(text.randomWord());
+            stack.push(box);
+            System.out.println("Empty = "  + stack.isEmpty() +
+                               "\tSize = " + stack.size() + 
+                               "\t"        + stack.toString());
+        }
         
         
         Simulator.header("Stacks and Queues Test completed!");

@@ -65,5 +65,15 @@ public class Box <T extends String> implements Comparable, Serializable
             return 0;
         }
     }
+    
+    /**
+     * String representation of this object
+     *
+     * @return The object represented as a String
+     */
+    @Override
+    public String toString() {
+        return present.toString();
+    }
 
 }
