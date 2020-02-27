@@ -120,7 +120,7 @@ public class Queue <T extends Comparable<T>> implements Serializable
      * @return the queue as a ADT stack
      */
     public Stack toStack() {
-        return new Stack(this.toLinkedList());
+        return new Stack(this);
     }
     
     /**

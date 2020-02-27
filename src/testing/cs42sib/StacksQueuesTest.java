@@ -4,6 +4,7 @@ package testing.cs42sib;
 
 /** required imports */
 import collections.LinkedList;
+import collections.Queue;
 import collections.Stack;
 import io.Simulator;
 import io.System;
@@ -83,6 +84,17 @@ public class StacksQueuesTest
         System.out.println(copy.toString());
         copy = new Stack(boxArray);
         System.out.println(copy.toString());        
+        
+        
+        
+        Queue queue = new Queue(copy);
+        copy = new Stack(queue);
+        
+        System.out.println(queue.toString());
+        System.out.println(copy.toString());
+        
+        
+        
         
         Simulator.header("Stacks and Queues Test completed!");
     }   
