@@ -12,6 +12,8 @@
             </test-roots>
         </data>
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>dequeue</word>
+            <word>enqueue</word>
             <word>occurance</word>
             <word>occurances</word>
         </spellchecker-wordlist>

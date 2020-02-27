@@ -72,7 +72,16 @@ public class Queue <T extends Comparable<T>> implements Serializable
     }
     
     /**
-     * Turns the stack into a ADT LinkedList object
+     * Constructor sets class data to the parameter 
+     * 
+     * @param stack the stack to set the queue to
+     */
+    public Queue(Stack stack) {
+        this(stack.toLinkedList());
+    }
+    
+    /**
+     * Turns the queue into a ADT LinkedList object
      * 
      * @return the Stack as a ADT LinkedList
      */
@@ -103,6 +112,15 @@ public class Queue <T extends Comparable<T>> implements Serializable
             current = current.previous;                 // move to next node
         }
         return array;                                   // return array
+    }
+    
+    /**
+     * Turns the queue into a ADT stack object
+     * 
+     * @return the queue as a ADT stack
+     */
+    public Stack toStack() {
+        return new Stack(this.toLinkedList());
     }
     
     /**
