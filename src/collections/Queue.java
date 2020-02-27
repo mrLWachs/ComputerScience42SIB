@@ -8,7 +8,21 @@ import java.lang.reflect.Array;
 
  
 /**
- * Queue.java - a Queue ADT using generics
+ * Queue.java - a Queue ADT using generics. It is a collection of entities that 
+ * are maintained in a sequence and can be modified by the addition of entities 
+ * at one end of the sequence and removal from the other end of the sequence. 
+ * By convention, the end of the sequence at which elements are added is called 
+ * the back, tail, or rear of the queue and the end at which elements are 
+ * removed is called the head or front of the queue, analogously to the words 
+ * used when people line up to wait for goods or services. It can be 
+ * visualized as:
+ * 
+ *   Add items (enqueue)                      Remove items (dequeue)
+ *   back (or tail, rear)                     front (or head)
+ *    |                                         |
+ *    V                                         V
+ *   item  item  item  item  item  item  item  item  
+ *                                             (null indicates empty queue)
  *
  * @author Mr. Wachs
  * @param <T> the generic object used in this class

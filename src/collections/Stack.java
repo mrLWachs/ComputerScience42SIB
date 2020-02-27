@@ -14,11 +14,11 @@ import java.lang.reflect.Array;
  * stack, a method to test for whether the stack is empty. When a stack is 
  * first created, it contains no items. It can be visualized as:
  * 
- *       top -------> item    (items are removed and added to the top)
- *                    item
- *                    item
- *                    item
- *       bottom ----> item    (a null at the bottom indicates an empty stack)
+ *    top -------> item    items are removed (pop) and added (push) to the top
+ *                 item
+ *                 item
+ *                 item
+ *    bottom ----> item    a null at the bottom indicates an empty stack
  *
  * @author Mr. Wachs
  * @param <T> the generic object used in this class
