@@ -225,26 +225,20 @@ public class Stack <T extends Comparable<T>> implements Serializable
      */
     @Override
     public boolean equals(Object object) {
-        if (!(object instanceof Stack)) return false;
-        try {
-            Stack stack1 = ((Stack)object).clone();
-            Stack stack2 = this.clone();
-            if (stack1.size() != stack2.size()) {
-                return false;
+        if (!(object instanceof Stack)) return false;   // check object type
+        try {                                           // error trap
+            Stack stack1 = ((Stack)object).clone();     // clone/cast parameter
+            Stack stack2 = this.clone();                // clone this stack
+            if (stack1.size() != stack2.size()) return false;   // not same size
+            while (!stack2.isEmpty()) {                 // traverse stacks
+                T data1 = (T)stack1.pop();              // retrieve data
+                T data2 = (T)stack2.pop();
+                if (!data1.equals(data2)) return false; // compare data
             }
-            else {
-                while(!stack2.isEmpty()) {
-                    T data1 = (T)stack1.pop();
-                    T data2 = (T)stack2.pop();
-                    if (!data1.equals(data2)) {
-                        return false;
-                    }
-                }
-            }
-            return true;
+            return true;                                // all tests passed
         }
         catch (ClassCastException | NullPointerException e) {
-            return false;
+            return false;                               // cannot cast, or null
         }
     }
         
@@ -255,21 +249,19 @@ public class Stack <T extends Comparable<T>> implements Serializable
      */
     @Override
     public Stack clone() {
-        Stack<T> copy = new Stack<>();
-        // traverse "this" stack, and push to the copy
-        Node current = this.top;
-        while (current != null) {
-            T data = (T)current.data;
-            copy.push(data);
-            current = current.next;
-        }
-        // now go through again, to reverse the stack
-        Stack<T> doppelganger = new Stack<>();
-        while(!copy.isEmpty()) {
-            T data = (T)copy.pop();
-            doppelganger.push(data);
-        }
-        return doppelganger;
+        Stack<T> stack1 = new Stack<>();                // new empty stack
+        Node current = top;                             // start at top node
+        while (current != null) {                       // traverse stack
+            T data = (T)current.data;                   // get data
+            stack1.push(data);                          // push onto new stack
+            current = current.next;                     // move to next node
+        }                
+        Stack<T> stack2 = new Stack<>();                // second new stack
+        while (!stack1.isEmpty()) {                     // traverse first stack
+            T data = (T)stack1.pop();                   // get data
+            stack2.push(data);                          // push onto 2nd stack
+        }        
+        return stack2;                                  // return clone
     }
 
 }

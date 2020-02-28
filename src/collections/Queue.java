@@ -52,9 +52,10 @@ public class Queue <T extends Comparable<T>> implements Serializable
      * @param list the LinkedList to set the queue to
      */
     public Queue(LinkedList<T> list) {
-        finalize();                                     // wipe any current data
-        for (int i = 0; i < list.size(); i++) {         // traverse list
-            enqueue((T)list.get(i));                    // get data, push in queue
+        finalize();                                 // wipe any current data
+        for (int i = list.size()-1; i >= 0; i--) {  // traverse list
+            T data = (T)list.get(i);
+            enqueue(data);                // get data, push in queue
         }
     }
     
@@ -65,7 +66,7 @@ public class Queue <T extends Comparable<T>> implements Serializable
      */
     public Queue(T[] array) {
         finalize();                                     // wipe any current data
-        for (int i = 0; i < array.length; i++) {        // traverse array
+        for (int i = array.length-1; i >= 0; i--) {     // traverse array
             T data = (T)array[i];                       // retrieve data
             enqueue(data);                              // push onto stack
         }
@@ -91,7 +92,7 @@ public class Queue <T extends Comparable<T>> implements Serializable
         while (current != null) {                       // traverse queue   
             T data = (T)current.data;                   // retrieve data
             list.add(data);                             // add to list
-            current = current.previous;                 // move to next node
+            current = current.next;                     // move to next node
         }
         return list;                                    // return list
     }
@@ -109,7 +110,7 @@ public class Queue <T extends Comparable<T>> implements Serializable
         Node current = head;                            // start at top node 
         for (int i = 0; i < length; i++) {              // traverse array
             array[i] = (T)current.data;                 // retrieve data
-            current = current.previous;                 // move to next node
+            current = current.next;                     // move to next node
         }
         return array;                                   // return array
     }
@@ -129,18 +130,18 @@ public class Queue <T extends Comparable<T>> implements Serializable
      * @return the generic data in the queue
      */
     public T dequeue() {
-        if (isEmpty()) return null;
-        else {
-            length--;
-            T data = (T)tail.data;
-            if (head == tail) finalize();
-            else {
-                tail = tail.previous;
+        if (isEmpty()) return null;                     // no nodes in queue
+        else {                                          // queue has some nodes
+            length--;                                   // reduce length
+            T data = (T)tail.data;                      // store data
+            if (head == tail) finalize();               // single node, wipe all
+            else {                                      // multi node queue
+                tail = tail.previous;                   // adjust references
                 tail.next.previous = null;
                 tail.next = null;
-                System.gc();
+                System.gc();                            // clean up memory
             }
-            return data;
+            return data;                                // data returned
         }
     }
         
@@ -222,9 +223,9 @@ public class Queue <T extends Comparable<T>> implements Serializable
         else {
             String text = "Queue = [";                  // starting character
             Node current = head;                        // start at top node
-            while (current.previous != null) {          // traverse stack
+            while (current.next != null) {              // traverse stack
                 text += current.toString() + ",";       // append data
-                current = current.previous;             // move to next node
+                current = current.next;                 // move to next node
             }            
             return text + current.toString() + "]";     // append end character
         }
@@ -263,7 +264,7 @@ public class Queue <T extends Comparable<T>> implements Serializable
     @Override
     public Queue clone() {
         Queue<T> q = new Queue<>();                     // new empty queue
-        Node current = head;                            // start at first node
+        Node current = tail;                            // start at first node
         while (current != null) {                       // traverse queue
             T data = (T)current.data;                   // get data
             q.enqueue(data);                            // enqueue to new queue
