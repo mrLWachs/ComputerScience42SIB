@@ -1,5 +1,4 @@
 
-
 /** required package class namespace */
 package testing.sampleIA.userinterfaces;
 
@@ -49,37 +48,48 @@ public class MainUIController
         userInterface.setVisible(true);
     }
 
-    void selectImage() {
+    public void selectImage() {
+        
     }
 
-    void enterKeyword() {
+    public void enterKeyword() {
+        
     }
 
-    void deleteSelectedKeyword() {
+    public void deleteSelectedKeyword() {
+        
     }
 
-    void saveMeme() {
+    public void saveMeme() {
+        
     }
 
-    void clearFields() {
+    public void clearFields() {
+        
     }
 
-    void editSelectedMeme() {
+    public void editSelectedMeme() {
+        
     }
 
-    void deleteSelectedMeme() {
+    public void deleteSelectedMeme() {
+        
     }
 
-    void sortMemes() {
+    public void sortMemes() {
+        
     }
 
-    void searchMemes() {
+    public void searchMemes() {
+        
     }
 
-    void saveMemeList() {
+    public void saveMemeList() {
+        
     }
 
-    void openMemeList() {
+    public void openMemeList() {
+        
     }
 
 }
