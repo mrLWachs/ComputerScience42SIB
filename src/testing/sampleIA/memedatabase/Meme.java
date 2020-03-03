@@ -3,9 +3,10 @@
 package testing.sampleIA.memedatabase;
 
 /** required imports */
-import collections.LinkedList;
 import java.io.File;
 import java.io.Serializable;
+import collections.LinkedList;
+//import testing.sampleIA.collections.LinkedList;
 
  
 /**
@@ -81,5 +82,5 @@ public class Meme implements Comparable, Serializable
         String value2 = that.toString();            // both objects
         return value1.compareToIgnoreCase(value2);  // use string compare
     }
-    
+
 }
