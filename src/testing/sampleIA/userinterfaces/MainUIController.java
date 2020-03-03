@@ -3,31 +3,19 @@
 package testing.sampleIA.userinterfaces;
 
 /** required imports */
-import collections.LinkedList;
-
-import io.Dialogs;
-import io.FileHandler;
-
-import tools.Search;
-import tools.Sort;
-import tools.Images;
-
-import testing.sampleIA.memedatabase.Meme;
-
 import java.awt.List;
 import java.io.File;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
-
-//import testing.sampleIA.collections.LinkedList;
-//import testing.sampleIA.io.Dialogs;
-//import testing.sampleIA.io.FileHandler;
-//import testing.sampleIA.tools.Search;
-//import testing.sampleIA.tools.Sort;
-
-
+import collections.LinkedList;
+import io.Dialogs;
+import io.FileHandler;
+import tools.Search;
+import tools.Sort;
+import tools.Images;
+import testing.sampleIA.memedatabase.Meme;
 
  
 /**
