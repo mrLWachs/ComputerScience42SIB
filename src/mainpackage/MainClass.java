@@ -1,4 +1,32 @@
 
+/** required package class namespace */
+package mainpackage;
+
+/** required imports */
+import testing.Tester;
+
+
+/**
+ * MainClass.java - the main class for this project
+ *
+ * @author Mr. Wachs
+ * @since Dec. 17, 2019, 8:12:18 a.m.
+ */
+public class MainClass 
+{
+
+    /**
+     * Main method for the project
+     * 
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        new Tester();
+    }
+
+}
+
+
 // NETBEANS TIPS:
 // ==============
 // (1)  Hold Alt + scroll mouse to zoom in and out on code
@@ -47,31 +75,3 @@
 //      number 13) by going to Tools -> Options, then click on the "Editor"
 //      tab at the top, then the "Formatting" below that. Then change the 
 //      settings to what you prefer
-
-
-/** required package class namespace */
-package mainpackage;
-
-/** required imports */
-import testing.Tester;
-
-
-/**
- * MainClass.java - the main class for this project
- *
- * @author Mr. Wachs
- * @since Dec. 17, 2019, 8:12:18 a.m.
- */
-public class MainClass 
-{
-
-    /**
-     * Main method for the project
-     * 
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        new Tester();
-    }
-
-}
