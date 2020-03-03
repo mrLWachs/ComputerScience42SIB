@@ -1,15 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /** required package class namespace */
 package testing.sampleIA.userinterfaces;
 
 
 /**
- * MainUI.java - description
+ * MainUI.java - the main user interface "view" for the user to interact with
+ * in the application. The program logic for this view is passed to a controller
+ * class.
  *
  * @author Mr. Wachs
  * @since Mar. 2, 2020, 9:58:02 a.m.
@@ -17,7 +14,7 @@ package testing.sampleIA.userinterfaces;
 public class MainUI extends javax.swing.JFrame 
 {
 
-    private MainUIController controller;
+    private MainUIController controller;        // the controller for this view
     
     
     /** 
