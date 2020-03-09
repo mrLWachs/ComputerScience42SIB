@@ -4,6 +4,7 @@ package mainpackage;
 
 /** required imports */
 import testing.Tester;
+import testing.sampleIA.simpleversion.UserInterface;
 import testing.sampleIA.userinterfaces.MainUI;
 
 
@@ -23,7 +24,8 @@ public class MainClass
      */
     public static void main(String[] args) {
         new Tester();
-        new MainUI(); 
+        UserInterface.main(null);        
+        new MainUI();                 
     }
 
 }

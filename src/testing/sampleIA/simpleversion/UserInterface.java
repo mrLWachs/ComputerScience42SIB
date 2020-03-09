@@ -56,6 +56,7 @@ public class UserInterface extends javax.swing.JFrame
         btnOpenNames = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Simple Database");
         setResizable(false);
 
         btnEnterName.setText("Enter Name");
