@@ -6,7 +6,6 @@ package testing.sampleIA.memedatabase;
 import java.io.File;
 import java.io.Serializable;
 import collections.LinkedList;
-//import testing.sampleIA.collections.LinkedList;
 
  
 /**
