@@ -90,5 +90,72 @@ public class MainClass
 // (19) If you hold down the CTRL key, methods calls become links with the 
 //      mouse to the method (even ones we don't write)
 // (20) On the left side window, the Navigator window helps find and jump to
-//      methods  
-
+//      methods if you double click them
+// (21) If you type /** before the method signature line it will automate
+//      which JavaDoc comments you should make
+// (22) If you want to remove the auto-generated reminder when you use the
+//      lightbulb to create a method, go to Tools -> Templates, scroll down 
+//      and click on the "+" beside "Java", and then the "+" beside "code
+//      snippets", and select "Generated Method body" and remove the last line
+// (23) Go to Tools -> Templates, scroll down and click on the "+" beside 
+//      "Java", select "Java Class", and "Open in Editor" and the enter 
+//      all the code below into the template (but uncomment it first using the 
+//      button from tip 7) to replace all the code already in the template
+//      then change the @author to your name. NOTE: This can also be used (the 
+//      first part of this) in the interface template as well
+//
+///** required package class namespace */
+//<#if package?? && package != "">
+//package ${package};
+//
+//</#if>
+// 
+///**
+// * ${name}.java - description
+// *
+// * @author Mr. Wachs
+// * @since ${date}, ${time}
+// */
+//public class ${name} 
+//{
+//
+//    /**
+//     * Default constructor, set class properties
+//     */
+//    public ${name}() {
+//        
+//    }
+//     
+//    /**
+//     * String representation of this object
+//     *
+//     * @return The object represented as a String
+//     */
+//    @Override
+//    public String toString() {
+//        return "${name}: " + super.toString();
+//    }
+//   
+//    /**
+//     * Deep comparison, determines if two objects are "equal" in this context
+//     *
+//     * @param object the object to compare to
+//     * @return the objects are "equal" (true) or not (false)
+//     */
+//    @Override
+//    public boolean equals(Object object) {
+//        return super.equals(object);
+//    }
+//       
+//    /**
+//     * a Deep clone, creates a duplicate object using new memory
+//     *
+//     * @return a "clone" of the object using new memory
+//     */
+//    @Override
+//    public ${name} clone() {
+//        return this;
+//    }
+//    
+//}
+//
