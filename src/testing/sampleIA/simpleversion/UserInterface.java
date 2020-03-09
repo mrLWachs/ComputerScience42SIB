@@ -23,10 +23,10 @@ public class UserInterface extends javax.swing.JFrame
 {
 
     // classes for specific tasks, imported from our own packages 
-    private LinkedList<String>              names       = new LinkedList<>();
-    private Search                          searcher    = new Search();
-    private Sort                            sorter      = new Sort();
-    private FileHandler<LinkedList<String>> fileHandler = new FileHandler<>();
+    private LinkedList<String>              names  = new LinkedList<>();
+    private Search                          search = new Search();
+    private Sort                            sort   = new Sort();
+    private FileHandler<LinkedList<String>> file   = new FileHandler<>();
     
     // constant for the file name to save to
     private final String FILENAME = "data.txt";
@@ -141,21 +141,21 @@ public class UserInterface extends javax.swing.JFrame
 
     private void btnSearchNamesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchNamesActionPerformed
         String name = JOptionPane.showInputDialog("Enter name to search for");
-        int index = searcher.linear(name, names);
+        int index = search.linear(name, names);
         lstNames.select(index);
     }//GEN-LAST:event_btnSearchNamesActionPerformed
 
     private void btnSortNamesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSortNamesActionPerformed
-        sorter.bubble(names);
+        sort.bubble(names);
         showList();
     }//GEN-LAST:event_btnSortNamesActionPerformed
 
     private void btnSaveNamesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveNamesActionPerformed
-        fileHandler.saveObject(names, FILENAME);
+        file.saveObject(names, FILENAME);
     }//GEN-LAST:event_btnSaveNamesActionPerformed
 
     private void btnOpenNamesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOpenNamesActionPerformed
-        names = (LinkedList<String>)fileHandler.openObject(FILENAME);
+        names = (LinkedList<String>)file.openObject(FILENAME);
         showList();
     }//GEN-LAST:event_btnOpenNamesActionPerformed
 
