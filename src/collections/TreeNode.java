@@ -7,7 +7,17 @@ import java.io.Serializable;
  
 /**
  * TreeNode.java - representation of a generic node for use with a binary
- * tree object
+ * tree object. It could be visualized as:
+ * 
+ *                       TreeNode
+ *                 +-----------------+
+ *                 |      data       |
+ *                 +-----------------+
+ *                 |  left  |  right |
+ *                 +-----------------+
+ *                    /           \
+ *                   /             \
+ *              TreeNode        TreeNode
  *
  * @author Mr. Wachs
  * @since Mar. 11, 2020, 10:18:06 a.m.
@@ -93,6 +103,34 @@ public class TreeNode <T extends Comparable<T>> implements Serializable
     @Override
     public TreeNode clone() {
         return new TreeNode<>(this.data);
+    }
+    
+    /**
+     * Insets data (recursively) into the binary tree at its correct position
+     * 
+     * @param data the generic data to insert into the tree
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean insert(T data) {
+        if (data == null) return false;          // error check      
+        // decide which sub-tree the data goes to
+        if (data.compareTo(this.data) < 0) {    // means we insert into the left
+            if (this.left == null) {                // empty spot, can use this                
+                this.left = new TreeNode<>(data);
+            }
+            else {                                  // insert recursively                
+                this.left.insert(data);
+            }
+        }
+        else if (data.compareTo(this.data) >= 0) {  // means we insert right
+            if (this.right == null) {
+                this.right = new TreeNode<>(data);
+            }
+            else {
+                this.right.insert(data);
+            }
+        }        
+        return true;                        // if it completes the above tasks
     }
     
 }
