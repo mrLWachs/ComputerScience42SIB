@@ -69,6 +69,7 @@ public class TreesTest
         System.out.println(tree.search(16));      
         System.out.println(tree.search(6));        
             
+        System.out.println(tree.toString());
         
         
         Simulator.header("Binary Trees Test completed!");

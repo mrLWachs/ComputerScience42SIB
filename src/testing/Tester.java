@@ -21,11 +21,11 @@ public class Tester
      * Default class constructor, runs on instantiation
      */
     public Tester() {
-        Simulator.header("Mr. Wachs Computer Science testing started...");
-        new ComputerScience30S();
-        new ComputerScience40S();
+//        Simulator.header("Mr. Wachs Computer Science testing started...");
+//        new ComputerScience30S();
+//        new ComputerScience40S();
         new ComputerScience42SIB();
-        Simulator.header("Mr. Wachs Computer Science testing complete!");
+//        Simulator.header("Mr. Wachs Computer Science testing complete!");
     }
     
 }

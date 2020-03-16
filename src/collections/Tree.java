@@ -50,7 +50,15 @@ public class Tree <T extends Comparable<T>> implements Serializable
      */
     @Override
     public String toString() {
-        return "Tree: " + super.toString();
+        if (root == null) return "Tree Empty";
+        else {
+            String text = "Tree:\n";
+            text += "Order: " + order.toString()       + "\n";
+            text += "Pre:   " + preOrder().toString()  + "\n";
+            text += "In:    " + inOrder().toString()   + "\n";
+            text += "Post:  " + postOrder().toString() + "\n";
+            return text;
+        }
     }
    
     /**
@@ -113,9 +121,88 @@ public class Tree <T extends Comparable<T>> implements Serializable
      */
     public boolean insert(T data) {        
         if (data == null) return false;                 // error check        
+        order.add(data);
         if (root == null) root = new TreeNode<>(data);  // inserting first node        
         else root.insert(data);                         // insert other nodes
         return true;                                    // operation successful
     }
     
+    /**
+     * A pre-order traversal of the tree nodes
+     * 
+     * @return a linked list containing all the data pre-order
+     */
+    public LinkedList preOrder() {
+        list.clear();
+        list = recursivePreOrder(root);
+        return list;
+    }
+    
+    /**
+     * A post-order traversal of the tree nodes
+     * 
+     * @return a linked list containing all the data post-order
+     */
+    public LinkedList postOrder() {
+        list.clear();
+        list = recursivePostOrder(root);
+        return list;
+    }
+    
+    /**
+     * A in-order traversal of the tree nodes
+     * 
+     * @return a linked list containing all the data in-order
+     */
+    public LinkedList inOrder() {
+        list.clear();
+        list = recursiveInOrder(root);
+        return list;
+    }
+
+    /**
+     * Recursive pre-order traversal starting at the root
+     * 
+     * @param current the reference to the current tree node
+     */
+    private LinkedList<T> recursivePreOrder(TreeNode<T> current) {
+        // "pre" means "before" or "first", so: visit,left,right
+        if (current != null) {      // not past leaf node, recuse (keep going)
+            list.add(current.data);             // "visit" node
+            recursivePreOrder(current.left);    // travel left sub-tree
+            recursivePreOrder(current.right);   // travel right sub-tree
+        }
+        return list;                            // base case, past leaf node
+    }
+
+    /**
+     * Recursive post-order traversal starting at the root
+     * 
+     * @param current the reference to the current tree node
+     */
+    private LinkedList<T> recursivePostOrder(TreeNode<T> current) {
+        // "post" means "after" or "last", so: left,right,visit
+        if (current != null) {      // not past leaf node, recuse (keep going)
+            recursivePostOrder(current.left);   // travel left sub-tree
+            recursivePostOrder(current.right);  // travel right sub-tree
+            list.add(current.data);             // "visit" node
+        }
+        return list;                            // base case, past leaf node
+    }
+
+    /**
+     * Recursive in-order traversal starting at the root
+     * 
+     * @param current the reference to the current tree node
+     */
+    private LinkedList<T> recursiveInOrder(TreeNode<T> current) {
+        // "in" means "in-between", so: left,visit,right
+        if (current != null) {      // not past leaf node, recuse (keep going)
+            recursiveInOrder(current.left);     // travel left sub-tree
+            list.add(current.data);             // "visit" node
+            recursiveInOrder(current.right);    // travel right sub-tree            
+        }
+        return list;                            // base case, past leaf node
+    }
+        
 }
