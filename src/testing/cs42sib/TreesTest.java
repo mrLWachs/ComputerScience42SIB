@@ -72,6 +72,17 @@ public class TreesTest
         System.out.println(tree.toString());
         
         
+        Tree<Integer> another = new Tree<>();
+        another.insert(15);
+        another.insert(25);
+        
+        if (tree.equals(another)) System.out.println("==");
+        else                      System.out.println("!=");
+        
+        Tree<Integer> clone = tree.clone();
+        if (tree.equals(clone)) System.out.println("==");
+        else                    System.out.println("!=");
+        
         Simulator.header("Binary Trees Test completed!");
     }   
 

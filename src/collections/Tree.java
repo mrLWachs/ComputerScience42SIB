@@ -69,7 +69,16 @@ public class Tree <T extends Comparable<T>> implements Serializable
      */
     @Override
     public boolean equals(Object object) {
-        return super.equals(object);
+        if (object == null) return false;
+        try {
+            Tree that = (Tree)object;
+            LinkedList inOder1 = this.inOrder();
+            LinkedList inOder2 = that.inOrder();
+            return inOder1.equals(inOder2);
+        }
+        catch (ClassCastException error) {
+            return false;
+        }
     }
        
     /**
@@ -79,7 +88,11 @@ public class Tree <T extends Comparable<T>> implements Serializable
      */
     @Override
     public Tree clone() {
-        return this;
+        Tree<T> tree = new Tree<>();
+        for (int i = 0; i < order.size(); i++) {
+            tree.insert((T)order.get(i));
+        }
+        return tree;
     }
     
     /**
