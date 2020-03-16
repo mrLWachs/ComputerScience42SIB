@@ -22,8 +22,8 @@ public class Tester
      */
     public Tester() {
         Simulator.header("Mr. Wachs Computer Science testing started...");
-        new ComputerScience30S();
-        new ComputerScience40S();
+//        new ComputerScience30S();
+//        new ComputerScience40S();
         new ComputerScience42SIB();
         Simulator.header("Mr. Wachs Computer Science testing complete!");
     }
