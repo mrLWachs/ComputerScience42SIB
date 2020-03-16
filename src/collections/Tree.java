@@ -56,7 +56,7 @@ public class Tree <T extends Comparable<T>> implements Serializable
             text += "Order: " + order.toString()       + "\n";
             text += "Pre:   " + preOrder().toString()  + "\n";
             text += "In:    " + inOrder().toString()   + "\n";
-            text += "Post:  " + postOrder().toString() + "\n";
+            text += "Post:  " + postOrder().toString();
             return text;
         }
     }
