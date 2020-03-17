@@ -110,11 +110,11 @@ public class TreesTest
         
         Simulator.comment("Create variable objects...");
         
-        String variable1 = text.randomWord(WORD_LENGTH);
-        String variable2 = text.randomWord(WORD_LENGTH);
-        String variable3 = text.randomWord(WORD_LENGTH);
-        String variable4 = text.randomWord(WORD_LENGTH);
-        String variable5 = text.randomWord(WORD_LENGTH);
+        String variable1 = text.randomWord(WORD_LENGTH).toLowerCase();
+        String variable2 = text.randomWord(WORD_LENGTH).toLowerCase();
+        String variable3 = text.randomWord(WORD_LENGTH).toLowerCase();
+        String variable4 = text.randomWord(WORD_LENGTH).toLowerCase();
+        String variable5 = text.randomWord(WORD_LENGTH).toLowerCase();
         
         Simulator.comment("Create array from variables...");
         
