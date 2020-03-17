@@ -76,6 +76,15 @@ public class Stack <T extends Comparable<T>> implements Serializable
     }
     
     /**
+     * Constructor sets class data to the parameter 
+     * 
+     * @param tree the Tree to set the stack to
+     */
+    public Stack(Tree tree) {
+        this(tree.inOrder());
+    }
+    
+    /**
      * Turns the stack into a ADT LinkedList object
      * 
      * @return the Stack as a ADT LinkedList
@@ -207,7 +216,7 @@ public class Stack <T extends Comparable<T>> implements Serializable
     public String toString() {
         if (isEmpty()) return "Stack = empty";          // no nodes to display
         else {
-            String text = "Stack = [";                  // starting character
+            String text = "Stack [";                    // starting character
             Node current = top;                         // start at top node
             while (current.next != null) {              // traverse stack
                 text += current.toString() + ",";       // append data

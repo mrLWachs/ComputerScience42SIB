@@ -81,15 +81,15 @@ public class TreeNode <T extends Comparable<T>> implements Serializable
      */
     @Override
     public boolean equals(Object object) {
-        TreeNode that = (TreeNode)object;
+        TreeNode that = (TreeNode)object;           // cast object to node
         try {
-            return this.data.equals(that.data);
+            return this.data.equals(that.data);     // use internal data equals
         }
-        catch (NullPointerException error) {
+        catch (NullPointerException error) {        // null parameter
             System.out.println("null error");
             return false;
         } 
-        catch(ClassCastException error) {
+        catch(ClassCastException error) {           // casting error
             System.out.println("Casting error");
             return false;
         }

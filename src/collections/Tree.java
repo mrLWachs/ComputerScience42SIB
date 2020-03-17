@@ -6,31 +6,30 @@ import java.io.Serializable;
 
  
 /**
- * Tree.java - a representation of a binary tree ADT object. It uses the 
+ * Tree.java - a representation of a binary tree ADT object.It uses the 
  * TreeNode class to connect into a traditional binary tree. It could be
  * visualized as:
- *                                +------+
- *                                | root |
- *                                +------+
- *                                 /    \
- *         (Left sub-tree)  +------+    +------+  (Right sub-tree)
- *                          | node |    | node |
- *                          +------+    +------+
- *                           /    \           \
- *                    +------+    +------+    +------+
- *                    | node |    | node |    | node |
- *                    +------+    +------+    +------+
+ *                               +------+
+ *                               | root |
+ *                               +------+
+ *                                /    \
+ *        (Left sub-tree)  +------+    +------+  (Right sub-tree)
+ *                         | node |    | node |
+ *                         +------+    +------+
+ *                          /    \           \
+ *                   +------+    +------+    +------+
+ *                   | node |    | node |    | node |
+ *                   +------+    +------+    +------+
  *
  * @author Mr. Wachs
+ * @param <T> the generic data type used
  * @since Mar. 11, 2020, 10:37:21 a.m.
  */
 public class Tree <T extends Comparable<T>> implements Serializable
 {
     
-    private TreeNode<T> root;
-    
-    // objects for traversals...
-    private LinkedList<T> list;
+    private TreeNode<T> root;                       // root of the tree
+    private LinkedList<T> list;                     // objects for traversals...
     private LinkedList<T> order;
     
 
@@ -44,15 +43,56 @@ public class Tree <T extends Comparable<T>> implements Serializable
     }
      
     /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param linkedList the LinkedList to create the tree from
+     */
+    public Tree(LinkedList<T> linkedList) {
+        root  = null;
+        list  = new LinkedList<>();             // build objects for traversals
+        order = new LinkedList<>();
+        for (int i = 0; i < linkedList.size(); i++) {
+            insert((T)linkedList.get(i));
+        }
+    }
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param array the array to create the tree from
+     */
+    public Tree(T[] array) {
+        this(new LinkedList<>(array));
+    }
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param stack the Stack to create the tree from
+     */
+    public Tree(Stack stack) {
+        this(stack.toLinkedList());
+    }
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param queue the Queue to create the tree from
+     */
+    public Tree(Queue queue) {
+        this(queue.toLinkedList());
+    }
+        
+    /**
      * String representation of this object
      *
      * @return The object represented as a String
      */
     @Override
     public String toString() {
-        if (root == null) return "Tree Empty";
-        else {
-            String text = "Tree:\n";
+        if (root == null) return "Tree Empty";          // for empty trees
+        else {                                          // for filled trees
+            String text = "Binary Tree:\n";             // text for output
             text += "Order: " + order.toString()       + "\n";
             text += "Pre:   " + preOrder().toString()  + "\n";
             text += "In:    " + inOrder().toString()   + "\n";
@@ -69,14 +109,14 @@ public class Tree <T extends Comparable<T>> implements Serializable
      */
     @Override
     public boolean equals(Object object) {
-        if (object == null) return false;
+        if (object == null) return false;           // error check parameter
         try {
-            Tree that = (Tree)object;
-            LinkedList inOder1 = this.inOrder();
+            Tree that = (Tree)object;               // cast to tree object
+            LinkedList inOder1 = this.inOrder();    // use in order lists
             LinkedList inOder2 = that.inOrder();
-            return inOder1.equals(inOder2);
+            return inOder1.equals(inOder2);         // check if same lists
         }
-        catch (ClassCastException error) {
+        catch (ClassCastException error) {          // cannot cast object
             return false;
         }
     }
@@ -88,9 +128,9 @@ public class Tree <T extends Comparable<T>> implements Serializable
      */
     @Override
     public Tree clone() {
-        Tree<T> tree = new Tree<>();
-        for (int i = 0; i < order.size(); i++) {
-            tree.insert((T)order.get(i));
+        Tree<T> tree = new Tree<>();                // create new tree memory
+        for (int i = 0; i < order.size(); i++) {    // traverse this tree list
+            tree.insert((T)order.get(i));           // insert into new tree
         }
         return tree;
     }
@@ -146,8 +186,8 @@ public class Tree <T extends Comparable<T>> implements Serializable
      * @return a linked list containing all the data pre-order
      */
     public LinkedList preOrder() {
-        list.clear();
-        list = recursivePreOrder(root);
+        list.clear();                                   // clear out the list
+        list = recursivePreOrder(root);     // fill with pre order traversal
         return list;
     }
     
@@ -157,8 +197,8 @@ public class Tree <T extends Comparable<T>> implements Serializable
      * @return a linked list containing all the data post-order
      */
     public LinkedList postOrder() {
-        list.clear();
-        list = recursivePostOrder(root);
+        list.clear();                                   // clear out the list
+        list = recursivePostOrder(root);    // fill with post order traversal
         return list;
     }
     
@@ -168,8 +208,8 @@ public class Tree <T extends Comparable<T>> implements Serializable
      * @return a linked list containing all the data in-order
      */
     public LinkedList inOrder() {
-        list.clear();
-        list = recursiveInOrder(root);
+        list.clear();                                   // clear out the list
+        list = recursiveInOrder(root); // fill with recursive in order traversal
         return list;
     }
 

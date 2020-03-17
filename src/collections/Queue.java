@@ -82,6 +82,15 @@ public class Queue <T extends Comparable<T>> implements Serializable
     }
     
     /**
+     * Constructor sets class data to the parameter 
+     * 
+     * @param tree the Tree to set the queue to
+     */
+    public Queue(Tree tree) {
+        this(tree.inOrder());
+    }
+    
+    /**
      * Turns the queue into a ADT LinkedList object
      * 
      * @return the Stack as a ADT LinkedList
@@ -221,7 +230,7 @@ public class Queue <T extends Comparable<T>> implements Serializable
     public String toString() {
         if (isEmpty()) return "Empty Queue";            // no nodes to display
         else {
-            String text = "Queue = [";                  // starting character
+            String text = "Queue [";                    // starting character
             Node current = head;                        // start at top node
             while (current.next != null) {              // traverse stack
                 text += current.toString() + ",";       // append data
