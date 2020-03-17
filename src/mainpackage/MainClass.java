@@ -24,8 +24,8 @@ public class MainClass
      */
     public static void main(String[] args) {
         new Tester(); 
-//        new MainUI();  
-//        new UserInterface().setVisible(true);
+        new MainUI();  
+        new UserInterface().setVisible(true);
     }
 
 }
