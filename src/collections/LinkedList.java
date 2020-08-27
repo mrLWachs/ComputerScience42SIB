@@ -69,34 +69,7 @@ public class LinkedList <T> implements Serializable
     public LinkedList(LinkedList<T> list) {
         fromLinkedList(list);
     }
-    
-    /**
-     * Constructor instantiates list from the passed data
-     * 
-     * @param stack the data objects to create the list from
-     */
-    public LinkedList(Stack stack) {
-        this(stack.toLinkedList());
-    }
-    
-    /**
-     * Constructor instantiates list from the passed data
-     * 
-     * @param queue the data objects to create the list from
-     */
-    public LinkedList(Queue queue) {
-        this(queue.toLinkedList());
-    }
-    
-    /**
-     * Constructor instantiates list from the passed data
-     * 
-     * @param tree the data objects to create the list from
-     */
-    public LinkedList(Tree tree) {
-        this(tree.inOrder());
-    }
-    
+        
     /**
      * Determines if the list is empty (no content)
      * 
