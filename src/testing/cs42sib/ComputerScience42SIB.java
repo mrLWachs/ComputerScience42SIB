@@ -30,7 +30,6 @@ public class ComputerScience42SIB
         new SearchSortTest();
         new StacksQueuesTest();
         new TreesTest();      
-        new PostSecondaryTest();
         Simulator.header("Computer Science 42SIB complete!");
     }
     
