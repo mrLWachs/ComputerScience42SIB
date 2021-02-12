@@ -25,56 +25,67 @@ public class PermanentStorageTest
     public PermanentStorageTest() {
         Simulator.header("Permanent Storage Test started...");
         
-        Simulator.comment("Learn about error traps");                
-        try {
-            int[] a = {1,2,3};
-            a[5] = 0;            
-            double number = 3 / 0;
+        // Learn about error traps............................................
+        Simulator.comment("Learn about error traps"); 
+        
+        try {                                               // Open try block
+            double number = 3 / 0;                          // Try for an error
+            int[] a = {1,2,3};                              // Create array
+            a[5] = 0;                                       // Try another error            
+        }                                                   // Close try block
+        catch (ArrayIndexOutOfBoundsException error) {      // Catch clause
+            System.out.println(error.toString());           // Output error
         }
-        catch (ArrayIndexOutOfBoundsException error) {
-            System.out.println(error.toString());
-        }
-        catch (ArithmeticException error) {
-            System.out.println("Math error");
+        catch (ArithmeticException error) {                 // Catch clause
+            System.out.println("Math error");               // Output error
         }
         
+        // Now some file handling..............................................
         Simulator.comment("Now some file handling");
-        
-        Simulator.comment("Create data to use");        
+                
+        // Create data to use..................................................
+        Simulator.comment("Create data to use");    
+                
         String[] poem = {
             "There once was a GME stock",
             "As it aged it sank like a rock",
             "A hedge fund wanted to profit",
             "But the stock rose like a rocket"
-        };
+        };                                                  // Student poem
+        String word = "acolyte";                            // Student word
         
-        String word = "acolyte";
+        // Let's create a proper file name.....................................
+        Simulator.comment("Let's create a proper file name");
         
+        String first  = "C:\\Users\\lawrence.wachs\\Desktop\\";
+        String middle = "data";
+        String last   = ".txt";
+        String name   = first + middle + last;
+        
+        Simulator.comment("Write one piece of data to that permanent file");
         try {
-            // Creating instances (objects) of file handling classes
-            String first  = "C:\\Users\\lawrence.wachs\\Desktop\\";
-            String middle = "data";
-            String last   = ".txt";
-            String name   = first + middle + last;
-            // connect the two classes with the file name
-            FileWriter  writer  = new FileWriter(name);
-            PrintWriter printer = new PrintWriter(writer);
+            
+            // Create instance (objects) of file classes
+            // and connect the 2 classes with the file name 
+            Simulator.comment("Create instance (objects) of file classes");
+            Simulator.comment("and connect the 2 classes with the file name");
+            
+            FileWriter  writer  = new FileWriter(name);     // first object
+            PrintWriter printer = new PrintWriter(writer);  // second object
+            
             // Now Write to the file
-            printer.print(word);
+            Simulator.comment("Now Write to the file");
+            
+            printer.print(word);                            // Write to file
+            
             // Sever (close) the connection to the file
-            printer.close();
+            Simulator.comment("Sever (close) the connection to the file");
+            
+            printer.close();                                // Close connection
         } 
         catch (Exception e) {
             
         }
-        
-        
-        
-        
-        
-        
-        
-        
         
         
         
