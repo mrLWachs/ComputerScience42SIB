@@ -23,7 +23,7 @@ public class PermanentStorageTest
     public PermanentStorageTest() {
         Simulator.header("Permanent Storage Test started...");
         
-        Simulator.comment("learn about error traps");                
+        Simulator.comment("Learn about error traps");                
         try {
             int[] a = {1,2,3};
             a[5] = 0;            
