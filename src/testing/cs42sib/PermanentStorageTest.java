@@ -3,10 +3,8 @@
 package testing.cs42sib;
 
 /** required imports */
-//import io.JOptionPane;
 import io.Simulator;
-import javax.swing.JOptionPane;
-//import io.System;
+import io.System;
 
 
 
@@ -25,8 +23,7 @@ public class PermanentStorageTest
     public PermanentStorageTest() {
         Simulator.header("Permanent Storage Test started...");
         
-        Simulator.comment("learn about error traps");
-                
+        Simulator.comment("learn about error traps");                
         try {
             int[] a = {1,2,3};
             a[5] = 0;            
@@ -40,8 +37,8 @@ public class PermanentStorageTest
         }
         
         Simulator.comment("Now some file handling");
-        Simulator.comment("Create data to use");
         
+        Simulator.comment("Create data to use");        
         String[] poem = {
             "I should probably sleep",  
             "And you should too",
