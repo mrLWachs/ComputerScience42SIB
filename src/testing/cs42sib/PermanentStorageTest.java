@@ -4,19 +4,15 @@ package testing.cs42sib;
 
 /** required imports */
 //import io.JOptionPane;
+//import io.System;
 import io.Simulator;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-//import io.System;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JFileChooser;
-import javax.swing.JOptionPane;
 
 
 
@@ -73,8 +69,7 @@ public class PermanentStorageTest
         String name   = first + middle + last;                  // Full name
         
         Simulator.comment("Write one piece of data to that permanent file");
-        try {
-            
+        try {            
             // Create instance (objects) of file classes
             // and connect the 2 classes with the file name 
             Simulator.comment("Create instance (objects) of file classes");
@@ -93,68 +88,77 @@ public class PermanentStorageTest
             
             printer.close();                                // Close connection
         } 
-        catch (IOException e) {
-            System.out.println("File write error");
+        catch (IOException e) {                             // catch error
+            System.out.println("File write error");         // output message
         }
         
         // Now involve the user in naming the file
-        // get the file name from the user
-        
+        Simulator.comment("Now involve the user in naming the file"); 
+        // Get the file name from the user
+        Simulator.comment("Get the file name from the user"); 
         // Simpliest input from a scanner or dialog...
         // Scanner scanner = new Scanner(System.in);        
         // name = scanner.nextLine();
         // name = JOptionPane.showInputDialog("Enter name");
         
         // Use a fancier input designed for files        
+        Simulator.comment("Use a fancier input designed for files"); 
+        
         JFileChooser chooser = new JFileChooser();
-        chooser.showSaveDialog(null);           // showing a dialog to user
+        chooser.showSaveDialog(null);           // Showing a dialog to user
         
         // Use a File class to work with as well
-        File file = chooser.getSelectedFile();  // get the name from the user
+        Simulator.comment("// Use a File class to work with as well"); 
+        File file = chooser.getSelectedFile();  // Get the name from the user
         
-        // check the file
-        if (file != null || file.exists()) {    // error check on the file         
+        // Check the file
+        Simulator.comment("Check the file"); 
+        if (file != null || file.exists()) {    // Error check on the file         
             try {                               // Now the try catch block...   
-                FileWriter  writer  = new FileWriter(file);    // connect file
-                PrintWriter printer = new PrintWriter(writer); // connect writer
-                for (String line : poem) {      // enhanced loop through array
-                    printer.println(line);      // writing one array index 
+                FileWriter  writer  = new FileWriter(file);    // Connect file
+                PrintWriter printer = new PrintWriter(writer); // Connect writer
+                for (String line : poem) {      // Enhanced loop through array
+                    printer.println(line);      // Writing one array index 
                 }
-                printer.close();                // sever (close) file connection
+                printer.close();                // Sever (close) file connection
             } 
-            catch (IOException e) {
-                System.out.println("File save error");
+            catch (IOException e) {             // Catch error
+                System.out.println("File save error");  // Message user
             }                        
         }
         
-        // Now open files (for one line)....        
-        chooser.showOpenDialog(null);
-        file = chooser.getSelectedFile();
-        if (file != null || file.exists()) { 
-            name = file.getAbsolutePath();
-            try {
-                FileReader     reader = new FileReader(name);
-                BufferedReader buffer = new BufferedReader(reader);
-                String line = buffer.readLine();
-                buffer.close();
-                System.out.println(line);
+        // Now open files (for one line)....    
+        Simulator.comment("Now open files (for one line).... "); 
+        
+        chooser.showOpenDialog(null);                               // Dialog
+        file = chooser.getSelectedFile();                           // Get file
+        if (file != null || file.exists()) {                        // Check
+            name = file.getAbsolutePath();                          // Name
+            try {                                                   // block
+                FileReader     reader = new FileReader(name);       // Connect
+                BufferedReader buffer = new BufferedReader(reader); // Connect
+                String line = buffer.readLine();                    // Read
+                buffer.close();                                     // Close
+                System.out.println(line);                           // Output
             } 
-            catch (IOException e) {
-                System.out.println("File open error");
+            catch (IOException e) {                                 // Catch
+                System.out.println("File open error");              // Message
             }
         }
         
         // Do it again with the array (multiple lines)
+        Simulator.comment("Do it again with the array (multiple lines)");
+        
         chooser.showOpenDialog(null);
         file = chooser.getSelectedFile();
         if (file != null || file.exists()) { 
             try {
                 FileReader     reader = new FileReader(file);
                 BufferedReader buffer = new BufferedReader(reader);
-                String line = buffer.readLine();
-                while (line != null) {
-                    System.out.println(line);
-                    line = buffer.readLine();
+                String line = buffer.readLine();    // Read first line
+                while (line != null) {              // Keep reading til no input
+                    System.out.println(line);       // Output line
+                    line = buffer.readLine();       // Read next line
                 }
                 buffer.close();
             } 
@@ -163,23 +167,13 @@ public class PermanentStorageTest
             }
         }
         
+        // Now save and open without the user involved     
+        Simulator.comment("Now save and open without the user involved "); 
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+                
+        file = new File("data3");
+        //if (file.exists() == false) file.createNewFile();
         
         
         
