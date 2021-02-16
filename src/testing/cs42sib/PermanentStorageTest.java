@@ -57,10 +57,10 @@ public class PermanentStorageTest
         // Let's create a proper file name.....................................
         Simulator.comment("Let's create a proper file name");
         
-        String first  = "C:\\Users\\lawrence.wachs\\Desktop\\";
-        String middle = "data";
-        String last   = ".txt";
-        String name   = first + middle + last;
+        String first  = "C:\\Users\\lawrence.wachs\\Desktop\\"; // File path
+        String middle = "data";                                 // File name
+        String last   = ".txt";                                 // Extention
+        String name   = first + middle + last;                  // Full name
         
         Simulator.comment("Write one piece of data to that permanent file");
         try {
@@ -70,8 +70,8 @@ public class PermanentStorageTest
             Simulator.comment("Create instance (objects) of file classes");
             Simulator.comment("and connect the 2 classes with the file name");
             
-            FileWriter  writer  = new FileWriter(name);     // first object
-            PrintWriter printer = new PrintWriter(writer);  // second object
+            FileWriter  writer  = new FileWriter(name);     // First object
+            PrintWriter printer = new PrintWriter(writer);  // Second object
             
             // Now Write to the file
             Simulator.comment("Now Write to the file");
@@ -88,8 +88,9 @@ public class PermanentStorageTest
         }
         
         
+        // Example continues...
+        Simulator.comment("Example continues...");
         
-                        
         Simulator.header("Permanent Storage Test completed!");
     }   
 
