@@ -5,12 +5,16 @@ package testing.cs42sib;
 /** required imports */
 //import io.JOptionPane;
 import io.Simulator;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 //import io.System;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
@@ -103,26 +107,61 @@ public class PermanentStorageTest
         
         // Use a fancier input designed for files        
         JFileChooser chooser = new JFileChooser();
-        chooser.showSaveDialog(null);
+        chooser.showSaveDialog(null);           // showing a dialog to user
         
         // Use a File class to work with as well
-        File file = chooser.getSelectedFile();
+        File file = chooser.getSelectedFile();  // get the name from the user
         
         // check the file
-        if (file != null || file.exists()) {
-            
-            // Now the try catch block...            
-            try {
-                
-                
+        if (file != null || file.exists()) {    // error check on the file         
+            try {                               // Now the try catch block...   
+                FileWriter  writer  = new FileWriter(file);    // connect file
+                PrintWriter printer = new PrintWriter(writer); // connect writer
+                for (String line : poem) {      // enhanced loop through array
+                    printer.println(line);      // writing one array index 
+                }
+                printer.close();                // sever (close) file connection
             } 
             catch (IOException e) {
                 System.out.println("File save error");
-            }
-                        
+            }                        
         }
         
+        // Now open files (for one line)....        
+        chooser.showOpenDialog(null);
+        file = chooser.getSelectedFile();
+        if (file != null || file.exists()) { 
+            name = file.getAbsolutePath();
+            try {
+                FileReader     reader = new FileReader(name);
+                BufferedReader buffer = new BufferedReader(reader);
+                String line = buffer.readLine();
+                buffer.close();
+                System.out.println(line);
+            } 
+            catch (IOException e) {
+                System.out.println("File open error");
+            }
+        }
         
+        // Do it again with the array (multiple lines)
+        chooser.showOpenDialog(null);
+        file = chooser.getSelectedFile();
+        if (file != null || file.exists()) { 
+            try {
+                FileReader     reader = new FileReader(file);
+                BufferedReader buffer = new BufferedReader(reader);
+                String line = buffer.readLine();
+                while (line != null) {
+                    System.out.println(line);
+                    line = buffer.readLine();
+                }
+                buffer.close();
+            } 
+            catch (IOException e) {
+                System.out.println("File open error");
+            }
+        }
         
         
         
