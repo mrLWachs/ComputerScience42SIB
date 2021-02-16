@@ -3,10 +3,16 @@
 package testing.cs42sib;
 
 /** required imports */
+//import io.JOptionPane;
 import io.Simulator;
-import io.System;
+import java.io.File;
+//import io.System;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Scanner;
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 
 
 
@@ -83,9 +89,60 @@ public class PermanentStorageTest
             
             printer.close();                                // Close connection
         } 
-        catch (Exception e) {
-            
+        catch (IOException e) {
+            System.out.println("File write error");
         }
+        
+        // Now involve the user in naming the file
+        // get the file name from the user
+        
+        // Simpliest input from a scanner or dialog...
+        // Scanner scanner = new Scanner(System.in);        
+        // name = scanner.nextLine();
+        // name = JOptionPane.showInputDialog("Enter name");
+        
+        // Use a fancier input designed for files        
+        JFileChooser chooser = new JFileChooser();
+        chooser.showSaveDialog(null);
+        
+        // Use a File class to work with as well
+        File file = chooser.getSelectedFile();
+        
+        // check the file
+        if (file != null || file.exists()) {
+            
+            // Now the try catch block...            
+            try {
+                
+                
+            } 
+            catch (IOException e) {
+                System.out.println("File save error");
+            }
+                        
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         // Example continues...
