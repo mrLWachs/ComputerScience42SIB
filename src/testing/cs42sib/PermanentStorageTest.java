@@ -5,6 +5,8 @@ package testing.cs42sib;
 /** required imports */
 //import io.JOptionPane;
 //import io.System;
+import collections.LinkedList;
+import io.Dialogs;
 import io.Simulator;
 import java.io.BufferedReader;
 import java.io.File;
@@ -12,7 +14,9 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.swing.JFileChooser;
+//import javax.swing.JFileChooser;
+import io.JFileChooser;
+import testing.testclass.TestClass;
 
 
 
@@ -169,17 +173,41 @@ public class PermanentStorageTest
         
         // Now save and open without the user involved     
         Simulator.comment("Now save and open without the user involved "); 
-        
-        
                 
-        file = new File("data3");
-        //if (file.exists() == false) file.createNewFile();
+        // Create a constant for the size of the list
+        Simulator.comment("Create a constant for the size of the list");
+        final int SIZE = 10;
         
-        
-        
+        // Create and fill a list of random objects
+        Simulator.comment("Create and fill a list of random objects");
+        LinkedList<TestClass> before = new LinkedList<>();  // Create list
+        for (int i = 0; i < SIZE; i++) {                    // Traverse list
+            before.add(new TestClass(SIZE));                // Add object
+        }
+            
+        // Now create the file
+        Simulator.comment("Now create the file");
+        try {
+            file = new File("data3");                   // Create file object
+            if (!file.exists()) file.createNewFile();   // Check file object
+
+            
+            
+
+            file.delete();                              // Delete file object
+        }
+        catch (IOException error) {
+            System.out.println("Error " + error.toString());
+        }
         
         // Example continues...
         Simulator.comment("Example continues...");
+        
+        
+        // Create an object for using dialogs
+        Simulator.comment("Create an object for using dialogs");
+        Dialogs dialog = new Dialogs();
+        
         
         Simulator.header("Permanent Storage Test completed!");
     }   
