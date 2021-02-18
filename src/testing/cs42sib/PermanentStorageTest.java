@@ -1,8 +1,8 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.cs42sib;
 
-/** required imports */
+/** Required imports */
 //import io.JOptionPane;
 //import io.System;
 import collections.LinkedList;
@@ -51,8 +51,7 @@ public class PermanentStorageTest
         }
         
         // Now some file handling..............................................
-        Simulator.comment("Now some file handling");
-                
+        Simulator.comment("Now some file handling");                
         // Create data to use..................................................
         Simulator.comment("Create data to use");    
                 
@@ -72,22 +71,24 @@ public class PermanentStorageTest
         String last   = ".txt";                                 // Extention
         String name   = first + middle + last;                  // Full name
         
+        // Write one piece of data to that permanent file......................
         Simulator.comment("Write one piece of data to that permanent file");
+        
         try {            
-            // Create instance (objects) of file classes
-            // and connect the 2 classes with the file name 
+            // Create instance (objects) of file classes.......................
+            // and connect the 2 classes with the file name....................
             Simulator.comment("Create instance (objects) of file classes");
             Simulator.comment("and connect the 2 classes with the file name");
             
             FileWriter  writer  = new FileWriter(name);     // First object
             PrintWriter printer = new PrintWriter(writer);  // Second object
             
-            // Now Write to the file
+            // Now Write to the file...........................................
             Simulator.comment("Now Write to the file");
             
             printer.print(word);                            // Write to file
             
-            // Sever (close) the connection to the file
+            // Sever (close) the connection to the file........................
             Simulator.comment("Sever (close) the connection to the file");
             
             printer.close();                                // Close connection
@@ -96,27 +97,26 @@ public class PermanentStorageTest
             System.out.println("File write error");         // output message
         }
         
-        // Now involve the user in naming the file
-        Simulator.comment("Now involve the user in naming the file"); 
-        // Get the file name from the user
-        Simulator.comment("Get the file name from the user"); 
+        // Now involve the user in naming the file.............................
+        Simulator.comment("Now involve the user in naming the file");  
         // Simpliest input from a scanner or dialog...
         // Scanner scanner = new Scanner(System.in);        
         // name = scanner.nextLine();
-        // name = JOptionPane.showInputDialog("Enter name");
-        
-        // Use a fancier input designed for files        
+        // name = JOptionPane.showInputDialog("Enter name");        
+        // Use a fancier input designed for files..............................
         Simulator.comment("Use a fancier input designed for files"); 
         
         JFileChooser chooser = new JFileChooser();
         chooser.showSaveDialog(null);           // Showing a dialog to user
         
-        // Use a File class to work with as well
+        // Use a File class to work with as well...............................
         Simulator.comment("// Use a File class to work with as well"); 
+        
         File file = chooser.getSelectedFile();  // Get the name from the user
         
-        // Check the file
+        // Check the file......................................................
         Simulator.comment("Check the file"); 
+        
         if (file != null || file.exists()) {    // Error check on the file         
             try {                               // Now the try catch block...   
                 FileWriter  writer  = new FileWriter(file);    // Connect file
@@ -131,8 +131,8 @@ public class PermanentStorageTest
             }                        
         }
         
-        // Now open files (for one line)....    
-        Simulator.comment("Now open files (for one line).... "); 
+        // Now open files (for one line).......................................
+        Simulator.comment("Now open files (for one line)"); 
         
         chooser.showOpenDialog(null);                               // Dialog
         file = chooser.getSelectedFile();                           // Get file
@@ -150,7 +150,7 @@ public class PermanentStorageTest
             }
         }
         
-        // Do it again with the array (multiple lines)
+        // Do it again with the array (multiple lines).........................
         Simulator.comment("Do it again with the array (multiple lines)");
         
         chooser.showOpenDialog(null);
@@ -171,22 +171,24 @@ public class PermanentStorageTest
             }
         }
         
-        // Now save and open without the user involved     
-        Simulator.comment("Now save and open without the user involved "); 
-                
-        // Create a constant for the size of the list
+        // Now save and open without the user involved.........................
+        Simulator.comment("Now save and open without the user involved ");                 
+        // Create a constant for the size of the list..........................
         Simulator.comment("Create a constant for the size of the list");
+        
         final int SIZE = 10;
         
-        // Create and fill a list of random objects
+        // Create and fill a list of random objects............................
         Simulator.comment("Create and fill a list of random objects");
+        
         LinkedList<TestClass> before = new LinkedList<>();  // Create list
         for (int i = 0; i < SIZE; i++) {                    // Traverse list
             before.add(new TestClass(SIZE));                // Add object
         }
             
-        // Now create the file
+        // Now create the file.................................................
         Simulator.comment("Now create the file");
+        
         try {
             file = new File("data3");                   // Create file object
             if (!file.exists()) file.createNewFile();   // Check file object
@@ -200,12 +202,9 @@ public class PermanentStorageTest
             System.out.println("Error " + error.toString());
         }
         
-        // Example continues...
-        Simulator.comment("Example continues...");
+        // Create objects that could be useful from this project...............
+        Simulator.comment("Objects that could be useful from this project");
         
-        
-        // Create an object for using dialogs
-        Simulator.comment("Create an object for using dialogs");
         Dialogs dialog = new Dialogs();
         
         
