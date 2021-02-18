@@ -7,6 +7,7 @@ package testing.cs42sib;
 //import io.System;
 import collections.LinkedList;
 import io.Dialogs;
+import io.FileHandler;
 import io.Simulator;
 import java.io.BufferedReader;
 import java.io.File;
@@ -17,6 +18,8 @@ import java.io.PrintWriter;
 //import javax.swing.JFileChooser;
 import io.JFileChooser;
 import testing.testclass.TestClass;
+import tools.Numbers;
+import tools.Text;
 
 
 
@@ -186,17 +189,38 @@ public class PermanentStorageTest
             before.add(new TestClass(SIZE));                // Add object
         }
             
-        // Now create the file.................................................
-        Simulator.comment("Now create the file");
+        // output the list (before saving)
+        System.out.println(before.toString());
         
         try {
-            file = new File("data3");                   // Create file object
-            if (!file.exists()) file.createNewFile();   // Check file object
-
             
+            // Create a temporary file object on the system....................
+            Simulator.comment("Create a temporary file object on the system");
+            file = new File("data3");                   
             
+            // Make sure it exists, or create it...............................
+            Simulator.comment("Make sure it exists, or create it");
+            if (!file.exists()) file.createNewFile();   
 
-            file.delete();                              // Delete file object
+            // Create the filehandler object...................................
+            Simulator.comment("Create the filehandler object");
+            FileHandler<LinkedList<TestClass>> handler = new FileHandler<>();
+            
+            // Use the handler to save the entire list of class objects........
+            Simulator.comment("Use handler to save entire class objects list");
+            handler.saveObject(before, file);
+            
+            // Use to open the entire list (return it).........................
+            Simulator.comment("Use to open the entire list (return it)");
+            LinkedList<TestClass> after = handler.openObject(file);
+            
+            // Output the new lit to compare with original.....................
+            Simulator.comment("Output the new lit to compare with original");
+            System.out.println(after.toString());
+
+            // Delete the file we were using from the system...................
+            Simulator.comment("Delete the file we were using from the system");
+            file.delete();                            
         }
         catch (IOException error) {
             System.out.println("Error " + error.toString());
@@ -204,10 +228,10 @@ public class PermanentStorageTest
         
         // Create objects that could be useful from this project...............
         Simulator.comment("Objects that could be useful from this project");
-        
-        Dialogs dialog = new Dialogs();
-        
-        
+        //Dialogs dialog  = new Dialogs();
+        //Numbers numbers = new Numbers();
+        //Text    text    = new Text();
+          
         Simulator.header("Permanent Storage Test completed!");
     }   
 
