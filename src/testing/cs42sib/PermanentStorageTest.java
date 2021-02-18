@@ -93,7 +93,7 @@ public class PermanentStorageTest
             
             printer.close();                                // Close connection
         } 
-        catch (IOException e) {                             // catch error
+        catch (IOException error) {                         // catch error
             System.out.println("File write error");         // output message
         }
         
@@ -126,7 +126,7 @@ public class PermanentStorageTest
                 }
                 printer.close();                // Sever (close) file connection
             } 
-            catch (IOException e) {             // Catch error
+            catch (IOException error) {                 // Catch error
                 System.out.println("File save error");  // Message user
             }                        
         }
@@ -145,7 +145,7 @@ public class PermanentStorageTest
                 buffer.close();                                     // Close
                 System.out.println(line);                           // Output
             } 
-            catch (IOException e) {                                 // Catch
+            catch (IOException error) {                             // Catch
                 System.out.println("File open error");              // Message
             }
         }
@@ -166,7 +166,7 @@ public class PermanentStorageTest
                 }
                 buffer.close();
             } 
-            catch (IOException e) {
+            catch (IOException error) {
                 System.out.println("File open error");
             }
         }
