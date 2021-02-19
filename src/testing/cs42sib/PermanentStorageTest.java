@@ -4,9 +4,8 @@ package testing.cs42sib;
 
 /** Required imports */
 //import io.JOptionPane;
-//import io.System;
+import io.System;
 import collections.LinkedList;
-import io.Dialogs;
 import io.FileHandler;
 import io.Simulator;
 import java.io.BufferedReader;
@@ -18,8 +17,6 @@ import java.io.PrintWriter;
 //import javax.swing.JFileChooser;
 import io.JFileChooser;
 import testing.testclass.TestClass;
-import tools.Numbers;
-import tools.Text;
 
 
 
