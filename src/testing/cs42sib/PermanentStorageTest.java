@@ -110,7 +110,7 @@ public class PermanentStorageTest
         chooser.showSaveDialog(null);           // Showing a dialog to user
         
         // Use a File class to work with as well...............................
-        Simulator.comment("// Use a File class to work with as well"); 
+        Simulator.comment("Use a File class to work with as well"); 
         
         File file = chooser.getSelectedFile();  // Get the name from the user
         
