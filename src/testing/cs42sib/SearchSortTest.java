@@ -22,12 +22,16 @@ public class SearchSortTest
      */
     public SearchSortTest() {
         Simulator.header("Searching and Sorting Test started...");
-        
+                
         // For the I.B. Exam, you only need to know:
-        // Search: linear (sequential) search, and binary search
+        Simulator.comment("For the I.B. Exam, you only need to know:");
+        // Search: linear (sequential) search and binary search
+        Simulator.comment("Search: linear search and binary search");
         // Sort: bubble sort and the selection sort
+        Simulator.comment("Sort: bubble sort and the selection sort");
         
         // Create some constants for the data
+        Simulator.comment("Create some constants for the data");
         
         final int MIN      = 0;
         final int MAX      = 10;
@@ -37,7 +41,9 @@ public class SearchSortTest
         Numbers numbers = new Numbers();
         
         // Create some random data to search through and sort
+        Simulator.comment("Create some random data to search through and sort");
         // Including all "edge" cases to test for (using unit testing)
+        Simulator.comment("Including edge cases to test");
         
         int[] array    = numbers.random(SMALLEST, LARGEST, MAX);
         int randomItem = numbers.random(SMALLEST, LARGEST);
@@ -55,17 +61,26 @@ public class SearchSortTest
         };
         
         // Create data to store the results...
+        Simulator.comment("Create data to store the results...");
         
         boolean found  = false;
         int     index  = -1;
         int[]   sorted = new int[MAX];
         
+        // The simpliest of searches
+        Simulator.comment("The simpliest of searches");
         
+        found = search(array,randomItem);
+                
+        // Now the linear (sequential) search on all test data
+        Simulator.comment("Now the linear search on all test data");
+        
+        index = linearSearch(array,randomItem);        
         results(array, randomItem, index);
-        results(array, sorted);
         
         
-        
+        // More searching and sorting to come................................
+        Simulator.comment("More searching and sorting to come................");
         
                 
         Simulator.header("Searching and Sorting Test completed!");
@@ -82,10 +97,9 @@ public class SearchSortTest
     private void results(int[] array, int item, int index) {
         Text display = new Text();
         String text = "";
-        text += "Array ";
-        text += display.toString(array);
-        text += "\t searching for " + item;
-        text += "\t at index " + index;
+        text += "Array " + display.toString(array);
+        text += "\n\tSearching for:\t " + item;
+        text += "\n\tLocation index:\t " + index;
         System.out.println(text);
     }
 
@@ -98,12 +112,43 @@ public class SearchSortTest
     private void results(int[] array, int[] sorted) {
         Text display = new Text();
         String text = "";
-        text += "Original Array \t";
-        text += display.toString(array);
-        text += "\n";
-        text += "Sorted Array \t";
-        text += display.toString(sorted);
+        text += "Original Array \t" + display.toString(array);
+        text += "\nSorted Array \t"   + display.toString(sorted);
         System.out.println(text);
+    }
+
+    /**
+     * A simple search, determines if the item is in the array or not
+     * 
+     * @param array an array to search through
+     * @param item the item to search for
+     * @return found (true) or not (false)
+     */
+    private boolean search(int[] array, int item) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == item) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * An implementation of a linear search (sequential search) algorithm. It 
+     * will find the first occurance of an item in the array and return the
+     * index where it found it, or a -1 if not found
+     * 
+     * @param array an array to search through
+     * @param item the item to search for
+     * @return the first index found at, or a -1 if not found
+     */
+    private int linearSearch(int[] array, int item) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == item) {
+                return i;
+            }
+        }
+        return -1;
     }
     
 }
