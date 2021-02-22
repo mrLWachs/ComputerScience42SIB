@@ -5,6 +5,7 @@ package testing.cs42sib;
 /** required imports */
 import io.Simulator;
 import tools.Numbers;
+import tools.Text;
 
 
 /**
@@ -60,11 +61,8 @@ public class SearchSortTest
         int[]   sorted = new int[MAX];
         
         
-
-
-        
-        results(array,randomItem)
-        
+        results(array, randomItem, index);
+        results(array, sorted);
         
         
         
@@ -72,5 +70,40 @@ public class SearchSortTest
                 
         Simulator.header("Searching and Sorting Test completed!");
     }   
+    
+    
+    /**
+     * Displays the results of a search
+     * 
+     * @param array the array to search through
+     * @param item the item to search for
+     * @param index which array index it was found at (or -1 if not found)
+     */
+    private void results(int[] array, int item, int index) {
+        Text display = new Text();
+        String text = "";
+        text += "Array ";
+        text += display.toString(array);
+        text += "\t searching for " + item;
+        text += "\t at index " + index;
+        System.out.println(text);
+    }
+
+    /**
+     * Displays the results of a sort
+     * 
+     * @param array the original array
+     * @param sorted the sorted array
+     */
+    private void results(int[] array, int[] sorted) {
+        Text display = new Text();
+        String text = "";
+        text += "Original Array \t";
+        text += display.toString(array);
+        text += "\n";
+        text += "Sorted Array \t";
+        text += display.toString(sorted);
+        System.out.println(text);
+    }
     
 }
