@@ -75,14 +75,21 @@ public class SearchSortTest
         // Now the linear (sequential) search on all test data
         Simulator.comment("Now the linear search on all test data");
         
-        index = linearSearch(array,randomItem);        
-        results(array, randomItem, index);
+        for (int i = 0; i < findItems.length; i++) {
+            index = linearSearch(array,findItems[i]);        
+            results(array, findItems[i], index);
+        }
         
+        // Simple sort...  
+        Simulator.comment("Simple sort...");
+        //sort(array);
         
-        // More searching and sorting to come................................
-        Simulator.comment("More searching and sorting to come................");
+        // Now execute the bubble sort (named after bubbles rising from water)
+        Simulator.comment("Now bubble sort (from bubbles rising from water)");
         
-                
+        sorted = bubbleSort(array);
+        
+                        
         Simulator.header("Searching and Sorting Test completed!");
     }   
     
@@ -143,12 +150,46 @@ public class SearchSortTest
      * @return the first index found at, or a -1 if not found
      */
     private int linearSearch(int[] array, int item) {
+        // Catch a potential error before we begin
+        if (array == null) return -1;
+        // Traverse the array
         for (int i = 0; i < array.length; i++) {
+            // If I encounter the item
             if (array[i] == item) {
+                // Return the spot I found it at (and stop)
                 return i;
             }
         }
+        // Make it through the entire list, never find it, return
+        // a "flag" value indicating not found
         return -1;
+    }
+
+    /**
+     * A simple sort, it will sort the array into ascending order
+     * 
+     * @param array the array of items to sort 
+     */
+    private void sort(int[] array) {
+        for (int i = 0; i < array.length; i++) {            
+            for (int j = 0; j < array.length - 1; j++) {
+                if (array[j] > array[j+1]) {
+                    int temp   = array[j];
+                    array[j]   = array[j+1];
+                    array[j+1] = temp;
+                }                    
+            }            
+        }
+    }
+
+    /**
+     * An implementation of a bubble sort algorithm it will sort the array into  
+     * ascending order
+     * 
+     * @param array the array of items to sort
+     */
+    private int[] bubbleSort(int[] array) {
+        return null;
     }
     
 }
