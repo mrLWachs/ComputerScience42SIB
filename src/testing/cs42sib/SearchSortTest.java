@@ -88,6 +88,36 @@ public class SearchSortTest
         Simulator.comment("Now bubble sort (from bubbles rising from water)");
         
         sorted = bubbleSort(array);
+        results(array, sorted);
+        
+        // Now execute the selection sort (named after selecting the smallest)
+        Simulator.comment("Now selection sort (after selecting the smallest)");
+        
+        sorted = selectionSort(array);
+        results(array, sorted);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
                         
         Simulator.header("Searching and Sorting Test completed!");
@@ -189,7 +219,67 @@ public class SearchSortTest
      * @param array the array of items to sort
      */
     private int[] bubbleSort(int[] array) {
-        return null;
+        // Create a new array, same size as the passed array
+        int[] sorted = new int[array.length];
+        // Make it a copy of that original
+        System.arraycopy(array, 0, sorted, 0, array.length);        
+        // Sort the copy, using the bubblesort algorithm...        
+        // We need to traverse the array aas many times as there are items in
+        // that array (n items, for example array size 10, n =10)        
+        for (int times = 0; times < sorted.length; times++) {
+            // Nested for loop, to traverse the entire array up to the
+            // second last spot
+            for (int i = 0; i < sorted.length - 1; i++) {
+                // Check  each item and the item after it
+                int item1 = sorted[i];
+                int item2 = sorted[i+1];
+                // Now check
+                if (item1 > item2) {
+                    // Swap them
+                    sorted[i]   = item2;
+                    sorted[i+1] = item1;
+                }                                
+            }
+        }
+        return sorted;
     }
+
+    
+    
+    
+    private int[] selectionSort(int[] array) {
+        // Create a new array, same size as the passed array
+        int[] sorted = new int[array.length];
+        // Make it a copy of that original
+        System.arraycopy(array, 0, sorted, 0, array.length);        
+        // Sort that array using the selection sort algorithm...
+        // Traverse the entire array
+        for (int i = 0; i < sorted.length; i++) {
+         
+            
+            
+        }
+        return sorted;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 }
