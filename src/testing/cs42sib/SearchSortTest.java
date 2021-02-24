@@ -91,30 +91,11 @@ public class SearchSortTest
         results(array, sorted);
         
         // Now execute the selection sort (named after selecting the smallest)
-        Simulator.comment("Now selection sort (after selecting the smallest)");
+        Simulator.comment("Now selection sort (from selecting the smallest)");
         
         sorted = selectionSort(array);
         results(array, sorted);
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+               
         
         
         
