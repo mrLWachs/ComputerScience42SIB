@@ -244,9 +244,12 @@ public class SearchSortTest
         return sorted;
     }
 
-    
-    
-    
+    /**
+     * An implementation of a selection sort algorithm it will sort the array   
+     * into ascending order
+     * 
+     * @param array the array of items to sort
+     */
     private int[] selectionSort(int[] array) {
         // Create a new array, same size as the passed array
         int[] sorted = new int[array.length];
@@ -255,9 +258,26 @@ public class SearchSortTest
         // Sort that array using the selection sort algorithm...
         // Traverse the entire array
         for (int i = 0; i < sorted.length; i++) {
-         
-            
-            
+            // Track the lowest index, assume it's the first spot
+            int lowest = i;
+            // Nested inner for loop, starts at one over from current position
+            // of the outer for loop used to find the lowest spot
+            for (int j = i+1; j < sorted.length; j++) {
+                int item1 = sorted[j];
+                int item2 = sorted[lowest];
+                // check the spots
+                if (item1 < item2) {
+                    // found a new low
+                    lowest = j;
+                }
+            }
+            // Outside the inner loop, now that we have the lowest spot, swap
+            // the content of the lowest spot with the current spot i
+            if (lowest != i) {
+                int temp       = sorted[i];
+                sorted[i]      = sorted[lowest];
+                sorted[lowest] = temp;
+            }
         }
         return sorted;
     }
