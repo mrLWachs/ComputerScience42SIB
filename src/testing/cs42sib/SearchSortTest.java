@@ -34,7 +34,7 @@ public class SearchSortTest
         Simulator.comment("Create some constants for the data");
         
         final int MIN      = 0;
-        final int MAX      = 10;
+        final int MAX      = 1000;
         final int LARGEST  = MAX;
         final int SMALLEST = MIN;
         
@@ -96,6 +96,31 @@ public class SearchSortTest
         sorted = selectionSort(array);
         results(array, sorted);
                
+        // Now the binary search (named after "two" or "dividing")
+        // NOTE: binary search can only happen on a sorted list
+        
+        // Redo some of the test data...
+        
+        findItems[1] = sorted[numbers.random(MIN+1, MAX-2)];
+        findItems[2] = sorted[0];
+        findItems[3] = sorted[MAX-1];
+        
+        for (int i = 0; i < findItems.length; i++) {
+            index = binarySearch(sorted,findItems[i]);
+            results(sorted, findItems[i], index);
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -261,6 +286,33 @@ public class SearchSortTest
             }
         }
         return sorted;
+    }
+
+    /**
+     * An implementation of a binary search algorithm. It will find the first 
+     * occurance of an item in the array and return the index where it found 
+     * it, or a -1 if not found
+     * 
+     * @param array an array to search through
+     * @param item the item to search for
+     * @return the first index found at, or a -1 if not found
+     */
+    private int binarySearch(int[] array, int item) {
+        // Track the low and high indices of the array with "markers"
+        int high = array.length - 1;
+        int low  = 0;        
+        // Loop while the markers are not collapsed on themselves
+        while (low <= high) {         
+            // find (calculate) the middle between low and high
+            int mid = (high + low) / 2;            
+            // check if found
+            if (array[mid] == item) return mid;            
+            // check if the spot I'm at is bigger than item
+            else if (array[mid] > item) high = mid - 1;            
+            // check if the spot I'm at is smaller than item
+            else if (array[mid] < item) low = mid + 1;            
+        }        
+        return -1;  // not found!        
     }
     
     
