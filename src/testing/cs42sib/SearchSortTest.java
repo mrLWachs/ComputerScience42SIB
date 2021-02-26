@@ -388,26 +388,6 @@ public class SearchSortTest
             else if (array[mid] < item) low = mid + 1;            
         }        
         return -1;  // not found!        
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    } 
     
 }
