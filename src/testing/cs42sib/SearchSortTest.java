@@ -113,7 +113,41 @@ public class SearchSortTest
             results(sorted, findItems[i], index);
         }
         
-         
+        // Use class for searching and sorting
+        // Create objects to help 
+        
+        Text   text   = new Text();
+        Search search = new Search();
+        Sort   sort   = new Sort();
+        
+        // Create random linked list data
+        // include all edge cases to test
+        
+        LinkedList<String> unsortedWords = text.randomList(MAX);
+        LinkedList<String> sortedWords   = new LinkedList<>();
+        
+        // Place all test cases into another linked list
+        LinkedList<String> testCases = new LinkedList<>();
+        
+        String randomWord = text.randomWord();
+        String inListWord = unsortedWords.get(numbers.random(MIN+1, MAX-2));
+        String firstWord  = unsortedWords.front();
+        String lastWord   = unsortedWords.back();
+        String notWord    = "Wachs";
+                
+        testCases.add(randomWord);
+        testCases.add(inListWord);
+        testCases.add(firstWord);
+        testCases.add(lastWord);
+        testCases.add(notWord);
+        
+        // Now the linear search on all test data...
+        
+        
+        
+        
+        
+        
         
         
         
