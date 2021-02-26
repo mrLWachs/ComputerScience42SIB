@@ -3,8 +3,11 @@
 package testing.cs42sib;
 
 /** required imports */
+import collections.LinkedList;
 import io.Simulator;
 import tools.Numbers;
+import tools.Search;
+import tools.Sort;
 import tools.Text;
 
 
@@ -34,7 +37,7 @@ public class SearchSortTest
         Simulator.comment("Create some constants for the data");
         
         final int MIN      = 0;
-        final int MAX      = 1000;
+        final int MAX      = 10;
         final int LARGEST  = MAX;
         final int SMALLEST = MIN;
         
@@ -110,18 +113,7 @@ public class SearchSortTest
             results(sorted, findItems[i], index);
         }
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+         
         
         
         
