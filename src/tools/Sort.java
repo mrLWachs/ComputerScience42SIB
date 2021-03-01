@@ -299,5 +299,107 @@ public class Sort <T extends Comparable<T>>
         list.set(front,pivot);
         return front;
     } 
+        
+    /**
+     * An implementation of a merge sort algorithm it will sort the array into 
+     * ascending order. 
+     * 
+     * @param list the LinkedList to sort
+     */    
+    public void merge(LinkedList<T> list) {
+        if (list == null) return;                          // error check
+        recursiveMerge(list,list.size());
+    } 
+    
+    /**
+     * The recursive wrapper method for merge sort. This algorithm takes the 
+     * list parameter and its length and uses a recursive wrapper method (with 
+     * a base and the recursive conditions). The base condition checks if the 
+     * length is 1 and it will just return. For the rest of the cases, the 
+     * recursive call will be executed. For the recursive case, we get the 
+     * middle index and create two temporary lists. Then both two lists are 
+     * recursively sorted. 
+     * 
+     * @param list the LinkedList to sort
+     * @param length the length of the list
+     */
+    private void recursiveMerge(LinkedList<T> list, int length) {
+        if (length < 2) return;
+        int mid = length / 2;
+        LinkedList<T> leftList  = new LinkedList<>();
+        LinkedList<T> rightList = new LinkedList<>();
+        for (int i = 0; i < mid; i++) {
+            leftList.add(list.get(i));
+        }
+        for (int i = mid; i < length; i++) {
+            rightList.add(list.get(i));
+        }
+        for (int i = mid; i < length; i++) {
+            rightList.set(i-mid,list.get(i));
+        }
+        recursiveMerge(leftList, mid);
+        recursiveMerge(rightList, length - mid);
+        mergeAssist(list, leftList, rightList, mid, length - mid);
+    }
+    
+    /**
+     * An assist method for the merge sort. We then call the merge method 
+     * which takes in the input and both the sub-lists and the starting and 
+     * end indices of both the lists. It compares the elements of both 
+     * sub-lists one by one and places the smaller element into the input 
+     * list. When we reach the end of one of the sub-lists, the rest of the 
+     * elements from the other list are copied into the input list thereby 
+     * giving us the final sorted list.
+     * 
+     * @param list the LinkedList to sort
+     * @param leftList the left sub-list
+     * @param rightList the right sub-list
+     * @param left the left starting index
+     * @param right the right starting index 
+     */
+    private void mergeAssist(LinkedList<T> list, LinkedList<T> leftList,
+            LinkedList<T> rightList, int left, int right) {        
+        int i = 0, j = 0, k = 0;
+        while (i < left && j < right) {
+            if (leftList.get(i).compareTo(rightList.get(j)) <= 0) {
+                list.set(k++, leftList.get(i++));
+            }
+            else {
+                list.set(k++, rightList.get(j++));
+            }
+        }
+        while (i < left) {
+            list.set(k++, leftList.get(i++));
+        }
+        while (j < right) {
+            list.set(k++, rightList.get(j++));
+        }        
+    }
+        
+    
+    
+    /**
+     * An implementation of a heap sort algorithm it will sort the array into 
+     * ascending order. 
+     * 
+     * @param list the LinkedList to sort
+     */    
+    public void heap(LinkedList<T> list) {
+        if (list == null) return;                          // error check
+        
+    } 
+ 
+    
+    /**
+     * An implementation of a radix sort algorithm it will sort the array into 
+     * ascending order. 
+     * 
+     * @param list the LinkedList to sort
+     */    
+    public void radix(LinkedList<T> list) {
+        if (list == null) return;                          // error check        
+        
+    }
+    
     
 }

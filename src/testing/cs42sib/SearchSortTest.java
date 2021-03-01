@@ -191,7 +191,14 @@ public class SearchSortTest
         sort.quick(sortedWords);
         System.out.println("Before: \t" + unsortedWords.toString());
         System.out.println("After:  \t" + sortedWords.toString());
-        
+                
+        // Merge sort LinkedList data...
+        Simulator.comment("Merge sort LinkedList data...");        
+        sortedWords = unsortedWords.clone();
+        sort.merge(sortedWords);
+        System.out.println("Before: \t" + unsortedWords.toString());
+        System.out.println("After:  \t" + sortedWords.toString());
+                
         // Execute the binary search on all test data...
         Simulator.comment("Execute the binary search on all test data...");        
         for (int i = 0; i < testCases.size(); i++) {
