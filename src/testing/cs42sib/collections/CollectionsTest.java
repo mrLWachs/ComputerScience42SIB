@@ -51,6 +51,54 @@ public class CollectionsTest
         System.out.println("Node c = " + c.toString());
         System.out.println("Node d = " + d.toString());
         
+        // Test the clone method on various nodes..............................
+        Simulator.comment("Test the clone method on various nodes...");
+        
+        Node e = d.clone();
+        Node f = c.clone();
+        Node g = b.clone();
+        Node h = a.clone();
+        
+        System.out.println("Node e = " + e.toString());
+        System.out.println("Node f = " + f.toString());
+        System.out.println("Node g = " + g.toString());
+        System.out.println("Node h = " + h.toString());
+        
+        // Test equals method on various nodes.................................
+        Simulator.comment("Test equals method on various nodes....");
+        
+        System.out.println(a.equals(h));
+        System.out.println(b.equals(g));
+        System.out.println(c.equals(f));
+        System.out.println(d.equals(e));
+        
+        System.out.println(a.equals(b));
+        System.out.println(b.equals(c));
+        System.out.println(c.equals(d));
+        System.out.println(d.equals(h));
+        
+        // Test finalize method on various nodes...............................
+        Simulator.comment("Test finalize method on various nodes....");
+        
+        a.finalize();        
+        b.finalize();        
+        c.finalize();        
+        d.finalize();        
+        e.finalize();        
+        f.finalize();        
+        g.finalize();        
+        h.finalize();        
+        
+        System.out.println("Node a = " + a.toString());
+        System.out.println("Node b = " + b.toString());
+        System.out.println("Node c = " + c.toString());
+        System.out.println("Node d = " + d.toString());
+        System.out.println("Node e = " + e.toString());
+        System.out.println("Node f = " + f.toString());
+        System.out.println("Node g = " + g.toString());
+        System.out.println("Node h = " + h.toString());
+        
+        
         
         
         

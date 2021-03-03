@@ -1,5 +1,8 @@
+
+/** Required package class namespace */
 package testing.cs42sib.collections;
 
+/** Required imports */
 import java.io.Serializable;
 
 /**
@@ -87,5 +90,46 @@ public class Node <T> implements Serializable
         return data.toString();                     // output data in node
     }
 
+    /**
+     * Deep comparison, determines if two objects are "equal" in this context
+     *
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        if (this.data == null) return false;
+        if (object    == null) return false;    // error checks
+        try {
+            Node that = (Node)object;               // cast object into node
+            if (that.data == null || this.data == null) return false;
+            return this.data.equals(that.data);     // compare data in nodes
+        }
+        catch (ClassCastException error) {
+            System.out.println("Node equals -> " + error.toString());
+            return false;
+        }
+    }
     
+    /**
+     * a Deep clone, creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public Node clone() {
+        return new Node(data,next,previous);
+        // annonymous object
+    }
+    
+    /**
+     * Frees up all memory used by this object
+     */
+    @Override
+    public void finalize() {
+        data = null;
+        next = previous = null;
+        System.gc();                // runs the garbage collector in Java
+    }
+        
 }
