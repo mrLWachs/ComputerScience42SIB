@@ -98,7 +98,16 @@ public class CollectionsTest
         System.out.println("Node g = " + g.toString());
         System.out.println("Node h = " + h.toString());
         
+        // Create (instatitate) a LinkedList object............................
+        Simulator.comment("Create (instatitate) a LinkedList object...");
         
+        LinkedList<String> list1 = new LinkedList<>();
+        
+        // Test is the size and isEmpty methods................................
+        Simulator.comment("Test is the size and isEmpty methods...");
+        
+        System.out.println("Size     = " + list1.size());
+        System.out.println("Is empty = " + list1.isEmpty());
         
         
         
