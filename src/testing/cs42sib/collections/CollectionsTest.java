@@ -104,11 +104,48 @@ public class CollectionsTest
         LinkedList<String> list1 = new LinkedList<>();
         
         // Test is the size and isEmpty methods................................
+        Simulator.comment("");
         Simulator.comment("Test is the size and isEmpty methods...");
         
         System.out.println("Size     = " + list1.size());
         System.out.println("Is empty = " + list1.isEmpty());
+        System.out.println(list1.toString());
         
+        // Add content to the front............................................
+        Simulator.comment("Add content to the front...");
+        
+        System.out.println(list1.addFront("Tiger"));
+        System.out.println(list1.toString());
+        System.out.println(list1.addFront("Quail"));
+        System.out.println(list1.toString());
+        System.out.println(list1.addFront("Cockatoo"));
+        System.out.println(list1.toString());
+        System.out.println(list1.addFront(null));
+        System.out.println(list1.toString());
+        
+        // Add content to the back.............................................
+        Simulator.comment("Add content to the back...");
+        
+        System.out.println(list1.addBack("Whale"));
+        System.out.println(list1.toString());
+        System.out.println(list1.addBack("Monkey"));
+        System.out.println(list1.toString());
+        System.out.println(list1.addBack("Dog"));
+        System.out.println(list1.toString());
+        System.out.println(list1.addBack(null));
+        System.out.println(list1.toString());
+        
+        // Test our get ("accessor") method....................................     
+        Simulator.comment("Test our get (accessor) method...");
+        
+        for (int i = -1; i <= list1.size(); i++) {
+            System.out.println("index " + i + " = " + list1.get(i));
+        }
+        
+        // Test our set ("mutator") method.....................................
+        Simulator.comment("Test our set (mutator) method...");
+        System.out.println(list1.set(1, "Gorilla"));
+        System.out.println(list1.toString());
         
         
         Simulator.header("Collections Test completed!");
