@@ -155,6 +155,23 @@ public class CollectionsTest
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         Simulator.header("Collections Test completed!");
     }
     

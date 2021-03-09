@@ -164,11 +164,49 @@ public class LinkedList <T> implements Serializable
         return true;                                // operation successful
     }
     
+    /**
+     * Accesses the first, head, front data in the list
+     * 
+     * @return the head data
+     */
+    public T front() {
+        return get(0);                              // first node
+        // Could have also used...
+        // return head.data;
+        // return getFirstNode().data;
+    }
+    
+    /**
+     * Accesses the last, tail, back data in the list
+     * 
+     * @return the tail data
+     */
+    public T back() {
+        return get(length-1);                       // last node
+        // Could have also used...
+        // return get(size()-1);
+        // return tail.data;
+        // return getLastNode().data;
+    }
 
+    /**
+     * Removes (deletes) the first (head) node of the list
+     * 
+     * @return the data in the first node (or null)
+     */
+    public T removeFront() {
+        if (isEmpty()) return null;             // no front to remove
+        T data = front();                       // store head data
+        if (length == 1) finalize();            // 1 node list, wipe list
+        else {
+            
+            
+            
+        }        
+        return data;                            // return stored data
+    }
 
-
-
-
+    
 
 
 
