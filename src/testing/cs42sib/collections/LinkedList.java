@@ -149,18 +149,34 @@ public class LinkedList <T> implements Serializable
         return (T)getNode(index).data;      // get reference and retrieve data  
     }
     
-    
+    /**
+     * Mutator method sets the index location to the new data
+     * 
+     * @param index the index location to mutate
+     * @param data the new data to mutate into
+     * @return the operation was successful (true) or not (false)
+     */
     public boolean set(int index, T data) {
-        if (!inRange(index)) return false;
-        if (data == null)    return false;
-        Node current = getNode(index);
-        current.data = data;
-        return true;
+        if (!inRange(index)) return false;          // invalid index
+        if (data == null)    return false;          // invalid data
+        Node current = getNode(index);              // get to node at index
+        current.data = data;                        // change node data
+        return true;                                // operation successful
     }
     
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     /**
      * Accessor method to the encapsulated (private) property of the first

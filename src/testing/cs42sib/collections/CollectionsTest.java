@@ -148,6 +148,13 @@ public class CollectionsTest
         System.out.println(list1.toString());
         
         
+        
+        
+        
+        
+        
+        
+        
         Simulator.header("Collections Test completed!");
     }
     
