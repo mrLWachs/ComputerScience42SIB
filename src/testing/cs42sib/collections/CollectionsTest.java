@@ -141,10 +141,15 @@ public class CollectionsTest
         for (int i = -1; i <= list1.size(); i++) {
             System.out.println("index " + i + " = " + list1.get(i));
         }
-        
+        System.out.println(list1.toString());
+                
         // Test our set ("mutator") method.....................................
         Simulator.comment("Test our set (mutator) method...");
-        System.out.println(list1.set(1, "Gorilla"));
+        
+        for (int i = -1; i <= list1.size(); i++) {
+            System.out.println(list1.set(i, "cats"));
+        }
+        System.out.println(list1.set(0, null));
         System.out.println(list1.toString());
         
         
