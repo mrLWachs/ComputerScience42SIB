@@ -8,6 +8,7 @@ import io.Dialogs;
 import io.FileHandler;
 import java.io.File;
 import tools.Numbers;
+import tools.Text;
 
 
 /**
@@ -16,6 +17,7 @@ import tools.Numbers;
  *      - LinkedList class (ADT storing a list)
  *      - Dialogs class (for input/output user dialogs)
  *      - Numbers class (for random numbers)
+ *      - Text class (for random words)
  *      - FileHandler class (for saving and opening files for permanent storage)
  *
  * @author Mr. Wachs 
@@ -30,20 +32,22 @@ public class Example
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // Create instances of the object to use...
-        Dialogs dialog  = new Dialogs(); 
+        // Create instances of the object to use...        
         Numbers numbers = new Numbers();
-        FileHandler<LinkedList<Integer>> handler = new FileHandler<>(); 
+        Text    text    = new Text();
+        Dialogs dialog  = new Dialogs(); 
+        FileHandler<LinkedList<String>> handler = new FileHandler<>(); 
         
         // Create instances of the lists (ADTs)        
-        LinkedList<Integer> before = new LinkedList<>();
-        LinkedList<Integer> after  = new LinkedList<>();
+        LinkedList<String> before = new LinkedList<>();
+        LinkedList<String> after  = new LinkedList<>();
         
         // Loop through and fill the first list with random values        
-        final int MAX = 10;
+        final int MAX = 100;
         for (int i = 0; i < MAX; i++) {
-            Integer number = numbers.random(-MAX, MAX);
-            before.add(number);
+            Integer number = numbers.random(1, 5);
+            String  word   = text.random(number);
+            before.add(word);
         }        
             
         // Ask the user for a file and save the first list
@@ -52,11 +56,11 @@ public class Example
         
         // Ask the user for a file to open and fill the second list
         File file2 = dialog.openFile(null);        
-        after = (LinkedList<Integer>)handler.openObject(file2); 
+        after = (LinkedList<String>)handler.openObject(file2); 
         
         // Output the two lists to compare them
-        System.out.println("Before: " + before.toString()); 
-        System.out.println("After:  " + after.toString());
+        System.out.println("Before: " + before); 
+        System.out.println("After:  " + after);
     }
 
 }

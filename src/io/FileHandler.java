@@ -463,7 +463,7 @@ public class FileHandler <T>
             return false;
         }
     }
-    
+        
     /**
      * Opens the passed filename and reads the generic object from it
      * 
@@ -471,6 +471,7 @@ public class FileHandler <T>
      * @return the generic data type in the file
      */
     public T openObject(String filename) {
+        
         try {
             FileInputStream   stream = new FileInputStream(filename);
             ObjectInputStream input  = new ObjectInputStream(stream);
@@ -488,6 +489,10 @@ public class FileHandler <T>
         }
         catch(NullPointerException e) {
             dialog.output("Null: " + e.toString());
+            return null;
+        }
+        catch (StackOverflowError error) {
+            dialog.output("Stack Over flow: " + error.toString());
             return null;
         }
         catch (IOException error) {
