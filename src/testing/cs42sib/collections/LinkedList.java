@@ -36,10 +36,7 @@ public class LinkedList <T> implements Serializable
     
     /** The number of nodes in the list, immutable property */
     private int length;
-    
-    /** the longest "word" size of the largest node data */
-    public int longestWord;
-    
+        
     
     /**
      * Default constructor, set class properties
@@ -198,16 +195,49 @@ public class LinkedList <T> implements Serializable
         if (isEmpty()) return null;             // no front to remove
         T data = front();                       // store head data
         if (length == 1) finalize();            // 1 node list, wipe list
-        else {
-            
-            
-            
+        else {            
+            head = head.next;                   // advanced head reference
+            head.previous.next = null;          // cut old head reference
+            head.previous = null;               // cut reference to old head
+            length--;                           // reduce list length
+            System.gc();                        // call system garbage collector
         }        
         return data;                            // return stored data
     }
 
+    /**
+     * Removes (deletes) the last (tail) node of the list
+     * 
+     * @return the data in the last node (or null)
+     */
+    public T removeBack() {
+        if (isEmpty()) return null;             // no back to remove
+        T data = (T)tail.data;                  // store tail data
+        if (length == 1) finalize();            // 1 node list, wipe list
+        else {   
+            tail = tail.previous;               // advanced tail reference
+            tail.next.previous = null;          // cut old tail reference
+            tail.next = null;                   // cut reference to old tail
+            length--;                           // reduce list length
+            System.gc();                        // call system garbage collector
+        }
+        return data;                            // return stored data
+    }
     
-
+    /**
+     * a Deep clone, creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public LinkedList clone() {
+        LinkedList<T> that = new LinkedList<>();    // create new list memory
+        for (int i = 0; i < length; i++) {          // traverse list
+            T data = (T)this.get(i);                // Get data from this list
+            that.addBack(data);                     // Add data to that list       
+        }        
+        return that;                                // new list returned
+    }
 
 
 

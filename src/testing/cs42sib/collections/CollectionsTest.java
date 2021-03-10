@@ -143,23 +143,38 @@ public class CollectionsTest
         }
         System.out.println(list1.toString());
                 
+        // Test our clone method.....................................
+        Simulator.comment("Test our clone method...");
+        
+        LinkedList<String> copy = list1.clone();
+        System.out.println(copy.toString());    
+        
         // Test our set ("mutator") method.....................................
         Simulator.comment("Test our set (mutator) method...");
         
-        for (int i = -1; i <= list1.size(); i++) {
-            System.out.println(list1.set(i, "cats"));
+        for (int i = -1; i <= copy.size(); i++) {
+            System.out.println(copy.set(i, "geese"));
         }
-        System.out.println(list1.set(0, null));
-        System.out.println(list1.toString());
+        System.out.println(copy.set(1, null));        
+        System.out.println(copy.toString());
         
+        // Test our remove front method........................................
+        Simulator.comment("Test our remove front method...");
         
+        for (int i = 0; i < 10; i++) {
+            System.out.println(copy.removeFront());
+            System.out.println(copy.toString());
+        }
+                
+        // Test our remove back method.........................................
+        Simulator.comment("Test our remove back method...");
         
-        
-        
-        
-        
-        
-        
+        copy = list1.clone();
+        System.out.println(copy.toString());
+        for (int i = 0; i < 10; i++) {
+            System.out.println(copy.removeBack());
+            System.out.println(copy.toString());
+        }
         
         
         
