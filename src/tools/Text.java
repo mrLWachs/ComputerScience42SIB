@@ -244,6 +244,7 @@ public class Text
      * @return a string of formatted text
      */
     public String toString(int[] array) {
+        if (array == null) return "null array";
         String text = ARRAY_START;
         for (int i = 0; i < array.length-1; i++) {
             text += array[i] + ARRAY_DIVIDE;

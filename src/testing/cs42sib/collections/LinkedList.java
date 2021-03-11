@@ -239,10 +239,242 @@ public class LinkedList <T> implements Serializable
         return that;                                // new list returned
     }
 
+    /**
+     * Checks (searches) if the specified data is inside the list
+     * 
+     * @param data the data to check for
+     * @return data is in the list (true) or not (false)
+     */ 
+    public boolean contains(T data) {
+        if (data == null) return false;         // invalid data to search for
+        Node current = head;                    // start reference at head
+        while (current != null) {               // traverse list
+            if (current.data.equals(data)) {    // found first occurrence
+                return true;                    // indicate found
+            }
+            current = current.next;             // move to next node
+        }
+        return false;                           // not found in list
+    } 
 
+    /**
+     * Inserts data as a new node after the passed index
+     * 
+     * @param data the data type to insert
+     * @param index the index location to insert after
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addAfter(T data, int index) {
+        if (data == null)    return false;              // invalid data to add
+        if (!inRange(index)) return false;              // index out of range        
+        if (index == length-1) return addBack(data);    // add to end of list
+        Node<T> node = new Node<>(data);                // create node object
+        Node current = getNode(index);                  // get to index spot
+        node.next = current.next;                       // set proper references
+        current.next.previous = node;
+        current.next = node;
+        node.previous = current;            
+        length++;                                       // increase length
+        return true;                                    // opperation successful
+    }
+        
+    /**
+     * Inserts data as a new node before the passed index
+     * 
+     * @param data the data type to insert
+     * @param index the index location to insert before
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addBefore(T data, int index) {
+        if (data == null)    return false;              // invalid data to add
+        if (!inRange(index)) return false;              // index out of range        
+        if (index == 0)      return addFront(data);     // add to start of list
+        Node<T> node = new Node<>(data);                // create node object
+        Node current = getNode(index);                  // get to index spot
+        node.previous = current.previous;               // set proper references
+        current.previous.next = node;
+        current.previous = node;
+        node.next = current;            
+        length++;                                       // increase length
+        return true;                                    // opperation successful
+    }
 
-
-
+    /**
+     * Adds the data to the back of the list (wrapper method)
+     * 
+     * @param data the data to add
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean add(T data) {
+        return addBack(data);                           // wrapper method call
+    }
+    
+    /**
+     * Adds the data before the passed index (wrapper method)
+     * 
+     * @param data the data to add
+     * @param index the index location to add before
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean add(T data, int index) {
+        return addBefore(data,index);                   // wrapper method call
+    }
+    
+    
+    
+    /**
+     * Deletes the node at the specified index and mutates the list
+     * 
+     * @param index the index location to remove
+     * @return the data at the specified index (or null)
+     */
+    public T remove(int index) {
+        if (!inRange(index))   return null;             // not in range
+        if (index == 0)        return removeFront();    // remove first
+        if (index == length-1) return removeBack();     // remove last
+        Node current = getNode(index);                  // get to index
+        current.next.previous = current.previous;       // change references
+        current.previous.next = current.next;
+        current.next = current.previous = null;        
+        length--;                                       // reduce list length
+        return (T)current.data;                         // return index data        
+    }
+    
+    /**
+     * Finds the node matching the data at the first occurrence in the list
+     * and returns it's index or -1 (NOT_FOUND) if not in the list
+     * 
+     * @param data the node data to search for
+     * @return index of first occurrence or -1 (NOT_FOUND)
+     */
+    public int firstIndexOf(T data) {
+        if (data == null) return NOT_FOUND;     // null data rejected
+        Node current = head;                    // start at head
+        int index = 0;                          // start count at 0
+        while (current != null) {               // traverse list
+            if (current.data.equals(data)) {    // found first occurrence
+                return index;                   // return location
+            }
+            current = current.next;             // advance to next node
+            index++;                            // advance count
+        }
+        return NOT_FOUND;                       // data not found
+    }
+    
+    /**
+     * Finds the node matching the data at the last occurrence in the list
+     * and returns it's index or -1 (NOT_FOUND) if not in the list
+     * 
+     * @param data the node data to search for
+     * @return index of last occurrence or -1 (NOT_FOUND) 
+     */
+    public int lastIndexOf(T data) {
+        if (data == null) return NOT_FOUND;     // null data rejected
+        Node current = tail;                    // start at head
+        int index = length-1;                   // start count at total nodes
+        while (current != null) {               // traverse list
+            if (current.data.equals(data)) {    // found last occurrence
+                return index;                   // return location
+            }
+            current = current.previous;         // return to previous node
+            index--;                            // decrease count
+        }
+        return NOT_FOUND;                       // data not found
+    }
+    
+    /**
+     * The number of instances this data occurs in the list
+     * 
+     * @param data the data to search for
+     * @return the number of instances of the data
+     */
+    public int numberOf(T data) {
+        if (data == null) return 0;             // reject null data
+        int counter = 0;                        // start a counter
+        Node current = head;                    // start at head of list
+        while (current != null) {               // traverse list
+            if (current.data.equals(data)) {    // item found in list
+                counter++;                      // increase counter
+            }
+            current = current.next;             // advance to next node
+        }
+        return counter;                         // counter returned
+    }
+    
+    /**
+     * Accesses all occurrences of the passed data in the list and returns an
+     * integer array containing all index values the data occurred at
+     * 
+     * @param data the data to search for
+     * @return all indices location in an array or null if no indices
+     */
+    public int[] allIndices(T data) {
+        if (data == null)    return null;       // reject null data
+        if (!contains(data)) return null;       // no data in the list
+        int size = numberOf(data);              // get number of occurrences
+        int[] array = new int[size];            // create array 
+        Node current = head;                    // start at head
+        int counter = 0;                        // start counter
+        for (int i = 0; i < length; i++) {      // traverse list
+            if (current.data.equals(data)) {    // item encountered
+                array[counter] = i;             // insert index into array
+                counter++;                      // increase counter
+                if (counter >= size) {
+                    return array;
+                }
+            }
+            current = current.next;             // move to next node
+        }
+        return array;                           // return completed array
+    }
+    
+    /**
+     * Deletes the first occurrence of the data in the list
+     * 
+     * @param data the node data to remove
+     * @return the operation was successful (true) or not (false) 
+     */
+    public boolean remove(T data) {
+        if (data == null) return false;         // nothing to remove
+        int index = firstIndexOf(data);         // get first location
+        if (index == NOT_FOUND) return false;   // not in list
+        remove(index);                          // remove
+        return true;                            // operation successful
+    }
+    
+    /**
+     * Deletes the last occurrence of the data in the list
+     * 
+     * @param data the node data to remove
+     * @return the operation was successful (true) or not (false) 
+     */
+    public boolean removeLast(T data) {
+        if (data == null) return false;         // nothing to remove
+        int index = lastIndexOf(data);          // get first location
+        if (index == NOT_FOUND) return false;   // not in list
+        remove(index);                          // remove
+        return true;                            // operation successful
+    }
+    
+    /**
+     * Deletes all occurrences of the data in the list
+     * 
+     * @param data the node data to remove
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean removeAll(T data) {
+        if (data == null)    return false;      // nothing to remove
+        if (!contains(data)) return false;      // not in list
+        while(contains(data)) {                 // loop continuously
+            remove(data);                       // removing the data
+        }
+        return true;                            // operation successful
+    }
+    
+    
+    
+    
+    
 
 
     
