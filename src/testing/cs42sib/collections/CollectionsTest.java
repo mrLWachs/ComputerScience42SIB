@@ -118,9 +118,9 @@ public class CollectionsTest
         System.out.println(list.toString());
         System.out.println(list.addFront("Thor"));
         System.out.println(list.toString());
-        System.out.println(list.addFront("Captain America"));
+        System.out.println(list.addFront("CaptainAmerica"));
         System.out.println(list.toString());
-        System.out.println(list.addFront("Iron Man"));
+        System.out.println(list.addFront("IronMan"));
         System.out.println(list.toString());
         System.out.println(list.addFront(null));
         System.out.println(list.toString());
@@ -132,11 +132,11 @@ public class CollectionsTest
         System.out.println(list.toString());
         System.out.println(list.addBack("Hawkeye"));
         System.out.println(list.toString());
-        System.out.println(list.addBack("Black Widow"));
+        System.out.println(list.addBack("BlackWidow"));
         System.out.println(list.toString());
         System.out.println(list.addBack("Hulk"));
         System.out.println(list.toString());
-        System.out.println(list.addBack("Spider-man"));
+        System.out.println(list.addBack("SpiderMan"));
         System.out.println(list.toString());        
         System.out.println(list.addBack(null));
         System.out.println(list.toString());
@@ -202,11 +202,11 @@ public class CollectionsTest
         Simulator.comment("Test our contains method...");
         
         // First index (Captain America)...
-        Simulator.comment("First index (Captain America)...");
-        System.out.println(list + "\t" + list.contains("Captain America"));        
+        Simulator.comment("First index (CaptainAmerica)...");
+        System.out.println(list + "\t" + list.contains("CaptainAmerica"));        
         // Last index (Spider-man)...
-        Simulator.comment("Last index (Spider-man)...");
-        System.out.println(list + "\t" + list.contains("Spider-man"));        
+        Simulator.comment("Last index (SpiderMan)...");
+        System.out.println(list + "\t" + list.contains("SpiderMan"));        
         // Not in list (Batman)...
         Simulator.comment("Not in list (Batman)...");
         System.out.println(list + "\t" + list.contains("Batman"));        
@@ -396,39 +396,120 @@ public class CollectionsTest
         // Remove multiple occurances (Hulk)
         Simulator.comment("Remove no occurances (Batman)");
         System.out.println(clone + "\t" + clone.removeAll("Batman"));
-              
-        
-        ///////////////////////////////////////////////////////////////////////
-        
+             
         // Test our remove all (array) method..................................
         Simulator.comment("Re-clone list, then...");
         clone = list.clone();
         System.out.println(clone.toString());
         Simulator.comment("Test our remove all (array) method...");
-                
+          
+        // Create an array to remove from the list.............................
+        Simulator.comment("Create an array to remove from the list...");
+        String[] removeItems = {
+            "Hawkeye",
+            "Hulk",
+            "Batman"
+        };
+        value = text.toString(removeItems);
+        System.out.println(value);
+        
+        // Create null and empty arrays to use.................................
+        Simulator.comment("Create null and empty arrays to use");
+        String[] nullArray = null;
+        String[] emptyArray = new String[0];
+        
+        Simulator.comment("Remove null array");
+        System.out.println(clone.removeAll(nullArray) + "\t" + clone);        
+        Simulator.comment("Remove empty array");
+        System.out.println(clone.removeAll(emptyArray) + "\t" + clone);        
+        Simulator.comment("Remove array");
+        System.out.println(clone.removeAll(removeItems) + "\t" + clone);
+        
         // Test our remove all (list) method...................................
         Simulator.comment("Re-clone list, then...");
         clone = list.clone();
         System.out.println(clone.toString());
         Simulator.comment("Test our remove all (list) method...");
         
+        // Create a list to remove from the list.............................
+        Simulator.comment("Create a list to remove from the list...");
+        LinkedList<String> removeItemsList = new LinkedList<>();
+        removeItemsList.add("Hawkeye");
+        removeItemsList.add("Hulk");
+        removeItemsList.add("Batman");
+        
+        // Create null and empty lists to use.................................
+        Simulator.comment("Create null and empty arrays to use");
+        LinkedList<String> nullList = null;
+        LinkedList<String> emptyList = new LinkedList<>();
+        
+        Simulator.comment("Remove null list");
+        System.out.println(clone.removeAll(nullList) + "\t" + clone);        
+        Simulator.comment("Remove empty list");
+        System.out.println(clone.removeAll(emptyList) + "\t" + clone);        
+        Simulator.comment("Remove list");
+        System.out.println(clone.removeAll(removeItemsList) + "\t" + clone);
+        
         // Test our clear method...............................................
         Simulator.comment("Re-clone list, then...");
         clone = list.clone();
         System.out.println(clone.toString());
-        Simulator.comment("Test our clear method...");
+        Simulator.comment("Test our clear method...");        
         
+        Simulator.comment("Clear a empty list");
+        emptyList.clear();
+        System.out.println(emptyList);
+        Simulator.comment("Clear list");
+        clone.clear();
+        System.out.println(clone);
+
+        // Build array where all items are in list.............................
+        Simulator.comment("Build array where all items are in list...");
+        String[] allArrayItems = {
+            "Hawkeye",
+            "IronMan",
+            "SpiderMan"
+        };
+        value = text.toString(allArrayItems);
+        System.out.println(value);
+
         // Test our contains all (array) method.................................
         Simulator.comment("Re-clone list, then...");
         clone = list.clone();
         System.out.println(clone.toString());
         Simulator.comment("Test our contains all (array) method...");
         
+        Simulator.comment("Check for contains with null array");
+        System.out.println(clone.containsAll(nullArray) + "\t" + clone);        
+        Simulator.comment("Check for contains with empty array");
+        System.out.println(clone.containsAll(emptyArray) + "\t" + clone);                 
+        Simulator.comment("Check for contains with array with items not in");
+        System.out.println(clone.containsAll(removeItems) + "\t" + clone);        
+        Simulator.comment("Check for contains with array with all items in");
+        System.out.println(clone.containsAll(allArrayItems) + "\t" + clone);
+
+        // Build array where all items are in list.............................
+        Simulator.comment("Build list where all items are in list...");
+        LinkedList<String> allListItems = new LinkedList<>();
+        allListItems.add("Hawkeye");
+        allListItems.add("IronMan");
+        allListItems.add("SpiderMan");
+        System.out.println(allListItems);
+
         // Test our contains all (list) method..................................
         Simulator.comment("Re-clone list, then...");
         clone = list.clone();
         System.out.println(clone.toString());
         Simulator.comment("Test our contains all (list) method...");
+        
+        Simulator.comment("Check for contains with null list");
+        System.out.println(clone.containsAll(nullList) + "\t" + clone);        
+        Simulator.comment("Check for contains with empty list");
+        System.out.println(clone.containsAll(emptyList) + "\t" + clone);                 
+        Simulator.comment("Check for contains with list with items not in");
+        System.out.println(clone.containsAll(removeItemsList) + "\t" + clone);        
+        Simulator.comment("Check for contains with list with all items in");
+        System.out.println(clone.containsAll(allListItems) + "\t" + clone);
         
         // Test our add all (list) method......................................
         Simulator.comment("Re-clone list, then...");
@@ -436,23 +517,91 @@ public class CollectionsTest
         System.out.println(clone.toString());
         Simulator.comment("Test our add all (list) method...");
         
+        System.out.println("Before: " + clone);
+        Simulator.comment("Add all with null list");
+        clone.addAll(nullList);
+        System.out.println(clone);        
+        Simulator.comment("Add all with empty list");
+        clone.addAll(emptyList);
+        System.out.println(clone);         
+        Simulator.comment("Add all with list");
+        clone.addAll(allListItems);
+        System.out.println(clone); 
+
         // Test our add all (list, index) method...............................
         Simulator.comment("Re-clone list, then...");
         clone = list.clone();
         System.out.println(clone.toString());
         Simulator.comment("Test our add all (list,index) method...");
         
-        // Test our add all (array) method.....................................
-        Simulator.comment("Re-clone list, then...");
+        System.out.println("Before: " + clone);
+        Simulator.comment("Add all (3) with null list");
+        clone.addAll(nullList);
+        System.out.println(clone);        
+        Simulator.comment("Add all (3) with empty list");
+        clone.addAll(emptyList);
+        System.out.println(clone);         
+        Simulator.comment("Add all (3) with list");
+        clone.addAll(allListItems,3);
+        System.out.println(clone);         
+        Simulator.comment("Add all (before) with list");
+        clone.addAll(allListItems,before);
+        System.out.println(clone);    
+        Simulator.comment("Add all (after) with list");
+        clone.addAll(allListItems,after);
+        System.out.println(clone);         
+        Simulator.comment("Add all (start) with list");
+        clone.addAll(allListItems,start);
+        System.out.println(clone);         
+        Simulator.comment("Add all (end) with list");
+        clone.addAll(allListItems,end);
+        System.out.println(clone); 
+        
+        // Test our add all (array) method......................................
+        Simulator.comment("Re-clone array, then...");
         clone = list.clone();
         System.out.println(clone.toString());
         Simulator.comment("Test our add all (array) method...");
         
-        // Test our add all (array, index) method..............................
+        System.out.println("Before: " + clone);
+        Simulator.comment("Add all with null array");
+        clone.addAll(nullArray);
+        System.out.println(clone);        
+        Simulator.comment("Add all with empty array");
+        clone.addAll(emptyArray);
+        System.out.println(clone);         
+        Simulator.comment("Add all with array");
+        clone.addAll(allArrayItems);
+        System.out.println(clone); 
+        
+        // Test our add all (array, index) method...............................
         Simulator.comment("Re-clone list, then...");
         clone = list.clone();
         System.out.println(clone.toString());
         Simulator.comment("Test our add all (array,index) method...");
+        
+        System.out.println("Before: " + clone);
+        Simulator.comment("Add all (3) with null array");
+        clone.addAll(nullArray);
+        System.out.println(clone);        
+        Simulator.comment("Add all (3) with empty array");
+        clone.addAll(emptyArray);
+        System.out.println(clone);         
+        Simulator.comment("Add all (3) with array");
+        clone.addAll(allArrayItems,3);
+        System.out.println(clone);         
+        Simulator.comment("Add all (before) with array");
+        clone.addAll(allArrayItems,before);
+        System.out.println(clone);    
+        Simulator.comment("Add all (after) with array");
+        clone.addAll(allArrayItems,after);
+        System.out.println(clone);         
+        Simulator.comment("Add all (start) with array");
+        clone.addAll(allArrayItems,start);
+        System.out.println(clone);         
+        Simulator.comment("Add all (end) with array");
+        clone.addAll(allArrayItems,end);
+        System.out.println(clone); 
         
         // Test our sublist method.............................................
         Simulator.comment("Re-clone list, then...");
@@ -460,11 +609,50 @@ public class CollectionsTest
         System.out.println(clone.toString());
         Simulator.comment("Test our sublist method...");
         
+        LinkedList<String> subList = new LinkedList<>();        
+        Simulator.comment("Getting sublist from start to end of list");
+        subList = clone.subList(start, end);
+        System.out.println(list + "\t" + subList);        
+        Simulator.comment("Getting sublist from before to after of list");
+        subList = clone.subList(before, after);
+        System.out.println(list + "\t" + subList);        
+        Simulator.comment("Getting sublist from start to 0 of list");
+        subList = clone.subList(start, 0);
+        System.out.println(list + "\t" + subList);        
+        Simulator.comment("Getting sublist from start to 1 of list");
+        subList = clone.subList(start, 1);
+        System.out.println(list + "\t" + subList);        
+        Simulator.comment("Getting sublist from end-1 to end of list");
+        subList = clone.subList(end-1, end);
+        System.out.println(list + "\t" + subList);        
+        Simulator.comment("Getting sublist from end to end of list");
+        subList = clone.subList(end, end);
+        System.out.println(list + "\t" + subList);        
+        Simulator.comment("Getting sublist from start+1 to end-1 of list");
+        subList = clone.subList(start+1, end-1);
+        System.out.println(list + "\t" + subList);        
+        Simulator.comment("Getting sublist from 2 to 5 of list");
+        subList = clone.subList(2, 5);
+        System.out.println(list + "\t" + subList);        
+        Simulator.comment("Getting sublist from 5 to 2 of list");
+        subList = clone.subList(5, 2);
+        System.out.println(list + "\t" + subList);        
+        Simulator.comment("Getting sublist from 2 to 5 of empty list");
+        subList = emptyList.subList(2, 5);
+        System.out.println(emptyList + "\t" + subList);
+        
         // Test our from array method..........................................
         Simulator.comment("Re-clone list, then...");
         clone = list.clone();
         System.out.println(clone.toString());
         Simulator.comment("Test our from array method...");
+        
+        Simulator.comment("Rebuild list from null array");
+        clone.fromArray(nullArray);
+        System.out.println(clone);
+        Simulator.comment("Rebuild list from array");
+        clone.fromArray(allArrayItems);
+        System.out.println(clone);
         
         // Test our from linked list method....................................
         Simulator.comment("Re-clone list, then...");
@@ -472,11 +660,28 @@ public class CollectionsTest
         System.out.println(clone.toString());
         Simulator.comment("Test our linked list method...");
         
+        Simulator.comment("Rebuild list from null list");
+        clone.fromLinkedList(nullList);
+        System.out.println(clone);
+        Simulator.comment("Rebuild list from list");
+        clone.fromLinkedList(list);
+        System.out.println(clone);
+
         // Test our to array method............................................
         Simulator.comment("Re-clone list, then...");
         clone = list.clone();
         System.out.println(clone.toString());
         Simulator.comment("Test our to array method...");
+        
+        Simulator.comment("Create array from list");
+        allArrayItems = clone.toArray(emptyArray);
+        value = text.toString(allArrayItems);
+        System.out.println(clone + "\tArray: " + value);
+        
+        Simulator.comment("Create array from empty list");
+        allArrayItems = emptyList.toArray(emptyArray);
+        value = text.toString(allArrayItems);
+        System.out.println(emptyList + "\tArray: " + value);
         
         // Test our array constructor..........................................
         Simulator.comment("Re-clone list, then...");
@@ -484,14 +689,15 @@ public class CollectionsTest
         System.out.println(clone.toString());
         Simulator.comment("Test our array constructor...");
         
+        Simulator.comment("Constructor (wrapper method needs no testing)...");
+        
         // Test our list constructor...........................................
         Simulator.comment("Re-clone list, then...");
         clone = list.clone();
         System.out.println(clone.toString());
         Simulator.comment("Test our list constructor...");
         
-        ///////////////////////////////////////////////////////////////////////        
-                
+        Simulator.comment("Constructor (wrapper method needs no testing)...");
         
         Simulator.header("Collections Test completed!");
     }

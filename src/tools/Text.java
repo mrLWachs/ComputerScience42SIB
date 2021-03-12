@@ -229,7 +229,8 @@ public class Text
      * @return a string of formatted text
      */
     public <T> String toString(T[] array) {
-        if (array == null) return "null";
+        if (array == null)     return "null";
+        if (array.length == 0) return "Empty array";
         String text = ARRAY_START;
         for (int i = 0; i < array.length-1; i++) {
             text += array[i].toString() + ARRAY_DIVIDE;
@@ -244,7 +245,8 @@ public class Text
      * @return a string of formatted text
      */
     public String toString(int[] array) {
-        if (array == null) return "null array";
+        if (array == null)     return "null array";
+        if (array.length == 0) return "Empty array";
         String text = ARRAY_START;
         for (int i = 0; i < array.length-1; i++) {
             text += array[i] + ARRAY_DIVIDE;
@@ -259,6 +261,8 @@ public class Text
      * @return a string of formatted text
      */
     public String toString(double[] array) {
+        if (array == null)     return "null array";
+        if (array.length == 0) return "Empty array";
         String text = ARRAY_START;
         for (int i = 0; i < array.length-1; i++) {
             text += array[i] + ARRAY_DIVIDE;
@@ -273,6 +277,8 @@ public class Text
      * @return a string of formatted text
      */
     public String toString(char[] array) {
+        if (array == null)     return "null array";
+        if (array.length == 0) return "Empty array";
         String text = ARRAY_START;
         for (int i = 0; i < array.length-1; i++) {
             text += array[i] + ARRAY_DIVIDE;
@@ -287,6 +293,8 @@ public class Text
      * @return a string of formatted text
      */
     public String toString(int[][] matrix) {
+        if (matrix == null)     return "null matrix";
+        if (matrix.length == 0) return "Empty matrix";
         String text = "";
         for (int row = 0; row < matrix.length; row++) {
             for (int column = 0; column < matrix[row].length; column++) {
@@ -304,6 +312,8 @@ public class Text
      * @return a string of formatted text
      */
     public String toString(double[][] matrix) {
+        if (matrix == null)     return "null matrix";
+        if (matrix.length == 0) return "Empty matrix";
         String text = "";
         for (int row = 0; row < matrix.length; row++) {
             for (int column = 0; column < matrix[row].length; column++) {
@@ -321,6 +331,8 @@ public class Text
      * @return a string of formatted text
      */
     public String toString(char[][] matrix) {
+        if (matrix == null)     return "null matrix";
+        if (matrix.length == 0) return "Empty matrix";
         String text = "";
         for (int row = 0; row < matrix.length; row++) {
             for (int column = 0; column < matrix[row].length; column++) {
@@ -339,6 +351,8 @@ public class Text
      * @return a string of formatted text
      */
     public <T> String toString(T[][] matrix) {
+        if (matrix == null)     return "null matrix";
+        if (matrix.length == 0) return "Empty matrix";
         String text = "";
         for (int row = 0; row < matrix.length; row++) {
             for (int column = 0; column < matrix[row].length; column++) {
@@ -379,6 +393,8 @@ public class Text
      * @return the original array with padding of spaces at the ends
      */
     public <T> String[] padSpaces(T[] array, int length) {
+        if (array == null)     return null;
+        if (array.length == 0) return null;
         String[] a = new String[array.length];
         for (int i = 0; i < a.length; i++) {
             String word = padSpaces(array[i], length);
@@ -397,6 +413,8 @@ public class Text
      * @return the original matrix with padding of spaces at the ends
      */
     public <T> String[][] padSpaces(T[][] matrix, int length) {
+        if (matrix == null)     return null;
+        if (matrix.length == 0) return null;
         String[][] m = new String[matrix.length][matrix[0].length];
         for (int row = 0; row < m.length; row++) {
             for (int column = 0; column < m[row].length; column++) {
@@ -417,6 +435,7 @@ public class Text
      * @return the original LinkedList with padding of spaces at the ends
      */
     public <T> LinkedList padSpaces(LinkedList list, int length) {
+        if (list == null)     return null;
         LinkedList l = new LinkedList();
         for (int i = 0; i < list.size(); i++) {
             String word = padSpaces(list.get(i), length);
@@ -434,6 +453,8 @@ public class Text
      * @return the original array with padding of spaces at the ends
      */
     public <T> String[] padSpaces(T[] array) {
+        if (array == null)     return null;
+        if (array.length == 0) return null;
         int length = findLongest(array);
         String[] a = new String[array.length];
         for (int i = 0; i < a.length; i++) {
@@ -452,6 +473,8 @@ public class Text
      * @return the original matrix with padding of spaces at the ends
      */
     public <T> String[][] padSpaces(T[][] matrix) {
+        if (matrix == null)     return null;
+        if (matrix.length == 0) return null;
         int length = findLongest(matrix);
         String[][] m = new String[matrix.length][matrix[0].length];
         for (int row = 0; row < m.length; row++) {
@@ -472,6 +495,7 @@ public class Text
      * @return the original LinkedList with padding of spaces at the ends
      */
     public <T> LinkedList padSpaces(LinkedList list) {
+        if (list == null)     return null;
         int length = findLongest(list);
         LinkedList l = new LinkedList();
         for (int i = 0; i < list.size(); i++) {
@@ -489,6 +513,8 @@ public class Text
      * @return the longest value of the longest in the matrix
      */
     public <T> int findLongest(T[][] matrix) {
+        if (matrix == null)     return -1;
+        if (matrix.length == 0) return -1;
         int longest = 0;
         for (int row = 0; row < matrix.length; row++) {
             for (int column = 0; column < matrix[row].length; column++) {
@@ -508,6 +534,8 @@ public class Text
      * @return the longest value of the longest in the array
      */
     public <T> int findLongest(T[] array) {
+        if (array == null)     return -1;
+        if (array.length == 0) return -1;
         int longest = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i].toString().length() > longest) {
@@ -525,6 +553,7 @@ public class Text
      * @return the longest value of the longest in the LinkedList
      */
     public <T> int findLongest(LinkedList list) {
+        if (list == null)     return -1;
         int longest = 0;
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).toString().length() > longest) {
