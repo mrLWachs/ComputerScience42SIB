@@ -25,7 +25,7 @@ import java.io.Serializable;
  * @param <T> the generic data type used in the class
  * @since 6-May-2019 
  */
-public class Node <T> implements Serializable
+public class Node <T extends Comparable<T>> implements Serializable
 {
     
      /** the generic data to store */
