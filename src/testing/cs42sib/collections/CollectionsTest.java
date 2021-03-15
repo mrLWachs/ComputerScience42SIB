@@ -684,19 +684,11 @@ public class CollectionsTest
         System.out.println(emptyList + "\tArray: " + value);
         
         // Test our array constructor..........................................
-        Simulator.comment("Re-clone list, then...");
-        clone = list.clone();
-        System.out.println(clone.toString());
-        Simulator.comment("Test our array constructor...");
-        
+        Simulator.comment("Test our array constructor...");        
         Simulator.comment("Constructor (wrapper method needs no testing)...");
         
         // Test our list constructor...........................................
-        Simulator.comment("Re-clone list, then...");
-        clone = list.clone();
-        System.out.println(clone.toString());
-        Simulator.comment("Test our list constructor...");
-        
+        Simulator.comment("Test our list constructor...");        
         Simulator.comment("Constructor (wrapper method needs no testing)...");
         
         Simulator.header("Collections Test completed!");
