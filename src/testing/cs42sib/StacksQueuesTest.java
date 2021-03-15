@@ -37,8 +37,7 @@ public class StacksQueuesTest
         
         System.out.println("Empty = "  + stack.isEmpty() +
                            "\tSize = " + stack.size() +
-                           "\t"        + stack.toString());
-        
+                           "\t"        + stack.toString());        
         for (int i = 0; i < MAX; i++) {            
             String word = text.randomWord(WORD_SIZE);
             Box<String> box = new Box<>(word);
@@ -47,6 +46,11 @@ public class StacksQueuesTest
                                "\tSize = " + stack.size() +
                                "\t"        + stack.toString());
         }
+        
+        // Test clone method
+        
+        Stack copy = stack.clone();
+        System.out.println(copy.toString());
         
         
                 
