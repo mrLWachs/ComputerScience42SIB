@@ -25,14 +25,14 @@ public class ComputerScience42SIB
      * Default constructor for the class, sets class properties
      */
     public ComputerScience42SIB() {
-        Simulator.header("Computer Science 42SIB starting..."); 
-        Test.run();
-        new PermanentStorageTest();
-        new SearchSortTest();        
-        new CollectionsTest();        
+//        Simulator.header("Computer Science 42SIB starting..."); 
+//        Test.run();
+//        new PermanentStorageTest();
+//        new SearchSortTest();        
+//        new CollectionsTest();        
         new StacksQueuesTest();
-        new TreesTest();      
-        Simulator.header("Computer Science 42SIB complete!");
+//        new TreesTest();      
+//        Simulator.header("Computer Science 42SIB complete!");
     }
     
 }
