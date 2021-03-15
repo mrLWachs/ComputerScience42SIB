@@ -74,7 +74,12 @@ public class Stack <T> implements Serializable
      * @return operation was successful (true) or not (false)
      */
     public boolean push(T data) {
-        
+        if (data == null) return false;
+        Node node = new Node(data);        
+        if (!isEmpty()) node.next = top;        
+        top = node;        
+        length++;
+        return true;
     }
     
     
@@ -85,9 +90,25 @@ public class Stack <T> implements Serializable
      */
     @Override
     public String toString() {
-        return "Stack: " + super.toString();
+        if (isEmpty()) return "Empty Stack";
+        else {
+            String text = "Stack top -> [";
+            Node current = top;
+            while (current.next != null) {
+                text += current.toString() + ",";
+                current = current.next;
+            }            
+            return text + current.toString() + "]";
+        }
     }
    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Deep comparison, determines if two objects are "equal" in this context
      *
