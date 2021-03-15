@@ -23,7 +23,7 @@ import java.io.Serializable;
  * @param <T> the generic object used in this class
  * @since Mar. 15, 2021, 9:53:12 a.m.
  */
-public class Stack <T extends Comparable<T>> implements Serializable
+public class Stack <T> implements Serializable
 {
 
     /** Node reference to the top of the stack */
@@ -100,7 +100,6 @@ public class Stack <T extends Comparable<T>> implements Serializable
             return data;
         }        
     }
-
     
     /**
      * String representation of this object
@@ -120,8 +119,7 @@ public class Stack <T extends Comparable<T>> implements Serializable
             return text + current.toString() + "]";
         }
     }
-   
-    
+       
     /**
      * Deep comparison, determines if two objects are "equal" in this context
      *
