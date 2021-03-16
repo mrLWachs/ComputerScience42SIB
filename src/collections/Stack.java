@@ -4,6 +4,7 @@ package collections;
 
 /** Required imports */
 import java.io.Serializable;
+import java.lang.reflect.Array;
 
  
 /**
@@ -39,6 +40,113 @@ public class Stack <T> implements Serializable
     public Stack() {
         finalize();                                     // wipe any current data
     }
+    
+    ///////////////////////////////////////////////////
+    // START
+    ///////////////////////////////////////////////////
+    
+    /**
+     * Constructor sets class data to the parameter 
+     * 
+     * @param list the LinkedList to set the stack to
+     */
+    public Stack(LinkedList<T> list) {
+        finalize();                                     // wipe any current data
+        for (int i = list.size()-1; i >= 0; i--) {      // traverse list
+            T data = (T)list.get(i);                    // retrieve data
+            push(data);                                 // push onto stack
+        }
+    }
+    
+    /**
+     * Constructor sets class data to the parameter 
+     * 
+     * @param array the array to set the stack to
+     */
+    public Stack(T[] array) {
+        finalize();                                     // wipe any current data
+        for (int i = array.length-1; i >= 0; i--) {     // traverse array
+            T data = (T)array[i];                       // retrieve data
+            push(data);                                 // push onto stack
+        }
+    }
+    
+    /**
+     * Constructor sets class data to the parameter 
+     * 
+     * @param queue the queue to set the stack to
+     */
+//    public Stack(Queue queue) {
+//        this(queue.toLinkedList());
+//    }
+    
+    /**
+     * Turns the stack into a ADT Queue object
+     * 
+     * @return the Stack as a ADT Queue
+     */
+//    public Queue toQueue() {
+//        return new Queue(this);
+//    }
+
+    /**
+     * Turns the stack into a ADT LinkedList object
+     * 
+     * @return the Stack as a ADT LinkedList
+     */
+    public LinkedList<T> toLinkedList() {
+        LinkedList<T> list = new LinkedList<>();        // create new list
+        Node current = top;                             // start at top node        
+        while (current != null) {                       // traverse stack   
+            T data = (T)current.data;                   // retrieve data
+            list.add(data);                             // add to list
+            current = current.next;                     // move to next node
+        }
+        return list;                                    // return list
+    }
+    
+    /**
+     * Returns an array that contains the same data as the list
+     * 
+     * @param array the data type array
+     * @return an array of generic type T
+     */
+    public T[] toArray(T[] array) {
+        array = (T[])(Array.newInstance(
+                array.getClass().getComponentType(), 
+                length));                               // create array 
+        Node current = top;                             // start at top node 
+        for (int i = 0; i < length; i++) {              // traverse array
+            array[i] = (T)current.data;                 // retrieve data
+            current = current.next;                     // move to next node
+        }
+        return array;                                   // return array
+    }
+
+    /**
+     * Just "peeks" at the top of the stack without mutating (changing it) 
+     * the structure of this stack
+     * 
+     * @return the data on the top
+     */
+    public T peek() {
+        if (isEmpty()) return null;                     // no nodes in stack
+        return (T)top.data;                             // return top data       
+    }
+    
+    /**
+     * Just "peeks" at top of stack without mutating the structure
+     * 
+     * @return the data on the top
+     */
+    public T top() {
+        return peek();
+    }
+    
+    ///////////////////////////////////////////////////
+    // END
+    ///////////////////////////////////////////////////
+    
      
     /**
      * Calls for garbage collection, and frees up memory - when the stack is 
@@ -76,12 +184,12 @@ public class Stack <T> implements Serializable
      * @return operation was successful (true) or not (false)
      */
     public boolean push(T data) {
-        if (data == null) return false;
-        Node node = new Node(data);        
-        if (!isEmpty()) node.next = top;        
-        top = node;        
-        length++;
-        return true;
+        if (data == null) return false;                 // empty stack
+        Node node = new Node(data);                     // create node
+        if (!isEmpty()) node.next = top;                // add first node
+        top = node;                                     // set to top of stack
+        length++;                                       // increase length
+        return true;                                    // operation successful
     }
     
     /**
@@ -91,13 +199,13 @@ public class Stack <T> implements Serializable
      * @return the data from the top of the stack
      */
     public T pop() {
-        if (isEmpty()) return null;
-        else {
-            length--;
-            T data = (T)top.data;            
-            top = top.next;
-            System.gc();
-            return data;
+        if (isEmpty()) return null;                     // no nodes in stack
+        else {                                          // stack has some nodes
+            length--;                                   // reduce length
+            T data = (T)top.data;                       // store data
+            top = top.next;                             // adjust top reference
+            System.gc();                                // remove garbage memory
+            return data;                                // data returned
         }        
     }
     
