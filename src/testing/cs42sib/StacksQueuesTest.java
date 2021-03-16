@@ -1,8 +1,8 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.cs42sib;
 
-/** required imports */
+/** Required imports */
 import collections.LinkedList;
 import collections.Stack;
 import io.Simulator;
@@ -93,11 +93,13 @@ public class StacksQueuesTest
         }
         
         // Test peek (top is wrapper no testing needed)........................
+        Simulator.comment("Test peek (top is wrapper no testing needed)...");
         
         System.out.println("Clone Top = " + copy.top());
         System.out.println("Stack Top = " + stack.top());
         
         // Test to array and to linked list....................................
+        Simulator.comment("Test to array and to linked list...");
         
         LinkedList<Box> list = stack.toLinkedList();
         Box[] array = new Box[1];
@@ -106,12 +108,17 @@ public class StacksQueuesTest
         System.out.println(text.toString(array));
         
         // Test our constructors...............................................
+        Simulator.comment("Test our constructors...");
         
         Stack stackFromArray = new Stack(array);
         Stack stackFromList  = new Stack(list);        
         System.out.println(stackFromArray);
         System.out.println(stackFromList);
         
+        // Now we look at Queues...............................................        
+        Simulator.comment("Now we look at Queues...");
+        
+        // code continues...
         
                 
         Simulator.header("Stacks and Queues Test completed!");
