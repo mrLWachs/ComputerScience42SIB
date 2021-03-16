@@ -3,6 +3,7 @@
 package testing.cs42sib;
 
 /** required imports */
+import collections.LinkedList;
 import collections.Stack;
 import io.Simulator;
 import testing.cs40s.advancedclasses.Box;
@@ -81,20 +82,35 @@ public class StacksQueuesTest
         Simulator.comment("Text the pop method...");
         
         System.out.println("Clone stack:" + 
-                           "\tEmpty = " + stack.isEmpty() +
-                           "\tSize = "  + stack.size() +
-                           "\t"         + stack.toString());
+                           "\tEmpty = " + copy.isEmpty() +
+                           "\tSize = "  + copy.size() +
+                           "\t"         + copy.toString());
         for (int i = 0; i < MAX+1; i++) { 
-            System.out.println("Popped -> " + stack.pop() + 
-                               "\tEmpty = " + stack.isEmpty() +
-                               "\tSize = "  + stack.size() +
-                               "\t"         + stack.toString());
+            System.out.println("Popped -> " + copy.pop() + 
+                               "\tEmpty = " + copy.isEmpty() +
+                               "\tSize = "  + copy.size() +
+                               "\t"         + copy.toString());
         }
         
+        // Test peek (top is wrapper no testing needed)........................
         
+        System.out.println("Clone Top = " + copy.top());
+        System.out.println("Stack Top = " + stack.top());
         
-        // code continues.....
+        // Test to array and to linked list....................................
         
+        LinkedList<Box> list = stack.toLinkedList();
+        Box[] array = new Box[1];
+        array = (Box[])stack.toArray(array);        
+        System.out.println(list);
+        System.out.println(text.toString(array));
+        
+        // Test our constructors...............................................
+        
+        Stack stackFromArray = new Stack(array);
+        Stack stackFromList  = new Stack(list);        
+        System.out.println(stackFromArray);
+        System.out.println(stackFromList);
         
         
                 
