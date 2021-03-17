@@ -4,7 +4,6 @@ package testing.cs42sib;
 
 /** required imports */
 import io.Simulator;
-import io.System;
 import testing.cs42sib.collections.CollectionsTest;
 import testing.testclass.Test;
 
@@ -25,12 +24,13 @@ public class ComputerScience42SIB
      * Default constructor for the class, sets class properties
      */
     public ComputerScience42SIB() {
-//        Simulator.header("Computer Science 42SIB starting..."); 
+//        Simulator.header("Computer Science 42SIB starting...");         
 //        new PermanentStorageTest();
 //        new SearchSortTest();        
 //        new CollectionsTest();        
         new StacksQueuesTest();
-//        new TreesTest();      
+//        new TreesTest();   
+//        Test.run();
 //        Simulator.header("Computer Science 42SIB complete!");
     }
     

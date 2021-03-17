@@ -116,7 +116,7 @@ public class StacksQueuesTest
         System.out.println(stackFromList);
         
         // Now we look at Queues...............................................        
-        Simulator.comment("Now we look at Queues...");
+        Simulator.comment("Test the Queue object...");
         
         // code continues...
         
