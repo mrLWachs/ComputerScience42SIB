@@ -118,7 +118,28 @@ public class StacksQueuesTest
         // Now we look at Queues...............................................        
         Simulator.comment("Test the Queue object...");
         
-        // code continues...
+                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
                 
         Simulator.header("Stacks and Queues Test completed!");
