@@ -111,13 +111,13 @@ public class Stack <T> implements Serializable
     public String toString() {
         if (isEmpty()) return "Empty Stack";
         else {
-            String text = "Stack top -> [";
+            String text = "Stack top  -> [";
             Node current = top;
             while (current.next != null) {
                 text += current.toString() + ",";
                 current = current.next;
             }            
-            return text + current.toString() + "]";
+            return text + current.toString() + "] <- bottom";
         }
     }
        

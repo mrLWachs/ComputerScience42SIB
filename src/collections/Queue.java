@@ -161,13 +161,13 @@ public class Queue <T> implements Serializable
     public String toString() {
         if (isEmpty()) return "Empty Queue";            // no nodes to display
         else {
-            String text = "Queue back ->[";            // starting character
+            String text = "Queue back -> [";            // starting character
             Node current = head;                        // start at top node
             while (current.next != null) {              // traverse stack
                 text += current.toString() + ",";       // append data
                 current = current.next;                 // move to next node
             }            
-            return text + current.toString() + "]<- front"; // append end 
+            return text + current.toString() + "] <- front"; // append end 
         }
     }
     

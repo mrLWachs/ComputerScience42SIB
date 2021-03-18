@@ -651,7 +651,7 @@ public class LinkedList <T> implements Serializable
     @Override
     public String toString() {
         if (isEmpty()) return "Empty LinkedList";       // no nodes to display
-        String text = "Linked List [";                  // starting character
+        String text = "Linked List \t[";                // starting character
         Node current = head;                            // start at head node
         while (current.next != null) {                  // traverse list
             text += current.toString() + ",";           // append data
