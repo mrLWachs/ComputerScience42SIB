@@ -227,18 +227,18 @@ public class Stack <T> implements Serializable
      * 
      * @param queue the queue to set the stack to
      */
-//    public Stack(Queue queue) {
-//        this(queue.toLinkedList());
-//    }
+    public Stack(Queue queue) {
+        this(queue.toLinkedList());
+    }
     
     /**
      * Turns the stack into a ADT Queue object
      * 
      * @return the Stack as a ADT Queue
      */
-//    public Queue toQueue() {
-//        return new Queue(this);
-//    }
+    public Queue toQueue() {
+        return new Queue(this);
+    }
         
     /**
      * Constructor sets class data to the parameter 
