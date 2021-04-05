@@ -3,6 +3,7 @@
 package mainpackage;
 
 /** required imports */
+import java.util.LinkedList;
 import testing.Tester;
 
 
@@ -23,7 +24,7 @@ public class MainClass
     public static void main(String[] args) {
         new Tester(); 
     }
-
+    
 }
 
 

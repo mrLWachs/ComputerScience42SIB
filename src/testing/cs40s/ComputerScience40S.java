@@ -23,11 +23,11 @@ public class ComputerScience40S
      * Default constructor for the class, sets class properties
      */
     public ComputerScience40S() {
-//        Simulator.header("Computer Science 40S starting..."); 
-//        new RecursionTest(); 
-//        new AdvancedClassesTest(); 
+        Simulator.header("Computer Science 40S starting..."); 
+        new RecursionTest(); 
+        new AdvancedClassesTest(); 
         new CollectionsTest();       
-//        Simulator.header("Computer Science 40S complete!");
+        Simulator.header("Computer Science 40S complete!");
     }
     
 }

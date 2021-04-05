@@ -266,4 +266,13 @@ public class Stack <T> implements Serializable
         }
     }
     
+    /**
+     * Constructor sets class data to the parameter 
+     * 
+     * @param tree the Tree to set the stack to
+     */
+    public Stack(Tree tree) {
+        this(tree.inOrder());
+    }
+    
 }

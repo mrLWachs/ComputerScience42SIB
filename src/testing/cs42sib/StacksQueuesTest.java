@@ -6,10 +6,10 @@ package testing.cs42sib;
 import collections.LinkedList;
 import collections.Queue;
 import collections.Stack;
-import io.Simulator;
 import testing.cs40s.advancedclasses.Box;
 import tools.Text;
-
+import io.System;
+import io.Simulator;
 
 /**
  * StacksQueuesTest.java - tests the concepts learned in this unit

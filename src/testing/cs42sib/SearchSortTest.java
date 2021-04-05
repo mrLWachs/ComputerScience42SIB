@@ -4,12 +4,12 @@ package testing.cs42sib;
 
 /** required imports */
 import collections.LinkedList;
-import io.Simulator;
 import tools.Numbers;
 import tools.Search;
 import tools.Sort;
 import tools.Text;
-
+//import io.System;
+import io.Simulator;
 
 /**
  * SearchSortTest.java - tests the concepts learned in this unit

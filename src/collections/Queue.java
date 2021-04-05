@@ -82,6 +82,15 @@ public class Queue <T> implements Serializable
     }
 
     /**
+     * Constructor sets class data to the parameter 
+     * 
+     * @param tree the Tree to set the queue to
+     */
+    public Queue(Tree tree) {
+        this(tree.inOrder());
+    }
+    
+    /**
      * Turns the queue into a ADT LinkedList object
      * 
      * @return the Stack as a ADT LinkedList

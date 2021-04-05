@@ -11,7 +11,7 @@ package io;
  */
 public class System 
 {
-    
+
     /**
      * Internal class to properly simulate the java.lang.System.out class
      */
