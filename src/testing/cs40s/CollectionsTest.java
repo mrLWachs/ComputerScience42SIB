@@ -5,7 +5,9 @@ package testing.cs40s;
 /** Required imports */
 import collections.LinkedList;
 import collections.Node;
+import io.Simulator;
 import io.System;
+import java.util.Arrays;
  
 /**
  * CollectionsTest.java - tests the concepts learned in this unit
@@ -16,511 +18,397 @@ import io.System;
 public class CollectionsTest 
 {
 
+    
     /**
      * Default constructor, set class properties
      */
     public CollectionsTest() {
-        output("Collections Test started");        
-        ///////////////////////////////////////////////////////////////////////
-        // build some node objects, testing various constructors
-        output("Testing Node code");        
-        ///////////////////////////////////////////////////////////////////////
-        // various node constructor methods
+        Simulator.header("Collections unit starting...");
+        
+        // Create some node objects...
+        System.out.println("\nTesting constructors.........................\n");
         Node<String> a = new Node<>();
-        Node<String> b = new Node<>("Apples");
-        Node<String> c = new Node<>("Oranges",a);
-        Node<String> d = new Node<>("Bananas",c,b);
-        ///////////////////////////////////////////////////////////////////////
-        output("test the overloaded toString method");
-        output("Node a",a);
-        output("Node b",b);
-        output("Node c",c);
-        output("Node d",d);
-        ///////////////////////////////////////////////////////////////////////
-        output("test the equals method");
-        output("a == b", a.equals(b));
-        output("b == c", b.equals(c));
-        output("c == d", c.equals(d));
-        ///////////////////////////////////////////////////////////////////////
-        output("test clone method");
-        Node<String> e = d.clone();   
-        output("Node d",d);
-        output("Node e",e);
-        output("e == d", e.equals(d));
-        ///////////////////////////////////////////////////////////////////////
-        output("test finalize method");
+        Node<String> b = new Node<>("Meat");
+        Node<String> c = new Node<>("Cheese",b);
+        Node<String> d = new Node<>("Sauce",c,b);
+        
+        // Output my nodes...
+        System.out.println("\nTesting toString()...........................\n");
+        System.out.println("Node a = " + a.toString());
+        System.out.println("Node b = " + b.toString());
+        System.out.println("Node c = " + c.toString());
+        System.out.println("Node d = " + d.toString());
+        
+        // Check if Nodes are equal...
+        System.out.println("\nTesting equals().............................\n");
+        System.out.println("Node a == b? -> " + a.equals(b));
+        System.out.println("Node b == c? -> " + b.equals(c));
+        System.out.println("Node a == a? -> " + a.equals(a));
+        System.out.println("Node b == b? -> " + b.equals(b));
+                
+        // Clone a node...
+        System.out.println("\nTesting clone()..............................\n");
+        Node<String> e = a.clone();
+        Node<String> f = b.clone();
+        Node<String> g = c.clone();
+        Node<String> h = d.clone();
+        System.out.println("Node e = " + e.toString());
+        System.out.println("Node f = " + f.toString());
+        System.out.println("Node g = " + g.toString());
+        System.out.println("Node h = " + h.toString());
+        
+        // Check if Nodes are equal...
+        System.out.println("\nTesting equals().............................\n");
+        System.out.println("Node a == b? -> " + a.equals(b));
+        System.out.println("Node b == c? -> " + b.equals(c));
+        System.out.println("Node c == d? -> " + c.equals(d));
+        System.out.println("Node a == e? -> " + a.equals(e));
+        System.out.println("Node b == f? -> " + b.equals(f));
+        System.out.println("Node c == g? -> " + c.equals(g));
+        System.out.println("Node d == h? -> " + d.equals(h));
+        
+        // finalize some nodes (wipe em out, "destroy" them, free up memory)
+        System.out.println("\nTesting finalize()...........................\n");
+        System.out.println("Node a = " + a.toString());
+        System.out.println("Node b = " + b.toString());
+        System.out.println("Node c = " + c.toString());
+        System.out.println("Node d = " + d.toString());
+        System.out.println("Node e = " + e.toString());
+        System.out.println("Node f = " + f.toString());   
+        System.out.println("Node g = " + g.toString());   
+        System.out.println("Node h = " + h.toString());   
+        a.finalize();
+        b.finalize();
+        c.finalize();
+        d.finalize();
         e.finalize();
-        output("Node e",e);        
-        ///////////////////////////////////////////////////////////////////////
-        output("Testing LinkedList code");        
-        ///////////////////////////////////////////////////////////////////////
-        // create a linked list
-        LinkedList<String> list1 = new LinkedList<>();
-        ///////////////////////////////////////////////////////////////////////
-        output("test the size and is empty methods");
-        output("Size", list1.size(), list1);
-        output("Empty", list1.isEmpty(), list1);
-        ///////////////////////////////////////////////////////////////////////
-        output("test the over-ridden to string method");
-        output("toString",list1);
-        ///////////////////////////////////////////////////////////////////////
-        output("test the add front method");        
-        output("add null",list1.addFront(null),list1);
-        output("add Winnipeg",list1.addFront("Winnipeg"),list1);
-        output("add Calgary",list1.addFront("Calgary"),list1);
-        output("add Edmonton",list1.addFront("Edmonton"),list1);
-        ///////////////////////////////////////////////////////////////////////
-        output("test the add back method");
-        output("add null",list1.addBack(null),list1);
-        output("add Vancouver",list1.addBack("Vancouver"),list1);
-        output("add Montreal",list1.addBack("Montreal"),list1);
-        output("add Quebec",list1.addBack("Quebec"),list1);
-        ///////////////////////////////////////////////////////////////////////
-        output("re-test size, is empty, to string methods");
-        output("Size", list1.size(), list1);
-        output("Empty", list1.isEmpty(), list1);        
-        ///////////////////////////////////////////////////////////////////////
-        // test the get method (accessor method), and test edges:
-            // (1) testing typical index (within the list)
-            // (2) the list edges (first and last index)
-            // (3) beyond the edges (past first and last indices) 
-        output("test the get method");
-        int edge = list1.size()-1;
-        output("get",2,list1.get(2),list1);
-        output("get",0,list1.get(0),list1);
-        output("get",edge,list1.get(edge),list1);
-        output("get",(edge*2),list1.get(edge*2),list1);
-        output("get",-1,list1.get(-1),list1);        
-        ///////////////////////////////////////////////////////////////////////
-        // test the set method (mutator method), and test edges:
-            // also test the second argument            
-        output("test the set method");
-        edge = list1.size()-1;
-        output("set",2,"Brandon",list1.set(2,"Brandon"),list1);
-        output("set",0,"Winnipeg",list1.set(0,"Winnipeg"),list1);
-        output("set",edge,"Portage",list1.set(edge,"Portage"),list1);
-        output("set",(edge*2),"Ottawa",list1.set(edge*2,"Ottawa"),list1);
-        output("set",-1,"Victoria",list1.set(-1,"Victoria"),list1);
-        output("set",2,"null",list1.set(2,null),list1);  
-        ///////////////////////////////////////////////////////////////////////
-        // create a second list and text clone method
-        LinkedList<String> list2 = list1.clone();
-        ///////////////////////////////////////////////////////////////////////
-        output("display the original and second list");
-        output("List 1", list1);
-        output("List 2", list2);
-        ///////////////////////////////////////////////////////////////////////
-        output("test the equals method");
-        output("1 == 2", list1.equals(list2));        
-        ///////////////////////////////////////////////////////////////////////
-        // mutate the second list
-        list2.set(2, "Toronto");
-        ///////////////////////////////////////////////////////////////////////
-        output("display both lists");
-        output("List 1",list1);
-        output("List 2",list2);        
-        ///////////////////////////////////////////////////////////////////////
-        output("re-test the equals method");
-        output("1 == 2,",list1.equals(list2));        
-        ///////////////////////////////////////////////////////////////////////
-        // make a third list, a clone of the second
-        LinkedList<String> list3 = list2.clone();
-        /////////////////////////////////////////////////////////////////////// 
-        output("re-test clone, output both lists");
-        output("List 2",list2);
-        output("List 3",list3);
-        ///////////////////////////////////////////////////////////////////////
-        // test the remove front and remove back methods, testing all edges
-        // and using a loop to continually remove unitl after both lists
-        // are empty and beyond, this tests:
-            // (1) list with two or more nodes
-            // (2) list with one node
-            // (3) list with no nodes (empty) 
-        output("test the remove front and back methods");
-        for (int i = 0; i < list1.size()+1; i++) {   
-            // test remove front
-            output("Front 2",list2.removeFront(),list2);
-            // test remove back
-            output("Back  3",list3.removeBack(),list3);
+        f.finalize();  
+        g.finalize();  
+        h.finalize();  
+        System.out.println("Node a = " + a.toString());
+        System.out.println("Node b = " + b.toString());
+        System.out.println("Node c = " + c.toString());
+        System.out.println("Node d = " + d.toString());
+        System.out.println("Node e = " + e.toString());
+        System.out.println("Node f = " + f.toString());
+        System.out.println("Node g = " + g.toString());
+        System.out.println("Node h = " + h.toString());
+        
+        // Create a LinkedList to test the constructor
+        System.out.println("\nTesting default LinkedList constructor.......\n");
+        
+        LinkedList<Integer> list1 = new LinkedList<>();
+        LinkedList<Integer> list2 = new LinkedList<>();
+        
+        // Test isEmpty method (before I add anything to the list)
+        System.out.println("\nTesting isEmpty method.......................\n");        
+        System.out.println("L1 empty? -> " + list1.isEmpty());
+        
+        // Test size method (before I add anything to the list)
+        System.out.println("\nTesting size method..........................\n");        
+        System.out.println("L1 size? -> " + list1.size());
+        
+        // Test toString method (before I add anything to the list)
+        System.out.println("\nTesting toString method......................\n");        
+        System.out.println(list1.toString());
+        
+        // More testing, explained in the outputs...
+        
+        System.out.println("\nTest addBack method..........................\n");        
+        list1.addBack(5);
+        list1.addBack(50);
+        list1.addBack(500);
+        list1.addBack(-5);
+        list1.addBack(-50);        
+        System.out.println(list1.toString());
+        
+        System.out.println("\nTest addFront method.........................\n");        
+        list1.addFront(-60); 
+        list1.addFront(-6);
+        list1.addFront(600);
+        list1.addFront(60);
+        list1.addFront(6);
+        System.out.println(list1.toString());
+        
+        System.out.println("\nTest get method..............................\n");
+        for (int i = 0-1; i < list1.size()+1; i++) {
+            Integer value = list1.get(i);
+            System.out.println("Getting list " + i + " = " + value);
         }
-        ///////////////////////////////////////////////////////////////////////
-        output("test contains");
-        output("Winnipeg",list1.contains("Winnipeg"),list1);
-        output("Tokoyo",list1.contains("Tokoyo"),list1);
-        output("null",list1.contains(null),list1);
-        ///////////////////////////////////////////////////////////////////////
-        output("test add after");
-        edge = list1.size()+1;
-        output("Langley",2,list1.addAfter("Langley", 2),list1);  
-        output("Saskatoon",0,list1.addAfter("Saskatoon", 0),list1);
-        output("Regina",edge,list1.addAfter("Regina",edge),list1);
-        output("Halifax",(edge*2),list1.addAfter("Halifax",edge*2),list1);
-        ///////////////////////////////////////////////////////////////////////
-        output("test add before");
-        edge = list1.size()+1;
-        output("Nanaimo",2,list1.addBefore("Nanaimo", 2),list1);
-        output("Duncan",0,list1.addBefore("Duncan", 0),list1);
-        output("Fernie",edge,list1.addBefore("Fernie",edge),list1);
-        output("Kamloops",(edge*2),list1.addBefore("Kamloops",edge*2),list1);
-        ///////////////////////////////////////////////////////////////////////
-        output("test remove an index");
-        LinkedList<String> list4 = list1.clone();
-        int min = -1;
-        int max = list4.size() + 1;
-        for (int i = max; i >= min; i--) {
-            output("Removing",i,list4.remove(i),list4);
+        
+        System.out.println("\nTest set method..............................\n");
+        for (int i = 0-1; i < list1.size()+1; i++) {
+            Integer value = new Integer(i+10);
+            System.out.println("Setting list " + i + " to " + (i+10) + 
+                    " result = " + list1.set(i,value) );
+            System.out.println(list1.toString());
         }
-        ///////////////////////////////////////////////////////////////////////
-        output("test first index of search");
-        list1.addAfter("Winnipeg", 6);
-        list1.addAfter("Winnipeg", 2);
-        list1.addAfter("Winnipeg", 8);
-        output("Winnipeg",list1.firstIndexOf("Winnipeg"),list1);
-        output(list1.front(),list1.firstIndexOf(list1.front()),list1);
-        output(list1.back(),list1.firstIndexOf(list1.back()),list1);
-        output("Tokoyo",list1.firstIndexOf("Tokoyo"),list1);
-        output("null",list1.firstIndexOf(null),list1);
-        ///////////////////////////////////////////////////////////////////////
-        output("test last index of search");
-        output("Winnipeg",list1.lastIndexOf("Winnipeg"),list1);
-        output(list1.front(),list1.lastIndexOf(list1.front()),list1);        
-        output(list1.back(),list1.lastIndexOf(list1.back()),list1);        
-        output("Tokoyo",list1.lastIndexOf("Tokoyo"),list1);
-        output("null",list1.lastIndexOf(null),list1);        
-        ///////////////////////////////////////////////////////////////////////
-        output("test number of method");
-        output("Winnipeg",list1.numberOf("Winnipeg"),list1);
-        output(list1.front(),list1.numberOf(list1.front()),list1);
-        output(list1.back(),list1.numberOf(list1.back()),list1);
-        output("Tokoyo",list1.numberOf("Tokoyo"),list1);
-        output("null",list1.numberOf(null),list1);
-        ///////////////////////////////////////////////////////////////////////
-        output("test all indices");
-        int[] indices1 = list1.allIndices("Winnipeg");        
-        int[] indices2 = list1.allIndices("Tokoyo");
-        int[] indices3 = list1.allIndices(null);
-        Integer[] indices4 = convert(indices1);
-        Integer[] indices5 = convert(indices2);
-        Integer[] indices6 = convert(indices3);
-        output("Winnipeg",toString(indices4),list1);
-        output("Tokoyo",toString(indices5),list1);
-        output("null",toString(indices6),list1);
-        ///////////////////////////////////////////////////////////////////////
-        output("test remove and remove last");
-        LinkedList<String> list5 = list1.clone();
-        output("Winnipeg","remove",list5.remove("Winnipeg"),list5);
-        output("Winnipeg","remove last",list5.removeLast("Winnipeg"),list5);
-        output("Tokoyo","remove",list5.remove("Tokoyo"),list5);
-        output("Tokoyo","remove last",list5.removeLast("Tokoyo"),list5);
-        ///////////////////////////////////////////////////////////////////////
-        output("test remove all data");
-        output("Winnipeg","remove all",list5.removeAll("Winnipeg"),list5);
-        output("Tokoyo","remove all",list5.removeAll("Tokoyo"),list5);
-        ///////////////////////////////////////////////////////////////////////
-        output("test remove all array");
-        LinkedList<String> list6 = list1.clone();
-        String[] array1 = {"Winnipeg","Tokoyo","Nanaimo"};
-        String[] array2 = null;
-        String[] array3 = new String[0];
-        output("array 1",toString(array1),list6.removeAll(array1),list6);
-        output("array 2",toString(array2),list6.removeAll(array2),list6);
-        output("array 3",toString(array3),list6.removeAll(array3),list6);
-        ///////////////////////////////////////////////////////////////////////
-        output("test remove all list");
-        LinkedList<String> list7 = list1.clone();
-        LinkedList<String> list8 = new LinkedList<>();
-        list8.add("Winnipeg");
-        list8.add("Tokoyo");
-        list8.add("Nanaimo");
-        output("List 1",list8,list7.removeAll(list8),list7);
-        LinkedList<String> list9 = new LinkedList<>();
-        output("List 1",list9,list7.removeAll(list9),list7);
-        ///////////////////////////////////////////////////////////////////////
-        output("test clear");
-        LinkedList<String> list10 = list1.clone();
-        list10.clear();
-        output("clear",list10);
-        ///////////////////////////////////////////////////////////////////////
-        output("test contains all array");
-        LinkedList<String> list11 = list1.clone();
-        String[] array4 = {"Winnipeg","Tokoyo","Nanaimo"};
-        String[] array5 = {"Winnipeg","Nanaimo"};
-        output("array 4",toString(array4),list11.containsAll(array4),list11);
-        output("array 5",toString(array5),list11.containsAll(array5),list11);
-        ///////////////////////////////////////////////////////////////////////
-        output("test contains all list");
-        LinkedList<String> list12 = new LinkedList<>();
-        list12.add("Winnipeg");
-        list12.add("Tokoyo");
-        list12.add("Nanaimo");
-        output("List 1",list12 ,list11.containsAll(list12),list11);
-        list12.clear();
-        list12.add("Winnipeg");
-        list12.add("Nanaimo");
-        output("List 2",list12,list11.containsAll(list12),list11);
-        ///////////////////////////////////////////////////////////////////////
-        output("test add all list");
-        LinkedList<String> list13 = new LinkedList<>();
-        list13.addAll(list12);
-        output("add",list12,list13); 
-        list13.addAll(list1);
-        output("add",list1,list13); 
-        ///////////////////////////////////////////////////////////////////////
-        output("test add all list at index");
-        list13.clear();
-        list13.addAll(list12,1);
-        output("add",1,list12,list13);
-        list13.addAll(list12);
-        list13.addAll(list1,0);
-        output("add",0,list1,list13);
-        ///////////////////////////////////////////////////////////////////////
-        output("test add all array");
-        LinkedList<String> list14 = new LinkedList<>();
-        list14.addAll(array4);
-        output("add",toString(array4),list14); 
-        list14.addAll(array5);
-        output("add",toString(array5),list14); 
-        ///////////////////////////////////////////////////////////////////////
-        output("test add all array at index");
-        list14.clear();
-        list14.addAll(array4,1);
-        output("add",1,toString(array4),list14);
-        list14.addAll(array4);
-        list14.addAll(array5,0);
-        output("add",0,toString(array5),list14);
-        ///////////////////////////////////////////////////////////////////////
-        output("test sub list");
-        LinkedList<String> list15 = list1.subList(2, 5);
-        output("sub list",2,5,list15,list1);
-        LinkedList<String> list16 = list1.subList(2, 2);
-        output("sub list",2,2,list16,list1);
-        LinkedList<String> list17 = list1.subList(3, 2);
-        output("sub list",3,2,list17,list1);
-        ///////////////////////////////////////////////////////////////////////
-        output("test from array");
-        LinkedList<String> list18 = new LinkedList<>();
-        LinkedList<String> list19 = new LinkedList<>();
-        LinkedList<String> list20 = new LinkedList<>();        
-        list18.fromArray(array1);        
-        list19.fromArray(array2);        
-        list20.fromArray(array3);
-        output("from array",toString(array1),list18);
-        output("from array",toString(array2),list19);
-        output("from array",toString(array3),list20);  
-        ///////////////////////////////////////////////////////////////////////
-        output("test from list");
-        LinkedList<String> list21 = new LinkedList<>();
-        LinkedList<String> list22 = new LinkedList<>();        
-        list21.fromLinkedList(list18);
-        list22.fromLinkedList(list19);         
-        output("from list",list18,list21);
-        output("from list",list19,list22);
-        ///////////////////////////////////////////////////////////////////////
-        output("test to array");
-        java.lang.System.out.println(list1);
-        String[] array6 = new String[0];
-        String[] array7 = new String[0];        
-        array6 = list1.toArray(array6);
-        array7 = list22.toArray(array7);
-        output("to array",toString(array6),list1);
-        output("to array",toString(array7),list22); 
-        ///////////////////////////////////////////////////////////////////////
-        output("test constructor with array");
-        String[] array8 = null;
-        LinkedList<String> list23 = new LinkedList<>(array6);
-        LinkedList<String> list24 = new LinkedList<>(array7);
-        LinkedList<String> list25 = new LinkedList<>(array7);
-        output("array constructor",toString(array6),list23);
-        output("array constructor",toString(array7),list24);
-        output("array constructor",toString(array8),list25);
-        ///////////////////////////////////////////////////////////////////////
-        output("test constructor with list");
-        LinkedList<String> list26 = new LinkedList<>(list23);
-        LinkedList<String> list27 = new LinkedList<>(list24);
-        output("list constructor",list23,list26);
-        output("list constructor",list24,list27);
-        ///////////////////////////////////////////////////////////////////////
-        output("Collections Test completed!");
-    }
-
-    /**
-     * Outputs an array to the screen 
-     * 
-     * @param array the array to output
-     * @param data the name of the data 
-     */
-    private <T> String toString(T[] array) {
-        String data = "[";
-        if      (array == null)     data += "null] array";
-        else if (array.length == 0) data += "]";
-        else if (array.length == 1) data += array[0].toString() + "]";
-        else {
-            for (int i = 0; i < array.length-1; i++) {
-                data += array[i].toString() + ",";
-            }
-            data += array[array.length-1] + "]";
+        
+        System.out.println("\nTest equals method...........................\n");
+        System.out.println("List 1 = " + list1.toString());
+        System.out.println("List 2 = " + list2.toString());
+        System.out.println("List1 == List2 is " + list1.equals(list2));
+        
+        System.out.println("\nTest clone method............................\n");
+        list2 = list1.clone();
+        System.out.println("List 1 = " + list1.toString());
+        System.out.println("List 2 = " + list2.toString());
+        System.out.println("Re-testing equals...");
+        System.out.println("List1 == List2 is " + list1.equals(list2));
+        
+        System.out.println("\nTest addAfter method.........................\n");
+        int size = list1.size();
+        for (int i = 0-1; i < size; i++) {
+            int number = i + 100;
+            Integer value = new Integer(number);
+            System.out.println("Adding value \t"   + value                   + 
+                               "\t after index \t" + i                       + 
+                               "\t result = \t"    + list1.addAfter(value,i) + 
+                               "\t"                + list1.toString());            
         }
-        return data;
-    }
-    
-    /**
-     * converts a primitive array into the array class 
-     * 
-     * @param array the primitive array
-     * @return the array class array
-     */
-    private Integer[] convert(int[] array) {
-        if (array != null) {
-            Integer[] a = new Integer[array.length];
-            for (int i = 0; i < array.length; i++) {
-                a[i] = array[i];
-            }
-            return a;
+        System.out.println("Test other edge case");
+        size = list1.size()+1; 
+        System.out.println("Adding value \t"   + 10                      + 
+                           "\t after index \t" + size                    + 
+                           "\t result = \t"    + list1.addAfter(10,size) + 
+                           "\t"                + list1.toString());
+        
+        System.out.println("\nTest addBefore method........................\n");
+        size = list1.size();
+        for (int i = 0-1; i < size; i++) {
+            int number = i + 100;
+            Integer value = new Integer(number);
+            System.out.println("Adding value \t"    + value                    + 
+                               "\t before index \t" + i                        + 
+                               "\t result = \t"     + list1.addBefore(value,i) + 
+                               "\t"                 + list1.toString());            
         }
-        return null;
-    }
-    
-    /**
-     * Outputs a string to output with formatting and a line of dots
-     * 
-     * @param a the string to output
-     */
-    private void output(String a) {
-        final String RESET  = "\033[0m"; 
-        final String BLUE   = "\033[0;34m";
-        final int    LENGTH = 200;
-        int stop = LENGTH - a.length();
-        a = a.toUpperCase();        
-        for (int i = 0; i < stop; i++) {
-            a += ".";
+        System.out.println("Test other edge case");
+        size = list1.size()+1; 
+        System.out.println("Adding value \t"    + 10                       + 
+                           "\t after before \t" + size                     + 
+                           "\t result = \t"     + list1.addBefore(10,size) + 
+                           "\t"                 + list1.toString());
+        
+        System.out.println("\nTest front and back methods..................\n");
+        System.out.println("Front of list 1 = " + list1.front() + "\t" + list1);
+        System.out.println("Front of list 2 = " + list2.front() + "\t" + list2);
+        System.out.println("Back of list 1 = " + list1.back() + "\t" + list1);
+        System.out.println("Back of list 2 = " + list2.back() + "\t" + list2);
+        System.out.println("Clear out list 2");
+        list2.clear();
+        System.out.println("Front of list 2 = " + list2.front() + "\t" + list2);
+        System.out.println("Back of list 2 = " + list2.back() + "\t" + list2);
+        
+        System.out.println("\nCloning list 2 from list 1");
+        list2 = list1.clone();
+                
+        System.out.println("\nTest removeFront method......................\n");
+        size = list1.size()+1;
+        for (int i = 0; i < size; i++) {
+            System.out.println(list1.toString());
+            Integer value = list1.removeFront();
+            System.out.println("Removing list 1 front = \t" + value);
         }
-        System.out.println("\n" + BLUE + a + RESET + "\n");
-    }
-    
-    /**
-     * Outputs a variety of values
-     * 
-     * @param <T> the generic data type
-     * @param a a string to display
-     * @param b the generic data type
-     */
-    private <T> void output(String a, T b) {
-        final String DELIMIT = "\t = ";
-        String z = "", y = "";       
-        if (a == null) z = new String("null");
-        else           z = a.toString();
-        if (b == null) y = new String("null");
-        else           y = b.toString();
-        z = pad(z);
-        y = pad(y);
-        System.out.println(z + DELIMIT + y);
-    }
-
-    /**
-     * Outputs a variety of values
-     * 
-     * @param <T> the first generic data type
-     * @param <U> the second generic data type
-     * @param a a string to display
-     * @param b the first generic data type
-     * @param c the second generic data type
-     */
-    private <T,U> void output(String a, T b, U c) {
-        final String DELIMIT = "\t = ";
-        String z = "", y = "", x = "";        
-        if (a == null) z = new String("null");
-        else           z = a.toString();
-        if (b == null) y = new String("null");
-        else           y = b.toString();
-        if (c == null) x = new String("null");
-        else           x = c.toString();
-        z = pad(z);
-        y = pad(y);
-        x = pad(x);
-        System.out.println(z + DELIMIT + y + DELIMIT + x);
-    }
-
-    /**
-     * Outputs a variety of values
-     * 
-     * @param <T> the first generic data type
-     * @param <U> the second generic data type
-     * @param <V> the third generic data type
-     * @param a a string to display
-     * @param b the first generic data type
-     * @param c the second generic data type
-     * @param d the third generic data type
-     */
-    private <T,U,V> void output(String a, T b, U c, V d) {
-        final String DELIMIT = "\t = ";
-        String z = "", y = "", x = "", w = "";   
-        if (a == null) z = new String("null");
-        else           z = a.toString();
-        if (b == null) y = new String("null");
-        else           y = b.toString();
-        if (c == null) x = new String("null");
-        else           x = c.toString();
-        if (d == null) w = new String("null");
-        else           w = d.toString();        
-        z = pad(z);
-        y = pad(y);
-        x = pad(x);
-        w = pad(w);
-        System.out.println(z + DELIMIT + y + DELIMIT + x + DELIMIT + w);
-    }
-    
-    /**
-     * Outputs a variety of values
-     * 
-     * @param <T> the first generic data type
-     * @param <U> the second generic data type
-     * @param <V> the third generic data type
-     * @param <W> the fourth generic data type
-     * @param a a string to display
-     * @param b the first generic data type
-     * @param c the second generic data type
-     * @param d the third generic data type
-     * @param e the fourth generic data type 
-     */
-    private <T,U,V,W> void output(String a, T b, U c, V d, W e) {
-        final String DELIMIT = "\t = ";
-        String z = "", y = "", x = "", w = "", v = "";        
-        if (a == null) z = new String("null");
-        else           z = a.toString();
-        if (b == null) y = new String("null");
-        else           y = b.toString();
-        if (c == null) x = new String("null");
-        else           x = c.toString();
-        if (d == null) w = new String("null");
-        else           w = d.toString();     
-        if (e == null) v = new String("null");
-        else           v = e.toString();  
-        z = pad(z);
-        y = pad(y);
-        x = pad(x);
-        w = pad(w);
-        v = pad(v);        
-        System.out.println(z + DELIMIT + y + DELIMIT + 
-                           x + DELIMIT + w + DELIMIT + v);    
-    }
-    
-    /**
-     * Adds extra spacing to "pad" the passed word
-     * 
-     * @param word the word to pad
-     * @return a padded word
-     */
-    private String pad(String word) {
-        if (word == null) word = "null";
-        final int MAX = 20;
-        String paddedWord = word.toString();
-        if (paddedWord.length() < MAX) {
-            int difference = MAX - paddedWord.length();
-            for (int i = 0; i < difference; i++) {
-                paddedWord += " ";
-            }
+        
+        System.out.println("\nCloning list 1 from list 2");
+        list1 = list2.clone();
+        
+        System.out.println("\nTest removeBack method.......................\n");
+        size = list2.size()+1;
+        for (int i = 0; i < size; i++) {
+            System.out.println(list2.toString());
+            Integer value = list2.removeBack();
+            System.out.println("Removing list 2 back = \t" + value);
         }
-        return paddedWord;
-    }    
+        
+        System.out.println("\nCloning list 2 from list 1");
+        list2 = list1.clone();
+        
+        System.out.println("\nTest remove method...........................\n");
+        size = list2.size()+1;
+        for (int i = size; i >= -1; i--) {
+            System.out.println(list1.toString());
+            Integer value = list1.remove(i);
+            System.out.println("Removing from list 1 from index: \t" + i + 
+                               "\t removed: \t" + value);
+        }
+        
+        System.out.println("\nTest contains method.........................\n");
+        System.out.println("List 1 (empty) contains 10 = " + 
+                            list1.contains(10) + "\t" + list1);
+        for (int i = 0; i < list2.size(); i++) {
+            Integer value = list2.get(i);
+            System.out.println("List 2 contains \t" + value + "\t" + 
+                            list2.contains(value) + "\t" + list2);
+        }
+        System.out.println("List 2 contains \t" + 1000 + "\t" + 
+                            list2.contains(1000) + "\t" + list2);
+        
+        list1.clear(); 
+        list1.add(5); list1.add(6); list1.add(7);
+        list1.add(8); 
+        list1.add(5); list1.add(6); list1.add(7);
+        list1.add(5); list1.add(6); list1.add(7);
+        System.out.println("\nResetting list 1 to: " + list1);
+        
+        System.out.println("\nTest firstIndexOf and lastIndexOf methods....\n");
+        System.out.println("First index of 5: \t" + list1.firstIndexOf(5));
+        System.out.println("Last index of 5: \t" + list1.lastIndexOf(5));
+        System.out.println("First index of 7: \t" + list1.firstIndexOf(7));
+        System.out.println("Last index of 7: \t" + list1.lastIndexOf(7));
+        System.out.println("First index of 8: \t" + list1.firstIndexOf(8));
+        System.out.println("Last index of 8: \t" + list1.lastIndexOf(8));
+        System.out.println("First index of 9: \t" + list1.firstIndexOf(9));
+        System.out.println("Last index of 9: \t" + list1.lastIndexOf(9));
+        
+        System.out.println("\nTest numberOf method.........................\n");
+        System.out.println(list1);
+        System.out.println("Number of 5: \t" + list1.numberOf(5));
+        System.out.println("Number of 8: \t" + list1.numberOf(8));
+        System.out.println("Number of 9: \t" + list1.numberOf(9));
+        
+        System.out.println("\nTest allIndices method.......................\n");
+        System.out.println(list1);
+        int[] array1 = list1.allIndices(5);
+        int[] array2 = list1.allIndices(8);
+        int[] array3 = list1.allIndices(9);        
+        System.out.println("Array from indices of 5: \t" + 
+                Arrays.toString(array1));
+        System.out.println("Array from indices of 8: \t" + 
+                Arrays.toString(array2));
+        System.out.println("Array from indices of 9: \t" + 
+                Arrays.toString(array3));
+        
+        System.out.println("\nCloning list 2 from list 1");
+        list2 = list1.clone();
+        
+        System.out.println("\nTest remove method...........................\n");
+        System.out.println(list1);
+        Integer data1 = new Integer(5);
+        Integer data2 = new Integer(8);
+        Integer data3 = new Integer(9);
+        System.out.println("Removing 5: \t" + list1.remove(data1) + "\t" + 
+                list1);
+        System.out.println("Removing 8: \t" + list1.remove(data2) + "\t" + 
+                list1);
+        System.out.println("Removing 9: \t" + list1.remove(data3) + "\t" + 
+                list1);
+        
+        System.out.println("\nTest removeLast method.......................\n");
+        System.out.println(list1);
+        data1 = new Integer(5);
+        data2 = new Integer(8);
+        data3 = new Integer(9);
+        System.out.println("Removing 5: \t" + list1.removeLast(data1) + "\t" + 
+                list1);
+        System.out.println("Removing 8: \t" + list1.removeLast(data2) + "\t" + 
+                list1);
+        System.out.println("Removing 9: \t" + list1.removeLast(data3) + "\t" + 
+                list1);
+        
+        System.out.println("\nTest removeAll method........................\n");
+        System.out.println(list1);
+        data1 = new Integer(5);
+        data2 = new Integer(6);
+        data3 = new Integer(9);
+        System.out.println("Removing all 5: \t" + list1.removeAll(data1) +  
+                "\t" + list1);
+        System.out.println("Removing all 6: \t" + list1.removeAll(data2) +  
+                "\t" + list1);
+        System.out.println("Removing all 9: \t" + list1.removeAll(data3) +  
+                "\t" + list1);
+        
+        System.out.println("\nCloning list 1 from list 2");
+        list1 = list2.clone();
+        
+        System.out.println("\nTest removeAll array method..................\n");
+        System.out.println(list2);
+        int[] array4 = {5,6,9};
+        Integer[] array5 = {5,6,9};
+        System.out.println("Array: \t" + Arrays.toString(array4));
+        list2.removeAll(array5);
+        System.out.println("Removing all from array: " + list2);
+        
+        System.out.println("\nTest removeAll list method..................\n");
+        System.out.println("List 1 \t" + list1);
+        System.out.println("List 2 \t" + list2);
+        list1.removeAll(list2);
+        System.out.println("Removing all list 2 from list 1...");
+        System.out.println("List 1 \t" + list1);
+        System.out.println("List 2 \t" + list2);
+                
+        list1.clear(); 
+        list1.add(5); list1.add(6); list1.add(7);
+        list1.add(8); 
+        list1.add(5); list1.add(6); list1.add(7);
+        list1.add(5); list1.add(6); list1.add(7);
+        list2 = list1.clone();
+        System.out.println("\nResetting list 1 and 2 to: " + list1);
+        
+        System.out.println("\nTest containsAll array method................\n");
+        System.out.println("List: \t" + list1 + 
+                           " contains array: \t" + Arrays.toString(array4) + 
+                           "\t is " + list1.containsAll(array5));
+        int[] array7 = {5,6,7,8};
+        Integer[] array8 = {5,6,7,8};
+        System.out.println("List: \t" + list1 + 
+                           " contains array: \t" + Arrays.toString(array7) + 
+                           "\t is " + list1.containsAll(array8));
+        
+        System.out.println("\nTest containsAll list method.................\n");
+        System.out.println("List: \t" + list1 + 
+                           " contains list: \t" + list2 + 
+                           "\t is " + list1.containsAll(list2));
+        System.out.println("Alter list 2...");
+        list2.removeBack();
+        list2.removeFront();
+        list2.remove(3);
+        list2.add(45);
+        System.out.println("List: \t" + list1 + 
+                           " contains list: \t" + list2 + 
+                           "\t is " + list1.containsAll(list2));
+        
+        System.out.println("\nTest addAll array method.....................\n");
+        System.out.println(list2);
+        list2.addAll(array8);
+        System.out.println("Adding array: \t" + Arrays.toString(array7) + 
+                           "\t now list \t" + list2);
+        
+        System.out.println("\nTest addAll list method......................\n");
+        System.out.println(list2);
+        list2.addAll(list1);
+        System.out.println("Adding list: \t" + list1 + 
+                           "\t now list \t" + list2);
+                
+        System.out.println("\nTest subList method..........................\n");
+        System.out.println("List 1 = \t" + list1);
+        list2 = list1.subList(3, 6);
+        System.out.println("Pulling out sub-list from 3 to 6: \t" + list2);
+        list2 = list1.subList(1, 1);
+        System.out.println("Pulling out sub-list from 1 to 1: \t" + list2);
+        list2 = list1.subList(2, 10);
+        System.out.println("Pulling out sub-list from 2 to 10: \t" + list2);
+        list2 = list1.subList(0, 9);
+        System.out.println("Pulling out sub-list from 0 to 9: \t" + list2);
+                
+        System.out.println("\nTest fromArray method........................\n");
+        System.out.println("Array is \t" + Arrays.toString(array7));
+        list1.fromArray(array8);
+        System.out.println("List is \t" + list1);
+        
+        System.out.println("\nTest fromLinkedList method...................\n");
+        System.out.println("1st List is \t" + list1);
+        list2.fromLinkedList(list1);
+        System.out.println("2nd List is \t" + list2);
+        
+        System.out.println("\nTest toArray method..........................\n");
+        Integer[] array9 = new Integer[1];
+        array9 = list1.toArray(array9);
+        System.out.println("List \t" + list1 + "\t into array \t" + 
+                Arrays.toString(array9));
+                
+        Simulator.header("Collections unit complete!");
+    }
     
 }
