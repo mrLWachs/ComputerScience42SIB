@@ -3,19 +3,32 @@ package testing.cs40s.advancedclasses;
 
  
 /**
- * Husky.java - represents a Husky HighSchool Student Person
+ * HighSchool.java - represents a high school student person. Before creating
+ * this class we altered the NetBeans template (Tools - Templates) for a 
+ * Java class so that the toString(), clone(), and equals() methods are now 
+ * always part of any new class we create (whether or not we choose to over-ride
+ * those methods).
  *
  * @author Mr. Wachs
- * @since 8-Nov-2021, 11:30:31 AM
+ * @since 5-Nov-2021, 11:15:41 AM
  */
-public class Husky extends HighSchool
+public class HighSchool extends Student
 {
 
     /**
      * Default constructor, set class properties
      */
-    public Husky() {
-        super("Havoc");
+    public HighSchool() {
+        super("Smelly Teenager",15);        // Calling the super constructor
+    }
+    
+    /**
+     * Constructor that sets the class properties to the parameters
+     * 
+     * @param name the name of this HighSchool Student Person
+     */
+    public HighSchool(String name) {
+        super(name,15);
     }
      
     /**
@@ -25,7 +38,7 @@ public class Husky extends HighSchool
      */
     @Override
     public String toString() {
-        return "Husky: " + super.toString();
+        return "HighSchool: " + super.toString();
     }
    
     /**
@@ -45,7 +58,7 @@ public class Husky extends HighSchool
      * @return a "clone" of the object using new memory
      */
     @Override
-    public Husky clone() {
+    public HighSchool clone() {
         return this;
     }
     

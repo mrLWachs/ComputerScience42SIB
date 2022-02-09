@@ -1,8 +1,8 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.cs40s;
 
-/** required imports */
+/** Required imports */
 import collections.LinkedList;
 import collections.Node;
 import io.System;
@@ -11,7 +11,7 @@ import io.System;
  * CollectionsTest.java - tests the concepts learned in this unit
  *
  * @author Mr. Wachs
- * @since Nov. 25, 2019, 11:12:06 a.m.
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class CollectionsTest 
 {

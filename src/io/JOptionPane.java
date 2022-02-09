@@ -1,8 +1,8 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package io;
 
-/** required imports */
+/** Required imports */
 import java.awt.Component;
 import javax.swing.Icon;
 
@@ -12,7 +12,7 @@ import javax.swing.Icon;
  * dialogs and user interfaces and redirects the outputs to a custom output
  *
  * @author Mr. Wachs 
- * @since 15-Mar-2019 
+ * @since Feb. 9, 2022, 8:01:03 a.m. 
  */
 public class JOptionPane 
 {

@@ -1,8 +1,8 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package io;
 
-/** required imports */
+/** Required imports */
 import java.awt.Component;
 import java.io.File;
 import javax.swing.Icon;
@@ -15,7 +15,7 @@ import javax.swing.JFrame;
  * java.lang class and redirects those outputs to customs
  *
  * @author Mr. Wachs
- * @since 16-Dec-2019
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Simulator 
 {

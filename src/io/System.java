@@ -1,5 +1,5 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package io;
 
 /**
@@ -7,7 +7,7 @@ package io;
  * standard outputs and redirects those outputs to a custom simulator
  *
  * @author Mr. Wachs 
- * @since 8-Mar-2019 
+ * @since Feb. 9, 2022, 8:01:03 a.m. 
  */
 public class System 
 {

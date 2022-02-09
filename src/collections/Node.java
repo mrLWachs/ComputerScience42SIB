@@ -1,7 +1,8 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package collections;
 
+/** Required imports */
 import java.io.Serializable;
 
  
@@ -23,7 +24,7 @@ import java.io.Serializable;
  * 
  * @author Mr. Wachs 
  * @param <T> the generic data type used in the class
- * @since 6-May-2019 
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Node <T> implements Serializable
 {

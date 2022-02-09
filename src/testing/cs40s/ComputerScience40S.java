@@ -1,10 +1,9 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.cs40s;
 
-/** required imports */
+/** Required imports */
 import io.Simulator;
-import io.System;
 
 
 /**
@@ -14,7 +13,7 @@ import io.System;
  * over the course
  *
  * @author Mr. Wachs 
- * @since 7-Sep-2018 
+ * @since Feb. 9, 2022, 8:01:03 a.m. 
  */
 public class ComputerScience40S 
 {

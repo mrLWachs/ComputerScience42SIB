@@ -1,7 +1,8 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.testclass;
 
+/** Required imports */
 import collections.LinkedList;
 import tools.Text;
 import io.Simulator;
@@ -14,7 +15,7 @@ import io.System;
  * of those types
  *
  * @author Mr. Wachs
- * @since Jan. 29, 2020, 12:51:24 p.m.
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Test 
 {

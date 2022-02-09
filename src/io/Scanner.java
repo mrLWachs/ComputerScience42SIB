@@ -1,8 +1,8 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package io;
 
-/** required imports */
+/** Required imports */
 import java.io.InputStream;
 
  
@@ -11,7 +11,7 @@ import java.io.InputStream;
  * dialogs and user interfaces and redirects the outputs to a custom output
  *
  * @author Mr. Wachs
- * @since Feb. 11, 2020, 12:50:26 p.m.
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Scanner 
 {

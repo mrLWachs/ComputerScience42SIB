@@ -1,8 +1,8 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package tools;
 
-/** required imports */
+/** Required imports */
 import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -13,7 +13,7 @@ import javax.swing.JLabel;
  * Images.java - tools for working with images
  *
  * @author Mr. Wachs
- * @since Mar. 3, 2020, 9:33:17 a.m.
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Images 
 {

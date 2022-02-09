@@ -1,18 +1,16 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.cs30s;
 
-/** required imports */
-import io.System;
-
+ 
 /**
  * Husky.java - represents a Husky. This class uses inheritance to inherit
  * the properties and methods from the Students class, which was already 
  * inheriting (extending) from the Person class. Therefore, this class 
  * inherits from both (a double inheritance).
  *
- * @author Mr. Wachs 
- * @since 14-May-2019 
+ * @author Mr. Wachs
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Husky extends Student
 {
@@ -21,33 +19,21 @@ public class Husky extends Student
     
     
     /**
-     * Constructor for the class sets class properties
+     * Constructor for the class, sets the class properties to the default 
+     * values or the passed parameters
      * 
-     * @param name the name for this Husky
-     * @param age the age for this Husky
-     * @param isMale the gender for this Husky
+     * @param name the name of this Husky "is a" Student "is a" Person
+     * @param age the age of this Husky "is a" Student "is a" Person
+     * @param gender the gender of this Husky "is a" Student "is a" Person
+     * @param studentNumber the number of this Husky "is a" Student 
      */
-    public Husky(String name, int age, boolean isMale) {
-        super(name, age, isMale);               // super constructor
-        pride = true;                           // set internal properties
+    public Husky(String name, int age, String gender, int studentNumber) {
+        super(name, age, gender, studentNumber);    // calling super constructor
+        pride = true;                               // set internal property
     }
     
     /**
-     * Removes Husky pride
-     */
-    public void homework() {
-        pride = false;
-    }
-
-    /**
-     * Restores Husky pride
-     */
-    public void atLeastImNotAtJohnTaylor() {
-        pride = true;
-    }
-
-    /**
-     * Talking overrides the same talk method of the parent class
+     * Talking overrides the same talk method of the parent class (Student)
      * and outputs additional information to the screen
      */
     @Override
@@ -55,5 +41,5 @@ public class Husky extends Student
         super.talk();       // call to super talk(), it calls super talk() also
         System.out.println("\t Pride is " + pride);
     }
-    
+
 }

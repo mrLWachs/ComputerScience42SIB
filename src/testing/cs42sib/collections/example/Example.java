@@ -21,7 +21,7 @@ import tools.Text;
  *      - FileHandler class (for saving and opening files for permanent storage)
  *
  * @author Mr. Wachs 
- * @since Mar. 10, 2021 
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Example 
 {

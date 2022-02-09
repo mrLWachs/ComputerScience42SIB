@@ -1,8 +1,8 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package io;
 
-/** required imports */
+/** Required imports */
 import tools.Numbers;
 import java.awt.Color;
 import java.awt.Component;
@@ -22,7 +22,7 @@ import javax.swing.JTextArea;
  * Dialogs.java - a collection of useful methods for working with dialogs
  *
  * @author Mr. Wachs
- * @since Dec 12, 2017
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Dialogs
 {

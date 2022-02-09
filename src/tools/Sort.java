@@ -1,8 +1,8 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package tools;
 
-/** required imports */
+/** Required imports */
 import collections.LinkedList;
 
 /**
@@ -11,8 +11,7 @@ import collections.LinkedList;
  * 
  * @author Mr. Wachs
  * @param <T> the generic object used in this class
- * @since Feb 9, 2017
- * @instructor Mr. Wachs
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Sort <T extends Comparable<T>> 
 {

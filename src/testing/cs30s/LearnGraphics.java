@@ -1,9 +1,6 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.cs30s;
-
-/** required imports */
-import io.Simulator;
 
  
 /**
@@ -12,7 +9,7 @@ import io.Simulator;
  * other objects
  *
  * @author Mr. Wachs
- * @since Dec. 16, 2019, 9:58:33 a.m.
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class LearnGraphics 
 {
@@ -21,14 +18,12 @@ public class LearnGraphics
      * Constructor method for when an object of this class is instantiated
      */
     public LearnGraphics() {
-        Simulator.header("Start learning graphics...");    
-//        Graphics1 graphics1 = new Graphics1();
-//        Graphics2 graphics2 = new Graphics2();
-//        Graphics3 graphics3 = new Graphics3();
-        Simulator.showFrame(null);
-        Simulator.showFrame(null);
-        Simulator.showFrame(null);
-        Simulator.header("Completed learning graphics!");
+        System.out.println("Start Learning Graphics and User Interfaces (UI)");
+        // Create class objects for different examples
+        Graphics1 graphics1 = new Graphics1();
+        Graphics2 graphics2 = new Graphics2();
+        Graphics3 graphics3 = new Graphics3();        
+        System.out.println("Completed Learning Graphics and UI!");
     }
-    
+
 }

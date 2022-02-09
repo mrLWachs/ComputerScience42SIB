@@ -1,26 +1,23 @@
-
-/** required package class namespace */
+/** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
  
 /**
- * Rapunzel.java - represents a Rapunzel princess royalty person
+ * MrWachs.java - represents a MrWachs Teacher Person
  *
  * @author Mr. Wachs
- * @since Oct. 21, 2019, 10:40:44 a.m.
+ * @since 8-Nov-2021, 11:31:25 AM
  */
-public class Rapunzel extends Princess
+public class MrWachs extends Teacher
 {
 
-    public Magic hair;              // associated object 
-    
     /**
      * Default constructor, set class properties
      */
-    public Rapunzel() {
-        hair = new Magic();         // instantiate object
+    public MrWachs() {
+        super("Mr. Wachs");
     }
-
+     
     /**
      * String representation of this object
      *
@@ -28,9 +25,9 @@ public class Rapunzel extends Princess
      */
     @Override
     public String toString() {
-        return "Rapunzel: " + super.toString() + " " + hair.toString();
+        return "MrWachs: " + super.toString();
     }
-    
+   
     /**
      * Deep comparison, determines if two objects are "equal" in this context
      *
@@ -41,15 +38,15 @@ public class Rapunzel extends Princess
     public boolean equals(Object object) {
         return super.equals(object);
     }
-        
+       
     /**
      * a Deep clone, creates a duplicate object using new memory
      *
      * @return a "clone" of the object using new memory
      */
     @Override
-    public Rapunzel clone() {
+    public MrWachs clone() {
         return this;
     }
-
+    
 }

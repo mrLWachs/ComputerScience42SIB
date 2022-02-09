@@ -1,8 +1,8 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package tools;
 
-/** required imports */
+/** Required imports */
 import collections.LinkedList;
 
  
@@ -10,7 +10,7 @@ import collections.LinkedList;
  * Numbers.java - a collection of useful methods for working with numbers
  *
  * @author Mr. Wachs
- * @since Nov. 21, 2019, 3:49:35 p.m.
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Numbers 
 {

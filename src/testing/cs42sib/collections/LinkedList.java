@@ -1,7 +1,11 @@
+
+/** Required package class namespace */
 package testing.cs42sib.collections;
 
+/** Required imports */
 import java.io.Serializable;
 import java.lang.reflect.Array;
+
 
 /**
  * LinkedList.java - an implementation of a linked list abstract (advanced)
@@ -21,7 +25,7 @@ import java.lang.reflect.Array;
  * 
  * @author Mr. Wachs 
  * @param <T> the generic data type used in the class
- * @since March 4, 2021 
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class LinkedList <T> implements Serializable
 {

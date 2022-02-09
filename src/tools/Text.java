@@ -1,8 +1,8 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package tools;
 
-/** required imports */
+/** Required imports */
 import collections.LinkedList;
 import io.FileHandler;
 import java.io.File;
@@ -15,7 +15,7 @@ import java.net.URL;
  * Text.java - a collection of useful methods for working with text
  *
  * @author Mr. Wachs
- * @since Nov. 25, 2019, 3:17:33 p.m.
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Text 
 {

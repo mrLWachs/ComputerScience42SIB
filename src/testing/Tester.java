@@ -1,7 +1,8 @@
-/** required package class namespace */
+
+/** Required package class namespace */
 package testing;
 
-/** required imports */
+/** Required imports */
 import io.Simulator;
 import testing.cs30s.ComputerScience30S;
 import testing.cs40s.ComputerScience40S;
@@ -12,7 +13,7 @@ import testing.cs42sib.ComputerScience42SIB;
  * Tester.java - the unit testing class that drives the various unit tests
  *
  * @author Mr. Wachs 
- * @since 24-Sep-2018 
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Tester 
 {

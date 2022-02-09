@@ -1,7 +1,8 @@
-/** required package class namespace */
+
+/** Required package class namespace */
 package io;
 
-/** required imports */
+/** Required imports */
 import collections.LinkedList;
 import java.io.BufferedReader;
 import java.io.File;
@@ -19,7 +20,7 @@ import java.io.PrintWriter;
  *
  * @author Mr. Wachs 
  * @param <T> the generic data type to use
- * @since Dec 6, 2017 
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class FileHandler <T>
 {

@@ -1,9 +1,10 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package tools;
 
-/** required imports */
+/** Required imports */
 import collections.LinkedList;
+
 
 /**
  * Searcher.java - useful methods for searching through arrays and lists of
@@ -11,8 +12,7 @@ import collections.LinkedList;
  * 
  * @author Mr. Wachs
  * @param <T> the generic object used in this class
- * @since Feb 9, 2017
- * @instructor Mr. Wachs
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Search <T extends Comparable<T>>
 {

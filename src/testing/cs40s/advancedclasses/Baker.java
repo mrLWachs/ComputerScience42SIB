@@ -1,29 +1,23 @@
-
-/** required package class namespace */
+/** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
  
 /**
- * Jimmies.java - represents a jimmie student person
+ * Baker.java - represents a Baker Person
  *
  * @author Mr. Wachs
- * @since Oct. 21, 2019, 10:46:12 a.m.
+ * @since 8-Nov-2021, 11:30:24 AM
  */
-public class Jimmies extends Student
+public class Baker extends Person
 {
 
     /**
-     * Default constructor for the class, sets class properties
-     * 
-     * @param name the name for this student
-     * @param age the age for this student
-     * @param isMale the gender for this student
-     * @param studentNumber the student number for this student
+     * Default constructor, set class properties
      */
-    public Jimmies(String name, int age, boolean isMale, int studentNumber) {
-        super(name, age, isMale, studentNumber);
+    public Baker() {
+        super();
     }
-
+     
     /**
      * String representation of this object
      *
@@ -31,9 +25,9 @@ public class Jimmies extends Student
      */
     @Override
     public String toString() {
-        return "Jimmies: " + super.toString();
+        return "Baker: " + super.toString();
     }
-    
+   
     /**
      * Deep comparison, determines if two objects are "equal" in this context
      *
@@ -44,15 +38,15 @@ public class Jimmies extends Student
     public boolean equals(Object object) {
         return super.equals(object);
     }
-        
+       
     /**
      * a Deep clone, creates a duplicate object using new memory
      *
      * @return a "clone" of the object using new memory
      */
     @Override
-    public Jimmies clone() {
+    public Baker clone() {
         return this;
     }
-
+    
 }

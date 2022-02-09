@@ -1,7 +1,8 @@
-/** required package class namespace */
+
+/** Required package class namespace */
 package testing.testclass;
 
-/** required imports */
+/** Required imports */
 import java.io.Serializable;
 import tools.Numbers;
 import tools.Text;
@@ -11,7 +12,7 @@ import tools.Text;
  * TestClass.java - a test class for randomly generated data types
  * 
  * @author Mr. Wachs 
- * @since Dec 16, 2016
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class TestClass extends BaseClass implements Serializable, 
         Comparable<Object>

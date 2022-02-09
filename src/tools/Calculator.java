@@ -1,5 +1,5 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package tools;
 
  
@@ -7,7 +7,7 @@ package tools;
  * Calculator.java - useful collection of methods for doing calculations.
  *
  * @author Mr. Wachs
- * @since Sep. 18, 2019, 11:34:29 a.m.
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Calculator 
 {

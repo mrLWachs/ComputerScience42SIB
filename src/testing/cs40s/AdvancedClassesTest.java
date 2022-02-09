@@ -1,42 +1,33 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.cs40s;
 
-/** required imports */
+/** Required imports */
 import io.Simulator;
-import testing.cs40s.advancedclasses.BonelessPizza;
 import testing.cs40s.advancedclasses.Box;
-import testing.cs40s.advancedclasses.ComputerScienceTeacher;
 import testing.cs40s.advancedclasses.Food;
 import testing.cs40s.advancedclasses.House;
 import testing.cs40s.advancedclasses.Husky;
-import testing.cs40s.advancedclasses.HuskyAthlete;
-import testing.cs40s.advancedclasses.KraftDinner;
 import testing.cs40s.advancedclasses.Meeting;
 import testing.cs40s.advancedclasses.Person;
-import testing.cs40s.advancedclasses.Potato;
 import testing.cs40s.advancedclasses.Student;
 import testing.cs40s.advancedclasses.Teacher;
-import testing.cs40s.advancedclasses.WellDoneSteak;
-import testing.cs40s.advancedclasses.Animals;
-import testing.cs40s.advancedclasses.Creatures;
-import testing.cs40s.advancedclasses.Fairy;
-import testing.cs40s.advancedclasses.Genie;
-import testing.cs40s.advancedclasses.Hercules;
-import testing.cs40s.advancedclasses.Jimmies;
-import testing.cs40s.advancedclasses.King;
-import testing.cs40s.advancedclasses.Magic;
-import testing.cs40s.advancedclasses.Prince;
-import testing.cs40s.advancedclasses.Princess;
-import testing.cs40s.advancedclasses.Rapunzel;
-import testing.cs40s.advancedclasses.Royalty;
-import io.System;
+import javax.swing.JOptionPane;
+import testing.cs40s.advancedclasses.Apple;
+import testing.cs40s.advancedclasses.Athlete;
+import testing.cs40s.advancedclasses.Baker;
+import testing.cs40s.advancedclasses.Doctor;
+import testing.cs40s.advancedclasses.HighSchool;
+import testing.cs40s.advancedclasses.MrWachs;
+import testing.cs40s.advancedclasses.Piper;
+import testing.cs40s.advancedclasses.Steak;
+
 
 /**
  * AdvancedClassesTest.java - tests the concepts learned in this unit
  *
  * @author Mr. Wachs
- * @since Sep. 30, 2019, 11:43:07 a.m.
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class AdvancedClassesTest 
 {
@@ -47,173 +38,324 @@ public class AdvancedClassesTest
     public AdvancedClassesTest() {
         Simulator.header("Advanced classes unit starting...");
         
-        // Review of classes concepts (properties, methods, object, inheritance)
+        // Using the class to create an object with the default constructor:
+        // class object = call constructor method (default)   
+        Person person = new Person();
+          
+        // Call one of the methods in this object (an instance of the class)
+        person.talk();
         
-        // using the class to create an object with the default constructor:
-        // class object = call constructor method (default)
-        Person person = new Person();                   // person object
-        person.talk();                                  // calls class method 
+        // Try to change (modify) some of our properties:        
+        person.name   = "Bruce Spruce"; // "public" properties can be accessed
+        person.gender = "demi-male";        
+        // person.age     = 16;  // Cannot do this, property is locked (private)
+        // person.isAlive = false; // Cannot do (access) this! (encapsulated)
+                
+        // Try to call (invoke) some of our methods:        
+        person.birthday();
+        person.die();
+        person.talk();
         
-        // class using inheritance
-        Student student = new Student(99);              // new student object
-        student.talk();                                 // inherited method
+        // Instantiate (create) and object of type student 
+        Student student = new Student("Flash Thompson",17);
+        student.birthday();             // Inherited method from parent class
+        student.study();                // This method is only in student
+        student.cram();                 // This method modifies the private
+        student.slackOff();             // encapsulated property (average)
+        student.talk();                 // The over-ride method
         
+        // Instantiate a teacher object and associate it with a student object
+        Teacher teacher = new Teacher("Professor");
+        teacher.add(student);           // Associate object through method
+        teacher.teach();                // Effect associated objects
+        teacher.talk();                 // Inherited method invoked
+                
         // The Object class (parent class of all classes)
         
-        // all classes (including ones we create) inherit from the object 
-        // class which is the parent (super) of all classes
-        Object object1 = new Object();
-        Object object2 = object1;                       // parent of all classes
+        // All classes (including ones we create) inherit from the object class
+        // which is the parent (super) class of all classes        
+        Object object1 = new Object();      // 1st instance of the object class
+        Object object2 = new Object();      // 2nd instance of the object class
+        Object object3 = object2;
         
-        // The toString(), clone(), and equals() methods
+        // Built into the object class are a number of methods that all other
+        // classes inherit. These include some that are not relevant in this 
+        // unit, and others like the: toString(), clone(), and equals() methods
         
-        System.out.println(object1.toString());         // the toString method
-        System.out.println(object2.toString());
-                
-        // Use of the equals, toString, and clone methods that are inherited 
-        // (but over-ridden) from the Object class with student objects:        
-        Student brayden = new Student("Brayden Ruby",19,false,11);
-        Student owen    = new Student("Owen Notplace",6,true,12);
-        Student brady   = brayden.clone();              // clone method
-        brady.setName("Brady Nemetchek");               // modifier method
+        // The toString() method of the object class outputs information
+        // including the memory address (in hexadecimal code) where this object
+        // is stored in this computer's memory        
+        java.lang.System.out.println("O1 = " + object1.toString());
+        java.lang.System.out.println("O2 = " + object2.toString());
+        java.lang.System.out.println("O3 = " + object3.toString());
         
-        System.out.println(brayden.toString());         // toString overloaded
-        System.out.println(owen.toString());
-        System.out.println(brady.toString());
+        // This method is inherited by all sub classes (children), for example:        
+        java.lang.System.out.println("Person  = " + person.toString());
+        java.lang.System.out.println("Student = " + student.toString());
+        java.lang.System.out.println("Teacher = " + teacher.toString());
         
-        // equals overloaded
-        if (brayden.equals(owen))  System.out.println("Brayden == Owen");
-        if (brayden.equals(brady)) System.out.println("Brayden == Brady");
-        if (owen.equals(brady))    System.out.println("Owen == Brady");
+        // Seeing the object class as the parent class of classes we don't write        
+        String string = "puppy";
+        java.lang.System.out.println("String = " + string.toString());
+        // The string class over-rides the toString() method here
         
-        // The static keyword (for properties and methods)
+        // The equals() method of the object class checks if two objects are
+        // "equal" by using the "memory address" of each object and checks if 
+        // the two objects being compared use the same address (true) or not 
+        // (false)        
+        if (object1.equals(object2)) java.lang.System.out.println("O1==O2");
+        if (object2.equals(object3)) java.lang.System.out.println("O2==O3");
+        if (object1.equals(object3)) java.lang.System.out.println("O1==O3");
         
-        Student s = new Student(60);    // Instantiate another student object
-        System.out.println(Student.totalStudents);  // access static property
-                               
-        Person.endTheWorld();           // invoking the static method from the      
-        Student.endTheWorld();          // class not the object      
+        // Now since these two methods are inherited by ALL class objects, we
+        // can use this methods with Person class objects:
+        
+        // Now we will create 3 identifier names, but only one memory location
+        // for all three         
+        Person person1 = new Person();  // Creating a "new" memory address
+        Person person2 = person1;       // Same memory address as person1
+        Person person3 = person2;       // Same memory address as person1 and 2
+        
+        java.lang.System.out.println("P1 = " + person1.toString());
+        java.lang.System.out.println("P2 = " + person2.toString());
+        java.lang.System.out.println("P3 = " + person3.toString());
+        
+        if (person1.equals(person2)) java.lang.System.out.println("P1==P2");
+        if (person2.equals(person3)) java.lang.System.out.println("P2==P3");
+        if (person1.equals(person3)) java.lang.System.out.println("P1==P3");
+        
+        // Then we will over-ride the toString() and equals() methods in the
+        // person class so that we can check how that method is called over the 
+        // object version of those methods. It is useful to alter a NetBeans
+        // template so those methods are always over-ridden in every new class 
+        // created (see the comment in "ComputerScience40S.java" to do this). 
+        
+        // Testing the clone() method:        
+        Person clonePerson = person.clone();        
+        java.lang.System.out.println("Person is " + person.toString());
+        java.lang.System.out.println("Clone  is " + clonePerson.toString());        
+        if (person.equals(clonePerson)) java.lang.System.out.println("clone is =");
+        
+        // Now we will do the same thing to the student class and over-ride the
+        // toString(), equals(), and clone() methods we inherited from the 
+        // object class:        
+        Student student1 = new Student("Name1",10);
+        Student student2 = new Student("Name2",20);
+        Student student3 = new Student("Name3",30);
+        
+        // Use the methods to alter the encapsulated property (average)
+        student1.slackOff();
+        student2.study();
+        student3.cram();
+        
+        // When doing an output (like System.out... you "can" call "toString()"
+        // but it often calls it automatically for you
+        java.lang.System.out.println(student1);
+        java.lang.System.out.println(student2);
+        java.lang.System.out.println(student3);
+        
+        // Using a static variable, static variables get instantiated once and
+        // all objects share a reference to that same memory location (meaning
+        // the "static" variable "belongs" to the class not the object)
+        
+        // Now output the static variable of each object and you will notice
+        // how we get the same output for each student instance as they all
+        // "share" the same access to the same static variable
+        java.lang.System.out.println("S1 total = " + student1.total);
+        java.lang.System.out.println("S2 total = " + student2.total);
+        java.lang.System.out.println("S3 total = " + student3.total);
+        
+        // Mutate the static variable of one instance
+        student1.total = 3;
+        
+        // Output all three again - showing that it changed (mutated) all
+        // three instances since the variable is static (shared)
+        java.lang.System.out.println("S1 total = " + student1.total);
+        java.lang.System.out.println("S2 total = " + student2.total);
+        java.lang.System.out.println("S3 total = " + student3.total);
+        
+        // Now our child class (HighSchool) of student (parent)
+        HighSchool highSchool = new HighSchool();        
+        java.lang.System.out.println(highSchool);
+        java.lang.System.out.println(highSchool.total);
+        
+        // Now we will call a static (shared) method from the objects 
+        // (instances) of the Person class and the other classes that extend
+        // ("is a") from Person and inherited this method
+        highSchool.endTheWorld();
+        person.endTheWorld();
+        student.endTheWorld();
+        teacher.endTheWorld();
+        
+        // You can invoke (call) static methods from the name of the class 
+        // itself, not just the instances (objects) of the class, for example
+        Person.endTheWorld();
+        Student.endTheWorld();
         Teacher.endTheWorld();
+        HighSchool.endTheWorld();
         
-        // create various custom objects...
-        Rapunzel               rapunzel   = new Rapunzel();
-        Hercules               hercules   = new Hercules();
-        Genie                  genie      = new Genie("");
-        Fairy                  tinkerbell = new Fairy();
-        Animals                flounder   = new Animals();
-        ComputerScienceTeacher rogowy     = new ComputerScienceTeacher();
-        Husky                  havoc      = new Husky("Havoc Husky", 13, true, 6556);
-        Jimmies                jim        = new Jimmies("Jim Donkey", 17, false, 0);
-                
-        // and output them (using toString called automatically)
-        System.out.println(rapunzel);
-        System.out.println(hercules);
-        System.out.println(genie);
-        System.out.println(tinkerbell);
-        System.out.println(flounder);
-        System.out.println(rogowy);
-        System.out.println(havoc);
-        System.out.println(jim);
-                
-        // call a method with new code...  
-        whatIs(person);
-        whatIs(student);
-        whatIs(brayden);
-        whatIs(owen);
-        whatIs(brady);
-        whatIs(s);
-        whatIs(rapunzel);
-        whatIs(hercules);
-        whatIs(genie);
-        whatIs(tinkerbell);
-        whatIs(flounder);
-        whatIs(rogowy);
-        whatIs(havoc);
-        whatIs(jim);
+        // You have seen calling method like this before, for example in
+        // JOptionPane.showMessageDialog(null, "");
+        // Not doing this...
+        // JOptionPane jop = new JOptionPane();
+        // jop.showMessageDialog(null,"");
         
-        // use some polymorphism....        
-        Meeting meeting = new Meeting();        // create meeting object
-        meeting.attend(person);                 // add various child objects
-        meeting.attend(brady);                  // using polymorphic method  
-        meeting.attend(brayden);                // arguments
+        // When we call static methods from the instances, the 
+        // autocomplete/intellisense will not show it - but it does show it in
+        // autocomplete/intellisense from the Class name
+        
+        // Instantiate some other classes:        
+        Doctor  doctor  = new Doctor();
+        Baker   baker   = new Baker();
+        MrWachs mrWachs = new MrWachs();
+        Piper   piper   = new Piper();
+        Husky   husky   = new Husky();
+        Athlete athlete = new Athlete();
+        
+        // And output those objects:
+        java.lang.System.out.println(doctor);
+        java.lang.System.out.println(baker);
+        java.lang.System.out.println(mrWachs);
+        java.lang.System.out.println(piper);
+        java.lang.System.out.println(husky);
+        java.lang.System.out.println(athlete);
+        
+        // Instantiate ("make an instance of") a meeting object (of that class)
+        Meeting meeting = new Meeting();
+        
+        // Have person objects (instances of the Person class) and all 
+        // children objects (classes that inherit from Person) will attend
+        // the meeting - through the concept of polymorphism        
+        meeting.attend(person);
+        meeting.attend(person1);
+        meeting.attend(person2);
+        meeting.attend(person3);
         meeting.attend(student);
-        meeting.attend(owen);
-        meeting.attend(rapunzel);
-        meeting.attend(havoc);
-        meeting.attend(jim);
-        meeting.attend(hercules);
-        meeting.attend(rogowy);        
-        meeting.hold();                         // hold the mmeting
+        meeting.attend(student1);
+        meeting.attend(student2);
+        meeting.attend(student3);
+        meeting.attend(teacher);
+        meeting.attend(mrWachs);
+        meeting.attend(baker);
+        meeting.attend(clonePerson);
+        meeting.attend(doctor);
+        meeting.attend(athlete);
+        meeting.attend(husky);
+        meeting.attend(piper);
+        meeting.attend(null);
         
-        // create objects from classes that inherited from an abstract class:        
-        Potato        potato = new Potato();
-        BonelessPizza boneyM = new BonelessPizza();
-        KraftDinner   kd     = new KraftDinner();
-        WellDoneSteak meat   = new WellDoneSteak();
+        // Need to "hold a meeting" of all members
+        meeting.hold();
         
-        // call the polymorphic method of person objects        
-        hercules.haveDinner(potato);
-        rapunzel.haveDinner(boneyM);
-        brayden.haveDinner(meat);
-        hercules.haveDinner(kd);
+        // Abstract classes can NOT ever be instantiated, for example:
+        // Food food = new Food();
         
-        // a class that uses interfaces to test the interfaces        
-        HuskyAthlete athlete = new HuskyAthlete("Havoc", 17, true, 2665);        
-        for (int round = 0; round < 4; round++) {            
-            if (athlete.haveYouGotItSigned()) {                
-                athlete.setOpponent("Bears");                
-                athlete.score(6, "Havoc");
-                athlete.score(3, "Bears");                
-                athlete.backFlipKick(true);                
-                athlete.endOfQuarter(round);
-                athlete.endOfSets(round);                
+        // Instantiate an object from a child class of an abstract class
+        // using the abstract methods (that were made 'concrete') in that class        
+        Apple apple = new Apple();        
+        apple.smell(5);
+        
+        Steak steak = new Steak();
+        steak.smell(3);
+        
+        // Call the polymorphic method which accepts the abstract object (Food)
+        // as an argument. since the abstract class cannot be instantiated,
+        // only children objects from the abstract class can be arguments
+        // (in other words, apple and steak instances)
+        husky.consume(apple);
+        mrWachs.consume(steak);
+        
+        // An Interface can be thought of "as a set of rules" - like a class
+        // but only contains method signatures (like abstract methods - but
+        // you don't have to use the word 'abstract' inside interfaces).
+        // Interfaces cannot be instantiated (made into objects like
+        // Sports sports = new Sports(); like abstract classes). Like an
+        // abstract class, interfaces are used by 'child' like classes that
+        // 'implement' the interface (these classes "follow the rules" of
+        // the interface ("the set of rules").        
+        Athlete jock = new Athlete("Kyle",24);
+        // Set our opponent        
+        jock.setOpponent("Pipers");
+        // Have our athlete compete in four rounds of athletics
+        for (int round = 0; round < 4; round++) {
+            java.lang.System.out.println("Round " + round + "...");
+            // Check to see f they can play
+            if (jock.haveYouGotItSigned()) {
+                // They can play
+                jock.score("Kyle");
+                jock.score("Kyle");
+                jock.score("Kyle");
+                jock.score("Pipers");
+                // Now play among us
+                jock.findBody("Kyle");
+                jock.askQuestion();                
+                // See the results...
+                jock.endOfPeriod(round);
+                jock.callMeeting("Pipers");
             }
             else {
-                athlete.sign();
-            }            
-        }       
-        if (athlete.didIWin()) athlete.haveDinner(kd);
+                jock.sign();        // Sign so they can play
+            }
+        }
+        // Check if we won
+        if (jock.didIWin()) jock.consume(steak);
         
-        // use our generic method, starting with primative data types:        
+        // A generic is defined as a characteristic of or relating 
+        // to a class or group of things that is not specific. In 
+        // Java, we can use generic methods and generic classes
+        
+        // Let us start by creating simple ('primitive') data types
         boolean b = true;
         int     i = 0;
         double  d = 3.14;
-        char    c = 'Z';
+        char    c = 'a';
         
-        // now use the primatives with a more complex data type (class) 
-        // called a "wrapper" class from the primatives         
+        // Now use the primatives with a more complex data type (class)
+        // called a 'wrapper' class from the primatives and use the 
+        // constructor methods of those wrapper classes passing the 
+        // primatives through the constructor methods        
         Boolean   bool      = new Boolean(b);
         Integer   integer   = new Integer(i);
         Double    doub      = new Double(d);
         Character character = new Character(c);
-        // and also string...
-        String    string    = new String("boomer");
         
-        // calling the generic method on the variety of objects
+        // Also String (which was always 'complex' using the captial 'S'
+        // to declare it) and its constructor method (usually not needed)..
+        String string1 = new String("text");
+        
+        // Now call a generic method on the variety of 'generic' items
         output(bool);
         output(integer);
         output(doub);
         output(character);
-        output(string);
-        output(athlete);
+        output(string1);
+        output(jock);
         
-        // using a generic class, when a generic class is instantiated (an 
-        // object of the class is created), then you define what type the 
-        // generic is       
-//        Box<Boolean>      box1 = new Box<>(bool);
-//        Box<Integer>      box2 = new Box<>(integer);
-//        Box<Double>       box3 = new Box<>(doub);
-//        Box<Character>    box4 = new Box<>(character);
-//        Box<String>       box5 = new Box<>(string);
-//        Box<HuskyAthlete> box6 = new Box<>(athlete);
-        Box<String> box1 = new Box<>(string);
-        Box<String> box2 = new Box<>(string);
-        Box<String> box3 = new Box<>(string);
-        Box<String> box4 = new Box<>(string);
-        Box<String> box5 = new Box<>(string);
-        Box<String> box6 = new Box<>(string);
+        // Test the generic method on another object
+        JOptionPane joptionpane = new JOptionPane();
+        output(joptionpane);
         
-        // peek in the boxes
+        // This line uses 'annonymous object'
+        output(new Object());
+        
+        // When using a class with a generic inside of it, and that
+        // class is being instantiated (creating an object), then 
+        // you define what type the generic is by using the angle 
+        // brackets "< >" with the data type (which must be a 
+        // 'class' type not a primitive) inside the brackets beside 
+        // the class name on the left hand side of the equals sign. 
+        // This is repeated on the right hand side of the equals 
+        // sign as well (but you can leave these angle brackets 
+        // empty - which is called the "diamond") before the round 
+        // brackets of the constructor method.
+        Box<Boolean>   box1 = new Box<>(bool);
+        Box<Integer>   box2 = new Box<>(integer);
+        Box<Double>    box3 = new Box<>(doub);
+        Box<Character> box4 = new Box<>(character);
+        Box<String>    box5 = new Box<>(string1);
+        Box<Athlete>   box6 = new Box<>(jock);
+        
+        // Peek in all the boxes..        
         box1.peek();
         box2.peek();
         box3.peek();
@@ -221,85 +363,48 @@ public class AdvancedClassesTest
         box5.peek();
         box6.peek();
         
-        // open all the boxes
-//        Boolean   newBool   = box1.open();
-//        Integer   newInt    = box2.open();
-//        Double    newDoub   = box3.open();
-//        Character newChar   = box4.open();
-//        String    newString = box5.open();
-//        Person    newPerson = box6.open();
-        String newBool   = box1.open();
-        String newInt    = box2.open();
-        String newDoub   = box3.open();
-        String newChar   = box4.open();
-        String newString = box5.open();
-        String newPerson = box6.open();
+        // Open all the boxes...
+        Boolean   newBoolean   = box1.open();
+        Integer   newInteger   = box2.open();
+        Double    newDouble    = box3.open();
+        Character newCharacter = box4.open();
+        String    newString    = box5.open();
+        Athlete   newAthlete   = box6.open();
         
-        // output the new data type variables
-        System.out.println(newBool.toString());
-        System.out.println(newInt.toString());
-        System.out.println(newDoub.toString());
-        System.out.println(newChar.toString());
-        System.out.println(newString.toString());
-        System.out.println(newPerson.toString());
+        // Output all the newly returned data type objects...
+        output(newBoolean);
+        output(newInteger);
+        output(newDouble);
+        output(newCharacter);
+        output(newString);
+        output(newAthlete);
         
-        // generic class with multiple generic types   
-        House<Teacher,Royalty> house = new House<>();
+        // A generic class with multiple generic types, a generic method, the
+        // enhanced for loop, restricted generics 
+        House<Teacher,Meeting> house = new House<>();
         
-        house.homeOwner = rogowy;
-        house.contents = rapunzel;
+        // Associate the objects that match with the generics
+        house.homeOwner = mrWachs;
+        house.contents  = meeting;
         
-        House<Hercules,Genie> olympus = new House<>();
+        // Create as array of Food objects
+        Food[] fridge = { apple, steak };
         
-        olympus.homeOwner = hercules;
-        olympus.contents = genie;
-        
-        // test our generic method        
-        Food[] fridge = {
-          boneyM,potato  
-        };        
+        // Test our generic method
         house.party(fridge);
-        
-        BonelessPizza[] pizzas = new BonelessPizza[100];
-        for (int pizza = 0; pizza < pizzas.length; pizza++) {
-            pizzas[pizza] = new BonelessPizza();
-        }
-        olympus.party(pizzas);
         
         Simulator.header("Advanced classes unit complete!");
     }    
 
     /**
-     * Checks the passed object and outputs what class type the object is. 
-     * This method uses the instanceof operator to do the logic
-     * 
-     * @param object the object type to check
-     */
-    private void whatIs(Object object) {
-        String name = "This is a ";
-        if (object instanceof Magic)                  name += "Magic -> ";
-        if (object instanceof Hercules)               name += "Hercules -> ";
-        if (object instanceof Rapunzel)               name += "Rapunzel -> ";
-        if (object instanceof Prince)                 name += "Prince -> ";
-        if (object instanceof Princess)               name += "Student -> ";
-        if (object instanceof King)                   name += "King -> ";
-        if (object instanceof ComputerScienceTeacher) name += "ComputerScienceTeacher -> ";
-        if (object instanceof Jimmies)                name += "Jimmies -> ";
-        if (object instanceof Husky)                  name += "Husky -> ";        
-        if (object instanceof Royalty)                name += "Royalty -> ";
-        if (object instanceof Teacher)                name += "Teacher -> ";
-        if (object instanceof Student)                name += "Student -> ";
-        if (object instanceof Person)                 name += "Person -> ";        
-        if (object instanceof Genie)                  name += "Genie -> ";
-        if (object instanceof Fairy)                  name += "Fairy -> ";
-        if (object instanceof Animals)                name += "Animals -> ";        
-        if (object instanceof Creatures)              name += "Creatures -> ";
-        if (object instanceof Object)                 name += "Object";
-        System.out.println(name);
-    }
-
-    /**
-     * Outputs a generic item with information about the data type
+     * Outputs a generic item with information about the data type.
+     * Generic methods use 'generic' references rather than specific
+     * references. You do not define the data type (the parameter) 
+     * when the method is created. Instead of defining the data
+     * type, a set of angle brackets "< >" is used with a single
+     * letter (usually capital "T") inside which acts as a 
+     * 'placeholder' for the data type which will be defined in
+     * the argument when the method is later called
      * 
      * @param <T> the generic type used
      * @param item the item to output
@@ -308,7 +413,7 @@ public class AdvancedClassesTest
         String text = "Class ";
         text += item.getClass().getSimpleName();
         text += " as a string is " + item.toString();
-        System.out.println(text);
-    } 
+        java.lang.System.out.println(text);
+    }
     
 }

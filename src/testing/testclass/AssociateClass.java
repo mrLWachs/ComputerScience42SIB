@@ -1,15 +1,16 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.testclass;
 
-/** required imports */
+/** Required imports */
 import java.io.Serializable;
+
 
 /**
  * AssociateClass.java - another class associated with the test class
  * 
  * @author Mr. Wachs
- * @since Dec 16, 2016
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class AssociateClass implements Serializable, Comparable<Object>
 {

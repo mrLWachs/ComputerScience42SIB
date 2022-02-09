@@ -1,61 +1,61 @@
-  
-/** required package class namespace */
+
+/** Required package class namespace */
 package testing.cs30s;
 
-/** required imports */
-import io.System;
-
-
+ 
 /**
  * Student.java - represents a student. This class uses inheritance to inherit
  * the properties and methods from the Person class. This means the Student
  * class is the child (sub-class) of the parent class Person (super class, 
  * base class). This is sometimes simplified to a "is a" relationship
  *
- * @author Mr. Wachs 
- * @since 9-May-2019 
+ * @author Mr. Wachs
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Student extends Person
 {
-    
-    private int number;
-    private double gpa;
-    private int stress;
-    
-     
-    /**
-     * Constructor for the class sets class properties
-     * 
-     * @param name the name for this student
-     * @param age the age for this student
-     * @param isMale the gender for this student
-     * @param number the student number for this student
-     */
-    public Student(String name, int age, boolean isMale, int number) {
-        super.name = name;
-        super.isMale = isMale;
-        super.birthday(age);
-        this.number = number;
-    }
 
+    // The keyword "extends" is how Java initiates inheritance (or "is a")
+    // and the Student class inherits all "public" properties and methods
+    // from the "Person" class ("private" properties and methods are inherited,
+    // but they are still private or encapsulated)
+    
+    
+    // private (encapsulated) property (global variable) identified (named)
+    // "studentNumber" that is of type "integer"
+    private int studentNumber;
+    
+    private double average;
+    
     /**
-     * Constructor for the class sets class properties
+     * Constructor for the class, sets the class properties (including the
+     * properties it inherited form the super or parent class)
      * 
-     * @param name the name for this student
-     * @param age the age for this student
-     * @param isMale the gender for this student
+     * @param name the name for this student person
+     * @param age the age for this student person
+     * @param gender the gender for this student person
+     * @param studentNumber the student number for this student
      */
-    public Student(String name, int age, boolean isMale) {
-        super(name,age,isMale);
-        number = (int)(99 * Math.random() + 1);
-    }
-        
+    public Student(String name, int age, String gender, int studentNumber) {
+        super.name = name;
+        super.gender = gender;
+        super.birthday(age);
+        this.studentNumber = studentNumber;
+        average = 0;
+    }    
+    
     /**
-     * Studying raises the GPA and increases stress
+     * Studying raises the student's average
      */
     public void study() {
-        gpa = gpa + 0.0001;
-        stress += 20;
+        average += 1.25;
+    }
+    
+    /**
+     * Slacking off lowers the student's average
+     */
+    public void slackOff() {
+        average -= 0.33;
     }
     
     /**
@@ -68,37 +68,16 @@ public class Student extends Person
     }
     
     /**
-     * Slacking off lowers the GPA and stress
-     */
-    public void slackOff() {
-        stress -= 30;
-        gpa = gpa - youtube(60);
-    }
-    
-    /**
-     * Watching YouTube lowers GPA 
-     * 
-     * @param time how many minutes you watched
-     * @return the amount to reduce the GPA
-     */
-    private double youtube(int time) {
-        double amount = 0;
-        for (int i = 0; i < time; i++) {
-            amount = amount + 2.2;
-        }
-        return amount;
-    }
-     
-    /**
-     * Talking overrides the same talk method of the parent class
-     * and outputs additional information to the screen
+     * Talking overrides the same talk method of the parent class and outputs
+     * additional information to the screen
      */
     @Override
     public void talk() {
+        // Even with a class that inherits from another class, we 
+        // can call the methods of the parent class
         super.talk();
-        System.out.println("\t Number: " + number);
-        System.out.println("\t GPA:    " + gpa);
-        System.out.println("\t Stress: " + stress);                
+        System.out.println("\t Number:  " + studentNumber);
+        System.out.println("\t Average: " + average);        
     }
-    
+        
 }

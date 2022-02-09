@@ -1,169 +1,120 @@
-
-/** required package class namespace */
+  
+/** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
-/** required imports */
-import io.System;
-
-
-/**
+/** 
  * Student.java - represents a student, reminder that "extends" causes
  * inheritance (or "is a") meaning this class gets all the properties and
- * methods of it's parent (super) class
+ * methods of it's parent (super) class. The line below is called the 
+ * "signature" line for this class. If we add the "modifier" word "extends" 
+ * it causes inheritance and then the class it inherits from is typed next. 
+ * This is a "is a" relationship, so a "Student is a Person", and this class  
+ * inherits all properties and methods from the "parent" (super) class. The 
+ * line below is called the "signature" line for this class. If we add the 
+ * "modifier" word "extends" it causes inheritance and then the class it 
+ * inherits from is typed next. This is a "is a" relationship, so a 
+ * "Student is a Person", and this class inherits all properties and methods 
+ * from the "parent" (super) class.
  *
- * @author Mr. Wachs
- * @since 09-Mar-2019
- */
+ * @author Mr. Wachs 
+ * @since 21-Oct-2021 
+*/
 public class Student extends Person
 {
     
-    private int studentNumber;                      // encapsulated property
-    
-    /** Static property that counts the total number of student objects */
-    public static int totalStudents;
-            
+    private int studentNumber;
+    private double average; // class properties (and inherited other properties)
     
     /**
-     * Class constructor sets class properties, when a constructor has a 
-     * parameter, it is no longer a default constructor. If you have no 
-     * default, usually one is written for you, EXCEPT if you write a 
-     * non-default constructor, it will not!
-     * 
-     * @param studentNumber the student number of this student
+     * Represents a book object (this object "has a" relationship (association)
+     * or "usage" with the student class
      */
-    public Student(int studentNumber) {
-        super();                                // call to super constructor
-        this.studentNumber = studentNumber;     // set property from parameter
-        super.isMale = true;      // child class can modify protected property
-        totalStudents++;
-    }
+    public Book book;
     
     /**
-     * Class constructor sets class properties to parameter values
+     * "static" property: the modifier word "static" simply means "shared" 
+     * meaning that ALL objects of this class share this ONE instance of this
+     * variable
+     */
+    public static int total;
+        
+    
+    /**
+     * Constructor for the class, sets class properties
      * 
      * @param name the name for this student
      * @param age the age for this student
-     * @param isMale the gender for this student
-     * @param studentNumber the student number for this student
      */
-    public Student(String name, int age, boolean isMale, int studentNumber) {
-        super(name,age,isMale);                 // call to super constructor
-        this.studentNumber = studentNumber;     // set property from parameter
-        totalStudents++;
+    public Student(String name, int age) {
+        super(name,age,"student");              // Call the "super constructor"
+        studentNumber = 1;                      // Set properties to "defaults"
+        average       = 1.0;
+        // Mutate (change) the static (shared) property (global variable)
+        total++;
     }
     
     /**
-     * Outputs data on this student to the screen
+     * Method just for this class, raises the average
+     */
+    public void study() {
+        average *= 1.10;                            // Increase avarage by 10%
+    }
+    
+    /**
+     * Slacking off lowers the average
+     */
+    public void slackOff() {
+        average = average - 0.05;                   // Decrease avarage by 5%
+    }
+    
+    /**
+     * Cramming is intense studying
+     */
+    public void cram() {
+        for (int i = 0; i < 5; i++) {               // Study 5 times as hard
+            study();
+        }
+    }
+    
+    /**
+     * Talking overrides the same talk method of the parent class and outputs
+     * additional information to the screen
      */
     @Override
     public void talk() {
-        System.out.println(this.toString());
+        super.talk();                      // Invoking super class method
+        System.out.println("\t student number  = " + studentNumber);
+        System.out.println("\t student average = " + average);        
     }
-
+    
     /**
      * String representation of this object
-     *
-     * @return The object represented as a String
+     * 
+     * @return the object represented as a String
      */
     @Override
     public String toString() {
-        return "Student: " + super.toString() +
-                " with student number " + studentNumber;
-    }
-    
-    /**
-     * Deep comparison, determines if two objects are "equal" in this context
-     *
-     * @param object the object to compare to
-     * @return the objects are "equal" (true) or not (false)
-     */
-    @Override
-    public boolean equals(Object object) {
-        Student that = (Student)object;        
-        if (!super.equals(that))                      return false;        
-        if (this.studentNumber != that.studentNumber) return false;        
-        return true;
+        return "Student: " + super.toString() + " average is " + average;
     }
         
     /**
-     * a Deep clone, creates a duplicate object using new memory
-     *
-     * @return a "clone" of the object using new memory
+     * Deep comparison, determines if two objects are"equal" in this context
+     * 
+     * @param object the object to compare to
+     * @return the object are "equal" (true) or not (false)
      */
     @Override
+    public boolean equals(Object object) {
+        return super.equals(object);
+    }
+    
+    /**
+     * Deep clone, creates a duplicate (all properties?) object using new memory
+     * 
+     * @return a "clone" of the object using new memory
+     */
     public Student clone() {
-        Student that = new Student(this.studentNumber);
-        that.age     = this.age;
-        that.isMale  = this.isMale;
-        that.setName(this.getName());
-        return that;
-    }    
+        return (Student)super.clone();
+    }
     
 }
-
-// NOTE: change to the template for Java Class is recommended, to do this, 
-//       select Tools -> Templates, scroll down and click on the plus "+"
-//       sign next to Java and then "Java Class" then "Open in Editior"
-//       and change to the code below (but uncomment it first using the 
-//       NetBeans button just below the code tab):
-
-//<#assign licenseFirst = "/*">
-//<#assign licensePrefix = " * ">
-//<#assign licenseLast = " */">
-//<#include "${project.licensePath}">
-//
-///** required package class namespace */
-//<#if package?? && package != "">
-//package ${package};
-//
-//</#if>
-// 
-///**
-// * ${name}.java - description
-// *
-// * @author Mr. Wachs
-// * @since ${date}, ${time}
-// */
-//public class ${name} 
-//{
-//
-//    /**
-//     * Default constructor, set class properties
-//     */
-//    public ${name}() {
-//        
-//    }
-//
-//    /**
-//     * String representation of this object
-//     *
-//     * @return The object represented as a String
-//     */
-//    @Override
-//    public String toString() {
-//        return "${name}: " + super.toString();
-//    }
-//    
-//    /**
-//     * Deep comparison, determines if two objects are "equal" in this context
-//     *
-//     * @param object the object to compare to
-//     * @return the objects are "equal" (true) or not (false)
-//     */
-//    @Override
-//    public boolean equals(Object object) {
-//        return super.equals(object);
-//    }
-//        
-//    /**
-//     * a Deep clone, creates a duplicate object using new memory
-//     *
-//     * @return a "clone" of the object using new memory
-//     */
-//    @Override
-//    public ${name} clone() {
-//        return this;
-//    }
-//
-//}
-

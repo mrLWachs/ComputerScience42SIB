@@ -1,9 +1,8 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package collections;
 
-/** required imports */
-import java.io.Serializable;
+/** Required imports */
 import java.lang.reflect.Array;
 
 
@@ -25,9 +24,9 @@ import java.lang.reflect.Array;
  * 
  * @author Mr. Wachs 
  * @param <T> the generic data type used in the class
- * @since 6-May-2019 
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
-public class LinkedList <T> implements Serializable
+public class LinkedList <T> 
 {
     
     /** Flag to indicate a search was not found */
@@ -69,34 +68,7 @@ public class LinkedList <T> implements Serializable
     public LinkedList(LinkedList<T> list) {
         fromLinkedList(list);
     }
-    
-    /**
-     * Constructor instantiates list from the passed data
-     * 
-     * @param stack the data objects to create the list from
-     */
-    public LinkedList(Stack stack) {
-        this(stack.toLinkedList());
-    }
-    
-    /**
-     * Constructor instantiates list from the passed data
-     * 
-     * @param queue the data objects to create the list from
-     */
-    public LinkedList(Queue queue) {
-        this(queue.toLinkedList());
-    }
-    
-    /**
-     * Constructor instantiates list from the passed data
-     * 
-     * @param tree the data objects to create the list from
-     */
-    public LinkedList(Tree tree) {
-        this(tree.inOrder());
-    }
-    
+
     /**
      * Determines if the list is empty (no content)
      * 

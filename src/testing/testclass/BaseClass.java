@@ -1,15 +1,15 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.testclass;
 
-/** required imports */
+/** Required imports */
 import java.io.Serializable;
 
 /**
  * BaseClass.java - a base class for the testing class 
  * 
  * @author Mr. Wachs 
- * @since Dec 1, 2016
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class BaseClass implements Serializable, Comparable<Object>
 {

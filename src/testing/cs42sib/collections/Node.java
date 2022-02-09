@@ -23,7 +23,7 @@ import java.io.Serializable;
  * 
  * @author Mr. Wachs 
  * @param <T> the generic data type used in the class
- * @since March 2, 2021 
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Node <T> implements Serializable
 {

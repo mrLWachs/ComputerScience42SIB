@@ -1,24 +1,23 @@
-
-/** required package class namespace */
+/** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
  
 /**
- * Prince.java - represents a prince king royalty person
+ * Doctor.java - represents a Doctor Person
  *
  * @author Mr. Wachs
- * @since Oct. 21, 2019, 10:40:50 a.m.
+ * @since 8-Nov-2021, 11:30:18 AM
  */
-public class Prince extends Royalty
+public class Doctor extends Person
 {
 
     /**
      * Default constructor, set class properties
      */
-    public Prince() {
-        
+    public Doctor() {
+        super("Dr. Doom", 30, "");
     }
-
+     
     /**
      * String representation of this object
      *
@@ -26,9 +25,9 @@ public class Prince extends Royalty
      */
     @Override
     public String toString() {
-        return "Prince: " + super.toString();
+        return "Doctor: " + super.toString();
     }
-    
+   
     /**
      * Deep comparison, determines if two objects are "equal" in this context
      *
@@ -39,15 +38,15 @@ public class Prince extends Royalty
     public boolean equals(Object object) {
         return super.equals(object);
     }
-        
+       
     /**
      * a Deep clone, creates a duplicate object using new memory
      *
      * @return a "clone" of the object using new memory
      */
     @Override
-    public Prince clone() {
+    public Doctor clone() {
         return this;
     }
-
+    
 }

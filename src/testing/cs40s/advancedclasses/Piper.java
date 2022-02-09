@@ -1,24 +1,23 @@
-
-/** required package class namespace */
+/** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
  
 /**
- * Princess.java - represents a princess royalty person
+ * Piper.java - represents a Piper HighSchool Student Person
  *
  * @author Mr. Wachs
- * @since Oct. 21, 2019, 10:40:22 a.m.
+ * @since 8-Nov-2021, 11:30:44 AM
  */
-public class Princess extends Royalty
+public class Piper extends HighSchool
 {
 
     /**
      * Default constructor, set class properties
      */
-    public Princess() {
-        
+    public Piper() {
+        super();
     }
-
+     
     /**
      * String representation of this object
      *
@@ -26,9 +25,9 @@ public class Princess extends Royalty
      */
     @Override
     public String toString() {
-        return "Princess: " + super.toString();
+        return "Piper: " + super.toString();
     }
-    
+   
     /**
      * Deep comparison, determines if two objects are "equal" in this context
      *
@@ -39,15 +38,15 @@ public class Princess extends Royalty
     public boolean equals(Object object) {
         return super.equals(object);
     }
-        
+       
     /**
      * a Deep clone, creates a duplicate object using new memory
      *
      * @return a "clone" of the object using new memory
      */
     @Override
-    public Princess clone() {
+    public Piper clone() {
         return this;
     }
-
+    
 }

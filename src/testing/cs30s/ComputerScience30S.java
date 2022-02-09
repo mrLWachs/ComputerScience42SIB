@@ -1,330 +1,421 @@
-/** required package class namespace - the line below is put in
- * automatically, and connects file to the project */
+
+/**
+ * Required package class namespace - the line below is put in automatically,
+ * and connects this file to the project
+ */
 package testing.cs30s;
 
-/** required imports for the project - the lines below are added when your
-  * code needs to connect to another library (API) of code */
-import io.Simulator;
+/**
+ * Required imports for the project - the lines below are added when your code
+ * needs to connect to another library (API) of code
+ */
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
-//import javax.swing.JOptionPane;
+import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
-import io.System;
-import io.JOptionPane;
 
-
+ 
 /**
- * ComputerScience30S.java - the large in class example we continue to work on
+ * ComputerScience30s.java - the large in class example we continue to work on
  * in each unit adding example code on the new concepts of each unit along with
- * any in class requests for code examples that might come up over the course
- *
+ * any in class requests for code example that might come up over the course.
+ * 
  * @author Mr. Wachs
- * @since 09-Feb-2019
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
-public class ComputerScience30S {   // Curly brackets DO NOT remove
+public class ComputerScience30S {        // Curly brackets DO NOT remove
 
     /**
-     * Default constructor for the class, sets class properties
+     * Main method for the project
+     * 
+     * @param args the command line arguments
      */
-    public ComputerScience30S() {        
-        Simulator.header("Computer Science 30S Example started...");
-        learnBasicJava();  
-        learnMethods();  
-        learnArrays();  
-        learnClasses();  
-        new LearnGraphics();
-        Simulator.header("Computer Science 30S Example completed!");
+    public static void main(String[] args) {  
+        System.out.println("\nComputer Science 30S Example started...\n");
+        // Present the user with options
+        final String[] OPTIONS = {
+            "See the example of learning basic Java code (unit 1)",
+            "See the example of methods (unit 2)",
+            "See the example of arrays (unit 3)",
+            "See the example of classes (unit 4)",
+            "See the example of graphics and user interfaces (bonus unit)"            
+        };
+        // Get the user's choice
+        String choice = JOptionPane.showInputDialog(
+                null,
+                "Select the unit to view examples of...",
+                "Computer Science with Mr. Wachs",
+                JOptionPane.PLAIN_MESSAGE,
+                null,
+                OPTIONS,
+                OPTIONS[0]).toString();
+        // Choose which to see
+        if      (choice.equals(OPTIONS[0])) learnIntroToJava();
+        else if (choice.equals(OPTIONS[1])) learnMethods();
+        else if (choice.equals(OPTIONS[2])) learnArrays();
+        else if (choice.equals(OPTIONS[3])) learnClasses();
+        else if (choice.equals(OPTIONS[4])) new LearnGraphics();        
+        System.out.println("\nComputer Science 30S Example complete!\n");
     }
 
     /**
      * Learn the content of the introduction unit
      */
-    private static void learnBasicJava() {   
-        Simulator.header("Java basics started...");
+    private static void learnIntroToJava() {
+        // TODO code application logic here
+        
+        // This is a comment, all typing after "//" foward slashes
+        // until the line ends is a comment
+        
+        // Comments are not code, so you can write what you want
                 
-        ///////////////////////////////////////////////////////////////////////
-        // JAVA BASIC INPUT AND OUTPUTS
-        ///////////////////////////////////////////////////////////////////////
         
-        // A single line comment
-        
-        /*
-            Multiple line comments, covers as many lines as you want
-            starting with "slash star" until it sees the closing "star slash"
+        /* 
+            This is for multiple line comments, as it covers as 
+            many lines as you want starting with "slash star" until
+            it sees the closing "star slash"
         */
         
-        // Basic output
-        System.out.print("Hello World");    // comments can also go after code
+        System.out.println("Hello World");  // Comments can be on code lines
         
-        // Words starting with captial letters are powerful, they are a "class"
+        // Use print without the "ln", does not add
+        // a line break at the end
         
-        // TIP: type "sout" and press TAB        
-        System.out.println("I'm in the world");
-        System.out.println("Good-bye world");
+        System.out.print("I'm in");
+        System.out.println(" the world");
         
-        // Output "special" characters
-        System.out.println("Quote \" " );
-        System.out.println("\tMake a tab");
-        System.out.println("\\Slash");
-        System.out.println("New\n\nLine");
+        System.out.println("Good-bye world!");
+        
+        // Additional output tips... 
+        // (these are "special" characters)
+        
+        System.out.println("Make a quote \" ");
+        System.out.println("Make a slash \\ ");
+        System.out.println("Make a \t tab ");
+        System.out.println("Make a \n new line ");
+        
+        // Make a "fancier" output with a dialog box
+        
+        JOptionPane.showMessageDialog(null, "Hello");
+        
+        // Above line of code is the ONLY one needed for assignment, final 
+        // project, etc.
+        
+        // However, these OPTIONS (not needed, but cool) for other
+        // dialog output message boxes below...
+        
+        // Code could span mulitple lines until it reaches a semi colon ";"
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Information icon is i",
+                "Information title",
+                JOptionPane.INFORMATION_MESSAGE
+        );
                 
-        // TIP: if your want intellisense to appear at any time press:
-        // "CTRL" + "SPACE"        
-        // TIP: "null" is a placeholder for code you don't actually want
+        JOptionPane.showMessageDialog(
+                null, 
+                "Question icon is ?",
+                "Question title",
+                JOptionPane.QUESTION_MESSAGE
+        );
         
-        // Create "fancy" ouptut using a dialog
-        JOptionPane.showMessageDialog(null, "Hi");
+        JOptionPane.showMessageDialog(
+                null, 
+                "Warning icon is !",
+                "Warning title",
+                JOptionPane.WARNING_MESSAGE
+        );
         
-        // Optional versions of output dialogs:
-        
-        JOptionPane.showMessageDialog(null, 
-                "Information dialog icon is i",
-                "Information Title",
-                JOptionPane.INFORMATION_MESSAGE);
-        
-        JOptionPane.showMessageDialog(null, 
-                "Question dialog icon is ?",
-                "Question Title",
-                JOptionPane.QUESTION_MESSAGE);
+        JOptionPane.showMessageDialog(
+                null, 
+                "Plain no icon",
+                "Plain title",
+                JOptionPane.PLAIN_MESSAGE
+        );
                 
-        JOptionPane.showMessageDialog(null, 
-                "Warning dialog icon is !",
-                "Warning Title",
-                JOptionPane.WARNING_MESSAGE);
-        
-        JOptionPane.showMessageDialog(null, 
-                "Plain dialog has no icon",
-                "Plain Title",
-                JOptionPane.PLAIN_MESSAGE);
-        
-        // dialog for inputs
+        // Dialogs for inputs...
+
+        // The simpliest verison is the one you need to know
         
         JOptionPane.showInputDialog("Enter something");
         
-        // some optional versions of input dialog
+        // There is a little more to using this that we cover 
+        // after learning variables...
         
-        JOptionPane.showInputDialog(null, 
-                "Information dialog icon is i",
-                "Information Title",
-                JOptionPane.INFORMATION_MESSAGE);
+        // Some optional input dialogs below:
         
-        JOptionPane.showInputDialog(null, 
-                "Question dialog icon is ?",
-                "Question Title",
-                JOptionPane.QUESTION_MESSAGE);
-                
-        JOptionPane.showInputDialog(null, 
-                "Warning dialog icon is !",
-                "Warning Title",
-                JOptionPane.WARNING_MESSAGE);
+        JOptionPane.showInputDialog(
+                null,
+                "Information Input dialog icon is i",
+                "Information Input Title",
+                JOptionPane.INFORMATION_MESSAGE
+        );
         
-        JOptionPane.showInputDialog(null, 
-                "Plain dialog has no icon",
-                "Plain Title",
-                JOptionPane.PLAIN_MESSAGE);
+        JOptionPane.showInputDialog(
+                null,
+                "Question Input dialog icon is ?",
+                "Question Input Title",
+                JOptionPane.QUESTION_MESSAGE
+        );
         
-        // optional confirm dialog:
+        JOptionPane.showInputDialog(
+                null,
+                "Warning Input dialog icon is !",
+                "Warning Input Title",
+                JOptionPane.WARNING_MESSAGE
+        );
+        
+        JOptionPane.showInputDialog(
+                null,
+                "Plain Input dialog no icon",
+                "Plain Input Title",
+                JOptionPane.PLAIN_MESSAGE
+        );
+        
+        // More different (and optional) dialogs...
         
         JOptionPane.showConfirmDialog(null, "Confirm");
-        
-        
-        // more optional examples of confirm dialog
-        
-        JOptionPane.showConfirmDialog(
-                null, 
-                "Confirm Example 1",
-                "Information",
-                JOptionPane.DEFAULT_OPTION,
-                JOptionPane.INFORMATION_MESSAGE);
         
         JOptionPane.showConfirmDialog(
                 null, 
                 "Confirm Example 2",
-                "Question",
+                "Information",
                 JOptionPane.YES_NO_OPTION,
-                JOptionPane.QUESTION_MESSAGE);
-        
+                JOptionPane.INFORMATION_MESSAGE
+        );
+
         JOptionPane.showConfirmDialog(
                 null, 
                 "Confirm Example 3",
-                "Warning",
-                JOptionPane.OK_CANCEL_OPTION,
-                JOptionPane.WARNING_MESSAGE);
-        
+                "Question",
+                JOptionPane.DEFAULT_OPTION,
+                JOptionPane.QUESTION_MESSAGE
+        );
+
         JOptionPane.showConfirmDialog(
                 null, 
                 "Confirm Example 4",
+                "Warning",
+                JOptionPane.OK_CANCEL_OPTION,
+                JOptionPane.WARNING_MESSAGE
+        );
+        
+        JOptionPane.showConfirmDialog(
+                null, 
+                "Confirm Example 5",
                 "Plain",
                 JOptionPane.YES_NO_CANCEL_OPTION,
-                JOptionPane.PLAIN_MESSAGE);
+                JOptionPane.PLAIN_MESSAGE
+        );
         
         ///////////////////////////////////////////////////////////////////////
         // VARIABLES:
         ///////////////////////////////////////////////////////////////////////
         
-        // simple variables
+        // A variable is a piece of code that tells the computer to
+        // store (or "remember") information (or "data")
+        
+        // This is an example of the simpliest variable type:
         
         boolean a = true;
-        // type name = value
-        // when you "create" declare a variable
         
-        int    b = 0;
+        // type name = value ;
+        
+        // When you write a line of code to create (declare) a variable
+        
+        int b = 0;
+        
         double c = 0.0;
         
-        // variables can change (vary)
+        // Variables can change ("vary")
+        
         a = false;
         b = 1;
         c = 1.2;
         
-        // variable always goes on the LHS (left hand side) and the value 
-        // going in it goes on the RHS (right hand side)
+        // Variables always go on the left hand side (LHS) of the equals
+        // sign (=) and the value going into the variable always goes on
+        // the right hand side (RHS)
         
         System.out.println("a = " + a);
         System.out.println("b = " + b);
         System.out.println("c = " + c);
         
-        // TIP: on the lower toolbar at the end, are 2 buttons to comment an 
-        // uncomment code you have selected
+        char d = 'A';
         
-        char d = '*';
+        // The "char" is short for "character" holds (remembers) ONE
+        // character
+        
         System.out.println("d = " + d);
         
-        // more "complex" data type
-        String e = "cats";
+        // The boolean, integer (int), double, character (char) are all
+        // simple (primitive) data types, now a complex data type...
+        
+        String e = "apple";
+        
         System.out.println("e = " + e);
-        
-        // in java words that start with a capital letter, are more "powerful" 
-        // which means they have built-in actions (they are a class)
-        
-        // manipulate, change the variables
+                
+        // Manipulate our variables
         
         int x = 10;
-        System.out.println("x = " + x); // 10
+        
+        System.out.println("x = " + x);
+        
         x = 20;
-        System.out.println("x = " + x); // 20
+        
+        System.out.println("x = " + x);
+        
         int y = x + 10;
-        System.out.println("y = " + y); // 30
-        // optional shorthand...
-        y++;
-        // means the same as y = y + 1
-        y--;        // means y = y - 1
-        // even more optional....
-        y += 10;    // same as y = y + 10
-        System.out.println("y = " + y); // 40
         
-        y -= 20;    // same as y = y - 20
-        y *= 2;     // same as y = y * 2
-        y /= 10;    // same as y = y / 10
+        System.out.println("y = " + y);
         
-        System.out.println("y = " + y); // 4
+        // Optional shorthand...
         
-        // modulus (mod) gives you the remainder of a division, uses %
+        y++;    // means y = y + 1
+        y--;    // means y = y - 1
         
-        x     = 28;
-        y     = x / 5;
+        // Even more optional (less recomended) shorthand:
+        
+        y += 10;    // means y = y + 10
+        y -= 10;    // means y = y - 10
+        y *= 10;    // means y = y * 10
+        y /= 10;    // means y = y / 10
+        
+        System.out.println("y = " + y); // y is 30
+                
+        // Modulus (mod) gives you the remainder of a division, in java
+        // it uses the percentage "%" symbol for this
+        
+        x = 28;
+        y = x / 5;
+        
         int z = x % 5;
         
-        System.out.println("x = " + x); 
-        System.out.println("y = " + y); 
-        System.out.println("z = " + z); 
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("z = " + z);
         
-        // constants are variables that don't change, and constants are written 
-        // in ALL CAPITAL LETTERS and use underscore _ to seperate words
+        // Constants are variables that don't change, and constants are
+        // written in ALL_CAPITAL_LETTERS with an underscore to seperate words
         
-        final double  PI           = 3.14159265;
-        final int     PROBLEMS     = 99;
-        final char    YES          = 'y';
-        final boolean FOUND        = true;
-        final String  TEACHER_NAME = "Wachs";
+        // They also start with the keyword "final" (in C# it was "const")
         
-        System.out.println(PI + " and " +
-                           PROBLEMS + " and " +
-                           YES + " and " +
-                           FOUND + " and " +
-                           TEACHER_NAME);
+        final double  PI           = 3.141592658389 ;
+        final int     PROBLEMS     = 99             ;
+        final char    YES          = 'Y'            ;
+        final boolean FOUND        = true           ;
+        final String  TEACHER_NAME = "Wachs"        ;
         
-        // converting between data types...
+        System.out.println(PI       + ", " + 
+                           PROBLEMS + ", " +
+                           YES      + ", " +
+                           FOUND    + ", " +
+                           TEACHER_NAME 
+        );
         
-        int    f = 15;
-        double g = f;
+        // Converting one data type to another
+        
+        int f = 25;
         
         System.out.println("f = " + f);
+        
+        double g = f;
+        
+        System.out.println("g = " + g);
+        
+        g = 25.999999999;
+        
         System.out.println("g = " + g);
         
         int h = (int) g;
-        // "casting" converts by ignoring the decimal portion
+        
+        // When we use round brackets ( )  with a data type inside, this is
+        // called "casting" which means it converts (temporarily) to another
+        // data type - which meant it ignored the decimal part
         
         System.out.println("h = " + h);
         
-        double k = 2.9999999999;
+        double k = 2.999999999;
         int    l = (int)k;
         double m = (double)l;
         
-        // casting can happen both ways
+        // Casting can happen with other data types
+        
+        char n = 'A';
+        int  o = (int)n;
+        char p = (char)70;
         
         System.out.println("k = " + k);
         System.out.println("l = " + l);
         System.out.println("m = " + m);
-        
-        // casting can also work with char
-        
-        char n = 'A';
-        int  o = (int)n;
-        
         System.out.println("n = " + n);
         System.out.println("o = " + o);
+        System.out.println("p = " + p);
         
-        o = 42;
-        n = (char)o;
+        // Use dialog boxes with variables
         
-        System.out.println("o = " + o);
-        System.out.println("n = " + n);
+        // Whenever you are using INPUT dialogs, ALWAYS use a variable first
+        // at the front of the line that makes the input dialog (code above is
+        // wrong, always make a string variable then the input dialog)
         
-        // use input dialog with variables
+        String q = JOptionPane.showInputDialog("Enter");
         
-        String p = JOptionPane.showInputDialog("string");
-        JOptionPane.showMessageDialog(null, p);
+        // The variable stores what they typed in the input dialog box
         
-        // like Convert.toInt32()... in C# uses something called "parsing"
-        // which means "reading"
+        JOptionPane.showMessageDialog(null, q);
         
-        String q = JOptionPane.showInputDialog("int");
-        int r = Integer.parseInt(q);
-        JOptionPane.showMessageDialog(null, r);
+        // With numbers, you HAVE to start off with a string, and then convert
+        // it to a number. This is like: Convert.ToInt32(text); in C#
         
-        // do this with doubles        
-        String s = JOptionPane.showInputDialog("double");
-        double t = Double.parseDouble(s);
-        JOptionPane.showMessageDialog(null, t);
+        String r = JOptionPane.showInputDialog("Enter int");
         
-        // dialogs with char
-        String u = JOptionPane.showInputDialog("char");
-        char v = u.charAt(0);
-        JOptionPane.showMessageDialog(null, v);
-        // numbering usually starts at 0
+        // We use code to "parse" (means "reading")
         
-        // built-in actions (functions, methods) for strings
+        int s = Integer.parseInt(r);
         
-        String word = "quizzaciously";
-        int count = word.length();
-        System.out.println(word +  " length is " + count);
-        // numbering starts at 0
-        char letter = word.charAt(0);
-        System.out.println("Letter 0 = " + letter);  
-        // one more, many more to explore
-        word = word.toUpperCase();
-        System.out.println("word is " + word);
+        JOptionPane.showMessageDialog(null, s);
         
-        // built-in math functions (methods)
+        // Same example with a double
+        
+        String t = JOptionPane.showInputDialog("Enter double");
+        double u = Double.parseDouble(t);
+        JOptionPane.showMessageDialog(null, u);
+        
+        // Example with a char
+        
+        String v = JOptionPane.showInputDialog("Enter char");
+        char   w = v.charAt(0);
+        JOptionPane.showMessageDialog(null, w);
+        
+        // Strings have built-in actions like "charAt" to pull out a character
+        // "at" location "0" which means the very first character (because 
+        // numbering in Computer Science usually starts at 0)
+        
+        // Strings have MANY built-in "actions" (function, methods)
+        
+        String word = "hippopotomonsprosesquippedaiophobia";
+        int length = word.length();
+        
+        System.out.println("Word " + word + " is length " + length);
+        
+        String upper = word.toUpperCase();
+        
+        System.out.println("Word " + word + " in uppercase is " + upper);
+        
+        // Many more string functions can be explored
+        
+        // "Math" library of code is also "built-in" to java
+        // which comes with it's own functions (actions, methods)
         
         double answer1 = Math.PI;
-        double answer2 = Math.abs(-1);
-        double answer3 = Math.cos(0.5);
-        double answer4 = Math.log(0.5);
-        double answer5 = Math.pow(5,3);
-        double answer6 = Math.sqrt(9);
+        double answer2 = Math.cos(0.5);
+        double answer3 = Math.abs(-1);
+        double answer4 = Math.pow(5, 3);
+        double answer5 = Math.sqrt(9);
+        double answer6 = Math.log(0.5);
         
         System.out.println("answer1 = " + answer1);
         System.out.println("answer2 = " + answer2);
@@ -333,462 +424,658 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         System.out.println("answer5 = " + answer5);
         System.out.println("answer6 = " + answer6);
         
-        // math "library" does random numbers, like:
+        // Math library also does random numbers, like:
         // Random random = new Random();
         
         double seed = Math.random();
+        
         System.out.println("seed = " + seed);
-        // formula for generating randoms in range between high and low number
+        
+        // You can use a formula for generatiing random numbers in a range
+        // between a low and a high number
+        
+        // e.g. between 1 and 10 and make it an integer
+        
+        // Start with some constants defining the low and high
+        
         final double LOW  = 1.0;
         final double HIGH = 10.0;
+        
+        // Now the formula to generate in that range
+        
         double number = (HIGH - LOW + 1) * seed + LOW;
+        
+        // Now cast it into an int
+        
         int value = (int)number;
+        
+        // And display it
+        
         System.out.println("value = " + value);
-                
+        
+        // Do it again, but simplify the formula (between 2-53)
+        
+        int card = (int)( (53 - 2 + 1) * Math.random() + 2);
+        System.out.println("card = " + card);
+
         ///////////////////////////////////////////////////////////////////////
         // CONDITIONAL STATEMENTS
         ///////////////////////////////////////////////////////////////////////
         
-        // simple if, use it when something is true, checks for 1 thing
+        // The simple if statement, you use this when comparing if something is
+        // true, as it checks that one thing ("asks a true/false question")
         
-        int value1 = 10, value2 = 10;        
+        // If statements use both ( ) round and { } curly brackets and the 
+        // code inside of the curly brackets is said to be in a "block" of
+        // code and that block only runs when the test inside of the round
+        // brackets tests TRUE. It also indents the code inside the block
+        
+        int value1 = 10, value2 = 10;
+        
         if (value1 == value2) {
             System.out.println("equal");
         }
-                
-        // if with else, for both true and false, checks 2 things
+        
+        // if with "else" (an option) for both true and false, check 2 things
         
         double value3 = 1.45, value4 = 1.5;
+        
         if (value3 < value4) {
-            System.out.println("less than");
+            System.out.println("Less than");
         }
         else {
-            System.out.println("greater than");
+            System.out.println("Greater than");
         }
         
-        // use chars and some shorthand, not usually recommended (except 
-        // in certain situations) used when the code between { } (block)
-        // is only 1 line of code, you don't need the { }
+        // Use chars and some shorthand, not usually recommended (except in 
+        // certain situations) used when the code in a block - between { } is
+        // only one line of code! Then, you don't need the { } 
+        // And.. (even further shorthand) the line can be moved up to the
+        // same line as the if statement
         
-        char value5 = 'A', value6 = 'a';
+        char value5 = 'A', value6 = 'a';        
         if (value5 != value6) System.out.println("!=");
         else                  System.out.println("==");
         
-        // use "else if" for multiple case of more than 2 things (same as 
-        // the "switch" statement - which I do not use!)        
-        // use strings (more complicated), with string NEVER use ==
-        // instead use .equals()...
+        // Use "else if" for multiple cases of more than 2 things (same as the
+        // "switch" statement - which I don't use) use strings for this
+        // example which are more complex (because they use many character,
+        // and upper and lower case)
+        
+        // NOTE: with string NEVER use == ALWAYS use .equals()...
         
         String word1 = "edgy";
-        String word2 = "edGy";        
+        String word2 = "edGy";
+        
         if (word1.equals(word2)) {
-            System.out.println("w1==w2");
+            System.out.println("W1==W2");
         }
         else if (word1.equalsIgnoreCase(word2)) {
-            System.out.println("w1 kind of == w2");
+            System.out.println("W1 kind of == W2");
         }
         else {
-            System.out.println("w1!=w2");
+            System.out.println("W1!=W2");
         }
         
-        // combine logic using:
-        // "and" "or" "not"
-        //  &&    ||    !
+        // Combine logic using "and" "or" "not" which use the symbols:
+        // "&&" for "and"
+        // "||" for "or"
+        // "!"  for "not"
         
         int age = 17;
         double iq = 1.0;
-        
-        if (age >= 21 && iq > 1.0) {
-            System.out.println("get in");
-        }
-        else if (age >= 18 || iq > 1.0) {
-            System.out.println("keep trying");
-        }
+
+        if (age >= 21 && iq > 90) {
+            // with "and" BOTH have to be true
+            System.out.println("Get in");
+        } 
+        else if (age >= 18 || iq > 0) {
+            // with "or" EITHER can be true
+            System.out.println("Keep trying");
+        } 
         else {
-            System.out.println("get out");
+            System.out.println("Get out");
         }
         
         ///////////////////////////////////////////////////////////////////////
         // LOOPING
         ///////////////////////////////////////////////////////////////////////
-
-        // simple loop
         
-        int counter = 1;
-        while (counter <= 50) {
+        // Simple loop...
+        
+        int counter = 0;
+        
+        while (counter < 10) {
             System.out.println("counter = " + counter);
-            counter++;
+            counter++;  // counter = counter + 1
         }
-
+        
         // while loop with a string
-        String password = JOptionPane.showInputDialog("Create"
-                + " a password");
+        
+        String password = JOptionPane.showInputDialog("Create a password");
         
         while (password.equals("1234")) {
-            JOptionPane.showMessageDialog(null, "Invalid!");
-            password = JOptionPane.showInputDialog("Create"
-                + " a password");
+            JOptionPane.showMessageDialog(null, "Try again!");
+            password = JOptionPane.showInputDialog("Create another password");
         }
         
-        // the second type of while loop, more rarely used,
-        // it tests for T/F at the bottom of the loop, not
-        // the top, you use ti when you want the body of the 
-        // loop (block) to run at least once!
+        // The next type of loop is rarely used (you may never need it)
+        // it tests for true/false at the bottom of the loop, you use it
+        // when you want the body (block) of the loop to run at least
+        // once!
         
-        // the do while loop
+        String choice = "";
         
-        String choice = "";        
         do {            
-            choice = JOptionPane.showInputDialog(
-                    "Enter password");
+            choice = JOptionPane.showInputDialog("Enter password");
         } while (choice.equalsIgnoreCase(password) == false);
-
-        // TIP: code shortcuts can autocomplete code, the full
-        // list of all of these can be found by clicking:
-        // Help -> Keyboard Shortcuts Card...
-
-        // the for loop is specificially for counting
-        // (and is also use with the concept of arrays)
+        
+        JOptionPane.showMessageDialog(null, "You got it");
+        
+        // The "for" loop is used for counting (and for the upcoming unit 
+        // called "arrays"). It is a much more technical ("codey") looking loop
+        // The inside of the round brackets means: ( start ; end ; change)        
+        // The for loop creates its own variable (by default NetBeans calls
+        // it "i") - short for "iteration"
         
         for (int i = 0; i < 10; i++) {
             System.out.println("i = " + i);
         }
-
-        // variation on the for loop that:
-            // count down (not up)
+        
+        // Variations on the for loop:
             // start at 100
-            // stop at zero (includes zero)
+            // end (stop) at zero (including zero)
+            // count down (not up)
             // count by 10s
         
-       for (int i = 100; i >= 0; i-=10) {
+        for (int i = 100; i >= 0; i = i - 10) {
             System.out.println("i = " + i);
-        } 
-
+        }
+        
         ///////////////////////////////////////////////////////////////////////
         // EXAMPLE ASSIGNMENT:
         ///////////////////////////////////////////////////////////////////////
         
-        // welcoming the user to this program
-        JOptionPane.showMessageDialog(null, "Welcome to dog age convertor");
-        // ask the user for there human age
-        String userInput = JOptionPane.showInputDialog("Enter human age");
-        int humanAge = Integer.parseInt(userInput);
-        // take that number multiply it by 7
-        int dogAge = humanAge * 7;
-        // show the user there dog age
-        JOptionPane.showMessageDialog(null, "Your dog age is " + dogAge);
-        // say good-bye
-        JOptionPane.showMessageDialog(null, "Good-bye!");
+        // Create welcome screen for the user (message dialog box)
+        String message = "You are an intern at radio station, C-RAP, The \n"
+                       + "disk jockeys announce the current temperature \n"
+                       + "in both Fahrenheit and Celsius every half-hour.\n"
+                       + "They would like an easy way to display both the \n"
+                       + "Fahrenheit and Celsius temperatures quickly and \n"
+                       + "at the same time. The local airport phones in \n"
+                       + "the temperature (but only in Celsius). They \n"
+                       + "have requested that you develop an application \n"
+                       + "that will display both temperatures after the \n"
+                       + "Celsius temperature is inputted. Note: Use \n"
+                       + "this conversion formula F = (C ∗ 1.8) + 32";        
+        // Get user input (temperature in celcius) - dialog
+        String userInput = JOptionPane.showInputDialog("Enter temperature "
+                + "in Celcius");
+        // convert this to a number I can do math with
+        double celcius = Double.parseDouble(userInput);
+        // apply a formula  (F = (C ∗ 1.8) + 32 )
+        double fahrenheit = (celcius * 1.8) + 32;
+        // Show the user the results (fahrenheit) in a dialog
+        JOptionPane.showMessageDialog(null, "Your temperature in "
+                + "Fahrenheit is " + fahrenheit);
+        // show ending message
+        JOptionPane.showMessageDialog(null, "Thank you!");
+                
+        // This line terminates any running java program at any point
+        // System.exit(0);
         
-        // TIP: Alt + Shift + F will CLEAN your code for you
-        
-        // NetBeans Templates: go to Tools -> Templates, scroll down 
-        // to "Java" and click the plus "+" sign to expand, then select
-        // "Java Main Class" and then "Open in Editor"
-        // Then modify the template and save like this:        
-        //   /**
-        //     * ${name}.java - 
-        //     *
-        //     * @author Mr. Wachs 
-        //     * @since ${date} 
-        //     */
-        //    public class ${name} 
-        //    { .... etc .....        
-             
-        Simulator.header("Java basics completed!");
+        // Curly brackets (braces, parenthesis) { and } are important - all 
+        // code goes between these two brackets
     }
 
     /**
      * Learn the content of the methods unit
      */
     private static void learnMethods() {
-        Simulator.header("Start Learing Methods...");
+        System.out.println("Start learning methods...");
         
-        // methods (functions, procedures) are named like variables, but use 
-        // verb type words starting with lowercase then using camel casing
-        // the round braces ( ) indicate a method
+        // Methods (functions, procedures, actions) are named in a style like 
+        // variables are named (lowercase then camel casing), but use verb
+        // type words starting with lowercase then using camel casing the
+        // presense of round brackets ( ) indicate a method. We make methods
+        // for: (1) to break up a problem (2) reusability (3) to avoid 
+        // repeating code
         
+        // Code to "jump" to a method, is "calling" the method (method call)
+        writeStar();
         
-        // NetBeans tips:
-        // (1) The + and - signs and grey lines along the side in NetBeans 
-        //     help "expand" and "collapse" the method body (block)        
-        // (2) On the left side window, the Navigator window helps find and 
-        //     jump to methods        
-        // (3) Using the keys CTRL + SHIFT and "+" or "-" also expands and 
-        //     collapses methods
-        // (4) You can call a method that does not yet exist, and netbeans 
-        //     will help you write it with the lightbulb icon (you click on)
-        // (5) You can jump to a method (even ones you don't write) by holding 
-        //     down CTRL and clicking on the method call
-        // (6) If you type /** before the method signature line it will 
-        //     automate which JavaDoc comments you should make
+        // Call it again
+        writeStar();
         
-        // code to "jump" to our method, "calling" the method 
-        drawStar(); // a call to the method
+        // When we call a method, we place "data" (information) inside the
+        // round brackets and that data is "passed" (sending) over to the 
+        // method. The data being passed is tecehnically called the "argument"
+        // and the data being recieved is called the "parameter(s)". You can
+        // always change the arguement.
+                
+        write("Dogalicious");
         
-        // if you hold CTRL key the method call becomes
-        // a link to the method
+        write("mumble");
+        write("Spider-man");
+        write("Banana bread");
         
-        draw("ukulele");
-        draw("tamborine");
-        // calling a method with a parameter the item you "pass" is called the
-        // argument
+        // You can have more than one, multiple parameters/arguments in a 
+        // method which are seperated with commas ","
         
-        // multiple arguments/parameter are seperated with a commas
-        draws("dalmations",101);            // multiple arguments
-        draws("problems",99);               // seperate with commas  
+        writeLotsOf("Dalmations",101);
+        
+        writeLotsOf("Problems", 99);
+        
+        // You can make methods that "send back" (output) information, the 
+        // previous methods needed information (inputs) as parameters or 
+        // empty brackets () if they did not need information passed
         
         int number = giveMeNumber();
-        draw("Number is " + number);
         
-        // overloaded methods are methods with the same name but different 
-        // parameters
-        output("Hi");        
-        output("Hello","Overload example");        
+        write("Number is " + number);
         
-        Simulator.header("Learning Methods Complete!");
+        // Overloaded methods are methods with the smae name, BUT different
+        // parameters / arguments
+        
+        output("Hello");
+        
+        output("Good-bye","Learning Methods");        
+        
+        System.out.println("Learning methods complete!");
     }
 
     /**
-     * draws a star on the screen
+     * Writes a star on the screen
      */
-    private static void drawStar() {
+    private static void writeStar() {
         System.out.println("*");
     }
 
     /**
-     * draws a thing on the screen
+     * Writes something on the screen
      * 
-     * @param thing the thing to draw
+     * @param thing the something to write
      */
-    private static void draw(String thing) {
-        // information "passed" to a method is called a parameter
+    private static void write(String thing) {
+        // Information (data) "passed" to this method is called the parameter,
+        // if you use the lightbulb to write this method, you should (do this 
+        // first) rewrite the name of that parameter
         System.out.println(thing);
     }
-        
+
     /**
-     * draws multiple things on the screen
+     * Writes something on the screen multiple times
      * 
-     * @param thing the thing to draw
-     * @param amount the amount to draw
+     * @param thing the something to write
+     * @param times how many times to write ut
      */
-    private static void draws(String thing, int amount) {
-        // "guts" body of the method
-        for (int i = 0; i < amount; i++) {
-            draw(thing);
+    private static void writeLotsOf(String thing, int times) {
+        // Methods can have no parameters, one parameter, or lots of parameters,
+        // if it has more than one parameter, they are separated by commas
+        for (int i = 0; i < times; i++) {
+            write(thing);
         }
     }
 
     /**
-     * gives you a number
+     * Gives you a random number
      * 
-     * @return a random integer
+     * @return random number between 1 and 10
      */
     private static int giveMeNumber() {
-        final int MIN = Integer.MIN_VALUE;
-        final int MID = 0;
-        final int MAX = Integer.MAX_VALUE;
-        int low       = random(MIN, MID);
-        int high      = random(MID, MAX);
-        return random(low,high);
+        // Methods can have no outputs (the word "void") or can have ONE output
+        // which means the method will "return" that data type in the method
+        return random(1, 100);
     }
 
     /**
-     * Generate a random number in a range
+     * Generates a random number in a range between two numbers
      * 
      * @param low the lowest number in the range
      * @param high the highest number in the range
-     * @return random number in the range
+     * @return random number less than or equal to low and greater than or 
+     * equal to high
      */
     private static int random(int low, int high) {
-        double seed  = Math.random();
-        double L     = (double)low;
-        double H     = (double)high;
-        double value = (H - L + 1) * seed + L;
-        return (int)value;        
+        double seed   = Math.random();
+        double L      = (double)low;
+        double H      = (double)high;
+        double number = (H - L + 1) * seed + L;
+        return (int)number;
     }
 
     /**
-     * Outputs text in a dialog
+     * Display text in a dialog
      * 
-     * @param text the text to output
+     * @param text the text to display
      */
     private static void output(String text) {
-        JOptionPane.showMessageDialog(
-                null, 
-                text, 
-                "", 
-                JOptionPane.PLAIN_MESSAGE);
+        JOptionPane.showMessageDialog(null, text);
     }
 
     /**
-     * Outputs text in a dialog
+     * Display text in a dialog with a title at the top of the dialog
      * 
-     * @param text the text to output
-     * @param title the title for the dialog
+     * @param text the text to display
+     * @param title what to show at the top of the dialog
      */
     private static void output(String text, String title) {
-        JOptionPane.showMessageDialog(
-                null, 
-                text, 
-                title, 
+        // Overloaded methods are methods with the same name, BUT different
+        // parameters / arguments so we know which version of the method to call
+        JOptionPane.showMessageDialog(null, text, title, 
                 JOptionPane.PLAIN_MESSAGE);
     }
 
     /**
-     * Learn the content of the arrays unit
+     * Learn the content of the arrays unit (unit 3)
      */
     private static void learnArrays() {
-        Simulator.header("Start learn arrays...");
+        System.out.println("Start learning arrays...");
+
+        // Create (declare) a variable for comparison
+        int variable = 5;
+
+        // E.g. in memory a variable could "look" like...
+        //
+        //          +-------+
+        // variable |   5   | (type integer)
+        //          +-------+
+        // Now declare (create) an array:
+        int array[] = new int[5];
+
+        // type name [square brackets] = new type [size of the array];
+        // array names are usually "plural" words
+        // E.g. in memory an array could "look" like...
+        //
+        //       +-------+-------+-------+-------+-------+
+        // array |       |       |       |       |       | (a length of 5)
+        //       +-------+-------+-------+-------+-------+
+        // The square brackets "[  ]" in code indicate we are using an array, 
+        // the word "new" is used because arrays (they are technically 
+        // "advanced" data types) are more complicated than variables (which 
+        // are "simple" or "primitive" data types) then you repeat the data 
+        // type ("int" in this case) and the square brackets are also repeated 
+        // with a number (or a variable) inside - this number represents the 
+        // SIZE of the array. When arrays are first created, they are EMPTY.
+        // The array has now 5 "spots" (or "index", "elements", "subscript")
+        // which automatically numbers them - BUT the first spot is ALWAYS
+        // numbered as spot zero and the rest and numbered in order:
+        //
+        //       +-------+-------+-------+-------+-------+
+        // array |       |       |       |       |       | (indexed)
+        //       +-------+-------+-------+-------+-------+
+        //           0       1       2       3       4
         
-        // create (declare) a variable for comparison:        
-        int size = 5;
-        
-        // declare an array:        
-        int array[] = new int[size];        
-        // assume the "spots", "subscripts", "elements", "indices" as unknown
-        
-        // assign values to the individual indices:        
+        // Now we assign values to all individual spots (indices):
         array[0] = 25;
-        array[1] = 18;
-        array[2] = -21;
-        array[3] = 621;
-        array[4] = 1234567890;
+        array[1] = 250;
+        array[2] = 2;
+        array[3] = -25;
+        array[4] = 0;
+
+        //       +-------+-------+-------+-------+-------+
+        // array |   25  |  250  |   2   |  -25  |   0   | (now filled)
+        //       +-------+-------+-------+-------+-------+
+        //           0       1       2       3       4
         
-        // the next line would be a "out of bounds" or "range" error         
-        // array[5] = 99;
+        // These next lines would be errors when the code runs:
+        // array[5] = 25;
+        // array[-1] = 25;
+        // They would be "out of bounds" errors (or "range" error)
+
+        // Declare an array (a little different) of NO size...        
+        double a[];
+
+        // In memory...
+        //
+        // a
+        //
         
-        // other index numbers that would be a range error:        
-        // array[2.5] = 10;
-        // array[-1] = 10;
-        
-        // declare an array of no size:        
-        double[] a;
-        
-        // later on, you can re-create (re-dimension) the same array        
+        // Later on (in the code) you can re-create (re-declare, re-dimension, 
+        // or resize) using the same array but now giving it some size (but 
+        // still empty)
         a = new double[3];
+
+        // In memory....
+        //
+        //   +----------+----------+----------+
+        // a |          |          |          | (now has size of 3, but empty)
+        //   +----------+----------+----------+
+        //        0          1          2
         
-        // now put content into the array
+        // Now fill the content
         a[0] = 1.1;
         a[1] = 2.2;
         a[2] = 3.3;
+
+        //   +----------+----------+----------+
+        // a |   1.1    |   2.2    |   3.3    | (now it is filled with content)
+        //   +----------+----------+----------+
+        //        0          1          2
         
-        // you can re-dimension multiple times, but every time it wipes out 
-        // any content stored inside the array
-        a = new double[500];
-        
-        // another way to create arrays, but with pre-filled values        
-        double[] coins = { 0.05, 0.10, 0.25, 1.00, 2.00 };
+        // You can re-dimension (resize) an array multiple times, BUT
+        // every time it wipes out any content stored in the array
+        a = new double[5];
+
+        //   +----------+----------+----------+----------+----------+
+        // a |          |          |          |          |          | (size 5)
+        //   +----------+----------+----------+----------+----------+
+        //        0          1          2          3          4
                 
-        // you can also do this and make the array a constant                        
+        // Another way to declare arrays, but this way creates the array of
+        // a set size, BUT with pre-filled values inside (make and fill at the
+        // same time - on the same ONE line of code) - you can as an option,
+        // put the "[]" beside the data type OR the array name
+                
+        double[] coins = { 0.05, 0.10, 0.25, 1.00, 2.00 };
+        
+        //       +------+------+------+------+------+
+        // coins | 0.05 | 0.10 | 0.25 | 1.00 | 2.00 |  (has a length of 5)
+        //       +------+------+------+------+------+
+        //          0      1      2      3      4  
+        
+        // You can also create CONSTANT arrays that are pre-filled, the name
+        // we gives array should be a plural word (e.g. 'scores' (array name)
+        // not 'score' (variable name), 'names' not 'name', etc.)    
+        
         final String[] OPTIONS = {
-            "New game",
-            "Save game",
+            "New Game",
+            "Save Game",
             "Quit"
         };
         
-        // using an array like variables        
+        // When using arrays, use individual elements (spots, indices - the 
+        // plural of "index") of the array like regular variables, for example
+        
         int[] numbers = new int[100];
-        // names for arrays should be plural words
-        numbers[99] = 99;
-        // output array index like a variable
-        System.out.println(numbers[99]);    
-        // perform equations with array indices like variables
+        
+        // Change (assign) a index (spot)
+        numbers[99] = 333;
+        
+        //         +-----+-----+-----+
+        // numbers |     | ... | 333 | (length is 100)
+        //         +-----+-----+-----+
+        //            0    ...   99
+        // Remember, the last index is always ONE LESS than the length
+        
+        // Output that spot
+        System.out.println(numbers[99]);
+        
+        // Perform equations with array indices like variables
         numbers[0] = numbers[99] + numbers[99];
+        System.out.println(numbers[0]);
         
-        // to travel (go through) the entire array, use a for loop         
+        // To work with, and to "travel" (means to "visit" every spot) the 
+        // entire array, we use a loop!
+        
+        // Specifically, the FOR loop!
+        
+        // for loops were literally built for arrays
         for (int i = 0; i < 100; i++) {
-            numbers[i] = 99;
-        }
-        
-        // output the entire array, by traversing the array and using a 
-        // built-in feature that all arrays have called the ".length" feature 
-        for (int i = 0; i < numbers.length; i++) {
             System.out.println(numbers[i]);
         }
+        // The for loop is perfect because it automatically (when I type "for"
+        // and TAB) starts at 0, goes up by 1, is "less than" then ending 
+        // number (which can be the length)
         
-        // arrays with methods, arrays can be sent to a method
-        // parameter, and arrays can be returned from methods
-        // in other words, arrays can be inputs and outputs
-        // from methods        
-        output(numbers);        
-        output(coins);
-        int[] randoms = random(1,10,50);
+        // When using the for loop with arrays, it is even BETTER to use a
+        // built-in feature of all arrays! All arrays have a ".length" feature
+        // for example        
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(i + " = " + numbers[i]);
+        }
+        // Tip: if type "for" TAB, then TAB AGAIN it jump to the ending value
+        // So if the array size changes, the loop adapts to it
+        
+        // Array can easily work with methods, the arrays can be sent into a 
+        // method (as one of multiple parameters, or the only parameter), and 
+        // arrays can be outputted (returned) from a method - in other words:
+        // Arrays can be INPUT(s) or OUTPUT from a method
+        
+        output(array);      // Send a array to a method as a parameter
+        output(numbers);    // Call the method with a different argument
+        output(coins);      // Overload the "output" method again
+        
+        int[] randoms = random(1, 10, 50);    // Overload "random" method
         output(randoms);
-                
-        // multi-dimensional array, means an array of arrays, filled with 
-        // arrays... etc (2D, 3D, 4D etc as a way to visualize it) it is
-        // also know as a matrix
-        final int  ROWS    = 30;
-        final int  COLUMNS = 40;
-        final char LOW     = 'a';
-        final char HIGH    = 'z';        
-        // create (declare) a matrix:        
+        
+        // Multi-dimensional array (also known as a "array of arrays", or a 
+        // array filled with other arrays, 2D, etc.) - and also known as a 
+        // table, grid, or a MATRIX
+        
+        // Create some constants to use when building the matrix (these are
+        // not needed to declare a matrix, but they might help in understanding 
+        // it) - we make contants as a way to "visualize" what we are building
+        
+        final int ROWS    = 30; // "dimension" going "down" (also like "y" axis)
+        final int COLUMNS = 40; // "dimension" going "across" (also like "x")
+        
+        // We declare (create) a matrix , by adding multiple sets of square
+        // brackets (a set of brackets for each dimension)
+        
         char[][] matrix = new char[ROWS][COLUMNS];
         
-        // fill the matrix by traversing and adding
-        // in a random character, using nested for loops        
+        // If we "visualize this as a 3 by 4 matrix (3 rows by 4 columns), or 
+        // y = 3 and x = 4, or a "height" of 3 and a "width" of 4, then it
+        // could be "seen" as...
+        //
+        //               (columns, width, x axis is 4, meaning 0-3)
+        //
+        //                     0         1         2         3
+        //                +---------+---------+---------+---------+
+        // (rows,       0 |         |         |         |         |
+        //  height,       +---------+---------+---------+---------+
+        //  y axis      1 |         |         |         |         |
+        //  is 3,         +---------+---------+---------+---------+
+        //  meaning     2 |         |         |         |         |
+        //  0-2)          +---------+---------+---------+---------+
+        // 
+        // A matrix "row" can also be "visualized" as the matrix "height"
+        // A matrix "column" can also be "visualized" as the matrix "width"
+        
+        // Fill the matrix with random characters...
+        // (using a method for random characters)
+        
+        final char LOW  = 'a';
+        final char HIGH = 'z';
+        
+        // Test our method first...
+        char character = random(LOW,HIGH);
+        System.out.println("Random character was " + character);
+        
+        // Fill our matrix (meaning put content in every location/index/spot
+        // in the matrix) by traversing (travelling, 'visit' every spot) the
+        // matrix and adding random characters (our method) - when traversing
+        // matricies (plural of matrix) we use multiple nested for loops
+        
+        // We might rename looping variables to better understand what the 
+        // nested for loops are refering to (e.g. like row, column, x, y)
+        // With Netbeans, when you rename a loop variable it renames all 3
+        
         for (int row = 0; row < ROWS; row++) {
             for (int column = 0; column < COLUMNS; column++) {
-                matrix[row][column] = random(LOW,HIGH);
+                matrix[row][column] = random(LOW, HIGH);
             }
         }
-        // now output the matrix with another overloaded method that 
-        // incorporates graphical aspects in the dialog
-        output(matrix);
-                
-        // matrices can also be made with pre-set values
-        final char[][] TIC_TAC_TOE = 
-        {
-            {'X','O','X'},
-            {'O','X','O'},
-            {'X','O','X'}
-        };
-        output(TIC_TAC_TOE);
         
-        Simulator.header("Completed learning arrays!");
+        // Output the matrix, by turning it into a single string (using 
+        // a new method)        
+        String text1 = toString(matrix);
+        System.out.println(text1);
+        
+        // Matrices can also be made with pre-set values (like regular arrays)
+        
+        final char[][] TIC_TAC_TOE = {
+            { 'X', 'O', 'X' },
+            { 'O', 'X', 'O' },
+            { 'X', 'O', 'X' }
+        };
+        
+        String text2 = toString(TIC_TAC_TOE);
+        System.out.println(text2);
+        
+        // Optional graphical code...
+        
+        // Use JOptionPane dialogs but with graphics:
+
+        // Have two graphic files (picture files) ready
+        final String PATH = "C:\\Users\\lawrence.wachs\\Desktop\\"
+                          + "2021-2022\\Projects\\Java\\ComputerScience30S\\";
+        String picture1 = PATH + "matrix.gif";
+        String picture2 = PATH + "tictactoe.gif";
+                
+        // Call a method to display a "fancy" dialog
+        message(text1,"The Matrix",picture1);
+        message(text2,"Tic-tac-Toe",picture2);
+                
+        System.out.println("Completed learning arrays!");
     }
-    
+
     /**
-     * Outputs an array of integer values
+     * Outputs an array of integers in a dialog
      * 
      * @param array the array of integers
      */
     private static void output(int[] array) {
-        String text = "Array = [";                  // create string to fill
-        for (int i = 0; i < array.length; i++) {    // traverse array
-            text += array[i] + ",";                 // add to the string
-        }        
-        text = text + "]";                          // add ending to the string
-        output(text);                               // now output the string 
+        // Arrays can be a parameter (or one of the parameters)
+        String text = "Array [";    // Created a string to fill up
+        // Loop (traverse) through the array and add the contents to the string
+        for (int i = 0; i < array.length; i++) {
+            text = text + array[i] + ",";
+        }
+        text = text + "]";
+        output(text);           // Outputs it by calling an overloaded method
     }
 
     /**
-     * Outputs an array of double values
+     * Convert all the doubles into integers and then output the array in a 
+     * dialog
      * 
      * @param array the array of doubles
      */
     private static void output(double[] array) {
-        int[] a = convert(array);       // create int array of converted doubles
-        output(a);                      // now output the converted array
+        int[] a = convert(array);   // Create int array of converted doubles        
+        output(a);                  // Now output the converted array
     }
 
     /**
      * Converts an array of doubles into an array of integers
      * 
-     * @param array the double array to convert
+     * @param array the array of doubles
      * @return an array of integers
      */
     private static int[] convert(double[] array) {
-        int[] a = new int[array.length];            // create empty array 
-        for (int i = 0; i < array.length; i++) {    // traverse array size
-            a[i] = (int)array[i];                   // cast over the index value
-        }
-        return a;                                   // return completed array
+        // Methods can return (output) entire arrays
+        int[] a = new int[array.length];      // Create empty array (same size)
+        for (int i = 0; i < a.length; i++) {  // Traverse the array
+            a[i] = (int)array[i];             // Cast the double into a int
+        }        
+        return a;                             // Return the converted new array
     }
-
+    
     /**
-     * Generates an array of random integers in the range between low and high
+     * Generates an array of a set size filled with random integers in the 
+     * range between low and high
      * 
      * @param low the lowest number in the range
      * @param high the highest number in the range
@@ -796,149 +1083,273 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
      * @return an array of random integers
      */
     private static int[] random(int low, int high, int size) {
-        int[] numbers = new int[size];      // create empty array of passed size
-        for (int i = 0; i < size; i++) {    // traverse array size
-            numbers[i] = random(low,high);  // assign random value to each index
+        int[] numbers = new int[size];      // Create empty array of passed size
+        for (int i = 0; i < size; i++) {    // Traverse array 
+            numbers[i] = random(low, high); // Assign random value to each index
         }
-        return numbers;                     // return completed array
+        return numbers;                     // Return completed array
     }
-   
+    
     /**
-     * Generates a random character
+     * Generates a random character between tow low and high characters
      * 
      * @param low lowest character in the range
      * @param high highest character in the range
      * @return random character in range
      */
     private static char random(char low, char high) {
-        return (char)random((int)low,(int)high);     // cast to int and back  
+        return (char)random((int)low, (int)high);     // cast to int and back  
     }
 
     /**
-     * Outputs an array of character values
+     * Change the matrix into a single string (for outputting)
      * 
-     * @param array the array of characters
+     * @param matrix the 2D array of characters
+     * @return a single string representing the matrix
      */
-    private static void output(char[][] m) {
-        String text = "";                       // start a string to hold values
-        for (int r = 0; r < m.length; r++) {    // traverse all rows
-            for (int c = 0; c < m[r].length; c++) { // traverse all columns
-                text = text + m[r][c] + " ";    // concatinate to the string
-            }
-            text = text + "\n";                 // add in a new line break
-        }
-        // set up graphical "things" to make the dialog more interesting    
-        Color  background = new Color(0,0,0);
-        Color  foreground = new Color(0,255,0);        
-        Font   font       = new Font("Consolas",Font.PLAIN,18);
-        String imageName  = "C:\\Users\\lawrence.wachs"
-                + "\\Desktop\\Images\\matrix.gif";
-        // now output that string in a graphical dialog
-        output(text,"The Matrix",font,background,foreground,imageName);
+    private static String toString(char[][] matrix) {
+        String text = "";   // Create string variable to store all values
+        // Use the nested for loops (with simplier varaibles names) and
+        // use the ".length" but also in the nested loop, we will use 
+        // the ".length" of that particular array
+        for (int r = 0; r < matrix.length; r++) {
+            for (int c = 0; c < matrix[r].length; c++) {
+                // Means the length of "this row"  
+                text = text + matrix[r][c] + " ";
+            }     
+            text = text + "\n";     // Add a line break after each row
+        }     
+        return text;            // Return the filled up string
     }
 
     /**
-     * Outputs text in a more visual graphical way with the passed font and 
-     * colors in a dialog 
+     * Displays a 'graphical' version of the message dialog (for JOptionPane)
+     * to the user, including a custom image, colors (background / foreground),
+     * new font (includes the type of font and the size) along with text and 
+     * title.
      * 
-     * @param text the text to display
-     * @param title the title of the dialog display
-     * @param font the font name to use in the dialog
-     * @param background the background color to use in the dialog
-     * @param foreground the foreground color to use in the dialog
-     * @param imageName the name of the image to display
+     * @param text what text to show in the dialog
+     * @param title the title at the top of the dialog
+     * @param imageName the full (first, middle, last) name of the image
      */
-    private static void output(String text, String title, Font font, 
-            Color background, Color foreground, String imageName) {
-        // create a graphics object to display the graphical things
+    private static void message(String text, String title, String imageName) {
+        // We set up some 'graphical' "things" to make the dialog more 
+        // interesting by 'importing' the code that does this (we are not 
+        // writing that specific code, we are 'using' others code)
+        
+        // Using capital letters and importing (using the lightbulb) and a line
+        // similar to the way we declare arrays, and using round brackets 
+        // (implies a method? - we will study in the next unit 'classes')        
+        Color background = new Color(0,0,0);
+        // The three numbers in "Color" are for red, green and blue values 
+        // from 0 (no amount) up to 255 (the maximum amount of that color)        
+        Color foreground = new Color(0,255,0);  // Bright green
+        
+        // Fonts are done the same way (import, declare them)        
+        Font font = new Font("Consolas", Font.PLAIN, 18);
+        // Inside the bracket we put the font name (must be installed on this 
+        // computer), style (e.g. plain, bold, underline, etc.) - uses a 
+        // CONSTANT style, and finally the font size (in points)
+        
+        // For image, we need an image file downloaded onto the computer and we  
+        // need the NAME of that image (name includes the ending part or 
+        // extension, and I also need the path to get to that image / folder).
+        // To do this, right click and go to properties and "Location" and 
+        // copy/paste. It will change the "\" to two "\\" and also type two of 
+        // those at the end...
+        
+        // Create a "icon" for the image (icon is like a picturebox) and also 
+        // use "ImageIcon" - connected to the image name (which is the actual 
+        // image on our computer)         
+        Icon image = new ImageIcon(imageName);
+        
+        // Now need something that can display the fonts and colors - called a 
+        // "text area" (can use intellisense, with CTRL + SPACE, which 
+        // automatically imports it)         
         JTextArea area = new JTextArea();
-        // assign the font and colors to the area
-        area.setFont(font);
+        
+        // Now we add things into the area, using methods built into the text 
+        // area object        
+        area.setText(text);
         area.setBackground(background);
         area.setForeground(foreground);
-        area.setText(text);
-        // create a "icon" for the picture
-        Icon picture = new ImageIcon(imageName);
-        // pass the area and the picture to the dialog
-        JOptionPane.showMessageDialog(null,area,title,
-                JOptionPane.PLAIN_MESSAGE,picture);        
-    }
+        area.setFont(font);
+        
+        // Now we finally display the dialog box, BUT we USE the text area and 
+        // the image in the dialog as parameters
+        JOptionPane.showMessageDialog(
+                null, 
+                area, 
+                title,
+                JOptionPane.PLAIN_MESSAGE,
+                image);
+    }    
 
     /**
      * Goes over the content of this unit
      */
     private static void learnClasses() {
-        Simulator.header("Start learning classes...");
+        System.out.println("Start Learning classes...");
         
-        // create a person object from the Person class
-        Person person = new Person();        
-        // similar to old code like: Random random = new Random();
+        // Create a "person" (add a class called "Person" to this Java project)
+        // To do this, click on File - New File (or icon on toolbar)
+        // A dialog will appear and you select "Java" and "Java Class"
+        // Then next...
+        // Then give it a name (starts with a capital letter and camel casing)
+        // Then click finish!
+        
+        // use a line of code like this:
+        // Random random = new Random();
+        
+        Person person = new Person();
+        // Class object = new Class() <--- implies a method?
+        // that is the call to the constructor method
         
         // call (invoke) a method within the object
         person.talk();
         
-        // create (instantiate) another object with different constructor
-        Person joe = new Person("Joseph Diesel");
-        joe.talk();
-        joe.birthday();
-        joe.talk();
-        joe.birthday(17);
-        joe.talk();
-        joe.die();
-        joe.talk();
-           
-        // another instance of a person with the 3rd constructor
-        Person elsa = new Person("Elsa Arendelle",24,false);
-        elsa.talk();     
-        elsa.isMale = true;
-        elsa.name = "Elliot Arendelle";
-        elsa.talk(); 
+        // Use (call,invoke) other methods and change properties
+        person.birthday(1);
+        person.talk();
+        person.name = "Dave Smith";
+        person.talk();
+        person.gender = "Male";
+        person.talk();
+        person.die();
+        person.talk();
         
-        // create a student object
-        Student student = new Student("Greg Greg",17,false,1234);
+        // Create (instantiate) another object with a different (overloaded) 
+        // constructor        
+        Person other = new Person("Another name");
+        other.talk();
+        other.birthday(10);
+        other.talk();
+        
+        // Another instance using the 3rd constructor option
+        Person third = new Person("Jennifer Gooku",17,"female");
+        third.birthday(38);
+        third.talk();
+        third.die();
+        third.talk();
+        // third.age = 50; // cannot be done, private property
+        
+        // Create a Student object and call it's methods (including the 
+        // ones it inherited from the Person class)        
+        Student student = new Student("Student Person",17,"student",123456);
+        student.talk();
+        // Call (invoke) methods specifically for the student class
+        student.slackOff();
+        student.study();
+        student.slackOff();
+        student.cram();
         student.talk();
         
-        // create another student object and call it's methods
-        Student larry = new Student("Larry Rogowy",16,true);
-        larry.talk();
-        larry.study();
-        larry.slackOff();
-        larry.cram();
-        larry.birthday();
-        larry.talk();
+        // Instantiate a Husky object
+        Husky husky = new Husky("Havoc", 14, "male", 2665);
+        husky.talk();
         
-        // create a teacher object and call it's methods
-        Teacher teacher = new Teacher("Teacher School", "Course");
+        // Make a Teacher instance
+        Teacher teacher = new Teacher("Mr. Wachs");
         teacher.talk();
         
-        // create another teacher object
-        Teacher wachs = new Teacher("Mr. Wachs","Math");
-        wachs.students[0] = student;
-        wachs.students[1] = larry;
-        wachs.teach();
-        wachs.talk();
+        // Assigned student objects to the public array
+        teacher.students[0] = student;
+        teacher.students[1] = husky;
         
-        // create husky object
-        Husky havoc = new Husky("Havoc",12,true);
-        havoc.talk();
-        havoc.homework();
-        havoc.talk();
-        havoc.atLeastImNotAtJohnTaylor();
-        havoc.talk();
+        // Called talk again to see the students we added
+        teacher.talk();
         
-        // create meeting object
+        // Build (declare, initiaize, instantiate) a Meeting object
         Meeting meeting = new Meeting();
-        meeting.attend(person);
-        meeting.attend(elsa);
-        meeting.attend(student);
-        meeting.attend(havoc);
-        meeting.attend(teacher);
-        meeting.attend(larry);
-        meeting.attend(wachs);
-        meeting.attend(joe);
-        meeting.hold();
         
-        Simulator.header("Learning classes complete!");
+        // Calling our polymorphic method
+        meeting.attend(person);
+        meeting.attend(other);
+        meeting.attend(third);
+        meeting.attend(student);
+        meeting.attend(husky);
+        meeting.attend(teacher);
+        
+        meeting.hold();
+                
+        System.out.println("Completed learning classes!");
     }
-
+    
 }
+
+// <editor-fold>   
+
+// NETBEANS TIPS:
+// ==============
+// (1)  To zoom in and out on the code, hold ALT and roll the mouse
+// (2)  Double click the top of a tab to hide side windows or show them
+// (3)  The curly brackets (braces, parenthesis) are important "{" and "}"
+// (4)  Click the green triangle on the top toolbar to run code
+// (5)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
+// (6)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
+// (7)  The word "null" means "nothing" and can act as a placeholder for code
+//      you often do not need (right now)
+// (8)  To "comment out" chunks of code, select the code with your mouse or 
+//      keyboard, then click on the two buttons under the code tab (on right)
+// (9)  To stop a running program, click the red stop button on the left in the
+//      output window, or the X in the bottom right of NetBeans
+// (10) A red squiggily line and/or a "lightbulb" in NetBeans means a potential
+//      error and a potential fix (if you click on the lightbulb)
+// (11) You can get more NetBeans tips and autocompletes by selecting:
+//      Help -> Keyboard Shortcuts Card
+// (12) Go to Tools -> Templates, scroll down and click on the "+" beside 
+//      "Java", select "Java Main Class", and "Open in Editor" and the enter 
+//      this into the temple (but use the slash "/" instead of "|"):
+//
+//      /** 
+//       * ${name}.java - 
+//       *
+//       * @author Mr. Wachs 
+//       * @since ${date} 
+//       */
+//      public class ${name} 
+//       { .... etc .....     
+//
+// (13) To autoformat code (fixes indents, extra spaces, etc.) you select the
+//      code with mouse or keyboard (if you select nothing it will autoformat
+//      all the code) and pres ALT + SHIFT + F (you should do this before you 
+//      hand in your code)
+// (14) When printing code for hand in (this only needs to be done once), click
+//      on "Print Options" and uncheck everything previously checked off, and
+//      then check off "Print as in Editor", then either print it to a PDF 
+//      (which means select "Microsoft Print to PDF" on the next screen), or
+//      cancel and resize the code to fit better (see tip #1) and then print 
+//      again
+// (15) You can "teach" NetBeans to change the style it uses to autoformat (see
+//      number 13) by going to Tools -> Options, then click on the "Editor"
+//      tab at the top, then the "Formatting" below that. Then change the 
+//      settings to what you prefer
+// (16) The + and - signs and gray lines along the side in NetBeans
+//      help to "expand" and "collapse" the method body (block of code)
+//      press CTRL and SHIFT and "-" it collapses all methods, and
+//      CTRL and SHIFT and "+" expands all code folds
+// (17) If you hold down the CTRL key, method calls become links with the
+//      mouse to jump to the method (even ones we don't write)
+// (18) If you write the "call" to a method, before writing the method 
+//      itself, the lightbulb (see tip 10) will help you write it
+// (19) On the left side window, the Navigator window helps find and jump to
+//      methods if you double click them
+// (20) If you have to rename a variable or a method, select the word (the name
+//      of the variable or method) and then press CTRL + R, then type in a
+//      new name
+// (21) If you type /** before the method signature line it will automate
+//      which JavaDoc comments you should make
+// (22) If you want to remove the auto-generated reminder when you use the
+//      lightbulb to create a method, go to Tools -> Templates, scroll down 
+//      and click on the "+" beside "Java", and then the "+" beside "code
+//      snippets", and select "Generated Method body" and remove the last line
+// (23) All arrays have a ".length" feature built in that you can have NetBeans
+//      autocomplete for you by typing the name of your array, then dot length
+//      (".length") which automatically gives you how many elements are in
+//      the array
+// (24) When writing for loops with array, if you type "for" then press TAB, 
+//      and then press TAB AGAIN it jump to the ending value (which should be 
+//      the ".length" of the array (so if the array size changes, the loop 
+//      adapts to it) - the loop variable "i" also represents the array "index"
+
+// </editor-fold>

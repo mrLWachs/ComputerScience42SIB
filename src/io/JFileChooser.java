@@ -1,8 +1,8 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package io;
 
-/** required imports */
+/** Required imports */
 import java.io.File;
 import javax.swing.JFrame;
 
@@ -12,7 +12,7 @@ import javax.swing.JFrame;
  * dialogs and user interfaces and redirects the outputs to a custom output
  *
  * @author Mr. Wachs
- * @since Feb. 11, 2020, 12:58:16 p.m.
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class JFileChooser 
 {

@@ -1,17 +1,16 @@
-
-/** required package class namespace */
+  
+/** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
-
-/**
- * PermissionForm.java - interface enforcing the rules of a permission form
+/** 
+ * PermissionForm.java - enforcing "the rules" of a permission form
  *
- * @author Mr. Wachs
- * @since Oct. 31, 2019, 11:40:32 a.m.
- */
-public interface PermissionForm 
+ * @author Mr. Wachs 
+ * @since 25-Nov-2021 
+*/
+public interface PermissionForm
 {
-    
+
     /**
      * Represents a signed permission form
      */
@@ -20,7 +19,7 @@ public interface PermissionForm
     /**
      * Represents an unsigned permission form
      */
-    static final boolean NOT_SIGNED = false; 
+    static final boolean NOT_SIGNED = false;
     
     /**
      * Signing the permission form
@@ -33,5 +32,5 @@ public interface PermissionForm
      * @return has been signed (true), or not (false)
      */
     boolean haveYouGotItSigned();
-
+    
 }
