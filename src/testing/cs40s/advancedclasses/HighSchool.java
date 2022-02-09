@@ -10,7 +10,7 @@ package testing.cs40s.advancedclasses;
  * those methods).
  *
  * @author Mr. Wachs
- * @since 5-Nov-2021, 11:15:41 AM
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class HighSchool extends Student
 {

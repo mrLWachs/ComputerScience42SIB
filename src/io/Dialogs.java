@@ -18,6 +18,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
+
 /**
  * Dialogs.java - a collection of useful methods for working with dialogs
  *

@@ -6,7 +6,7 @@ package testing.cs40s.advancedclasses;
  * AmongUs.java - enforcing "the rules" of Among Us (and sports)
  *
  * @author Mr. Wachs 
- * @since 25-Nov-2021 
+ * @since Feb. 9, 2022, 8:01:03 a.m.
 */
 public interface AmongUs extends Sports
 {

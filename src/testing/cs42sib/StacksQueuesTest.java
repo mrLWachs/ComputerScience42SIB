@@ -20,7 +20,7 @@ public class StacksQueuesTest
     public StacksQueuesTest() {
         Simulator.header("Stacks and Queues Test started...");
         
-        
+        Simulator.comment("The code for this example will go here...");
                 
         Simulator.header("Stacks and Queues Test completed!");
     }   

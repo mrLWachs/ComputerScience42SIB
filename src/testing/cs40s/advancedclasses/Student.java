@@ -2,6 +2,10 @@
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
+/** Required imports */
+import io.System;
+
+
 /** 
  * Student.java - represents a student, reminder that "extends" causes
  * inheritance (or "is a") meaning this class gets all the properties and
@@ -17,7 +21,7 @@ package testing.cs40s.advancedclasses;
  * from the "parent" (super) class.
  *
  * @author Mr. Wachs 
- * @since 21-Oct-2021 
+ * @since Feb. 9, 2022, 8:01:03 a.m.
 */
 public class Student extends Person
 {

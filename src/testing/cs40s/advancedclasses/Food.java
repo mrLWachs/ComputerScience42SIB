@@ -13,7 +13,7 @@ package testing.cs40s.advancedclasses;
  * class must be an abstract class).
  *
  * @author Mr. Wachs
- * @since 17-Nov-2021, 11:58:54 AM
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public abstract class Food 
 {

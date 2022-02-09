@@ -20,7 +20,7 @@ public class SearchSortTest
     public SearchSortTest() {
         Simulator.header("Searching and Sorting Test started...");
                 
-        
+        Simulator.comment("The code for this example will go here...");
                         
         Simulator.header("Searching and Sorting Test completed!");
     }   

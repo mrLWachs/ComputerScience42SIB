@@ -1,12 +1,15 @@
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
- 
+/** Required imports */
+import io.System;
+
+
 /**
  * Steak.java - represents a steak
  *
  * @author Mr. Wachs
- * @since 24-Nov-2021, 11:09:55 AM
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Steak extends Food
 {

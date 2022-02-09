@@ -23,9 +23,9 @@ public class ComputerScience40S
      */
     public ComputerScience40S() {
         Simulator.header("Computer Science 40S starting..."); 
-        new RecursionTest(); 
-        new AdvancedClassesTest(); 
-        new CollectionsTest();       
+        RecursionTest       unit1 = new RecursionTest(); 
+        AdvancedClassesTest unit2 = new AdvancedClassesTest(); 
+        CollectionsTest     unit3 = new CollectionsTest();       
         Simulator.header("Computer Science 40S complete!");
     }
     

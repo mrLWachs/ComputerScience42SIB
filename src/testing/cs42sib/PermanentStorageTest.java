@@ -21,7 +21,7 @@ public class PermanentStorageTest
     public PermanentStorageTest() {
         Simulator.header("Permanent Storage Test started...");
         
-        
+        Simulator.comment("The code for this example will go here...");
           
         Simulator.header("Permanent Storage Test completed!");
     }   

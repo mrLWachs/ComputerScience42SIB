@@ -14,7 +14,7 @@ package testing.cs40s.advancedclasses;
  * means the other class "follows the rules" of that interface.
  *
  * @author Mr. Wachs 
- * @since 24-Nov-2021 
+ * @since Feb. 9, 2022, 8:01:03 a.m.
 */
 public interface Sports
 {

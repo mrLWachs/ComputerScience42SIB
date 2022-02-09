@@ -2,7 +2,10 @@
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
- 
+/** Required imports */
+import io.System;
+
+
 /**
  * Apple.java - represents an apple. This class inherits from the abstract 
  * class all its properties and methods. However, the abstract methods are 
@@ -12,7 +15,7 @@ package testing.cs40s.advancedclasses;
  * over-ridden as well.
  *
  * @author Mr. Wachs
- * @since 22-Nov-2021, 11:54:18 AM
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Apple extends Food
 {

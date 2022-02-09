@@ -2,12 +2,15 @@
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
- 
+/** Required imports */
+import io.System;
+
+
 /**
  * Meeting.java - represents a meeting of people
  *
  * @author Mr. Wachs
- * @since 9-Nov-2021, 11:44:16 AM
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Meeting 
 {

@@ -6,7 +6,7 @@ package testing.cs40s.advancedclasses;
  * Husky.java - represents a Husky HighSchool Student Person
  *
  * @author Mr. Wachs
- * @since 8-Nov-2021, 11:30:31 AM
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Husky extends HighSchool
 {

@@ -9,12 +9,15 @@ package testing.cs30s;
  * Required imports for the project - the lines below are added when your code
  * needs to connect to another library (API) of code
  */
+import io.JOptionPane;
+import io.Simulator;
+import io.System;
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
+//import javax.swing.JOptionPane;
 
  
 /**
@@ -32,15 +35,22 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
      * 
      * @param args the command line arguments
      */
-    public static void main(String[] args) {  
-        System.out.println("\nComputer Science 30S Example started...\n");
+//    public static void main(String[] args) { 
+                
+    /**
+     * Default class constructor, runs on instantiation
+     */
+    public ComputerScience30S() {
+        Simulator.header("Computer Science 30S starting...");
+//        System.out.println("\nComputer Science 30S Example started...\n");
         // Present the user with options
         final String[] OPTIONS = {
             "See the example of learning basic Java code (unit 1)",
             "See the example of methods (unit 2)",
             "See the example of arrays (unit 3)",
             "See the example of classes (unit 4)",
-            "See the example of graphics and user interfaces (bonus unit)"            
+            "See the example of graphics and user interfaces (bonus unit)",
+            "See all the examples (all units and bonus)"                
         };
         // Get the user's choice
         String choice = JOptionPane.showInputDialog(
@@ -56,8 +66,16 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         else if (choice.equals(OPTIONS[1])) learnMethods();
         else if (choice.equals(OPTIONS[2])) learnArrays();
         else if (choice.equals(OPTIONS[3])) learnClasses();
-        else if (choice.equals(OPTIONS[4])) new LearnGraphics();        
-        System.out.println("\nComputer Science 30S Example complete!\n");
+        else if (choice.equals(OPTIONS[4])) new LearnGraphics();  
+        else {
+            learnIntroToJava();
+            learnMethods();
+            learnArrays();
+            learnClasses();
+            new LearnGraphics();
+        }          
+//        System.out.println("\nComputer Science 30S Example complete!\n");
+        Simulator.header("Computer Science 30S complete!");
     }
 
     /**

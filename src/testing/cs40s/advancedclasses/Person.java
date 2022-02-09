@@ -2,6 +2,9 @@
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
+/** Required imports */
+import io.System;
+
 /** 
  * Person.java - represents a person. This is a class with properties (things
  * about the class, adjective, descriptors) and methods (things it can do, 
@@ -9,7 +12,7 @@ package testing.cs40s.advancedclasses;
  * (which are instances of that class).
  *
  * @author Mr. Wachs 
- * @since 13-Oct-2021 
+ * @since Feb. 9, 2022, 8:01:03 a.m.
 */
 public class Person 
 {

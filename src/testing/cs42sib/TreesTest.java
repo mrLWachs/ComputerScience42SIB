@@ -21,7 +21,7 @@ public class TreesTest
     public TreesTest() {
         Simulator.header("Binary Trees Test started...");
         
-        
+        Simulator.comment("The code for this example will go here...");
         
         Simulator.header("Binary Trees Test completed!");
     }   

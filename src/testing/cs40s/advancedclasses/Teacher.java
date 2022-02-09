@@ -9,7 +9,7 @@ package testing.cs40s.advancedclasses;
  * the class. This is sometimes simplified as a "has a" relationship.
  *
  * @author Mr. Wachs 
- * @since 27-Oct-2021 
+ * @since Feb. 9, 2022, 8:01:03 a.m. 
 */
 public class Teacher extends Person
 {

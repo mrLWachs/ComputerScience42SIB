@@ -422,6 +422,16 @@ public class Simulator
     }
     
     /**
+     * Simulates a JFrame graphical user interface
+     * 
+     * @param frame the frame to simulate
+     * @param message the <code>Object</code> to display
+     */
+    public static void showFrame(JFrame frame, String message) {
+        dialog(frame,message,null,0,0,null,null,null,FRAME);
+    }
+    
+    /**
      * 
      * @return 
      */

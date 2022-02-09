@@ -4,6 +4,8 @@ package testing.cs40s;
 
 /** Required imports */
 import io.Simulator;
+import io.System;
+import io.JOptionPane;
 import testing.cs40s.advancedclasses.Box;
 import testing.cs40s.advancedclasses.Food;
 import testing.cs40s.advancedclasses.House;
@@ -12,7 +14,7 @@ import testing.cs40s.advancedclasses.Meeting;
 import testing.cs40s.advancedclasses.Person;
 import testing.cs40s.advancedclasses.Student;
 import testing.cs40s.advancedclasses.Teacher;
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 import testing.cs40s.advancedclasses.Apple;
 import testing.cs40s.advancedclasses.Athlete;
 import testing.cs40s.advancedclasses.Baker;
@@ -85,27 +87,27 @@ public class AdvancedClassesTest
         // The toString() method of the object class outputs information
         // including the memory address (in hexadecimal code) where this object
         // is stored in this computer's memory        
-        java.lang.System.out.println("O1 = " + object1.toString());
-        java.lang.System.out.println("O2 = " + object2.toString());
-        java.lang.System.out.println("O3 = " + object3.toString());
+       System.out.println("O1 = " + object1.toString());
+       System.out.println("O2 = " + object2.toString());
+       System.out.println("O3 = " + object3.toString());
         
         // This method is inherited by all sub classes (children), for example:        
-        java.lang.System.out.println("Person  = " + person.toString());
-        java.lang.System.out.println("Student = " + student.toString());
-        java.lang.System.out.println("Teacher = " + teacher.toString());
+       System.out.println("Person  = " + person.toString());
+       System.out.println("Student = " + student.toString());
+       System.out.println("Teacher = " + teacher.toString());
         
         // Seeing the object class as the parent class of classes we don't write        
         String string = "puppy";
-        java.lang.System.out.println("String = " + string.toString());
+       System.out.println("String = " + string.toString());
         // The string class over-rides the toString() method here
         
         // The equals() method of the object class checks if two objects are
         // "equal" by using the "memory address" of each object and checks if 
         // the two objects being compared use the same address (true) or not 
         // (false)        
-        if (object1.equals(object2)) java.lang.System.out.println("O1==O2");
-        if (object2.equals(object3)) java.lang.System.out.println("O2==O3");
-        if (object1.equals(object3)) java.lang.System.out.println("O1==O3");
+        if (object1.equals(object2)) System.out.println("O1==O2");
+        if (object2.equals(object3)) System.out.println("O2==O3");
+        if (object1.equals(object3)) System.out.println("O1==O3");
         
         // Now since these two methods are inherited by ALL class objects, we
         // can use this methods with Person class objects:
@@ -116,13 +118,13 @@ public class AdvancedClassesTest
         Person person2 = person1;       // Same memory address as person1
         Person person3 = person2;       // Same memory address as person1 and 2
         
-        java.lang.System.out.println("P1 = " + person1.toString());
-        java.lang.System.out.println("P2 = " + person2.toString());
-        java.lang.System.out.println("P3 = " + person3.toString());
+        System.out.println("P1 = " + person1.toString());
+        System.out.println("P2 = " + person2.toString());
+        System.out.println("P3 = " + person3.toString());
         
-        if (person1.equals(person2)) java.lang.System.out.println("P1==P2");
-        if (person2.equals(person3)) java.lang.System.out.println("P2==P3");
-        if (person1.equals(person3)) java.lang.System.out.println("P1==P3");
+        if (person1.equals(person2)) System.out.println("P1==P2");
+        if (person2.equals(person3)) System.out.println("P2==P3");
+        if (person1.equals(person3)) System.out.println("P1==P3");
         
         // Then we will over-ride the toString() and equals() methods in the
         // person class so that we can check how that method is called over the 
@@ -132,9 +134,9 @@ public class AdvancedClassesTest
         
         // Testing the clone() method:        
         Person clonePerson = person.clone();        
-        java.lang.System.out.println("Person is " + person.toString());
-        java.lang.System.out.println("Clone  is " + clonePerson.toString());        
-        if (person.equals(clonePerson)) java.lang.System.out.println("clone is =");
+        System.out.println("Person is " + person.toString());
+        System.out.println("Clone  is " + clonePerson.toString());        
+        if (person.equals(clonePerson)) System.out.println("clone is =");
         
         // Now we will do the same thing to the student class and over-ride the
         // toString(), equals(), and clone() methods we inherited from the 
@@ -150,9 +152,9 @@ public class AdvancedClassesTest
         
         // When doing an output (like System.out... you "can" call "toString()"
         // but it often calls it automatically for you
-        java.lang.System.out.println(student1);
-        java.lang.System.out.println(student2);
-        java.lang.System.out.println(student3);
+        System.out.println(student1);
+        System.out.println(student2);
+        System.out.println(student3);
         
         // Using a static variable, static variables get instantiated once and
         // all objects share a reference to that same memory location (meaning
@@ -161,23 +163,23 @@ public class AdvancedClassesTest
         // Now output the static variable of each object and you will notice
         // how we get the same output for each student instance as they all
         // "share" the same access to the same static variable
-        java.lang.System.out.println("S1 total = " + student1.total);
-        java.lang.System.out.println("S2 total = " + student2.total);
-        java.lang.System.out.println("S3 total = " + student3.total);
+        System.out.println("S1 total = " + student1.total);
+        System.out.println("S2 total = " + student2.total);
+        System.out.println("S3 total = " + student3.total);
         
         // Mutate the static variable of one instance
         student1.total = 3;
         
         // Output all three again - showing that it changed (mutated) all
         // three instances since the variable is static (shared)
-        java.lang.System.out.println("S1 total = " + student1.total);
-        java.lang.System.out.println("S2 total = " + student2.total);
-        java.lang.System.out.println("S3 total = " + student3.total);
+        System.out.println("S1 total = " + student1.total);
+        System.out.println("S2 total = " + student2.total);
+        System.out.println("S3 total = " + student3.total);
         
         // Now our child class (HighSchool) of student (parent)
         HighSchool highSchool = new HighSchool();        
-        java.lang.System.out.println(highSchool);
-        java.lang.System.out.println(highSchool.total);
+        System.out.println(highSchool);
+        System.out.println(highSchool.total);
         
         // Now we will call a static (shared) method from the objects 
         // (instances) of the Person class and the other classes that extend
@@ -213,12 +215,12 @@ public class AdvancedClassesTest
         Athlete athlete = new Athlete();
         
         // And output those objects:
-        java.lang.System.out.println(doctor);
-        java.lang.System.out.println(baker);
-        java.lang.System.out.println(mrWachs);
-        java.lang.System.out.println(piper);
-        java.lang.System.out.println(husky);
-        java.lang.System.out.println(athlete);
+        System.out.println(doctor);
+        System.out.println(baker);
+        System.out.println(mrWachs);
+        System.out.println(piper);
+        System.out.println(husky);
+        System.out.println(athlete);
         
         // Instantiate ("make an instance of") a meeting object (of that class)
         Meeting meeting = new Meeting();
@@ -278,7 +280,7 @@ public class AdvancedClassesTest
         jock.setOpponent("Pipers");
         // Have our athlete compete in four rounds of athletics
         for (int round = 0; round < 4; round++) {
-            java.lang.System.out.println("Round " + round + "...");
+            System.out.println("Round " + round + "...");
             // Check to see f they can play
             if (jock.haveYouGotItSigned()) {
                 // They can play
@@ -413,7 +415,7 @@ public class AdvancedClassesTest
         String text = "Class ";
         text += item.getClass().getSimpleName();
         text += " as a string is " + item.toString();
-        java.lang.System.out.println(text);
+        System.out.println(text);
     }
     
 }

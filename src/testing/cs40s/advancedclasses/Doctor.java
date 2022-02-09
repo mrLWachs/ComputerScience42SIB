@@ -6,7 +6,7 @@ package testing.cs40s.advancedclasses;
  * Doctor.java - represents a Doctor Person
  *
  * @author Mr. Wachs
- * @since 8-Nov-2021, 11:30:18 AM
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Doctor extends Person
 {

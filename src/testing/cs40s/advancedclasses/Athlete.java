@@ -2,7 +2,10 @@
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
- 
+/** Required imports */
+import io.System;
+
+
 /**
  * Athlete.java - represents a Athlete Husky HighSchool Student Person. Using 
  * the keyword 'implements' in the class signature line, means this class 
@@ -14,7 +17,7 @@ package testing.cs40s.advancedclasses;
  * do multiple implementation, use a comma between interfaces.
  *
  * @author Mr. Wachs
- * @since 8-Nov-2021, 11:31:12 AM
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
 {
