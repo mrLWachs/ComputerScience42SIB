@@ -1,6 +1,6 @@
 
 /** Required package class namespace */
-package testing.cs42sib.collections.example;
+package trash;
 
 /** Required imports */
 import collections.LinkedList;

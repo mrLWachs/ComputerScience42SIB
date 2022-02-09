@@ -1,6 +1,6 @@
 
 /** Required package class namespace */
-package tools;
+package trash;
 
 /** Required imports */
 import collections.LinkedList;
