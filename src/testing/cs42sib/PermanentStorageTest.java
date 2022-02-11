@@ -4,7 +4,9 @@ package testing.cs42sib;
 
 /** Required imports */
 import io.Simulator;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -153,6 +155,40 @@ public class PermanentStorageTest
                 System.out.println("File already Exits!");
             }
         }
+        
+        // Now open the files (for the one with one line)
+        
+        try {
+            FileReader     reader = new FileReader(name);
+            BufferedReader buffer = new BufferedReader(reader);            
+            String line = buffer.readLine();            
+            System.out.println("line read was " + line);            
+            buffer.close();            
+        } catch (IOException e) {} // You could not respond to the error      
+        
+        // Do it again with the array (multiple lines)
+        
+        try {
+            chooser.showOpenDialog(null);
+            file = chooser.getSelectedFile();
+            FileReader     reader = new FileReader(file);
+            BufferedReader buffer = new BufferedReader(reader);            
+            String line = buffer.readLine();       
+            while (line != null) {
+                System.out.println("This line read was " + line); 
+                line = buffer.readLine();
+            }
+            buffer.close();            
+        } catch (IOException e) {} // You could not respond to the error
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
