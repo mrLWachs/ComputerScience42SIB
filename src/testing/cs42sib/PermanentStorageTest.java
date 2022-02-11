@@ -4,6 +4,11 @@ package testing.cs42sib;
 
 /** Required imports */
 import io.Simulator;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.swing.JFileChooser;
 
 
 /**
@@ -65,12 +70,13 @@ public class PermanentStorageTest
         Simulator.comment("Create data to use"); 
         
         String[] poem = {
-            "There once was a GME stock",
-            "As it aged it sank like a rock",
-            "A hedge fund wanted to profit",
-            "But the stock rose like a rocket"
+            "I look at my watch for the hour",
+            "But I find it has run out of power",
+            "I yell out Oh No!",
+            "I have got to go!",
+            "For I fear that the milk has gone sour"
         };                                                  // Student poem
-        String word = "acolyte";                            // Student word
+        String word = "Defenestration";                     // Student word
         
         // Let's create a proper file name.....................................
         Simulator.comment("Let's create a proper file name");
@@ -83,14 +89,70 @@ public class PermanentStorageTest
         // Write one piece of data to that permanent file......................
         Simulator.comment("Write one piece of data to that permanent file");
         
+        try {
+            // Create instance (object) of the classes needed
+            // and connect the 2 classes with the file name
+            
+            FileWriter  writer  = new FileWriter(name);
+            PrintWriter printer = new PrintWriter(writer);
+            
+            // Now write to the file            
+            printer.print(word);
+            
+            // Sever (close) the coonection to the file
+            printer.close();
+            
+        } 
+        catch (IOException e) {
+            System.out.println("File write error");
+        }
         
+        // Now involve our user in naming the file
         
+        // Simpliest input from the user with Scanner or dialog...
         
+        // Scanner scanner = new Scanner(System.in);
+        // name = scanner.nextLine();
+        // name = JOptionPane.showInputDialog("Enter name");
+        // Or we could build a GUI and use a textbox...
+        // We will use something already built for this
         
+        JFileChooser chooser = new JFileChooser();
+        chooser.showSaveDialog(null);
         
+        // Use a File class object to work with as well
         
+        File file = chooser.getSelectedFile();
+                
+        // Check the file
         
-        
+        if (file == null) {
+            // Means the user hit a cancel or similar
+            System.out.println("Please name a file");
+        }
+        else {
+            if (!file.exists()) {
+                // The file does not exist so we create it
+                try {
+                    FileWriter  writer  = new FileWriter(file);
+                    PrintWriter printer = new PrintWriter(writer);                    
+                    for (String line : poem) {
+                        // Read as "for every line in poem"
+                        // could have used 
+                        // "for (int i = 0; i < poem.length; i++) "                        
+                        printer.println(line);
+                    }
+                    printer.close();                    
+                }
+                catch (IOException e) {
+                    System.out.println("Error");
+                }                
+            }
+            else {
+                // The file already does exit!
+                System.out.println("File already Exits!");
+            }
+        }
         
         
         
