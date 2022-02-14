@@ -105,7 +105,7 @@ public class PermanentStorageTest
             
             printer.print(word);        // Call class method to write to file..
             
-            // Sever (close) the coonection to the file........................
+            // Sever (close) the connection to the file........................
             Simulator.comment("Sever (close) the coonection to the file");
             
             printer.close();                                // Close connection            
@@ -139,7 +139,7 @@ public class PermanentStorageTest
         JFileChooser chooser = new JFileChooser();
         chooser.showSaveDialog(null);           // Showing a dialog to user....
         
-        // We will aslo use a File class object to work with as well...........
+        // We will also use a File class object to work with as well...........
         Simulator.comment("We will aslo use a File class object to work with");
         Simulator.comment("as well");
         
