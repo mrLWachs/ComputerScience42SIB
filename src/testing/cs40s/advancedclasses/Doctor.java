@@ -1,6 +1,9 @@
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
+/** Required imports */
+import java.io.Serializable;
+
  
 /**
  * Doctor.java - represents a Doctor Person
@@ -8,7 +11,7 @@ package testing.cs40s.advancedclasses;
  * @author Mr. Wachs
  * @since Feb. 9, 2022, 8:01:03 a.m.
  */
-public class Doctor extends Person
+public class Doctor extends Person implements Serializable
 {
 
     /**

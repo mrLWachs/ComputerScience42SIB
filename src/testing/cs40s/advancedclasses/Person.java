@@ -4,6 +4,7 @@ package testing.cs40s.advancedclasses;
 
 /** Required imports */
 import io.System;
+import java.io.Serializable;
 
 /** 
  * Person.java - represents a person. This is a class with properties (things
@@ -14,7 +15,7 @@ import io.System;
  * @author Mr. Wachs 
  * @since Feb. 9, 2022, 8:01:03 a.m.
 */
-public class Person 
+public class Person implements Serializable
 {
 
     // Properties: (things about it, adjectives, descriptors).............
