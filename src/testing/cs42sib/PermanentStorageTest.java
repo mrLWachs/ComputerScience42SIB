@@ -218,6 +218,7 @@ public class PermanentStorageTest
         System.out.println("Before: " + doctors.toString());
         System.out.println("After : " + newDoctors.toString());
         
+        
         Simulator.header("Permanent Storage Test completed!");
     }   
 
