@@ -219,7 +219,6 @@ public class PermanentStorageTest
         System.out.println("After : " + newDoctors.toString());
         
         // End of file handling................................................
-        // End of file handling...............................................
         Simulator.header("Permanent Storage Test completed!");
     }   
 
