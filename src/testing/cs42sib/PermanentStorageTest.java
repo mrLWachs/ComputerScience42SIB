@@ -213,8 +213,8 @@ public class PermanentStorageTest
         
         // Save the list to the file, open the list, and compare...............        
         fileHandler.saveObject(doctors, file);
-        LinkedList<Doctor> newDoctors = 
-                (LinkedList<Doctor>)fileHandler.openObject(file);        
+        LinkedList<Doctor> newDoctors;
+        newDoctors = (LinkedList<Doctor>)fileHandler.openObject(file);        
         System.out.println("Before: " + doctors.toString());
         System.out.println("After : " + newDoctors.toString());
         
