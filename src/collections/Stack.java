@@ -3,6 +3,7 @@ package collections;
 
 /** Required imports */
 import java.io.Serializable;
+import java.lang.reflect.Array;
 
  
 /**
@@ -122,7 +123,6 @@ public class Stack <T> implements Serializable
     /**
      * Returns an array that contains the same data as the list
      * 
-     * @param array the data type array
      * @return an array of generic type T
      */
     public T[] toArray() {
