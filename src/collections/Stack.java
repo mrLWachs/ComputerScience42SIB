@@ -145,8 +145,7 @@ public class Stack <T> implements Serializable
      * 
      * @return an array of generic type T
      */
-    public T[] toArray() {
-        T[] array = null;                               // Start with array
+    public T[] toArray(T[] array) {
         array = (T[])(Array.newInstance(
                 array.getClass().getComponentType(), 
                 length));                               // Create generic array 
