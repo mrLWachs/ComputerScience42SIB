@@ -173,7 +173,11 @@ public class Stack <T> implements Serializable
      * @param linkedList the LinkedList to set the stack to
      */
     public Stack(LinkedList<T> linkedList) {
-        
+        finalize();
+        for (int i = linkedList.size()-1; i >= 0; i--) {
+            T data = (T)linkedList.get(i);
+            push(data);
+        }
     }
     
     /**
@@ -182,7 +186,11 @@ public class Stack <T> implements Serializable
      * @param array the array to set the stack to
      */
     public Stack(T[] array) {
-        
+        finalize();
+        for (int i = array.length-1; i >= 0; i--) {
+            T data = (T)array[i];
+            push(data);
+        }
     }
     
     /**
@@ -201,7 +209,16 @@ public class Stack <T> implements Serializable
      */
     @Override
     public String toString() {
-        return "Stack: " + super.toString();
+        if (isEmpty()) return "Empty Stack";            // Empty Stack
+        else {                                          // Existing stack
+            String text = "Stack top  -> [";            // String variable
+            Node current = top;                         // Start at top
+            while (current.next != null) {              // Loop through stack
+                text += current.toString() + ",";       // Add to string
+                current = current.next;                 // Move to next node
+            }            
+            return text + current.toString() + "] <- bottom";   // Return string
+        }
     }
    
     /**
@@ -212,7 +229,21 @@ public class Stack <T> implements Serializable
      */
     @Override
     public boolean equals(Object object) {
-        return super.equals(object);
+        if (!(object instanceof Stack)) return false;   // Check object type
+        try {                                           // Error trap
+            Stack stack1 = ((Stack)object).clone();     // Clone/cast parameter
+            Stack stack2 = this.clone();                // Clone this stack
+            if (stack1.size() != stack2.size()) return false;   // Not same size
+            while (!stack2.isEmpty()) {                 // Traverse stacks
+                T data1 = (T)stack1.pop();              // Retrieve data
+                T data2 = (T)stack2.pop();
+                if (!data1.equals(data2)) return false; // Compare data
+            }
+            return true;                                // All tests passed
+        }
+        catch (ClassCastException | NullPointerException e) {
+            return false;                               // Cannot cast, or null
+        }
     }
        
     /**
@@ -222,7 +253,19 @@ public class Stack <T> implements Serializable
      */
     @Override
     public Stack clone() {
-        return this;
+        Stack<T> that = new Stack<>();                  // New empty stack
+        Node current = this.top;                        // Start at top node
+        while (current != null) {                       // Traverse stack
+            T data = (T)current.data;                   // Get data (from this)
+            that.push(data);                            // Push onto that stack
+            current = current.next;                     // Move to next node
+        }                
+        Stack<T> copy = new Stack<>();                  // Second new stack
+        while (!that.isEmpty()) {                       // Traverse first stack
+            T data = (T)that.pop();                     // Get data
+            copy.push(data);                            // Push onto 2nd stack
+        }        
+        return copy;                                    // Return clone
     }
     
 }
