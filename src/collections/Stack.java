@@ -3,7 +3,6 @@ package collections;
 
 /** Required imports */
 import java.io.Serializable;
-import java.lang.reflect.Array;
 
  
 /**
@@ -57,7 +56,7 @@ public class Stack <T> implements Serializable
      * @return the length of the stack
      */
     public int size() {
-        return 0;
+        return length;
     }
     
     /**
@@ -66,7 +65,7 @@ public class Stack <T> implements Serializable
      * @return empty stack (true) or not (false)
      */
     public boolean isEmpty() {
-        return false;
+        return length == 0; 
     }
     
     /**
@@ -76,7 +75,12 @@ public class Stack <T> implements Serializable
      * @return operation was successful (true) or not (false)
      */
     public boolean push(T item) {
-        return false;
+        if (item == null) return false;     // Method is over (error check)        
+        Node node = new Node(item);         // Create (instantiate) node object
+        if (!isEmpty()) node.next = top;    // Adding not the first node
+        top = node;                         // Set the top entry point 
+        length++;                           // Track an increase in the length
+        return true;                        // Operation successfull
     }
     
     /**
@@ -86,7 +90,14 @@ public class Stack <T> implements Serializable
      * @return the data from the top of the stack
      */
     public T pop() {
-        return null;
+        if (isEmpty()) return null;     // Error check, no nodes in stack
+        else {
+            length--;                   // Reduce the length
+            T data = (T) top.data;      // Temporarily store the data
+            top = top.next;             // Adjust the top reference
+            System.gc();                // Remove garbage memory
+            return data;                // Temporary data returned
+        }
     }
     
     /**
@@ -96,7 +107,8 @@ public class Stack <T> implements Serializable
      * @return the data on the top
      */
     public T peek() {
-        return null;
+        if (isEmpty()) return null;                     // No nodes in stack
+        return (T)top.data;                             // Return top data  
     }
     
     /**
