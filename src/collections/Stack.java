@@ -3,6 +3,7 @@ package collections;
 
 /** Required imports */
 import java.io.Serializable;
+import java.lang.reflect.Array;
 
  
 /**
@@ -129,7 +130,14 @@ public class Stack <T> implements Serializable
      * @return the Stack as a ADT LinkedList
      */
     public LinkedList<T> toLinkedList() {
-        return null;
+        LinkedList<T> list = new LinkedList<>();
+        Node current = top;
+        while (current != null) {
+            T data = (T)current.data;
+            list.add(data);
+            current = current.next;
+        }        
+        return list;
     }
     
     /**
@@ -138,7 +146,16 @@ public class Stack <T> implements Serializable
      * @return an array of generic type T
      */
     public T[] toArray() {
-        return null;
+        T[] array = null;                               // Start with array
+        array = (T[])(Array.newInstance(
+                array.getClass().getComponentType(), 
+                length));                               // Create generic array 
+        Node current = top;                             // Start at top node 
+        for (int i = 0; i < length; i++) {              // Traverse array
+            array[i] = (T)current.data;                 // Retrieve data
+            current = current.next;                     // Move to next node
+        }
+        return array;                                   // Return filled array
     }
     
     /**
