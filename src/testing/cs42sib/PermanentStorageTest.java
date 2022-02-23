@@ -7,13 +7,14 @@ import collections.LinkedList;
 import io.Dialogs;
 import io.FileHandler;
 import io.Simulator;
+import io.JFileChooser;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.swing.JFileChooser;
+//import javax.swing.JFileChooser;
 import testing.cs40s.advancedclasses.Doctor;
 import tools.Text;
 
@@ -98,7 +99,7 @@ public class PermanentStorageTest
         // name = JOptionPane.showInputDialog("Enter name");
         
         // Or we could build a GUI and use a textbox, but instead, we will use 
-        // something new that is already built for this........................        
+        // something new that is already built for this........................ 
         JFileChooser chooser = new JFileChooser();
         chooser.showSaveDialog(null);           // Showing a dialog to user....
         
@@ -173,9 +174,9 @@ public class PermanentStorageTest
         // Now with the array of data, we create a save dialog (using another 
         // class available to you).............................................        
         Dialogs dialog = new Dialogs();
-        file = dialog.saveFile(null);
+//        file = dialog.saveFile(null);
         fileHandler.save(poem, file);
-        file = dialog.openFile(null);
+//        file = dialog.openFile(null);
         String[] newPoem = fileHandler.openArray(file);
         
         // Compare the before and after (and use another class "tool" to help).        
