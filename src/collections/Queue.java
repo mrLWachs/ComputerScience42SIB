@@ -29,12 +29,22 @@ import java.io.Serializable;
  */
 public class Queue <T> implements Serializable
 {
+    
+    /** Node reference to the first node in the queue */
+    private Node head;
+    
+    /** Node reference to the last node in the queue */
+    private Node tail;    
+    
+    /** The number of nodes in the stack */
+    private int length;
+    
 
     /**
      * Default constructor, set class properties
      */
     public Queue() {
-        
+        finalize();
     }     
     
     /**
@@ -42,7 +52,9 @@ public class Queue <T> implements Serializable
      */
     @Override
     public final void finalize() {
-        
+        length = 0;                                 // The length set to zero
+        head = tail = null;                         // References set to null
+        System.gc();                                // Garbage collector called
     }
    
     /**
@@ -51,7 +63,7 @@ public class Queue <T> implements Serializable
      * @return empty stack (true) or not (false)
      */
     public boolean isEmpty() {
-        return false;
+        return length == 0;
     }
     
     /**
@@ -60,7 +72,7 @@ public class Queue <T> implements Serializable
      * @return the length of the stack
      */
     public int size() {
-        return 0;
+        return length;
     }
         
     /**
@@ -70,7 +82,16 @@ public class Queue <T> implements Serializable
      * @return the operation was successful (true) or not (false)
      */
     public boolean enqueue(T data) {
-        return false;
+        if (data == null) return false;                 // Empty queue
+        Node node = new Node<T>(data);                  // Create node
+        if (isEmpty()) head = tail = node;              // Add first node
+        else {                                          // Add subsequent nodes
+            node.next = head;                           // Adjust references
+            head.previous = node;
+            head = node;
+        }
+        length++;                                       // Increase length
+        return true;                                    // Operation successful
     }
     
     /**
