@@ -100,7 +100,19 @@ public class Queue <T> implements Serializable
      * @return the generic data in the queue
      */
     public T dequeue() {
-        return null;
+        if (isEmpty()) return null;                     // No nodes in queue
+        else {                                          // Queue has some nodes
+            length--;                                   // Reduce length
+            T data = (T)tail.data;                      // Store data
+            if (head == tail) finalize();               // Single node, wipe all
+            else {                                      // Multi node queue
+                tail = tail.previous;                   // Adjust references
+                tail.next.previous = null;
+                tail.next = null;
+                System.gc();                            // Clean up memory
+            }
+            return data;                                // Data returned
+        }
     }
     
     /**
