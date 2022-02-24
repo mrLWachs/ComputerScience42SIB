@@ -195,7 +195,16 @@ public class Queue <T> implements Serializable
      */
     @Override
     public String toString() {
-        return null;
+        if (isEmpty()) return "Empty Queue";            // No nodes to display
+        else {
+            String text = "Queue back -> [";            // Starting character
+            Node current = head;                        // Start at top node
+            while (current.next != null) {              // Traverse stack
+                text += current.toString() + ",";       // Append data
+                current = current.next;                 // Move to next node
+            }            
+            return text + current.toString() + "] <- front"; // Append end 
+        }
     }
     
     /**
