@@ -100,22 +100,22 @@ public class StacksQueuesTest
         System.out.println("From List \t" + stackFromList);
         
         
-//        // Now we look at Queues...............................................
-//        Queue queue = new Queue();          // Instantiate queue object
-//        
-//        // Test toString,size,isEmpty, and enqueue methods.....................
-//        System.out.println("Empty = "  + queue.isEmpty() +
-//                           "\tSize = " + queue.size() +
-//                           "\t"        + queue.toString());    // Output data
-//        
-//        // Loop through adding random values...................................       
-//        for (int i = 0; i < MAX; i++) {                         // Traverse            
-//            String word = text.randomWord(WORD_SIZE);           // Random word
-//            queue.enqueue(word);                                // Add to queue
-//            System.out.println("Empty = "  + queue.isEmpty() +
-//                               "\tSize = " + queue.size() +
-//                               "\t"        + queue.toString()); // Output data
-//        }
+        // Now we look at Queues...............................................
+        Queue queue = new Queue();          // Instantiate queue object
+        
+        // Test toString,size,isEmpty, and enqueue methods.....................
+        System.out.println("Empty = "  + queue.isEmpty() +
+                           "\tSize = " + queue.size() +
+                           "\t"        + queue.toString());    // Output data
+        
+        // Loop through adding random values...................................       
+        for (int i = 0; i < MAX; i++) {                         // Traverse            
+            String word = text.randomWord(WORD_SIZE);           // Random word
+            queue.enqueue(word);                                // Add to queue
+            System.out.println("Empty = "  + queue.isEmpty() +
+                               "\tSize = " + queue.size() +
+                               "\t"        + queue.toString()); // Output data
+        }
 //        
 //        // Test clone method...................................................
 //        Queue duplicate = queue.clone();                            // Clone
