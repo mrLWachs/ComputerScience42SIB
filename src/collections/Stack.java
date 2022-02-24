@@ -130,14 +130,14 @@ public class Stack <T> implements Serializable
      * @return the Stack as a ADT LinkedList
      */
     public LinkedList<T> toLinkedList() {
-        LinkedList<T> list = new LinkedList<>();
-        Node current = top;
-        while (current != null) {
-            T data = (T)current.data;
-            list.add(data);
-            current = current.next;
+        LinkedList<T> list = new LinkedList<>();    // Create a list
+        Node current = top;                         // Start a reference to top
+        while (current != null) {                   // Traverse stack
+            T data = (T)current.data;               // Retrieve current data
+            list.add(data);                         // Add to the list
+            current = current.next;                 // Move to the next node
         }        
-        return list;
+        return list;                                // Return filled list
     }
     
     /**
@@ -172,10 +172,10 @@ public class Stack <T> implements Serializable
      * @param linkedList the LinkedList to set the stack to
      */
     public Stack(LinkedList<T> linkedList) {
-        finalize();
-        for (int i = linkedList.size()-1; i >= 0; i--) {
-            T data = (T)linkedList.get(i);
-            push(data);
+        finalize();                                         // Wipe any content
+        for (int i = linkedList.size()-1; i >= 0; i--) {    // Reverse traverse
+            T data = (T)linkedList.get(i);                  // Get data
+            push(data);                                     // Add to stack
         }
     }
     
@@ -185,10 +185,10 @@ public class Stack <T> implements Serializable
      * @param array the array to set the stack to
      */
     public Stack(T[] array) {
-        finalize();
-        for (int i = array.length-1; i >= 0; i--) {
-            T data = (T)array[i];
-            push(data);
+        finalize();                                         // Wipe any content
+        for (int i = array.length-1; i >= 0; i--) {         // Reverse traverse
+            T data = (T)array[i];                           // Get data
+            push(data);                                     // Add to stack
         }
     }
     
