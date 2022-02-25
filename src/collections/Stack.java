@@ -163,7 +163,7 @@ public class Stack <T> implements Serializable
      * @return the Stack as a ADT Queue
      */
     public Queue<T> toQueue() {
-        return null;
+        return new Queue(this);
     }
     
     /**
@@ -198,7 +198,7 @@ public class Stack <T> implements Serializable
      * @param queue the queue to set the stack to
      */
     public Stack(Queue<T> queue) {
-        
+        this(queue.toLinkedList());
     }
      
     /**
