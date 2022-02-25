@@ -4,6 +4,7 @@ package collections;
 
 /** Required imports */
 import java.io.Serializable;
+import java.lang.reflect.Array;
 
 
 /**
@@ -121,7 +122,8 @@ public class Queue <T> implements Serializable
      * @return the data at the front
      */
     public T front() {
-        return null;
+        if (isEmpty()) return null;                     // No nodes in queue
+        return (T)tail.data;                            // Return data
     }
     
     /**
@@ -130,7 +132,8 @@ public class Queue <T> implements Serializable
      * @return the data at the back
      */
     public T back() {
-        return null;
+        if (isEmpty()) return null;                     // No nodes in queue
+        return (T)head.data;                            // Return data
     }
         
     /**
@@ -139,7 +142,14 @@ public class Queue <T> implements Serializable
      * @return the Stack as a ADT LinkedList
      */
     public LinkedList<T> toLinkedList() {
-        return null;
+        LinkedList<T> list = new LinkedList<>();    // Create a list
+        Node current = head;                        // Start a reference to head
+        while (current != null) {                   // Traverse stack
+            T data = (T)current.data;               // Retrieve current data
+            list.add(data);                         // Add to the list
+            current = current.next;                 // Move to the next node
+        }        
+        return list;                                // Return filled list
     }
     
     /**
@@ -149,7 +159,15 @@ public class Queue <T> implements Serializable
      * @return an array of generic type T
      */
     public T[] toArray(T[] array) {
-        return null;
+        array = (T[])(Array.newInstance(
+                array.getClass().getComponentType(), 
+                length));                               // Create generic array 
+        Node current = head;                            // Start at head node 
+        for (int i = 0; i < length; i++) {              // Traverse array
+            array[i] = (T)current.data;                 // Retrieve data
+            current = current.next;                     // Move to next node
+        }
+        return array;                                   // Return filled array
     }
     
     /**
@@ -158,7 +176,7 @@ public class Queue <T> implements Serializable
      * @return the queue as a ADT stack
      */
     public Stack toStack() {
-        return null;
+        return new Stack(this);
     }
         
     /**
