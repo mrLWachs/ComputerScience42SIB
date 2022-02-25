@@ -116,69 +116,69 @@ public class StacksQueuesTest
                                "\tSize = " + queue.size() +
                                "\t"        + queue.toString()); // Output data
         }
-//        
-//        // Test clone method...................................................
-//        Queue duplicate = queue.clone();                            // Clone
-//        System.out.println("Clone Queue \t\t\t" + duplicate.toString());
-//        
-//        // Test equals method..................................................
-//        if (queue.equals(duplicate)) 
-//            System.out.println(queue + "\n==\n" + duplicate);
-//        else                    
-//            System.out.println(queue + "\n!=\n" + duplicate);    
-//        
-//        // Now change the duplicate............................................
-//        duplicate.finalize();                            // Wipe out queue
-//        duplicate.enqueue(text.randomWord(WORD_SIZE));   // Add random word
-//        
-//        // Now check again.....................................................
-//        if (duplicate.equals(duplicate)) 
-//            System.out.println(queue + "\n==\n" + duplicate);
-//        else                    
-//            System.out.println(queue + "\n!=\n" + duplicate);
-//        
-//        // Re-clone the queue, and output......................................
-//        duplicate = queue.clone();                                  // Clone
-//        System.out.println(duplicate.toString());                   // Output
-//        
-//        // Test the dequeue method.............................................
-//        System.out.println("Clone queue:" + 
-//                           "\tEmpty = " + duplicate.isEmpty() +
-//                           "\tSize = "  + duplicate.size() +
-//                           "\t"         + duplicate.toString()); // Output data
-//        
-//        // Loop through removing values........................................
-//        for (int i = 0; i < MAX+1; i++) {                        // Traverse
-//            System.out.println("Dequeued -> " + duplicate.dequeue()+ 
-//                               "\tEmpty = " + duplicate.isEmpty() +
-//                               "\tSize = "  + duplicate.size() +
-//                               "\t"         + duplicate.toString()); // Output
-//        }
-//        
-//        // Test front and back.................................................
-//        System.out.println("Clone Front = " + duplicate.front());   // Fronts
-//        System.out.println("Queue Front = " + queue.front());
-//        System.out.println("Clone Back  = " + duplicate.back());    // Backs
-//        System.out.println("Queue Back  = " + queue.back());
-//                
-//        // Test to array and to linked list....................................
-//        list = queue.toLinkedList();                // Convert to list
-//        array = new String[1];                      // Re-dimension array
-//        array = (String[])queue.toArray(array);     // Convert to Array
-//        System.out.println("List from Queue  \t" + list);       // Output both
-//        System.out.println("Array from Queue \t\t\t" + text.toString(array));
-//        
-//        // Test our constructors...............................................
-//        Queue queueFromArray = new Queue(array);        // Construct from array
-//        Queue queueFromList  = new Queue(list);         // Construct from list 
-//        System.out.println("From Array\t" + queueFromArray);    // Output both
-//        System.out.println("From List \t" + queueFromList);
-//        
-//        // Test constructors from stack to queue (and back)....................
-//        Stack fromQueueStack = new Stack(queue);
-//        Queue fromStackQueue = new Queue(fromQueueStack);
-//        System.out.println(queue          + "\t into \t" + fromQueueStack);
-//        System.out.println(fromQueueStack + "\t into \t" + fromStackQueue);
+        
+        // Test clone method...................................................
+        Queue duplicate = queue.clone();                            // Clone
+        System.out.println("Clone Queue \t\t\t" + duplicate.toString());
+        
+        // Test equals method..................................................
+        if (queue.equals(duplicate)) 
+            System.out.println(queue + "\n==\n" + duplicate);
+        else                    
+            System.out.println(queue + "\n!=\n" + duplicate);    
+        
+        // Now change the duplicate............................................
+        duplicate.finalize();                            // Wipe out queue
+        duplicate.enqueue(text.randomWord(WORD_SIZE));   // Add random word
+        
+        // Now check again.....................................................
+        if (duplicate.equals(duplicate)) 
+            System.out.println(queue + "\n==\n" + duplicate);
+        else                    
+            System.out.println(queue + "\n!=\n" + duplicate);
+        
+        // Re-clone the queue, and output......................................
+        duplicate = queue.clone();                                  // Clone
+        System.out.println(duplicate.toString());                   // Output
+        
+        // Test the dequeue method.............................................
+        System.out.println("Clone queue:" + 
+                           "\tEmpty = " + duplicate.isEmpty() +
+                           "\tSize = "  + duplicate.size() +
+                           "\t"         + duplicate.toString()); // Output data
+        
+        // Loop through removing values........................................
+        for (int i = 0; i < MAX+1; i++) {                        // Traverse
+            System.out.println("Dequeued -> " + duplicate.dequeue()+ 
+                               "\tEmpty = " + duplicate.isEmpty() +
+                               "\tSize = "  + duplicate.size() +
+                               "\t"         + duplicate.toString()); // Output
+        }
+        
+        // Test front and back.................................................
+        System.out.println("Clone Front = " + duplicate.front());   // Fronts
+        System.out.println("Queue Front = " + queue.front());
+        System.out.println("Clone Back  = " + duplicate.back());    // Backs
+        System.out.println("Queue Back  = " + queue.back());
+                
+        // Test to array and to linked list....................................
+        list = queue.toLinkedList();                // Convert to list
+        array = new String[1];                      // Re-dimension array
+        array = (String[])queue.toArray(array);     // Convert to Array
+        System.out.println("List from Queue  \t" + list);       // Output both
+        System.out.println("Array from Queue \t\t\t" + text.toString(array));
+        
+        // Test our constructors...............................................
+        Queue queueFromArray = new Queue(array);        // Construct from array
+        Queue queueFromList  = new Queue(list);         // Construct from list 
+        System.out.println("From Array\t" + queueFromArray);    // Output both
+        System.out.println("From List \t" + queueFromList);
+        
+        // Test constructors from stack to queue (and back)....................
+        Stack fromQueueStack = new Stack(queue);
+        Queue fromStackQueue = new Queue(fromQueueStack);
+        System.out.println(queue          + "\t into \t" + fromQueueStack);
+        System.out.println(fromQueueStack + "\t into \t" + fromStackQueue);
         
         Simulator.header("Stacks and Queues Test completed!");
     }   

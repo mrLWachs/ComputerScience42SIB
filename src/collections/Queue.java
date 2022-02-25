@@ -182,10 +182,14 @@ public class Queue <T> implements Serializable
     /**
      * Constructor sets class data to the parameter 
      * 
-     * @param list the LinkedList to set the queue to
+     * @param linkedList the LinkedList to set the queue to
      */
-    public Queue(LinkedList<T> list) {
-        
+    public Queue(LinkedList<T> linkedList) {
+        finalize();                                         // Wipe any content
+        for (int i = linkedList.size()-1; i >= 0; i--) {    // Reverse traverse
+            T data = (T)linkedList.get(i);                  // Get data
+            enqueue(data);                                  // Add to queue
+        }
     }
     
     /**
@@ -194,7 +198,11 @@ public class Queue <T> implements Serializable
      * @param array the array to set the stack to
      */
     public Queue(T[] array) {
-        
+        finalize();                                         // Wipe any content
+        for (int i = array.length-1; i >= 0; i--) {         // Reverse traverse
+            T data = (T)array[i];                           // Get data
+            enqueue(data);                                  // Add to queue
+        }
     }
     
     /**
@@ -203,7 +211,7 @@ public class Queue <T> implements Serializable
      * @param stack the stack to set the queue to
      */
     public Queue(Stack stack) {
-        
+        this(stack.toLinkedList());
     }
 
     /**
@@ -233,7 +241,21 @@ public class Queue <T> implements Serializable
      */
     @Override
     public boolean equals(Object object) {
-        return false;
+        if (!(object instanceof Queue)) return false;   // Check object type
+        try {                                           // Error trap
+            Queue<T> q1 = this.clone();                 // Clone this queue
+            Queue<T> q2 = ((Queue<T>)object).clone();   // Clone/cast parameter
+            if (q1.size() != q2.size()) return false;   // Queues not same size          
+            while (!q1.isEmpty()) {                     // Traverse queues
+                T data1 = (T)q1.dequeue();              // Retrieve data
+                T data2 = (T)q2.dequeue();
+                if (!data1.equals(data2)) return false; // Compare data              
+            }
+            return true;                                // All tests passed
+        }
+        catch (ClassCastException | NullPointerException e) { 
+            return false;                               // Cannot cast, or null
+        }
     }
     
     /**
@@ -243,7 +265,14 @@ public class Queue <T> implements Serializable
      */
     @Override
     public Queue clone() {   
-        return null;                                       // return clone
+        Queue<T> that = new Queue<>();                  // New empty queue
+        Node current = tail;                            // Start at first node
+        while (current != null) {                       // Traverse queue
+            T data = (T)current.data;                   // Get data
+            that.enqueue(data);                         // Enqueue to new queue
+            current = current.previous;                 // Move to next node
+        }        
+        return that;                                    // Return clone
     }
     
 }
