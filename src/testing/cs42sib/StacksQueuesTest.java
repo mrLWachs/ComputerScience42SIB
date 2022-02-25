@@ -27,7 +27,7 @@ public class StacksQueuesTest
         
         // Create objects for testing..........................................        
         final int MAX       = 10;           // Constant for size of our objects
-        final int WORD_SIZE = 3;            // Constant for size of random words
+        final int WORD_SIZE = 5;            // Constant for size of random words
         
         Text text = new Text();             // Create text object for use
         

@@ -4,9 +4,9 @@ package io;
 
 /** Required imports */
 import java.awt.Component;
+import java.awt.Window;
 import java.io.File;
 import javax.swing.Icon;
-import javax.swing.JDialog;
 import javax.swing.JFrame;
 
 
@@ -374,7 +374,7 @@ public class Simulator
      * @param frame the parent component of the dialog
      * @return the file chosen by user
      */
-    public static File showOpenDialog(JDialog frame) {
+    public static File showOpenDialog(Window frame) {
         dialog(frame,null,null,0,0,null,null,null,FILE_CHOOSER_DIALOG);
         return FLAG_FILE;
     }
@@ -385,29 +385,7 @@ public class Simulator
      * @param frame the parent component of the dialog
      * @return the file chosen by user
      */
-    public static File showSaveDialog(JDialog frame) {
-        dialog(frame,null,null,0,0,null,null,null,FILE_CHOOSER_DIALOG);
-        return FLAG_FILE;
-    }
-      
-    /**
-     * Simulates the "Open File" file chooser dialog
-     *
-     * @param frame the parent component of the dialog
-     * @return the file chosen by user
-     */
-    public static File showOpenDialog(JFrame frame) {
-        dialog(frame,null,null,0,0,null,null,null,FILE_CHOOSER_DIALOG);
-        return FLAG_FILE;
-    }
-    
-    /**
-     * Simulates the "Save File" file chooser dialog
-     *
-     * @param frame the parent component of the dialog
-     * @return the file chosen by user
-     */
-    public static File showSaveDialog(JFrame frame) {
+    public static File showSaveDialog(Window frame) {
         dialog(frame,null,null,0,0,null,null,null,FILE_CHOOSER_DIALOG);
         return FLAG_FILE;
     }

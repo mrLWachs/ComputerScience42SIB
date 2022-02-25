@@ -174,9 +174,9 @@ public class PermanentStorageTest
         // Now with the array of data, we create a save dialog (using another 
         // class available to you).............................................        
         Dialogs dialog = new Dialogs();
-//        file = dialog.saveFile(null);
+        file = dialog.saveFile(null);
         fileHandler.save(poem, file);
-//        file = dialog.openFile(null);
+        file = dialog.openFile(null);
         String[] newPoem = fileHandler.openArray(file);
         
         // Compare the before and after (and use another class "tool" to help).        

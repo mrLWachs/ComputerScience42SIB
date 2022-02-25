@@ -3,8 +3,8 @@
 package io;
 
 /** Required imports */
+import java.awt.Window;
 import java.io.File;
-import javax.swing.JFrame;
 
  
 /**
@@ -23,23 +23,30 @@ public class JFileChooser
     public JFileChooser() { }
 
     /**
-     * Re-directs the dialog to custom output
+     * Constructor, set class properties
      * 
-     * @param parent the parent component of the dialog 
+     * @param title the title of this dialog
      */
-    public void showSaveDialog(JFrame parent) {
-        Simulator.showSaveDialog(parent);
-    }
-
+    public JFileChooser(String title) { }
+    
     /**
      * Re-directs the dialog to custom output
      * 
      * @param parent the parent component of the dialog 
      */
-    public void showOpenDialog(JFrame parent) {
-        Simulator.showOpenDialog(parent);
+    public void showSaveDialog(Window parent) {
+        Simulator.showSaveDialog(parent);
     }
     
+    /**
+     * Re-directs the dialog to custom output
+     * 
+     * @param parent the parent component of the dialog 
+     */
+    public void showOpenDialog(Window parent) {
+        Simulator.showOpenDialog(parent);
+    }
+        
     /**
      * Uses a simulated user selected file
      * 
