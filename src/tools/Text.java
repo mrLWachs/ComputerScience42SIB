@@ -171,6 +171,21 @@ public class Text
     }
     
     /**
+     * Generates an array of random words from a dictionary file
+     * 
+     * @param size the size to make the array
+     * @param length the length (in characters) of the word to generate
+     * @return an array of random words
+     */
+    public String[] randomWordSize(int size, int length) {
+        String[] strings = new String[size];    // create empty array 
+        for (int i = 0; i < size; i++) {        // traverse array size
+            strings[i] = randomWord(length);    // assign random value to index
+        }
+        return strings;                         // return completed array
+    }
+    
+    /**
      * Generates a matrix of random characters in the range between low and high
      * 
      * @param rows the number of rows for the matrix
