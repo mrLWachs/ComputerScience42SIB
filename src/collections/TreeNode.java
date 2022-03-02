@@ -25,7 +25,7 @@ import java.io.Serializable;
  * @param <T> the generic data to use in the node
  * @since 28-Feb-2022, 10:14:50 AM
  */
-public class TreeNode <T> implements Serializable
+public class TreeNode <T extends Comparable<T>> implements Serializable
 {
     
      /** 
@@ -107,8 +107,19 @@ public class TreeNode <T> implements Serializable
         return new TreeNode<>(this.data);
     }
     
-    
+    /**
+     * Inserts data (recursively) into the binary tree at its correct position
+     * 
+     * @param data the generic data to insert into the tree
+     * @return the operation was successful (true) or not (false)
+     */
     public boolean insert(T data) {
+        if (data == null) return false;     // Error check
+        // Decide which sub-tree (left or right) the data goes to?
+        
+        
+        
+        
         
         return true;
     }
