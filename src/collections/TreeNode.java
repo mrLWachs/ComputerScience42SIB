@@ -115,12 +115,29 @@ public class TreeNode <T extends Comparable<T>> implements Serializable
      */
     public boolean insert(T data) {
         if (data == null) return false;     // Error check
-        // Decide which sub-tree (left or right) the data goes to?
-        
-        
-        
-        
-        
+        // Decide which sub-tree (left or right) the data goes to?        
+        if (data.compareTo(this.data) < 0) {
+            // Means the data in the tree node comapred to the data paramater,
+            // shows that the parameter data is "less than" the existing tree
+            // node data - means we insert to the left
+            if (this.left == null) {
+                // Means that the current node's left sub-tree doesn't yet 
+                // exist - so we can put a new node here
+                this.left = new TreeNode(data); // Add a node to this spot
+            }
+            else {
+                // Means the left sub-tree exists, recursively repeat the insert
+                this.left.insert(data);
+            }            
+        }
+        else if (data.compareTo(this.data) >= 0) {  // Same operation but right
+            if (this.right == null) {
+                this.right = new TreeNode(data);
+            }
+            else {
+                this.right.insert(data);
+            }            
+        }
         return true;
     }
     
