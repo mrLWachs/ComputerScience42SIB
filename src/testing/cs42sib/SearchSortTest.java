@@ -69,6 +69,13 @@ public class SearchSortTest
         
         System.out.println("array = " + text.toString(array));
         
+        // Loop through our test data
+        for (int item : findItems) {
+            System.out.print("Searching for item: " + item);
+            found = search(array,item);
+            System.out.println(" result was " + found);
+            
+        }
         
         
         
@@ -87,5 +94,38 @@ public class SearchSortTest
                         
         Simulator.header("Searching and Sorting Test completed!");
     }   
+
+    /**
+     * A simple search, determines if the the item is in the array or not
+     * 
+     * @param array the array to search through
+     * @param item the item to search for
+     * @return found (true) or not (false)
+     */
+    private boolean search(int[] array, int item) {
+        // Travese (travel through) every index inthe array
+        for (int i = 0; i < array.length; i++) {
+            // Check if this index value matches the item
+            if (array[i] == item) {
+                // End the method here
+                return true;
+            }
+        }
+        // Traversed the entire array without finding it
+        return false;
+    }
+    
+    /**
+     * An implementation of a linear search (sequential search) algorithm. It 
+     * will find the first occurance of an item in the array and return the
+     * index where it found it, or a -1 if not found
+     * 
+     * @param array an array to search through
+     * @param item the item to search for
+     * @return the first index found at, or a -1 if not found
+     */
+    private int linearSearch(int[] array, int item) {
+        
+    }
     
 }
