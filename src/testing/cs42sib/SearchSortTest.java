@@ -159,13 +159,15 @@ public class SearchSortTest
                // Check if we need need to swap (is the item at this spot, 
                // greater than the item at the next spot)
                if (a[j] > a[j+1]) {
-                    // Swap them (by making a temppoary variable)
+                    // Swap them (by making a temporary variable)
                     int swap = a[j];
                     a[j]     = a[j+1];
                     a[j+1]   = swap;
                }               
             }
         }
+        // Send back the duplicate (which is now a sorted version of the 
+        // original)
         return a;
     }
     
