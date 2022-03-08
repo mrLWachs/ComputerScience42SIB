@@ -125,7 +125,19 @@ public class SearchSortTest
      * @return the first index found at, or a -1 if not found
      */
     private int linearSearch(int[] array, int item) {
-        
+        // Catch a potential error before we begin
+        if (array == null) return -1;
+        // Traverse the array
+        for (int i = 0; i < array.length; i++) {
+            // Check if this index value matches the item
+            if (array[i] == item) {
+                // Return the spot I found it at (and stop loop and method)
+                return i;
+            }
+        }
+        // Make it through the entire list, never find it, return
+        // a "flag" value indicating not found
+        return -1;
     }
     
 }
