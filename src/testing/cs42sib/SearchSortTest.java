@@ -65,22 +65,22 @@ public class SearchSortTest
         int     index  = -1;
         int[]   sorted = new int[MAX];
         
-        // SEARCH 1 - The "linear" search: 
-        
+        // SEARCH 1 - The "linear" search:         
         System.out.println("array = " + text.toString(array));
         
         // Loop through our test data
         for (int item : findItems) {
             System.out.print("Searching for item: " + item);
             found = search(array,item);
-            System.out.println(" result was " + found);
-            
+            System.out.print(" result was " + found);
+            index = linearSearch(array, item);
+            System.out.println(" at " + index);
         }
         
-        
-        
-        
-        
+        // SORT 1 - The "Bubble" sort:
+        System.out.println("array before = \t" + text.toString(array));        
+        sorted = sort(array);
+        System.out.println("array after = \t" + text.toString(sorted));
         
         
         
@@ -138,6 +138,35 @@ public class SearchSortTest
         // Make it through the entire list, never find it, return
         // a "flag" value indicating not found
         return -1;
+    }
+
+    /**
+     * A simple sort (actually the "bubble sort") will sort the array into
+     * ascending order
+     * 
+     * @param array the array of items to sort
+     * @return another array of sorted items
+     */
+    private int[] sort(int[] array) {
+        // Copying the original into a duplicate, then sort and return
+        // the duplicate (that way the original stays intact)
+        int[] a = array.clone();
+        // Traverse the array for the worse case scenario
+        for (int i = 0; i < a.length; i++) {
+            // Traverse the array (to the second last index) and make swaps 
+            // as needed
+            for (int j = 0; j < a.length - 1; j++) {
+               // Check if we need need to swap (is the item at this spot, 
+               // greater than the item at the next spot)
+               if (a[j] > a[j+1]) {
+                    // Swap them (by making a temppoary variable)
+                    int swap = a[j];
+                    a[j]     = a[j+1];
+                    a[j+1]   = swap;
+               }               
+            }
+        }
+        return a;
     }
     
 }
