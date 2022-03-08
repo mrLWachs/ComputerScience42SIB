@@ -5,6 +5,7 @@ package testing.cs42sib;
 /** Required imports */
 import io.Simulator;
 import tools.Numbers;
+import tools.Text;
 
 /**
  * SearchSortTest.java - tests the concepts learned in this unit
@@ -31,6 +32,8 @@ public class SearchSortTest
         
         // For creating random numbers, arrays and LinkedLists.................
         Numbers numbers = new Numbers();
+        // For displaying arrays as text
+        Text text = new Text();
         
         // Some constants for defining the "edges".............................
         final int MIN      = 0;
@@ -64,8 +67,7 @@ public class SearchSortTest
         
         // SEARCH 1 - The "linear" search: 
         
-        
-        
+        System.out.println("array = " + text.toString(array));
         
         
         
