@@ -92,11 +92,11 @@ public class SearchSortTest
         System.out.println("array after Selection sort = \t" + text.toString(sorted));
         
         // SEARCH 2 - The "Binary" search......................................      
-        System.out.println("array = " + text.toString(array));
+        System.out.println("array = " + text.toString(sorted));
         
         // Loop through our test data..........................................
         for (int item : findItems) {
-            index = binarySearch(array, item);
+            index = binarySearch(sorted, item);
             System.out.println("Searching result for item " + item +
                     "\t result was at index \t" + index);
         }
