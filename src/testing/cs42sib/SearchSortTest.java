@@ -3,8 +3,11 @@
 package testing.cs42sib;
 
 /** Required imports */
+import collections.LinkedList;
 import io.Simulator;
 import tools.Numbers;
+import tools.Search;
+import tools.Sort;
 import tools.Text;
 
 /**
@@ -66,11 +69,11 @@ public class SearchSortTest
         int[]   sorted = new int[MAX];
         
         // SEARCH 1 - The "linear" search......................................      
-        System.out.println("array = " + text.toString(array));
+        System.out.println("Array = " + text.toString(array));
         
         // Loop through our test data..........................................
         for (int item : findItems) {
-            System.out.print("Searching for item: \t" + item);
+            System.out.print("Linear Search for item: \t" + item);
             found = search(array,item);
             System.out.print("\t result was " + found);
             index = linearSearch(array, item);
@@ -78,34 +81,119 @@ public class SearchSortTest
         }
         
         // SORT 1 - The "Bubble" sort..........................................
-        System.out.println("array before sort = \t" + text.toString(array));        
+        System.out.println("Before sort = \t" + text.toString(array));        
         sorted = sort(array);
-        System.out.println("array after sort = \t" + text.toString(sorted));
+        System.out.println("After sort = \t" + text.toString(sorted));
         
-        System.out.println("array before Bubble sort = \t" + text.toString(array));        
+        System.out.println("Before Bubble sort = \t" + text.toString(array));        
         sorted = bubbleSort(array);
-        System.out.println("array after Bubble sort = \t" + text.toString(sorted));
+        System.out.println("After Bubble sort = \t" + text.toString(sorted));
         
         // SORT 2 - The "Selection" sort.......................................
-        System.out.println("array before Selection sort = \t" + text.toString(array));        
+        System.out.println("Before Selection sort = \t" + text.toString(array));        
         sorted = selectionSort(array);
-        System.out.println("array after Selection sort = \t" + text.toString(sorted));
+        System.out.println("After Selection sort = \t" + text.toString(sorted));
         
         // SEARCH 2 - The "Binary" search......................................      
-        System.out.println("array = " + text.toString(sorted));
+        System.out.println("Array = " + text.toString(sorted));
+        
+        // Redo some of the test data..........................................        
+        findItems[1] = sorted[numbers.random(MIN+1, MAX-2)];
+        findItems[2] = sorted[0];
+        findItems[3] = sorted[MAX-1];
         
         // Loop through our test data..........................................
         for (int item : findItems) {
             index = binarySearch(sorted, item);
-            System.out.println("Searching result for item " + item +
+            System.out.println("Binary search result for item " + item +
                     "\t result was at index \t" + index);
         }
         
+        // Now using the "Search" and "Sort" classes which are in the "tools"
+        // package. They have methods that can work on "anything" as they
+        // use the generic data type. They also work on Linked List objects
+        // as well as arrays. The Search class also includes some other search
+        // algorithms not needed (but might come up in your futures)
         
+        Search search = new Search();
+        Sort   sort   = new Sort();
         
+        // Create random linked list data (include all edge cases to test).....        
+        LinkedList<String> unsortedWords = text.randomList(MAX, 5);
+        LinkedList<String> sortedWords   = new LinkedList<>();
         
+        // Place all test cases into another linked list.......................
+        LinkedList<String> testCases = new LinkedList<>();
         
-            
+        // Generate testing data for the list..................................
+        String randomWord = text.randomWord();
+        String inListWord = unsortedWords.get(numbers.random(MIN+1, MAX-2));
+        String firstWord  = unsortedWords.front();
+        String lastWord   = unsortedWords.back();
+        String notWord    = "Wachs";
+                
+        // Add the test data to the test data list.............................
+        testCases.add(randomWord);
+        testCases.add(inListWord);
+        testCases.add(firstWord);
+        testCases.add(lastWord);
+        testCases.add(notWord);
+        
+        // Execute the linear search on all test data..........................        
+        for (int i = 0; i < testCases.size(); i++) {
+            String word = testCases.get(i);
+            index = search.linear(word, unsortedWords);
+            System.out.println("Linear search: \t" + unsortedWords.toString() +
+                               "\t for word: "     + word + " at index: " + 
+                               index);
+        }
+        
+        // Execute all the sorts on all test data..............................
+        
+        // Bubble sort LinkedList data.........................................
+        sortedWords = unsortedWords.clone();
+        sort.bubble(sortedWords);
+        System.out.println("Bubble sort Before: \t" + unsortedWords.toString());
+        System.out.println("Bubble sort After:  \t" + sortedWords.toString());
+                                
+        // Selection sort LinkedList data......................................    
+        sortedWords = unsortedWords.clone();
+        sort.selection(sortedWords);
+        System.out.println("Selection sort Before: \t" + unsortedWords.toString());
+        System.out.println("Selection sort After:  \t" + sortedWords.toString());
+        
+        // Shell sort LinkedList data..........................................     
+        sortedWords = unsortedWords.clone();
+        sort.shell(sortedWords);
+        System.out.println("Shell sort Before: \t" + unsortedWords.toString());
+        System.out.println("Shell sort After:  \t" + sortedWords.toString());
+        
+        // Insertion sort LinkedList data......................................       
+        sortedWords = unsortedWords.clone();
+        sort.insertion(sortedWords);
+        System.out.println("Insertion sort Before: \t" + unsortedWords.toString());
+        System.out.println("Insertion sort After:  \t" + sortedWords.toString());
+        
+        // Quick sort LinkedList data..........................................       
+        sortedWords = unsortedWords.clone();
+        sort.quick(sortedWords);
+        System.out.println("Quick sort Before: \t" + unsortedWords.toString());
+        System.out.println("Quick sort After:  \t" + sortedWords.toString());
+                
+        // Merge sort LinkedList data..........................................        
+        sortedWords = unsortedWords.clone();
+        sort.merge(sortedWords);
+        System.out.println("Merge sort Before: \t" + unsortedWords.toString());
+        System.out.println("Merge sort After:  \t" + sortedWords.toString());
+                
+        // Execute the binary search on all test data..........................        
+        for (int i = 0; i < testCases.size(); i++) {
+            String word = testCases.get(i);
+            index = search.binary(word, sortedWords);
+            System.out.println("Binary search: \t" + sortedWords.toString() + 
+                               "\t for word: "     + word + " at index: " + 
+                               index);
+        }   
                         
         Simulator.header("Searching and Sorting Test completed!");
     }   

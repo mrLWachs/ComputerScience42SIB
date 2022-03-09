@@ -617,4 +617,15 @@ public class Text
         return new LinkedList<String>(randomWords(size));
     }
         
+    /**
+     * Generates a list of random words from a dictionary file
+     * 
+     * @param size the size to make the array
+     * @param length the length (in characters) of the word to generate
+     * @return a list of random words
+     */
+    public LinkedList<String> randomList(int size, int length) {
+        return new LinkedList<String>(randomWordSize(size, length));
+    }
+    
 }
