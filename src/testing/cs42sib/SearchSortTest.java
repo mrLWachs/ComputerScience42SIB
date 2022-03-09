@@ -222,10 +222,8 @@ public class SearchSortTest
      * @param array the array of items to sort
      */
     private int[] selectionSort(int[] array) {
-        // Create a new array, same size as the passed array
-        int[] sorted = new int[array.length];
-        // Make it a copy of that original
-        System.arraycopy(array, 0, sorted, 0, array.length);        
+        // Create a new array, same size as the passed array, a copy
+        int[] sorted = array.clone();        
         // Sort that array using the selection sort algorithm...
         // Traverse the entire array
         for (int i = 0; i < sorted.length; i++) {
