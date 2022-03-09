@@ -97,7 +97,7 @@ public class SearchSortTest
         // Loop through our test data..........................................
         for (int item : findItems) {
             index = binarySearch(array, item);
-            System.out.print("Searching result for item " + item +
+            System.out.println("Searching result for item " + item +
                     "\t result was at index \t" + index);
         }
         
