@@ -32,7 +32,7 @@ public class SearchSortTest
         
         // For creating random numbers, arrays and LinkedLists.................
         Numbers numbers = new Numbers();
-        // For displaying arrays as text
+        // For displaying arrays as text.......................................
         Text text = new Text();
         
         // Some constants for defining the "edges".............................
@@ -65,19 +65,19 @@ public class SearchSortTest
         int     index  = -1;
         int[]   sorted = new int[MAX];
         
-        // SEARCH 1 - The "linear" search:         
+        // SEARCH 1 - The "linear" search......................................      
         System.out.println("array = " + text.toString(array));
         
-        // Loop through our test data
+        // Loop through our test data..........................................
         for (int item : findItems) {
-            System.out.print("Searching for item: " + item);
+            System.out.print("Searching for item: \t" + item);
             found = search(array,item);
-            System.out.print(" result was " + found);
+            System.out.print("\t result was " + found);
             index = linearSearch(array, item);
-            System.out.println(" at " + index);
+            System.out.println("\t at " + index);
         }
         
-        // SORT 1 - The "Bubble" sort:
+        // SORT 1 - The "Bubble" sort..........................................
         System.out.println("array before = \t" + text.toString(array));        
         sorted = sort(array);
         System.out.println("array after = \t" + text.toString(sorted));
@@ -166,9 +166,48 @@ public class SearchSortTest
                }               
             }
         }
-        // Send back the duplicate (which is now a sorted version of the 
-        // original)
+        // Send back duplicate (which is now a sorted version of the original)
         return a;
+    }
+    
+    
+    /**
+     * An implementation of a bubble sort algorithm it will sort the array into  
+     * ascending order
+     * 
+     * @param array the array of items to sort
+     */
+    private int[] bubbleSort(int[] array) {
+        // Create a new array, same size as the passed array, a copy
+        int[] sorted = array.clone();   
+        // Create a "flag" to indicate if no swaps occured therefore I can stop
+        boolean done = false;
+        // Sort the copy, using the bubblesort algorithm...        
+        // We need to traverse the array aas many times as there are items in
+        // that array (n items, for example array size 10, n =10)   
+        // in reverse order (travel backwards)
+        for (int times = sorted.length -1; times >= 0; times--) {
+            // Set the flag to sorted (assume the array is sorted)
+            done = true;
+            // Nested for loop, to traverse the entire array up to the current 
+            // spot I am travelling to in the outer loop
+            for (int i = 0; i < times; i++) {
+                // Check  each item and the item after it
+                int item1 = sorted[i];
+                int item2 = sorted[i+1];
+                // Now check
+                if (item1 > item2) {
+                    // Swap them
+                    sorted[i]   = item2;
+                    sorted[i+1] = item1;
+                    // Set my flag (it was not sorted)
+                    done = false;
+                }                                
+            }
+            // Now check if no swaps occured
+            if (done) return sorted;
+        }
+        return sorted;
     }
     
 }
