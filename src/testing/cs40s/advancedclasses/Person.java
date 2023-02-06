@@ -1,10 +1,7 @@
-  
+
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
-/** Required imports */
-import io.System;
-import java.io.Serializable;
 
 /** 
  * Person.java - represents a person. This is a class with properties (things
@@ -13,19 +10,23 @@ import java.io.Serializable;
  * (which are instances of that class).
  *
  * @author Mr. Wachs 
- * @since Feb. 9, 2022, 8:01:03 a.m.
+ * @since October, 2022
 */
-public class Person implements Serializable
+public class Person 
 {
-
-    // Properties: (things about it, adjectives, descriptors).............
+    
+    // Properties: (things about it, adjectives, descriptors, variables, arrays)
+    
+    // We add a keyword to the front of the properties (modifier word) to
+    // determine if the property (variable, global varaible) is encapsulated
+    // or not. Meaning is the variable accessable (can be read and changed)
+    // inside the class and/or outside the class (words "private" and "public")
     
     /**
      * Properties that use the "modifier" word "public" can be accessed and
      * changed outside of this class by anther class "using" this class
      */
-    public  String  name;
-    public  String  gender;
+    public String name;
     
     /**
      * Properties that use the "modifier" word "private" will "encapsulate"
@@ -33,6 +34,8 @@ public class Person implements Serializable
      * a "private room") - this is the concept of encapsulation
      */
     private int age;
+        
+    private String gender;            
     
     /** 
      * Using the modifier word "protected" for a property or method means that
@@ -40,67 +43,81 @@ public class Person implements Serializable
      * itself (like private) and can be accessed by other class IF those classes
      * are "related" to this class through inheritance (subclasses)
      */
-    protected boolean isAlive;
+    protected boolean alive;          // Encapsulated property
+    
+    // This property ("alive") cannot be modified outside the class (it is
+    // encapsulated or "private"), except possibly through a method (like 
+    // the constructor method or the die method)
     
     
-    // Methods: (things it can do, verbs, actions)........................
+    // Methods: (things it can do, verbs, actions, return, parameter(s))........
     
     /**
-     * Class constructor method, sets the class properties when the class is
-     * instantiated into an object - in other words, when a person object is
-     * "built" it calls this method to build it. Constructor methods with no 
-     * parameters are called "default" constructors.
+     * Constructor method is a method that has (1) the same name as the class,
+     * (2) the name starts with a capital letter, (3) it has NO return type 
+     * (not even the word "void"). These methods are called when the class is
+     * used to build (construct, instantiate) an object. Constructor methods 
+     * with NO parameters are called default constructors
      */
     public Person() {
-        isAlive = true;
-        age     = 0;
-        gender  = "female";
-        name    = "Jane Doe";
+        alive  = true;
+        age    = 0;
+        gender = "unidentified";
+        name   = "unidentified";
     }
     
     /**
-     * Constructor method (overloaded) changes object properties
+     * Constructor method, sets the class properties. Constructor methods 
+     * should be public. This is an overloaded constructor method. Overloaded 
+     * methods are methods with the same name, but different parameters.
      * 
-     * @param name the name for this person 
+     * @param name the new name for this person
      */
     public Person(String name) {
-        isAlive   = true;
+        alive     = true;
         age       = 0;
-        gender    = "female";
+        gender    = "unidentified";
+        // Assign the parameter to the property (global variable of this class)
+        // To do this, we use the keyword "this" which acts as a placeholder
+        // for the name of the object (which will be created at a later time)
         this.name = name;
     }
     
     /**
-     * Constructor method changes object properties
+     * Overloaded (methods with the same name, different parameters) 
+     * constructor method, sets the class properties by assigning the passed
+     * parameter value into the object's (class) property (global variable) of
+     * the same name using the keyword "this"
      * 
-     * @param name the name for this person 
-     * @param age the age for this person 
-     * @param gender the identified gender for this person 
+     * @param name the name of this person
+     * @param age the age of this person
+     * @param gender the identified gender of this person
      */
     public Person(String name, int age, String gender) {
-        isAlive     = true;
+        alive = true;
+        // All of the parameters are assigned to the properties of the same name
+        this.name   = name;
         this.age    = age;
         this.gender = gender;
-        this.name   = name;
     }
     
     /**
-     * When a person dies
+     * The person dies (changing/modifying) the private, encapsulated 
+     * property (isAlive) through this method
      */
     public void die() {
-        isAlive = false;
+        alive = false;
     }
     
     /**
-     * Method to simulate this person "talking" out information about the object
-     * it outputs data on this person to the screen
+     * Outputs information about the person to the screen
      */
     public void talk() {
-        if (isAlive) {
-            System.out.println(name + " is " + age + " identifies " + gender);
+        if (alive) {
+            System.out.println(name + " is " + age + " identifes as " + gender);
         }
         else {
-            System.out.println("Boooo!!!");
+            System.out.println("Booooo!");
         }
     }
     
@@ -112,6 +129,62 @@ public class Person implements Serializable
     }
     
     /**
+     * String representation of this object
+     *
+     * @return The object represented as a String
+     */
+    @Override
+    public String toString() {
+        return "Person: " + name + " is " + age + " identifes as " + gender;
+    }
+   
+    /**
+     * Deep comparison, determines if two objects are "equal" in this context
+     *
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        // Shallow comparison (might look like this...)
+        // return true;
+        // We want a "deeper" comparison...
+        
+        // First need to "cast" the object parameter into a "Person" object
+        Person that = (Person)object;
+        // Compare the things (properties) we want to compare
+        if (this.alive != that.alive)         return false;
+        if (this.age   != that.age)           return false;
+        if (!this.name.equals(that.name))     return false;
+        if (!this.gender.equals(that.gender)) return false;        
+        // We made it through all the above if checks
+        return true;
+    }
+         
+    
+    /**
+     * a Deep clone, creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public Person clone() {
+        // Shallow clone would be code like:
+        // return this;
+        
+        // Deep clone could look like:
+        // First create new memory for the clone
+        Person that = new Person();
+        // Now duplicate (clone) the properties
+        that.name   = this.name;
+        that.age    = this.age;
+        that.gender = this.gender;
+        that.alive  = this.alive;        
+        // Finally return the copied (cloned) new object
+        return that;
+    }
+    
+    /**
      * Accessor method (or "getters") that gives you (or 'reads') the age of 
      * this person (which is a private property of this class which cannot 
      * be read outside the class)
@@ -120,17 +193,6 @@ public class Person implements Serializable
      */
     public int getAge() {
         return age;
-    }
-    
-    /**
-     * Mutator method (or "setters") that 'changes' the encapsulated property
-     * of this person (which is a private property of this class which cannot 
-     * be changed outside the class)
-     * 
-     * @param age the new age to set (mutate) the property into
-     */
-    public void setAge(int age) {
-        this.age = age;
     }
     
     /**
@@ -155,62 +217,25 @@ public class Person implements Serializable
         // A programmer could potentially write error checking code here..
         this.gender = gender;
     }
-        
-    /**
-     * String representation of this object
-     * 
-     * @return the object represented as a String
-     */
-    @Override
-    public String toString() {
-        return name + " is " + age + " identifies " + gender;
-    }
-        
-    /**
-     * Deep comparison, determines if two objects are"equal" in this context
-     * 
-     * @param object the object to compare to
-     * @return the object are "equal" (true) or not (false)
-     */
-    @Override
-    public boolean equals(Object object) {
-        // Shallow comparison might be code like: return true;        
-        // We want to turn the object parameter into a "Person"
-        // object - use casting to turn into a person
-        Person that = (Person)object;
-        // compare the things (properties) we want to compare
-        if (this.isAlive != that.isAlive)          return false;
-        if (this.age     != that.getAge())         return false;
-        if (!this.name.equals(that.name))          return false;
-        if (!this.gender.equals(that.getGender())) return false;
-        return true;
-    }
     
     /**
-     * Deep clone, creates a duplicate (all properties?) object using new memory
+     * Mutator method (or "setters") that 'changes' the encapsulated property
+     * of this person (which is a private property of this class which cannot 
+     * be changed outside the class)
      * 
-     * @return a "clone" of the object using new memory
+     * @param age the new age to set (mutate) the property into
      */
-    public Person clone() {
-        // Shallow clone would be code like: return this;
-        Person that = new Person();
-        // Duplicate all the public properties
-        that.name   = this.name;
-        that.gender = this.gender;
-        // Duplicate the protected property
-        that.isAlive = this.isAlive;
-        // Duplicate the private property?
-        that.setAge(this.getAge());
-        return that;
+    public void setAge(int age) {
+        this.age = age;
     }
-
+    
     /**
      * A "static" method means the method is "shared" by all objects of the 
      * class - it can also be called from the class itself, you can use the 
      * class name then a dot to call static methods
      */
     public static void endTheWorld() {
-        System.out.println("Booom!!!!");
+        System.out.println("Boom!!!!");
     }
     
     /**
@@ -220,7 +245,7 @@ public class Person implements Serializable
      * @param food the abstract food object to consume
      */
     public void consume(Food food) {
-        System.out.println(name + " eating " + food.eat());
+        System.out.println(name + " is eating " + food.eat());
     }
     
 }

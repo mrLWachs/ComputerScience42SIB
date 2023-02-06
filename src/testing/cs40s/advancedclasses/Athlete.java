@@ -2,10 +2,7 @@
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
-/** Required imports */
-import io.System;
-
-
+ 
 /**
  * Athlete.java - represents a Athlete Husky HighSchool Student Person. Using 
  * the keyword 'implements' in the class signature line, means this class 
@@ -17,48 +14,47 @@ import io.System;
  * do multiple implementation, use a comma between interfaces.
  *
  * @author Mr. Wachs
- * @since Feb. 9, 2022, 8:01:03 a.m.
+ * @since 9-Nov-2022, 11:28:38 AM
  */
-public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
+public class Athlete extends Husky implements PermissionForm, Hockey, ChessBoxing
 {
-    
-    private boolean haveForm;                       // Encapsulated properties
+
+    private boolean haveForm;           // Encapsulated properties (variables)
     private String  opponentName;
     private int     homeScore;
     private int     opponentScore;
-    private boolean suss;
+    private boolean champion;
     
-    private final boolean WE_WON = true;           // Encapsulated constants
+    private final boolean WE_WON  = true;   // Encapsulated constants
     private final boolean WE_LOST = false;
         
-
+    
     /**
-     * Constructor sets class properties
+     * Constructor, set class properties
      * 
      * @param name the name for this Athlete   
      * @param age the age for this Athlete  
      */
     public Athlete(String name, int age) {
-        super();
-        super.name = name;
-        this.setAge(age);
-        opponentName = "";
-        haveForm     = false;
-        homeScore    = opponentScore = 0;
-        suss         = WE_LOST;
+        super();                    // Call super-constructor
+        setName(name);              // Internal (encapsulated) mutator method
+        super.setAge(age);          // Super-class mutator method
+        opponentName  = "";         // Set encapsulated properties to defaults
+        homeScore     = 0;
+        opponentScore = 0;
+        haveForm      = false;
+        champion      = WE_LOST;
     }
      
     /**
-     * Default Constructor sets class properties
+     * Default constructor, set class properties
      */
     public Athlete() {
-        super();
-        opponentName = "";
-        haveForm     = false;
-        homeScore    = opponentScore = 0;
-        suss         = WE_LOST;
+        // To have one class constructor call another class constructor, use
+        // the keyword "this" with round brackets 
+        this("Jock",15);
     }
-    
+            
     /**
      * String representation of this object
      *
@@ -91,6 +87,25 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
     }
 
     /**
+     * Signing the permission form
+     */
+    @Override
+    public void sign() {
+        System.out.println(super.name + " has got it signed!");
+        haveForm = PermissionForm.SIGNED;
+    }
+
+    /**
+     * Determines if the form has been signed or not
+     * 
+     * @return has been signed (true), or not (false)
+     */
+    @Override
+    public boolean haveYouGotItSigned() {
+        return haveForm;
+    }
+
+    /**
      * A team scoring a point
      * 
      * @param name the name of the team who scored
@@ -99,7 +114,7 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
     public void score(String name) {
         System.out.println(name + " has scored a goal");
         if (name.equals(opponentName)) opponentScore++;
-        if (name.equals(super.name))   homeScore++;
+        if (name.equals(super.name))   homeScore++;        
     }
 
     /**
@@ -110,13 +125,13 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
     @Override
     public void endOfPeriod(int period) {
         String output = "End of period " + period;
-        output += " and the score is "   + homeScore;
-        output += " for the "            + super.name;
-        output += " and "                + opponentScore;
-        output += " for the "            + opponentName;
+        output += " and the score is " + homeScore;
+        output += " for the "          + super.name;
+        output += " and "              + opponentScore;
+        output += " for the "          + opponentName;
         System.out.println(output);
     }
-
+    
     /**
      * Mutator method, setting the name of the player
      * 
@@ -146,68 +161,49 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
     public boolean didIWin() {
         if (homeScore >= opponentScore) {
             System.out.println(super.name + " wins!");
-            return true;
+            return WE_WON;
         }
         else {
             System.out.println(opponentName + " wins!");
-            return false;
+            return WE_LOST;
         }
     }
 
     /**
-     * Call a meeting to end the game
+     * A team scoring a piece
      * 
-     * @param name the name of the team calling the meeting
-     * @return the game is over (true) or not (false)
+     * @param name the name of the team who took a piece
      */
     @Override
-    public boolean callMeeting(String name) {
-        System.out.println(name + " has won Among Us! - Elec!");
-        if (suss == WE_WON) return true;
-        else                return false;
+    public void takePiece(String name) {
+        System.out.println(name + " has taken a piece");
     }
 
     /**
-     * Asks a question to an opponent
+     * A team scoring a punch
      * 
-     * @return the answer to the question
+     * @param name the name of the team who punched
      */
     @Override
-    public String askQuestion() {
-        suss = WE_LOST;
-        return super.name + " has asked a question...";
+    public void punch(String name) {
+        System.out.println(name + " has punched");
+        if (name.equals(opponentName)) opponentScore+=10;
+        if (name.equals(super.name))   homeScore+=10; 
     }
 
     /**
-     * Find a body in the game 
-     * 
-     * @param whoFoundTheBody the person looking
-     * @return the name of the body
+     * The passed round of Chess Boxing is over
+	 *
+     * @param round the round number
      */
     @Override
-    public String findBody(String whoFoundTheBody) {
-        suss = WE_WON;
-        System.out.println(whoFoundTheBody + " has found a body");        
-        return whoFoundTheBody + " has found a body";
-    }
-
-    /**
-     * Signing the permission form
-     */
-    @Override
-    public void sign() {
-        System.out.println(super.name + " has got it signed!");
-        haveForm = PermissionForm.SIGNED;
-    }
-
-    /**
-     * Determines if the form has been signed or not
-     * 
-     * @return has been signed (true), or not (false)
-     */
-    @Override
-    public boolean haveYouGotItSigned() {
-        return haveForm;
+    public void endOfRound(int round) {
+        String output = "End of round " + round;
+        output += " and the score is " + homeScore;
+        output += " for the "          + super.name;
+        output += " and "              + opponentScore;
+        output += " for the "          + opponentName;
+        System.out.println(output);
     }
     
 }

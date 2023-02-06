@@ -1,3 +1,4 @@
+
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
@@ -6,17 +7,11 @@ package testing.cs40s.advancedclasses;
  * Piper.java - represents a Piper HighSchool Student Person
  *
  * @author Mr. Wachs
- * @since Feb. 9, 2022, 8:01:03 a.m.
+ * @since 9-Nov-2022, 11:28:47 AM
  */
 public class Piper extends HighSchool
 {
 
-    /**
-     * Default constructor, set class properties
-     */
-    public Piper() {
-        super();
-    }
      
     /**
      * String representation of this object

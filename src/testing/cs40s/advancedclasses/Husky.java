@@ -1,3 +1,4 @@
+
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
@@ -6,18 +7,15 @@ package testing.cs40s.advancedclasses;
  * Husky.java - represents a Husky HighSchool Student Person
  *
  * @author Mr. Wachs
- * @since Feb. 9, 2022, 8:01:03 a.m.
+ * @since 9-Nov-2022, 11:28:13 AM
  */
 public class Husky extends HighSchool
 {
 
-    /**
-     * Default constructor, set class properties
-     */
-    public Husky() {
-        super("Havoc");
-    }
-     
+    // Without writing a default constructor, Java writes one for me - this
+    // means it will call the default constructor of the parent class 
+    // (HighSchool) which may call other constructors...
+    
     /**
      * String representation of this object
      *
@@ -48,5 +46,5 @@ public class Husky extends HighSchool
     public Husky clone() {
         return this;
     }
-    
+
 }

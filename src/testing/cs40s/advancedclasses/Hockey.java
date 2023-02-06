@@ -1,18 +1,19 @@
-  
+
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
-/** 
+
+/**
  * Hockey.java - enforcing "the rules" of hockey (and sports). Interfaces can
  * inherit from other interfaces ("can follow the rules of other rules"). This
  * is like classes inheriting from other classes.
  *
- * @author Mr. Wachs 
- * @since Feb. 9, 2022, 8:01:03 a.m.
-*/
+ * @author Mr. Wachs
+ * @since 23-Nov-2022, 11:03:07 AM
+ */
 public interface Hockey extends Sports
 {
-
+    
     /**
      * A team scoring a point
      * 
@@ -26,5 +27,5 @@ public interface Hockey extends Sports
      * @param period the period number
      */
     void endOfPeriod(int period);
-    
+
 }

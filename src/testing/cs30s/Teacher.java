@@ -10,7 +10,7 @@ package testing.cs30s;
  * the class. This is sometimes simplified as a "has a" relationship.
  *
  * @author Mr. Wachs
- * @since Feb. 9, 2022, 8:01:03 a.m.
+ * @since 20-Dec-2022, 11:20:11 AM
  */
 public class Teacher extends Person
 {
@@ -37,12 +37,24 @@ public class Teacher extends Person
     @Override
     public void talk() {
         super.talk();
-        System.out.println("\tHere are my students...");
+        System.out.println("Here are my students...");
         for (int i = 0; i < students.length; i++) {
             if (students[i] != null) {
+                teach(students[i]);
                 students[i].talk();
             }
         }
     }
+
+    /**
+     * A private (or "encapsulated" or "helper") method for this class - can 
+     * only be called (invoked) within the class by other methods of this class
+     * (not by any other classes). It makes a student study
+     * 
+     * @param student The Student object to make study
+     */
+    private void teach(Student student) {
+        student.study();
+    }    
     
 }

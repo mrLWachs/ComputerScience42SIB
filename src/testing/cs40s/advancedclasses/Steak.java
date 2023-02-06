@@ -1,21 +1,19 @@
+
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
-/** Required imports */
-import io.System;
-
-
+ 
 /**
  * Steak.java - represents a steak
  *
  * @author Mr. Wachs
- * @since Feb. 9, 2022, 8:01:03 a.m.
+ * @since 17-Nov-2022, 11:35:45 AM
  */
 public class Steak extends Food
 {
 
     /**
-     * Default constructor, set class properties
+     * Constructor, set class properties
      */
     public Steak() {
         super(1);                   // Call super-constructor, passing the group
@@ -27,7 +25,7 @@ public class Steak extends Food
      */
     @Override
     public void prepare() {
-        System.out.println("Grill on BBQ");
+        System.out.println("Grill on the BBQ");
     }
 
     /**
@@ -47,18 +45,8 @@ public class Steak extends Food
      */
     @Override
     public void smell(int seconds) {
-        if (seconds > 5) super.eatable = true;
-        else             super.eatable = false;
+        if (seconds > 5) super.eatable = false;
+        else             super.eatable = true;
     }
-    
-    /**
-     * How to eat this steak object 
-     * 
-     * @return The output of how eating this 'steak' item went
-     */
-    @Override
-    public String eat() {
-        return "Steak from " + super.eat();
-    }
-    
+     
 }

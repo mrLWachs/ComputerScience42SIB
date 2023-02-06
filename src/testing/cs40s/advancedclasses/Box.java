@@ -1,10 +1,8 @@
+
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
-/** Required imports */
-import io.System;
-
-
+ 
 /**
  * Box.java - represents a box that can hold anything. This
  * class uses a 'generic' object as a property of the class.
@@ -16,7 +14,7 @@ import io.System;
  *
  * @author Mr. Wachs
  * @param <T> the generic type for the box's contents
- * @since Feb. 9, 2022, 8:01:03 a.m.
+ * @since 28-Nov-2022, 11:35:55 AM
  */
 public class Box <T>
 {
@@ -28,7 +26,7 @@ public class Box <T>
     private T present;
     
     /**
-     * Default constructor for the class, sets class properties
+     * Constructor for the class, sets class properties
      * 
      * @param present the generic thing to put in the box 
      */
@@ -50,6 +48,6 @@ public class Box <T>
      */
     public void peek() {
         System.out.println(present.toString());
-    }
+    }    
     
 }

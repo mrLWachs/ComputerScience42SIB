@@ -1,3 +1,4 @@
+
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
@@ -9,26 +10,27 @@ package testing.cs40s.advancedclasses;
  * always part of any new class we create (whether or not we choose to over-ride
  * those methods).
  *
+ * This class was later marked as a "abstract class" by adding the "abstract"
+ * modifier word to the class signature line (below). An abstract class is a 
+ * class which cannot be instantiated – in other words, you define it as a 
+ * class but cannot use it to create an object. The purpose of doing this is 
+ * to create a class which acts as a parent class (base class) for 
+ * subclasses (child classes) but will not be needed to be instantiated 
+ * in itself – it must be extended and its methods implemented. Once you 
+ * have a abstract class, you can create abstract methods within the 
+ * abstract class
+ * 
  * @author Mr. Wachs
- * @since Feb. 9, 2022, 8:01:03 a.m.
+ * @since 2-Nov-2022, 11:40:39 AM
  */
-public class HighSchool extends Student
+public abstract class HighSchool extends Student
 {
 
     /**
      * Default constructor, set class properties
      */
     public HighSchool() {
-        super("Smelly Teenager",15);        // Calling the super constructor
-    }
-    
-    /**
-     * Constructor that sets the class properties to the parameters
-     * 
-     * @param name the name of this HighSchool Student Person
-     */
-    public HighSchool(String name) {
-        super(name,15);
+        super("Smelly Teenager",15,"doesn't matter");
     }
      
     /**

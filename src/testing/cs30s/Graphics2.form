@@ -79,7 +79,7 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/computerscience30s/image.gif"/>
+          <Image iconType="3" name="/testing/cs30s/image.gif"/>
         </Property>
       </Properties>
       <Events>

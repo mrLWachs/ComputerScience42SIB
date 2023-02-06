@@ -10,13 +10,12 @@ package testing.cs30s;
  * inherits from both (a double inheritance).
  *
  * @author Mr. Wachs
- * @since Feb. 9, 2022, 8:01:03 a.m.
+ * @since 20-Dec-2022, 11:20:01 AM
  */
 public class Husky extends Student
 {
 
     private boolean pride;                          // encapsulated property
-    
     
     /**
      * Constructor for the class, sets the class properties to the default 
@@ -25,10 +24,10 @@ public class Husky extends Student
      * @param name the name of this Husky "is a" Student "is a" Person
      * @param age the age of this Husky "is a" Student "is a" Person
      * @param gender the gender of this Husky "is a" Student "is a" Person
-     * @param studentNumber the number of this Husky "is a" Student 
+     * @param number the number of this Husky "is a" Student 
      */
-    public Husky(String name, int age, String gender, int studentNumber) {
-        super(name, age, gender, studentNumber);    // calling super constructor
+    public Husky(String name, int age, String gender, int number) {
+        super(name, gender, number);                // calling super constructor
         pride = true;                               // set internal property
     }
     
@@ -38,8 +37,8 @@ public class Husky extends Student
      */
     @Override
     public void talk() {
-        super.talk();       // call to super talk(), it calls super talk() also
-        System.out.println("\t Pride is " + pride);
+        super.talk();
+        System.out.println("\tPride is " + pride);
     }
-
+    
 }

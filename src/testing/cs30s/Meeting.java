@@ -10,11 +10,11 @@ package testing.cs30s;
  * Person class to be added to the array.
  *
  * @author Mr. Wachs
- * @since Feb. 9, 2022, 8:01:03 a.m.
+ * @since 20-Dec-2022, 11:20:06 AM
  */
 public class Meeting 
 {
-    
+
     private Person[] members;       // associate array of Person objects
     private int index;              // encapsulated counter for the array
     private final int MAX = 500;    // constants maximum members

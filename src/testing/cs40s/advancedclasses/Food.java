@@ -13,7 +13,7 @@ package testing.cs40s.advancedclasses;
  * class must be an abstract class).
  *
  * @author Mr. Wachs
- * @since Feb. 9, 2022, 8:01:03 a.m.
+ * @since 17-Nov-2022, 11:34:21 AM
  */
 public abstract class Food 
 {
@@ -52,12 +52,12 @@ public abstract class Food
     /**
      * Constructor, set class properties
      * 
-     * @param group which food group this food item belong to
+     * @param group which food group this food item belongs to
      */
     public Food(int group) {
         this.group = group;     // Assign parameter to private property
     }
-    
+     
     /**
      * Prepares food to be eaten. By adding the modifier "abstract" to a method,
      * it makes an abstract method - means the method has no code for the 
@@ -65,7 +65,7 @@ public abstract class Food
      * parameters and it can return a value)
      */
     public abstract void prepare();
-    
+
     /**
      * Determines if this 'food' item has spoiled
      * 
@@ -74,7 +74,7 @@ public abstract class Food
     public abstract boolean hasSpoiled();
     
     /**
-     * Smell the 'food' item
+     * Smells the 'food' item
      * 
      * @param seconds how many seconds to smell it
      */
@@ -95,5 +95,5 @@ public abstract class Food
             return GROUPS[group] + ", it was " + flavour;
         }
     }
-        
+    
 }

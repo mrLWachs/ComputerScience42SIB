@@ -1,17 +1,17 @@
-  
+
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
 
-/** 
+/**
  * PermissionForm.java - enforcing "the rules" of a permission form
  *
- * @author Mr. Wachs 
- * @since Feb. 9, 2022, 8:01:03 a.m.
-*/
-public interface PermissionForm
+ * @author Mr. Wachs
+ * @since 23-Nov-2022, 11:05:05 AM
+ */
+public interface PermissionForm 
 {
-
+    
     /**
      * Represents a signed permission form
      */
@@ -33,5 +33,5 @@ public interface PermissionForm
      * @return has been signed (true), or not (false)
      */
     boolean haveYouGotItSigned();
-    
+
 }

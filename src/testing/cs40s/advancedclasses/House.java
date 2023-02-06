@@ -1,15 +1,13 @@
+
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
-/** Required imports */
-import io.System;
-
-
+ 
 /**
  * House.java - represents a house, and has a homeowner property who 
  * generically restricted to be a person object or any children of the person
- * class.Also it contains contents (a property) which can be generically
- * anything.To add another generic, use a comma "," in the class signature
+ * class. Also it contains contents (a property) which can be generically
+ * anything. To add another generic, use a comma "," in the class signature
  * inside the angle brackets "< >" and another letter (a different letter) to 
  * act as another placeholder.
  *
@@ -17,11 +15,11 @@ import io.System;
  * @param <T> the generic type of home owner (restricted to type Person and all
  * its children)
  * @param <U> the generic type for the contents of this house (unrestricted)
- * @since Feb. 9, 2022, 8:01:03 a.m.
+ * @since 28-Nov-2022, 11:54:54 AM
  */
 public class House <T extends Person, U>
 {
-    
+
     /**
      * The generic owner of this house (must be a Person object or any children
      * of that class)
@@ -33,7 +31,7 @@ public class House <T extends Person, U>
      * object, a different letter is used (again it can be any letter you want)
      */
     public U contents;
-    
+   
     /**
      * Generic method that has the home owner consume all the generic 
      * restricted Food (all all Food children) items that are passed in an 

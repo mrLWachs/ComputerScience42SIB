@@ -1,13 +1,10 @@
-  
+
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
-/** Required imports */
-import io.System;
 
-
-/** 
- * Student.java - represents a student, reminder that "extends" causes
+/*
+ * Student - represents a student, reminder that "extends" causes
  * inheritance (or "is a") meaning this class gets all the properties and
  * methods of it's parent (super) class. The line below is called the 
  * "signature" line for this class. If we add the "modifier" word "extends" 
@@ -21,13 +18,13 @@ import io.System;
  * from the "parent" (super) class.
  *
  * @author Mr. Wachs 
- * @since Feb. 9, 2022, 8:01:03 a.m.
+ * @since 13-Oct-2022
 */
 public class Student extends Person
 {
     
-    private int studentNumber;
-    private double average; // class properties (and inherited other properties)
+    private int number;    
+    private double gpa; // class properties (and inherited other properties)
     
     /**
      * Represents a book object (this object "has a" relationship (association)
@@ -41,43 +38,62 @@ public class Student extends Person
      * variable
      */
     public static int total;
-        
+    
+
+    /**
+     * Default constructor, set class properties
+     */
+    public Student() {
+        super();
+        gpa = 0;
+        book = new Book();
+        number = 1;
+        // Change ("mutate") the static ("shared") property ("global variable")
+        total++;
+    }
     
     /**
      * Constructor for the class, sets class properties
      * 
      * @param name the name for this student
      * @param age the age for this student
+     * @param gender the gender for this student
      */
-    public Student(String name, int age) {
-        super(name,age,"student");              // Call the "super constructor"
-        studentNumber = 1;                      // Set properties to "defaults"
-        average       = 1.0;
-        // Mutate (change) the static (shared) property (global variable)
+    public Student(String name, int age, String gender) {
+        // Use the super constructor in the parent class (Person) to modify
+        // (change) the encapsulated (private) properties on that super class
+        // this sets all the propoerties of the parent (Person) object that 
+        // the child (Student) cannot set
+        super(name, age, gender);
+        // Now set the properties of this class...
+        gpa = 0.0;
+        book = new Book();
+        number = 1;
         total++;
-    }
-    
-    /**
-     * Method just for this class, raises the average
-     */
-    public void study() {
-        average *= 1.10;                            // Increase avarage by 10%
-    }
-    
-    /**
-     * Slacking off lowers the average
-     */
-    public void slackOff() {
-        average = average - 0.05;                   // Decrease avarage by 5%
     }
     
     /**
      * Cramming is intense studying
      */
     public void cram() {
-        for (int i = 0; i < 5; i++) {               // Study 5 times as hard
+        for (int i = 0; i < 10; i++) {
             study();
         }
+        secret();
+    }
+
+    /**
+     * Slacking off lowers this student's average
+     */
+    public void slackOff() {
+        gpa -= 0.3;
+    }
+    
+    /**
+     * Studying raises this student's average
+     */
+    public void study() {
+        gpa += 0.1;
     }
     
     /**
@@ -86,37 +102,48 @@ public class Student extends Person
      */
     @Override
     public void talk() {
-        super.talk();                      // Invoking super class method
-        System.out.println("\t student number  = " + studentNumber);
-        System.out.println("\t student average = " + average);        
+        super.talk();                           // Invoking super class method
+        System.out.println("I am a student");
+        System.out.println("\tNumber: \t" + number);
+        System.out.println("\tGPA: \t"    + gpa);        
+    }
+    
+    /**
+     * This "secret" method is a private, encapsulated method. These types of 
+     * methods are sometimes called "helper" or "utility" methods as they can
+     * only be called by other methods inside this class
+     */
+    private void secret() {
+        gpa *= 1.0001;
     }
     
     /**
      * String representation of this object
-     * 
-     * @return the object represented as a String
+     *
+     * @return The object represented as a String
      */
     @Override
     public String toString() {
-        return "Student: " + super.toString() + " average is " + average;
+        return "Student: " + super.toString() + " average is " + gpa;
     }
-        
+   
     /**
-     * Deep comparison, determines if two objects are"equal" in this context
-     * 
+     * Deep comparison, determines if two objects are "equal" in this context
+     *
      * @param object the object to compare to
-     * @return the object are "equal" (true) or not (false)
+     * @return the objects are "equal" (true) or not (false)
      */
     @Override
     public boolean equals(Object object) {
         return super.equals(object);
     }
-    
+       
     /**
-     * Deep clone, creates a duplicate (all properties?) object using new memory
-     * 
+     * a Deep clone, creates a duplicate object using new memory
+     *
      * @return a "clone" of the object using new memory
      */
+    @Override
     public Student clone() {
         return (Student)super.clone();
     }

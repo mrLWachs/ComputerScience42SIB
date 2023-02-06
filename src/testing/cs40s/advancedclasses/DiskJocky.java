@@ -1,21 +1,22 @@
+
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
  
 /**
- * Baker.java - represents a Baker Person
+ * DiskJocky.java - represents a DiskJocky Person
  *
  * @author Mr. Wachs
- * @since Feb. 9, 2022, 8:01:03 a.m.
+ * @since 9-Nov-2022, 11:29:03 AM
  */
-public class Baker extends Person
+public class DiskJocky extends Person
 {
 
     /**
      * Default constructor, set class properties
      */
-    public Baker() {
-        super();
+    public DiskJocky() {
+        super("DJ Blitz");
     }
      
     /**
@@ -25,7 +26,7 @@ public class Baker extends Person
      */
     @Override
     public String toString() {
-        return "Baker: " + super.toString();
+        return "DiskJocky: " + super.toString();
     }
    
     /**
@@ -45,7 +46,7 @@ public class Baker extends Person
      * @return a "clone" of the object using new memory
      */
     @Override
-    public Baker clone() {
+    public DiskJocky clone() {
         return this;
     }
     

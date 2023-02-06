@@ -2,10 +2,7 @@
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
-/** Required imports */
-import io.System;
-
-
+ 
 /**
  * Apple.java - represents an apple. This class inherits from the abstract 
  * class all its properties and methods. However, the abstract methods are 
@@ -15,11 +12,11 @@ import io.System;
  * over-ridden as well.
  *
  * @author Mr. Wachs
- * @since Feb. 9, 2022, 8:01:03 a.m.
+ * @since 17-Nov-2022, 11:35:39 AM
  */
 public class Apple extends Food
 {
-
+    
     /**
      * Default constructor, set class properties
      */
@@ -27,7 +24,7 @@ public class Apple extends Food
         super(4);                   // Call super-constructor, passing the group
         super.flavour = "Sweet";    // Modifying our protected property
     }
-    
+
     /**
      * Prepares food to be eaten
      */
@@ -56,7 +53,7 @@ public class Apple extends Food
         if (seconds > 3) super.eatable = false;
         else             super.eatable = true;
     }
-     
+    
     /**
      * How to eat this apple object 
      * 

@@ -1,3 +1,4 @@
+
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
@@ -6,7 +7,7 @@ package testing.cs40s.advancedclasses;
  * MrWachs.java - represents a MrWachs Teacher Person
  *
  * @author Mr. Wachs
- * @since Feb. 9, 2022, 8:01:03 a.m.
+ * @since 9-Nov-2022, 11:29:47 AM
  */
 public class MrWachs extends Teacher
 {
@@ -15,7 +16,7 @@ public class MrWachs extends Teacher
      * Default constructor, set class properties
      */
     public MrWachs() {
-        super("Mr. Wachs");
+        super("Mr. Lawrence Wachs");
     }
      
     /**

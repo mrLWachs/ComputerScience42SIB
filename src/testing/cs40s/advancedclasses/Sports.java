@@ -1,8 +1,9 @@
-  
+
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
-/** 
+
+/**
  * Sports.java - the interface for "sports". An interface is a "category" of 
  * abstract concepts. Even more abstract than a abstract class, it can be 
  * thought of as "a set of rules". It is a bit like a class, except it
@@ -13,12 +14,12 @@ package testing.cs40s.advancedclasses;
  * create an instance of some class that 'implements' the interface. This 
  * means the other class "follows the rules" of that interface.
  *
- * @author Mr. Wachs 
- * @since Feb. 9, 2022, 8:01:03 a.m.
-*/
-public interface Sports
+ * @author Mr. Wachs
+ * @since 22-Nov-2022, 11:53:43 AM
+ */
+public interface Sports 
 {
-    
+
     /**
      * Mutator method, setting the name of the player. Interface method 
      * signatures do not need a public/private/protected modifier (if you don't
@@ -44,5 +45,5 @@ public interface Sports
      * @return there was a winner (true) or not (false)
      */
     boolean didIWin();
-
+    
 }
