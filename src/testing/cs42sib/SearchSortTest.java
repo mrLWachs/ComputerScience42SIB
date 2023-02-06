@@ -85,11 +85,19 @@ public class SearchSortTest
         sorted = sort(array);
         System.out.println("After sort = \t" + text.toString(sorted));
         
+        array = numbers.random(SMALLEST, LARGEST, MAX);
         System.out.println("Before Bubble sort = \t" + text.toString(array));        
         sorted = bubbleSort(array);
         System.out.println("After Bubble sort = \t" + text.toString(sorted));
         
         // SORT 2 - The "Selection" sort.......................................
+        array = numbers.random(SMALLEST, LARGEST, MAX);
+        System.out.println("Before Selection sort = \t" + text.toString(array));        
+        sorted = selectionSort(array);
+        System.out.println("After Selection sort = \t" + text.toString(sorted));
+        
+        // SORT 2 - The "Selection" sort.......................................
+        array = numbers.random(SMALLEST, LARGEST, MAX);
         System.out.println("Before Selection sort = \t" + text.toString(array));        
         sorted = selectionSort(array);
         System.out.println("After Selection sort = \t" + text.toString(sorted));
@@ -162,6 +170,41 @@ public class SearchSortTest
         System.out.println("Selection sort Before: \t" + unsortedWords.toString());
         System.out.println("Selection sort After:  \t" + sortedWords.toString());
         
+        // Even more sorts (beyond I.B. curriculum)............................
+        Simulator.header("Even more sorts (beyond I.B. curriculum)...");
+        
+        // Shell sort array data...............................................        
+        Integer[] unsortedArray = numbers.randomClass(SMALLEST, LARGEST, MAX);
+        Integer[] sortedArray   = numbers.arrayClone(unsortedArray);
+        System.out.println("Shell sort before: \t" + text.toString(unsortedArray));        
+        sort.shell(sortedArray);
+        System.out.println("Shell sort after: \t" + text.toString(sortedArray));
+        
+        // Insertion sort array data...........................................
+        sortedArray = numbers.arrayClone(unsortedArray);
+        System.out.println("Insertion sort before: \t" + text.toString(unsortedArray));        
+        sort.insertion(sortedArray);
+        System.out.println("Insertion sort after: \t" + text.toString(sortedArray));
+        
+        // Quick sort array data...............................................
+        sortedArray = numbers.arrayClone(unsortedArray);
+        System.out.println("Quick sort before: \t" + text.toString(unsortedArray));        
+        sort.quick(sortedArray);
+        System.out.println("Quick sort after: \t" + text.toString(sortedArray));
+        
+        // Merge sort array data...............................................
+        sortedArray = numbers.arrayClone(unsortedArray);
+        System.out.println("Merge sort before: \t" + text.toString(unsortedArray));        
+        sortedArray = (Integer[]) sort.merge(sortedArray);
+        System.out.println("Merge sort after: \t" + text.toString(sortedArray));
+        
+        // Heap sort array data...............................................
+        sortedArray = numbers.arrayClone(unsortedArray);
+        System.out.println("Heap sort before: \t" + text.toString(unsortedArray));        
+        sortedArray = (Integer[]) sort.heap(sortedArray);
+        System.out.println("Heap sort after: \t" + text.toString(sortedArray));
+        
+        
         // Shell sort LinkedList data..........................................     
         sortedWords = unsortedWords.clone();
         sort.shell(sortedWords);
@@ -185,7 +228,16 @@ public class SearchSortTest
         sort.merge(sortedWords);
         System.out.println("Merge sort Before: \t" + unsortedWords.toString());
         System.out.println("Merge sort After:  \t" + sortedWords.toString());
+        
+        // Heap sort LinkedList data...........................................        
+        sortedWords = unsortedWords.clone();
+        sort.heap(sortedWords);
+        System.out.println("Heap sort Before: \t" + unsortedWords.toString());
+        System.out.println("**** Heap sort After:  \t" + sortedWords.toString());
                 
+        // Even more searches (beyond I.B. curriculum).........................
+        Simulator.header("Even more searches (beyond I.B. curriculum)...");
+        
         // Execute the binary search on all test data..........................        
         for (int i = 0; i < testCases.size(); i++) {
             String word = testCases.get(i);

@@ -232,6 +232,22 @@ public class Numbers
     }
     
     /**
+     * Generates an array of random integers in the range between low and high
+     * 
+     * @param low the lowest number in the range
+     * @param high the highest number in the range
+     * @param size the size to make the array
+     * @return an array of random integers
+     */
+    public Integer[] randomClass(int low, int high, int size) {
+        Integer[] numbers = new Integer[size];  // create empty array
+        for (int i = 0; i < size; i++) {    // traverse array size
+            numbers[i] = random(low,high);  // assign random value to each index
+        }
+        return numbers;                     // return completed array
+    }
+    
+    /**
      * Generates an array of random doubles in the range between low and high
      * 
      * @param low the lowest number in the range
@@ -325,6 +341,20 @@ public class Numbers
             list.add(random());
         }
         return list;
+    }
+
+    /**
+     * Creates an empty clone of the passed array
+     * 
+     * @param array the array to clone
+     * @return a clone (empty) of the passed array
+     */
+    public Integer[] arrayClone(Integer[] array) {
+        Integer[] clone = new Integer[array.length];
+        for (int i = 0; i < clone.length; i++) {
+            clone[i] = new Integer(array[i]);
+        }
+        return clone;
     }
     
 }
