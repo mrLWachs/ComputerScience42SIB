@@ -108,6 +108,9 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         System.out.println(" the world");
         
         System.out.println("Good-bye world!");
+     
+        // In all these, the key is to use the "\" backslash
+        // which is called an "escape character"
         
         // Additional output tips... (these are "special" characters)
         
