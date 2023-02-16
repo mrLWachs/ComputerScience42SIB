@@ -20,10 +20,9 @@ public class PermanentStorageTest
      */
     public PermanentStorageTest() {
         Simulator.header("Permanent Storage Test started...");
+
         
         
-        
-        // End of file handling................................................
         Simulator.header("Permanent Storage Test completed!");
     }   
 
