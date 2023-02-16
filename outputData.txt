@@ -1,0 +1,678 @@
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">All testing started............................................................................................................................................................................................................</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Computer Science 30S course started............................................................................................................................................................................................................</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Java basics started............................................................................................................................................................................................................</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Hello World</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">I'm in the world</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Good-bye world</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Quote " </span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	Make a tab</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">\Slash</span></body></html>
+New
+
+Line
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Hi</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Information dialog icon is i</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Question dialog icon is ?</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Warning dialog icon is !</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Plain dialog has no icon</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Enter something</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Information dialog icon is i</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Question dialog icon is ?</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Warning dialog icon is !</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Plain dialog has no icon</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Confirm</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Example 1</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Example 2</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Example 3</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Example 4</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">a = false</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">b = 1</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">c = 1.2</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">d = *</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">e = cats</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">x = 10</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">x = 20</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">y = 30</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">y = 40</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">y = 4</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">x = 28</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">y = 5</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">z = 3</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">3.14159265 and 99 and y and true and Wachs</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">f = 15</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">g = 15.0</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">h = 15</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">o = 38</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">n = *</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Anything</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: -1</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Number</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: -1</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Decimal</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: -1.0</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Character</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: -</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">napolean = 8</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Letter 0 = n</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">NAPOLEAN</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Answer 1 = 3.141592653589793</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Answer 2 = 1.0</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Answer 3 = 0.8775825618903728</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Answer 4 = -0.6931471805599453</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Answer 5 = 125.0</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Answer 6 = 3.0</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Random # between 1.0 and 10.0 = 1.702009655936141</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Random # = 1</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">equal</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">less than</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">!=</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">w1 kind of == w2</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Get out</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 1</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 2</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 3</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 4</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 5</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 6</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 7</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 8</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 9</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 10</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 11</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 12</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 13</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 14</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 15</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 16</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 17</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 18</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 19</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 20</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 21</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 22</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 23</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 24</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 26</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 27</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 28</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 29</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 30</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 31</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 32</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 33</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 34</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 35</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 36</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 37</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 38</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 39</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 40</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 41</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 42</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 43</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 44</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 45</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 46</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 47</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 48</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 49</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 50</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Make a password</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Password</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 0</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 1</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 2</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 3</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 4</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 5</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 6</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 7</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 8</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 9</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 100</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 90</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 80</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 70</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 60</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 50</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 40</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 30</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 20</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 10</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 0</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Welcome to dog age convertor</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Enter human age</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Your dog age is -7</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Good-bye!</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Java basics completed!.........................................................................................................................................................................................................</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Methods unit starting............................................................................................................................................................................................................</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">*</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">*</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">*</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">*</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">*</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">*</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: number is -172170099</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Hello</span></body></html>
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Hi</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Methods unit completed!.........................................................................................................................................................................................................</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Arrays unit starting............................................................................................................................................................................................................</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">0 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">1 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">2 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">3 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">4 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">5 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">6 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">7 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">8 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">9 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">10 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">11 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">12 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">13 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">14 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">15 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">16 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">17 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">18 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">19 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">20 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">21 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">22 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">23 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">24 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">25 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">26 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">27 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">28 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">29 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">30 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">31 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">32 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">33 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">34 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">35 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">36 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">37 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">38 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">39 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">40 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">41 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">42 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">43 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">44 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">45 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">46 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">47 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">48 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">49 = 13</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">50 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">51 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">52 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">53 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">54 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">55 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">56 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">57 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">58 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">59 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">60 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">61 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">62 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">63 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">64 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">65 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">66 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">67 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">68 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">69 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">70 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">71 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">72 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">73 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">74 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">75 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">76 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">77 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">78 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">79 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">80 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">81 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">82 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">83 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">84 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">85 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">86 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">87 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">88 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">89 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">90 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">91 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">92 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">93 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">94 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">95 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">96 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">97 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">98 = 25</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">99 = 25</span></body></html>
+~~~SIMULATED DIALOG: Array: 
+(0)    0.05
+(1)    0.1
+(2)    0.25
+(3)    1.0
+(4)    2.0
+~~~SIMULATED DIALOG: Array: 
+(0)    0.0
+(1)    0.25
+(2)    0.5
+(3)    0.75
+(4)    1.0
+~~~SIMULATED DIALOG: Array: 
+(0)    25.0
+(1)    25.0
+(2)    25.0
+(3)    25.0
+(4)    25.0
+(5)    25.0
+(6)    25.0
+(7)    25.0
+(8)    25.0
+(9)    25.0
+(10)    25.0
+(11)    25.0
+(12)    25.0
+(13)    25.0
+(14)    25.0
+(15)    25.0
+(16)    25.0
+(17)    25.0
+(18)    25.0
+(19)    25.0
+(20)    25.0
+(21)    25.0
+(22)    25.0
+(23)    25.0
+(24)    25.0
+(25)    25.0
+(26)    25.0
+(27)    25.0
+(28)    25.0
+(29)    25.0
+(30)    25.0
+(31)    25.0
+(32)    25.0
+(33)    25.0
+(34)    25.0
+(35)    25.0
+(36)    25.0
+(37)    25.0
+(38)    25.0
+(39)    25.0
+(40)    25.0
+(41)    25.0
+(42)    25.0
+(43)    25.0
+(44)    25.0
+(45)    25.0
+(46)    25.0
+(47)    25.0
+(48)    25.0
+(49)    13.0
+(50)    25.0
+(51)    25.0
+(52)    25.0
+(53)    25.0
+(54)    25.0
+(55)    25.0
+(56)    25.0
+(57)    25.0
+(58)    25.0
+(59)    25.0
+(60)    25.0
+(61)    25.0
+(62)    25.0
+(63)    25.0
+(64)    25.0
+(65)    25.0
+(66)    25.0
+(67)    25.0
+(68)    25.0
+(69)    25.0
+(70)    25.0
+(71)    25.0
+(72)    25.0
+(73)    25.0
+(74)    25.0
+(75)    25.0
+(76)    25.0
+(77)    25.0
+(78)    25.0
+(79)    25.0
+(80)    25.0
+(81)    25.0
+(82)    25.0
+(83)    25.0
+(84)    25.0
+(85)    25.0
+(86)    25.0
+(87)    25.0
+(88)    25.0
+(89)    25.0
+(90)    25.0
+(91)    25.0
+(92)    25.0
+(93)    25.0
+(94)    25.0
+(95)    25.0
+(96)    25.0
+(97)    25.0
+(98)    25.0
+(99)    25.0
+~~~SIMULATED DIALOG: Array: 
+(0)    11.0
+(1)    11.0
+(2)    6.0
+(3)    7.0
+(4)    6.0
+(5)    14.0
+(6)    13.0
+(7)    10.0
+(8)    13.0
+(9)    12.0
+(10)    8.0
+(11)    11.0
+(12)    5.0
+(13)    14.0
+(14)    14.0
+(15)    3.0
+(16)    12.0
+(17)    2.0
+(18)    3.0
+(19)    9.0
+(20)    6.0
+(21)    9.0
+(22)    6.0
+(23)    5.0
+(24)    7.0
+(25)    9.0
+(26)    3.0
+(27)    6.0
+(28)    13.0
+(29)    6.0
+(30)    11.0
+(31)    7.0
+(32)    7.0
+(33)    10.0
+(34)    6.0
+(35)    2.0
+(36)    13.0
+(37)    7.0
+(38)    7.0
+(39)    9.0
+(40)    6.0
+(41)    10.0
+(42)    8.0
+(43)    5.0
+(44)    10.0
+(45)    2.0
+(46)    2.0
+(47)    10.0
+(48)    8.0
+(49)    6.0
+(50)    7.0
+(51)    13.0
+<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$MarginBorder@46fbb2c1,flags=296,maximumSize=,minimumSize=,preferredSize=,caretColor=sun.swing.PrintColorUIResource[r=51,g=51,b=51],disabledTextColor=javax.swing.plaf.ColorUIResource[r=184,g=207,b=229],editable=true,margin=javax.swing.plaf.InsetsUIResource[top=0,left=0,bottom=0,right=0],selectedTextColor=sun.swing.PrintColorUIResource[r=51,g=51,b=51],selectionColor=javax.swing.plaf.ColorUIResource[r=184,g=207,b=229],colums=0,columWidth=0,rows=0,rowHeight=0,word=false,wrap=false]</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Arrays unit complete!.........................................................................................................................................................................................................</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Classes unit started............................................................................................................................................................................................................</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Jane Doe is 0 and if you are wondering if I am male, the answer is false</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Roberta Shapiro is 18 and if you are wondering if I am male, the answer is false</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Ben Shapiro is 0 and if you are wondering if I am male, the answer is false</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Samatha Bee is 45 and if you are wondering if I am male, the answer is false</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Sammy Bee is 46 and if you are wondering if I am male, the answer is true</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Booooooo!</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Greg Heffley is 12 and if you are wondering if I am male, the answer is true</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Student #: 101, GPA: 2.7, Grade: 6</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Greg Heffley is 12 and if you are wondering if I am male, the answer is true</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Student #: 101, GPA: 2.6842920367320513, Grade: 6</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Greg Heffley is 12 and if you are wondering if I am male, the answer is true</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Student #: 101, GPA: 2.715707963267949, Grade: 6</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Greg Heffley is 12 and if you are wondering if I am male, the answer is true</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Student #: 101, GPA: 2.9042035224833356, Grade: 6</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Havoc is 12 and if you are wondering if I am male, the answer is true</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Student #: 2665, GPA: 2.7, Grade: 9</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Do I have pride? The answer is true</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Havoc is 12 and if you are wondering if I am male, the answer is true</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Student #: 2665, GPA: 2.7, Grade: 9</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Do I have pride? The answer is false</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Havoc is 12 and if you are wondering if I am male, the answer is true</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Student #: 2665, GPA: 2.7, Grade: 9</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Do I have pride? The answer is true</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Mr. Libby is 30 and if you are wondering if I am male, the answer is false</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - I teach 100 students:</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Havoc is 12 and if you are wondering if I am male, the answer is true</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Student #: 2665, GPA: 2.731415926535898, Grade: 9</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Do I have pride? The answer is true</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">~~~Meeting beginning with 6 members</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Roberta Shapiro is 18 and if you are wondering if I am male, the answer is false</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Ben Shapiro is 0 and if you are wondering if I am male, the answer is false</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Booooooo!</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Greg Heffley is 12 and if you are wondering if I am male, the answer is true</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Student #: 101, GPA: 2.9356194490192333, Grade: 6</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Havoc is 12 and if you are wondering if I am male, the answer is true</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Student #: 2665, GPA: 2.731415926535898, Grade: 9</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Do I have pride? The answer is true</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Mr. Libby is 30 and if you are wondering if I am male, the answer is false</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - I teach 100 students:</span></body></html>
+<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">~~~Meeting adjurned!</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Classes unit complete!.........................................................................................................................................................................................................</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Graphics and GUIs unit started............................................................................................................................................................................................................</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,255);font-family: Consolas;">~~~SIMULATED USER INTERFACE: Graphics1</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,255);font-family: Consolas;">~~~SIMULATED USER INTERFACE: Graphics2</span></body></html>
+<html><head></head><body><span style="color: rgb(0,255,255);font-family: Consolas;">~~~SIMULATED USER INTERFACE: Graphics3</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Graphics and GUIs unit complete!.........................................................................................................................................................................................................</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Computer Science 30S course completed!.........................................................................................................................................................................................................</span></body></html>
+<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">All testing complete!.........................................................................................................................................................................................................</span></body></html>
