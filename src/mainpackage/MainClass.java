@@ -2,7 +2,7 @@
 /** Required package class namespace */
 package mainpackage;
 
-/** Required imports */
+/** Required API imports */
 import testing.Tester;
 
 
