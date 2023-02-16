@@ -511,8 +511,9 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // code inside of the curly brackets is said to be in a "block" of
         // code and that block only runs when the test inside of the round
         // brackets tests TRUE. It also indents the code inside the block
-
-        int value1 = 10, value2 = 10;
+        
+        int value1 = 10;
+        int value2 = 10;
         
         if (value1 == value2) {
             System.out.println("equal");
@@ -523,8 +524,8 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         double value3 = 1.45, value4 = 1.5;
         
         if (value3 < value4) {
-            System.out.println("The example is ");
-            System.out.println("Less than");
+            System.out.print("The example is ");
+            System.out.println("less than");
         }
         else {
             System.out.println("Greater than");
@@ -538,10 +539,11 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // And.. (even further shorthand) the line can be moved up to the
         // same line as the if statement
         
-        char value5 = 'A', value6 = 'a';
+        char value5 = 'A';
+        char value6 = 'a';
         
-        if (value5 != value6)   System.out.println("!=");
-        else                    System.out.println("==");
+        if (value5 != value6) System.out.println("!=");
+        else                  System.out.println("==");
         
         // Use "else if" for multiple cases of more than 2 things (same as the
         // "switch" statement - which I don't use) use strings for this
@@ -566,7 +568,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // As an optional way to combine logic using: "and" "or" "not"
         // "and" means BOTH   must be true - uses the symbol "&&"
         // "or"  means EITHER can  be true - uses the symbol "||"
-        // "not" reverse logic (so false)  - uses the symbol "!"            
+        // "not" reverse logic (so false)  - uses the symbol "!" 
         
         int age = 17;
         double iq = 1.0;
@@ -596,7 +598,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         
         while (counter < 10) {
             System.out.println("counter = " + counter);
-            counter++;  // counter = counter + 1;
+            counter++;      // means "counter = counter + 1"
         }
         
         // Loop with a string
@@ -604,9 +606,11 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         String password = JOptionPane.showInputDialog("Create a password");
         
         while (password.equals("1234")) {
-            JOptionPane.showMessageDialog(null, "Try again");
+            JOptionPane.showMessageDialog(null, "Try again!");
             password = JOptionPane.showInputDialog("Create another password");
         }
+        
+        JOptionPane.showMessageDialog(null, "Ok, continue...");
         
         // The next type of loop is rarely used (you may never need it)
         // it tests for true/false at the bottom of the loop, you use it
@@ -620,13 +624,13 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         } while (choice.equalsIgnoreCase(password) == false);
         
         JOptionPane.showMessageDialog(null, "You got it");
-        
+
         // The "for" loop is used for counting (and for the upcoming unit 
         // called "arrays"). It is a much more technical ("codey") looking loop
         // The inside of the round brackets means: ( start ; end ; change)        
         // The for loop creates its own variable (by default NetBeans calls
         // it "i") - short for "iteration"
-        
+
         for (int i = 0; i < 10; i++) {
             System.out.println("i = " + i);
         }
@@ -636,22 +640,22 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
             // end (stop) at zero (including zero)
             // count down (not up)
             // count by 10s (not 1s)
-            
+
         for (int counting = 100; counting >= 0; counting -= 10) {
             System.out.println("counting = " + counting);
         }
         
         // After you autocomplete a for loop (by typing "for" then tab),
-        // you can immediately rename the variable "i" (which is highlighted)
+        // you can immediately rename the varaible "i" (which is highlighted)
         // to whatever you want, if you press tab a second time, it will 
-        // highlight the ending value of the loop   
-            
+        // highlight the ending value of the loop
+
         // One more for "fun"
-        
-        for (double i = 999.789; i > 15.6; i/=5.25) {
+
+        for (double i = 99.789; i > 15.6; i/=5.25) {
             System.out.println("i = " + i);
         }
-        
+
         ///////////////////////////////////////////////////////////////////////
         // EXAMPLE ASSIGNMENT:
         ///////////////////////////////////////////////////////////////////////
@@ -699,6 +703,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         
         // Curly brackets (braces, parenthesis) { and } are important - all 
         // code goes between these two brackets
+     
     }
 
     /**
