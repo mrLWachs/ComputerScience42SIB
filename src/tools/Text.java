@@ -20,7 +20,7 @@ import java.net.URL;
 public class Text 
 {
     
-    // Encapsulated global class properties below...............................
+    // Encapsulated global class properties below..............................
     
     private final char   ALPHA_LOW       = 'a';
     private final char   ALPHA_HIGH      = 'z';
