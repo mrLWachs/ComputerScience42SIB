@@ -1418,7 +1418,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
 //      all the code) and pres ALT + SHIFT + F (you should do this before you 
 //      hand in your code)
 // (13) You can "teach" NetBeans to change the style it uses to autoformat (see
-//      number 14) by going to Tools -> Options, then click on the "Editor"
+//      number 13) by going to Tools -> Options, then click on the "Editor"
 //      tab at the top, then the "Formatting" below that. Then change the 
 //      settings to what you prefer
 // (14) To have NetBeans automate code comments for assignments, select the 
