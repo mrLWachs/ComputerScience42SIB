@@ -110,26 +110,6 @@ public class Sort <T extends Comparable<T>>
             }
         }
     }
-       
-    
-    
-    ///////////////////////////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////////////////
-    
-    
-    
     
     /**
      * An implementation of a insertion sort algorithm it will sort the array
@@ -418,13 +398,6 @@ public class Sort <T extends Comparable<T>>
      * @param array the array of generic items to sort
      */    
     public T[] heap(T[] array) {
-//        if (array == null) return null;                          // error check
-//        LinkedList list = new LinkedList(array);
-//        heap(list);
-//        array = (T[]) list.toArray(array);
-//        return array;
-        
-        
         if (array == null) return null;                         // Error check
         int length = array.length;
         for (int i = length / 2 - 1; i >= 0; i--) {
@@ -438,42 +411,7 @@ public class Sort <T extends Comparable<T>>
         }
         return array;
     } 
-    
-    /**
-     * An implementation of a heap sort algorithm it will sort the array into 
-     * ascending order. 
-     * 
-     * @param list the LinkedList to sort
-     */    
-    public void heap(LinkedList<T> list) {
-        if (list == null) return;                       // error check
-//        int length = list.size();
-//        T item = list.get(0);
-//        T[] array = (T[])(Array.newInstance(
-//                            item.getClass().getComponentType(), 
-//                            length)
-//                        );                               // create empty array
-//        T[] array = null;
-//        array = (T[])list.toArray(array);
-//        array = heap(array);
-//        list = new LinkedList<>(array);
 
-//        T[] array = ((T[])(list.toArray(array)));
-//        list = new LinkedList<>( heap( ((T[])(list.toArray(null))) ) );
-        
-//        if (list == null) return;                          // error check
-//        int length = list.size();
-//        for (int i = length / 2 - 1; i >= 0; i--) {
-//            heapify(list, length, i);      // Build heap (rearrange array)
-//        }
-//        for (int i = length - 1; i > 0; i--) {  // Extract element from heap            
-//            T temp = list.get(0);               // Move current root to end
-//            list.set(0,list.get(i));
-//            list.set(i,temp);
-//            heapify(list, i, 0);       // Call max heapify on the reduced heap
-//        }
-    } 
- 
     /**
      * To 'heapify' a sub-tree rooted with node index which is an index in 
      * array[] with length being the size of heap
@@ -499,55 +437,25 @@ public class Sort <T extends Comparable<T>>
             heapify(array, length, largest);    // Recursively heapify sub-tree
         }
     }
-    
-    
-    
-//    /**
-//     * To 'heapify' a sub-tree rooted with node index which is an index in 
-//     * array[] with length being the size of heap
-//     * 
-//     * @param array
-//     * @param length
-//     * @param index 
-//     */
-//    private void heapify(LinkedList<T> list, int length, int index) {
-//        int largest = index; // Initialize largest as root
-//        int left   = 2 * index + 1; // left = 2*i + 1
-//        int right  = 2 * index + 2; // right = 2*i + 2
-//        T first  = list.get(left);
-//        T second = list.get(largest);
-//        T third  = list.get(right);
-//        
-//        if (left < length && first.compareTo(second) > 0) {
-//        //if (left < length && array[left].compareTo(array[largest]) > 0) {
-//            largest = left;     // If left child is larger than root
-//        }
-//        if (right < length && third.compareTo(second) > 0) {
-//        //if (right < length && array[right].compareTo(array[largest]) > 0) {
-//            largest = right;    // If right child is larger than largest so far
-//        }
-//        if (largest != index) {             // If largest is not root
-//            T swap = list.get(index);
-//            //T swap = array[index];
-//            list.set(index, list.get(largest));
-//            //array[index] = array[largest];
-//            list.set(largest, swap);
-//            //array[largest] = swap;
-//            heapify(list, length, largest);    // Recursively heapify sub-tree
-//        }
-//    }
-    
-    
-    
-//    /**
-//     * An implementation of a radix sort algorithm it will sort the array into 
-//     * ascending order. 
-//     * 
-//     * @param list the LinkedList to sort
-//     */    
-//    public void radix(LinkedList<T> list) {
-//        if (list == null) return;                          // error check
-//        
-//    }
+            
+    /**
+     * An implementation of a heap sort algorithm it will sort the array into 
+     * ascending order. 
+     * 
+     * @param list the LinkedList to sort
+     */    
+    public void heap(LinkedList<T> list) {
+        if (list == null) return;                       // error check
+    } 
+ 
+    /**
+     * An implementation of a radix sort algorithm it will sort the array into 
+     * ascending order. 
+     * 
+     * @param list the LinkedList to sort
+     */    
+    public void radix(LinkedList<T> list) {
+        if (list == null) return;                          // error check
+    }
     
 }
