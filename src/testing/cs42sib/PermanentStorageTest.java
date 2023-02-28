@@ -145,11 +145,11 @@ public class PermanentStorageTest
             }
             else {
                 // The file already does exist.................................    
-                System.out.println("File alread exists!");
+                System.out.println("File already exists!");
             }
         }     
                 
-               
+        // Now open the files (for the one with one line)......................    
         
         
         
