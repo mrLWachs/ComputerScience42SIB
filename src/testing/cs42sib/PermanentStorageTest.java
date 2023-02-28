@@ -3,8 +3,11 @@
 package testing.cs42sib;
 
 /** Required API imports */
+import io.FileHandler;
 import io.Simulator;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -46,28 +49,28 @@ public class PermanentStorageTest
     public PermanentStorageTest() {
         Simulator.header("Permanent Storage Test started...");
 
-        // Learn about "error traps"...........................................   
-        
-        try {
-            // Opening the "try" block (means "try this code"), this is the 
-            // "trap" we set to "try" some code, and if an error occurs (of 
-            // the type we are catching for) we "catch" that error and the  
-            // program keeps running.......................................... 
-            double number = 3 / 0;
-            int[] a = { 1, 2, 3 };
-            a[5] = 0;
-        }
-        catch (ArithmeticException error) {
-            // Open the "catch" block, so if an error occurs in the "try" block
-            // of the type we defined (divide by zero..) the program will 
-            // not shut down, instead it will jump (branch) to this block (the 
-            // catch block).................................................... 
-            System.out.println("Divide by zero -> " + error.toString());
-        }
-        catch (ArrayIndexOutOfBoundsException error) {
-            // You can add multiple "catch" blocks.............................    
-            System.out.println("Array was out of bounds -> " + error.toString());
-        }       
+//        // Learn about "error traps"...........................................   
+//        
+//        try {
+//            // Opening the "try" block (means "try this code"), this is the 
+//            // "trap" we set to "try" some code, and if an error occurs (of 
+//            // the type we are catching for) we "catch" that error and the  
+//            // program keeps running.......................................... 
+//            double number = 3 / 0;
+//            int[] a = { 1, 2, 3 };
+//            a[5] = 0;
+//        }
+//        catch (ArithmeticException error) {
+//            // Open the "catch" block, so if an error occurs in the "try" block
+//            // of the type we defined (divide by zero..) the program will 
+//            // not shut down, instead it will jump (branch) to this block (the 
+//            // catch block).................................................... 
+//            System.out.println("Divide by zero -> " + error.toString());
+//        }
+//        catch (ArrayIndexOutOfBoundsException error) {
+//            // You can add multiple "catch" blocks.............................    
+//            System.out.println("Array was out of bounds -> " + error.toString());
+//        }       
                 
         // Now some file handling..............................................
                
@@ -89,79 +92,114 @@ public class PermanentStorageTest
         
         // Write ONE piece of data (the word) to that permanent file............
         
-        try {
-            // Create instance (object) of the classes needed and connect the 
-            // 2 classes with the file name we just made........................
-            FileWriter  writer  = new FileWriter(name);   // First object
-            PrintWriter printer = new PrintWriter(writer);
-            // Now write to the file............................................
-            printer.print(word);        // Call class method to write to file..   
-            // Sever (disconnect) from the file.................................
-            printer.close();                                // Close connection
-        } 
-        catch (IOException error) {                         // catch error.....
-            System.out.println("File write error");        // output message..
-        }
+//        try {
+//            // Create instance (object) of the classes needed and connect the 
+//            // 2 classes with the file name we just made........................
+//            FileWriter  writer  = new FileWriter(name);   // First object
+//            PrintWriter printer = new PrintWriter(writer);
+//            // Now write to the file............................................
+//            printer.print(word);        // Call class method to write to file..   
+//            // Sever (disconnect) from the file.................................
+//            printer.close();                                // Close connection
+//        } 
+//        catch (IOException error) {                         // catch error.....
+//            System.out.println("File write error");        // output message..
+//        }
+//        
+//        // Now involve the user in naming of a file.............................
+//        
+//        // We could get input from the user using very simple input like 
+//        // Scanner or a simple JOptionPane input dialog like this...............
+//        
+//        // Scanner scanner = new Scanner(System.in);
+//        // name = scanner.nextLine();
+//        // name = JOptionPane.showInputDialog("Enter name");
+//                
+//        // Or we could build a GUI and use a textbox, but instead, we will use
+//        // something new that is already built for ths..........................
+//        
+//        JFileChooser chooser = new JFileChooser();
+//        chooser.showSaveDialog(null);           // Showing a dialog to user....
+//        
+//        // We will also use a "File" class object to work with as well.........
+//        File file = chooser.getSelectedFile();  // Get the name from the user
+//                
+//        // Check the file the user just selected...............................
+//        if (file == null) {                     // Error check on the file.....   
+//            // Means the user hit cancel or ok without selecting, etc..........
+//            System.out.println("Please name a file");
+//        }
+//        else {
+//            if (!file.exists()) {
+//                // The file does not exist so we create it......................
+//                try {
+//                    FileWriter  writer  = new FileWriter(file);    // Link file
+//                    PrintWriter printer = new PrintWriter(writer); // and writer
+//                    // Use the enhanced for loop - which you can read as...
+//                    // "for every line in poem"
+//                    for (String line : poem) {  // Enhanced loop through array..  
+//                        printer.println(line);      // Writing one array index..
+//                    }
+//                    printer.close();            // Sever (close) file connection  
+//                } 
+//                catch (IOException error) {                 // Catch error.....
+//                    System.out.println("File save error");  // Message user....
+//                }
+//            }
+//            else {
+//                // The file already does exist.................................    
+//                System.out.println("File already exists!");
+//            }
+//        }     
+//                
+//        // Now open the files (for the one with one line)......................    
+//        
+//        try {
+//            // Use of similar classes form similar APIs to read from files as 
+//            // we used to write to files
+//            FileReader     reader = new FileReader(name);       // Connect.....
+//            BufferedReader buffer = new BufferedReader(reader); // Connect..... 
+//            String line = buffer.readLine();                    // Read line...
+//            System.out.println("line read was " + line);        // Output line.
+//            buffer.close();                                     // Close connect
+//        } 
+//        catch (IOException e) { }    // You do not need to respond to the error 
+//        
+//        // Do it again with the array (multiple lines).........................  
+//        try {
+//            chooser.showOpenDialog(null);
+//            file = chooser.getSelectedFile();
+//            FileReader     reader = new FileReader(file);       // Connect.....
+//            BufferedReader buffer = new BufferedReader(reader); // Connect.....            
+//            String line = buffer.readLine();                    // Read line...       
+//            while (line != null) {                  // Loop until no inputs left
+//                System.out.println("This line read was " + line); // Output....
+//                line = buffer.readLine();                       // Read again..
+//            }
+//            buffer.close();                                     // Close connect  
+//        } 
+//        catch (IOException e) { }    // You do not need to respond to the error
         
-        // Now involve the user in naming of a file.............................
+        // We can use a pre-built class (from Mr. Wachs but you can modify it
+        // or not use it) to to the same thing (save and open).................
         
-        // We could get input from the user using very simple input like 
-        // Scanner or a simple JOptionPane input dialog like this...............
+        // Instantiate (make an object) the file handler....................... 
+        FileHandler fileHandler = new FileHandler();
         
-        // Scanner scanner = new Scanner(System.in);
-        // name = scanner.nextLine();
-        // name = JOptionPane.showInputDialog("Enter name");
+        // We can call any of the methods to do what we need...................  
+        fileHandler.save(word, name);
+        String newWord = fileHandler.open(name);
+        
+        // Compare the before and after........................................        
+        System.out.println("Before: " + word);
+        System.out.println("After : " + newWord);
                 
-        // Or we could build a GUI and use a textbox, but instead, we will use
-        // something new that is already built for ths..........................
-        
-        JFileChooser chooser = new JFileChooser();
-        chooser.showSaveDialog(null);           // Showing a dialog to user....
-        
-        // We will also use a "File" class object to work with as well.........
-        File file = chooser.getSelectedFile();  // Get the name from the user
-                
-        // Check the file the user just selected...............................
-        if (file == null) {                     // Error check on the file.....   
-            // Means the user hit cancel or ok without selecting, etc..........
-            System.out.println("Please name a file");
-        }
-        else {
-            if (!file.exists()) {
-                // The file does not exist so we create it......................
-                try {
-                    FileWriter  writer  = new FileWriter(file);    // Link file
-                    PrintWriter printer = new PrintWriter(writer); // and writer
-                    // Use the enhanced for loop - which you can read as...
-                    // "for every line in poem"
-                    for (String line : poem) {  // Enhanced loop through array..  
-                        printer.println(line);      // Writing one array index..
-                    }
-                    printer.close();            // Sever (close) file connection  
-                } 
-                catch (IOException error) {                 // Catch error.....
-                    System.out.println("File save error");  // Message user....
-                }
-            }
-            else {
-                // The file already does exist.................................    
-                System.out.println("File already exists!");
-            }
-        }     
-                
-        // Now open the files (for the one with one line)......................    
+        // Now with the array of data, we create a save dialog (using another 
+        // class available to you).............................................  
         
         
         
         
-        
-        
-        
-        
-        
-        
-        
-                
                 
                 
                 
