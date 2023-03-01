@@ -50,8 +50,8 @@ public class PermanentStorageTest
         Simulator.header("Permanent Storage Test started...");
 
         // Learn about "error traps"...........................................   
-        
         Simulator.comment("Learn about 'error traps'");
+                
         try {
             // Opening the "try" block (means "try this code"), this is the 
             // "trap" we set to "try" some code, and if an error occurs (of 
@@ -75,8 +75,9 @@ public class PermanentStorageTest
                 
         // Now some file handling..............................................
                
+        // Create data to use.................................................. 
         Simulator.comment("Create sample data to use");
-        // Create data to use..................................................        
+        
         String[] poem = {
             "I look at my watch for the hour",
             "But I find it has run out of power",
@@ -92,9 +93,9 @@ public class PermanentStorageTest
         String last   = ".txt";         // File extention (e.g. ".doc" ".txt")
         String name   = first + middle + last; // Full Name (parts concatinated)
         
-        // Write ONE piece of data (the word) to that permanent file............
-        
+        // Write ONE piece of data (the word) to that permanent file............        
         Simulator.comment("Save ONE piece of data to that permanent file");
+        
         try {
             // Create instance (object) of the classes needed and connect the 
             // 2 classes with the file name we just made........................
@@ -109,9 +110,9 @@ public class PermanentStorageTest
             System.out.println("File write error");        // output message..
         }
         
-        // Now involve the user in naming of a file.............................
-        
+        // Now involve the user in naming of a file.............................        
         Simulator.comment("Now involve the user to get a file name");
+        
         // We could get input from the user using very simple input like 
         // Scanner or a simple JOptionPane input dialog like this...............
         
@@ -156,9 +157,9 @@ public class PermanentStorageTest
             }
         }     
                 
-        // Now open the files (for the one with one line)......................    
+        // Now open the files (for the one with one line)...................... 
+        Simulator.comment("Open file with one line (no user involvment)");
         
-        Simulator.comment("Open the file with one word (one line)");
         try {
             // Use of similar classes form similar APIs to read from files as 
             // we used to write to files
@@ -170,9 +171,9 @@ public class PermanentStorageTest
         } 
         catch (IOException e) { }    // You do not need to respond to the error 
         
-        // Do it again with the array (multiple lines)......................... 
+        // Do it again with the array (multiple lines).........................         
+        Simulator.comment("Open file with multiple lines (user picks file)");
         
-        Simulator.comment("Open the file with the array (multiple lines)");
         try {
             chooser.showOpenDialog(null);
             file = chooser.getSelectedFile();
@@ -189,7 +190,7 @@ public class PermanentStorageTest
                 
         // We can use a pre-built class (from Mr. Wachs but you can modify it
         // or not use it) to do the same thing (save and open).................
-        Simulator.comment("Pre-built class to save/open one line (no user)");
+        Simulator.comment("Class to save/open one line (no user)");
         
         // Instantiate (make an object) the file handler....................... 
         FileHandler fileHandler = new FileHandler();
@@ -204,7 +205,7 @@ public class PermanentStorageTest
                 
         // Now with the array of data, we create a save dialog (using another 
         // class available to you).............................................  
-        Simulator.comment("Pre-built class to save/open multiple lines (with user)");
+        Simulator.comment("Class to save/open multiple lines (with user)");
         
         
         
