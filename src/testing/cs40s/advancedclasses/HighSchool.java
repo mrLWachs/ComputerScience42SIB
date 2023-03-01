@@ -2,6 +2,8 @@
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
+import java.io.Serializable;
+
  
 /**
  * HighSchool.java - represents a high school student person. Before creating
@@ -23,7 +25,7 @@ package testing.cs40s.advancedclasses;
  * @author Mr. Wachs
  * @since 2-Nov-2022, 11:40:39 AM
  */
-public abstract class HighSchool extends Student
+public abstract class HighSchool extends Student implements Serializable
 {
 
     /**

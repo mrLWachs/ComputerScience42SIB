@@ -2,6 +2,8 @@
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
+import java.io.Serializable;
+
 
 /*
  * Book - represents a book object which is "associated" (the "has a" 
@@ -10,7 +12,7 @@ package testing.cs40s.advancedclasses;
  * @author Mr. Wachs 
  * @since 13-Oct-2022
 */
-public class Book
+public class Book implements Serializable
 {
 
     // This class can remain empty for this example...

@@ -2,6 +2,8 @@
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
+import java.io.Serializable;
+
 
 /*
  * Student - represents a student, reminder that "extends" causes
@@ -20,7 +22,7 @@ package testing.cs40s.advancedclasses;
  * @author Mr. Wachs 
  * @since 13-Oct-2022
 */
-public class Student extends Person
+public class Student extends Person implements Serializable
 {
     
     private int number;    

@@ -2,6 +2,8 @@
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
+import java.io.Serializable;
+
  
 /**
  * Athlete.java - represents a Athlete Husky HighSchool Student Person. Using 
@@ -16,7 +18,7 @@ package testing.cs40s.advancedclasses;
  * @author Mr. Wachs
  * @since 9-Nov-2022, 11:28:38 AM
  */
-public class Athlete extends Husky implements PermissionForm, Hockey, ChessBoxing
+public class Athlete extends Husky implements PermissionForm, Hockey, ChessBoxing, Serializable
 {
 
     private boolean haveForm;           // Encapsulated properties (variables)

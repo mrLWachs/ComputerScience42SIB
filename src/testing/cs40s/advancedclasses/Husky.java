@@ -2,6 +2,8 @@
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
+import java.io.Serializable;
+
  
 /**
  * Husky.java - represents a Husky HighSchool Student Person
@@ -9,7 +11,7 @@ package testing.cs40s.advancedclasses;
  * @author Mr. Wachs
  * @since 9-Nov-2022, 11:28:13 AM
  */
-public class Husky extends HighSchool
+public class Husky extends HighSchool implements Serializable
 {
 
     // Without writing a default constructor, Java writes one for me - this

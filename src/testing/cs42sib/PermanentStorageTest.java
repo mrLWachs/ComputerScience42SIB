@@ -3,6 +3,8 @@
 package testing.cs42sib;
 
 /** Required API imports */
+import collections.LinkedList;
+import io.Dialogs;
 import io.FileHandler;
 import io.Simulator;
 import java.io.BufferedReader;
@@ -12,6 +14,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.swing.JFileChooser;
+import testing.cs40s.advancedclasses.Athlete;
+import tools.Numbers;
+import tools.Text;
 
 
 /**
@@ -207,34 +212,58 @@ public class PermanentStorageTest
         // class available to you).............................................  
         Simulator.comment("Class to save/open multiple lines (with user)");
         
+        Dialogs dialog = new Dialogs();
+        file = dialog.saveFile(null);
+        fileHandler.save(poem, file);
+        file = dialog.openFile(null);
+        String[] newPoem = fileHandler.openArray(file);
+        
+        // Compare the before and after (and use another class "tool" to help).  
+        Text text = new Text();
+        System.out.println("Before: " + text.toString(poem));
+        System.out.println("After:  " + text.toString(newPoem));
+        
+        // Now we want to save "anything" to a file (for save and open)........
+        Simulator.comment("Now save/open on a complex data type");
         
         
+        // Make a variable of "anything", or array of ("anythings", or a 
+        // collection (LinkedList) of "anythings"..............................
         
+        // Create an Athlete object............................................
+        Athlete athlete = new Athlete();
         
+        // Save this class object data to a file, open it, and compare......... 
+        fileHandler.saveObject(athlete, name);
+        Athlete newAthlete = (Athlete)fileHandler.openObject(name);
+        System.out.println("Before: " + athlete.toString());
+        System.out.println("After:  " + newAthlete.toString());
         
+        // Now take it up to an entire collection of class level objects all 
+        // put into a linked list collection and then dave the entire list to
+        // a file, open the entire list, and compare the two lists.............   
+        LinkedList<Athlete> athletes = new LinkedList<>();
         
+        Numbers numbers = new Numbers();
         
+        // Traverse up to 100 athlete objects (instances), creating Athlete 
+        // objects, assign them random names and ages, and then adding that 
+        // instance to the list................................................
+        for (int i = 0; i < 100; i++) {
+            String athleteName = text.randomWord();
+            int    athleteAge  = numbers.random(14, 21);
+            Athlete athleteForList = new Athlete(athleteName, athleteAge);
+            athletes.add(athleteForList);
+        }
         
+        // Save the list to the file, open the list, and compare...............  
+        fileHandler.saveObject(athletes, file);
+        LinkedList<Athlete> newAthletes = 
+                (LinkedList<Athlete>)fileHandler.openObject(file);
+        System.out.println("Before: " + athletes.toString());
+        System.out.println("After:  " + newAthletes.toString());
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                
-                
-                
-        
+        // End of file handling................................................        
         Simulator.header("Permanent Storage Test completed!");
     }   
 

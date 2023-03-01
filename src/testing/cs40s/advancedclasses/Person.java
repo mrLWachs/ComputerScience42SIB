@@ -2,6 +2,8 @@
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
+import java.io.Serializable;
+
 
 /** 
  * Person.java - represents a person. This is a class with properties (things
@@ -12,7 +14,7 @@ package testing.cs40s.advancedclasses;
  * @author Mr. Wachs 
  * @since October, 2022
 */
-public class Person 
+public class Person implements Serializable
 {
     
     // Properties: (things about it, adjectives, descriptors, variables, arrays)
