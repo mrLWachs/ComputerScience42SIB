@@ -3,7 +3,9 @@
 package testing.cs42sib;
 
 /** Required imports */
+import collections.Stack;
 import io.Simulator;
+import tools.Text;
 
 
 /**
@@ -20,6 +22,42 @@ public class StacksQueuesTest
      */
     public StacksQueuesTest() {
         Simulator.header("Stacks and Queues Test started...");
+        
+        // Create some objects for testing.....................................
+        Simulator.comment("Create objects for testing...");
+        
+        final int MAX       = 10;       // For the number of objects to create
+        final int WORD_SIZE = 5;        // For random words made in the objects
+        
+        Text text = new Text();         // For making random text
+        
+        // Create and test a Stack object.......................................
+        Simulator.comment("Create and Test a stack object...");
+        
+        Stack stack = new Stack();
+        
+        // Test toString, size, isEmpty, and push methods......................
+        Simulator.comment("Test toString, size, isEmpty, and push methods...");
+        
+        System.out.println("Empty = "  + stack.isEmpty() +
+                           "\tSize = " + stack.size() +
+                           "\t"        + stack.toString());
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
