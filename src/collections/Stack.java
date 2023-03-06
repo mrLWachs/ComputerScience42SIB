@@ -88,4 +88,23 @@ public class Stack <T> implements Serializable
         }
     }
     
+    /**
+     * Adds (inserting) to the top of the stack. Note: the data must be valid
+     * (not null) for it to be added
+     * 
+     * @param data the generic data to be added (pushed)
+     * @return operation was successful (true) or not (false)
+     */
+    public boolean push(T data) {
+        if (data == null) return false;     // Will not proceed
+        Node node = new Node(data);         // Creating (instantiating) object
+        if (!isEmpty()) node.next = top;    // Check if is the first node
+        top = node;                         // Adjusting top reference (link)
+        length++;                           // Increasing private property
+        return true;                        // Operation was successful
+    }
+    
+    
+    
+    
 }

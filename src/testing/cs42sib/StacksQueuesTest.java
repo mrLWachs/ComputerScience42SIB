@@ -43,7 +43,14 @@ public class StacksQueuesTest
                            "\tSize = " + stack.size() +
                            "\t"        + stack.toString());
         
+        // Loop through adding random values...................................
+        Simulator.comment("Loop through adding random values");
         
+        for (int i = 0; i < MAX; i++) {                 // Traverse to test edge
+            String word = text.randomWord(WORD_SIZE);   // Create random word
+            
+            
+        }
         
         
         
