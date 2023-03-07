@@ -50,4 +50,14 @@ public class Box <T>
         System.out.println(present.toString());
     }    
     
+    /**
+     * String representation of this object
+     *
+     * @return The object represented as a String
+     */
+    @Override
+    public String toString() {
+        return present.toString();
+    }
+    
 }

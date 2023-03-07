@@ -5,6 +5,7 @@ package testing.cs42sib;
 /** Required imports */
 import collections.Stack;
 import io.Simulator;
+import testing.cs40s.advancedclasses.Box;
 import tools.Text;
 
 
@@ -48,8 +49,11 @@ public class StacksQueuesTest
         
         for (int i = 0; i < MAX; i++) {                 // Traverse to test edge
             String word = text.randomWord(WORD_SIZE);   // Create random word
-            
-            
+            Box<String> box = new Box<>(word);
+            stack.push(box);
+            System.out.println("Empty = "  + stack.isEmpty() +
+                               "\tSize = " + stack.size() +
+                               "\t"        + stack.toString());
         }
         
         

@@ -104,7 +104,33 @@ public class Stack <T> implements Serializable
         return true;                        // Operation was successful
     }
     
+    /**
+     * Removes the data from the top of the stack, it mutates (changes) the 
+     * stack (mutator method)
+     * 
+     * @return the data from the top of the stack
+     */
+    public T pop() {
+        if (isEmpty()) return null;                     // No nodes in stack
+        else {                                          // Stack has some nodes
+            length--;                                   // Reduce length
+            T data = (T)top.data;                       // Store data
+            top = top.next;                             // Adjust top reference
+            System.gc();                                // Remove garbage memory
+            return data;                                // Data returned
+        }  
+    }
     
+    /**
+     * Just "peeks" at the top of the stack without mutating (changing it) 
+     * the structure of this stack (accessor method)
+     * 
+     * @return the data on the top
+     */
+    public T peek() {
+        if (isEmpty()) return null;
+        return (T)top.data;
+    }
     
     
 }
