@@ -56,6 +56,8 @@ public class StacksQueuesTest
                                "\t"        + stack.toString());
         }
         
+        // Loop through removing values........................................
+        Simulator.comment("Loop through removing values");
         
         
         
