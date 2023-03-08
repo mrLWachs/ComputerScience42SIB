@@ -56,6 +56,19 @@ public class StacksQueuesTest
                                "\t"        + stack.toString());
         }
         
+        // Test clone method...................................................
+        Simulator.comment("Test clone method...");
+        
+        Stack copy = stack.clone();
+        System.out.println("Clone stack: " + copy.toString());
+        
+        
+        
+        
+        
+        
+        
+        
         // Loop through removing values........................................
         Simulator.comment("Loop through removing values");
         

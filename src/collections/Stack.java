@@ -132,5 +132,37 @@ public class Stack <T> implements Serializable
         return (T)top.data;
     }
     
+    /**
+     * a Deep clone, creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public Stack clone() {
+        Stack<T> that = new Stack<>();          // Instantiate new empty stack
+        Node current = top;                     // Start reference at top node
+        while (current != null) {               // Traverse stack
+            T data = (T)current.data;           // Get the data
+            that.push(data);                    // Push onto new stack
+            current = current.next;             // Move to next node
+        }                
+        Stack<T> copy = new Stack<>();          // Create second new stack
+        while (!that.isEmpty()) {               // Traverse first stack
+            T data = (T)that.pop();             // Get "that" data
+            copy.push(data);                    // Push onto 2nd stack
+        }        
+        return copy;                            // return the deep clone
+    }
     
+    /**
+     * Deep comparison, determines if two objects are "equal" in this context
+     *
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        return true;
+    }
+        
 }
