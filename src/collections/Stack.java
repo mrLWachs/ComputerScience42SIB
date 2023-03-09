@@ -162,7 +162,21 @@ public class Stack <T> implements Serializable
      */
     @Override
     public boolean equals(Object object) {
-        return true;
+        if (!(object instanceof Stack)) return false;   // Check object type
+        try {                                           // Error trap
+            Stack stack1 = ((Stack)object).clone();     // Clone/cast parameter
+            Stack stack2 = this.clone();                // Clone this stack
+            if (stack1.size() != stack2.size()) return false;   // Not same size
+            while (!stack2.isEmpty()) {                 // Traverse stacks
+                T data1 = (T)stack1.pop();              // Retrieve data
+                T data2 = (T)stack2.pop();
+                if (!data1.equals(data2)) return false; // Compare data
+            }
+            return true;                                // All tests passed
+        }
+        catch (ClassCastException | NullPointerException e) {
+            return false;                               // Cannot cast, or null
+        }
     }
         
 }
