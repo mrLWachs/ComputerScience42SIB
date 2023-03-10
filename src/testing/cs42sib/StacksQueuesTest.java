@@ -3,6 +3,7 @@
 package testing.cs42sib;
 
 /** Required imports */
+import collections.LinkedList;
 import collections.Stack;
 import io.Simulator;
 import testing.cs40s.advancedclasses.Box;
@@ -87,13 +88,47 @@ public class StacksQueuesTest
         // Test the pop method.................................................
         Simulator.comment("Text the pop method...");
         
+        System.out.println("Clone stack:" + 
+                           "\tEmpty = " + copy.isEmpty() +
+                           "\tSize = "  + copy.size() +
+                           "\t"         + copy.toString());
         
-        
-        
-        // Loop through removing values........................................
+        // Loop through removing values
         Simulator.comment("Loop through removing values");
+        for (int i = 0; i < MAX+1; i++) { 
+            System.out.println("Popped -> " + copy.pop() + 
+                               "\tEmpty = " + copy.isEmpty() +
+                               "\tSize = "  + copy.size() +
+                               "\t"         + copy.toString());
+        }
         
+        // Test peek (top is wrapper no testing needed)........................
+        Simulator.comment("Test peek (top is wrapper no testing needed)...");
         
+        System.out.println("Clone Top = " + copy.top());
+        System.out.println("Stack Top = " + stack.top());
+        
+        // Test to array and to linked list....................................
+        Simulator.comment("Test to array and to linked list...");
+        
+        LinkedList<Box> list = stack.toLinkedList();
+        Box[] array = new Box[1];
+        array = (Box[])stack.toArray(array);        
+        System.out.println(list);
+        System.out.println("Array   \t" + text.toString(array));
+        
+        // Test our constructors...............................................
+        Simulator.comment("Test our constructors...");
+        
+        Stack stackFromArray = new Stack(array);
+        Stack stackFromList  = new Stack(list);        
+        System.out.println(stackFromArray);
+        System.out.println(stackFromList);
+        
+        // Now we look at Queues...............................................        
+        Simulator.comment("Test the Queue object...");
+        
+                
         
         
         
