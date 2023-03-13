@@ -4,6 +4,7 @@ package testing.cs42sib;
 
 /** Required imports */
 import collections.LinkedList;
+import collections.Queue;
 import collections.Stack;
 import io.Simulator;
 import testing.cs40s.advancedclasses.Box;
@@ -128,9 +129,14 @@ public class StacksQueuesTest
         // Now we look at Queues...............................................        
         Simulator.comment("Test the Queue object...");
         
-                
+        Queue queue = new Queue();
         
+        // Test toString,size,isEmpty, and enqueue methods.....................
+        Simulator.comment("Test toString,size,isEmpty, and enqueue methods...");
         
+        System.out.println("Empty = "  + queue.isEmpty() +
+                           "\tSize = " + queue.size() +
+                           "\t"        + queue.toString());  
         
         
         
