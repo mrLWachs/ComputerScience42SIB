@@ -3,6 +3,7 @@ package collections;
 
 /** Required API imports */
 import java.io.Serializable;
+import java.lang.reflect.Array;
 
  
 /**
@@ -47,6 +48,84 @@ public class Queue <T> implements Serializable
     }
      
     /**
+     * Constructor sets class data to the parameter 
+     * 
+     * @param list the LinkedList to set the queue to
+     */
+    public Queue(LinkedList<T> list) {
+        finalize();                                 // wipe any current data
+        for (int i = list.size()-1; i >= 0; i--) {  // traverse list
+            T data = (T)list.get(i);
+            enqueue(data);                // get data, push in queue
+        }
+    }
+    
+    /**
+     * Constructor sets class data to the parameter 
+     * 
+     * @param array the array to set the stack to
+     */
+    public Queue(T[] array) {
+        finalize();                                     // wipe any current data
+        for (int i = array.length-1; i >= 0; i--) {     // traverse array
+            T data = (T)array[i];                       // retrieve data
+            enqueue(data);                              // push onto stack
+        }
+    }
+    
+    /**
+     * Constructor sets class data to the parameter 
+     * 
+     * @param stack the stack to set the queue to
+     */
+    public Queue(Stack stack) {
+        this(stack.toLinkedList());
+    }
+    
+    /**
+     * Turns the queue into a ADT LinkedList object
+     * 
+     * @return the Stack as a ADT LinkedList
+     */
+    public LinkedList<T> toLinkedList() {
+        LinkedList<T> list = new LinkedList<>();        // create new list
+        Node current = head;                            // start at first node        
+        while (current != null) {                       // traverse queue   
+            T data = (T)current.data;                   // retrieve data
+            list.add(data);                             // add to list
+            current = current.next;                     // move to next node
+        }
+        return list;                                    // return list
+    }
+    
+    /**
+     * Returns an array that contains the same data as the list
+     * 
+     * @param array the data type array
+     * @return an array of generic type T
+     */
+    public T[] toArray(T[] array) {
+        array = (T[])(Array.newInstance(
+                array.getClass().getComponentType(), 
+                length));                               // create array 
+        Node current = head;                            // start at top node 
+        for (int i = 0; i < length; i++) {              // traverse array
+            array[i] = (T)current.data;                 // retrieve data
+            current = current.next;                     // move to next node
+        }
+        return array;                                   // return array
+    }
+    
+    /**
+     * Turns the queue into a ADT stack object
+     * 
+     * @return the queue as a ADT stack
+     */
+    public Stack toStack() {
+        return new Stack(this);
+    }
+    
+    /**
      * Calls for garbage collection, and frees up memory - when the stack is 
      * destroyed
      */
@@ -56,28 +135,7 @@ public class Queue <T> implements Serializable
         head = tail = null;                         // Reference set to null
         System.gc();                                // Garbage collector called
     }
-    
-    
-    /**
-     * Adds data to the back (tail) of the queue (mutator method)
-     * 
-     * @param data the generic data to add
-     * @return the operation was successful (true) or not (false)
-     */
-    public boolean enqueue(T data) {
-        return true;
-    }
-
-    /**
-     * Removes an item from the front (head) of the queue (mutator method)
-     * 
-     * @return the generic data in the queue
-     */
-    public T dequeue() {
-        return null;
-    }
-    
-    
+        
     /**
      * Accessor method for the number of items in the stack
      * 
@@ -123,7 +181,21 @@ public class Queue <T> implements Serializable
      */
     @Override
     public boolean equals(Object object) {
-        return super.equals(object);
+        if (!(object instanceof Queue)) return false;   // Check object type
+        try {                                           // Error trap
+            Queue<T> q1 = this.clone();                 // Clone this queue
+            Queue<T> q2 = ((Queue<T>)object).clone();   // Clone/cast parameter
+            if (q1.size() != q2.size()) return false;   // Queues not same size          
+            while (!q1.isEmpty()) {                     // Traverse queues
+                T data1 = (T)q1.dequeue();              // Retrieve data
+                T data2 = (T)q2.dequeue();
+                if (!data1.equals(data2)) return false; // Compare data              
+            }
+            return true;                                // All tests passed
+        }
+        catch (ClassCastException | NullPointerException e) { 
+            return false;                               // Cannot cast, or null
+        }
     }
        
     /**
@@ -133,7 +205,76 @@ public class Queue <T> implements Serializable
      */
     @Override
     public Queue clone() {
-        return this;
+        Queue<T> q = new Queue<>();                     // New empty queue
+        Node current = tail;                            // Start at first node
+        while (current != null) {                       // Traverse queue
+            T data = (T)current.data;                   // Get data
+            q.enqueue(data);                            // Enqueue to new queue
+            current = current.previous;                 // Move to next node
+        }        
+        return q;                                       // Return clone
+    }
+    
+    /**
+     * Just "peeks" at front of the queue (accessor method) without mutating 
+     * the structure of the Queue ADT
+     * 
+     * @return the data at the front
+     */
+    public T front() {
+        if (isEmpty()) return null;                     // no nodes in stack
+        return (T)tail.data;
+    }
+    
+    /**
+     * Just "peeks" at back of the queue (accessor method) without mutating 
+     * the structure of the Queue ADT
+     * 
+     * @return the data at the back
+     */
+    public T back() {
+        if (isEmpty()) return null;                     // no nodes in stack
+        return (T)head.data;
+    }
+    
+    /**
+     * Adds data to the back (tail) of the queue (mutator method)
+     * 
+     * @param data the generic data to add
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean enqueue(T data) {
+        if (data == null) return false;                 // Empty queue
+        Node node = new Node<T>(data);                  // Create node
+        if (isEmpty()) head = tail = node;              // Add first node
+        else {                                          // Add subsequent nodes
+            node.next = head;                           // Adjust references
+            head.previous = node;
+            head = node;
+        }
+        length++;                                       // Increase length
+        return true;                                    // Operation successful
+    }
+
+    /**
+     * Removes an item from the front (head) of the queue (mutator method)
+     * 
+     * @return the generic data in the queue
+     */
+    public T dequeue() {
+        if (isEmpty()) return null;                     // No nodes in queue
+        else {                                          // Queue has some nodes
+            length--;                                   // Reduce length
+            T data = (T)tail.data;                      // Store data
+            if (head == tail) finalize();               // Single node, wipe all
+            else {                                      // Multi node queue
+                tail = tail.previous;                   // Adjust references
+                tail.next.previous = null;
+                tail.next = null;
+                System.gc();                            // Clean up memory
+            }
+            return data;                                // Data returned
+        }
     }
     
 }

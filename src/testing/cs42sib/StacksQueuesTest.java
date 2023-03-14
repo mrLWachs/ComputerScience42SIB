@@ -138,17 +138,97 @@ public class StacksQueuesTest
                            "\tSize = " + queue.size() +
                            "\t"        + queue.toString());  
         
+        // Loop through adding random values 
+        Simulator.comment("Loop through adding random values");        
+        for (int i = 0; i < MAX; i++) {            
+            String word = text.randomWord(WORD_SIZE);
+            Box<String> box = new Box<>(word);
+            queue.enqueue(box);            
+            System.out.println("Empty = "  + queue.isEmpty() +
+                               "\tSize = " + queue.size() +
+                               "\t"        + queue.toString());
+        }
         
+        // Test clone method...................................................
+        Simulator.comment("Test clone method...");
         
+        Queue duplicate = queue.clone();
+        System.out.println("Clone Queue \t\t\t" + duplicate.toString());
         
+        // Test equals method..................................................
+        Simulator.comment("Test equals method...");
         
+        if (queue.equals(duplicate)) 
+            System.out.println(queue + "\n==\n" + duplicate);
+        else                    
+            System.out.println(queue + "\n!=\n" + duplicate);        
+        // Now change the duplicate
+        Simulator.comment("Now change the duplicate");
+        duplicate.finalize();
+        duplicate.enqueue(new Box(text.randomWord(WORD_SIZE)));        
+        // Now check again
+        Simulator.comment("Now check again");
+        if (duplicate.equals(duplicate)) 
+            System.out.println(queue + "\n==\n" + duplicate);
+        else                    
+            System.out.println(queue + "\n!=\n" + duplicate);
         
+        // Re-clone the queue, and output
+        Simulator.comment("Re-clone the queue, and output");
+        duplicate = queue.clone();
+        System.out.println(duplicate.toString());
         
+        // Test the dequeue method.............................................
+        Simulator.comment("Test the dequeue method...");
         
+        System.out.println("Clone queue:" + 
+                           "\tEmpty = " + duplicate.isEmpty() +
+                           "\tSize = "  + duplicate.size() +
+                           "\t"         + duplicate.toString());
         
+        // Loop through removing values
+        Simulator.comment("Loop through removing values");
+        for (int i = 0; i < MAX+1; i++) { 
+            System.out.println("Dequeued -> " + duplicate.dequeue()+ 
+                               "\tEmpty = " + duplicate.isEmpty() +
+                               "\tSize = "  + duplicate.size() +
+                               "\t"         + duplicate.toString());
+        }
         
+        // Test front and back.................................................
+        Simulator.comment("Test front and back...");
         
+        System.out.println("Clone Front = " + duplicate.front());
+        System.out.println("Queue Front = " + queue.front());
+        System.out.println("Clone Back  = " + duplicate.back());
+        System.out.println("Queue Back  = " + queue.back());
+                
+        // Test to array and to linked list....................................
+        Simulator.comment("Test to array and to linked list...");
         
+        list = queue.toLinkedList();
+        array = new Box[1];
+        array = (Box[])queue.toArray(array);        
+        System.out.println(list);
+        System.out.println("Array   \t" + text.toString(array));
+        
+        // Test our constructors...............................................
+        Simulator.comment("Test our constructors...");
+        
+        Queue queueFromArray = new Queue(array);
+        Queue queueFromList  = new Queue(list);        
+        System.out.println(queueFromArray);
+        System.out.println(queueFromList);
+        
+        // Test constructors from stack to queue (and back)....................
+        Simulator.comment("Constructors from stack to queue (and back)...");
+        
+        Stack fromQueueStack = new Stack(queue);
+        Queue fromStackQueue = new Queue(fromQueueStack);
+        
+        System.out.println(queue          + "\t into \t" + fromQueueStack);
+        System.out.println(fromQueueStack + "\t into \t" + fromStackQueue);
+                
         Simulator.header("Stacks and Queues Test completed!");
     }   
 

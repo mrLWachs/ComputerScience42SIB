@@ -248,5 +248,23 @@ public class Stack <T> implements Serializable
             push(data);                                 // push onto stack
         }
     }
+    
+    /**
+     * Constructor sets class data to the parameter 
+     * 
+     * @param queue the queue to set the stack to
+     */
+    public Stack(Queue queue) {
+        this(queue.toLinkedList());
+    }
+    
+    /**
+     * Turns the stack into a ADT Queue object
+     * 
+     * @return the Stack as a ADT Queue
+     */
+    public Queue toQueue() {
+        return new Queue(this);
+    }
 
 }
