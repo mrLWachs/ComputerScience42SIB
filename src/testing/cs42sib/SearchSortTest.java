@@ -1,21 +1,22 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.cs42sib;
 
-/** required imports */
+/** Required imports */
 import collections.LinkedList;
+import io.Simulator;
 import tools.Numbers;
+import tools.Results;
 import tools.Search;
 import tools.Sort;
 import tools.Text;
-//import io.System;
-import io.Simulator;
+
 
 /**
  * SearchSortTest.java - tests the concepts learned in this unit
  *
  * @author Mr. Wachs
- * @since Jan. 14, 2020, 8:01:03 a.m.
+ * @since Feb. 9, 2022, 8:01:03 a.m.
  */
 public class SearchSortTest 
 {
@@ -26,14 +27,14 @@ public class SearchSortTest
     public SearchSortTest() {
         Simulator.header("Searching and Sorting Test started...");
                 
-        // For the I.B. Exam, you only need to know:
+        // For the I.B. Exam, you only need to know.............................
         Simulator.comment("For the I.B. Exam, you only need to know:");
-        // Search: linear (sequential) search and binary search
+        // Search: linear (sequential) search and binary search.................
         Simulator.comment("Search: linear search and binary search");
-        // Sort: bubble sort and the selection sort
+        // Sort: bubble sort and the selection sort.............................
         Simulator.comment("Sort: bubble sort and the selection sort");
         
-        // Create some constants for the data
+        // Create some constants for the data...................................
         Simulator.comment("Create some constants for the data");
         
         final int MIN      = 0;
@@ -43,9 +44,9 @@ public class SearchSortTest
         
         Numbers numbers = new Numbers();
         
-        // Create some random data to search through and sort
+        // Create some random data to search through and sort...................
         Simulator.comment("Create some random data to search through and sort");
-        // Including all "edge" cases to test for (using unit testing)
+        // Including all "edge" cases to test for (using unit testing)..........
         Simulator.comment("Including edge cases to test");
         
         int[] array    = numbers.random(SMALLEST, LARGEST, MAX);
@@ -62,49 +63,54 @@ public class SearchSortTest
             lastItem,
             notInList
         };
-        
-        // Create data to store the results...
+                
+        // Create data to store the results.....................................
         Simulator.comment("Create data to store the results...");
         
         boolean found  = false;
         int     index  = -1;
         int[]   sorted = new int[MAX];
         
-        // The simpliest of searches
+        // The simpliest of searches............................................
         Simulator.comment("The simpliest of searches");
         
-        found = search(array,randomItem);
-                
-        // Now the linear (sequential) search on all test data
+        found = search(array, randomItem);
+        
+        Results.show(array, randomItem, found);
+        
+        // Now the linear (sequential) search on all test data..................
         Simulator.comment("Now the linear search on all test data");
         
         for (int i = 0; i < findItems.length; i++) {
-            index = linearSearch(array,findItems[i]);        
-            results(array, findItems[i], index);
+            index = linearSearch(array,findItems[i]);    
+            Results.show(array, findItems[i], index);
         }
         
-        // Simple sort...  
+        // Simple sort.........................................................
         Simulator.comment("Simple sort...");
-        //sort(array);
         
-        // Now execute the bubble sort (named after bubbles rising from water)
+        sort(array);
+        Results.show(array);
+        array = numbers.random(SMALLEST, LARGEST, MAX);
+        
+        // Now execute the bubble sort (named after bubbles rising from water)..
         Simulator.comment("Now bubble sort (from bubbles rising from water)");
         
         sorted = bubbleSort(array);
-        results(array, sorted);
+        Results.show(array, sorted);
         
-        // Now execute the selection sort (named after selecting the smallest)
+        // Now execute the selection sort (named after selecting the smallest)..
         Simulator.comment("Now selection sort (from selecting the smallest)");
         
         sorted = selectionSort(array);
-        results(array, sorted);
+        Results.show(array, sorted);
                
-        // Now the binary search (named after "two" or "dividing")
+        // Now the binary search (named after "two" or "dividing").............
         Simulator.comment("Now binary search (named after two or dividing)");
-        // NOTE: binary search can only happen on a sorted list
+        // NOTE: binary search can only happen on a sorted list................
         Simulator.comment("NOTE: binary search can only happen on sorted list");
         
-        // Redo some of the test data...
+        // Redo some of the test data..........................................
         Simulator.comment("Redo some of the test data...");
         
         findItems[1] = sorted[numbers.random(MIN+1, MAX-2)];
@@ -113,27 +119,29 @@ public class SearchSortTest
         
         for (int i = 0; i < findItems.length; i++) {
             index = binarySearch(sorted,findItems[i]);
-            results(sorted, findItems[i], index);
+            Results.show(array, findItems[i], index);
         }
         
-        // Use class for searching and sorting (creating objects to help)
+        // Use class for searching and sorting (creating objects to help).......
         Simulator.comment("Use class for searching and sorting");
                 
         Text   text   = new Text();
         Search search = new Search();
         Sort   sort   = new Sort();
         
-        // Create random linked list data (include all edge cases to test)
+        final int WORD_SIZE = 5;
+        
+        // Create random linked list data (include all edge cases to test)......
         Simulator.comment("Create random linked list data");
         
-        LinkedList<String> unsortedWords = text.randomList(MAX);
+        LinkedList<String> unsortedWords = text.randomList(MAX, WORD_SIZE);
         LinkedList<String> sortedWords   = new LinkedList<>();
         
-        // Place all test cases into another linked list
+        // Place all test cases into another linked list........................
         Simulator.comment("Place all test cases into another linked list");
         LinkedList<String> testCases = new LinkedList<>();
         
-        String randomWord = text.randomWord();
+        String randomWord = text.randomWord(WORD_SIZE);
         String inListWord = unsortedWords.get(numbers.random(MIN+1, MAX-2));
         String firstWord  = unsortedWords.front();
         String lastWord   = unsortedWords.back();
@@ -145,102 +153,63 @@ public class SearchSortTest
         testCases.add(lastWord);
         testCases.add(notWord);
         
-        // Execute the linear search on all test data...
+        // Execute the linear search on all test data...........................
         Simulator.comment("Execute the linear search on all test data...");        
         for (int i = 0; i < testCases.size(); i++) {
             String word = testCases.get(i);
             index = search.linear(word, unsortedWords);
-            System.out.println("Linear: \t" + unsortedWords.toString() +
-                               "word: \t"     + word + "index: \t" + index);
+            Results.showLinear(unsortedWords, word, index);
         }
         
-        // Execute all the sorts on all test data...
+        // Execute all the sorts on all test data...............................
         Simulator.comment("Execute all the sorts on all test data...");
         
-        // Bubble sort LinkedList data...
+        // Bubble sort LinkedList data..........................................
         Simulator.comment("Bubble sort LinkedList data...");        
         sortedWords = unsortedWords.clone();
         sort.bubble(sortedWords);
-        System.out.println("Before: \t" + unsortedWords.toString());
-        System.out.println("After:  \t" + sortedWords.toString());
-                                
-        // Selection sort LinkedList data...
+        Results.show(unsortedWords, sortedWords);
+                                        
+        // Selection sort LinkedList data.......................................
         Simulator.comment("Selection sort LinkedList data...");        
         sortedWords = unsortedWords.clone();
         sort.selection(sortedWords);
-        System.out.println("Before: \t" + unsortedWords.toString());
-        System.out.println("After:  \t" + sortedWords.toString());
-        
-        // Shell sort LinkedList data...
+        Results.show(unsortedWords, sortedWords);
+                
+        // Shell sort LinkedList data...........................................
         Simulator.comment("Shell sort LinkedList data...");        
         sortedWords = unsortedWords.clone();
         sort.shell(sortedWords);
-        System.out.println("Before: \t" + unsortedWords.toString());
-        System.out.println("After:  \t" + sortedWords.toString());
-        
-        // Insertion sort LinkedList data...
+        Results.show(unsortedWords, sortedWords);
+                
+        // Insertion sort LinkedList data.......................................
         Simulator.comment("Insertion sort LinkedList data...");        
         sortedWords = unsortedWords.clone();
         sort.insertion(sortedWords);
-        System.out.println("Before: \t" + unsortedWords.toString());
-        System.out.println("After:  \t" + sortedWords.toString());
+        Results.show(unsortedWords, sortedWords);
         
-        // Quick sort LinkedList data...
+        // Quick sort LinkedList data...........................................
         Simulator.comment("Quick sort LinkedList data...");        
         sortedWords = unsortedWords.clone();
         sort.quick(sortedWords);
-        System.out.println("Before: \t" + unsortedWords.toString());
-        System.out.println("After:  \t" + sortedWords.toString());
+        Results.show(unsortedWords, sortedWords);
                 
-        // Merge sort LinkedList data...
+        // Merge sort LinkedList data...........................................
         Simulator.comment("Merge sort LinkedList data...");        
         sortedWords = unsortedWords.clone();
         sort.merge(sortedWords);
-        System.out.println("Before: \t" + unsortedWords.toString());
-        System.out.println("After:  \t" + sortedWords.toString());
+        Results.show(unsortedWords, sortedWords);
                 
-        // Execute the binary search on all test data...
+        // Execute the binary search on all test data...........................
         Simulator.comment("Execute the binary search on all test data...");        
         for (int i = 0; i < testCases.size(); i++) {
             String word = testCases.get(i);
             index = search.binary(word, sortedWords);
-            System.out.println("Binary: \t" + sortedWords.toString() + 
-                               "word: \t"     + word + "index: \t" + index);
+            Results.showBinary(unsortedWords, word, index);
         }
-                        
+                   
         Simulator.header("Searching and Sorting Test completed!");
     }   
-    
-    
-    /**
-     * Displays the results of a search
-     * 
-     * @param array the array to search through
-     * @param item the item to search for
-     * @param index which array index it was found at (or -1 if not found)
-     */
-    private void results(int[] array, int item, int index) {
-        Text display = new Text();
-        String text = "";
-        text += "Array " + display.toString(array);
-        text += "\n\tSearching for:\t " + item;
-        text += "\n\tLocation index:\t " + index;
-        System.out.println(text);
-    }
-
-    /**
-     * Displays the results of a sort
-     * 
-     * @param array the original array
-     * @param sorted the sorted array
-     */
-    private void results(int[] array, int[] sorted) {
-        Text display = new Text();
-        String text = "";
-        text += "Original Array \t" + display.toString(array);
-        text += "\nSorted Array \t"   + display.toString(sorted);
-        System.out.println(text);
-    }
 
     /**
      * A simple search, determines if the item is in the array or not
@@ -250,14 +219,14 @@ public class SearchSortTest
      * @return found (true) or not (false)
      */
     private boolean search(int[] array, int item) {
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == item) {
-                return true;
+        for (int i = 0; i < array.length; i++) {    // Traverse array
+            if (array[i] == item) {                 // Check for item
+                return true;                        // Item found (leave method)
             }
         }
-        return false;
+        return false;                               // Not found
     }
-
+    
     /**
      * An implementation of a linear search (sequential search) algorithm. It 
      * will find the first occurance of an item in the array and return the
@@ -289,10 +258,10 @@ public class SearchSortTest
      * @param array the array of items to sort 
      */
     private void sort(int[] array) {
-        for (int i = 0; i < array.length; i++) {            
-            for (int j = 0; j < array.length - 1; j++) {
-                if (array[j] > array[j+1]) {
-                    int temp   = array[j];
+        for (int i = 0; i < array.length; i++) {            // Traverse array   
+            for (int j = 0; j < array.length - 1; j++) {    // Traverse again
+                if (array[j] > array[j+1]) {                // check items
+                    int temp   = array[j];                  // Swap items
                     array[j]   = array[j+1];
                     array[j+1] = temp;
                 }                    
