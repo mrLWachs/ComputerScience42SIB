@@ -3,13 +3,9 @@
 package testing.cs42sib;
 
 /** Required imports */
-import collections.LinkedList;
 import io.Simulator;
 import tools.Numbers;
 import tools.Results;
-import tools.Search;
-import tools.Sort;
-import tools.Text;
 
 
 /**
