@@ -158,7 +158,7 @@ public class SearchSortTest
         for (int i = 0; i < testCases.size(); i++) {
             String word = testCases.get(i);
             index = search.linear(word, unsortedWords);
-            Results.showLinear(unsortedWords, word, index);
+            Results.show(unsortedWords, word, index);
         }
         
         // Execute all the sorts on all test data...............................
@@ -205,7 +205,7 @@ public class SearchSortTest
         for (int i = 0; i < testCases.size(); i++) {
             String word = testCases.get(i);
             index = search.binary(word, sortedWords);
-            Results.showBinary(unsortedWords, word, index);
+            Results.show(unsortedWords, word, index);
         }
                    
         Simulator.header("Searching and Sorting Test completed!");
