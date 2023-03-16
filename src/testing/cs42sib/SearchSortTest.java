@@ -79,6 +79,23 @@ public class SearchSortTest
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
                    
         Simulator.header("Searching and Sorting Test completed!");
     }   
@@ -97,6 +114,31 @@ public class SearchSortTest
             }
         }
         return false;                               // Not found
+    }
+    
+    /**
+     * An implementation of a linear search (sequential search) algorithm. It 
+     * will find the first occurance of an item in the array and return the
+     * index where it found it, or a -1 if not found
+     * 
+     * @param array an array to search through
+     * @param item the item to search for
+     * @return the first index found at, or a -1 if not found
+     */
+    private int linearSearch(int[] array, int item) {
+        // Catch a potential error before we begin
+        if (array == null) return -1;
+        // Traverse the array
+        for (int i = 0; i < array.length; i++) {
+            // If I encounter the item
+            if (array[i] == item) {
+                // Return the spot I found it at (and stop)
+                return i;
+            }
+        }
+        // Make it through the entire list, never find it, return
+        // a "flag" value indicating not found
+        return -1;
     }
     
     
