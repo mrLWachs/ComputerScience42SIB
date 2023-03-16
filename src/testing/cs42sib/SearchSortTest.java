@@ -74,10 +74,24 @@ public class SearchSortTest
         
         Results.show(array, randomItem, found);
         
+        // Now the linear (sequential) search on all test data..................
+        Simulator.comment("Now the linear search on all test data");
         
+        for (int i = 0; i < findItems.length; i++) {
+            index = linearSearch(array, findItems[i]);
+            Results.show(array, findItems[i], index);
+        }
         
+        // Simple sort.........................................................
+        Simulator.comment("Simple sort...");
         
+        sort(array);
+        Results.show(array);
         
+        // We need to "re-scramble" the array for further testing..............
+        Simulator.comment("We will re-scramble array for further testing");
+        
+        array = numbers.random(SMALLEST, LARGEST, MAX);
         
         
         
@@ -139,6 +153,15 @@ public class SearchSortTest
         // Make it through the entire list, never find it, return
         // a "flag" value indicating not found
         return -1;
+    }
+
+    /**
+     * A simple sort, it will sort the array into ascending order
+     * 
+     * @param array the array of items to sort 
+     */
+    private void sort(int[] array) {
+        
     }
     
     
