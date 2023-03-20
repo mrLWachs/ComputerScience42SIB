@@ -91,7 +91,12 @@ public class SearchSortTest
         
         sort(array);
         Results.show(array);
+        
+        // We need to "re-scramble" the array for further testing..............
+        Simulator.comment("We will re-scramble array for further testing");
+        
         array = numbers.random(SMALLEST, LARGEST, MAX);
+        Results.show(array);
         
         // Now execute the bubble sort (named after bubbles rising from water)..
         Simulator.comment("Now bubble sort (from bubbles rising from water)");
