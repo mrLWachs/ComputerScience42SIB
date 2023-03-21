@@ -3,9 +3,13 @@
 package testing.cs42sib;
 
 /** Required imports */
+import collections.LinkedList;
 import io.Simulator;
 import tools.Numbers;
 import tools.Results;
+import tools.Search;
+import tools.Sort;
+import tools.Text;
 
 
 /**
@@ -34,7 +38,7 @@ public class SearchSortTest
         Simulator.comment("Create some constants (edges) for the data");
         
         final int MIN      = 0;
-        final int MAX      = 10;
+        final int MAX      = 100;
         final int LARGEST  = MAX;
         final int SMALLEST = MIN;
         
@@ -120,26 +124,94 @@ public class SearchSortTest
         
         for (int i = 0; i < findItems.length; i++) {
             index = binarySearch(sorted,findItems[i]);
-            Results.show(array, findItems[i], index);
+            Results.show(sorted, findItems[i], index);
         }
         
+        // Use class for searching and sorting (creating objects to help).......
+        Simulator.comment("Use class for searching and sorting");
         
+        Text   text   = new Text();
+        Search search = new Search();
+        Sort   sort   = new Sort();
         
+        final int WORD_SIZE = 4;
         
+        // Create random linked list data (include all edge cases to test)......
+        Simulator.comment("Create random linked list data");
         
+        LinkedList<String> unsortedWords = text.randomList(MAX, WORD_SIZE);
+        LinkedList<String> sortedWords   = new LinkedList<>();
         
+        // Place all test cases into another linked list........................
+        Simulator.comment("Place all test cases into another linked list");
+        LinkedList<String> testCases = new LinkedList<>();
         
+        String randomWord = text.randomWord(WORD_SIZE);
+        String inListWord = unsortedWords.get(numbers.random(MIN+1, MAX-2));
+        String firstWord  = unsortedWords.front();
+        String lastWord   = unsortedWords.back();
+        String notWord    = "Wachs";
+                
+        testCases.add(randomWord);
+        testCases.add(inListWord);
+        testCases.add(firstWord);
+        testCases.add(lastWord);
+        testCases.add(notWord);
         
+        // Execute the linear search on all test data...........................
+        Simulator.comment("Execute the linear search on all test data...");        
+        for (int i = 0; i < testCases.size(); i++) {
+            String word = testCases.get(i);
+            index = search.linear(word, unsortedWords);
+            Results.show(unsortedWords, word, index);
+        }
         
+        // Execute all the sorts on all test data...............................
+        Simulator.comment("Execute all the sorts on all test data...");
         
+        // Bubble sort LinkedList data..........................................
+        Simulator.comment("Bubble sort LinkedList data...");        
+        sortedWords = unsortedWords.clone();
+        sort.bubble(sortedWords);
+        Results.show(unsortedWords, sortedWords);
+                                        
+        // Selection sort LinkedList data.......................................
+        Simulator.comment("Selection sort LinkedList data...");        
+        sortedWords = unsortedWords.clone();
+        sort.selection(sortedWords);
+        Results.show(unsortedWords, sortedWords);
+                
+        // Shell sort LinkedList data...........................................
+        Simulator.comment("Shell sort LinkedList data...");        
+        sortedWords = unsortedWords.clone();
+        sort.shell(sortedWords);
+        Results.show(unsortedWords, sortedWords);
+                
+        // Insertion sort LinkedList data.......................................
+        Simulator.comment("Insertion sort LinkedList data...");        
+        sortedWords = unsortedWords.clone();
+        sort.insertion(sortedWords);
+        Results.show(unsortedWords, sortedWords);
         
+        // Quick sort LinkedList data...........................................
+        Simulator.comment("Quick sort LinkedList data...");        
+        sortedWords = unsortedWords.clone();
+        sort.quick(sortedWords);
+        Results.show(unsortedWords, sortedWords);
+                
+        // Merge sort LinkedList data...........................................
+        Simulator.comment("Merge sort LinkedList data...");        
+        sortedWords = unsortedWords.clone();
+        sort.merge(sortedWords);
+        Results.show(unsortedWords, sortedWords);
         
-        
-        
-        
-        
-        
-        
+        // Execute the binary search on all test data...........................
+        Simulator.comment("Execute the binary search on all test data...");        
+        for (int i = 0; i < testCases.size(); i++) {
+            String word = testCases.get(i);
+            index = search.binary(word, sortedWords);
+            Results.show(unsortedWords, word, index);
+        }
                    
         Simulator.header("Searching and Sorting Test completed!");
     }   
@@ -298,6 +370,5 @@ public class SearchSortTest
         }
         return -1;  // Not found!
     }
-    
-    
+        
 }
