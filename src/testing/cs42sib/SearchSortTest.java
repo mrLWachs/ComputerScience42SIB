@@ -106,6 +106,27 @@ public class SearchSortTest
         sorted = selectionSort(array);
         Results.show(array, sorted);
         
+        // Now the binary search (named after "two" or "dividing").............
+        Simulator.comment("Now binary search (named after two or dividing)");
+        // NOTE: binary search can only happen on a sorted list................
+        Simulator.comment("NOTE: binary search can only happen on sorted list");
+        
+        // Redo some of the test data..........................................
+        Simulator.comment("Redo some of the test data...");
+        
+        findItems[1] = sorted[numbers.random(MIN+1, MAX-2)];
+        findItems[2] = sorted[0];
+        findItems[3] = sorted[MAX-1];
+        
+        for (int i = 0; i < findItems.length; i++) {
+            index = binarySearch(sorted,findItems[i]);
+            Results.show(array, findItems[i], index);
+        }
+        
+        
+        
+        
+        
         
         
         
@@ -249,6 +270,9 @@ public class SearchSortTest
             }
         }
         return sorted;
+    }
+
+    private int binarySearch(int[] sorted, int findItem) {
     }
     
     
