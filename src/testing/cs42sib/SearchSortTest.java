@@ -272,7 +272,31 @@ public class SearchSortTest
         return sorted;
     }
 
-    private int binarySearch(int[] sorted, int findItem) {
+    /**
+     * An implementation of a binary search algorithm. It will find an 
+     * occurance of an item in the array and return the index where it found 
+     * it, or a -1 if not found
+     * 
+     * @param array an array to search through
+     * @param item the item to search for
+     * @return the first index found at, or a -1 if not found
+     */
+    private int binarySearch(int[] array, int item) {
+        // Track the low and high indices of the array with "markers"
+        int low  = 0;
+        int high = array.length - 1;
+        // Loop while the markers are not "collapsed" on themselves
+        while (low <= high) {
+            // Find (calculate) the middle between low and high
+            int mid = (high + low) / 2;
+            // Check if we found it
+            if (array[mid] == item) return mid;
+            // Check if the spot I'm at is bigger (greater) than item
+            else if (array[mid] > item) high = mid - 1;
+            // Check if the spot I'm at is smaller (less) than item
+            else if (array[mid] < item) low  = mid + 1;
+        }
+        return -1;  // Not found!
     }
     
     
