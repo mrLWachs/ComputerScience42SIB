@@ -6,6 +6,7 @@ package testing.cs42sib;
 import collections.LinkedList;
 import io.Dialogs;
 import io.FileHandler;
+import io.JFileChooser;
 import io.Simulator;
 import java.io.BufferedReader;
 import java.io.File;
@@ -13,7 +14,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.swing.JFileChooser;
+//import javax.swing.JFileChooser;
 import testing.cs40s.advancedclasses.Athlete;
 import tools.Numbers;
 import tools.Text;
@@ -213,9 +214,9 @@ public class PermanentStorageTest
         Simulator.comment("Class to save/open multiple lines (with user)");
         
         Dialogs dialog = new Dialogs();
-        file = dialog.saveFile(null);
+//        file = dialog.saveFile(null);
         fileHandler.save(poem, file);
-        file = dialog.openFile(null);
+//        file = dialog.openFile(null);
         String[] newPoem = fileHandler.openArray(file);
         
         // Compare the before and after (and use another class "tool" to help).  
