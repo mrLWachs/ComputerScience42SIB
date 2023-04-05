@@ -42,7 +42,6 @@ public class TreeNode <T extends Comparable<T> > implements Serializable
     public TreeNode right;
     
     
-    
     /**
      * Class constructor sets class property data
      * 
@@ -117,7 +116,7 @@ public class TreeNode <T extends Comparable<T> > implements Serializable
         if (data == null) return false;             // Error check
         // Decide which sub-tree the data goes into...
         if (data.compareTo(this.data) < 0) {        // Means we insert left
-            // Nest a check if we are inserting for the first time...
+            // Nest a check if we are inserting a this spot...
             if (this.left == null) {
                 this.left = new TreeNode<>(data);   // Insert here
             }
@@ -126,7 +125,6 @@ public class TreeNode <T extends Comparable<T> > implements Serializable
             }            
         }
         else if (data.compareTo(this.data) >= 0) {  // Means we insert right
-            // Nest a check if we are inserting for the first time...
             if (this.right == null) {
                 this.right = new TreeNode<>(data);  // Insert here
             }
