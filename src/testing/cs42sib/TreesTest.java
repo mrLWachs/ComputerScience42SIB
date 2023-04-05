@@ -3,6 +3,7 @@
 package testing.cs42sib;
 
 /** Required API imports */
+import collections.BinaryTree;
 import collections.TreeNode;
 import io.Simulator;
 import tools.Numbers;
@@ -60,7 +61,7 @@ public class TreesTest
         // Creating a Tree object..............................................
         Simulator.comment("Creating a Tree object...");  
         
-        
+        BinaryTree<Integer> tree = new BinaryTree<>();
         
         
         
