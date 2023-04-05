@@ -25,7 +25,7 @@ public class TreesTest
         Simulator.header("Binary Trees Test started...");
                 
         // Constants/variables for creating random values......................
-        Simulator.header("Constants/variables for creating random values..."); 
+        Simulator.comment("Constants/variables for creating random values..."); 
         
         final int MIN   = 10;
         final int MAX   = 99;
