@@ -44,12 +44,27 @@ public class TreeNode <T extends Comparable<T> > implements Serializable
     
     
     /**
-     * Class constructor, set class properties (data)
+     * Class constructor sets class property data
+     * 
+     * @param data the generic data for the class
      */
     public TreeNode(T data) {
-        
+        this(data, null, null);
     }
      
+    /**
+     * Class constructor sets class property data
+     * 
+     * @param data the generic data for the class
+     * @param left reference to the left sub-tree
+     * @param right reference to the right sub-tree 
+     */
+    public TreeNode(T data, TreeNode left, TreeNode right) {
+        this.data  = data;
+        this.left  = left;
+        this.right = right;              
+    }
+    
     /**
      * String representation of this object
      *
@@ -57,7 +72,7 @@ public class TreeNode <T extends Comparable<T> > implements Serializable
      */
     @Override
     public String toString() {
-        return "TreeNode: " + super.toString();
+        return data.toString();
     }
    
     /**
@@ -68,7 +83,18 @@ public class TreeNode <T extends Comparable<T> > implements Serializable
      */
     @Override
     public boolean equals(Object object) {
-        return super.equals(object);
+        TreeNode that = (TreeNode)object;           // Cast object to node
+        try {
+            return this.data.equals(that.data);     // Use internal data equals
+        }
+        catch (NullPointerException error) {        // Null parameter
+            System.out.println("null error");
+            return false;
+        } 
+        catch(ClassCastException error) {           // Casting error
+            System.out.println("Casting error");
+            return false;
+        }
     }
        
     /**
@@ -78,7 +104,7 @@ public class TreeNode <T extends Comparable<T> > implements Serializable
      */
     @Override
     public TreeNode clone() {
-        return this;
+        return new TreeNode<>(this.data);
     }
     
 }
