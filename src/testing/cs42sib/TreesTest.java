@@ -50,6 +50,7 @@ public class TreesTest
         
         if (node1.equals(node2)) System.out.println("TreeNode1=TreeNode2");
         if (node1.equals(node3)) System.out.println("TreeNode1=TreeNode3");
+        if (node2.equals(node3)) System.out.println("TreeNode2=TreeNode3");        
         
         // Testing TreeNode toString...........................................
         Simulator.comment("Testing TreeNode toString...");
