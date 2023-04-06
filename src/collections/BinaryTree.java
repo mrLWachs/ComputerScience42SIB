@@ -5,9 +5,23 @@ import java.io.Serializable;
 
  
 /**
- * Tree.java - description
+ * BinaryTree.java - a representation of a binary tree ADT object.It uses the 
+ * TreeNode class to connect into a traditional binary tree. It could be
+ * visualized as:
+ *                               +------+
+ *                               | root |
+ *                               +------+
+ *                                /    \
+ *        (Left sub-tree)  +------+    +------+  (Right sub-tree)
+ *                         | node |    | node |
+ *                         +------+    +------+
+ *                          /    \           \
+ *                   +------+    +------+    +------+
+ *                   | node |    | node |    | node |
+ *                   +------+    +------+    +------+
  *
  * @author Mr. Wachs
+ * @param <T> the generic data type used
  * @since 5-Apr-2023, 9:57:36 AM
  */
 public class BinaryTree <T extends Comparable<T> > implements Serializable
