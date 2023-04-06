@@ -64,8 +64,10 @@ public class TreesTest
         
         BinaryTree<Integer> tree = new BinaryTree<>();
         
-        
-        
+        // Test the insert method..............................................
+        for (int i = 0; i < SIZE; i++) {
+            tree.insert(numbers.random(MIN, MAX));
+        }
         
         
         
