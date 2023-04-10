@@ -129,7 +129,11 @@ public class BinaryTree <T extends Comparable<T> > implements Serializable
      */
     @Override
     public BinaryTree clone() {
-        return this;
+        BinaryTree<T> tree = new BinaryTree<>();    // Create new tree memory
+        for (int i = 0; i < order.size(); i++) {    // Traverse this tree list
+            tree.insert((T)order.get(i));           // Insert into new tree
+        }
+        return tree;
     }
     
 }
