@@ -4,9 +4,14 @@ package testing.cs42sib;
 
 /** Required API imports */
 import collections.BinaryTree;
+import collections.LinkedList;
+import collections.Queue;
+import collections.Stack;
 import collections.TreeNode;
 import io.Simulator;
 import tools.Numbers;
+import tools.Text;
+import io.System;
 
 
 /**
@@ -29,7 +34,7 @@ public class TreesTest
         
         final int MIN   = 10;
         final int MAX   = 99;
-        final int SIZE  = 10;        
+        final int SIZE  = 5;        
         Numbers numbers = new Numbers();
         
         // Creating some TreeNode objects......................................
@@ -65,14 +70,131 @@ public class TreesTest
         BinaryTree<Integer> tree = new BinaryTree<>();
         
         // Test the insert method..............................................
+        Simulator.comment("Test the insert method..."); 
+        
         for (int i = 0; i < SIZE; i++) {
             tree.insert(numbers.random(MIN, MAX));
         }
+        // Insert one more.....................................................
+        Simulator.comment("Insert one more..."); 
         
+        int value = numbers.random(MIN, MAX);
+        tree.insert(value);
         
+        // Test the search of the tree.........................................
+        Simulator.comment("Test the search of the tree..."); 
         
+        System.out.println("Should be found     = " + tree.search(value));
+        System.out.println("Should NOT be found = " + tree.search(MIN-1));
         
+        // Test toString() and pre, post, in order traversals..................
+        Simulator.comment("Test toString() and pre, post, in order traversals"); 
         
+        System.out.println(tree.toString());
+        
+        // Building a second tree (test clone) and test equals.................
+        Simulator.comment("Building second tree (test clone) and test equals"); 
+        
+        BinaryTree<Integer> second = new BinaryTree<>();
+        for (int i = 0; i < SIZE+1; i++) {
+            second.insert(numbers.random(MIN, MAX));
+        }
+        System.out.println("1st tree -> " + tree.inOrder().toString());
+        System.out.println("2nd tree -> " + second.inOrder().toString());
+        if (tree.equals(second)) System.out.println("1st==2nd");
+        else                      System.out.println("1st!=2nd");
+        
+        // Building a third tree (test clone) and test equals.................. 
+        Simulator.comment("Building a third tree (test clone) and test equals"); 
+        
+        BinaryTree<Integer> third = tree.clone();
+        System.out.println("1st tree -> " + tree.inOrder().toString());
+        System.out.println("3rd tree -> " + third.inOrder().toString());
+        if (tree.equals(third)) System.out.println("1st==3rd");
+        else                    System.out.println("1st!=3rd");
+        
+        // Build all our data structures from each other........................
+        Simulator.comment("Build all our data structures from each other..."); 
+        
+        final int WORD_LENGTH = 5;
+        Text text = new Text();
+        
+        // Create variable objects..............................................
+        Simulator.comment("Create variable objects...");
+        
+        String variable1 = text.randomWord(WORD_LENGTH).toLowerCase();
+        String variable2 = text.randomWord(WORD_LENGTH).toLowerCase();
+        String variable3 = text.randomWord(WORD_LENGTH).toLowerCase();
+        String variable4 = text.randomWord(WORD_LENGTH).toLowerCase();
+        String variable5 = text.randomWord(WORD_LENGTH).toLowerCase();
+        
+        // Create array from variables..........................................
+        Simulator.comment("Create array from variables...");
+        
+        String[] array = {variable1,variable2,variable3,variable4,variable5};
+        
+        // Create LinkedList from array.........................................
+        Simulator.comment("Create LinkedList from array...");
+        
+        LinkedList<String> list = new LinkedList<>(array);
+        
+        // Create Stack from LinkedList.........................................
+        Simulator.comment("Create Stack from LinkedList...");
+        
+        Stack<String> stack = new Stack<>(list);
+        
+        // Create Queue from Stack..............................................
+        Simulator.comment("Create Queue from Stack...");
+        
+        Queue<String> queue = new Queue<>(stack);
+        
+        // Create Tree from Queue...............................................
+        Simulator.comment("Create Tree from Queue...");
+        
+        BinaryTree<String> binaryTree = new BinaryTree<>(queue);
+        
+        // Output variables, array, list, stack, queue, tree....................
+        Simulator.comment("Output variables,array,list,stack,queue,tree...");
+        
+        System.out.println(variable1);
+        System.out.println(variable2);
+        System.out.println(variable3);
+        System.out.println(variable4);
+        System.out.println(variable5);
+        System.out.println(text.toString(array));
+        System.out.println(list);
+        System.out.println(stack);
+        System.out.println(queue);
+        System.out.println(binaryTree);
+        
+        // Now re-building queue from tree......................................
+        Simulator.comment("Now re-building queue from tree");
+        
+        queue = new Queue<>(binaryTree);
+        
+        // Now re-building stack from queue.....................................
+        Simulator.comment("Now re-building stack from queue");
+        
+        stack = new Stack<>(queue);
+        
+        // Now re-building LinkedList from stack................................
+        Simulator.comment("Now re-building LinkedList from stack...");
+        
+        list = new LinkedList<>(stack);
+        
+        // Now re-building array from LinkedList................................
+        Simulator.comment("Now re-building array from LinkedList...");
+        
+        array = list.toArray(array);
+        
+        // Output array,list,stack,queue,tree again.............................
+        Simulator.comment("Output array,list,stack,queue,tree again...");
+        
+        System.out.println(text.toString(array));
+        System.out.println(list);
+        System.out.println(stack);
+        System.out.println(queue);
+        System.out.println(binaryTree);
         
         Simulator.header("Binary Trees Test completed!");
     }   

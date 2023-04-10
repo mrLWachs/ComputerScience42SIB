@@ -2,7 +2,7 @@
 /** Required package class namespace */
 package testing.cs40s;
 
-/** Required imports */
+/** Required API imports */
 import collections.LinkedList;
 import collections.Node;
 import io.Simulator;

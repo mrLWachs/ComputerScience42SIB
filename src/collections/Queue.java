@@ -83,6 +83,15 @@ public class Queue <T> implements Serializable
     }
     
     /**
+     * Constructor sets class data to the parameter 
+     * 
+     * @param tree the Tree to set the queue to
+     */
+    public Queue(BinaryTree tree) {
+        this(tree.inOrder());
+    }
+    
+    /**
      * Turns the queue into a ADT LinkedList object
      * 
      * @return the Stack as a ADT LinkedList
@@ -123,6 +132,15 @@ public class Queue <T> implements Serializable
      */
     public Stack toStack() {
         return new Stack(this);
+    }
+    
+    /**
+     * Turns the queue into a ADT Binary tree object
+     * 
+     * @return the Queue as a ADT Binary tree
+     */
+    public BinaryTree toBinaryTree() {
+        return new BinaryTree(this);
     }
     
     /**

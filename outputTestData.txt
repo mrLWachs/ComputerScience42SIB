@@ -1,0 +1,2072 @@
+1:	Mr. Wachs Computer Science testing started......................................................
+2:	Computer Science 30S starting......................................................
+3:	~~~ SIMULATED {Input} DIALOG: Select the unit to view examples of... ~~~ 
+4:	Hello World
+5:	I'm in
+6:	 the world
+7:	Good-bye world!
+8:	Make a quote " 
+9:	Make a slash \ 
+10:	Make a 	 tab 
+11:	Make a new line 
+ break 
+12:	~~~ SIMULATED {Message} DIALOG: Good-bye World ~~~ 
+13:	~~~ SIMULATED {Message} DIALOG: Information icon is i ~~~ { title: Information title },
+14:	~~~ SIMULATED {Message} DIALOG: Question icon is ? ~~~ { title: Question title },
+15:	~~~ SIMULATED {Message} DIALOG: Warning icon is ! ~~~ { title: Warning title },
+16:	~~~ SIMULATED {Message} DIALOG: Plain no icon ~~~ { title: Plain title },
+17:	~~~ SIMULATED {Input} DIALOG: Enter Something ~~~ 
+18:	~~~ SIMULATED {Input} DIALOG: Information icon is i ~~~ 
+19:	~~~ SIMULATED {Input} DIALOG: Question icon is ? ~~~ 
+20:	~~~ SIMULATED {Input} DIALOG: Warning icon is ! ~~~ 
+21:	~~~ SIMULATED {Input} DIALOG: Plain no icon ~~~ 
+22:	~~~ SIMULATED {Confirm} DIALOG: Confirm ~~~ 
+23:	~~~ SIMULATED {Confirm} DIALOG: Confirm Example 2 ~~~ { title: Information },{ messageType: 1 },
+24:	~~~ SIMULATED {Confirm} DIALOG: Confirm Example 3 ~~~ { title: Question },{ optionType: -1 },{ messageType: 3 },
+25:	~~~ SIMULATED {Confirm} DIALOG: Confirm Example 4 ~~~ { title: Warning },{ optionType: 2 },{ messageType: 2 },
+26:	~~~ SIMULATED {Confirm} DIALOG: Confirm Example 5 ~~~ { title: Plain },{ optionType: 1 },{ messageType: -1 },
+27:	a = false
+28:	b = 1
+29:	c = 1.2
+30:	d = A
+31:	e = apple
+32:	x = 10
+33:	x = 20
+34:	y = 30
+35:	y = 30
+36:	x = 28
+37:	y = 5
+38:	z = 3
+39:	3.141592658389, 99, Y, true, Wachs
+40:	f = 25
+41:	g = 25.0
+42:	g = 25.99999999999
+43:	h = 25
+44:	k = 2.999999999
+45:	l = 2
+46:	m = 2.0
+47:	n = A
+48:	o = 65
+49:	p = F
+50:	~~~ SIMULATED {Input} DIALOG: Enter ~~~ 
+51:	~~~ SIMULATED {Message} DIALOG: -1 ~~~ 
+52:	~~~ SIMULATED {Input} DIALOG: Enter int ~~~ 
+53:	~~~ SIMULATED {Message} DIALOG: -1 ~~~ 
+54:	~~~ SIMULATED {Input} DIALOG: Enter Double ~~~ 
+55:	~~~ SIMULATED {Message} DIALOG: -1.0 ~~~ 
+56:	~~~ SIMULATED {Input} DIALOG: Enter char ~~~ 
+57:	~~~ SIMULATED {Message} DIALOG: - ~~~ 
+58:	Word hippopotomonsprosesquippedaiophobia is length 35
+59:	Word hippopotomonsprosesquippedaiophobia in upper case is HIPPOPOTOMONSPROSESQUIPPEDAIOPHOBIA
+60:	answer1 = 3.141592653589793
+61:	answer2 = 0.8775825618903728
+62:	answer3 = 1.0
+63:	answer4 = 125.0
+64:	answer5 = 3.0
+65:	answer6 = -0.6931471805599453
+66:	seed = 0.5177747716607831
+67:	high   = 10.0
+68:	low    = 1.0
+69:	number = 6.177747716607831
+70:	value = 6
+71:	card is 32
+72:	equal
+73:	The example is 
+74:	less than
+75:	!=
+76:	W1 kind of == W2
+77:	Keep trying
+78:	counter = 0
+79:	counter = 1
+80:	counter = 2
+81:	counter = 3
+82:	counter = 4
+83:	counter = 5
+84:	counter = 6
+85:	counter = 7
+86:	counter = 8
+87:	counter = 9
+88:	~~~ SIMULATED {Input} DIALOG: Create a password ~~~ 
+89:	~~~ SIMULATED {Message} DIALOG: Ok, continue... ~~~ 
+90:	~~~ SIMULATED {Input} DIALOG: Enter password ~~~ 
+91:	~~~ SIMULATED {Message} DIALOG: You got it ~~~ 
+92:	i = 0
+93:	i = 1
+94:	i = 2
+95:	i = 3
+96:	i = 4
+97:	i = 5
+98:	i = 6
+99:	i = 7
+100:	i = 8
+101:	i = 9
+102:	counting = 100
+103:	counting = 90
+104:	counting = 80
+105:	counting = 70
+106:	counting = 60
+107:	counting = 50
+108:	counting = 40
+109:	counting = 30
+110:	counting = 20
+111:	counting = 10
+112:	counting = 0
+113:	i = 99.789
+114:	i = 19.007428571428573
+115:	~~~ SIMULATED {Message} DIALOG: You are an intern at radio station, C-RAP, The 
+disk jockeys announce the current temperature 
+in both Fahrenheit and Celsius every half-hour.
+They would like an easy w ... (line shortened) ...
+116:	~~~ SIMULATED {Input} DIALOG: Enter temperature in Celcius ~~~ 
+117:	~~~ SIMULATED {Message} DIALOG: Your temperature in Fahrenheit is 30.2 ~~~ 
+118:	~~~ SIMULATED {Message} DIALOG: Thank you! ~~~ 
+119:	Start Learning Methods...
+120:	*
+121:	*
+122:	Hippopotamus
+123:	Humogonous
+124:	creative
+125:	Spider-man
+126:	Dalmations
+127:	Dalmations
+128:	Dalmations
+129:	Dalmations
+130:	Dalmations
+131:	Dalmations
+132:	Dalmations
+133:	Dalmations
+134:	Dalmations
+135:	Dalmations
+136:	Dalmations
+137:	Dalmations
+138:	Dalmations
+139:	Dalmations
+140:	Dalmations
+141:	Dalmations
+142:	Dalmations
+143:	Dalmations
+144:	Dalmations
+145:	Dalmations
+146:	Dalmations
+147:	Dalmations
+148:	Dalmations
+149:	Dalmations
+150:	Dalmations
+151:	Dalmations
+152:	Dalmations
+153:	Dalmations
+154:	Dalmations
+155:	Dalmations
+156:	Dalmations
+157:	Dalmations
+158:	Dalmations
+159:	Dalmations
+160:	Dalmations
+161:	Dalmations
+162:	Dalmations
+163:	Dalmations
+164:	Dalmations
+165:	Dalmations
+166:	Dalmations
+167:	Dalmations
+168:	Dalmations
+169:	Dalmations
+170:	Dalmations
+171:	Dalmations
+172:	Dalmations
+173:	Dalmations
+174:	Dalmations
+175:	Dalmations
+176:	Dalmations
+177:	Dalmations
+178:	Dalmations
+179:	Dalmations
+180:	Dalmations
+181:	Dalmations
+182:	Dalmations
+183:	Dalmations
+184:	Dalmations
+185:	Dalmations
+186:	Dalmations
+187:	Dalmations
+188:	Dalmations
+189:	Dalmations
+190:	Dalmations
+191:	Dalmations
+192:	Dalmations
+193:	Dalmations
+194:	Dalmations
+195:	Dalmations
+196:	Dalmations
+197:	Dalmations
+198:	Dalmations
+199:	Dalmations
+200:	Dalmations
+201:	Dalmations
+202:	Dalmations
+203:	Dalmations
+204:	Dalmations
+205:	Dalmations
+206:	Dalmations
+207:	Dalmations
+208:	Dalmations
+209:	Dalmations
+210:	Dalmations
+211:	Dalmations
+212:	Dalmations
+213:	Dalmations
+214:	Dalmations
+215:	Dalmations
+216:	Dalmations
+217:	Dalmations
+218:	Dalmations
+219:	Dalmations
+220:	Dalmations
+221:	Dalmations
+222:	Dalmations
+223:	Dalmations
+224:	Dalmations
+225:	Dalmations
+226:	Dalmations
+227:	Problems
+228:	Problems
+229:	Problems
+230:	Problems
+231:	Problems
+232:	Problems
+233:	Problems
+234:	Problems
+235:	Problems
+236:	Problems
+237:	Problems
+238:	Problems
+239:	Problems
+240:	Problems
+241:	Problems
+242:	Problems
+243:	Problems
+244:	Problems
+245:	Problems
+246:	Problems
+247:	Problems
+248:	Problems
+249:	Problems
+250:	Problems
+251:	Problems
+252:	Problems
+253:	Problems
+254:	Problems
+255:	Problems
+256:	Problems
+257:	Problems
+258:	Problems
+259:	Problems
+260:	Problems
+261:	Problems
+262:	Problems
+263:	Problems
+264:	Problems
+265:	Problems
+266:	Problems
+267:	Problems
+268:	Problems
+269:	Problems
+270:	Problems
+271:	Problems
+272:	Problems
+273:	Problems
+274:	Problems
+275:	Problems
+276:	Problems
+277:	Problems
+278:	Problems
+279:	Problems
+280:	Problems
+281:	Problems
+282:	Problems
+283:	Problems
+284:	Problems
+285:	Problems
+286:	Problems
+287:	Problems
+288:	Problems
+289:	Problems
+290:	Problems
+291:	Problems
+292:	Problems
+293:	Problems
+294:	Problems
+295:	Problems
+296:	Problems
+297:	Problems
+298:	Problems
+299:	Problems
+300:	Problems
+301:	Problems
+302:	Problems
+303:	Problems
+304:	Problems
+305:	Problems
+306:	Problems
+307:	Problems
+308:	Problems
+309:	Problems
+310:	Problems
+311:	Problems
+312:	Problems
+313:	Problems
+314:	Problems
+315:	Problems
+316:	Problems
+317:	Problems
+318:	Problems
+319:	Problems
+320:	Problems
+321:	Problems
+322:	Problems
+323:	Problems
+324:	Problems
+325:	Problems
+326:	Number is 10
+327:	~~~ SIMULATED {Message} DIALOG: Hello ~~~ 
+328:	~~~ SIMULATED {Message} DIALOG: Good-bye ~~~ { title: Learning Methods },
+329:	Completed Learning Methods!
+330:	Start Learning Arrays...
+331:	333
+332:	666
+333:	0 = 666
+334:	1 = 0
+335:	2 = 0
+336:	3 = 0
+337:	4 = 0
+338:	5 = 0
+339:	6 = 0
+340:	7 = 0
+341:	8 = 0
+342:	9 = 0
+343:	10 = 0
+344:	11 = 0
+345:	12 = 0
+346:	13 = 0
+347:	14 = 0
+348:	15 = 0
+349:	16 = 0
+350:	17 = 0
+351:	18 = 0
+352:	19 = 0
+353:	20 = 0
+354:	21 = 0
+355:	22 = 0
+356:	23 = 0
+357:	24 = 0
+358:	25 = 0
+359:	26 = 0
+360:	27 = 0
+361:	28 = 0
+362:	29 = 0
+363:	30 = 0
+364:	31 = 0
+365:	32 = 0
+366:	33 = 0
+367:	34 = 0
+368:	35 = 0
+369:	36 = 0
+370:	37 = 0
+371:	38 = 0
+372:	39 = 0
+373:	40 = 0
+374:	41 = 0
+375:	42 = 0
+376:	43 = 0
+377:	44 = 0
+378:	45 = 0
+379:	46 = 0
+380:	47 = 0
+381:	48 = 0
+382:	49 = 0
+383:	50 = 0
+384:	51 = 0
+385:	52 = 0
+386:	53 = 0
+387:	54 = 0
+388:	55 = 0
+389:	56 = 0
+390:	57 = 0
+391:	58 = 0
+392:	59 = 0
+393:	60 = 0
+394:	61 = 0
+395:	62 = 0
+396:	63 = 0
+397:	64 = 0
+398:	65 = 0
+399:	66 = 0
+400:	67 = 0
+401:	68 = 0
+402:	69 = 0
+403:	70 = 0
+404:	71 = 0
+405:	72 = 0
+406:	73 = 0
+407:	74 = 0
+408:	75 = 0
+409:	76 = 0
+410:	77 = 0
+411:	78 = 0
+412:	79 = 0
+413:	80 = 0
+414:	81 = 0
+415:	82 = 0
+416:	83 = 0
+417:	84 = 0
+418:	85 = 0
+419:	86 = 0
+420:	87 = 0
+421:	88 = 0
+422:	89 = 0
+423:	90 = 0
+424:	91 = 0
+425:	92 = 0
+426:	93 = 0
+427:	94 = 0
+428:	95 = 0
+429:	96 = 0
+430:	97 = 0
+431:	98 = 0
+432:	99 = 333
+433:	666
+434:	0
+435:	0
+436:	0
+437:	0
+438:	0
+439:	0
+440:	0
+441:	0
+442:	0
+443:	0
+444:	0
+445:	0
+446:	0
+447:	0
+448:	0
+449:	0
+450:	0
+451:	0
+452:	0
+453:	0
+454:	0
+455:	0
+456:	0
+457:	0
+458:	0
+459:	0
+460:	0
+461:	0
+462:	0
+463:	0
+464:	0
+465:	0
+466:	0
+467:	0
+468:	0
+469:	0
+470:	0
+471:	0
+472:	0
+473:	0
+474:	0
+475:	0
+476:	0
+477:	0
+478:	0
+479:	0
+480:	0
+481:	0
+482:	0
+483:	0
+484:	0
+485:	0
+486:	0
+487:	0
+488:	0
+489:	0
+490:	0
+491:	0
+492:	0
+493:	0
+494:	0
+495:	0
+496:	0
+497:	0
+498:	0
+499:	0
+500:	0
+501:	0
+502:	0
+503:	0
+504:	0
+505:	0
+506:	0
+507:	0
+508:	0
+509:	0
+510:	0
+511:	0
+512:	0
+513:	0
+514:	0
+515:	0
+516:	0
+517:	0
+518:	0
+519:	0
+520:	0
+521:	0
+522:	0
+523:	0
+524:	0
+525:	0
+526:	0
+527:	0
+528:	0
+529:	0
+530:	0
+531:	0
+532:	333
+533:	~~~ SIMULATED {Message} DIALOG: Array [25,250,2,-25,0,] ~~~ 
+534:	~~~ SIMULATED {Message} DIALOG: Array [666,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ... (line shortened) ...
+535:	~~~ SIMULATED {Message} DIALOG: Array [0,0,0,1,2,] ~~~ 
+536:	~~~ SIMULATED {Message} DIALOG: Array [0,0,0,0,0,] ~~~ 
+537:	~~~ SIMULATED {Message} DIALOG: Array [6,7,10,4,8,4,7,7,10,6,10,6,6,6,2,3,1,10,3,10,5,5,2,9,10,10,8,2,1,10,2,2,7,7,8,7,4,7,2,5,9,6,4,6,4,7,2,7,3,2,] ~~~ 
+538:	Random character was i
+539:	h r x r r i z s e f p v k c k g c n u r x h s h z s a l d r h f o u b i g e e x 
+j x x y h r k j n g j q m w e p u a e j j v g k d r t x a c w t g y z f r i o u 
+o d x p i f j o z c p y s s j m z w f  ... (line shortened) ...
+540:	X O X 
+O X O 
+X O X 
+
+541:	~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$ ... (line shortened) ...
+542:	~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$ ... (line shortened) ...
+543:	Completed Learning arrays!
+544:	Start Learing Classes...
+545:	undefined is 0 identifies as undefined
+546:	SpongeBob SquarePants is 0 identifies as sponge
+547:	SpongeBob SquarePants is 1 identifies as sponge
+548:	Booooooo!
+549:	Patrick Star is 0 identifies as undefined
+550:	Mr. Crabs is 80 identifies as Crab
+551:	Student Person is 0 identifies as student
+552:		Number:  	123456
+553:		Average: 	0.0
+554:	Student Person is 0 identifies as student
+555:		Number:  	123456
+556:		Average: 	13.09
+557:	Havoc is 0 identifies as dog
+558:		Number:  	2665
+559:		Average: 	0.0
+560:		Pride is true
+561:	Mr. Wachs is 0 identifies as undefined
+562:	Here are my students...
+563:	Mr. Wachs is 0 identifies as undefined
+564:	Here are my students...
+565:	Student Person is 0 identifies as student
+566:		Number:  	123456
+567:		Average: 	14.34
+568:	Havoc is 0 identifies as dog
+569:		Number:  	2665
+570:		Average: 	1.25
+571:		Pride is true
+572:	Meeting begining with 6 members...
+573:	Booooooo!
+574:	Mr. Crabs is 80 identifies as Crab
+575:	Patrick Star is 0 identifies as undefined
+576:	Student Person is 0 identifies as student
+577:		Number:  	123456
+578:		Average: 	14.34
+579:	Mr. Wachs is 0 identifies as undefined
+580:	Here are my students...
+581:	Student Person is 0 identifies as student
+582:		Number:  	123456
+583:		Average: 	15.59
+584:	Havoc is 0 identifies as dog
+585:		Number:  	2665
+586:		Average: 	2.5
+587:		Pride is true
+588:	Havoc is 0 identifies as dog
+589:		Number:  	2665
+590:		Average: 	2.5
+591:		Pride is true
+592:	Learning Classes Complete!
+593:	~~~ SIMULATED {GUI Frame} DIALOG: Graphics1 ~~~ 
+594:	~~~ SIMULATED {GUI Frame} DIALOG: Graphics2 ~~~ 
+595:	~~~ SIMULATED {GUI Frame} DIALOG: Graphics3 ~~~ 
+596:	Computer Science 30S complete!...................................................
+597:	Computer Science 40S starting......................................................
+598:	
+Recursion test starting...
+
+599:	Recursive factorials............................
+600:	-1	 factorial = 	0
+601:	0	 factorial = 	0
+602:	1	 factorial = 	1
+603:	2	 factorial = 	2
+604:	3	 factorial = 	6
+605:	4	 factorial = 	24
+606:	5	 factorial = 	120
+607:	6	 factorial = 	720
+608:	7	 factorial = 	5040
+609:	8	 factorial = 	40320
+610:	9	 factorial = 	362880
+611:	10	 factorial = 	3628800
+612:	11	 factorial = 	39916800
+613:	12	 factorial = 	479001600
+614:	13	 factorial = 	6227020800
+615:	14	 factorial = 	87178291200
+616:	15	 factorial = 	1307674368000
+617:	16	 factorial = 	20922789888000
+618:	17	 factorial = 	355687428096000
+619:	18	 factorial = 	6402373705728000
+620:	19	 factorial = 	121645100408832000
+621:	20	 factorial = 	2432902008176640000
+622:	Recursive powers................................
+623:	-10 to the exponent -10 = 1.0E-10
+624:	-9 to the exponent -10 = 2.8679719907924413E-10
+625:	-8 to the exponent -10 = 9.313225746154785E-10
+626:	-7 to the exponent -10 = 3.5401331746414354E-9
+627:	-6 to the exponent -10 = 1.65381716879202E-8
+628:	-5 to the exponent -10 = 1.024E-7
+629:	-4 to the exponent -10 = 9.5367431640625E-7
+630:	-3 to the exponent -10 = 1.6935087808430286E-5
+631:	-2 to the exponent -10 = 9.765625E-4
+632:	-1 to the exponent -10 = 1.0
+633:	0 to the exponent -10 = Infinity
+634:	1 to the exponent -10 = 1.0
+635:	2 to the exponent -10 = 9.765625E-4
+636:	3 to the exponent -10 = 1.6935087808430286E-5
+637:	4 to the exponent -10 = 9.5367431640625E-7
+638:	5 to the exponent -10 = 1.024E-7
+639:	6 to the exponent -10 = 1.65381716879202E-8
+640:	7 to the exponent -10 = 3.5401331746414354E-9
+641:	8 to the exponent -10 = 9.313225746154785E-10
+642:	9 to the exponent -10 = 2.8679719907924413E-10
+643:	10 to the exponent -10 = 1.0E-10
+644:	-10 to the exponent -9 = -1.0E-9
+645:	-9 to the exponent -9 = -2.581174791713197E-9
+646:	-8 to the exponent -9 = -7.450580596923828E-9
+647:	-7 to the exponent -9 = -2.478093222249005E-8
+648:	-6 to the exponent -9 = -9.92290301275212E-8
+649:	-5 to the exponent -9 = -5.12E-7
+650:	-4 to the exponent -9 = -3.814697265625E-6
+651:	-3 to the exponent -9 = -5.080526342529086E-5
+652:	-2 to the exponent -9 = -0.001953125
+653:	-1 to the exponent -9 = -1.0
+654:	0 to the exponent -9 = Infinity
+655:	1 to the exponent -9 = 1.0
+656:	2 to the exponent -9 = 0.001953125
+657:	3 to the exponent -9 = 5.080526342529086E-5
+658:	4 to the exponent -9 = 3.814697265625E-6
+659:	5 to the exponent -9 = 5.12E-7
+660:	6 to the exponent -9 = 9.92290301275212E-8
+661:	7 to the exponent -9 = 2.478093222249005E-8
+662:	8 to the exponent -9 = 7.450580596923828E-9
+663:	9 to the exponent -9 = 2.581174791713197E-9
+664:	10 to the exponent -9 = 1.0E-9
+665:	-10 to the exponent -8 = 1.0E-8
+666:	-9 to the exponent -8 = 2.3230573125418773E-8
+667:	-8 to the exponent -8 = 5.9604644775390625E-8
+668:	-7 to the exponent -8 = 1.7346652555743034E-7
+669:	-6 to the exponent -8 = 5.953741807651273E-7
+670:	-5 to the exponent -8 = 2.56E-6
+671:	-4 to the exponent -8 = 1.52587890625E-5
+672:	-3 to the exponent -8 = 1.5241579027587258E-4
+673:	-2 to the exponent -8 = 0.00390625
+674:	-1 to the exponent -8 = 1.0
+675:	0 to the exponent -8 = Infinity
+676:	1 to the exponent -8 = 1.0
+677:	2 to the exponent -8 = 0.00390625
+678:	3 to the exponent -8 = 1.5241579027587258E-4
+679:	4 to the exponent -8 = 1.52587890625E-5
+680:	5 to the exponent -8 = 2.56E-6
+681:	6 to the exponent -8 = 5.953741807651273E-7
+682:	7 to the exponent -8 = 1.7346652555743034E-7
+683:	8 to the exponent -8 = 5.9604644775390625E-8
+684:	9 to the exponent -8 = 2.3230573125418773E-8
+685:	10 to the exponent -8 = 1.0E-8
+686:	-10 to the exponent -7 = -1.0E-7
+687:	-9 to the exponent -7 = -2.0907515812876897E-7
+688:	-8 to the exponent -7 = -4.76837158203125E-7
+689:	-7 to the exponent -7 = -1.2142656789020123E-6
+690:	-6 to the exponent -7 = -3.5722450845907635E-6
+691:	-5 to the exponent -7 = -1.28E-5
+692:	-4 to the exponent -7 = -6.103515625E-5
+693:	-3 to the exponent -7 = -4.572473708276177E-4
+694:	-2 to the exponent -7 = -0.0078125
+695:	-1 to the exponent -7 = -1.0
+696:	0 to the exponent -7 = Infinity
+697:	1 to the exponent -7 = 1.0
+698:	2 to the exponent -7 = 0.0078125
+699:	3 to the exponent -7 = 4.572473708276177E-4
+700:	4 to the exponent -7 = 6.103515625E-5
+701:	5 to the exponent -7 = 1.28E-5
+702:	6 to the exponent -7 = 3.5722450845907635E-6
+703:	7 to the exponent -7 = 1.2142656789020123E-6
+704:	8 to the exponent -7 = 4.76837158203125E-7
+705:	9 to the exponent -7 = 2.0907515812876897E-7
+706:	10 to the exponent -7 = 1.0E-7
+707:	-10 to the exponent -6 = 1.0E-6
+708:	-9 to the exponent -6 = 1.8816764231589208E-6
+709:	-8 to the exponent -6 = 3.814697265625E-6
+710:	-7 to the exponent -6 = 8.499859752314087E-6
+711:	-6 to the exponent -6 = 2.143347050754458E-5
+712:	-5 to the exponent -6 = 6.4E-5
+713:	-4 to the exponent -6 = 2.44140625E-4
+714:	-3 to the exponent -6 = 0.0013717421124828531
+715:	-2 to the exponent -6 = 0.015625
+716:	-1 to the exponent -6 = 1.0
+717:	0 to the exponent -6 = Infinity
+718:	1 to the exponent -6 = 1.0
+719:	2 to the exponent -6 = 0.015625
+720:	3 to the exponent -6 = 0.0013717421124828531
+721:	4 to the exponent -6 = 2.44140625E-4
+722:	5 to the exponent -6 = 6.4E-5
+723:	6 to the exponent -6 = 2.143347050754458E-5
+724:	7 to the exponent -6 = 8.499859752314087E-6
+725:	8 to the exponent -6 = 3.814697265625E-6
+726:	9 to the exponent -6 = 1.8816764231589208E-6
+727:	10 to the exponent -6 = 1.0E-6
+728:	-10 to the exponent -5 = -1.0E-5
+729:	-9 to the exponent -5 = -1.6935087808430286E-5
+730:	-8 to the exponent -5 = -3.0517578125E-5
+731:	-7 to the exponent -5 = -5.9499018266198606E-5
+732:	-6 to the exponent -5 = -1.286008230452675E-4
+733:	-5 to the exponent -5 = -3.2E-4
+734:	-4 to the exponent -5 = -9.765625E-4
+735:	-3 to the exponent -5 = -0.00411522633744856
+736:	-2 to the exponent -5 = -0.03125
+737:	-1 to the exponent -5 = -1.0
+738:	0 to the exponent -5 = Infinity
+739:	1 to the exponent -5 = 1.0
+740:	2 to the exponent -5 = 0.03125
+741:	3 to the exponent -5 = 0.00411522633744856
+742:	4 to the exponent -5 = 9.765625E-4
+743:	5 to the exponent -5 = 3.2E-4
+744:	6 to the exponent -5 = 1.286008230452675E-4
+745:	7 to the exponent -5 = 5.9499018266198606E-5
+746:	8 to the exponent -5 = 3.0517578125E-5
+747:	9 to the exponent -5 = 1.6935087808430286E-5
+748:	10 to the exponent -5 = 1.0E-5
+749:	-10 to the exponent -4 = 1.0E-4
+750:	-9 to the exponent -4 = 1.5241579027587258E-4
+751:	-8 to the exponent -4 = 2.44140625E-4
+752:	-7 to the exponent -4 = 4.1649312786339027E-4
+753:	-6 to the exponent -4 = 7.716049382716049E-4
+754:	-5 to the exponent -4 = 0.0016
+755:	-4 to the exponent -4 = 0.00390625
+756:	-3 to the exponent -4 = 0.012345679012345678
+757:	-2 to the exponent -4 = 0.0625
+758:	-1 to the exponent -4 = 1.0
+759:	0 to the exponent -4 = Infinity
+760:	1 to the exponent -4 = 1.0
+761:	2 to the exponent -4 = 0.0625
+762:	3 to the exponent -4 = 0.012345679012345678
+763:	4 to the exponent -4 = 0.00390625
+764:	5 to the exponent -4 = 0.0016
+765:	6 to the exponent -4 = 7.716049382716049E-4
+766:	7 to the exponent -4 = 4.1649312786339027E-4
+767:	8 to the exponent -4 = 2.44140625E-4
+768:	9 to the exponent -4 = 1.5241579027587258E-4
+769:	10 to the exponent -4 = 1.0E-4
+770:	-10 to the exponent -3 = -0.001
+771:	-9 to the exponent -3 = -0.0013717421124828531
+772:	-8 to the exponent -3 = -0.001953125
+773:	-7 to the exponent -3 = -0.0029154518950437317
+774:	-6 to the exponent -3 = -0.004629629629629629
+775:	-5 to the exponent -3 = -0.008
+776:	-4 to the exponent -3 = -0.015625
+777:	-3 to the exponent -3 = -0.037037037037037035
+778:	-2 to the exponent -3 = -0.125
+779:	-1 to the exponent -3 = -1.0
+780:	0 to the exponent -3 = Infinity
+781:	1 to the exponent -3 = 1.0
+782:	2 to the exponent -3 = 0.125
+783:	3 to the exponent -3 = 0.037037037037037035
+784:	4 to the exponent -3 = 0.015625
+785:	5 to the exponent -3 = 0.008
+786:	6 to the exponent -3 = 0.004629629629629629
+787:	7 to the exponent -3 = 0.0029154518950437317
+788:	8 to the exponent -3 = 0.001953125
+789:	9 to the exponent -3 = 0.0013717421124828531
+790:	10 to the exponent -3 = 0.001
+791:	-10 to the exponent -2 = 0.01
+792:	-9 to the exponent -2 = 0.012345679012345678
+793:	-8 to the exponent -2 = 0.015625
+794:	-7 to the exponent -2 = 0.02040816326530612
+795:	-6 to the exponent -2 = 0.027777777777777776
+796:	-5 to the exponent -2 = 0.04
+797:	-4 to the exponent -2 = 0.0625
+798:	-3 to the exponent -2 = 0.1111111111111111
+799:	-2 to the exponent -2 = 0.25
+800:	-1 to the exponent -2 = 1.0
+801:	0 to the exponent -2 = Infinity
+802:	1 to the exponent -2 = 1.0
+803:	2 to the exponent -2 = 0.25
+804:	3 to the exponent -2 = 0.1111111111111111
+805:	4 to the exponent -2 = 0.0625
+806:	5 to the exponent -2 = 0.04
+807:	6 to the exponent -2 = 0.027777777777777776
+808:	7 to the exponent -2 = 0.02040816326530612
+809:	8 to the exponent -2 = 0.015625
+810:	9 to the exponent -2 = 0.012345679012345678
+811:	10 to the exponent -2 = 0.01
+812:	-10 to the exponent -1 = -0.1
+813:	-9 to the exponent -1 = -0.1111111111111111
+814:	-8 to the exponent -1 = -0.125
+815:	-7 to the exponent -1 = -0.14285714285714285
+816:	-6 to the exponent -1 = -0.16666666666666666
+817:	-5 to the exponent -1 = -0.2
+818:	-4 to the exponent -1 = -0.25
+819:	-3 to the exponent -1 = -0.3333333333333333
+820:	-2 to the exponent -1 = -0.5
+821:	-1 to the exponent -1 = -1.0
+822:	0 to the exponent -1 = Infinity
+823:	1 to the exponent -1 = 1.0
+824:	2 to the exponent -1 = 0.5
+825:	3 to the exponent -1 = 0.3333333333333333
+826:	4 to the exponent -1 = 0.25
+827:	5 to the exponent -1 = 0.2
+828:	6 to the exponent -1 = 0.16666666666666666
+829:	7 to the exponent -1 = 0.14285714285714285
+830:	8 to the exponent -1 = 0.125
+831:	9 to the exponent -1 = 0.1111111111111111
+832:	10 to the exponent -1 = 0.1
+833:	-10 to the exponent 0 = 1.0
+834:	-9 to the exponent 0 = 1.0
+835:	-8 to the exponent 0 = 1.0
+836:	-7 to the exponent 0 = 1.0
+837:	-6 to the exponent 0 = 1.0
+838:	-5 to the exponent 0 = 1.0
+839:	-4 to the exponent 0 = 1.0
+840:	-3 to the exponent 0 = 1.0
+841:	-2 to the exponent 0 = 1.0
+842:	-1 to the exponent 0 = 1.0
+843:	0 to the exponent 0 = 1.0
+844:	1 to the exponent 0 = 1.0
+845:	2 to the exponent 0 = 1.0
+846:	3 to the exponent 0 = 1.0
+847:	4 to the exponent 0 = 1.0
+848:	5 to the exponent 0 = 1.0
+849:	6 to the exponent 0 = 1.0
+850:	7 to the exponent 0 = 1.0
+851:	8 to the exponent 0 = 1.0
+852:	9 to the exponent 0 = 1.0
+853:	10 to the exponent 0 = 1.0
+854:	-10 to the exponent 1 = -10.0
+855:	-9 to the exponent 1 = -9.0
+856:	-8 to the exponent 1 = -8.0
+857:	-7 to the exponent 1 = -7.0
+858:	-6 to the exponent 1 = -6.0
+859:	-5 to the exponent 1 = -5.0
+860:	-4 to the exponent 1 = -4.0
+861:	-3 to the exponent 1 = -3.0
+862:	-2 to the exponent 1 = -2.0
+863:	-1 to the exponent 1 = -1.0
+864:	0 to the exponent 1 = 0.0
+865:	1 to the exponent 1 = 1.0
+866:	2 to the exponent 1 = 2.0
+867:	3 to the exponent 1 = 3.0
+868:	4 to the exponent 1 = 4.0
+869:	5 to the exponent 1 = 5.0
+870:	6 to the exponent 1 = 6.0
+871:	7 to the exponent 1 = 7.0
+872:	8 to the exponent 1 = 8.0
+873:	9 to the exponent 1 = 9.0
+874:	10 to the exponent 1 = 10.0
+875:	-10 to the exponent 2 = 100.0
+876:	-9 to the exponent 2 = 81.0
+877:	-8 to the exponent 2 = 64.0
+878:	-7 to the exponent 2 = 49.0
+879:	-6 to the exponent 2 = 36.0
+880:	-5 to the exponent 2 = 25.0
+881:	-4 to the exponent 2 = 16.0
+882:	-3 to the exponent 2 = 9.0
+883:	-2 to the exponent 2 = 4.0
+884:	-1 to the exponent 2 = 1.0
+885:	0 to the exponent 2 = 0.0
+886:	1 to the exponent 2 = 1.0
+887:	2 to the exponent 2 = 4.0
+888:	3 to the exponent 2 = 9.0
+889:	4 to the exponent 2 = 16.0
+890:	5 to the exponent 2 = 25.0
+891:	6 to the exponent 2 = 36.0
+892:	7 to the exponent 2 = 49.0
+893:	8 to the exponent 2 = 64.0
+894:	9 to the exponent 2 = 81.0
+895:	10 to the exponent 2 = 100.0
+896:	-10 to the exponent 3 = -1000.0
+897:	-9 to the exponent 3 = -729.0
+898:	-8 to the exponent 3 = -512.0
+899:	-7 to the exponent 3 = -343.0
+900:	-6 to the exponent 3 = -216.0
+901:	-5 to the exponent 3 = -125.0
+902:	-4 to the exponent 3 = -64.0
+903:	-3 to the exponent 3 = -27.0
+904:	-2 to the exponent 3 = -8.0
+905:	-1 to the exponent 3 = -1.0
+906:	0 to the exponent 3 = 0.0
+907:	1 to the exponent 3 = 1.0
+908:	2 to the exponent 3 = 8.0
+909:	3 to the exponent 3 = 27.0
+910:	4 to the exponent 3 = 64.0
+911:	5 to the exponent 3 = 125.0
+912:	6 to the exponent 3 = 216.0
+913:	7 to the exponent 3 = 343.0
+914:	8 to the exponent 3 = 512.0
+915:	9 to the exponent 3 = 729.0
+916:	10 to the exponent 3 = 1000.0
+917:	-10 to the exponent 4 = 10000.0
+918:	-9 to the exponent 4 = 6561.0
+919:	-8 to the exponent 4 = 4096.0
+920:	-7 to the exponent 4 = 2401.0
+921:	-6 to the exponent 4 = 1296.0
+922:	-5 to the exponent 4 = 625.0
+923:	-4 to the exponent 4 = 256.0
+924:	-3 to the exponent 4 = 81.0
+925:	-2 to the exponent 4 = 16.0
+926:	-1 to the exponent 4 = 1.0
+927:	0 to the exponent 4 = 0.0
+928:	1 to the exponent 4 = 1.0
+929:	2 to the exponent 4 = 16.0
+930:	3 to the exponent 4 = 81.0
+931:	4 to the exponent 4 = 256.0
+932:	5 to the exponent 4 = 625.0
+933:	6 to the exponent 4 = 1296.0
+934:	7 to the exponent 4 = 2401.0
+935:	8 to the exponent 4 = 4096.0
+936:	9 to the exponent 4 = 6561.0
+937:	10 to the exponent 4 = 10000.0
+938:	-10 to the exponent 5 = -100000.0
+939:	-9 to the exponent 5 = -59049.0
+940:	-8 to the exponent 5 = -32768.0
+941:	-7 to the exponent 5 = -16807.0
+942:	-6 to the exponent 5 = -7776.0
+943:	-5 to the exponent 5 = -3125.0
+944:	-4 to the exponent 5 = -1024.0
+945:	-3 to the exponent 5 = -243.0
+946:	-2 to the exponent 5 = -32.0
+947:	-1 to the exponent 5 = -1.0
+948:	0 to the exponent 5 = 0.0
+949:	1 to the exponent 5 = 1.0
+950:	2 to the exponent 5 = 32.0
+951:	3 to the exponent 5 = 243.0
+952:	4 to the exponent 5 = 1024.0
+953:	5 to the exponent 5 = 3125.0
+954:	6 to the exponent 5 = 7776.0
+955:	7 to the exponent 5 = 16807.0
+956:	8 to the exponent 5 = 32768.0
+957:	9 to the exponent 5 = 59049.0
+958:	10 to the exponent 5 = 100000.0
+959:	-10 to the exponent 6 = 1000000.0
+960:	-9 to the exponent 6 = 531441.0
+961:	-8 to the exponent 6 = 262144.0
+962:	-7 to the exponent 6 = 117649.0
+963:	-6 to the exponent 6 = 46656.0
+964:	-5 to the exponent 6 = 15625.0
+965:	-4 to the exponent 6 = 4096.0
+966:	-3 to the exponent 6 = 729.0
+967:	-2 to the exponent 6 = 64.0
+968:	-1 to the exponent 6 = 1.0
+969:	0 to the exponent 6 = 0.0
+970:	1 to the exponent 6 = 1.0
+971:	2 to the exponent 6 = 64.0
+972:	3 to the exponent 6 = 729.0
+973:	4 to the exponent 6 = 4096.0
+974:	5 to the exponent 6 = 15625.0
+975:	6 to the exponent 6 = 46656.0
+976:	7 to the exponent 6 = 117649.0
+977:	8 to the exponent 6 = 262144.0
+978:	9 to the exponent 6 = 531441.0
+979:	10 to the exponent 6 = 1000000.0
+980:	-10 to the exponent 7 = -1.0E7
+981:	-9 to the exponent 7 = -4782969.0
+982:	-8 to the exponent 7 = -2097152.0
+983:	-7 to the exponent 7 = -823543.0
+984:	-6 to the exponent 7 = -279936.0
+985:	-5 to the exponent 7 = -78125.0
+986:	-4 to the exponent 7 = -16384.0
+987:	-3 to the exponent 7 = -2187.0
+988:	-2 to the exponent 7 = -128.0
+989:	-1 to the exponent 7 = -1.0
+990:	0 to the exponent 7 = 0.0
+991:	1 to the exponent 7 = 1.0
+992:	2 to the exponent 7 = 128.0
+993:	3 to the exponent 7 = 2187.0
+994:	4 to the exponent 7 = 16384.0
+995:	5 to the exponent 7 = 78125.0
+996:	6 to the exponent 7 = 279936.0
+997:	7 to the exponent 7 = 823543.0
+998:	8 to the exponent 7 = 2097152.0
+999:	9 to the exponent 7 = 4782969.0
+1000:	10 to the exponent 7 = 1.0E7
+1001:	-10 to the exponent 8 = 1.0E8
+1002:	-9 to the exponent 8 = 4.3046721E7
+1003:	-8 to the exponent 8 = 1.6777216E7
+1004:	-7 to the exponent 8 = 5764801.0
+1005:	-6 to the exponent 8 = 1679616.0
+1006:	-5 to the exponent 8 = 390625.0
+1007:	-4 to the exponent 8 = 65536.0
+1008:	-3 to the exponent 8 = 6561.0
+1009:	-2 to the exponent 8 = 256.0
+1010:	-1 to the exponent 8 = 1.0
+1011:	0 to the exponent 8 = 0.0
+1012:	1 to the exponent 8 = 1.0
+1013:	2 to the exponent 8 = 256.0
+1014:	3 to the exponent 8 = 6561.0
+1015:	4 to the exponent 8 = 65536.0
+1016:	5 to the exponent 8 = 390625.0
+1017:	6 to the exponent 8 = 1679616.0
+1018:	7 to the exponent 8 = 5764801.0
+1019:	8 to the exponent 8 = 1.6777216E7
+1020:	9 to the exponent 8 = 4.3046721E7
+1021:	10 to the exponent 8 = 1.0E8
+1022:	-10 to the exponent 9 = -1.0E9
+1023:	-9 to the exponent 9 = -3.87420489E8
+1024:	-8 to the exponent 9 = -1.34217728E8
+1025:	-7 to the exponent 9 = -4.0353607E7
+1026:	-6 to the exponent 9 = -1.0077696E7
+1027:	-5 to the exponent 9 = -1953125.0
+1028:	-4 to the exponent 9 = -262144.0
+1029:	-3 to the exponent 9 = -19683.0
+1030:	-2 to the exponent 9 = -512.0
+1031:	-1 to the exponent 9 = -1.0
+1032:	0 to the exponent 9 = 0.0
+1033:	1 to the exponent 9 = 1.0
+1034:	2 to the exponent 9 = 512.0
+1035:	3 to the exponent 9 = 19683.0
+1036:	4 to the exponent 9 = 262144.0
+1037:	5 to the exponent 9 = 1953125.0
+1038:	6 to the exponent 9 = 1.0077696E7
+1039:	7 to the exponent 9 = 4.0353607E7
+1040:	8 to the exponent 9 = 1.34217728E8
+1041:	9 to the exponent 9 = 3.87420489E8
+1042:	10 to the exponent 9 = 1.0E9
+1043:	-10 to the exponent 10 = 1.0E10
+1044:	-9 to the exponent 10 = 3.486784401E9
+1045:	-8 to the exponent 10 = 1.073741824E9
+1046:	-7 to the exponent 10 = 2.82475249E8
+1047:	-6 to the exponent 10 = 6.0466176E7
+1048:	-5 to the exponent 10 = 9765625.0
+1049:	-4 to the exponent 10 = 1048576.0
+1050:	-3 to the exponent 10 = 59049.0
+1051:	-2 to the exponent 10 = 1024.0
+1052:	-1 to the exponent 10 = 1.0
+1053:	0 to the exponent 10 = 0.0
+1054:	1 to the exponent 10 = 1.0
+1055:	2 to the exponent 10 = 1024.0
+1056:	3 to the exponent 10 = 59049.0
+1057:	4 to the exponent 10 = 1048576.0
+1058:	5 to the exponent 10 = 9765625.0
+1059:	6 to the exponent 10 = 6.0466176E7
+1060:	7 to the exponent 10 = 2.82475249E8
+1061:	8 to the exponent 10 = 1.073741824E9
+1062:	9 to the exponent 10 = 3.486784401E9
+1063:	10 to the exponent 10 = 1.0E10
+1064:	
+Recursion test complete!
+
+1065:	
+Advanced Classes testing begins...
+
+1066:	unidentified is 0 identifes as unidentified
+1067:	Demitrius Demarkus the 3rd is 0 identifes as non-binary
+1068:	Booooo!
+1069:	unidentified is 1 identifes as unidentified
+1070:	I am a student
+1071:		Number: 	1
+1072:		GPA: 	0.8001099999999999
+1073:	Hingle McCringleberry is 17 identifes as male
+1074:	I am a student
+1075:		Number: 	1
+1076:		GPA: 	0.0
+1077:	Professor Snape is 40 identifes as teacher
+1078:	unidentified is 1 identifes as unidentified
+1079:	I am a student
+1080:		Number: 	1
+1081:		GPA: 	0.9001099999999999
+1082:	Hingle McCringleberry is 17 identifes as male
+1083:	I am a student
+1084:		Number: 	1
+1085:		GPA: 	0.1
+1086:	O1 = java.lang.Object@31cefde0
+1087:	O2 = java.lang.Object@439f5b3d
+1088:	O3 = java.lang.Object@439f5b3d
+1089:	Person  = Person: Demitrius Demarkus the 3rd is 1 identifes as non-binary
+1090:	Student = Student: Person: unidentified is 1 identifes as unidentified average is 0.9001099999999999
+1091:	Teacher = Teacher: Person: Professor Snape is 40 identifes as teacher
+1092:	String = squirrel
+1093:	JOptionPane = io.JOptionPane@1d56ce6a
+1094:	O2==O3
+1095:	P1 = Person: unidentified is 0 identifes as unidentified
+1096:	P2 = Person: unidentified is 0 identifes as unidentified
+1097:	P3 = Person: unidentified is 0 identifes as unidentified
+1098:	P1==P2
+1099:	P2==P3
+1100:	P1==P3
+1101:	Person is Person: Demitrius Demarkus the 3rd is 1 identifes as non-binary
+1102:	Clone  is Person: Demitrius Demarkus the 3rd is 1 identifes as non-binary
+1103:	Clone is ==
+1104:	Student: Person: Name1 is 10 identifes as Student1 average is -0.3
+1105:	Student: Person: Name2 is 20 identifes as Student2 average is 0.1
+1106:	Student: Person: Name3 is 30 identifes as Student3 average is 1.0000999999999998
+1107:	S1 total = 5
+1108:	S2 total = 5
+1109:	S3 total = 5
+1110:	S1 total = 3
+1111:	S2 total = 3
+1112:	S3 total = 3
+1113:	Boom!!!!
+1114:	Boom!!!!
+1115:	Boom!!!!
+1116:	Boom!!!!
+1117:	Boom!!!!
+1118:	Boom!!!!
+1119:	Boom!!!!
+1120:	Boom!!!!
+1121:	Doctor: Person: Dr. Doom is 0 identifes as unidentified
+1122:	DiskJocky: Person: DJ Blitz is 0 identifes as unidentified
+1123:	MrWachs: Teacher: Person: Mr. Lawrence Wachs is 40 identifes as teacher
+1124:	Piper: HighSchool: Student: Person: Smelly Teenager is 15 identifes as doesn't matter average is 0.0
+1125:	Husky: HighSchool: Student: Person: Smelly Teenager is 15 identifes as doesn't matter average is 0.0
+1126:	Athlete: Husky: HighSchool: Student: Person: Jock is 15 identifes as doesn't matter average is 0.0
+1127:	Meeting is about to begin...
+	 Person	Person: Demitrius Demarkus the 3rd is 1 identifes as non-binary
+	 Person	 Student	Student: Person: unidentified is 1 identifes as unidentified average is 0.900109 ... (line shortened) ...
+1128:	Wash it first
+1129:	Smelly Teenager is eating Apple from Fruits, it was Sweet
+1130:	Mr. Lawrence Wachs is eating Do not eat!
+1131:	Round 1...
+1132:	Mickey has got it signed!
+1133:	Round 2...
+1134:	Mickey has scored a goal
+1135:	Mickey has scored a goal
+1136:	Warriors has scored a goal
+1137:	Mickey has taken a piece
+1138:	Warriors has taken a piece
+1139:	Warriors has taken a piece
+1140:	Mickey has punched
+1141:	Warriors has punched
+1142:	Mickey has punched
+1143:	End of period 2 and the score is 22 for the Mickey and 11 for the Warriors
+1144:	End of round 2 and the score is 22 for the Mickey and 11 for the Warriors
+1145:	Round 3...
+1146:	Mickey has scored a goal
+1147:	Mickey has scored a goal
+1148:	Warriors has scored a goal
+1149:	Mickey has taken a piece
+1150:	Warriors has taken a piece
+1151:	Warriors has taken a piece
+1152:	Mickey has punched
+1153:	Warriors has punched
+1154:	Mickey has punched
+1155:	End of period 3 and the score is 44 for the Mickey and 22 for the Warriors
+1156:	End of round 3 and the score is 44 for the Mickey and 22 for the Warriors
+1157:	Round 4...
+1158:	Mickey has scored a goal
+1159:	Mickey has scored a goal
+1160:	Warriors has scored a goal
+1161:	Mickey has taken a piece
+1162:	Warriors has taken a piece
+1163:	Warriors has taken a piece
+1164:	Mickey has punched
+1165:	Warriors has punched
+1166:	Mickey has punched
+1167:	End of period 4 and the score is 66 for the Mickey and 33 for the Warriors
+1168:	End of round 4 and the score is 66 for the Mickey and 33 for the Warriors
+1169:	Mickey wins!
+1170:	Mickey is eating Do not eat!
+1171:	Class Boolean as a string is true
+1172:	Class Integer as a string is 0
+1173:	Class Double as a string is 3.14
+1174:	Class Character as a string is a
+1175:	Class String as a string is test
+1176:	Class Athlete as a string is Athlete: Husky: HighSchool: Student: Person: Jock is 15 identifes as doesn't matter average is 0.0
+1177:	Class JOptionPane as a string is io.JOptionPane@5197848c
+1178:	Class Object as a string is java.lang.Object@17f052a3
+1179:	true
+1180:	0
+1181:	3.14
+1182:	a
+1183:	test
+1184:	Athlete: Husky: HighSchool: Student: Person: Jock is 15 identifes as doesn't matter average is 0.0
+1185:	Class Boolean as a string is true
+1186:	Class Integer as a string is 0
+1187:	Class Double as a string is 3.14
+1188:	Class Character as a string is a
+1189:	Class String as a string is test
+1190:	Class Athlete as a string is Athlete: Husky: HighSchool: Student: Person: Jock is 15 identifes as doesn't matter average is 0.0
+1191:	Home owner:
+1192:	Mr. Lawrence Wachs
+1193:	
+and the contents...
+1194:	testing.cs40s.advancedclasses.Meeting@2e0fa5d3
+1195:	Wash it first
+1196:	Mr. Lawrence Wachs is eating Apple from Fruits, it was Sweet
+1197:	Mr. Lawrence Wachs is eating Do not eat!
+1198:	
+Advanced Classes testing complete!
+
+1199:	Collections unit starting......................................................
+1200:	
+Testing constructors.........................
+
+1201:	
+Testing toString()...........................
+
+1202:	Node a = null
+1203:	Node b = Meat
+1204:	Node c = Cheese
+1205:	Node d = Sauce
+1206:	
+Testing equals().............................
+
+1207:	Node a == b? -> false
+1208:	Node b == c? -> false
+1209:	Node a == a? -> false
+1210:	Node b == b? -> true
+1211:	
+Testing clone()..............................
+
+1212:	Node e = null
+1213:	Node f = Meat
+1214:	Node g = Cheese
+1215:	Node h = Sauce
+1216:	
+Testing equals().............................
+
+1217:	Node a == b? -> false
+1218:	Node b == c? -> false
+1219:	Node c == d? -> false
+1220:	Node a == e? -> false
+1221:	Node b == f? -> true
+1222:	Node c == g? -> true
+1223:	Node d == h? -> true
+1224:	
+Testing finalize()...........................
+
+1225:	Node a = null
+1226:	Node b = Meat
+1227:	Node c = Cheese
+1228:	Node d = Sauce
+1229:	Node e = null
+1230:	Node f = Meat
+1231:	Node g = Cheese
+1232:	Node h = Sauce
+1233:	Node a = null
+1234:	Node b = null
+1235:	Node c = null
+1236:	Node d = null
+1237:	Node e = null
+1238:	Node f = null
+1239:	Node g = null
+1240:	Node h = null
+1241:	
+Testing default LinkedList constructor.......
+
+1242:	
+Testing isEmpty method.......................
+
+1243:	L1 empty? -> true
+1244:	
+Testing size method..........................
+
+1245:	L1 size? -> 0
+1246:	
+Testing toString method......................
+
+1247:	Empty LinkedList
+1248:	
+Test addBack method..........................
+
+1249:	Linked List 	[5,50,500,-5,-50]
+1250:	
+Test addFront method.........................
+
+1251:	Linked List 	[6,60,600,-6,-60,5,50,500,-5,-50]
+1252:	
+Test get method..............................
+
+1253:	Getting list -1 = null
+1254:	Getting list 0 = 6
+1255:	Getting list 1 = 60
+1256:	Getting list 2 = 600
+1257:	Getting list 3 = -6
+1258:	Getting list 4 = -60
+1259:	Getting list 5 = 5
+1260:	Getting list 6 = 50
+1261:	Getting list 7 = 500
+1262:	Getting list 8 = -5
+1263:	Getting list 9 = -50
+1264:	Getting list 10 = null
+1265:	
+Test set method..............................
+
+1266:	Setting list -1 to 9 result = false
+1267:	Linked List 	[6,60,600,-6,-60,5,50,500,-5,-50]
+1268:	Setting list 0 to 10 result = true
+1269:	Linked List 	[10,60,600,-6,-60,5,50,500,-5,-50]
+1270:	Setting list 1 to 11 result = true
+1271:	Linked List 	[10,11,600,-6,-60,5,50,500,-5,-50]
+1272:	Setting list 2 to 12 result = true
+1273:	Linked List 	[10,11,12,-6,-60,5,50,500,-5,-50]
+1274:	Setting list 3 to 13 result = true
+1275:	Linked List 	[10,11,12,13,-60,5,50,500,-5,-50]
+1276:	Setting list 4 to 14 result = true
+1277:	Linked List 	[10,11,12,13,14,5,50,500,-5,-50]
+1278:	Setting list 5 to 15 result = true
+1279:	Linked List 	[10,11,12,13,14,15,50,500,-5,-50]
+1280:	Setting list 6 to 16 result = true
+1281:	Linked List 	[10,11,12,13,14,15,16,500,-5,-50]
+1282:	Setting list 7 to 17 result = true
+1283:	Linked List 	[10,11,12,13,14,15,16,17,-5,-50]
+1284:	Setting list 8 to 18 result = true
+1285:	Linked List 	[10,11,12,13,14,15,16,17,18,-50]
+1286:	Setting list 9 to 19 result = true
+1287:	Linked List 	[10,11,12,13,14,15,16,17,18,19]
+1288:	Setting list 10 to 20 result = false
+1289:	Linked List 	[10,11,12,13,14,15,16,17,18,19]
+1290:	
+Test equals method...........................
+
+1291:	List 1 = Linked List 	[10,11,12,13,14,15,16,17,18,19]
+1292:	List 2 = Empty LinkedList
+1293:	List1 == List2 is false
+1294:	
+Test clone method............................
+
+1295:	List 1 = Linked List 	[10,11,12,13,14,15,16,17,18,19]
+1296:	List 2 = Linked List 	[10,11,12,13,14,15,16,17,18,19]
+1297:	Re-testing equals...
+1298:	List1 == List2 is true
+1299:	
+Test addAfter method.........................
+
+1300:	Adding value 	99	 after index 	-1	 result = 	false	Linked List 	[10,11,12,13,14,15,16,17,18,19]
+1301:	Adding value 	100	 after index 	0	 result = 	true	Linked List 	[10,100,11,12,13,14,15,16,17,18,19]
+1302:	Adding value 	101	 after index 	1	 result = 	true	Linked List 	[10,100,101,11,12,13,14,15,16,17,18,19]
+1303:	Adding value 	102	 after index 	2	 result = 	true	Linked List 	[10,100,101,102,11,12,13,14,15,16,17,18,19]
+1304:	Adding value 	103	 after index 	3	 result = 	true	Linked List 	[10,100,101,102,103,11,12,13,14,15,16,17,18,19]
+1305:	Adding value 	104	 after index 	4	 result = 	true	Linked List 	[10,100,101,102,103,104,11,12,13,14,15,16,17,18,19]
+1306:	Adding value 	105	 after index 	5	 result = 	true	Linked List 	[10,100,101,102,103,104,105,11,12,13,14,15,16,17,18,19]
+1307:	Adding value 	106	 after index 	6	 result = 	true	Linked List 	[10,100,101,102,103,104,105,106,11,12,13,14,15,16,17,18,19]
+1308:	Adding value 	107	 after index 	7	 result = 	true	Linked List 	[10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17,18,19]
+1309:	Adding value 	108	 after index 	8	 result = 	true	Linked List 	[10,100,101,102,103,104,105,106,107,108,11,12,13,14,15,16,17,18,19]
+1310:	Adding value 	109	 after index 	9	 result = 	true	Linked List 	[10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1311:	Test other edge case
+1312:	Adding value 	10	 after index 	21	 result = 	false	Linked List 	[10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1313:	
+Test addBefore method........................
+
+1314:	Adding value 	99	 before index 	-1	 result = 	false	Linked List 	[10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1315:	Adding value 	100	 before index 	0	 result = 	true	Linked List 	[100,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1316:	Adding value 	101	 before index 	1	 result = 	true	Linked List 	[100,101,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1317:	Adding value 	102	 before index 	2	 result = 	true	Linked List 	[100,101,102,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1318:	Adding value 	103	 before index 	3	 result = 	true	Linked List 	[100,101,102,103,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1319:	Adding value 	104	 before index 	4	 result = 	true	Linked List 	[100,101,102,103,104,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1320:	Adding value 	105	 before index 	5	 result = 	true	Linked List 	[100,101,102,103,104,105,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1321:	Adding value 	106	 before index 	6	 result = 	true	Linked List 	[100,101,102,103,104,105,106,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1322:	Adding value 	107	 before index 	7	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1323:	Adding value 	108	 before index 	8	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,108,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1324:	Adding value 	109	 before index 	9	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1325:	Adding value 	110	 before index 	10	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1326:	Adding value 	111	 before index 	11	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1327:	Adding value 	112	 before index 	12	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1328:	Adding value 	113	 before index 	13	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1329:	Adding value 	114	 before index 	14	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1330:	Adding value 	115	 before index 	15	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1331:	Adding value 	116	 before index 	16	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18 ... (line shortened) ...
+1332:	Adding value 	117	 before index 	17	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,1 ... (line shortened) ...
+1333:	Adding value 	118	 before index 	18	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15, ... (line shortened) ...
+1334:	Adding value 	119	 before index 	19	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14 ... (line shortened) ...
+1335:	Test other edge case
+1336:	Adding value 	10	 after before 	41	 result = 	false	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14 ... (line shortened) ...
+1337:	
+Test front and back methods..................
+
+1338:	Front of list 1 = 100	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1339:	Front of list 2 = 10	Linked List 	[10,11,12,13,14,15,16,17,18,19]
+1340:	Back of list 1 = 19	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1341:	Back of list 2 = 19	Linked List 	[10,11,12,13,14,15,16,17,18,19]
+1342:	Clear out list 2
+1343:	Front of list 2 = null	Empty LinkedList
+1344:	Back of list 2 = null	Empty LinkedList
+1345:	
+Cloning list 2 from list 1
+1346:	
+Test removeFront method......................
+
+1347:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1348:	Removing list 1 front = 	100
+1349:	Linked List 	[101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1350:	Removing list 1 front = 	101
+1351:	Linked List 	[102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1352:	Removing list 1 front = 	102
+1353:	Linked List 	[103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1354:	Removing list 1 front = 	103
+1355:	Linked List 	[104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1356:	Removing list 1 front = 	104
+1357:	Linked List 	[105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1358:	Removing list 1 front = 	105
+1359:	Linked List 	[106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1360:	Removing list 1 front = 	106
+1361:	Linked List 	[107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1362:	Removing list 1 front = 	107
+1363:	Linked List 	[108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1364:	Removing list 1 front = 	108
+1365:	Linked List 	[109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1366:	Removing list 1 front = 	109
+1367:	Linked List 	[110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1368:	Removing list 1 front = 	110
+1369:	Linked List 	[111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1370:	Removing list 1 front = 	111
+1371:	Linked List 	[112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1372:	Removing list 1 front = 	112
+1373:	Linked List 	[113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1374:	Removing list 1 front = 	113
+1375:	Linked List 	[114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1376:	Removing list 1 front = 	114
+1377:	Linked List 	[115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1378:	Removing list 1 front = 	115
+1379:	Linked List 	[116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1380:	Removing list 1 front = 	116
+1381:	Linked List 	[117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1382:	Removing list 1 front = 	117
+1383:	Linked List 	[118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1384:	Removing list 1 front = 	118
+1385:	Linked List 	[119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1386:	Removing list 1 front = 	119
+1387:	Linked List 	[10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1388:	Removing list 1 front = 	10
+1389:	Linked List 	[100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1390:	Removing list 1 front = 	100
+1391:	Linked List 	[101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1392:	Removing list 1 front = 	101
+1393:	Linked List 	[102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1394:	Removing list 1 front = 	102
+1395:	Linked List 	[103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1396:	Removing list 1 front = 	103
+1397:	Linked List 	[104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1398:	Removing list 1 front = 	104
+1399:	Linked List 	[105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1400:	Removing list 1 front = 	105
+1401:	Linked List 	[106,107,108,109,11,12,13,14,15,16,17,18,19]
+1402:	Removing list 1 front = 	106
+1403:	Linked List 	[107,108,109,11,12,13,14,15,16,17,18,19]
+1404:	Removing list 1 front = 	107
+1405:	Linked List 	[108,109,11,12,13,14,15,16,17,18,19]
+1406:	Removing list 1 front = 	108
+1407:	Linked List 	[109,11,12,13,14,15,16,17,18,19]
+1408:	Removing list 1 front = 	109
+1409:	Linked List 	[11,12,13,14,15,16,17,18,19]
+1410:	Removing list 1 front = 	11
+1411:	Linked List 	[12,13,14,15,16,17,18,19]
+1412:	Removing list 1 front = 	12
+1413:	Linked List 	[13,14,15,16,17,18,19]
+1414:	Removing list 1 front = 	13
+1415:	Linked List 	[14,15,16,17,18,19]
+1416:	Removing list 1 front = 	14
+1417:	Linked List 	[15,16,17,18,19]
+1418:	Removing list 1 front = 	15
+1419:	Linked List 	[16,17,18,19]
+1420:	Removing list 1 front = 	16
+1421:	Linked List 	[17,18,19]
+1422:	Removing list 1 front = 	17
+1423:	Linked List 	[18,19]
+1424:	Removing list 1 front = 	18
+1425:	Linked List 	[19]
+1426:	Removing list 1 front = 	19
+1427:	Empty LinkedList
+1428:	Removing list 1 front = 	null
+1429:	
+Cloning list 1 from list 2
+1430:	
+Test removeBack method.......................
+
+1431:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1432:	Removing list 2 back = 	19
+1433:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18]
+1434:	Removing list 2 back = 	18
+1435:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17]
+1436:	Removing list 2 back = 	17
+1437:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16]
+1438:	Removing list 2 back = 	16
+1439:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15]
+1440:	Removing list 2 back = 	15
+1441:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14]
+1442:	Removing list 2 back = 	14
+1443:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13]
+1444:	Removing list 2 back = 	13
+1445:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12]
+1446:	Removing list 2 back = 	12
+1447:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11]
+1448:	Removing list 2 back = 	11
+1449:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109]
+1450:	Removing list 2 back = 	109
+1451:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108]
+1452:	Removing list 2 back = 	108
+1453:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107]
+1454:	Removing list 2 back = 	107
+1455:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106]
+1456:	Removing list 2 back = 	106
+1457:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105]
+1458:	Removing list 2 back = 	105
+1459:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104]
+1460:	Removing list 2 back = 	104
+1461:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103]
+1462:	Removing list 2 back = 	103
+1463:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102]
+1464:	Removing list 2 back = 	102
+1465:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101]
+1466:	Removing list 2 back = 	101
+1467:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100]
+1468:	Removing list 2 back = 	100
+1469:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10]
+1470:	Removing list 2 back = 	10
+1471:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119]
+1472:	Removing list 2 back = 	119
+1473:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118]
+1474:	Removing list 2 back = 	118
+1475:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117]
+1476:	Removing list 2 back = 	117
+1477:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116]
+1478:	Removing list 2 back = 	116
+1479:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115]
+1480:	Removing list 2 back = 	115
+1481:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114]
+1482:	Removing list 2 back = 	114
+1483:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113]
+1484:	Removing list 2 back = 	113
+1485:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112]
+1486:	Removing list 2 back = 	112
+1487:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111]
+1488:	Removing list 2 back = 	111
+1489:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110]
+1490:	Removing list 2 back = 	110
+1491:	Linked List 	[100,101,102,103,104,105,106,107,108,109]
+1492:	Removing list 2 back = 	109
+1493:	Linked List 	[100,101,102,103,104,105,106,107,108]
+1494:	Removing list 2 back = 	108
+1495:	Linked List 	[100,101,102,103,104,105,106,107]
+1496:	Removing list 2 back = 	107
+1497:	Linked List 	[100,101,102,103,104,105,106]
+1498:	Removing list 2 back = 	106
+1499:	Linked List 	[100,101,102,103,104,105]
+1500:	Removing list 2 back = 	105
+1501:	Linked List 	[100,101,102,103,104]
+1502:	Removing list 2 back = 	104
+1503:	Linked List 	[100,101,102,103]
+1504:	Removing list 2 back = 	103
+1505:	Linked List 	[100,101,102]
+1506:	Removing list 2 back = 	102
+1507:	Linked List 	[100,101]
+1508:	Removing list 2 back = 	101
+1509:	Linked List 	[100]
+1510:	Removing list 2 back = 	100
+1511:	Empty LinkedList
+1512:	Removing list 2 back = 	null
+1513:	
+Cloning list 2 from list 1
+1514:	
+Test remove method...........................
+
+1515:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1516:	Removing from list 1 from index: 	41	 removed: 	null
+1517:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1518:	Removing from list 1 from index: 	40	 removed: 	null
+1519:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1520:	Removing from list 1 from index: 	39	 removed: 	19
+1521:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18]
+1522:	Removing from list 1 from index: 	38	 removed: 	18
+1523:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17]
+1524:	Removing from list 1 from index: 	37	 removed: 	17
+1525:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16]
+1526:	Removing from list 1 from index: 	36	 removed: 	16
+1527:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15]
+1528:	Removing from list 1 from index: 	35	 removed: 	15
+1529:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14]
+1530:	Removing from list 1 from index: 	34	 removed: 	14
+1531:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13]
+1532:	Removing from list 1 from index: 	33	 removed: 	13
+1533:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12]
+1534:	Removing from list 1 from index: 	32	 removed: 	12
+1535:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11]
+1536:	Removing from list 1 from index: 	31	 removed: 	11
+1537:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109]
+1538:	Removing from list 1 from index: 	30	 removed: 	109
+1539:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108]
+1540:	Removing from list 1 from index: 	29	 removed: 	108
+1541:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107]
+1542:	Removing from list 1 from index: 	28	 removed: 	107
+1543:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106]
+1544:	Removing from list 1 from index: 	27	 removed: 	106
+1545:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105]
+1546:	Removing from list 1 from index: 	26	 removed: 	105
+1547:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104]
+1548:	Removing from list 1 from index: 	25	 removed: 	104
+1549:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103]
+1550:	Removing from list 1 from index: 	24	 removed: 	103
+1551:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102]
+1552:	Removing from list 1 from index: 	23	 removed: 	102
+1553:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101]
+1554:	Removing from list 1 from index: 	22	 removed: 	101
+1555:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100]
+1556:	Removing from list 1 from index: 	21	 removed: 	100
+1557:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10]
+1558:	Removing from list 1 from index: 	20	 removed: 	10
+1559:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119]
+1560:	Removing from list 1 from index: 	19	 removed: 	119
+1561:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118]
+1562:	Removing from list 1 from index: 	18	 removed: 	118
+1563:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117]
+1564:	Removing from list 1 from index: 	17	 removed: 	117
+1565:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116]
+1566:	Removing from list 1 from index: 	16	 removed: 	116
+1567:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115]
+1568:	Removing from list 1 from index: 	15	 removed: 	115
+1569:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114]
+1570:	Removing from list 1 from index: 	14	 removed: 	114
+1571:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113]
+1572:	Removing from list 1 from index: 	13	 removed: 	113
+1573:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112]
+1574:	Removing from list 1 from index: 	12	 removed: 	112
+1575:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111]
+1576:	Removing from list 1 from index: 	11	 removed: 	111
+1577:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110]
+1578:	Removing from list 1 from index: 	10	 removed: 	110
+1579:	Linked List 	[100,101,102,103,104,105,106,107,108,109]
+1580:	Removing from list 1 from index: 	9	 removed: 	109
+1581:	Linked List 	[100,101,102,103,104,105,106,107,108]
+1582:	Removing from list 1 from index: 	8	 removed: 	108
+1583:	Linked List 	[100,101,102,103,104,105,106,107]
+1584:	Removing from list 1 from index: 	7	 removed: 	107
+1585:	Linked List 	[100,101,102,103,104,105,106]
+1586:	Removing from list 1 from index: 	6	 removed: 	106
+1587:	Linked List 	[100,101,102,103,104,105]
+1588:	Removing from list 1 from index: 	5	 removed: 	105
+1589:	Linked List 	[100,101,102,103,104]
+1590:	Removing from list 1 from index: 	4	 removed: 	104
+1591:	Linked List 	[100,101,102,103]
+1592:	Removing from list 1 from index: 	3	 removed: 	103
+1593:	Linked List 	[100,101,102]
+1594:	Removing from list 1 from index: 	2	 removed: 	102
+1595:	Linked List 	[100,101]
+1596:	Removing from list 1 from index: 	1	 removed: 	101
+1597:	Linked List 	[100]
+1598:	Removing from list 1 from index: 	0	 removed: 	100
+1599:	Empty LinkedList
+1600:	Removing from list 1 from index: 	-1	 removed: 	null
+1601:	
+Test contains method.........................
+
+1602:	List 1 (empty) contains 10 = false	Empty LinkedList
+1603:	List 2 contains 	100	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1604:	List 2 contains 	101	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1605:	List 2 contains 	102	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1606:	List 2 contains 	103	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1607:	List 2 contains 	104	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1608:	List 2 contains 	105	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1609:	List 2 contains 	106	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1610:	List 2 contains 	107	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1611:	List 2 contains 	108	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1612:	List 2 contains 	109	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1613:	List 2 contains 	110	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1614:	List 2 contains 	111	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1615:	List 2 contains 	112	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1616:	List 2 contains 	113	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1617:	List 2 contains 	114	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1618:	List 2 contains 	115	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1619:	List 2 contains 	116	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1620:	List 2 contains 	117	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1621:	List 2 contains 	118	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1622:	List 2 contains 	119	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1623:	List 2 contains 	10	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1624:	List 2 contains 	100	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1625:	List 2 contains 	101	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1626:	List 2 contains 	102	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1627:	List 2 contains 	103	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1628:	List 2 contains 	104	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1629:	List 2 contains 	105	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1630:	List 2 contains 	106	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1631:	List 2 contains 	107	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1632:	List 2 contains 	108	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1633:	List 2 contains 	109	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1634:	List 2 contains 	11	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1635:	List 2 contains 	12	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1636:	List 2 contains 	13	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1637:	List 2 contains 	14	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1638:	List 2 contains 	15	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1639:	List 2 contains 	16	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1640:	List 2 contains 	17	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1641:	List 2 contains 	18	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1642:	List 2 contains 	19	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1643:	List 2 contains 	1000	false	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+1644:	
+Resetting list 1 to: Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1645:	
+Test firstIndexOf and lastIndexOf methods....
+
+1646:	First index of 5: 	0
+1647:	Last index of 5: 	7
+1648:	First index of 7: 	2
+1649:	Last index of 7: 	9
+1650:	First index of 8: 	3
+1651:	Last index of 8: 	3
+1652:	First index of 9: 	-1
+1653:	Last index of 9: 	-1
+1654:	
+Test numberOf method.........................
+
+1655:	Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1656:	Number of 5: 	3
+1657:	Number of 8: 	1
+1658:	Number of 9: 	0
+1659:	
+Test allIndices method.......................
+
+1660:	Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1661:	Array from indices of 5: 	[0, 4, 7]
+1662:	Array from indices of 8: 	[3]
+1663:	Array from indices of 9: 	null
+1664:	
+Cloning list 2 from list 1
+1665:	
+Test remove method...........................
+
+1666:	Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1667:	Removing 5: 	true	Linked List 	[6,7,8,5,6,7,5,6,7]
+1668:	Removing 8: 	true	Linked List 	[6,7,5,6,7,5,6,7]
+1669:	Removing 9: 	false	Linked List 	[6,7,5,6,7,5,6,7]
+1670:	
+Test removeLast method.......................
+
+1671:	Linked List 	[6,7,5,6,7,5,6,7]
+1672:	Removing 5: 	true	Linked List 	[6,7,5,6,7,6,7]
+1673:	Removing 8: 	false	Linked List 	[6,7,5,6,7,6,7]
+1674:	Removing 9: 	false	Linked List 	[6,7,5,6,7,6,7]
+1675:	
+Test removeAll method........................
+
+1676:	Linked List 	[6,7,5,6,7,6,7]
+1677:	Removing all 5: 	true	Linked List 	[6,7,6,7,6,7]
+1678:	Removing all 6: 	true	Linked List 	[7,7,7]
+1679:	Removing all 9: 	false	Linked List 	[7,7,7]
+1680:	
+Cloning list 1 from list 2
+1681:	
+Test removeAll array method..................
+
+1682:	Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1683:	Array: 	[5, 6, 9]
+1684:	Removing all from array: Linked List 	[7,8,7,7]
+1685:	
+Test removeAll list method..................
+
+1686:	List 1 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1687:	List 2 	Linked List 	[7,8,7,7]
+1688:	Removing all list 2 from list 1...
+1689:	List 1 	Linked List 	[5,6,5,6,5,6]
+1690:	List 2 	Linked List 	[7,8,7,7]
+1691:	
+Resetting list 1 and 2 to: Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1692:	
+Test containsAll array method................
+
+1693:	List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains array: 	[5, 6, 9]	 is false
+1694:	List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains array: 	[5, 6, 7, 8]	 is true
+1695:	
+Test containsAll list method.................
+
+1696:	List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains list: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]	 is true
+1697:	Alter list 2...
+1698:	List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains list: 	Linked List 	[6,7,8,6,7,5,6,45]	 is false
+1699:	
+Test addAll array method.....................
+
+1700:	Linked List 	[6,7,8,6,7,5,6,45]
+1701:	Adding array: 	[5, 6, 7, 8]	 now list 	Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8]
+1702:	
+Test addAll list method......................
+
+1703:	Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8]
+1704:	Adding list: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]	 now list 	Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8,5,6,7,8,5,6,7,5,6,7]
+1705:	
+Test subList method..........................
+
+1706:	List 1 = 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1707:	Pulling out sub-list from 3 to 6: 	Linked List 	[8,5,6,7]
+1708:	Pulling out sub-list from 1 to 1: 	Linked List 	[6]
+1709:	Pulling out sub-list from 2 to 10: 	null
+1710:	Pulling out sub-list from 0 to 9: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1711:	
+Test fromArray method........................
+
+1712:	Array is 	[5, 6, 7, 8]
+1713:	List is 	Linked List 	[5,6,7,8]
+1714:	
+Test fromLinkedList method...................
+
+1715:	1st List is 	Linked List 	[5,6,7,8]
+1716:	2nd List is 	Linked List 	[5,6,7,8]
+1717:	
+Test toArray method..........................
+
+1718:	List 	Linked List 	[5,6,7,8]	 into array 	[5, 6, 7, 8]
+1719:	Collections unit complete!...................................................
+1720:	Computer Science 40S complete!...................................................
+1721:	Computer Science 42SIB starting......................................................
+1722:	Permanent Storage Test started......................................................
+1723:	// Learn about 'error traps'
+1724:	Divide by zero -> java.lang.ArithmeticException: / by zero
+1725:	// Create sample data to use
+1726:	// Save ONE piece of data to that permanent file
+1727:	// Now involve the user to get a file name
+1728:	~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
+1729:	File already exists!
+1730:	// Open file with one line (no user involvment)
+1731:	line read was Defenestration
+1732:	// Open file with multiple lines (user picks file)
+1733:	~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
+1734:	This line read was �� sr collections.LinkedList�c������ I 	NOT_FOUNDI lengthI longestWordL headt Lcollections/Node;L tailq ~ xp����   d   psr collections.Node3�bdAA�Z L datat Ljava/lang ... (line shortened) ...
+1735:	This line read was opponentScoreL opponentNamet Ljava/lang/String;xr #testing.cs40s.advancedclasses.Husky1O�
+1736:	This line read was 哩  xr (testing.cs40s.advancedclasses.HighSchoolN���h�  xr %testing.cs40s.advancedclasses.Student�<_�h��# D gpaI numberL bookt $Ltesting/cs40s/advancedclasses/Book;xr $testi ... (line shortened) ...
+1737:	This line read was �Ơt I ageZ aliveL genderq ~ L nameq ~ xp   t doesn't mattert mimeographs           sr "testing.cs40s.advancedclasses.Book����J�5  xp           t  sq ~ sq ~    q ~ ... (line shortened) ...
+1738:	This line read was objectives           sq ~            q ~ sq ~ sq ~    q ~ t Ashia           sq ~            q ~ sq ~ sq ~    q ~ t mere           sq ~            q ~ sq ~ s ... (line shortened) ...
+1739:	This line read was technicalness           sq ~            q ~ sq ~ sq ~    q ~ t eagle           sq ~            q ~ sq ~ sq ~    q ~ t modifies           sq ~            q ~  ... (line shortened) ...
+1740:	This line read was bookbinderies           sq ~            q ~ sq ~ sq ~    q ~ t nuncio           sq ~            q ~ sq ~ sq ~    q ~ t 	critiques           sq ~            q ~ ... (line shortened) ...
+1741:	This line read was hydraulically           sq ~            q ~ sq ~ sq ~    q ~ t exposers           sq ~            q ~ sq ~ sq ~    q ~ t slushier           sq ~            q  ... (line shortened) ...
+1742:	This line read was adversenesses           sq ~            q ~ sq ~ sq ~    q ~ t brawling           sq ~            q ~ sq ~ sq ~    q ~ t waterinesses           sq ~           ... (line shortened) ...
+1743:	This line read was overjoying           sq ~            q ~ sq ~ sq ~    q ~ t apse           sq ~            q ~ sq ~ sq ~    q ~ t Worthington           sq ~            q ~ s ... (line shortened) ...
+1744:	This line read was delusional           sq ~            q ~ sq ~ sq ~    q ~ t 
+1745:	This line read was maximality           sq ~            q ~ sq ~ sq ~    q ~ t Grissel           sq ~            q ~ sq ~ sq ~    q ~ t 	buggering           sq ~            q ~  ... (line shortened) ...
+1746:	This line read was handmaiden           sq ~            q ~ sq ~ sq ~    q ~ t 
+1747:	This line read was manicuring           sq ~            q ~ sq ~ sq ~    q ~ t slyly           sq ~            q ~ sq ~ sq ~    q ~ t discus           sq ~            q ~ sq ~  ... (line shortened) ...
+1748:	This line read was stretchier           sq ~            q ~ sq ~ sq ~    q ~ t watermelons           sq ~            q ~ sq ~ sq ~    q ~ t shimmies           sq ~            q  ... (line shortened) ...
+1749:	This line read was immunologists           sq ~            q ~ sq ~ sq ~    q ~ t pastrami           sq ~            q ~ sq ~ sq ~    q ~ t 
+1750:	This line read was metallized           sq ~            q ~ sq ~ sq ~    q ~ t unobservable           sq ~            q ~ sq ~ sq ~    q ~ t Nataline           sq ~            q ... (line shortened) ...
+1751:	// Class to save/open one line (no user)
+1752:	Before: Defenestration
+1753:	After : Defenestration
+1754:	// Class to save/open multiple lines (with user)
+1755:	Before: [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
+1756:	After:  [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
+1757:	// Now save/open on a complex data type
+1758:	Before: Athlete: Husky: HighSchool: Student: Person: Jock is 15 identifes as doesn't matter average is 0.0
+1759:	After:  Athlete: Husky: HighSchool: Student: Person: Jock is 15 identifes as doesn't matter average is 0.0
+1760:	Before: Linked List 	[Athlete: Husky: HighSchool: Student: Person: gar is 15 identifes as doesn't matter average is 0.0,Athlete: Husky: HighSchool: Student: Person: shoguns is 15 identifes as doesn't  ... (line shortened) ...
+1761:	After:  Linked List 	[Athlete: Husky: HighSchool: Student: Person: gar is 15 identifes as doesn't matter average is 0.0,Athlete: Husky: HighSchool: Student: Person: shoguns is 15 identifes as doesn't  ... (line shortened) ...
+1762:	Permanent Storage Test completed!...................................................
+1763:	Stacks and Queues Test started......................................................
+1764:	// Create objects for testing...
+1765:	// Create and Test a stack object...
+1766:	// Test toString, size, isEmpty, and push methods...
+1767:	Empty = true	Size = 0	Empty Stack
+1768:	// Loop through adding random values
+1769:	Empty = false	Size = 1	Stack top -> [ferry] <- bottom
+1770:	Empty = false	Size = 2	Stack top -> [Cindi,ferry] <- bottom
+1771:	Empty = false	Size = 3	Stack top -> [apple,Cindi,ferry] <- bottom
+1772:	Empty = false	Size = 4	Stack top -> [Tisha,apple,Cindi,ferry] <- bottom
+1773:	Empty = false	Size = 5	Stack top -> [hazer,Tisha,apple,Cindi,ferry] <- bottom
+1774:	Empty = false	Size = 6	Stack top -> [Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
+1775:	Empty = false	Size = 7	Stack top -> [Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
+1776:	Empty = false	Size = 8	Stack top -> [Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
+1777:	Empty = false	Size = 9	Stack top -> [Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
+1778:	Empty = false	Size = 10	Stack top -> [Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
+1779:	// Test clone method...
+1780:	Clone stack: Stack top -> [Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
+1781:	// Test equals method...
+1782:	Stack top -> [Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
+==
+Stack top -> [Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
+1783:	// Now change the copy
+1784:	// Now check again
+1785:	Stack top -> [Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
+!=
+Stack top -> [Doric] <- bottom
+1786:	// Re-clone the stack, and output
+1787:	Stack top -> [Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
+1788:	// Text the pop method...
+1789:	Clone stack:	Empty = false	Size = 10	Stack top -> [Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
+1790:	// Loop through removing values
+1791:	Popped -> Cesya	Empty = false	Size = 9	Stack top -> [Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
+1792:	Popped -> Simon	Empty = false	Size = 8	Stack top -> [Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
+1793:	Popped -> Garry	Empty = false	Size = 7	Stack top -> [Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
+1794:	Popped -> Marga	Empty = false	Size = 6	Stack top -> [Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
+1795:	Popped -> Snell	Empty = false	Size = 5	Stack top -> [hazer,Tisha,apple,Cindi,ferry] <- bottom
+1796:	Popped -> hazer	Empty = false	Size = 4	Stack top -> [Tisha,apple,Cindi,ferry] <- bottom
+1797:	Popped -> Tisha	Empty = false	Size = 3	Stack top -> [apple,Cindi,ferry] <- bottom
+1798:	Popped -> apple	Empty = false	Size = 2	Stack top -> [Cindi,ferry] <- bottom
+1799:	Popped -> Cindi	Empty = false	Size = 1	Stack top -> [ferry] <- bottom
+1800:	Popped -> ferry	Empty = true	Size = 0	Empty Stack
+1801:	Popped -> null	Empty = true	Size = 0	Empty Stack
+1802:	// Test peek (top is wrapper no testing needed)...
+1803:	Clone Top = null
+1804:	Stack Top = Cesya
+1805:	// Test to array and to linked list...
+1806:	Linked List 	[Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry]
+1807:	Array   	[Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry]
+1808:	// Test our constructors...
+1809:	Stack top -> [Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
+1810:	Stack top -> [Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
+1811:	// Test the Queue object...
+1812:	// Test toString,size,isEmpty, and enqueue methods...
+1813:	Empty = true	Size = 0	Empty Queue
+1814:	// Loop through adding random values
+1815:	Empty = false	Size = 1	Queue back -> [Essex] <- front
+1816:	Empty = false	Size = 2	Queue back -> [Wests,Essex] <- front
+1817:	Empty = false	Size = 3	Queue back -> [gluer,Wests,Essex] <- front
+1818:	Empty = false	Size = 4	Queue back -> [Blane,gluer,Wests,Essex] <- front
+1819:	Empty = false	Size = 5	Queue back -> [japes,Blane,gluer,Wests,Essex] <- front
+1820:	Empty = false	Size = 6	Queue back -> [cloak,japes,Blane,gluer,Wests,Essex] <- front
+1821:	Empty = false	Size = 7	Queue back -> [Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
+1822:	Empty = false	Size = 8	Queue back -> [Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
+1823:	Empty = false	Size = 9	Queue back -> [octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
+1824:	Empty = false	Size = 10	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
+1825:	// Test clone method...
+1826:	Clone Queue 			Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
+1827:	// Test equals method...
+1828:	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
+==
+Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
+1829:	// Now change the duplicate
+1830:	// Now check again
+1831:	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
+==
+Queue back -> [Peron] <- front
+1832:	// Re-clone the queue, and output
+1833:	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
+1834:	// Test the dequeue method...
+1835:	Clone queue:	Empty = false	Size = 10	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
+1836:	// Loop through removing values
+1837:	Dequeued -> Essex	Empty = false	Size = 9	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests] <- front
+1838:	Dequeued -> Wests	Empty = false	Size = 8	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer] <- front
+1839:	Dequeued -> gluer	Empty = false	Size = 7	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane] <- front
+1840:	Dequeued -> Blane	Empty = false	Size = 6	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes] <- front
+1841:	Dequeued -> japes	Empty = false	Size = 5	Queue back -> [Adele,octet,Cleon,Willa,cloak] <- front
+1842:	Dequeued -> cloak	Empty = false	Size = 4	Queue back -> [Adele,octet,Cleon,Willa] <- front
+1843:	Dequeued -> Willa	Empty = false	Size = 3	Queue back -> [Adele,octet,Cleon] <- front
+1844:	Dequeued -> Cleon	Empty = false	Size = 2	Queue back -> [Adele,octet] <- front
+1845:	Dequeued -> octet	Empty = false	Size = 1	Queue back -> [Adele] <- front
+1846:	Dequeued -> Adele	Empty = true	Size = 0	Empty Queue
+1847:	Dequeued -> null	Empty = true	Size = 0	Empty Queue
+1848:	// Test front and back...
+1849:	Clone Front = null
+1850:	Queue Front = Essex
+1851:	Clone Back  = null
+1852:	Queue Back  = Adele
+1853:	// Test to array and to linked list...
+1854:	Linked List 	[Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex]
+1855:	Array   	[Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex]
+1856:	// Test our constructors...
+1857:	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
+1858:	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
+1859:	// Constructors from stack to queue (and back)...
+1860:	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front	 into 	Stack top -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- bottom
+1861:	Stack top -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- bottom	 into 	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
+1862:	Stacks and Queues Test completed!...................................................
+1863:	Searching and Sorting Test started......................................................
+1864:	// For the I.B. Exam, you only need to know:
+1865:	// Search: linear search and binary search
+1866:	// Sort: bubble sort and the selection sort
+1867:	// Create some constants (edges) for the data
+1868:	// Create some random data to search through and sort
+1869:	// Including edge cases to test
+1870:	// Create data to store the results...
+1871:	// The simpliest of searches
+1872:	// Now the linear search on all test data
+1873:	// Simple sort...
+1874:	// We will re-scramble array for further testing
+1875:	// Now bubble sort (from bubbles rising from water)
+1876:	// Now selection sort (from selecting the smallest)
+1877:	// Now binary search (named after two or dividing)
+1878:	// NOTE: binary search can only happen on sorted list
+1879:	// Redo some of the test data...
+1880:	// Use class for searching and sorting
+1881:	// Create random linked list data
+1882:	// Place all test cases into another linked list
+1883:	// Execute the linear search on all test data...
+1884:	// Execute all the sorts on all test data...
+1885:	// Bubble sort LinkedList data...
+1886:	// Selection sort LinkedList data...
+1887:	// Shell sort LinkedList data...
+1888:	// Insertion sort LinkedList data...
+1889:	// Quick sort LinkedList data...
+1890:	// Merge sort LinkedList data...
+1891:	// Execute the binary search on all test data...
+1892:	Searching and Sorting Test completed!...................................................
+1893:	Binary Trees Test started......................................................
+1894:	// Constants/variables for creating random values...
+1895:	// Creating some TreeNode objects...
+1896:	// Linking the TreeNodes...
+1897:	// Testing TreeNode equals...
+1898:	// Testing TreeNode toString...
+1899:	96
+1900:	75
+1901:	25
+1902:	// Creating a Tree object...
+1903:	// Test the insert method...
+1904:	// Insert one more...
+1905:	// Test the search of the tree...
+1906:	Should be found     = true
+1907:	Should NOT be found = false
+1908:	// Test toString() and pre, post, in order traversals
+1909:	Binary Tree:
+Order: Linked List 	[61,44,63,53,52,56]
+Pre:   Linked List 	[61,44,53,52,56,63]
+Post:  Linked List 	[52,56,53,44,63,61]
+In:    Linked List 	[44,52,53,56,61,63]
+1910:	// Building second tree (test clone) and test equals
+1911:	1st tree -> Linked List 	[44,52,53,56,61,63]
+1912:	2nd tree -> Linked List 	[18,27,35,44,60,73]
+1913:	1st!=2nd
+1914:	// Building a third tree (test clone) and test equals
+1915:	1st tree -> Linked List 	[44,52,53,56,61,63]
+1916:	3rd tree -> Linked List 	[44,52,53,56,61,63]
+1917:	1st==3rd
+1918:	// Build all our data structures from each other...
+1919:	// Create variable objects...
+1920:	// Create array from variables...
+1921:	// Create LinkedList from array...
+1922:	// Create Stack from LinkedList...
+1923:	// Create Queue from Stack...
+1924:	// Create Tree from Queue...
+1925:	// Output variables,array,list,stack,queue,tree...
+1926:	lysol
+1927:	hocks
+1928:	meals
+1929:	cohos
+1930:	swank
+1931:	[lysol,hocks,meals,cohos,swank]
+1932:	Linked List 	[lysol,hocks,meals,cohos,swank]
+1933:	Stack top -> [lysol,hocks,meals,cohos,swank] <- bottom
+1934:	Queue back -> [lysol,hocks,meals,cohos,swank] <- front
+1935:	Binary Tree:
+Order: Linked List 	[lysol,hocks,meals,cohos,swank]
+Pre:   Linked List 	[lysol,hocks,cohos,meals,swank]
+Post:  Linked List 	[cohos,hocks,swank,meals,lysol]
+In:    Linked List 	[cohos,hock ... (line shortened) ...
+1936:	// Now re-building queue from tree
+1937:	// Now re-building stack from queue
+1938:	// Now re-building LinkedList from stack...
+1939:	// Now re-building array from LinkedList...
+1940:	// Output array,list,stack,queue,tree again...
+1941:	[cohos,hocks,lysol,meals,swank]
+1942:	Linked List 	[cohos,hocks,lysol,meals,swank]
+1943:	Stack top -> [cohos,hocks,lysol,meals,swank] <- bottom
+1944:	Queue back -> [cohos,hocks,lysol,meals,swank] <- front
+1945:	Binary Tree:
+Order: Linked List 	[lysol,hocks,meals,cohos,swank]
+Pre:   Linked List 	[lysol,hocks,cohos,meals,swank]
+Post:  Linked List 	[cohos,hocks,swank,meals,lysol]
+In:    Linked List 	[cohos,hock ... (line shortened) ...
+1946:	Binary Trees Test completed!...................................................
+1947:	Computer Science 42SIB complete!...................................................

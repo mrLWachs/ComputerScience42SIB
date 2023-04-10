@@ -2,7 +2,10 @@
 /** Required package class namespace */
 package testing.cs30s;
 
- 
+ /** Required API imports */
+import io.System;
+
+
 /**
  * Teacher.java - represents a Teacher. This class uses inheritance to inherit
  * the properties and methods from the Person class. This class also 

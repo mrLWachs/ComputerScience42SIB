@@ -2,6 +2,9 @@
 /** Required package class namespace */
 package testing.cs30s;
 
+/** Required API imports */
+import io.System;
+
  
 /**
  * Meeting.java - represents a meeting. This class associates ("has a") with

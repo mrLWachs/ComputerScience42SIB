@@ -3,6 +3,7 @@
 package io;
 
 /** Required imports */
+import collections.LinkedList;
 import java.awt.Component;
 import java.awt.Window;
 import java.io.File;
@@ -30,10 +31,16 @@ public class Simulator
     private static final String SIMULATED_DIALOG_1       = "~~~ SIMULATED {";
     private static final String SIMULATED_DIALOG_2       = "} DIALOG: ";
     private static final int    FLAG_INTEGER             = -1;
+    private static final int    MAX_LINE_LENGTH          = 200;    
+    
     private static final String FLAG_STRING              = "-1";
     private static final String FLAG_FILENAME            = "simulatedFile.txt";
     private static final String FLAG_INPUT               = "simulated input line";
+    private static final String DATA_FILENAME            = "outputTestData.txt";
+    
     private static final File   FLAG_FILE                = new File(FLAG_FILENAME); 
+    private static final File   DATA_FILE                = new File(DATA_FILENAME); 
+    
     private static final String NEW_LINE                 = "\n";
     private static final String COMMENT                  = "// ";
     private static final String NULL                     = "null";
@@ -112,14 +119,27 @@ public class Simulator
         PURPLE_BACKGROUND_BRIGHT,CYAN_BACKGROUND_BRIGHT,WHITE_BACKGROUND_BRIGHT
     };
     
+    private static LinkedList<String> allOutput;
+    
+    private static int lineCount = 0;
     
     /**
      * Does a simple output with the passed message
      *
      * @param message the message to output
      */
-    private static void simpleOutput(String message) {
+    private static void simpleOutput(String message, String original) {
         java.lang.System.out.print(message);
+        // Save all the output messages to a running list 
+        if (allOutput == null) allOutput = new LinkedList();
+        if (original != null && !original.equals("")) {
+            lineCount++;
+            if (original.length() > MAX_LINE_LENGTH) {
+                original = original.substring(0, MAX_LINE_LENGTH) + 
+                           " ... (line shortened) ...";
+            }            
+            allOutput.add(lineCount + ":\t" + original);
+        }        
     }
         
     /**
@@ -132,9 +152,9 @@ public class Simulator
      */
     private static void colorOutput(String message, String colorCode,
                                     String resetCode) {
-        simpleOutput("");
-        simpleOutput(colorCode + message + resetCode);
-        simpleOutput(NEW_LINE);
+        simpleOutput("","");
+        simpleOutput(colorCode + message + resetCode,message);
+        simpleOutput(NEW_LINE,"");
     }
     
     /**
@@ -170,9 +190,9 @@ public class Simulator
     public static void header(Object object) {
         if (object == null)  return; 
         String text = object.toString() + line();
-        simpleOutput(NEW_LINE);
+        simpleOutput(NEW_LINE,"");
         colorOutput(text, BLUE, RESET);
-        simpleOutput(NEW_LINE);
+        simpleOutput(NEW_LINE,"");
     }
 
     /**
@@ -196,8 +216,9 @@ public class Simulator
      */
     public static void output(Object object, boolean newLine) {
         if (object == null) object = new String(NULL);
-        if (newLine) simpleOutput(object.toString() + NEW_LINE);
-        else         simpleOutput(object.toString()); 
+        String text = object.toString();
+        if (newLine) simpleOutput(text + NEW_LINE,text);
+        else         simpleOutput(text,text); 
     }
 
     /**
@@ -423,6 +444,11 @@ public class Simulator
      */
     public static File getFile() {
         return FLAG_FILE;
+    }
+
+    public static void saveOutput() {
+        FileHandler<LinkedList> handler = new FileHandler<>();
+        handler.save(allOutput, DATA_FILE);
     }
     
 }

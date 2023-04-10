@@ -19,6 +19,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JTextArea;
 //import javax.swing.JOptionPane;
 
+
  
 /**
  * ComputerScience30s.java - the large in class example we continue to work on

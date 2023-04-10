@@ -13,6 +13,7 @@ package io;
 public class System 
 {
 
+    
     /**
      * Internal class to properly simulate the java.lang.System.out class
      */
@@ -138,4 +139,13 @@ public class System
         Simulator.exit(status);
     }
     
+    public static void arraycopy(
+            Object src,
+            int srcPos,    
+            Object dest,    
+            int destPos,    
+            int length) {
+        java.lang.System.arraycopy(src,srcPos,dest,destPos,length);
+    }
+
 }

@@ -2,6 +2,10 @@
 /** Required package class namespace */
 package testing.cs30s;
 
+/** Required API imports */
+import io.System;
+
+
 /**
  * Person.java - represents a person. This is a class with properties (things 
  * about the class, adjectives, descriptors) and methods (things the class 

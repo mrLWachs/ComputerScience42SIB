@@ -267,4 +267,22 @@ public class Stack <T> implements Serializable
         return new Queue(this);
     }
 
+    /**
+     * Constructor sets class data to the parameter 
+     * 
+     * @param tree the Tree to set the stack to
+     */
+    public Stack(BinaryTree tree) {
+        this(tree.inOrder());
+    }
+    
+    /**
+     * Turns the stack into a ADT Binary tree object
+     * 
+     * @return the Stack as a ADT Binary tree
+     */
+    public BinaryTree toBinaryTree() {
+        return new BinaryTree(this);
+    }
+    
 }

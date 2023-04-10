@@ -71,6 +71,33 @@ public class LinkedList <T> implements Serializable
     }
 
     /**
+     * Constructor instantiates list from the passed data
+     * 
+     * @param stack the data objects to create the list from
+     */
+    public LinkedList(Stack stack) {
+        this(stack.toLinkedList());
+    }
+    
+    /**
+     * Constructor instantiates list from the passed data
+     * 
+     * @param queue the data objects to create the list from
+     */
+    public LinkedList(Queue queue) {
+        this(queue.toLinkedList());
+    }
+    
+    /**
+     * Constructor instantiates list from the passed data
+     * 
+     * @param tree the data objects to create the list from
+     */
+    public LinkedList(BinaryTree tree) {
+        this(tree.inOrder());
+    }
+    
+    /**
      * Determines if the list is empty (no content)
      * 
      * @return is empty (true) or not empty (false)
@@ -641,6 +668,33 @@ public class LinkedList <T> implements Serializable
             array[i] = get(i);                  // add to array
         }
         return array;                           // return completed array
+    }
+    
+    /**
+     * Turns the linked list into a ADT stack object
+     * 
+     * @return the linked list as a ADT stack
+     */
+    public Stack toStack() {
+        return new Stack(this);
+    }
+    
+    /**
+     * Turns the linked list into a ADT Queue object
+     * 
+     * @return the linked list as a ADT Queue
+     */
+    public Queue toQueue() {
+        return new Queue(this);
+    }
+    
+    /**
+     * Turns the linked list into a ADT Binary tree object
+     * 
+     * @return the linked list as a ADT Binary tree
+     */
+    public BinaryTree toBinaryTree() {
+        return new BinaryTree(this);
     }
     
     /**

@@ -44,7 +44,7 @@ public class BinaryTree <T extends Comparable<T> > implements Serializable
         list  = new LinkedList<>();         // Instantiate for traversals
         order = new LinkedList<>();
     }
-     
+         
     /**
      * Inserts data recursively into the tree in order
      * 
@@ -90,38 +90,6 @@ public class BinaryTree <T extends Comparable<T> > implements Serializable
         else return true;       // Base case (we found it)
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    /**
-     * String representation of this object
-     *
-     * @return The object represented as a String
-     */
-    @Override
-    public String toString() {
-        return "Tree: " + super.toString();
-    }
-   
-    /**
-     * Deep comparison, determines if two objects are "equal" in this context
-     *
-     * @param object the object to compare to
-     * @return the objects are "equal" (true) or not (false)
-     */
-    @Override
-    public boolean equals(Object object) {
-        return super.equals(object);
-    }
-       
     /**
      * a Deep clone, creates a duplicate object using new memory
      *
@@ -134,6 +102,163 @@ public class BinaryTree <T extends Comparable<T> > implements Serializable
             tree.insert((T)order.get(i));           // Insert into new tree
         }
         return tree;
+    }
+    
+    /**
+     * A pre-order traversal of the tree nodes
+     * 
+     * @return a linked list containing all the data from the tree in pre-order
+     */
+    public LinkedList<T> preOrder() {
+        list.clear();
+        list = recursivePreOrderTraversal(root);
+        return list;
+    }
+    
+    /**
+     * A post-order traversal of the tree nodes
+     * 
+     * @return a linked list containing all the data from the tree in post-order
+     */
+    public LinkedList<T> postOrder() {
+        list.clear();
+        list = recursivePostOrderTraversal(root);
+        return list;
+    }
+    
+    /**
+     * A in-order traversal of the tree nodes
+     * 
+     * @return a linked list containing all the data from the tree in in-order
+     */
+    public LinkedList<T> inOrder() {
+        list.clear();
+        list = recursiveInOrderTraversal(root);
+        return list;
+    }
+    
+    /**
+     * Recursive wrapper method pre-order traversal starting at the root
+     * 
+     * @param current the reference to the current tree node
+     */
+    private LinkedList<T> recursivePreOrderTraversal(TreeNode<T> current) {
+        // "pre" means "before" or "first", so: VISIT, left, right
+        if (current != null) {  // Not yet past a leaf node, recurse (keep going)
+            list.add(current.data);         // "Visit" a node (the data)
+            recursivePreOrderTraversal(current.left);   // Travel left sub-tree
+            recursivePreOrderTraversal(current.right);  // Travel right sub-tree
+        }
+        return list;            // Base case, past a leaf node
+    }
+
+    /**
+     * Recursive wrapper method post-order traversal starting at the root
+     * 
+     * @param current the reference to the current tree node
+     */
+    private LinkedList<T> recursivePostOrderTraversal(TreeNode<T> current) {
+        // "post" means "after" or "last", so: left, right, VISIT
+        if (current != null) {  // Not yet past a leaf node, recurse (keep going)            
+            recursivePostOrderTraversal(current.left);   // Travel left sub-tree
+            recursivePostOrderTraversal(current.right);  // Travel right sub-tree
+            list.add(current.data);         // "Visit" a node (the data)
+        }
+        return list;            // Base case, past a leaf node
+    }
+
+    /**
+     * Recursive wrapper method in-order traversal starting at the root
+     * 
+     * @param current the reference to the current tree node
+     */
+    private LinkedList<T> recursiveInOrderTraversal(TreeNode<T> current) {
+        // "in" means "in-between", so: left, VISIT, right
+        if (current != null) {  // Not yet past a leaf node, recurse (keep going)
+            recursiveInOrderTraversal(current.left);   // Travel left sub-tree
+            list.add(current.data);         // "Visit" a node (the data)
+            recursiveInOrderTraversal(current.right);  // Travel right sub-tree
+        }
+        return list;            // Base case, past a leaf node
+    }
+      
+    /**
+     * String representation of this object
+     *
+     * @return The object represented as a String
+     */
+    @Override
+    public String toString() {
+        if (root == null) return "Tree Empty";          // For empty trees
+        else {                                          // For filled trees
+            String text = "Binary Tree:\n";             // text for output
+            text += "Order: " + order.toString()       + "\n";
+            text += "Pre:   " + preOrder().toString()  + "\n";
+            text += "Post:  " + postOrder().toString() + "\n";
+            text += "In:    " + inOrder().toString();
+            return text;
+        }
+    }
+   
+    /**
+     * Deep comparison, determines if two objects are "equal" in this context
+     *
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        if (object == null) return false;           // Error check parameter
+        try {
+            BinaryTree that = (BinaryTree)object;   // Cast to tree object
+            LinkedList inOder1 = this.inOrder();    // Use in order lists
+            LinkedList inOder2 = that.inOrder();
+            return inOder1.equals(inOder2);         // Check if same lists
+        }
+        catch (ClassCastException error) {          // Cannot cast object
+            return false;
+        }
+    }
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param linkedList the LinkedList to create the tree from
+     */
+    public BinaryTree(LinkedList<T> linkedList) {
+        root  = null;
+        list  = new LinkedList<>();             // build objects for traversals
+        order = new LinkedList<>();
+        for (int i = 0; i < linkedList.size(); i++) {
+            insert((T)linkedList.get(i));
+        }
+    }
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param array the array to create the tree from
+     */
+    public BinaryTree(T[] array) {
+        this(new LinkedList<>(array));
+    }
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param stack the Stack to create the tree from
+     */
+    public BinaryTree(Stack stack) {
+        this(stack.toLinkedList());
+    }
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param queue the Queue to create the tree from
+     */
+    public BinaryTree(Queue queue) {
+        this(queue.toLinkedList());
     }
     
 }

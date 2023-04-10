@@ -8,6 +8,7 @@ import io.Dialogs;
 import io.FileHandler;
 import io.JFileChooser;
 import io.Simulator;
+import io.System;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;

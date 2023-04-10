@@ -1,678 +1,2065 @@
-<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">All testing started............................................................................................................................................................................................................</span></body></html>
-<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Computer Science 30S course started............................................................................................................................................................................................................</span></body></html>
-<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Java basics started............................................................................................................................................................................................................</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Hello World</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">I'm in the world</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Good-bye world</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Quote " </span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	Make a tab</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">\Slash</span></body></html>
-New
+Mr. Wachs Computer Science testing started......................................................
+Computer Science 30S starting......................................................
+~~~ SIMULATED {Input} DIALOG: Select the unit to view examples of... ~~~ 
+Hello World
+I'm in
+ the world
+Good-bye world!
+Make a quote " 
+Make a slash \ 
+Make a 	 tab 
+Make a new line 
+ break 
+~~~ SIMULATED {Message} DIALOG: Good-bye World ~~~ 
+~~~ SIMULATED {Message} DIALOG: Information icon is i ~~~ { title: Information title },
+~~~ SIMULATED {Message} DIALOG: Question icon is ? ~~~ { title: Question title },
+~~~ SIMULATED {Message} DIALOG: Warning icon is ! ~~~ { title: Warning title },
+~~~ SIMULATED {Message} DIALOG: Plain no icon ~~~ { title: Plain title },
+~~~ SIMULATED {Input} DIALOG: Enter Something ~~~ 
+~~~ SIMULATED {Input} DIALOG: Information icon is i ~~~ 
+~~~ SIMULATED {Input} DIALOG: Question icon is ? ~~~ 
+~~~ SIMULATED {Input} DIALOG: Warning icon is ! ~~~ 
+~~~ SIMULATED {Input} DIALOG: Plain no icon ~~~ 
+~~~ SIMULATED {Confirm} DIALOG: Confirm ~~~ 
+~~~ SIMULATED {Confirm} DIALOG: Confirm Example 2 ~~~ { title: Information },{ messageType: 1 },
+~~~ SIMULATED {Confirm} DIALOG: Confirm Example 3 ~~~ { title: Question },{ optionType: -1 },{ messa ... (line shortened) ...
+~~~ SIMULATED {Confirm} DIALOG: Confirm Example 4 ~~~ { title: Warning },{ optionType: 2 },{ message ... (line shortened) ...
+~~~ SIMULATED {Confirm} DIALOG: Confirm Example 5 ~~~ { title: Plain },{ optionType: 1 },{ messageTy ... (line shortened) ...
+a = false
+b = 1
+c = 1.2
+d = A
+e = apple
+x = 10
+x = 20
+y = 30
+y = 30
+x = 28
+y = 5
+z = 3
+3.141592658389, 99, Y, true, Wachs
+f = 25
+g = 25.0
+g = 25.99999999999
+h = 25
+k = 2.999999999
+l = 2
+m = 2.0
+n = A
+o = 65
+p = F
+~~~ SIMULATED {Input} DIALOG: Enter ~~~ 
+~~~ SIMULATED {Message} DIALOG: -1 ~~~ 
+~~~ SIMULATED {Input} DIALOG: Enter int ~~~ 
+~~~ SIMULATED {Message} DIALOG: -1 ~~~ 
+~~~ SIMULATED {Input} DIALOG: Enter Double ~~~ 
+~~~ SIMULATED {Message} DIALOG: -1.0 ~~~ 
+~~~ SIMULATED {Input} DIALOG: Enter char ~~~ 
+~~~ SIMULATED {Message} DIALOG: - ~~~ 
+Word hippopotomonsprosesquippedaiophobia is length 35
+Word hippopotomonsprosesquippedaiophobia in upper case is HIPPOPOTOMONSPROSESQUIPPEDAIOPHOBIA
+answer1 = 3.141592653589793
+answer2 = 0.8775825618903728
+answer3 = 1.0
+answer4 = 125.0
+answer5 = 3.0
+answer6 = -0.6931471805599453
+seed = 0.540325470275192
+high   = 10.0
+low    = 1.0
+number = 6.403254702751919
+value = 6
+card is 44
+equal
+The example is 
+less than
+!=
+W1 kind of == W2
+Keep trying
+counter = 0
+counter = 1
+counter = 2
+counter = 3
+counter = 4
+counter = 5
+counter = 6
+counter = 7
+counter = 8
+counter = 9
+~~~ SIMULATED {Input} DIALOG: Create a password ~~~ 
+~~~ SIMULATED {Message} DIALOG: Ok, continue... ~~~ 
+~~~ SIMULATED {Input} DIALOG: Enter password ~~~ 
+~~~ SIMULATED {Message} DIALOG: You got it ~~~ 
+i = 0
+i = 1
+i = 2
+i = 3
+i = 4
+i = 5
+i = 6
+i = 7
+i = 8
+i = 9
+counting = 100
+counting = 90
+counting = 80
+counting = 70
+counting = 60
+counting = 50
+counting = 40
+counting = 30
+counting = 20
+counting = 10
+counting = 0
+i = 99.789
+i = 19.007428571428573
+~~~ SIMULATED {Message} DIALOG: You are an intern at radio station, C-RAP, The 
+disk jockeys announc ... (line shortened) ...
+~~~ SIMULATED {Input} DIALOG: Enter temperature in Celcius ~~~ 
+~~~ SIMULATED {Message} DIALOG: Your temperature in Fahrenheit is 30.2 ~~~ 
+~~~ SIMULATED {Message} DIALOG: Thank you! ~~~ 
+Start Learning Methods...
+*
+*
+Hippopotamus
+Humogonous
+creative
+Spider-man
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Dalmations
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Problems
+Number is 6
+~~~ SIMULATED {Message} DIALOG: Hello ~~~ 
+~~~ SIMULATED {Message} DIALOG: Good-bye ~~~ { title: Learning Methods },
+Completed Learning Methods!
+Start Learning Arrays...
+333
+666
+0 = 666
+1 = 0
+2 = 0
+3 = 0
+4 = 0
+5 = 0
+6 = 0
+7 = 0
+8 = 0
+9 = 0
+10 = 0
+11 = 0
+12 = 0
+13 = 0
+14 = 0
+15 = 0
+16 = 0
+17 = 0
+18 = 0
+19 = 0
+20 = 0
+21 = 0
+22 = 0
+23 = 0
+24 = 0
+25 = 0
+26 = 0
+27 = 0
+28 = 0
+29 = 0
+30 = 0
+31 = 0
+32 = 0
+33 = 0
+34 = 0
+35 = 0
+36 = 0
+37 = 0
+38 = 0
+39 = 0
+40 = 0
+41 = 0
+42 = 0
+43 = 0
+44 = 0
+45 = 0
+46 = 0
+47 = 0
+48 = 0
+49 = 0
+50 = 0
+51 = 0
+52 = 0
+53 = 0
+54 = 0
+55 = 0
+56 = 0
+57 = 0
+58 = 0
+59 = 0
+60 = 0
+61 = 0
+62 = 0
+63 = 0
+64 = 0
+65 = 0
+66 = 0
+67 = 0
+68 = 0
+69 = 0
+70 = 0
+71 = 0
+72 = 0
+73 = 0
+74 = 0
+75 = 0
+76 = 0
+77 = 0
+78 = 0
+79 = 0
+80 = 0
+81 = 0
+82 = 0
+83 = 0
+84 = 0
+85 = 0
+86 = 0
+87 = 0
+88 = 0
+89 = 0
+90 = 0
+91 = 0
+92 = 0
+93 = 0
+94 = 0
+95 = 0
+96 = 0
+97 = 0
+98 = 0
+99 = 333
+666
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+333
+~~~ SIMULATED {Message} DIALOG: Array [25,250,2,-25,0,] ~~~ 
+~~~ SIMULATED {Message} DIALOG: Array [666,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ... (line shortened) ...
+~~~ SIMULATED {Message} DIALOG: Array [0,0,0,1,2,] ~~~ 
+~~~ SIMULATED {Message} DIALOG: Array [0,0,0,0,0,] ~~~ 
+~~~ SIMULATED {Message} DIALOG: Array [1,3,5,1,5,8,10,9,10,3,3,6,1,8,3,5,4,8,1,9,4,1,1,6,9,4,1,2,9,5 ... (line shortened) ...
+Random character was f
+l p j q u z i n z g i v w v u m u u q s p n n c u e v g j h r k y d d f b o j q 
+l j r c s w x a v o ... (line shortened) ...
+X O X 
+O X O 
+X O X 
 
-Line
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Hi</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Information dialog icon is i</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Question dialog icon is ?</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Warning dialog icon is !</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Plain dialog has no icon</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Enter something</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Information dialog icon is i</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Question dialog icon is ?</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Warning dialog icon is !</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Plain dialog has no icon</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Confirm</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Example 1</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Example 2</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Example 3</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Example 4</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">a = false</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">b = 1</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">c = 1.2</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">d = *</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">e = cats</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">x = 10</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">x = 20</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">y = 30</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">y = 40</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">y = 4</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">x = 28</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">y = 5</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">z = 3</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">3.14159265 and 99 and y and true and Wachs</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">f = 15</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">g = 15.0</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">h = 15</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">o = 38</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">n = *</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Anything</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: -1</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Number</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: -1</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Decimal</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: -1.0</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Character</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: -</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">napolean = 8</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Letter 0 = n</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">NAPOLEAN</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Answer 1 = 3.141592653589793</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Answer 2 = 1.0</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Answer 3 = 0.8775825618903728</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Answer 4 = -0.6931471805599453</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Answer 5 = 125.0</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Answer 6 = 3.0</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Random # between 1.0 and 10.0 = 1.702009655936141</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Random # = 1</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">equal</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">less than</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">!=</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">w1 kind of == w2</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Get out</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 1</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 2</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 3</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 4</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 5</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 6</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 7</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 8</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 9</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 10</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 11</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 12</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 13</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 14</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 15</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 16</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 17</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 18</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 19</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 20</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 21</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 22</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 23</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 24</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 26</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 27</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 28</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 29</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 30</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 31</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 32</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 33</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 34</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 35</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 36</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 37</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 38</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 39</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 40</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 41</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 42</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 43</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 44</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 45</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 46</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 47</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 48</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 49</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Counter = 50</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Make a password</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Password</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 0</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 1</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 2</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 3</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 4</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 5</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 6</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 7</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 8</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 9</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 100</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 90</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 80</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 70</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 60</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 50</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 40</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 30</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 20</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 10</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">i = 0</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Welcome to dog age convertor</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Enter human age</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Your dog age is -7</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Good-bye!</span></body></html>
-<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Java basics completed!.........................................................................................................................................................................................................</span></body></html>
-<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Methods unit starting............................................................................................................................................................................................................</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">*</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">*</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">*</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">*</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">*</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">*</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">dalmations</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">problems</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: number is -172170099</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Hello</span></body></html>
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: Hi</span></body></html>
-<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Methods unit completed!.........................................................................................................................................................................................................</span></body></html>
-<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Arrays unit starting............................................................................................................................................................................................................</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">0 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">1 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">2 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">3 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">4 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">5 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">6 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">7 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">8 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">9 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">10 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">11 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">12 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">13 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">14 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">15 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">16 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">17 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">18 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">19 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">20 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">21 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">22 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">23 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">24 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">25 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">26 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">27 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">28 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">29 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">30 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">31 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">32 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">33 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">34 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">35 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">36 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">37 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">38 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">39 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">40 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">41 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">42 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">43 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">44 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">45 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">46 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">47 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">48 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">49 = 13</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">50 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">51 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">52 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">53 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">54 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">55 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">56 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">57 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">58 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">59 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">60 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">61 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">62 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">63 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">64 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">65 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">66 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">67 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">68 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">69 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">70 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">71 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">72 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">73 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">74 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">75 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">76 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">77 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">78 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">79 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">80 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">81 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">82 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">83 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">84 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">85 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">86 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">87 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">88 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">89 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">90 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">91 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">92 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">93 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">94 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">95 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">96 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">97 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">98 = 25</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">99 = 25</span></body></html>
-~~~SIMULATED DIALOG: Array: 
-(0)    0.05
-(1)    0.1
-(2)    0.25
-(3)    1.0
-(4)    2.0
-~~~SIMULATED DIALOG: Array: 
-(0)    0.0
-(1)    0.25
-(2)    0.5
-(3)    0.75
-(4)    1.0
-~~~SIMULATED DIALOG: Array: 
-(0)    25.0
-(1)    25.0
-(2)    25.0
-(3)    25.0
-(4)    25.0
-(5)    25.0
-(6)    25.0
-(7)    25.0
-(8)    25.0
-(9)    25.0
-(10)    25.0
-(11)    25.0
-(12)    25.0
-(13)    25.0
-(14)    25.0
-(15)    25.0
-(16)    25.0
-(17)    25.0
-(18)    25.0
-(19)    25.0
-(20)    25.0
-(21)    25.0
-(22)    25.0
-(23)    25.0
-(24)    25.0
-(25)    25.0
-(26)    25.0
-(27)    25.0
-(28)    25.0
-(29)    25.0
-(30)    25.0
-(31)    25.0
-(32)    25.0
-(33)    25.0
-(34)    25.0
-(35)    25.0
-(36)    25.0
-(37)    25.0
-(38)    25.0
-(39)    25.0
-(40)    25.0
-(41)    25.0
-(42)    25.0
-(43)    25.0
-(44)    25.0
-(45)    25.0
-(46)    25.0
-(47)    25.0
-(48)    25.0
-(49)    13.0
-(50)    25.0
-(51)    25.0
-(52)    25.0
-(53)    25.0
-(54)    25.0
-(55)    25.0
-(56)    25.0
-(57)    25.0
-(58)    25.0
-(59)    25.0
-(60)    25.0
-(61)    25.0
-(62)    25.0
-(63)    25.0
-(64)    25.0
-(65)    25.0
-(66)    25.0
-(67)    25.0
-(68)    25.0
-(69)    25.0
-(70)    25.0
-(71)    25.0
-(72)    25.0
-(73)    25.0
-(74)    25.0
-(75)    25.0
-(76)    25.0
-(77)    25.0
-(78)    25.0
-(79)    25.0
-(80)    25.0
-(81)    25.0
-(82)    25.0
-(83)    25.0
-(84)    25.0
-(85)    25.0
-(86)    25.0
-(87)    25.0
-(88)    25.0
-(89)    25.0
-(90)    25.0
-(91)    25.0
-(92)    25.0
-(93)    25.0
-(94)    25.0
-(95)    25.0
-(96)    25.0
-(97)    25.0
-(98)    25.0
-(99)    25.0
-~~~SIMULATED DIALOG: Array: 
-(0)    11.0
-(1)    11.0
-(2)    6.0
-(3)    7.0
-(4)    6.0
-(5)    14.0
-(6)    13.0
-(7)    10.0
-(8)    13.0
-(9)    12.0
-(10)    8.0
-(11)    11.0
-(12)    5.0
-(13)    14.0
-(14)    14.0
-(15)    3.0
-(16)    12.0
-(17)    2.0
-(18)    3.0
-(19)    9.0
-(20)    6.0
-(21)    9.0
-(22)    6.0
-(23)    5.0
-(24)    7.0
-(25)    9.0
-(26)    3.0
-(27)    6.0
-(28)    13.0
-(29)    6.0
-(30)    11.0
-(31)    7.0
-(32)    7.0
-(33)    10.0
-(34)    6.0
-(35)    2.0
-(36)    13.0
-(37)    7.0
-(38)    7.0
-(39)    9.0
-(40)    6.0
-(41)    10.0
-(42)    8.0
-(43)    5.0
-(44)    10.0
-(45)    2.0
-(46)    2.0
-(47)    10.0
-(48)    8.0
-(49)    6.0
-(50)    7.0
-(51)    13.0
-<html><head></head><body><span style="color: rgb(255,0,255);font-family: Consolas;">~~~SIMULATED DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$MarginBorder@46fbb2c1,flags=296,maximumSize=,minimumSize=,preferredSize=,caretColor=sun.swing.PrintColorUIResource[r=51,g=51,b=51],disabledTextColor=javax.swing.plaf.ColorUIResource[r=184,g=207,b=229],editable=true,margin=javax.swing.plaf.InsetsUIResource[top=0,left=0,bottom=0,right=0],selectedTextColor=sun.swing.PrintColorUIResource[r=51,g=51,b=51],selectionColor=javax.swing.plaf.ColorUIResource[r=184,g=207,b=229],colums=0,columWidth=0,rows=0,rowHeight=0,word=false,wrap=false]</span></body></html>
-<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Arrays unit complete!.........................................................................................................................................................................................................</span></body></html>
-<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Classes unit started............................................................................................................................................................................................................</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Jane Doe is 0 and if you are wondering if I am male, the answer is false</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Roberta Shapiro is 18 and if you are wondering if I am male, the answer is false</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Ben Shapiro is 0 and if you are wondering if I am male, the answer is false</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Samatha Bee is 45 and if you are wondering if I am male, the answer is false</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Sammy Bee is 46 and if you are wondering if I am male, the answer is true</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Booooooo!</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Greg Heffley is 12 and if you are wondering if I am male, the answer is true</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Student #: 101, GPA: 2.7, Grade: 6</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Greg Heffley is 12 and if you are wondering if I am male, the answer is true</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Student #: 101, GPA: 2.6842920367320513, Grade: 6</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Greg Heffley is 12 and if you are wondering if I am male, the answer is true</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Student #: 101, GPA: 2.715707963267949, Grade: 6</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Greg Heffley is 12 and if you are wondering if I am male, the answer is true</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Student #: 101, GPA: 2.9042035224833356, Grade: 6</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Havoc is 12 and if you are wondering if I am male, the answer is true</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Student #: 2665, GPA: 2.7, Grade: 9</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Do I have pride? The answer is true</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Havoc is 12 and if you are wondering if I am male, the answer is true</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Student #: 2665, GPA: 2.7, Grade: 9</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Do I have pride? The answer is false</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Havoc is 12 and if you are wondering if I am male, the answer is true</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Student #: 2665, GPA: 2.7, Grade: 9</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Do I have pride? The answer is true</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Mr. Libby is 30 and if you are wondering if I am male, the answer is false</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - I teach 100 students:</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Havoc is 12 and if you are wondering if I am male, the answer is true</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Student #: 2665, GPA: 2.731415926535898, Grade: 9</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Do I have pride? The answer is true</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">~~~Meeting beginning with 6 members</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Roberta Shapiro is 18 and if you are wondering if I am male, the answer is false</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Ben Shapiro is 0 and if you are wondering if I am male, the answer is false</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Booooooo!</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Greg Heffley is 12 and if you are wondering if I am male, the answer is true</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Student #: 101, GPA: 2.9356194490192333, Grade: 6</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Havoc is 12 and if you are wondering if I am male, the answer is true</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Student #: 2665, GPA: 2.731415926535898, Grade: 9</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - Do I have pride? The answer is true</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">Mr. Libby is 30 and if you are wondering if I am male, the answer is false</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">	 - I teach 100 students:</span></body></html>
-<html><head></head><body><span style="color: rgb(255,255,255);font-family: Consolas;">~~~Meeting adjurned!</span></body></html>
-<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Classes unit complete!.........................................................................................................................................................................................................</span></body></html>
-<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Graphics and GUIs unit started............................................................................................................................................................................................................</span></body></html>
-<html><head></head><body><span style="color: rgb(0,255,255);font-family: Consolas;">~~~SIMULATED USER INTERFACE: Graphics1</span></body></html>
-<html><head></head><body><span style="color: rgb(0,255,255);font-family: Consolas;">~~~SIMULATED USER INTERFACE: Graphics2</span></body></html>
-<html><head></head><body><span style="color: rgb(0,255,255);font-family: Consolas;">~~~SIMULATED USER INTERFACE: Graphics3</span></body></html>
-<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Graphics and GUIs unit complete!.........................................................................................................................................................................................................</span></body></html>
-<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">Computer Science 30S course completed!.........................................................................................................................................................................................................</span></body></html>
-<html><head></head><body><span style="color: rgb(0,0,255);font-family: Consolas;">All testing complete!.........................................................................................................................................................................................................</span></body></html>
+~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic ... (line shortened) ...
+~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic ... (line shortened) ...
+Completed Learning arrays!
+Start Learing Classes...
+undefined is 0 identifies as undefined
+SpongeBob SquarePants is 0 identifies as sponge
+SpongeBob SquarePants is 1 identifies as sponge
+Booooooo!
+Patrick Star is 0 identifies as undefined
+Mr. Crabs is 80 identifies as Crab
+Student Person is 0 identifies as student
+	Number:  	123456
+	Average: 	0.0
+Student Person is 0 identifies as student
+	Number:  	123456
+	Average: 	13.09
+Havoc is 0 identifies as dog
+	Number:  	2665
+	Average: 	0.0
+	Pride is true
+Mr. Wachs is 0 identifies as undefined
+Here are my students...
+Mr. Wachs is 0 identifies as undefined
+Here are my students...
+Student Person is 0 identifies as student
+	Number:  	123456
+	Average: 	14.34
+Havoc is 0 identifies as dog
+	Number:  	2665
+	Average: 	1.25
+	Pride is true
+Meeting begining with 6 members...
+Booooooo!
+Mr. Crabs is 80 identifies as Crab
+Patrick Star is 0 identifies as undefined
+Student Person is 0 identifies as student
+	Number:  	123456
+	Average: 	14.34
+Mr. Wachs is 0 identifies as undefined
+Here are my students...
+Student Person is 0 identifies as student
+	Number:  	123456
+	Average: 	15.59
+Havoc is 0 identifies as dog
+	Number:  	2665
+	Average: 	2.5
+	Pride is true
+Havoc is 0 identifies as dog
+	Number:  	2665
+	Average: 	2.5
+	Pride is true
+Learning Classes Complete!
+~~~ SIMULATED {GUI Frame} DIALOG: Graphics1 ~~~ 
+~~~ SIMULATED {GUI Frame} DIALOG: Graphics2 ~~~ 
+~~~ SIMULATED {GUI Frame} DIALOG: Graphics3 ~~~ 
+Computer Science 30S complete!...................................................
+Computer Science 40S starting......................................................
+
+Recursion test starting...
+
+Recursive factorials............................
+-1	 factorial = 	0
+0	 factorial = 	0
+1	 factorial = 	1
+2	 factorial = 	2
+3	 factorial = 	6
+4	 factorial = 	24
+5	 factorial = 	120
+6	 factorial = 	720
+7	 factorial = 	5040
+8	 factorial = 	40320
+9	 factorial = 	362880
+10	 factorial = 	3628800
+11	 factorial = 	39916800
+12	 factorial = 	479001600
+13	 factorial = 	6227020800
+14	 factorial = 	87178291200
+15	 factorial = 	1307674368000
+16	 factorial = 	20922789888000
+17	 factorial = 	355687428096000
+18	 factorial = 	6402373705728000
+19	 factorial = 	121645100408832000
+20	 factorial = 	2432902008176640000
+Recursive powers................................
+-10 to the exponent -10 = 1.0E-10
+-9 to the exponent -10 = 2.8679719907924413E-10
+-8 to the exponent -10 = 9.313225746154785E-10
+-7 to the exponent -10 = 3.5401331746414354E-9
+-6 to the exponent -10 = 1.65381716879202E-8
+-5 to the exponent -10 = 1.024E-7
+-4 to the exponent -10 = 9.5367431640625E-7
+-3 to the exponent -10 = 1.6935087808430286E-5
+-2 to the exponent -10 = 9.765625E-4
+-1 to the exponent -10 = 1.0
+0 to the exponent -10 = Infinity
+1 to the exponent -10 = 1.0
+2 to the exponent -10 = 9.765625E-4
+3 to the exponent -10 = 1.6935087808430286E-5
+4 to the exponent -10 = 9.5367431640625E-7
+5 to the exponent -10 = 1.024E-7
+6 to the exponent -10 = 1.65381716879202E-8
+7 to the exponent -10 = 3.5401331746414354E-9
+8 to the exponent -10 = 9.313225746154785E-10
+9 to the exponent -10 = 2.8679719907924413E-10
+10 to the exponent -10 = 1.0E-10
+-10 to the exponent -9 = -1.0E-9
+-9 to the exponent -9 = -2.581174791713197E-9
+-8 to the exponent -9 = -7.450580596923828E-9
+-7 to the exponent -9 = -2.478093222249005E-8
+-6 to the exponent -9 = -9.92290301275212E-8
+-5 to the exponent -9 = -5.12E-7
+-4 to the exponent -9 = -3.814697265625E-6
+-3 to the exponent -9 = -5.080526342529086E-5
+-2 to the exponent -9 = -0.001953125
+-1 to the exponent -9 = -1.0
+0 to the exponent -9 = Infinity
+1 to the exponent -9 = 1.0
+2 to the exponent -9 = 0.001953125
+3 to the exponent -9 = 5.080526342529086E-5
+4 to the exponent -9 = 3.814697265625E-6
+5 to the exponent -9 = 5.12E-7
+6 to the exponent -9 = 9.92290301275212E-8
+7 to the exponent -9 = 2.478093222249005E-8
+8 to the exponent -9 = 7.450580596923828E-9
+9 to the exponent -9 = 2.581174791713197E-9
+10 to the exponent -9 = 1.0E-9
+-10 to the exponent -8 = 1.0E-8
+-9 to the exponent -8 = 2.3230573125418773E-8
+-8 to the exponent -8 = 5.9604644775390625E-8
+-7 to the exponent -8 = 1.7346652555743034E-7
+-6 to the exponent -8 = 5.953741807651273E-7
+-5 to the exponent -8 = 2.56E-6
+-4 to the exponent -8 = 1.52587890625E-5
+-3 to the exponent -8 = 1.5241579027587258E-4
+-2 to the exponent -8 = 0.00390625
+-1 to the exponent -8 = 1.0
+0 to the exponent -8 = Infinity
+1 to the exponent -8 = 1.0
+2 to the exponent -8 = 0.00390625
+3 to the exponent -8 = 1.5241579027587258E-4
+4 to the exponent -8 = 1.52587890625E-5
+5 to the exponent -8 = 2.56E-6
+6 to the exponent -8 = 5.953741807651273E-7
+7 to the exponent -8 = 1.7346652555743034E-7
+8 to the exponent -8 = 5.9604644775390625E-8
+9 to the exponent -8 = 2.3230573125418773E-8
+10 to the exponent -8 = 1.0E-8
+-10 to the exponent -7 = -1.0E-7
+-9 to the exponent -7 = -2.0907515812876897E-7
+-8 to the exponent -7 = -4.76837158203125E-7
+-7 to the exponent -7 = -1.2142656789020123E-6
+-6 to the exponent -7 = -3.5722450845907635E-6
+-5 to the exponent -7 = -1.28E-5
+-4 to the exponent -7 = -6.103515625E-5
+-3 to the exponent -7 = -4.572473708276177E-4
+-2 to the exponent -7 = -0.0078125
+-1 to the exponent -7 = -1.0
+0 to the exponent -7 = Infinity
+1 to the exponent -7 = 1.0
+2 to the exponent -7 = 0.0078125
+3 to the exponent -7 = 4.572473708276177E-4
+4 to the exponent -7 = 6.103515625E-5
+5 to the exponent -7 = 1.28E-5
+6 to the exponent -7 = 3.5722450845907635E-6
+7 to the exponent -7 = 1.2142656789020123E-6
+8 to the exponent -7 = 4.76837158203125E-7
+9 to the exponent -7 = 2.0907515812876897E-7
+10 to the exponent -7 = 1.0E-7
+-10 to the exponent -6 = 1.0E-6
+-9 to the exponent -6 = 1.8816764231589208E-6
+-8 to the exponent -6 = 3.814697265625E-6
+-7 to the exponent -6 = 8.499859752314087E-6
+-6 to the exponent -6 = 2.143347050754458E-5
+-5 to the exponent -6 = 6.4E-5
+-4 to the exponent -6 = 2.44140625E-4
+-3 to the exponent -6 = 0.0013717421124828531
+-2 to the exponent -6 = 0.015625
+-1 to the exponent -6 = 1.0
+0 to the exponent -6 = Infinity
+1 to the exponent -6 = 1.0
+2 to the exponent -6 = 0.015625
+3 to the exponent -6 = 0.0013717421124828531
+4 to the exponent -6 = 2.44140625E-4
+5 to the exponent -6 = 6.4E-5
+6 to the exponent -6 = 2.143347050754458E-5
+7 to the exponent -6 = 8.499859752314087E-6
+8 to the exponent -6 = 3.814697265625E-6
+9 to the exponent -6 = 1.8816764231589208E-6
+10 to the exponent -6 = 1.0E-6
+-10 to the exponent -5 = -1.0E-5
+-9 to the exponent -5 = -1.6935087808430286E-5
+-8 to the exponent -5 = -3.0517578125E-5
+-7 to the exponent -5 = -5.9499018266198606E-5
+-6 to the exponent -5 = -1.286008230452675E-4
+-5 to the exponent -5 = -3.2E-4
+-4 to the exponent -5 = -9.765625E-4
+-3 to the exponent -5 = -0.00411522633744856
+-2 to the exponent -5 = -0.03125
+-1 to the exponent -5 = -1.0
+0 to the exponent -5 = Infinity
+1 to the exponent -5 = 1.0
+2 to the exponent -5 = 0.03125
+3 to the exponent -5 = 0.00411522633744856
+4 to the exponent -5 = 9.765625E-4
+5 to the exponent -5 = 3.2E-4
+6 to the exponent -5 = 1.286008230452675E-4
+7 to the exponent -5 = 5.9499018266198606E-5
+8 to the exponent -5 = 3.0517578125E-5
+9 to the exponent -5 = 1.6935087808430286E-5
+10 to the exponent -5 = 1.0E-5
+-10 to the exponent -4 = 1.0E-4
+-9 to the exponent -4 = 1.5241579027587258E-4
+-8 to the exponent -4 = 2.44140625E-4
+-7 to the exponent -4 = 4.1649312786339027E-4
+-6 to the exponent -4 = 7.716049382716049E-4
+-5 to the exponent -4 = 0.0016
+-4 to the exponent -4 = 0.00390625
+-3 to the exponent -4 = 0.012345679012345678
+-2 to the exponent -4 = 0.0625
+-1 to the exponent -4 = 1.0
+0 to the exponent -4 = Infinity
+1 to the exponent -4 = 1.0
+2 to the exponent -4 = 0.0625
+3 to the exponent -4 = 0.012345679012345678
+4 to the exponent -4 = 0.00390625
+5 to the exponent -4 = 0.0016
+6 to the exponent -4 = 7.716049382716049E-4
+7 to the exponent -4 = 4.1649312786339027E-4
+8 to the exponent -4 = 2.44140625E-4
+9 to the exponent -4 = 1.5241579027587258E-4
+10 to the exponent -4 = 1.0E-4
+-10 to the exponent -3 = -0.001
+-9 to the exponent -3 = -0.0013717421124828531
+-8 to the exponent -3 = -0.001953125
+-7 to the exponent -3 = -0.0029154518950437317
+-6 to the exponent -3 = -0.004629629629629629
+-5 to the exponent -3 = -0.008
+-4 to the exponent -3 = -0.015625
+-3 to the exponent -3 = -0.037037037037037035
+-2 to the exponent -3 = -0.125
+-1 to the exponent -3 = -1.0
+0 to the exponent -3 = Infinity
+1 to the exponent -3 = 1.0
+2 to the exponent -3 = 0.125
+3 to the exponent -3 = 0.037037037037037035
+4 to the exponent -3 = 0.015625
+5 to the exponent -3 = 0.008
+6 to the exponent -3 = 0.004629629629629629
+7 to the exponent -3 = 0.0029154518950437317
+8 to the exponent -3 = 0.001953125
+9 to the exponent -3 = 0.0013717421124828531
+10 to the exponent -3 = 0.001
+-10 to the exponent -2 = 0.01
+-9 to the exponent -2 = 0.012345679012345678
+-8 to the exponent -2 = 0.015625
+-7 to the exponent -2 = 0.02040816326530612
+-6 to the exponent -2 = 0.027777777777777776
+-5 to the exponent -2 = 0.04
+-4 to the exponent -2 = 0.0625
+-3 to the exponent -2 = 0.1111111111111111
+-2 to the exponent -2 = 0.25
+-1 to the exponent -2 = 1.0
+0 to the exponent -2 = Infinity
+1 to the exponent -2 = 1.0
+2 to the exponent -2 = 0.25
+3 to the exponent -2 = 0.1111111111111111
+4 to the exponent -2 = 0.0625
+5 to the exponent -2 = 0.04
+6 to the exponent -2 = 0.027777777777777776
+7 to the exponent -2 = 0.02040816326530612
+8 to the exponent -2 = 0.015625
+9 to the exponent -2 = 0.012345679012345678
+10 to the exponent -2 = 0.01
+-10 to the exponent -1 = -0.1
+-9 to the exponent -1 = -0.1111111111111111
+-8 to the exponent -1 = -0.125
+-7 to the exponent -1 = -0.14285714285714285
+-6 to the exponent -1 = -0.16666666666666666
+-5 to the exponent -1 = -0.2
+-4 to the exponent -1 = -0.25
+-3 to the exponent -1 = -0.3333333333333333
+-2 to the exponent -1 = -0.5
+-1 to the exponent -1 = -1.0
+0 to the exponent -1 = Infinity
+1 to the exponent -1 = 1.0
+2 to the exponent -1 = 0.5
+3 to the exponent -1 = 0.3333333333333333
+4 to the exponent -1 = 0.25
+5 to the exponent -1 = 0.2
+6 to the exponent -1 = 0.16666666666666666
+7 to the exponent -1 = 0.14285714285714285
+8 to the exponent -1 = 0.125
+9 to the exponent -1 = 0.1111111111111111
+10 to the exponent -1 = 0.1
+-10 to the exponent 0 = 1.0
+-9 to the exponent 0 = 1.0
+-8 to the exponent 0 = 1.0
+-7 to the exponent 0 = 1.0
+-6 to the exponent 0 = 1.0
+-5 to the exponent 0 = 1.0
+-4 to the exponent 0 = 1.0
+-3 to the exponent 0 = 1.0
+-2 to the exponent 0 = 1.0
+-1 to the exponent 0 = 1.0
+0 to the exponent 0 = 1.0
+1 to the exponent 0 = 1.0
+2 to the exponent 0 = 1.0
+3 to the exponent 0 = 1.0
+4 to the exponent 0 = 1.0
+5 to the exponent 0 = 1.0
+6 to the exponent 0 = 1.0
+7 to the exponent 0 = 1.0
+8 to the exponent 0 = 1.0
+9 to the exponent 0 = 1.0
+10 to the exponent 0 = 1.0
+-10 to the exponent 1 = -10.0
+-9 to the exponent 1 = -9.0
+-8 to the exponent 1 = -8.0
+-7 to the exponent 1 = -7.0
+-6 to the exponent 1 = -6.0
+-5 to the exponent 1 = -5.0
+-4 to the exponent 1 = -4.0
+-3 to the exponent 1 = -3.0
+-2 to the exponent 1 = -2.0
+-1 to the exponent 1 = -1.0
+0 to the exponent 1 = 0.0
+1 to the exponent 1 = 1.0
+2 to the exponent 1 = 2.0
+3 to the exponent 1 = 3.0
+4 to the exponent 1 = 4.0
+5 to the exponent 1 = 5.0
+6 to the exponent 1 = 6.0
+7 to the exponent 1 = 7.0
+8 to the exponent 1 = 8.0
+9 to the exponent 1 = 9.0
+10 to the exponent 1 = 10.0
+-10 to the exponent 2 = 100.0
+-9 to the exponent 2 = 81.0
+-8 to the exponent 2 = 64.0
+-7 to the exponent 2 = 49.0
+-6 to the exponent 2 = 36.0
+-5 to the exponent 2 = 25.0
+-4 to the exponent 2 = 16.0
+-3 to the exponent 2 = 9.0
+-2 to the exponent 2 = 4.0
+-1 to the exponent 2 = 1.0
+0 to the exponent 2 = 0.0
+1 to the exponent 2 = 1.0
+2 to the exponent 2 = 4.0
+3 to the exponent 2 = 9.0
+4 to the exponent 2 = 16.0
+5 to the exponent 2 = 25.0
+6 to the exponent 2 = 36.0
+7 to the exponent 2 = 49.0
+8 to the exponent 2 = 64.0
+9 to the exponent 2 = 81.0
+10 to the exponent 2 = 100.0
+-10 to the exponent 3 = -1000.0
+-9 to the exponent 3 = -729.0
+-8 to the exponent 3 = -512.0
+-7 to the exponent 3 = -343.0
+-6 to the exponent 3 = -216.0
+-5 to the exponent 3 = -125.0
+-4 to the exponent 3 = -64.0
+-3 to the exponent 3 = -27.0
+-2 to the exponent 3 = -8.0
+-1 to the exponent 3 = -1.0
+0 to the exponent 3 = 0.0
+1 to the exponent 3 = 1.0
+2 to the exponent 3 = 8.0
+3 to the exponent 3 = 27.0
+4 to the exponent 3 = 64.0
+5 to the exponent 3 = 125.0
+6 to the exponent 3 = 216.0
+7 to the exponent 3 = 343.0
+8 to the exponent 3 = 512.0
+9 to the exponent 3 = 729.0
+10 to the exponent 3 = 1000.0
+-10 to the exponent 4 = 10000.0
+-9 to the exponent 4 = 6561.0
+-8 to the exponent 4 = 4096.0
+-7 to the exponent 4 = 2401.0
+-6 to the exponent 4 = 1296.0
+-5 to the exponent 4 = 625.0
+-4 to the exponent 4 = 256.0
+-3 to the exponent 4 = 81.0
+-2 to the exponent 4 = 16.0
+-1 to the exponent 4 = 1.0
+0 to the exponent 4 = 0.0
+1 to the exponent 4 = 1.0
+2 to the exponent 4 = 16.0
+3 to the exponent 4 = 81.0
+4 to the exponent 4 = 256.0
+5 to the exponent 4 = 625.0
+6 to the exponent 4 = 1296.0
+7 to the exponent 4 = 2401.0
+8 to the exponent 4 = 4096.0
+9 to the exponent 4 = 6561.0
+10 to the exponent 4 = 10000.0
+-10 to the exponent 5 = -100000.0
+-9 to the exponent 5 = -59049.0
+-8 to the exponent 5 = -32768.0
+-7 to the exponent 5 = -16807.0
+-6 to the exponent 5 = -7776.0
+-5 to the exponent 5 = -3125.0
+-4 to the exponent 5 = -1024.0
+-3 to the exponent 5 = -243.0
+-2 to the exponent 5 = -32.0
+-1 to the exponent 5 = -1.0
+0 to the exponent 5 = 0.0
+1 to the exponent 5 = 1.0
+2 to the exponent 5 = 32.0
+3 to the exponent 5 = 243.0
+4 to the exponent 5 = 1024.0
+5 to the exponent 5 = 3125.0
+6 to the exponent 5 = 7776.0
+7 to the exponent 5 = 16807.0
+8 to the exponent 5 = 32768.0
+9 to the exponent 5 = 59049.0
+10 to the exponent 5 = 100000.0
+-10 to the exponent 6 = 1000000.0
+-9 to the exponent 6 = 531441.0
+-8 to the exponent 6 = 262144.0
+-7 to the exponent 6 = 117649.0
+-6 to the exponent 6 = 46656.0
+-5 to the exponent 6 = 15625.0
+-4 to the exponent 6 = 4096.0
+-3 to the exponent 6 = 729.0
+-2 to the exponent 6 = 64.0
+-1 to the exponent 6 = 1.0
+0 to the exponent 6 = 0.0
+1 to the exponent 6 = 1.0
+2 to the exponent 6 = 64.0
+3 to the exponent 6 = 729.0
+4 to the exponent 6 = 4096.0
+5 to the exponent 6 = 15625.0
+6 to the exponent 6 = 46656.0
+7 to the exponent 6 = 117649.0
+8 to the exponent 6 = 262144.0
+9 to the exponent 6 = 531441.0
+10 to the exponent 6 = 1000000.0
+-10 to the exponent 7 = -1.0E7
+-9 to the exponent 7 = -4782969.0
+-8 to the exponent 7 = -2097152.0
+-7 to the exponent 7 = -823543.0
+-6 to the exponent 7 = -279936.0
+-5 to the exponent 7 = -78125.0
+-4 to the exponent 7 = -16384.0
+-3 to the exponent 7 = -2187.0
+-2 to the exponent 7 = -128.0
+-1 to the exponent 7 = -1.0
+0 to the exponent 7 = 0.0
+1 to the exponent 7 = 1.0
+2 to the exponent 7 = 128.0
+3 to the exponent 7 = 2187.0
+4 to the exponent 7 = 16384.0
+5 to the exponent 7 = 78125.0
+6 to the exponent 7 = 279936.0
+7 to the exponent 7 = 823543.0
+8 to the exponent 7 = 2097152.0
+9 to the exponent 7 = 4782969.0
+10 to the exponent 7 = 1.0E7
+-10 to the exponent 8 = 1.0E8
+-9 to the exponent 8 = 4.3046721E7
+-8 to the exponent 8 = 1.6777216E7
+-7 to the exponent 8 = 5764801.0
+-6 to the exponent 8 = 1679616.0
+-5 to the exponent 8 = 390625.0
+-4 to the exponent 8 = 65536.0
+-3 to the exponent 8 = 6561.0
+-2 to the exponent 8 = 256.0
+-1 to the exponent 8 = 1.0
+0 to the exponent 8 = 0.0
+1 to the exponent 8 = 1.0
+2 to the exponent 8 = 256.0
+3 to the exponent 8 = 6561.0
+4 to the exponent 8 = 65536.0
+5 to the exponent 8 = 390625.0
+6 to the exponent 8 = 1679616.0
+7 to the exponent 8 = 5764801.0
+8 to the exponent 8 = 1.6777216E7
+9 to the exponent 8 = 4.3046721E7
+10 to the exponent 8 = 1.0E8
+-10 to the exponent 9 = -1.0E9
+-9 to the exponent 9 = -3.87420489E8
+-8 to the exponent 9 = -1.34217728E8
+-7 to the exponent 9 = -4.0353607E7
+-6 to the exponent 9 = -1.0077696E7
+-5 to the exponent 9 = -1953125.0
+-4 to the exponent 9 = -262144.0
+-3 to the exponent 9 = -19683.0
+-2 to the exponent 9 = -512.0
+-1 to the exponent 9 = -1.0
+0 to the exponent 9 = 0.0
+1 to the exponent 9 = 1.0
+2 to the exponent 9 = 512.0
+3 to the exponent 9 = 19683.0
+4 to the exponent 9 = 262144.0
+5 to the exponent 9 = 1953125.0
+6 to the exponent 9 = 1.0077696E7
+7 to the exponent 9 = 4.0353607E7
+8 to the exponent 9 = 1.34217728E8
+9 to the exponent 9 = 3.87420489E8
+10 to the exponent 9 = 1.0E9
+-10 to the exponent 10 = 1.0E10
+-9 to the exponent 10 = 3.486784401E9
+-8 to the exponent 10 = 1.073741824E9
+-7 to the exponent 10 = 2.82475249E8
+-6 to the exponent 10 = 6.0466176E7
+-5 to the exponent 10 = 9765625.0
+-4 to the exponent 10 = 1048576.0
+-3 to the exponent 10 = 59049.0
+-2 to the exponent 10 = 1024.0
+-1 to the exponent 10 = 1.0
+0 to the exponent 10 = 0.0
+1 to the exponent 10 = 1.0
+2 to the exponent 10 = 1024.0
+3 to the exponent 10 = 59049.0
+4 to the exponent 10 = 1048576.0
+5 to the exponent 10 = 9765625.0
+6 to the exponent 10 = 6.0466176E7
+7 to the exponent 10 = 2.82475249E8
+8 to the exponent 10 = 1.073741824E9
+9 to the exponent 10 = 3.486784401E9
+10 to the exponent 10 = 1.0E10
+
+Recursion test complete!
+
+
+Advanced Classes testing begins...
+
+unidentified is 0 identifes as unidentified
+Demitrius Demarkus the 3rd is 0 identifes as non-binary
+Booooo!
+unidentified is 1 identifes as unidentified
+I am a student
+	Number: 	1
+	GPA: 	0.8001099999999999
+Hingle McCringleberry is 17 identifes as male
+I am a student
+	Number: 	1
+	GPA: 	0.0
+Professor Snape is 40 identifes as teacher
+unidentified is 1 identifes as unidentified
+I am a student
+	Number: 	1
+	GPA: 	0.9001099999999999
+Hingle McCringleberry is 17 identifes as male
+I am a student
+	Number: 	1
+	GPA: 	0.1
+O1 = java.lang.Object@31cefde0
+O2 = java.lang.Object@439f5b3d
+O3 = java.lang.Object@439f5b3d
+Person  = Person: Demitrius Demarkus the 3rd is 1 identifes as non-binary
+Student = Student: Person: unidentified is 1 identifes as unidentified average is 0.9001099999999999
+Teacher = Teacher: Person: Professor Snape is 40 identifes as teacher
+String = squirrel
+JOptionPane = io.JOptionPane@1d56ce6a
+O2==O3
+P1 = Person: unidentified is 0 identifes as unidentified
+P2 = Person: unidentified is 0 identifes as unidentified
+P3 = Person: unidentified is 0 identifes as unidentified
+P1==P2
+P2==P3
+P1==P3
+Person is Person: Demitrius Demarkus the 3rd is 1 identifes as non-binary
+Clone  is Person: Demitrius Demarkus the 3rd is 1 identifes as non-binary
+Clone is ==
+Student: Person: Name1 is 10 identifes as Student1 average is -0.3
+Student: Person: Name2 is 20 identifes as Student2 average is 0.1
+Student: Person: Name3 is 30 identifes as Student3 average is 1.0000999999999998
+S1 total = 5
+S2 total = 5
+S3 total = 5
+S1 total = 3
+S2 total = 3
+S3 total = 3
+Boom!!!!
+Boom!!!!
+Boom!!!!
+Boom!!!!
+Boom!!!!
+Boom!!!!
+Boom!!!!
+Boom!!!!
+Doctor: Person: Dr. Doom is 0 identifes as unidentified
+DiskJocky: Person: DJ Blitz is 0 identifes as unidentified
+MrWachs: Teacher: Person: Mr. Lawrence Wachs is 40 identifes as teacher
+Piper: HighSchool: Student: Person: Smelly Teenager is 15 identifes as doesn't matter average is 0.0
+Husky: HighSchool: Student: Person: Smelly Teenager is 15 identifes as doesn't matter average is 0.0
+Athlete: Husky: HighSchool: Student: Person: Jock is 15 identifes as doesn't matter average is 0.0
+Meeting is about to begin...
+	 Person	Person: Demitrius Demarkus the 3rd is 1 identifes as non-binar ... (line shortened) ...
+Wash it first
+Smelly Teenager is eating Apple from Fruits, it was Sweet
+Mr. Lawrence Wachs is eating Do not eat!
+Round 1...
+Mickey has got it signed!
+Round 2...
+Mickey has scored a goal
+Mickey has scored a goal
+Warriors has scored a goal
+Mickey has taken a piece
+Warriors has taken a piece
+Warriors has taken a piece
+Mickey has punched
+Warriors has punched
+Mickey has punched
+End of period 2 and the score is 22 for the Mickey and 11 for the Warriors
+End of round 2 and the score is 22 for the Mickey and 11 for the Warriors
+Round 3...
+Mickey has scored a goal
+Mickey has scored a goal
+Warriors has scored a goal
+Mickey has taken a piece
+Warriors has taken a piece
+Warriors has taken a piece
+Mickey has punched
+Warriors has punched
+Mickey has punched
+End of period 3 and the score is 44 for the Mickey and 22 for the Warriors
+End of round 3 and the score is 44 for the Mickey and 22 for the Warriors
+Round 4...
+Mickey has scored a goal
+Mickey has scored a goal
+Warriors has scored a goal
+Mickey has taken a piece
+Warriors has taken a piece
+Warriors has taken a piece
+Mickey has punched
+Warriors has punched
+Mickey has punched
+End of period 4 and the score is 66 for the Mickey and 33 for the Warriors
+End of round 4 and the score is 66 for the Mickey and 33 for the Warriors
+Mickey wins!
+Mickey is eating Do not eat!
+Class Boolean as a string is true
+Class Integer as a string is 0
+Class Double as a string is 3.14
+Class Character as a string is a
+Class String as a string is test
+Class Athlete as a string is Athlete: Husky: HighSchool: Student: Person: Jock is 15 identifes as do ... (line shortened) ...
+Class JOptionPane as a string is io.JOptionPane@5197848c
+Class Object as a string is java.lang.Object@17f052a3
+true
+0
+3.14
+a
+test
+Athlete: Husky: HighSchool: Student: Person: Jock is 15 identifes as doesn't matter average is 0.0
+Class Boolean as a string is true
+Class Integer as a string is 0
+Class Double as a string is 3.14
+Class Character as a string is a
+Class String as a string is test
+Class Athlete as a string is Athlete: Husky: HighSchool: Student: Person: Jock is 15 identifes as do ... (line shortened) ...
+Home owner:
+Mr. Lawrence Wachs
+
+and the contents...
+testing.cs40s.advancedclasses.Meeting@2e0fa5d3
+Wash it first
+Mr. Lawrence Wachs is eating Apple from Fruits, it was Sweet
+Mr. Lawrence Wachs is eating Do not eat!
+
+Advanced Classes testing complete!
+
+Collections unit starting......................................................
+
+Testing constructors.........................
+
+
+Testing toString()...........................
+
+Node a = null
+Node b = Meat
+Node c = Cheese
+Node d = Sauce
+
+Testing equals().............................
+
+Node a == b? -> false
+Node b == c? -> false
+Node a == a? -> false
+Node b == b? -> true
+
+Testing clone()..............................
+
+Node e = null
+Node f = Meat
+Node g = Cheese
+Node h = Sauce
+
+Testing equals().............................
+
+Node a == b? -> false
+Node b == c? -> false
+Node c == d? -> false
+Node a == e? -> false
+Node b == f? -> true
+Node c == g? -> true
+Node d == h? -> true
+
+Testing finalize()...........................
+
+Node a = null
+Node b = Meat
+Node c = Cheese
+Node d = Sauce
+Node e = null
+Node f = Meat
+Node g = Cheese
+Node h = Sauce
+Node a = null
+Node b = null
+Node c = null
+Node d = null
+Node e = null
+Node f = null
+Node g = null
+Node h = null
+
+Testing default LinkedList constructor.......
+
+
+Testing isEmpty method.......................
+
+L1 empty? -> true
+
+Testing size method..........................
+
+L1 size? -> 0
+
+Testing toString method......................
+
+Empty LinkedList
+
+Test addBack method..........................
+
+Linked List 	[5,50,500,-5,-50]
+
+Test addFront method.........................
+
+Linked List 	[6,60,600,-6,-60,5,50,500,-5,-50]
+
+Test get method..............................
+
+Getting list -1 = null
+Getting list 0 = 6
+Getting list 1 = 60
+Getting list 2 = 600
+Getting list 3 = -6
+Getting list 4 = -60
+Getting list 5 = 5
+Getting list 6 = 50
+Getting list 7 = 500
+Getting list 8 = -5
+Getting list 9 = -50
+Getting list 10 = null
+
+Test set method..............................
+
+Setting list -1 to 9 result = false
+Linked List 	[6,60,600,-6,-60,5,50,500,-5,-50]
+Setting list 0 to 10 result = true
+Linked List 	[10,60,600,-6,-60,5,50,500,-5,-50]
+Setting list 1 to 11 result = true
+Linked List 	[10,11,600,-6,-60,5,50,500,-5,-50]
+Setting list 2 to 12 result = true
+Linked List 	[10,11,12,-6,-60,5,50,500,-5,-50]
+Setting list 3 to 13 result = true
+Linked List 	[10,11,12,13,-60,5,50,500,-5,-50]
+Setting list 4 to 14 result = true
+Linked List 	[10,11,12,13,14,5,50,500,-5,-50]
+Setting list 5 to 15 result = true
+Linked List 	[10,11,12,13,14,15,50,500,-5,-50]
+Setting list 6 to 16 result = true
+Linked List 	[10,11,12,13,14,15,16,500,-5,-50]
+Setting list 7 to 17 result = true
+Linked List 	[10,11,12,13,14,15,16,17,-5,-50]
+Setting list 8 to 18 result = true
+Linked List 	[10,11,12,13,14,15,16,17,18,-50]
+Setting list 9 to 19 result = true
+Linked List 	[10,11,12,13,14,15,16,17,18,19]
+Setting list 10 to 20 result = false
+Linked List 	[10,11,12,13,14,15,16,17,18,19]
+
+Test equals method...........................
+
+List 1 = Linked List 	[10,11,12,13,14,15,16,17,18,19]
+List 2 = Empty LinkedList
+List1 == List2 is false
+
+Test clone method............................
+
+List 1 = Linked List 	[10,11,12,13,14,15,16,17,18,19]
+List 2 = Linked List 	[10,11,12,13,14,15,16,17,18,19]
+Re-testing equals...
+List1 == List2 is true
+
+Test addAfter method.........................
+
+Adding value 	99	 after index 	-1	 result = 	false	Linked List 	[10,11,12,13,14,15,16,17,18,19]
+Adding value 	100	 after index 	0	 result = 	true	Linked List 	[10,100,11,12,13,14,15,16,17,18,19]
+Adding value 	101	 after index 	1	 result = 	true	Linked List 	[10,100,101,11,12,13,14,15,16,17,18,1 ... (line shortened) ...
+Adding value 	102	 after index 	2	 result = 	true	Linked List 	[10,100,101,102,11,12,13,14,15,16,17, ... (line shortened) ...
+Adding value 	103	 after index 	3	 result = 	true	Linked List 	[10,100,101,102,103,11,12,13,14,15,16 ... (line shortened) ...
+Adding value 	104	 after index 	4	 result = 	true	Linked List 	[10,100,101,102,103,104,11,12,13,14,1 ... (line shortened) ...
+Adding value 	105	 after index 	5	 result = 	true	Linked List 	[10,100,101,102,103,104,105,11,12,13, ... (line shortened) ...
+Adding value 	106	 after index 	6	 result = 	true	Linked List 	[10,100,101,102,103,104,105,106,11,12 ... (line shortened) ...
+Adding value 	107	 after index 	7	 result = 	true	Linked List 	[10,100,101,102,103,104,105,106,107,1 ... (line shortened) ...
+Adding value 	108	 after index 	8	 result = 	true	Linked List 	[10,100,101,102,103,104,105,106,107,1 ... (line shortened) ...
+Adding value 	109	 after index 	9	 result = 	true	Linked List 	[10,100,101,102,103,104,105,106,107,1 ... (line shortened) ...
+Test other edge case
+Adding value 	10	 after index 	21	 result = 	false	Linked List 	[10,100,101,102,103,104,105,106,107, ... (line shortened) ...
+
+Test addBefore method........................
+
+Adding value 	99	 before index 	-1	 result = 	false	Linked List 	[10,100,101,102,103,104,105,106,107 ... (line shortened) ...
+Adding value 	100	 before index 	0	 result = 	true	Linked List 	[100,10,100,101,102,103,104,105,106, ... (line shortened) ...
+Adding value 	101	 before index 	1	 result = 	true	Linked List 	[100,101,10,100,101,102,103,104,105, ... (line shortened) ...
+Adding value 	102	 before index 	2	 result = 	true	Linked List 	[100,101,102,10,100,101,102,103,104, ... (line shortened) ...
+Adding value 	103	 before index 	3	 result = 	true	Linked List 	[100,101,102,103,10,100,101,102,103, ... (line shortened) ...
+Adding value 	104	 before index 	4	 result = 	true	Linked List 	[100,101,102,103,104,10,100,101,102, ... (line shortened) ...
+Adding value 	105	 before index 	5	 result = 	true	Linked List 	[100,101,102,103,104,105,10,100,101, ... (line shortened) ...
+Adding value 	106	 before index 	6	 result = 	true	Linked List 	[100,101,102,103,104,105,106,10,100, ... (line shortened) ...
+Adding value 	107	 before index 	7	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,10, ... (line shortened) ...
+Adding value 	108	 before index 	8	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,108 ... (line shortened) ...
+Adding value 	109	 before index 	9	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,108 ... (line shortened) ...
+Adding value 	110	 before index 	10	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,10 ... (line shortened) ...
+Adding value 	111	 before index 	11	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,10 ... (line shortened) ...
+Adding value 	112	 before index 	12	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,10 ... (line shortened) ...
+Adding value 	113	 before index 	13	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,10 ... (line shortened) ...
+Adding value 	114	 before index 	14	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,10 ... (line shortened) ...
+Adding value 	115	 before index 	15	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,10 ... (line shortened) ...
+Adding value 	116	 before index 	16	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,10 ... (line shortened) ...
+Adding value 	117	 before index 	17	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,10 ... (line shortened) ...
+Adding value 	118	 before index 	18	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,10 ... (line shortened) ...
+Adding value 	119	 before index 	19	 result = 	true	Linked List 	[100,101,102,103,104,105,106,107,10 ... (line shortened) ...
+Test other edge case
+Adding value 	10	 after before 	41	 result = 	false	Linked List 	[100,101,102,103,104,105,106,107,10 ... (line shortened) ...
+
+Test front and back methods..................
+
+Front of list 1 = 100	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115, ... (line shortened) ...
+Front of list 2 = 10	Linked List 	[10,11,12,13,14,15,16,17,18,19]
+Back of list 1 = 19	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,11 ... (line shortened) ...
+Back of list 2 = 19	Linked List 	[10,11,12,13,14,15,16,17,18,19]
+Clear out list 2
+Front of list 2 = null	Empty LinkedList
+Back of list 2 = null	Empty LinkedList
+
+Cloning list 2 from list 1
+
+Test removeFront method......................
+
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing list 1 front = 	100
+Linked List 	[101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101 ... (line shortened) ...
+Removing list 1 front = 	101
+Linked List 	[102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102 ... (line shortened) ...
+Removing list 1 front = 	102
+Linked List 	[103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103 ... (line shortened) ...
+Removing list 1 front = 	103
+Linked List 	[104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104 ... (line shortened) ...
+Removing list 1 front = 	104
+Linked List 	[105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105 ... (line shortened) ...
+Removing list 1 front = 	105
+Linked List 	[106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106 ... (line shortened) ...
+Removing list 1 front = 	106
+Linked List 	[107,108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107 ... (line shortened) ...
+Removing list 1 front = 	107
+Linked List 	[108,109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108 ... (line shortened) ...
+Removing list 1 front = 	108
+Linked List 	[109,110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109 ... (line shortened) ...
+Removing list 1 front = 	109
+Linked List 	[110,111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11, ... (line shortened) ...
+Removing list 1 front = 	110
+Linked List 	[111,112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,1 ... (line shortened) ...
+Removing list 1 front = 	111
+Linked List 	[112,113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14 ... (line shortened) ...
+Removing list 1 front = 	112
+Linked List 	[113,114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15, ... (line shortened) ...
+Removing list 1 front = 	113
+Linked List 	[114,115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,1 ... (line shortened) ...
+Removing list 1 front = 	114
+Linked List 	[115,116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18 ... (line shortened) ...
+Removing list 1 front = 	115
+Linked List 	[116,117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+Removing list 1 front = 	116
+Linked List 	[117,118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+Removing list 1 front = 	117
+Linked List 	[118,119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+Removing list 1 front = 	118
+Linked List 	[119,10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+Removing list 1 front = 	119
+Linked List 	[10,100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+Removing list 1 front = 	10
+Linked List 	[100,101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+Removing list 1 front = 	100
+Linked List 	[101,102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+Removing list 1 front = 	101
+Linked List 	[102,103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+Removing list 1 front = 	102
+Linked List 	[103,104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+Removing list 1 front = 	103
+Linked List 	[104,105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+Removing list 1 front = 	104
+Linked List 	[105,106,107,108,109,11,12,13,14,15,16,17,18,19]
+Removing list 1 front = 	105
+Linked List 	[106,107,108,109,11,12,13,14,15,16,17,18,19]
+Removing list 1 front = 	106
+Linked List 	[107,108,109,11,12,13,14,15,16,17,18,19]
+Removing list 1 front = 	107
+Linked List 	[108,109,11,12,13,14,15,16,17,18,19]
+Removing list 1 front = 	108
+Linked List 	[109,11,12,13,14,15,16,17,18,19]
+Removing list 1 front = 	109
+Linked List 	[11,12,13,14,15,16,17,18,19]
+Removing list 1 front = 	11
+Linked List 	[12,13,14,15,16,17,18,19]
+Removing list 1 front = 	12
+Linked List 	[13,14,15,16,17,18,19]
+Removing list 1 front = 	13
+Linked List 	[14,15,16,17,18,19]
+Removing list 1 front = 	14
+Linked List 	[15,16,17,18,19]
+Removing list 1 front = 	15
+Linked List 	[16,17,18,19]
+Removing list 1 front = 	16
+Linked List 	[17,18,19]
+Removing list 1 front = 	17
+Linked List 	[18,19]
+Removing list 1 front = 	18
+Linked List 	[19]
+Removing list 1 front = 	19
+Empty LinkedList
+Removing list 1 front = 	null
+
+Cloning list 1 from list 2
+
+Test removeBack method.......................
+
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing list 2 back = 	19
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing list 2 back = 	18
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing list 2 back = 	17
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing list 2 back = 	16
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing list 2 back = 	15
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing list 2 back = 	14
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing list 2 back = 	13
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing list 2 back = 	12
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing list 2 back = 	11
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing list 2 back = 	109
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing list 2 back = 	108
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing list 2 back = 	107
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing list 2 back = 	106
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing list 2 back = 	105
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing list 2 back = 	104
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing list 2 back = 	103
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing list 2 back = 	102
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing list 2 back = 	101
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing list 2 back = 	100
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10]
+Removing list 2 back = 	10
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119]
+Removing list 2 back = 	119
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118]
+Removing list 2 back = 	118
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117]
+Removing list 2 back = 	117
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116]
+Removing list 2 back = 	116
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115]
+Removing list 2 back = 	115
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114]
+Removing list 2 back = 	114
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113]
+Removing list 2 back = 	113
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112]
+Removing list 2 back = 	112
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111]
+Removing list 2 back = 	111
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110]
+Removing list 2 back = 	110
+Linked List 	[100,101,102,103,104,105,106,107,108,109]
+Removing list 2 back = 	109
+Linked List 	[100,101,102,103,104,105,106,107,108]
+Removing list 2 back = 	108
+Linked List 	[100,101,102,103,104,105,106,107]
+Removing list 2 back = 	107
+Linked List 	[100,101,102,103,104,105,106]
+Removing list 2 back = 	106
+Linked List 	[100,101,102,103,104,105]
+Removing list 2 back = 	105
+Linked List 	[100,101,102,103,104]
+Removing list 2 back = 	104
+Linked List 	[100,101,102,103]
+Removing list 2 back = 	103
+Linked List 	[100,101,102]
+Removing list 2 back = 	102
+Linked List 	[100,101]
+Removing list 2 back = 	101
+Linked List 	[100]
+Removing list 2 back = 	100
+Empty LinkedList
+Removing list 2 back = 	null
+
+Cloning list 2 from list 1
+
+Test remove method...........................
+
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	41	 removed: 	null
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	40	 removed: 	null
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	39	 removed: 	19
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	38	 removed: 	18
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	37	 removed: 	17
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	36	 removed: 	16
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	35	 removed: 	15
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	34	 removed: 	14
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	33	 removed: 	13
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	32	 removed: 	12
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	31	 removed: 	11
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	30	 removed: 	109
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	29	 removed: 	108
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	28	 removed: 	107
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	27	 removed: 	106
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	26	 removed: 	105
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	25	 removed: 	104
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	24	 removed: 	103
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	23	 removed: 	102
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	22	 removed: 	101
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10,100 ... (line shortened) ...
+Removing from list 1 from index: 	21	 removed: 	100
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,10]
+Removing from list 1 from index: 	20	 removed: 	10
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119]
+Removing from list 1 from index: 	19	 removed: 	119
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118]
+Removing from list 1 from index: 	18	 removed: 	118
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117]
+Removing from list 1 from index: 	17	 removed: 	117
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116]
+Removing from list 1 from index: 	16	 removed: 	116
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115]
+Removing from list 1 from index: 	15	 removed: 	115
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114]
+Removing from list 1 from index: 	14	 removed: 	114
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113]
+Removing from list 1 from index: 	13	 removed: 	113
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112]
+Removing from list 1 from index: 	12	 removed: 	112
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111]
+Removing from list 1 from index: 	11	 removed: 	111
+Linked List 	[100,101,102,103,104,105,106,107,108,109,110]
+Removing from list 1 from index: 	10	 removed: 	110
+Linked List 	[100,101,102,103,104,105,106,107,108,109]
+Removing from list 1 from index: 	9	 removed: 	109
+Linked List 	[100,101,102,103,104,105,106,107,108]
+Removing from list 1 from index: 	8	 removed: 	108
+Linked List 	[100,101,102,103,104,105,106,107]
+Removing from list 1 from index: 	7	 removed: 	107
+Linked List 	[100,101,102,103,104,105,106]
+Removing from list 1 from index: 	6	 removed: 	106
+Linked List 	[100,101,102,103,104,105]
+Removing from list 1 from index: 	5	 removed: 	105
+Linked List 	[100,101,102,103,104]
+Removing from list 1 from index: 	4	 removed: 	104
+Linked List 	[100,101,102,103]
+Removing from list 1 from index: 	3	 removed: 	103
+Linked List 	[100,101,102]
+Removing from list 1 from index: 	2	 removed: 	102
+Linked List 	[100,101]
+Removing from list 1 from index: 	1	 removed: 	101
+Linked List 	[100]
+Removing from list 1 from index: 	0	 removed: 	100
+Empty LinkedList
+Removing from list 1 from index: 	-1	 removed: 	null
+
+Test contains method.........................
+
+List 1 (empty) contains 10 = false	Empty LinkedList
+List 2 contains 	100	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	101	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	102	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	103	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	104	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	105	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	106	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	107	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	108	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	109	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	110	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	111	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	112	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	113	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	114	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	115	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	116	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	117	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	118	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	119	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	10	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,1 ... (line shortened) ...
+List 2 contains 	100	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	101	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	102	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	103	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	104	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	105	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	106	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	107	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	108	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	109	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114, ... (line shortened) ...
+List 2 contains 	11	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,1 ... (line shortened) ...
+List 2 contains 	12	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,1 ... (line shortened) ...
+List 2 contains 	13	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,1 ... (line shortened) ...
+List 2 contains 	14	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,1 ... (line shortened) ...
+List 2 contains 	15	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,1 ... (line shortened) ...
+List 2 contains 	16	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,1 ... (line shortened) ...
+List 2 contains 	17	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,1 ... (line shortened) ...
+List 2 contains 	18	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,1 ... (line shortened) ...
+List 2 contains 	19	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,1 ... (line shortened) ...
+List 2 contains 	1000	false	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,11 ... (line shortened) ...
+
+Resetting list 1 to: Linked List 	[5,6,7,8,5,6,7,5,6,7]
+
+Test firstIndexOf and lastIndexOf methods....
+
+First index of 5: 	0
+Last index of 5: 	7
+First index of 7: 	2
+Last index of 7: 	9
+First index of 8: 	3
+Last index of 8: 	3
+First index of 9: 	-1
+Last index of 9: 	-1
+
+Test numberOf method.........................
+
+Linked List 	[5,6,7,8,5,6,7,5,6,7]
+Number of 5: 	3
+Number of 8: 	1
+Number of 9: 	0
+
+Test allIndices method.......................
+
+Linked List 	[5,6,7,8,5,6,7,5,6,7]
+Array from indices of 5: 	[0, 4, 7]
+Array from indices of 8: 	[3]
+Array from indices of 9: 	null
+
+Cloning list 2 from list 1
+
+Test remove method...........................
+
+Linked List 	[5,6,7,8,5,6,7,5,6,7]
+Removing 5: 	true	Linked List 	[6,7,8,5,6,7,5,6,7]
+Removing 8: 	true	Linked List 	[6,7,5,6,7,5,6,7]
+Removing 9: 	false	Linked List 	[6,7,5,6,7,5,6,7]
+
+Test removeLast method.......................
+
+Linked List 	[6,7,5,6,7,5,6,7]
+Removing 5: 	true	Linked List 	[6,7,5,6,7,6,7]
+Removing 8: 	false	Linked List 	[6,7,5,6,7,6,7]
+Removing 9: 	false	Linked List 	[6,7,5,6,7,6,7]
+
+Test removeAll method........................
+
+Linked List 	[6,7,5,6,7,6,7]
+Removing all 5: 	true	Linked List 	[6,7,6,7,6,7]
+Removing all 6: 	true	Linked List 	[7,7,7]
+Removing all 9: 	false	Linked List 	[7,7,7]
+
+Cloning list 1 from list 2
+
+Test removeAll array method..................
+
+Linked List 	[5,6,7,8,5,6,7,5,6,7]
+Array: 	[5, 6, 9]
+Removing all from array: Linked List 	[7,8,7,7]
+
+Test removeAll list method..................
+
+List 1 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
+List 2 	Linked List 	[7,8,7,7]
+Removing all list 2 from list 1...
+List 1 	Linked List 	[5,6,5,6,5,6]
+List 2 	Linked List 	[7,8,7,7]
+
+Resetting list 1 and 2 to: Linked List 	[5,6,7,8,5,6,7,5,6,7]
+
+Test containsAll array method................
+
+List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains array: 	[5, 6, 9]	 is false
+List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains array: 	[5, 6, 7, 8]	 is true
+
+Test containsAll list method.................
+
+List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains list: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]	 is tru ... (line shortened) ...
+Alter list 2...
+List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains list: 	Linked List 	[6,7,8,6,7,5,6,45]	 is false
+
+Test addAll array method.....................
+
+Linked List 	[6,7,8,6,7,5,6,45]
+Adding array: 	[5, 6, 7, 8]	 now list 	Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8]
+
+Test addAll list method......................
+
+Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8]
+Adding list: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]	 now list 	Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8,5 ... (line shortened) ...
+
+Test subList method..........................
+
+List 1 = 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
+Pulling out sub-list from 3 to 6: 	Linked List 	[8,5,6,7]
+Pulling out sub-list from 1 to 1: 	Linked List 	[6]
+Pulling out sub-list from 2 to 10: 	null
+Pulling out sub-list from 0 to 9: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
+
+Test fromArray method........................
+
+Array is 	[5, 6, 7, 8]
+List is 	Linked List 	[5,6,7,8]
+
+Test fromLinkedList method...................
+
+1st List is 	Linked List 	[5,6,7,8]
+2nd List is 	Linked List 	[5,6,7,8]
+
+Test toArray method..........................
+
+List 	Linked List 	[5,6,7,8]	 into array 	[5, 6, 7, 8]
+Collections unit complete!...................................................
+Computer Science 40S complete!...................................................
+Computer Science 42SIB starting......................................................
+Permanent Storage Test started......................................................
+// Learn about 'error traps'
+Divide by zero -> java.lang.ArithmeticException: / by zero
+// Create sample data to use
+// Save ONE piece of data to that permanent file
+// Now involve the user to get a file name
+~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
+File already exists!
+// Open file with one line (no user involvment)
+line read was Defenestration
+// Open file with multiple lines (user picks file)
+~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
+This line read was �� sr collections.LinkedList�c������ I 	NOT_FOUNDI lengthI longestWordL he ... (line shortened) ...
+This line read was opponentScoreL opponentNamet Ljava/lang/String;xr #testing.cs40s.advancedclasse ... (line shortened) ...
+This line read was 哩  xr (testing.cs40s.advancedclasses.HighSchoolN���h�  xr %testing.cs40s.adva ... (line shortened) ...
+This line read was �Ơt I ageZ aliveL genderq ~ L nameq ~ xp   t doesn't mattert 	cafeteri ... (line shortened) ...
+This line read was patchworks           sq ~            q ~ sq ~ sq ~    q ~ t 	motivated   ... (line shortened) ...
+This line read was galvanized           sq ~            q ~ sq ~ sq ~    q ~ t plutocracie ... (line shortened) ...
+This line read was bootprints           sq ~            q ~ sq ~ sq ~    q ~ t 	superhero   ... (line shortened) ...
+This line read was parenthesizes           sq ~            q ~ sq ~ sq ~    q ~ t 	toolsmit ... (line shortened) ...
+This line read was intercessions           sq ~            q ~ sq ~ sq ~    q ~ t persever ... (line shortened) ...
+This line read was amphibious           sq ~            q ~ sq ~ sq ~    q ~ t occludes    ... (line shortened) ...
+This line read was exhibitors           sq ~            q ~ sq ~ sq ~    q ~ t Alnilam     ... (line shortened) ...
+This line read was economized           sq ~            q ~ sq ~ sq ~    q ~ t contractile ... (line shortened) ...
+This line read was personalizing           sq ~            q ~ sq ~ sq ~    q ~ t compose  ... (line shortened) ...
+This line read was chilblains           sq ~            q ~ sq ~ sq ~    q ~ t 	acceptive   ... (line shortened) ...
+This line read was seamstress           sq ~            q ~ sq ~ sq ~    q ~ t Merritt     ... (line shortened) ...
+This line read was reverified           sq ~            q ~ sq ~ sq ~    q ~ t 
+This line read was upholsters           sq ~            q ~ sq ~ sq ~    q ~ t contraflows ... (line shortened) ...
+This line read was Heisenberg           sq ~            q ~ sq ~ sq ~    q ~ t apprenticin ... (line shortened) ...
+This line read was firetrucks           sq ~            q ~ sq ~ sq ~    q ~ t 	coercible   ... (line shortened) ...
+// Class to save/open one line (no user)
+Before: Defenestration
+After : Defenestration
+// Class to save/open multiple lines (with user)
+Before: [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have ... (line shortened) ...
+After:  [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have ... (line shortened) ...
+// Now save/open on a complex data type
+Before: Athlete: Husky: HighSchool: Student: Person: Jock is 15 identifes as doesn't matter average  ... (line shortened) ...
+After:  Athlete: Husky: HighSchool: Student: Person: Jock is 15 identifes as doesn't matter average  ... (line shortened) ...
+Before: Linked List 	[Athlete: Husky: HighSchool: Student: Person: rankly is 17 identifes as doesn't ... (line shortened) ...
+After:  Linked List 	[Athlete: Husky: HighSchool: Student: Person: rankly is 17 identifes as doesn't ... (line shortened) ...
+Permanent Storage Test completed!...................................................
+Stacks and Queues Test started......................................................
+// Create objects for testing...
+// Create and Test a stack object...
+// Test toString, size, isEmpty, and push methods...
+Empty = true	Size = 0	Empty Stack
+// Loop through adding random values
+Empty = false	Size = 1	Stack top -> [tonal] <- bottom
+Empty = false	Size = 2	Stack top -> [Marve,tonal] <- bottom
+Empty = false	Size = 3	Stack top -> [Clint,Marve,tonal] <- bottom
+Empty = false	Size = 4	Stack top -> [keyed,Clint,Marve,tonal] <- bottom
+Empty = false	Size = 5	Stack top -> [rater,keyed,Clint,Marve,tonal] <- bottom
+Empty = false	Size = 6	Stack top -> [tiara,rater,keyed,Clint,Marve,tonal] <- bottom
+Empty = false	Size = 7	Stack top -> [Josie,tiara,rater,keyed,Clint,Marve,tonal] <- bottom
+Empty = false	Size = 8	Stack top -> [hound,Josie,tiara,rater,keyed,Clint,Marve,tonal] <- bottom
+Empty = false	Size = 9	Stack top -> [Cokes,hound,Josie,tiara,rater,keyed,Clint,Marve,tonal] <- botto ... (line shortened) ...
+Empty = false	Size = 10	Stack top -> [grill,Cokes,hound,Josie,tiara,rater,keyed,Clint,Marve,tonal] < ... (line shortened) ...
+// Test clone method...
+Clone stack: Stack top -> [grill,Cokes,hound,Josie,tiara,rater,keyed,Clint,Marve,tonal] <- bottom
+// Test equals method...
+Stack top -> [grill,Cokes,hound,Josie,tiara,rater,keyed,Clint,Marve,tonal] <- bottom
+==
+Stack top -> ... (line shortened) ...
+// Now change the copy
+// Now check again
+Stack top -> [grill,Cokes,hound,Josie,tiara,rater,keyed,Clint,Marve,tonal] <- bottom
+!=
+Stack top -> ... (line shortened) ...
+// Re-clone the stack, and output
+Stack top -> [grill,Cokes,hound,Josie,tiara,rater,keyed,Clint,Marve,tonal] <- bottom
+// Text the pop method...
+Clone stack:	Empty = false	Size = 10	Stack top -> [grill,Cokes,hound,Josie,tiara,rater,keyed,Clint,M ... (line shortened) ...
+// Loop through removing values
+Popped -> grill	Empty = false	Size = 9	Stack top -> [Cokes,hound,Josie,tiara,rater,keyed,Clint,Marve ... (line shortened) ...
+Popped -> Cokes	Empty = false	Size = 8	Stack top -> [hound,Josie,tiara,rater,keyed,Clint,Marve,tonal ... (line shortened) ...
+Popped -> hound	Empty = false	Size = 7	Stack top -> [Josie,tiara,rater,keyed,Clint,Marve,tonal] <- b ... (line shortened) ...
+Popped -> Josie	Empty = false	Size = 6	Stack top -> [tiara,rater,keyed,Clint,Marve,tonal] <- bottom
+Popped -> tiara	Empty = false	Size = 5	Stack top -> [rater,keyed,Clint,Marve,tonal] <- bottom
+Popped -> rater	Empty = false	Size = 4	Stack top -> [keyed,Clint,Marve,tonal] <- bottom
+Popped -> keyed	Empty = false	Size = 3	Stack top -> [Clint,Marve,tonal] <- bottom
+Popped -> Clint	Empty = false	Size = 2	Stack top -> [Marve,tonal] <- bottom
+Popped -> Marve	Empty = false	Size = 1	Stack top -> [tonal] <- bottom
+Popped -> tonal	Empty = true	Size = 0	Empty Stack
+Popped -> null	Empty = true	Size = 0	Empty Stack
+// Test peek (top is wrapper no testing needed)...
+Clone Top = null
+Stack Top = grill
+// Test to array and to linked list...
+Linked List 	[grill,Cokes,hound,Josie,tiara,rater,keyed,Clint,Marve,tonal]
+Array   	[grill,Cokes,hound,Josie,tiara,rater,keyed,Clint,Marve,tonal]
+// Test our constructors...
+Stack top -> [grill,Cokes,hound,Josie,tiara,rater,keyed,Clint,Marve,tonal] <- bottom
+Stack top -> [grill,Cokes,hound,Josie,tiara,rater,keyed,Clint,Marve,tonal] <- bottom
+// Test the Queue object...
+// Test toString,size,isEmpty, and enqueue methods...
+Empty = true	Size = 0	Empty Queue
+// Loop through adding random values
+Empty = false	Size = 1	Queue back -> [gawky] <- front
+Empty = false	Size = 2	Queue back -> [cruds,gawky] <- front
+Empty = false	Size = 3	Queue back -> [Nubia,cruds,gawky] <- front
+Empty = false	Size = 4	Queue back -> [Edmon,Nubia,cruds,gawky] <- front
+Empty = false	Size = 5	Queue back -> [sangs,Edmon,Nubia,cruds,gawky] <- front
+Empty = false	Size = 6	Queue back -> [Wotan,sangs,Edmon,Nubia,cruds,gawky] <- front
+Empty = false	Size = 7	Queue back -> [antic,Wotan,sangs,Edmon,Nubia,cruds,gawky] <- front
+Empty = false	Size = 8	Queue back -> [frame,antic,Wotan,sangs,Edmon,Nubia,cruds,gawky] <- front
+Empty = false	Size = 9	Queue back -> [break,frame,antic,Wotan,sangs,Edmon,Nubia,cruds,gawky] <- fron ... (line shortened) ...
+Empty = false	Size = 10	Queue back -> [Josef,break,frame,antic,Wotan,sangs,Edmon,Nubia,cruds,gawky]  ... (line shortened) ...
+// Test clone method...
+Clone Queue 			Queue back -> [Josef,break,frame,antic,Wotan,sangs,Edmon,Nubia,cruds,gawky] <- front
+// Test equals method...
+Queue back -> [Josef,break,frame,antic,Wotan,sangs,Edmon,Nubia,cruds,gawky] <- front
+==
+Queue back - ... (line shortened) ...
+// Now change the duplicate
+// Now check again
+Queue back -> [Josef,break,frame,antic,Wotan,sangs,Edmon,Nubia,cruds,gawky] <- front
+==
+Queue back - ... (line shortened) ...
+// Re-clone the queue, and output
+Queue back -> [Josef,break,frame,antic,Wotan,sangs,Edmon,Nubia,cruds,gawky] <- front
+// Test the dequeue method...
+Clone queue:	Empty = false	Size = 10	Queue back -> [Josef,break,frame,antic,Wotan,sangs,Edmon,Nubia, ... (line shortened) ...
+// Loop through removing values
+Dequeued -> gawky	Empty = false	Size = 9	Queue back -> [Josef,break,frame,antic,Wotan,sangs,Edmon,Nu ... (line shortened) ...
+Dequeued -> cruds	Empty = false	Size = 8	Queue back -> [Josef,break,frame,antic,Wotan,sangs,Edmon,Nu ... (line shortened) ...
+Dequeued -> Nubia	Empty = false	Size = 7	Queue back -> [Josef,break,frame,antic,Wotan,sangs,Edmon] < ... (line shortened) ...
+Dequeued -> Edmon	Empty = false	Size = 6	Queue back -> [Josef,break,frame,antic,Wotan,sangs] <- fron ... (line shortened) ...
+Dequeued -> sangs	Empty = false	Size = 5	Queue back -> [Josef,break,frame,antic,Wotan] <- front
+Dequeued -> Wotan	Empty = false	Size = 4	Queue back -> [Josef,break,frame,antic] <- front
+Dequeued -> antic	Empty = false	Size = 3	Queue back -> [Josef,break,frame] <- front
+Dequeued -> frame	Empty = false	Size = 2	Queue back -> [Josef,break] <- front
+Dequeued -> break	Empty = false	Size = 1	Queue back -> [Josef] <- front
+Dequeued -> Josef	Empty = true	Size = 0	Empty Queue
+Dequeued -> null	Empty = true	Size = 0	Empty Queue
+// Test front and back...
+Clone Front = null
+Queue Front = gawky
+Clone Back  = null
+Queue Back  = Josef
+// Test to array and to linked list...
+Linked List 	[Josef,break,frame,antic,Wotan,sangs,Edmon,Nubia,cruds,gawky]
+Array   	[Josef,break,frame,antic,Wotan,sangs,Edmon,Nubia,cruds,gawky]
+// Test our constructors...
+Queue back -> [Josef,break,frame,antic,Wotan,sangs,Edmon,Nubia,cruds,gawky] <- front
+Queue back -> [Josef,break,frame,antic,Wotan,sangs,Edmon,Nubia,cruds,gawky] <- front
+// Constructors from stack to queue (and back)...
+Queue back -> [Josef,break,frame,antic,Wotan,sangs,Edmon,Nubia,cruds,gawky] <- front	 into 	Stack to ... (line shortened) ...
+Stack top -> [Josef,break,frame,antic,Wotan,sangs,Edmon,Nubia,cruds,gawky] <- bottom	 into 	Queue ba ... (line shortened) ...
+Stacks and Queues Test completed!...................................................
+Searching and Sorting Test started......................................................
+// For the I.B. Exam, you only need to know:
+// Search: linear search and binary search
+// Sort: bubble sort and the selection sort
+// Create some constants (edges) for the data
+// Create some random data to search through and sort
+// Including edge cases to test
+// Create data to store the results...
+// The simpliest of searches
+// Now the linear search on all test data
+// Simple sort...
+// We will re-scramble array for further testing
+// Now bubble sort (from bubbles rising from water)
+// Now selection sort (from selecting the smallest)
+// Now binary search (named after two or dividing)
+// NOTE: binary search can only happen on sorted list
+// Redo some of the test data...
+// Use class for searching and sorting
+// Create random linked list data
+// Place all test cases into another linked list
+// Execute the linear search on all test data...
+// Execute all the sorts on all test data...
+// Bubble sort LinkedList data...
+// Selection sort LinkedList data...
+// Shell sort LinkedList data...
+// Insertion sort LinkedList data...
+// Quick sort LinkedList data...
+// Merge sort LinkedList data...
+// Execute the binary search on all test data...
+Searching and Sorting Test completed!...................................................
+Binary Trees Test started......................................................
+// Constants/variables for creating random values...
+// Creating some TreeNode objects...
+// Linking the TreeNodes...
+// Testing TreeNode equals...
+// Testing TreeNode toString...
+80
+46
+41
+// Creating a Tree object...
+// Test the insert method...
+// Insert one more...
+// Test the search of the tree...
+Should be found     = true
+Should NOT be found = false
+// Test toString() and pre, post, in order traversals
+Binary Tree:
+Order: Linked List 	[38,59,67,71,86,88]
+Pre:   Linked List 	[38,59,67,71,86,88]
+Post:   ... (line shortened) ...
+// Building second tree (test clone) and test equals
+1st tree -> Linked List 	[38,59,67,71,86,88]
+2nd tree -> Linked List 	[16,66,68,82,88,96]
+1st!=2nd
+// Building a third tree (test clone) and test equals
+1st tree -> Linked List 	[38,59,67,71,86,88]
+3rd tree -> Linked List 	[38,59,67,71,86,88]
+1st==3rd
+// Build all our data structures from each other...
+// Create variable objects...
+// Create array from variables...
+// Create LinkedList from array...
+// Create Stack from LinkedList...
+// Create Queue from Stack...
+// Create Tree from Queue...
+// Output variables,array,list,stack,queue,tree...
+nigel
+overs
+tasks
+dolly
+stout
+[nigel,overs,tasks,dolly,stout]
+Linked List 	[nigel,overs,tasks,dolly,stout]
+Stack top -> [nigel,overs,tasks,dolly,stout] <- bottom
+Queue back -> [nigel,overs,tasks,dolly,stout] <- front
+Binary Tree:
+Order: Linked List 	[nigel,overs,tasks,dolly,stout]
+Pre:   Linked List 	[nigel,dolly,ov ... (line shortened) ...
+// Now re-building queue from tree
+// Now re-building stack from queue
+// Now re-building LinkedList from stack...
+// Now re-building array from LinkedList...
+// Output array,list,stack,queue,tree again...
+[dolly,nigel,overs,stout,tasks]
+Linked List 	[dolly,nigel,overs,stout,tasks]
+Stack top -> [dolly,nigel,overs,stout,tasks] <- bottom
+Queue back -> [dolly,nigel,overs,stout,tasks] <- front
+Binary Tree:
+Order: Linked List 	[nigel,overs,tasks,dolly,stout]
+Pre:   Linked List 	[nigel,dolly,ov ... (line shortened) ...
+Binary Trees Test completed!...................................................
+Computer Science 42SIB complete!...................................................

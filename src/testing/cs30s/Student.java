@@ -2,6 +2,10 @@
 /** Required package class namespace */
 package testing.cs30s;
 
+/** Required API imports */
+import io.System;
+
+
 /**
  * Student.java - represents a student. This class uses inheritance to inherit
  * the properties and methods from the Person class. This means the Student
