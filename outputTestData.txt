@@ -64,12 +64,12 @@
 63:	answer4 = 125.0
 64:	answer5 = 3.0
 65:	answer6 = -0.6931471805599453
-66:	seed = 0.5177747716607831
+66:	seed = 0.609888438986178
 67:	high   = 10.0
 68:	low    = 1.0
-69:	number = 6.177747716607831
-70:	value = 6
-71:	card is 32
+69:	number = 7.098884389861779
+70:	value = 7
+71:	card is 46
 72:	equal
 73:	The example is 
 74:	less than
@@ -327,7 +327,7 @@ They would like an easy w ... (line shortened) ...
 323:	Problems
 324:	Problems
 325:	Problems
-326:	Number is 10
+326:	Number is 6
 327:	~~~ SIMULATED {Message} DIALOG: Hello ~~~ 
 328:	~~~ SIMULATED {Message} DIALOG: Good-bye ~~~ { title: Learning Methods },
 329:	Completed Learning Methods!
@@ -538,11 +538,11 @@ They would like an easy w ... (line shortened) ...
 534:	~~~ SIMULATED {Message} DIALOG: Array [666,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ... (line shortened) ...
 535:	~~~ SIMULATED {Message} DIALOG: Array [0,0,0,1,2,] ~~~ 
 536:	~~~ SIMULATED {Message} DIALOG: Array [0,0,0,0,0,] ~~~ 
-537:	~~~ SIMULATED {Message} DIALOG: Array [6,7,10,4,8,4,7,7,10,6,10,6,6,6,2,3,1,10,3,10,5,5,2,9,10,10,8,2,1,10,2,2,7,7,8,7,4,7,2,5,9,6,4,6,4,7,2,7,3,2,] ~~~ 
-538:	Random character was i
-539:	h r x r r i z s e f p v k c k g c n u r x h s h z s a l d r h f o u b i g e e x 
-j x x y h r k j n g j q m w e p u a e j j v g k d r t x a c w t g y z f r i o u 
-o d x p i f j o z c p y s s j m z w f  ... (line shortened) ...
+537:	~~~ SIMULATED {Message} DIALOG: Array [3,3,5,4,9,5,8,4,2,1,9,10,2,9,4,7,2,1,7,2,10,8,7,8,2,2,8,9,10,10,3,5,4,6,4,6,7,9,3,10,1,4,5,8,5,3,4,8,1,5,] ~~~ 
+538:	Random character was y
+539:	p d s v x g z l e p g p j e x s d f q u l s k n l e x r s x i g a s a c d l b v 
+l l y m k p p u o a s e e p a c r f d u p n h s v d m w x t c j z h g l v o v n 
+s t l f t w u h c h u t n u z r f x z  ... (line shortened) ...
 540:	X O X 
 O X O 
 X O X 
@@ -1836,237 +1836,237 @@ Test toArray method..........................
 1731:	line read was Defenestration
 1732:	// Open file with multiple lines (user picks file)
 1733:	~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
-1734:	This line read was �� sr collections.LinkedList�c������ I 	NOT_FOUNDI lengthI longestWordL headt Lcollections/Node;L tailq ~ xp����   d   psr collections.Node3�bdAA�Z L datat Ljava/lang ... (line shortened) ...
+1734:	This line read was �� sr collections.LinkedList�c������ I 	NOT_FOUNDI lengthI longestWordL headt Lcollections/Node;L tailq ~ xp����   d   osr collections.Node3�bdAA�Z L datat Ljava/lang ... (line shortened) ...
 1735:	This line read was opponentScoreL opponentNamet Ljava/lang/String;xr #testing.cs40s.advancedclasses.Husky1O�
 1736:	This line read was 哩  xr (testing.cs40s.advancedclasses.HighSchoolN���h�  xr %testing.cs40s.advancedclasses.Student�<_�h��# D gpaI numberL bookt $Ltesting/cs40s/advancedclasses/Book;xr $testi ... (line shortened) ...
-1737:	This line read was �Ơt I ageZ aliveL genderq ~ L nameq ~ xp   t doesn't mattert mimeographs           sr "testing.cs40s.advancedclasses.Book����J�5  xp           t  sq ~ sq ~    q ~ ... (line shortened) ...
-1738:	This line read was objectives           sq ~            q ~ sq ~ sq ~    q ~ t Ashia           sq ~            q ~ sq ~ sq ~    q ~ t mere           sq ~            q ~ sq ~ s ... (line shortened) ...
-1739:	This line read was technicalness           sq ~            q ~ sq ~ sq ~    q ~ t eagle           sq ~            q ~ sq ~ sq ~    q ~ t modifies           sq ~            q ~  ... (line shortened) ...
-1740:	This line read was bookbinderies           sq ~            q ~ sq ~ sq ~    q ~ t nuncio           sq ~            q ~ sq ~ sq ~    q ~ t 	critiques           sq ~            q ~ ... (line shortened) ...
-1741:	This line read was hydraulically           sq ~            q ~ sq ~ sq ~    q ~ t exposers           sq ~            q ~ sq ~ sq ~    q ~ t slushier           sq ~            q  ... (line shortened) ...
-1742:	This line read was adversenesses           sq ~            q ~ sq ~ sq ~    q ~ t brawling           sq ~            q ~ sq ~ sq ~    q ~ t waterinesses           sq ~           ... (line shortened) ...
-1743:	This line read was overjoying           sq ~            q ~ sq ~ sq ~    q ~ t apse           sq ~            q ~ sq ~ sq ~    q ~ t Worthington           sq ~            q ~ s ... (line shortened) ...
-1744:	This line read was delusional           sq ~            q ~ sq ~ sq ~    q ~ t 
-1745:	This line read was maximality           sq ~            q ~ sq ~ sq ~    q ~ t Grissel           sq ~            q ~ sq ~ sq ~    q ~ t 	buggering           sq ~            q ~  ... (line shortened) ...
-1746:	This line read was handmaiden           sq ~            q ~ sq ~ sq ~    q ~ t 
-1747:	This line read was manicuring           sq ~            q ~ sq ~ sq ~    q ~ t slyly           sq ~            q ~ sq ~ sq ~    q ~ t discus           sq ~            q ~ sq ~  ... (line shortened) ...
-1748:	This line read was stretchier           sq ~            q ~ sq ~ sq ~    q ~ t watermelons           sq ~            q ~ sq ~ sq ~    q ~ t shimmies           sq ~            q  ... (line shortened) ...
-1749:	This line read was immunologists           sq ~            q ~ sq ~ sq ~    q ~ t pastrami           sq ~            q ~ sq ~ sq ~    q ~ t 
-1750:	This line read was metallized           sq ~            q ~ sq ~ sq ~    q ~ t unobservable           sq ~            q ~ sq ~ sq ~    q ~ t Nataline           sq ~            q ... (line shortened) ...
-1751:	// Class to save/open one line (no user)
-1752:	Before: Defenestration
-1753:	After : Defenestration
-1754:	// Class to save/open multiple lines (with user)
-1755:	Before: [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
-1756:	After:  [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
-1757:	// Now save/open on a complex data type
-1758:	Before: Athlete: Husky: HighSchool: Student: Person: Jock is 15 identifes as doesn't matter average is 0.0
-1759:	After:  Athlete: Husky: HighSchool: Student: Person: Jock is 15 identifes as doesn't matter average is 0.0
-1760:	Before: Linked List 	[Athlete: Husky: HighSchool: Student: Person: gar is 15 identifes as doesn't matter average is 0.0,Athlete: Husky: HighSchool: Student: Person: shoguns is 15 identifes as doesn't  ... (line shortened) ...
-1761:	After:  Linked List 	[Athlete: Husky: HighSchool: Student: Person: gar is 15 identifes as doesn't matter average is 0.0,Athlete: Husky: HighSchool: Student: Person: shoguns is 15 identifes as doesn't  ... (line shortened) ...
-1762:	Permanent Storage Test completed!...................................................
-1763:	Stacks and Queues Test started......................................................
-1764:	// Create objects for testing...
-1765:	// Create and Test a stack object...
-1766:	// Test toString, size, isEmpty, and push methods...
-1767:	Empty = true	Size = 0	Empty Stack
-1768:	// Loop through adding random values
-1769:	Empty = false	Size = 1	Stack top -> [ferry] <- bottom
-1770:	Empty = false	Size = 2	Stack top -> [Cindi,ferry] <- bottom
-1771:	Empty = false	Size = 3	Stack top -> [apple,Cindi,ferry] <- bottom
-1772:	Empty = false	Size = 4	Stack top -> [Tisha,apple,Cindi,ferry] <- bottom
-1773:	Empty = false	Size = 5	Stack top -> [hazer,Tisha,apple,Cindi,ferry] <- bottom
-1774:	Empty = false	Size = 6	Stack top -> [Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
-1775:	Empty = false	Size = 7	Stack top -> [Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
-1776:	Empty = false	Size = 8	Stack top -> [Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
-1777:	Empty = false	Size = 9	Stack top -> [Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
-1778:	Empty = false	Size = 10	Stack top -> [Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
-1779:	// Test clone method...
-1780:	Clone stack: Stack top -> [Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
-1781:	// Test equals method...
-1782:	Stack top -> [Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
+1737:	This line read was �Ơt I ageZ aliveL genderq ~ L nameq ~ xp   t doesn't mattert commissariat           sr "testing.cs40s.advancedclasses.Book����J�5  xp           t  sq ~ sq ~    q  ... (line shortened) ...
+1738:	This line read was grosgrains           sq ~            q ~ sq ~ sq ~    q ~ t 	factually           sq ~            q ~ sq ~ sq ~    q ~ t aligning           sq ~            q ~  ... (line shortened) ...
+1739:	This line read was habituates           sq ~            q ~ sq ~ sq ~    q ~ t smiter           sq ~            q ~ sq ~ sq ~    q ~ t sparky           sq ~            q ~ sq ~ ... (line shortened) ...
+1740:	This line read was impudently           sq ~            q ~ sq ~ sq ~    q ~ t dragonflies           sq ~            q ~ sq ~ sq ~    q ~ t Matthus           sq ~            q ~ ... (line shortened) ...
+1741:	This line read was callowness           sq ~            q ~ sq ~ sq ~    q ~ t spates           sq ~            q ~ sq ~ sq ~    q ~ t 
+1742:	This line read was conversely           sq ~            q ~ sq ~ sq ~    q ~ t 
+1743:	This line read was causewayed           sq ~            q ~ sq ~ sq ~    q ~ t dimensionality           sq ~            q ~ sq ~ sq ~    q ~ t wittinesses           sq ~         ... (line shortened) ...
+1744:	This line read was homeowners           sq ~            q ~ sq ~ sq ~    q ~ t 	aloneness           sq ~            q ~ sq ~ sq ~    q ~ t 	Pygmalion           sq ~            q ~ ... (line shortened) ...
+1745:	This line read was paraplegia           sq ~            q ~ sq ~ sq ~    q ~ t adagios           sq ~            q ~ sq ~ sq ~    q ~ t 
+1746:	This line read was Enrichetta           sq ~            q ~ sq ~ sq ~    q ~ t kowtows           sq ~            q ~ sq ~ sq ~    q ~ t elasticized           sq ~            q ~ ... (line shortened) ...
+1747:	This line read was congruency           sq ~            q ~ sq ~ sq ~    q ~ t mots           sq ~            q ~ sq ~ sq ~    q ~ t wenches           sq ~            q ~ sq ~  ... (line shortened) ...
+1748:	This line read was calculator           sq ~            q ~ sq ~ sq ~    q ~ t Brain           sq ~            q ~ sq ~ sq ~    q ~ t robustnesses           sq ~            q ~  ... (line shortened) ...
+1749:	This line read was polypropylene           sq ~            q ~ sq ~ sq ~    q ~ t Havel           sq ~            q ~ sq ~ sq ~    q ~ t 	appendage           sq ~            q ~  ... (line shortened) ...
+1750:	// Class to save/open one line (no user)
+1751:	Before: Defenestration
+1752:	After : Defenestration
+1753:	// Class to save/open multiple lines (with user)
+1754:	Before: [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
+1755:	After:  [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
+1756:	// Now save/open on a complex data type
+1757:	Before: Athlete: Husky: HighSchool: Student: Person: Jock is 15 identifes as doesn't matter average is 0.0
+1758:	After:  Athlete: Husky: HighSchool: Student: Person: Jock is 15 identifes as doesn't matter average is 0.0
+1759:	Before: Linked List 	[Athlete: Husky: HighSchool: Student: Person: musting is 15 identifes as doesn't matter average is 0.0,Athlete: Husky: HighSchool: Student: Person: vassals is 21 identifes as does ... (line shortened) ...
+1760:	After:  Linked List 	[Athlete: Husky: HighSchool: Student: Person: musting is 15 identifes as doesn't matter average is 0.0,Athlete: Husky: HighSchool: Student: Person: vassals is 21 identifes as does ... (line shortened) ...
+1761:	Permanent Storage Test completed!...................................................
+1762:	Stacks and Queues Test started......................................................
+1763:	// Create objects for testing...
+1764:	// Create and Test a stack object...
+1765:	// Test toString, size, isEmpty, and push methods...
+1766:	Empty = true	Size = 0	Empty Stack
+1767:	// Loop through adding random values
+1768:	Empty = false	Size = 1	Stack top -> [chubs] <- bottom
+1769:	Empty = false	Size = 2	Stack top -> [neath,chubs] <- bottom
+1770:	Empty = false	Size = 3	Stack top -> [sleek,neath,chubs] <- bottom
+1771:	Empty = false	Size = 4	Stack top -> [mambo,sleek,neath,chubs] <- bottom
+1772:	Empty = false	Size = 5	Stack top -> [riyal,mambo,sleek,neath,chubs] <- bottom
+1773:	Empty = false	Size = 6	Stack top -> [tabla,riyal,mambo,sleek,neath,chubs] <- bottom
+1774:	Empty = false	Size = 7	Stack top -> [Manet,tabla,riyal,mambo,sleek,neath,chubs] <- bottom
+1775:	Empty = false	Size = 8	Stack top -> [nitre,Manet,tabla,riyal,mambo,sleek,neath,chubs] <- bottom
+1776:	Empty = false	Size = 9	Stack top -> [Tarra,nitre,Manet,tabla,riyal,mambo,sleek,neath,chubs] <- bottom
+1777:	Empty = false	Size = 10	Stack top -> [shape,Tarra,nitre,Manet,tabla,riyal,mambo,sleek,neath,chubs] <- bottom
+1778:	// Test clone method...
+1779:	Clone stack: Stack top -> [shape,Tarra,nitre,Manet,tabla,riyal,mambo,sleek,neath,chubs] <- bottom
+1780:	// Test equals method...
+1781:	Stack top -> [shape,Tarra,nitre,Manet,tabla,riyal,mambo,sleek,neath,chubs] <- bottom
 ==
-Stack top -> [Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
-1783:	// Now change the copy
-1784:	// Now check again
-1785:	Stack top -> [Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
+Stack top -> [shape,Tarra,nitre,Manet,tabla,riyal,mambo,sleek,neath,chubs] <- bottom
+1782:	// Now change the copy
+1783:	// Now check again
+1784:	Stack top -> [shape,Tarra,nitre,Manet,tabla,riyal,mambo,sleek,neath,chubs] <- bottom
 !=
-Stack top -> [Doric] <- bottom
-1786:	// Re-clone the stack, and output
-1787:	Stack top -> [Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
-1788:	// Text the pop method...
-1789:	Clone stack:	Empty = false	Size = 10	Stack top -> [Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
-1790:	// Loop through removing values
-1791:	Popped -> Cesya	Empty = false	Size = 9	Stack top -> [Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
-1792:	Popped -> Simon	Empty = false	Size = 8	Stack top -> [Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
-1793:	Popped -> Garry	Empty = false	Size = 7	Stack top -> [Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
-1794:	Popped -> Marga	Empty = false	Size = 6	Stack top -> [Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
-1795:	Popped -> Snell	Empty = false	Size = 5	Stack top -> [hazer,Tisha,apple,Cindi,ferry] <- bottom
-1796:	Popped -> hazer	Empty = false	Size = 4	Stack top -> [Tisha,apple,Cindi,ferry] <- bottom
-1797:	Popped -> Tisha	Empty = false	Size = 3	Stack top -> [apple,Cindi,ferry] <- bottom
-1798:	Popped -> apple	Empty = false	Size = 2	Stack top -> [Cindi,ferry] <- bottom
-1799:	Popped -> Cindi	Empty = false	Size = 1	Stack top -> [ferry] <- bottom
-1800:	Popped -> ferry	Empty = true	Size = 0	Empty Stack
-1801:	Popped -> null	Empty = true	Size = 0	Empty Stack
-1802:	// Test peek (top is wrapper no testing needed)...
-1803:	Clone Top = null
-1804:	Stack Top = Cesya
-1805:	// Test to array and to linked list...
-1806:	Linked List 	[Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry]
-1807:	Array   	[Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry]
-1808:	// Test our constructors...
-1809:	Stack top -> [Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
-1810:	Stack top -> [Cesya,Simon,Garry,Marga,Snell,hazer,Tisha,apple,Cindi,ferry] <- bottom
-1811:	// Test the Queue object...
-1812:	// Test toString,size,isEmpty, and enqueue methods...
-1813:	Empty = true	Size = 0	Empty Queue
-1814:	// Loop through adding random values
-1815:	Empty = false	Size = 1	Queue back -> [Essex] <- front
-1816:	Empty = false	Size = 2	Queue back -> [Wests,Essex] <- front
-1817:	Empty = false	Size = 3	Queue back -> [gluer,Wests,Essex] <- front
-1818:	Empty = false	Size = 4	Queue back -> [Blane,gluer,Wests,Essex] <- front
-1819:	Empty = false	Size = 5	Queue back -> [japes,Blane,gluer,Wests,Essex] <- front
-1820:	Empty = false	Size = 6	Queue back -> [cloak,japes,Blane,gluer,Wests,Essex] <- front
-1821:	Empty = false	Size = 7	Queue back -> [Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
-1822:	Empty = false	Size = 8	Queue back -> [Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
-1823:	Empty = false	Size = 9	Queue back -> [octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
-1824:	Empty = false	Size = 10	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
-1825:	// Test clone method...
-1826:	Clone Queue 			Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
-1827:	// Test equals method...
-1828:	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
+Stack top -> [iotas] <- bottom
+1785:	// Re-clone the stack, and output
+1786:	Stack top -> [shape,Tarra,nitre,Manet,tabla,riyal,mambo,sleek,neath,chubs] <- bottom
+1787:	// Text the pop method...
+1788:	Clone stack:	Empty = false	Size = 10	Stack top -> [shape,Tarra,nitre,Manet,tabla,riyal,mambo,sleek,neath,chubs] <- bottom
+1789:	// Loop through removing values
+1790:	Popped -> shape	Empty = false	Size = 9	Stack top -> [Tarra,nitre,Manet,tabla,riyal,mambo,sleek,neath,chubs] <- bottom
+1791:	Popped -> Tarra	Empty = false	Size = 8	Stack top -> [nitre,Manet,tabla,riyal,mambo,sleek,neath,chubs] <- bottom
+1792:	Popped -> nitre	Empty = false	Size = 7	Stack top -> [Manet,tabla,riyal,mambo,sleek,neath,chubs] <- bottom
+1793:	Popped -> Manet	Empty = false	Size = 6	Stack top -> [tabla,riyal,mambo,sleek,neath,chubs] <- bottom
+1794:	Popped -> tabla	Empty = false	Size = 5	Stack top -> [riyal,mambo,sleek,neath,chubs] <- bottom
+1795:	Popped -> riyal	Empty = false	Size = 4	Stack top -> [mambo,sleek,neath,chubs] <- bottom
+1796:	Popped -> mambo	Empty = false	Size = 3	Stack top -> [sleek,neath,chubs] <- bottom
+1797:	Popped -> sleek	Empty = false	Size = 2	Stack top -> [neath,chubs] <- bottom
+1798:	Popped -> neath	Empty = false	Size = 1	Stack top -> [chubs] <- bottom
+1799:	Popped -> chubs	Empty = true	Size = 0	Empty Stack
+1800:	Popped -> null	Empty = true	Size = 0	Empty Stack
+1801:	// Test peek (top is wrapper no testing needed)...
+1802:	Clone Top = null
+1803:	Stack Top = shape
+1804:	// Test to array and to linked list...
+1805:	Linked List 	[shape,Tarra,nitre,Manet,tabla,riyal,mambo,sleek,neath,chubs]
+1806:	Array   	[shape,Tarra,nitre,Manet,tabla,riyal,mambo,sleek,neath,chubs]
+1807:	// Test our constructors...
+1808:	Stack top -> [shape,Tarra,nitre,Manet,tabla,riyal,mambo,sleek,neath,chubs] <- bottom
+1809:	Stack top -> [shape,Tarra,nitre,Manet,tabla,riyal,mambo,sleek,neath,chubs] <- bottom
+1810:	// Test the Queue object...
+1811:	// Test toString,size,isEmpty, and enqueue methods...
+1812:	Empty = true	Size = 0	Empty Queue
+1813:	// Loop through adding random values
+1814:	Empty = false	Size = 1	Queue back -> [libel] <- front
+1815:	Empty = false	Size = 2	Queue back -> [Tania,libel] <- front
+1816:	Empty = false	Size = 3	Queue back -> [ledge,Tania,libel] <- front
+1817:	Empty = false	Size = 4	Queue back -> [harps,ledge,Tania,libel] <- front
+1818:	Empty = false	Size = 5	Queue back -> [lilts,harps,ledge,Tania,libel] <- front
+1819:	Empty = false	Size = 6	Queue back -> [karma,lilts,harps,ledge,Tania,libel] <- front
+1820:	Empty = false	Size = 7	Queue back -> [topic,karma,lilts,harps,ledge,Tania,libel] <- front
+1821:	Empty = false	Size = 8	Queue back -> [Leese,topic,karma,lilts,harps,ledge,Tania,libel] <- front
+1822:	Empty = false	Size = 9	Queue back -> [punch,Leese,topic,karma,lilts,harps,ledge,Tania,libel] <- front
+1823:	Empty = false	Size = 10	Queue back -> [Sande,punch,Leese,topic,karma,lilts,harps,ledge,Tania,libel] <- front
+1824:	// Test clone method...
+1825:	Clone Queue 			Queue back -> [Sande,punch,Leese,topic,karma,lilts,harps,ledge,Tania,libel] <- front
+1826:	// Test equals method...
+1827:	Queue back -> [Sande,punch,Leese,topic,karma,lilts,harps,ledge,Tania,libel] <- front
 ==
-Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
-1829:	// Now change the duplicate
-1830:	// Now check again
-1831:	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
+Queue back -> [Sande,punch,Leese,topic,karma,lilts,harps,ledge,Tania,libel] <- front
+1828:	// Now change the duplicate
+1829:	// Now check again
+1830:	Queue back -> [Sande,punch,Leese,topic,karma,lilts,harps,ledge,Tania,libel] <- front
 ==
-Queue back -> [Peron] <- front
-1832:	// Re-clone the queue, and output
-1833:	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
-1834:	// Test the dequeue method...
-1835:	Clone queue:	Empty = false	Size = 10	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
-1836:	// Loop through removing values
-1837:	Dequeued -> Essex	Empty = false	Size = 9	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests] <- front
-1838:	Dequeued -> Wests	Empty = false	Size = 8	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer] <- front
-1839:	Dequeued -> gluer	Empty = false	Size = 7	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane] <- front
-1840:	Dequeued -> Blane	Empty = false	Size = 6	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes] <- front
-1841:	Dequeued -> japes	Empty = false	Size = 5	Queue back -> [Adele,octet,Cleon,Willa,cloak] <- front
-1842:	Dequeued -> cloak	Empty = false	Size = 4	Queue back -> [Adele,octet,Cleon,Willa] <- front
-1843:	Dequeued -> Willa	Empty = false	Size = 3	Queue back -> [Adele,octet,Cleon] <- front
-1844:	Dequeued -> Cleon	Empty = false	Size = 2	Queue back -> [Adele,octet] <- front
-1845:	Dequeued -> octet	Empty = false	Size = 1	Queue back -> [Adele] <- front
-1846:	Dequeued -> Adele	Empty = true	Size = 0	Empty Queue
-1847:	Dequeued -> null	Empty = true	Size = 0	Empty Queue
-1848:	// Test front and back...
-1849:	Clone Front = null
-1850:	Queue Front = Essex
-1851:	Clone Back  = null
-1852:	Queue Back  = Adele
-1853:	// Test to array and to linked list...
-1854:	Linked List 	[Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex]
-1855:	Array   	[Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex]
-1856:	// Test our constructors...
-1857:	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
-1858:	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
-1859:	// Constructors from stack to queue (and back)...
-1860:	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front	 into 	Stack top -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- bottom
-1861:	Stack top -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- bottom	 into 	Queue back -> [Adele,octet,Cleon,Willa,cloak,japes,Blane,gluer,Wests,Essex] <- front
-1862:	Stacks and Queues Test completed!...................................................
-1863:	Searching and Sorting Test started......................................................
-1864:	// For the I.B. Exam, you only need to know:
-1865:	// Search: linear search and binary search
-1866:	// Sort: bubble sort and the selection sort
-1867:	// Create some constants (edges) for the data
-1868:	// Create some random data to search through and sort
-1869:	// Including edge cases to test
-1870:	// Create data to store the results...
-1871:	// The simpliest of searches
-1872:	// Now the linear search on all test data
-1873:	// Simple sort...
-1874:	// We will re-scramble array for further testing
-1875:	// Now bubble sort (from bubbles rising from water)
-1876:	// Now selection sort (from selecting the smallest)
-1877:	// Now binary search (named after two or dividing)
-1878:	// NOTE: binary search can only happen on sorted list
-1879:	// Redo some of the test data...
-1880:	// Use class for searching and sorting
-1881:	// Create random linked list data
-1882:	// Place all test cases into another linked list
-1883:	// Execute the linear search on all test data...
-1884:	// Execute all the sorts on all test data...
-1885:	// Bubble sort LinkedList data...
-1886:	// Selection sort LinkedList data...
-1887:	// Shell sort LinkedList data...
-1888:	// Insertion sort LinkedList data...
-1889:	// Quick sort LinkedList data...
-1890:	// Merge sort LinkedList data...
-1891:	// Execute the binary search on all test data...
-1892:	Searching and Sorting Test completed!...................................................
-1893:	Binary Trees Test started......................................................
-1894:	// Constants/variables for creating random values...
-1895:	// Creating some TreeNode objects...
-1896:	// Linking the TreeNodes...
-1897:	// Testing TreeNode equals...
-1898:	// Testing TreeNode toString...
-1899:	96
-1900:	75
-1901:	25
-1902:	// Creating a Tree object...
-1903:	// Test the insert method...
-1904:	// Insert one more...
-1905:	// Test the search of the tree...
-1906:	Should be found     = true
-1907:	Should NOT be found = false
-1908:	// Test toString() and pre, post, in order traversals
-1909:	Binary Tree:
-Order: Linked List 	[61,44,63,53,52,56]
-Pre:   Linked List 	[61,44,53,52,56,63]
-Post:  Linked List 	[52,56,53,44,63,61]
-In:    Linked List 	[44,52,53,56,61,63]
-1910:	// Building second tree (test clone) and test equals
-1911:	1st tree -> Linked List 	[44,52,53,56,61,63]
-1912:	2nd tree -> Linked List 	[18,27,35,44,60,73]
-1913:	1st!=2nd
-1914:	// Building a third tree (test clone) and test equals
-1915:	1st tree -> Linked List 	[44,52,53,56,61,63]
-1916:	3rd tree -> Linked List 	[44,52,53,56,61,63]
-1917:	1st==3rd
-1918:	// Build all our data structures from each other...
-1919:	// Create variable objects...
-1920:	// Create array from variables...
-1921:	// Create LinkedList from array...
-1922:	// Create Stack from LinkedList...
-1923:	// Create Queue from Stack...
-1924:	// Create Tree from Queue...
-1925:	// Output variables,array,list,stack,queue,tree...
-1926:	lysol
-1927:	hocks
-1928:	meals
-1929:	cohos
-1930:	swank
-1931:	[lysol,hocks,meals,cohos,swank]
-1932:	Linked List 	[lysol,hocks,meals,cohos,swank]
-1933:	Stack top -> [lysol,hocks,meals,cohos,swank] <- bottom
-1934:	Queue back -> [lysol,hocks,meals,cohos,swank] <- front
-1935:	Binary Tree:
-Order: Linked List 	[lysol,hocks,meals,cohos,swank]
-Pre:   Linked List 	[lysol,hocks,cohos,meals,swank]
-Post:  Linked List 	[cohos,hocks,swank,meals,lysol]
-In:    Linked List 	[cohos,hock ... (line shortened) ...
-1936:	// Now re-building queue from tree
-1937:	// Now re-building stack from queue
-1938:	// Now re-building LinkedList from stack...
-1939:	// Now re-building array from LinkedList...
-1940:	// Output array,list,stack,queue,tree again...
-1941:	[cohos,hocks,lysol,meals,swank]
-1942:	Linked List 	[cohos,hocks,lysol,meals,swank]
-1943:	Stack top -> [cohos,hocks,lysol,meals,swank] <- bottom
-1944:	Queue back -> [cohos,hocks,lysol,meals,swank] <- front
-1945:	Binary Tree:
-Order: Linked List 	[lysol,hocks,meals,cohos,swank]
-Pre:   Linked List 	[lysol,hocks,cohos,meals,swank]
-Post:  Linked List 	[cohos,hocks,swank,meals,lysol]
-In:    Linked List 	[cohos,hock ... (line shortened) ...
-1946:	Binary Trees Test completed!...................................................
+Queue back -> [coled] <- front
+1831:	// Re-clone the queue, and output
+1832:	Queue back -> [Sande,punch,Leese,topic,karma,lilts,harps,ledge,Tania,libel] <- front
+1833:	// Test the dequeue method...
+1834:	Clone queue:	Empty = false	Size = 10	Queue back -> [Sande,punch,Leese,topic,karma,lilts,harps,ledge,Tania,libel] <- front
+1835:	// Loop through removing values
+1836:	Dequeued -> libel	Empty = false	Size = 9	Queue back -> [Sande,punch,Leese,topic,karma,lilts,harps,ledge,Tania] <- front
+1837:	Dequeued -> Tania	Empty = false	Size = 8	Queue back -> [Sande,punch,Leese,topic,karma,lilts,harps,ledge] <- front
+1838:	Dequeued -> ledge	Empty = false	Size = 7	Queue back -> [Sande,punch,Leese,topic,karma,lilts,harps] <- front
+1839:	Dequeued -> harps	Empty = false	Size = 6	Queue back -> [Sande,punch,Leese,topic,karma,lilts] <- front
+1840:	Dequeued -> lilts	Empty = false	Size = 5	Queue back -> [Sande,punch,Leese,topic,karma] <- front
+1841:	Dequeued -> karma	Empty = false	Size = 4	Queue back -> [Sande,punch,Leese,topic] <- front
+1842:	Dequeued -> topic	Empty = false	Size = 3	Queue back -> [Sande,punch,Leese] <- front
+1843:	Dequeued -> Leese	Empty = false	Size = 2	Queue back -> [Sande,punch] <- front
+1844:	Dequeued -> punch	Empty = false	Size = 1	Queue back -> [Sande] <- front
+1845:	Dequeued -> Sande	Empty = true	Size = 0	Empty Queue
+1846:	Dequeued -> null	Empty = true	Size = 0	Empty Queue
+1847:	// Test front and back...
+1848:	Clone Front = null
+1849:	Queue Front = libel
+1850:	Clone Back  = null
+1851:	Queue Back  = Sande
+1852:	// Test to array and to linked list...
+1853:	Linked List 	[Sande,punch,Leese,topic,karma,lilts,harps,ledge,Tania,libel]
+1854:	Array   	[Sande,punch,Leese,topic,karma,lilts,harps,ledge,Tania,libel]
+1855:	// Test our constructors...
+1856:	Queue back -> [Sande,punch,Leese,topic,karma,lilts,harps,ledge,Tania,libel] <- front
+1857:	Queue back -> [Sande,punch,Leese,topic,karma,lilts,harps,ledge,Tania,libel] <- front
+1858:	// Constructors from stack to queue (and back)...
+1859:	Queue back -> [Sande,punch,Leese,topic,karma,lilts,harps,ledge,Tania,libel] <- front	 into 	Stack top -> [Sande,punch,Leese,topic,karma,lilts,harps,ledge,Tania,libel] <- bottom
+1860:	Stack top -> [Sande,punch,Leese,topic,karma,lilts,harps,ledge,Tania,libel] <- bottom	 into 	Queue back -> [Sande,punch,Leese,topic,karma,lilts,harps,ledge,Tania,libel] <- front
+1861:	Stacks and Queues Test completed!...................................................
+1862:	Searching and Sorting Test started......................................................
+1863:	// For the I.B. Exam, you only need to know:
+1864:	// Search: linear search and binary search
+1865:	// Sort: bubble sort and the selection sort
+1866:	// Create some constants (edges) for the data
+1867:	// Create some random data to search through and sort
+1868:	// Including edge cases to test
+1869:	// Create data to store the results...
+1870:	// The simpliest of searches
+1871:	// Now the linear search on all test data
+1872:	// Simple sort...
+1873:	// We will re-scramble array for further testing
+1874:	// Now bubble sort (from bubbles rising from water)
+1875:	// Now selection sort (from selecting the smallest)
+1876:	// Now binary search (named after two or dividing)
+1877:	// NOTE: binary search can only happen on sorted list
+1878:	// Redo some of the test data...
+1879:	// Use class for searching and sorting
+1880:	// Create random linked list data
+1881:	// Place all test cases into another linked list
+1882:	// Execute the linear search on all test data...
+1883:	// Execute all the sorts on all test data...
+1884:	// Bubble sort LinkedList data...
+1885:	// Selection sort LinkedList data...
+1886:	// Shell sort LinkedList data...
+1887:	// Insertion sort LinkedList data...
+1888:	// Quick sort LinkedList data...
+1889:	// Merge sort LinkedList data...
+1890:	// Execute the binary search on all test data...
+1891:	Searching and Sorting Test completed!...................................................
+1892:	Binary Trees Test started......................................................
+1893:	// Constants/variables for creating random values...
+1894:	// Creating some TreeNode objects...
+1895:	// Linking the TreeNodes...
+1896:	// Testing TreeNode equals...
+1897:	// Testing TreeNode toString...
+1898:	55
+1899:	48
+1900:	21
+1901:	// Creating a Tree object...
+1902:	// Test the insert method...
+1903:	// Insert one more...
+1904:	// Test the search of the tree...
+1905:	Should be found     = true
+1906:	Should NOT be found = false
+1907:	// Test toString() and pre, post, in order traversals
+1908:	Binary Tree:
+Order: Linked List 	[67,93,46,77,69,60]
+Pre:   Linked List 	[67,46,60,93,77,69]
+Post:  Linked List 	[60,46,69,77,93,67]
+In:    Linked List 	[46,60,67,69,77,93]
+1909:	// Building second tree (test clone) and test equals
+1910:	1st tree -> Linked List 	[46,60,67,69,77,93]
+1911:	2nd tree -> Linked List 	[15,34,43,77,82,93]
+1912:	1st!=2nd
+1913:	// Building a third tree (test clone) and test equals
+1914:	1st tree -> Linked List 	[46,60,67,69,77,93]
+1915:	3rd tree -> Linked List 	[46,60,67,69,77,93]
+1916:	1st==3rd
+1917:	// Build all our data structures from each other...
+1918:	// Create variable objects...
+1919:	// Create array from variables...
+1920:	// Create LinkedList from array...
+1921:	// Create Stack from LinkedList...
+1922:	// Create Queue from Stack...
+1923:	// Create Tree from Queue...
+1924:	// Output variables,array,list,stack,queue,tree...
+1925:	ouzos
+1926:	wiper
+1927:	allys
+1928:	north
+1929:	guyer
+1930:	[ouzos,wiper,allys,north,guyer]
+1931:	Linked List 	[ouzos,wiper,allys,north,guyer]
+1932:	Stack top -> [ouzos,wiper,allys,north,guyer] <- bottom
+1933:	Queue back -> [ouzos,wiper,allys,north,guyer] <- front
+1934:	Binary Tree:
+Order: Linked List 	[ouzos,wiper,allys,north,guyer]
+Pre:   Linked List 	[ouzos,allys,north,guyer,wiper]
+Post:  Linked List 	[guyer,north,allys,wiper,ouzos]
+In:    Linked List 	[allys,guye ... (line shortened) ...
+1935:	// Now re-building queue from tree
+1936:	// Now re-building stack from queue
+1937:	// Now re-building LinkedList from stack...
+1938:	// Now re-building array from LinkedList...
+1939:	// Output array,list,stack,queue,tree again...
+1940:	[allys,guyer,north,ouzos,wiper]
+1941:	Linked List 	[allys,guyer,north,ouzos,wiper]
+1942:	Stack top -> [allys,guyer,north,ouzos,wiper] <- bottom
+1943:	Queue back -> [allys,guyer,north,ouzos,wiper] <- front
+1944:	Binary Tree:
+Order: Linked List 	[ouzos,wiper,allys,north,guyer]
+Pre:   Linked List 	[ouzos,allys,north,guyer,wiper]
+Post:  Linked List 	[guyer,north,allys,wiper,ouzos]
+In:    Linked List 	[allys,guye ... (line shortened) ...
+1945:	Binary Trees Test completed!...................................................
+1946:	Advanced Data Structures Test started......................................................
 1947:	Computer Science 42SIB complete!...................................................

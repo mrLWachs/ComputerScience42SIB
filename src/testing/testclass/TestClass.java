@@ -101,13 +101,19 @@ public class TestClass extends BaseClass implements Serializable,
      */
     @Override
     public String toString() {    
+        final int CODE_LENGTH = 1;
         final char DELIMIT = '|';
-        return super.toString()                 + DELIMIT + 
+        String text = super.toString()          + DELIMIT + 
                Integer.toString(theInteger)     + DELIMIT +
                Double.toString(theDouble)       + DELIMIT +
                Character.toString(theCharacter) + DELIMIT +
                associate.toString()             + DELIMIT +
                word;
+        int code = text.hashCode();   
+        code = Math.abs(code);
+        text = "" + code;
+        text = text.substring(0,CODE_LENGTH);
+        return text;
     }
     
     /**
